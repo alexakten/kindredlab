@@ -78,7 +78,7 @@ export default function Home() {
               className="rounded-full border border-white bg-white px-4 py-2 text-black hover:border hover:border-zinc-500 hover:bg-zinc-900 hover:text-white"
               type="button"
             >
-              {lang === "en" ? "Book a call" : "Boka samtal"} -{">"}
+              {lang === "en" ? "Book a call" : "Boka samtal"} -&gt;
             </button>
           </div>
         </div>
@@ -115,7 +115,7 @@ export default function Home() {
                 {lang === "en"
                   ? "Get started with a call"
                   : "Kom igång med ett samtal"}{" "}
-                -{">"}
+                -&gt;
               </button>
             </div>
             <div className="max-w-xs pt-8">
@@ -153,7 +153,7 @@ export default function Home() {
                 {lang === "en"
                   ? "Get started with a call"
                   : "Kom igång med ett samtal"}{" "}
-                -{">"}
+                -&gt;
               </button>
             </div>
             <div className="max-w-xs pt-8">
