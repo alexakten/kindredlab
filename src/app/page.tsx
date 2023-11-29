@@ -27,7 +27,7 @@ export default function Home() {
           background: "radial-gradient(circle, transparent 20%, black 100%)",
         }}
       />
-      <nav className="z-100 xs:px-6 fixed top-5 flex w-full items-center justify-between px-4">
+      <nav className="z-20 xs:px-6 fixed top-5 flex w-full items-center justify-between px-4">
         <Logo />
         <div className="font-regular flex flex-row gap-4 text-white ">
           <button
@@ -52,7 +52,7 @@ export default function Home() {
           <div className="rounded-full border border-zinc-500 bg-zinc-900 px-4 py-1 font-normal text-zinc-500">
             {lang === "en"
               ? "Limited availability | "
-              : "Begränsade platser | "}
+              : "Begränsat antal | "}
             <span className="font-medium text-white">
               {lang === "en" ? "2 spots left" : "2 platser kvar"}
             </span>
@@ -72,7 +72,7 @@ export default function Home() {
             >
               {lang === "en"
                 ? "Increase conversion and grow your business with stunning design and blazing fast development. Make (almost) any request and we'll design it. "
-                : "Öka din konvertering och väx ditt varumärke med övertygande recensioner och case studies på din hemsida, i annonser, och sociala kanaler."}
+                : "Öka din konvertering och väx ditt varumärke med fantastisk design. Gör (nästan) vilken request som helst och vi designar det."}
             </p>
           </div>
           <div>
