@@ -90,10 +90,9 @@ export default function Home() {
             {lang === "en" ? "Pricing plans" : "Prisplaner"}
           </h2>
           <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
-            
-          {lang === "en"
+            {lang === "en"
               ? "Chose between one or two requests at a time. Unlimited revisions, always."
-              : "Välj mellan en eller två requests åt gången. Oändlig revision, alltid."}
+              : "Välj mellan en eller två requests åt gången. Obegränsad revision, alltid."}
           </p>
         </div>
         <div className="flex w-full max-w-4xl flex-col gap-4 md:flex-row">
@@ -109,7 +108,9 @@ export default function Home() {
               $2,999/mo
             </h2>
             <p className="text-md pt-2 text-zinc-500">
-              Pause or cancel anytime
+              {lang === "en"
+                ? "Pause or cancel anytime"
+                : "Pausa eller avbryt när du vill"}
             </p>
             <div className="pt-12">
               <button
@@ -124,15 +125,21 @@ export default function Home() {
             </div>
             <div className="max-w-xs pt-8">
               <p className="text-md border-b border-zinc-100 py-2 text-zinc-500">
-                - 1 request at a time
+                {lang === "en"
+                  ? "- 1 request at a time"
+                  : "- 1 request åt gången"}
               </p>
               <p className="text-md border-b border-zinc-100 py-2 text-zinc-500">
-                - Average 4-7 days delivery
+                {lang === "en"
+                  ? "- Average 4-7 days delivery"
+                  : "- Genomsnitt 4-7 dagar leverans"}
               </p>
               <p className="text-md border-b border-zinc-100 py-2 text-zinc-500">
-                - 1 brand
+                {lang === "en" ? "- 1 brand" : "- 1 varumärke"}
               </p>
-              <p className="text-md py-2 text-zinc-500">- 1 user</p>
+              <p className="text-md py-2 text-zinc-500">
+                {lang === "en" ? "- 1 user" : "- 1 användare"}
+              </p>
             </div>
           </div>
           {/* Card Right */}
@@ -147,7 +154,9 @@ export default function Home() {
               $5,999/mo
             </h2>
             <p className="text-md pt-2 text-zinc-500">
-              Pause or cancel anytime
+              {lang === "en"
+                ? "Pause or cancel anytime"
+                : "Pausa eller avbryt när du vill"}
             </p>
             <div className="pt-12">
               <button
@@ -162,15 +171,19 @@ export default function Home() {
             </div>
             <div className="max-w-xs pt-8">
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                - 2 request at a time
+              {lang === "en"
+                ? "- 2 requests at a time"
+                : "- 2 requests åt gången"}
               </p>
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                - Average 2-4 days delivery
+              {lang === "en"
+                  ? "- Average 2-4 days delivery"
+                  : "- Genomsnitt 2-4 dagar leverans"}
               </p>
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                - Unlimited brands
+              {lang === "en" ? "- Unlimited brands" : "- Obegränsade varumärken"}
               </p>
-              <p className="text-md py-2 text-zinc-500">- Unlimited users</p>
+              <p className="text-md py-2 text-zinc-500">{lang === "en" ? "- Unlimited brands" : "- Obegränsade användare"}</p>
             </div>
           </div>
         </div>
