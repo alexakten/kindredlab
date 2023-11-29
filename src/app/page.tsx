@@ -8,12 +8,12 @@ export default function Home() {
   const [lang, setLang] = useState("en");
   return (
     <main
-      className="flex min-h-screen flex-col items-center justify-between"
+      className="flex flex-col items-center overflow-hidden justify-between"
       style={{
         backgroundSize: "96px 96px",
         backgroundImage: `
-      linear-gradient(to right, rgba(255, 255, 255, 0.1) 1px, transparent 1px),
-      linear-gradient(to bottom, rgba(255, 255, 255, 0.1) 1px, transparent 1px)
+      linear-gradient(to right, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 1px, transparent 1px)
 `,
       }}
     >
@@ -24,7 +24,7 @@ export default function Home() {
           left: 0,
           right: 0,
           bottom: 0,
-          background: "radial-gradient(circle, transparent 20%, black 100%)",
+          background: "radial-gradient(circle, transparent 20%, black 70%)",
         }}
       />
       <nav className="xs:px-6 fixed top-5 z-20 flex w-full items-center justify-between px-4">
@@ -47,7 +47,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <section className="relative flex h-screen w-screen items-center justify-center overflow-hidden px-4">
+      <section className="flex relative h-screen w-screen items-center justify-center overflow-hidden px-4">
         <div className="flex max-w-3xl flex-col items-center gap-6 text-center text-white">
           <div className="rounded-full border border-zinc-500 bg-zinc-900 px-4 py-1 font-normal text-zinc-500">
             {lang === "en" ? "Limited availability | " : "Begränsat antal | "}
