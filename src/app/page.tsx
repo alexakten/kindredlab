@@ -95,7 +95,12 @@ export default function Home() {
         <div className="flex w-full max-w-4xl flex-col gap-4 md:flex-row">
           {/* Card Left */}
           <div className="flex w-full flex-col rounded-md bg-white p-8">
-            <h3 className="text-4xl tracking-tight text-black">Standard</h3>
+            <div className="flex flex-row justify-between">
+              <h3 className="text-4xl tracking-tight text-black">Standard</h3>
+              <div className="flex items-center rounded-full bg-zinc-200 px-4 py-1 font-medium text-black">
+                <p>{lang === "en" ? "1 spot left " : "1 plats kvar "}</p>
+              </div>
+            </div>
             <h2 className="pt-12 text-5xl tracking-tight text-black">
               $2,999/mo
             </h2>
@@ -128,7 +133,12 @@ export default function Home() {
           </div>
           {/* Card Right */}
           <div className="flex w-full flex-col rounded-md border border-zinc-500 bg-zinc-900 p-8">
-            <h3 className="text-4xl tracking-tight text-white">Premium</h3>
+            <div className="flex flex-row justify-between">
+              <h3 className="text-4xl tracking-tight text-white">Premium</h3>
+              <div className="flex items-center rounded-full bg-zinc-800 px-4 py-1 font-medium text-white">
+                <p>{lang === "en" ? "1 spot left " : "1 plats kvar "}</p>
+              </div>
+            </div>
             <h2 className="pt-12 text-5xl tracking-tight text-white">
               $5,999/mo
             </h2>
