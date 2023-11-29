@@ -47,7 +47,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <section className="relative flex w-screen items-center justify-center overflow-hidden pb-32 pt-48">
+      <section className="relative flex w-screen items-center justify-center overflow-hidden px-4 pb-32 pt-48">
         <div className="flex max-w-5xl flex-col items-center gap-6 text-center text-white">
           <div className="rounded-full border border-zinc-500 bg-zinc-900 px-4 py-1 text-zinc-500">
             {lang === "en"
