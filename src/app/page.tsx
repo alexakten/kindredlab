@@ -1,49 +1,31 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import Logo from "../../public/logo.js";
 
 export default function Home() {
   const [lang, setLang] = useState("en");
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
-
-  useEffect(() => {
-    // Set the initial position to the middle of the screen
-    setMousePosition({
-      x: window.innerWidth / 2,
-      y: window.innerHeight / 2,
-    });
-  }, []);
-
-  const handleMouseMove = (event:any) => {
-    const { left, top } = event.currentTarget.getBoundingClientRect();
-    setMousePosition({
-      x: event.clientX - left,
-      y: event.clientY - top,
-    });
-  };
+  
   return (
-   <main
+    <main
       className="flex flex-col items-center justify-between overflow-hidden"
       style={{
         backgroundSize: "96px 96px",
         backgroundImage: `
-          linear-gradient(to right, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
-          linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 1px, transparent 1px)
-        `,
-        position: 'relative',
+      linear-gradient(to right, rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.15) 1px, transparent 1px)
+`,
       }}
-      onMouseMove={handleMouseMove}
     >
-       <div
+      <div
         style={{
           position: "absolute",
           top: 0,
           left: 0,
           right: 0,
           bottom: 0,
-          background: `radial-gradient(circle at ${mousePosition.x}px ${mousePosition.y}px, transparent 20%, black 40%)`,
+          background: "radial-gradient(circle, transparent 20%, black 90%)",
         }}
       />
       <nav className="xs:px-6 fixed top-5 z-20 flex w-full items-center justify-between px-4">
