@@ -77,7 +77,7 @@ export default function Home() {
           </div>
           <div>
             <button
-              className="rounded-full bg-white px-4 py-2 text-black"
+              className="rounded-full border border-white bg-white px-4 py-2 text-black hover:border hover:border-zinc-500 hover:bg-zinc-900 hover:text-white"
               type="button"
             >
               {lang === "en" ? "Book a call" : "Boka samtal"} -{">"}
