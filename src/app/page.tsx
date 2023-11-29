@@ -61,7 +61,7 @@ export default function Home() {
           >
             {lang === "en"
               ? "Unlimited designs. Unlimited revisions. One subscription."
-              : "Obegränsad design & revision. En prenumeration."}
+              : "Obegränsad design. Obegränsad revision. En prenumeration."}
           </h1>
           <div style={{ maxWidth: 640 }}>
             <p
