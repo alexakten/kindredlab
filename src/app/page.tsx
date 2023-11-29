@@ -181,7 +181,7 @@ export default function Home() {
                   : "- Genomsnitt 2-4 dagar leverans"}
               </p>
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-              {lang === "en" ? "- Unlimited brands" : "- Obegränsade varumärken"}
+              {lang === "en" ? "- Unlimited users" : "- Obegränsade varumärken"}
               </p>
               <p className="text-md py-2 text-zinc-500">{lang === "en" ? "- Unlimited brands" : "- Obegränsade användare"}</p>
             </div>
