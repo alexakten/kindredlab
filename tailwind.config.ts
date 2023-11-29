@@ -11,6 +11,11 @@ const config: Config = {
       screens: {
         xs: "440px",
       },
+      fontWeight: {
+        normal: "300",
+        medium: "400",
+        semibold: "450",
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

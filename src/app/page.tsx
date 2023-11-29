@@ -49,24 +49,27 @@ export default function Home() {
 
       <section className="relative flex w-screen items-center justify-center overflow-hidden px-4 pb-32 pt-48">
         <div className="flex max-w-5xl flex-col items-center gap-6 text-center text-white">
-          <div className="rounded-full border border-zinc-500 bg-zinc-900 px-4 py-1 text-zinc-500">
+          <div className="rounded-full border border-zinc-500 bg-zinc-900 px-4 py-1 font-normal text-zinc-500">
             {lang === "en"
               ? "Limited availability | "
               : "Begränsade platser | "}
-            <span className="font-regular text-white">
+            <span className="font-medium text-white">
               {lang === "en" ? "2 spots left" : "2 platser kvar"}
             </span>
           </div>
           <h1
-            className="text-3xl font-medium sm:text-6xl"
+            className="text-3xl font-semibold sm:text-6xl"
             style={{ lineHeight: 1.1 }}
           >
             {lang === "en"
               ? "Unlimited designs. Unlimited revisions. One subscription."
               : "Obegränsad design. Obegränsade revisioner. En prenumeration."}
           </h1>
-          <div className="text-md xs:text-lg" style={{ maxWidth: 640 }}>
-            <p>
+          <div style={{ maxWidth: 640 }}>
+            <p
+              className="text-md xs:text-lg font-normal"
+              style={{ lineHeight: 1.6 }}
+            >
               {lang === "en"
                 ? "Increase conversion and grow your business with authentic testimonials and case studies on your website, ads, and social channels."
                 : "Öka din konvertering och väx ditt varumärke med övertygande recensioner och case studies på din hemsida, i annonser, och sociala kanaler."}
