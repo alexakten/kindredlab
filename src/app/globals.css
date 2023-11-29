@@ -55,16 +55,7 @@ body {
   border-radius: 100px;
 }
 
-.glow-on-hover:hover:before {
-  opacity: 1; /* Hide glowing effect on hover */
-}
-
-.glow-on-hover:hover {
-  color: #fff; /* Change text color to black on hover */
-}
-
-
-.glow-on-hover:active:after {
+.glow-on-hover:hover:after {
   background: transparent;
 }
 
@@ -78,6 +69,7 @@ body {
   left: 0;
   top: 0;
   border-radius: 100px;
+  
 }
 
 @keyframes glowing {
