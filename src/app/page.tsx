@@ -128,7 +128,7 @@ export default function Home() {
               <p className="text-md border-b border-zinc-100 py-2 text-zinc-500">
                 · 1 brand
               </p>
-              <p className="text-md py-2 text-zinc-500">- 1 user</p>
+              <p className="text-md py-2 text-zinc-500">· 1 user</p>
             </div>
           </div>
           {/* Card Right */}
@@ -166,7 +166,7 @@ export default function Home() {
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
                 · Unlimited brands
               </p>
-              <p className="text-md py-2 text-zinc-500">- Unlimited users</p>
+              <p className="text-md py-2 text-zinc-500">· Unlimited users</p>
             </div>
           </div>
         </div>
