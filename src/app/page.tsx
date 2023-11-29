@@ -24,7 +24,7 @@ export default function Home() {
           left: 0,
           right: 0,
           bottom: 0,
-          background: "radial-gradient(circle, transparent 20%, black 70%)",
+          background: "radial-gradient(circle, transparent 20%, black 75%)",
         }}
       />
       <nav className="xs:px-6 fixed top-5 z-20 flex w-full items-center justify-between px-4">
