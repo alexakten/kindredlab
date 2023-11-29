@@ -56,7 +56,7 @@ export default function Home() {
             </span>
           </div>
           <h1
-            className="xs:text-5xl text-3xl font-semibold tracking-tight sm:text-6xl"
+            className="xs:text-5xl text-4xl font-semibold tracking-tight sm:text-6xl"
             style={{ lineHeight: 1.1 }}
           >
             {lang === "en"
