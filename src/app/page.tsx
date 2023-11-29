@@ -91,7 +91,7 @@ export default function Home() {
           </h2>
           <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
             {lang === "en"
-              ? "Chose between one or two requests at a time. Unlimited revisions, always."
+              ? "Choose between one or two requests at a time. Unlimited revisions, always."
               : "Välj mellan en eller två requests åt gången. Obegränsad revision, alltid."}
           </p>
         </div>
