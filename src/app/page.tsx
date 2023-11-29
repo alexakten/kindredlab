@@ -143,7 +143,7 @@ export default function Home() {
             </div>
           </div>
           {/* Card Right */}
-          <div className="flex w-full flex-col rounded-md border border-zinc-500 bg-zinc-900 p-8">
+          <div className="flex w-full flex-col rounded-md border border-zinc-500 bg-zinc-950 p-8">
             <div className="flex flex-row justify-between">
               <h3 className="text-4xl tracking-tight text-white">Premium</h3>
               <div className="flex items-center rounded-full bg-zinc-800 px-4 py-1 font-medium text-white">
@@ -160,7 +160,7 @@ export default function Home() {
             </p>
             <div className="pt-12">
               <button
-                className="rounded-full border border-white bg-white px-4 py-2 text-black hover:border-zinc-500 hover:bg-zinc-900 hover:text-white"
+                className="rounded-full border border-white bg-white px-4 py-2 text-black hover:border-zinc-500 hover:bg-zinc-950 hover:text-white"
                 type="button"
               >
                 {lang === "en"
