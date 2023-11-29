@@ -77,7 +77,7 @@ export default function Home() {
               className="rounded-full bg-white px-4 py-2 text-black"
               type="button"
             >
-              Book a call -{">"}
+              {lang === "en" ? "Book a call" : "Boka samtal"} -{">"}
             </button>
           </div>
         </div>
