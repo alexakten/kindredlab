@@ -8,7 +8,7 @@ export default function Home() {
   const [lang, setLang] = useState("en");
   return (
     <main
-      className="flex flex-col items-center overflow-hidden justify-between"
+      className="flex flex-col items-center justify-between overflow-hidden"
       style={{
         backgroundSize: "96px 96px",
         backgroundImage: `
@@ -18,6 +18,7 @@ export default function Home() {
       }}
     >
       <div
+        className="overflow-hidden"
         style={{
           position: "absolute",
           top: 0,
@@ -47,7 +48,7 @@ export default function Home() {
         </div>
       </nav>
 
-      <section className="flex relative h-screen w-screen items-center justify-center overflow-hidden px-4">
+      <section className="relative flex h-screen w-screen items-center justify-center overflow-hidden px-4">
         <div className="flex max-w-3xl flex-col items-center gap-6 text-center text-white">
           <div className="rounded-full border border-zinc-500 bg-zinc-900 px-4 py-1 font-normal text-zinc-500">
             {lang === "en" ? "Limited availability | " : "Begränsat antal | "}
@@ -86,7 +87,7 @@ export default function Home() {
 
       <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
         <div className="flex flex-col items-center gap-6">
-          <h2 className="xs:text-5xl tracking-tight text-4xl text-white">
+          <h2 className="xs:text-5xl text-4xl tracking-tight text-white">
             {lang === "en" ? "Pricing plans" : "Prisplaner"}
           </h2>
           <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
@@ -171,19 +172,25 @@ export default function Home() {
             </div>
             <div className="max-w-xs pt-8">
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-              {lang === "en"
-                ? "- 2 requests at a time"
-                : "- 2 requests åt gången"}
+                {lang === "en"
+                  ? "- 2 requests at a time"
+                  : "- 2 requests åt gången"}
               </p>
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-              {lang === "en"
+                {lang === "en"
                   ? "- Average 2-4 days delivery"
                   : "- Genomsnitt 2-4 dagar leverans"}
               </p>
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-              {lang === "en" ? "- Unlimited brands" : "- Obegränsade varumärken"}
+                {lang === "en"
+                  ? "- Unlimited brands"
+                  : "- Obegränsade varumärken"}
               </p>
-              <p className="text-md py-2 text-zinc-500">{lang === "en" ? "- Unlimited users" : "- Obegränsade användare"}</p>
+              <p className="text-md py-2 text-zinc-500">
+                {lang === "en"
+                  ? "- Unlimited users"
+                  : "- Obegränsade användare"}
+              </p>
             </div>
           </div>
         </div>
