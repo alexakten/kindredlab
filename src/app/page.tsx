@@ -92,7 +92,7 @@ export default function Home() {
             always.
           </p>
         </div>
-        <div className="flex w-full max-w-4xl flex-row gap-4">
+        <div className="flex w-full max-w-4xl flex-col md:flex-row gap-4">
           {/* Card Left */}
           <div className="flex w-full flex-col rounded-md bg-white p-8">
             <h3 className="text-4xl tracking-tight text-black">Standard</h3>
