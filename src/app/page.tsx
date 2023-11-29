@@ -86,7 +86,7 @@ export default function Home() {
 
       <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
         <div className="flex flex-col items-center gap-6">
-          <h2 className="text-5xl text-white">Pricing plans</h2>
+          <h2 className="text-4xl xs:text-5xl text-white">Pricing plans</h2>
           <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
             Chose between one or two requests at a time. Unlimited revisions,
             always.
