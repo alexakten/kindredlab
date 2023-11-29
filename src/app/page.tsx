@@ -56,7 +56,7 @@ export default function Home() {
             </span>
           </div>
           <h1
-            className="text-3xl font-semibold tracking-tight xs:text-5xl sm:text-6xl"
+            className="xs:text-5xl text-3xl font-semibold tracking-tight sm:text-6xl"
             style={{ lineHeight: 1.1 }}
           >
             {lang === "en"
@@ -65,7 +65,7 @@ export default function Home() {
           </h1>
           <div style={{ maxWidth: 640 }}>
             <p
-              className="text-md xs:text-lg font-normal"
+              className="text-md xs:text-lg font-normal text-zinc-200"
               style={{ lineHeight: 1.6 }}
             >
               {lang === "en"
@@ -87,12 +87,12 @@ export default function Home() {
       <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
         <div className="flex flex-col items-center gap-6">
           <h2 className="text-5xl text-white">Pricing plans</h2>
-          <p className="text-md xs:text-lg max-w-xs text-center font-normal">
+          <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
             Chose between one or two requests at a time. Unlimited revisions,
             always.
           </p>
         </div>
-        <div className="flex w-full max-w-4xl flex-col md:flex-row gap-4">
+        <div className="flex w-full max-w-4xl flex-col gap-4 md:flex-row">
           {/* Card Left */}
           <div className="flex w-full flex-col rounded-md bg-white p-8">
             <h3 className="text-4xl tracking-tight text-black">Standard</h3>
