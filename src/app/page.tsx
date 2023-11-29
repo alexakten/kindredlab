@@ -86,10 +86,14 @@ export default function Home() {
 
       <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
         <div className="flex flex-col items-center gap-6">
-          <h2 className="text-4xl xs:text-5xl text-white">Pricing plans</h2>
+          <h2 className="xs:text-5xl text-4xl text-white">
+            {lang === "en" ? "Pricing plans" : "Prisplaner"}
+          </h2>
           <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
-            Chose between one or two requests at a time. Unlimited revisions,
-            always.
+            
+          {lang === "en"
+              ? "Chose between one or two requests at a time. Unlimited revisions, always."
+              : "Välj mellan en eller två requests åt gången. Oändlig revision, alltid."}
           </p>
         </div>
         <div className="flex w-full max-w-4xl flex-col gap-4 md:flex-row">
@@ -123,10 +127,10 @@ export default function Home() {
                 - 1 request at a time
               </p>
               <p className="text-md border-b border-zinc-100 py-2 text-zinc-500">
-                -  Average 4-7 days delivery
+                - Average 4-7 days delivery
               </p>
               <p className="text-md border-b border-zinc-100 py-2 text-zinc-500">
-                -  1 brand
+                - 1 brand
               </p>
               <p className="text-md py-2 text-zinc-500">- 1 user</p>
             </div>
