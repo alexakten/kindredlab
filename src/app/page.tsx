@@ -71,7 +71,7 @@ export default function Home() {
               style={{ lineHeight: 1.6 }}
             >
               {lang === "en"
-                ? "Increase conversion and grow your business with authentic testimonials and case studies on your website, ads, and social channels."
+                ? "Increase conversion and grow your business with stunning design and blazing fast development. Make (almost) any request and we'll design it. "
                 : "Öka din konvertering och väx ditt varumärke med övertygande recensioner och case studies på din hemsida, i annonser, och sociala kanaler."}
             </p>
           </div>
