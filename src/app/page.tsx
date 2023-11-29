@@ -120,15 +120,15 @@ export default function Home() {
             </div>
             <div className="max-w-xs pt-8">
               <p className="text-md border-b border-zinc-100 py-2 text-zinc-500">
-                · 1 request at a time
+                - 1 request at a time
               </p>
               <p className="text-md border-b border-zinc-100 py-2 text-zinc-500">
-                · Average 4-7 days delivery
+                -  Average 4-7 days delivery
               </p>
               <p className="text-md border-b border-zinc-100 py-2 text-zinc-500">
-                · 1 brand
+                -  1 brand
               </p>
-              <p className="text-md py-2 text-zinc-500">· 1 user</p>
+              <p className="text-md py-2 text-zinc-500">- 1 user</p>
             </div>
           </div>
           {/* Card Right */}
@@ -158,15 +158,15 @@ export default function Home() {
             </div>
             <div className="max-w-xs pt-8">
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                · 2 request at a time
+                - 2 request at a time
               </p>
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                · Average 2-4 days delivery
+                - Average 2-4 days delivery
               </p>
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                · Unlimited brands
+                - Unlimited brands
               </p>
-              <p className="text-md py-2 text-zinc-500">· Unlimited users</p>
+              <p className="text-md py-2 text-zinc-500">- Unlimited users</p>
             </div>
           </div>
         </div>
