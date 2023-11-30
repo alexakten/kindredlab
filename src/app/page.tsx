@@ -10,16 +10,23 @@ export default function Home() {
   const [isWebSelected, setIsWebSelected] = useState(false);
   const [isDesignSelected, setIsDesignSelected] = useState(false);
   const [isContentSelected, setIsContentSelected] = useState(false);
+  const [isPrioritySelected, setIsPrioritySelected] = useState(false);
 
   // Handlers for each card
   const handleWebToggle = () => setIsWebSelected(!isWebSelected);
   const handleDesignToggle = () => setIsDesignSelected(!isDesignSelected);
   const handleContentToggle = () => setIsContentSelected(!isContentSelected);
+  const handlePriorityToggle = () => setIsPrioritySelected(!isPrioritySelected);
 
   const cost = {
     web: 3999,
     design: 2999,
     content: 2999,
+    priority: 999,
+  };
+
+  const formatNumber = (num: any) => {
+    return new Intl.NumberFormat('en-US').format(num);
   };
 
   // State to store the total price
@@ -31,13 +38,14 @@ export default function Home() {
     if (isWebSelected) total += cost.web;
     if (isDesignSelected) total += cost.design;
     if (isContentSelected) total += cost.content;
+    if (isPrioritySelected) total += cost.priority;
     return total;
   };
 
   // Update the total price when the selection state changes
   useEffect(() => {
     setTotalPrice(calculateTotal());
-  }, [isWebSelected, isDesignSelected, isContentSelected]);
+  }, [isWebSelected, isDesignSelected, isContentSelected, isPrioritySelected]);
 
   return (
     <main
@@ -145,7 +153,7 @@ export default function Home() {
               } p-8`}
             >
               <h3 className="text-4xl tracking-tight ">Web</h3>
-              <h2 className="pt-12 text-5xl tracking-tight">$3,999/mo</h2>
+              <h2 className="pt-12 text-5xl tracking-tight">${formatNumber(cost.web)}/mo</h2>
               <p className="text-md pt-2 text-zinc-500">
                 {lang === "en"
                   ? "Pause or cancel anytime"
@@ -203,7 +211,7 @@ export default function Home() {
               } p-8`}
             >
               <h3 className="text-4xl tracking-tight ">Design</h3>
-              <h2 className="pt-12 text-5xl tracking-tight">$2,999/mo</h2>
+              <h2 className="pt-12 text-5xl tracking-tight">${formatNumber(cost.design)}/mo</h2>
               <p className="text-md pt-2 text-zinc-500">
                 {lang === "en"
                   ? "Pause or cancel anytime"
@@ -261,7 +269,7 @@ export default function Home() {
               } p-8`}
             >
               <h3 className="text-4xl tracking-tight ">Content</h3>
-              <h2 className="pt-12 text-5xl tracking-tight">$2,999/mo</h2>
+              <h2 className="pt-12 text-5xl tracking-tight">${formatNumber(cost.content)}/mo</h2>
               <p className="text-md pt-2 text-zinc-500">
                 {lang === "en"
                   ? "Pause or cancel anytime"
@@ -311,19 +319,73 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {/* Total Price */}
+          {/* Total Price Container */}
           <div className="flex w-full max-w-5xl flex-col gap-4 md:flex-row">
+            {/* Priority */}
+            <div
+              className={`flex w-full flex-col rounded-md border  ${
+                isPrioritySelected
+                  ? "border-white bg-white text-black"
+                  : "border-zinc-500 bg-black text-white"
+              } p-8`}
+            >
+              <h3 className="text-4xl tracking-tight ">Priority Service</h3>
+              <h2 className="pt-12 text-5xl tracking-tight">${formatNumber(cost.priority)}/mo</h2>
+              <p className="text-md pt-2 text-zinc-500">
+                {lang === "en"
+                  ? "Pause or cancel anytime"
+                  : "Pausa eller avbryt när du vill"}
+              </p>
+              <div className="pt-12">
+                <button
+                  className={`rounded-full border ${
+                    isPrioritySelected
+                      ? "border-zinc-500 bg-white text-black hover:border-black hover:bg-black hover:text-white"
+                      : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
+                  } px-4 py-2 `}
+                  type="button"
+                  onClick={handlePriorityToggle}
+                >
+                  {lang === "en"
+                    ? isPrioritySelected
+                      ? "Remove from plan"
+                      : "Add to plan"
+                    : isPrioritySelected
+                      ? "Ta bort från planen"
+                      : "Lägg till"}{" "}
+                  -&gt;
+                </button>
+              </div>
+              <div className="max-w-xs pt-8">
+                <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                  {lang === "en"
+                    ? "- 2 requests at a time"
+                    : "- 2 requests åt gången"}
+                </p>
+                <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                  {lang === "en"
+                    ? "- 2-4 day delivery"
+                    : "- 2-4 dagar leverans"}
+                </p>
+                <p className="text-md py-2 text-zinc-500">
+                  {lang === "en"
+                    ? "- Priority support"
+                    : "- Prioriterad support"}
+                </p>
+              </div>
+            </div>
+            {/* Total Price */}
             <div className="flex w-full flex-col rounded-md border border-zinc-500 bg-black p-8">
               <div className="flex flex-row justify-between">
                 <h3 className="text-4xl tracking-tight text-white">
                   Your Plan
                 </h3>
                 <div className="flex items-center rounded-full bg-zinc-800 px-4 py-1 font-medium text-white">
-                  <p>{lang === "en" ? "1 spot left " : "1 plats kvar "}</p>
+                  <p>{lang === "en" ? "2 spots left " : "2 platser kvar "}</p>
                 </div>
               </div>
               <h2 className="pt-12 text-5xl tracking-tight text-white">
-                ${totalPrice}/mo
+              ${formatNumber(totalPrice)}/mo
               </h2>
               <p className="text-md pt-2 text-zinc-500">
                 {lang === "en"
