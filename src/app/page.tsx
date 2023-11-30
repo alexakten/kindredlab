@@ -190,11 +190,6 @@ export default function Home() {
                   </p>
                   <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
                     {lang === "en"
-                      ? "- App development"
-                      : "- Genomsnitt 2-4 dagar leverans"}
-                  </p>
-                  <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                    {lang === "en"
                       ? "- Unlimited brands"
                       : "- Obegränsade varumärken"}
                   </p>
@@ -249,11 +244,6 @@ export default function Home() {
                     {lang === "en"
                       ? "- Web development"
                       : "- 2 requests åt gången"}
-                  </p>
-                  <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                    {lang === "en"
-                      ? "- App development"
-                      : "- Genomsnitt 2-4 dagar leverans"}
                   </p>
                   <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
                     {lang === "en"
@@ -314,11 +304,6 @@ export default function Home() {
                   </p>
                   <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
                     {lang === "en"
-                      ? "- App development"
-                      : "- Genomsnitt 2-4 dagar leverans"}
-                  </p>
-                  <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                    {lang === "en"
                       ? "- Unlimited brands"
                       : "- Obegränsade varumärken"}
                   </p>
@@ -332,9 +317,9 @@ export default function Home() {
             </div>
           </div>
           {/* Total Price Container */}
-          <div className="grid w-full max-w-5xl gap-4 lg:grid-cols-3 ">
+          <div className="grid w-full max-w-5xl gap-4 lg:grid-cols-3">
             {/* Priority */}
-            <div className="col-span-1">
+            <div className="col-span-2 lg:col-span-1">
               <div
                 className={`flex w-full flex-col rounded-md border ${
                   isPrioritySelected
@@ -374,13 +359,13 @@ export default function Home() {
                 <div className="max-w-xs pt-8">
                   <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
                     {lang === "en"
-                      ? "- 2 requests at a time"
-                      : "- 2 requests åt gången"}
+                      ? "- Two requests at a time"
+                      : "- Två requests åt gången"}
                   </p>
                   <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
                     {lang === "en"
-                      ? "- 2-4 day delivery"
-                      : "- 2-4 dagar leverans"}
+                      ? "- Faster delivery"
+                      : "- Snabbare leverans"}
                   </p>
                   <p className="text-md py-2 text-zinc-500">
                     {lang === "en"
@@ -429,8 +414,6 @@ export default function Home() {
           </div>
         </div>
       </section>
-
-      {/* Support Section */}
     </main>
   );
 }
