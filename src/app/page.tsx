@@ -7,6 +7,15 @@ import Logo from "../../public/logo.js";
 export default function Home() {
   const [lang, setLang] = useState("en");
 
+  const [isWebSelected, setIsWebSelected] = useState(false);
+  const [isDesignSelected, setIsDesignSelected] = useState(false);
+  const [isContentSelected, setIsContentSelected] = useState(false);
+
+  // Handlers for each card
+  const handleWebToggle = () => setIsWebSelected(!isWebSelected);
+  const handleDesignToggle = () => setIsDesignSelected(!isDesignSelected);
+  const handleContentToggle = () => setIsContentSelected(!isContentSelected);
+
   return (
     <main
       className="flex flex-col items-center justify-between overflow-hidden"
@@ -98,11 +107,13 @@ export default function Home() {
         </div>
         <div className="flex w-full max-w-4xl flex-col gap-4 md:flex-row">
           {/* Web Card */}
-          <div className="flex w-full flex-col rounded-md border border-zinc-500 bg-black p-8">
-            <h3 className="text-4xl tracking-tight text-white">Web</h3>
-            <h2 className="pt-12 text-5xl tracking-tight text-white">
-              $2,999/mo
-            </h2>
+          <div
+            className={`flex w-full flex-col rounded-md border border-zinc-500 ${
+              isWebSelected ? "bg-white text-black" : "bg-black text-white"
+            } p-8`}
+          >
+            <h3 className="text-4xl tracking-tight ">Web</h3>
+            <h2 className="pt-12 text-5xl tracking-tight">$3,999/mo</h2>
             <p className="text-md pt-2 text-zinc-500">
               {lang === "en"
                 ? "Pause or cancel anytime"
@@ -110,17 +121,27 @@ export default function Home() {
             </p>
             <div className="pt-12">
               <button
-                className="rounded-full border border-white bg-white px-4 py-2 text-black hover:border-zinc-500 hover:bg-black hover:text-white"
+                className={`rounded-full border ${
+                  isWebSelected
+                    ? "border-zinc-500 bg-white text-black hover:border-black hover:bg-black hover:text-white"
+                    : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
+                } px-4 py-2 `}
                 type="button"
+                onClick={handleWebToggle}
               >
-                {lang === "en" ? "Add to plan" : "Lägg till"} -&gt;
+                {lang === "en"
+                  ? isWebSelected
+                    ? "Remove from plan"
+                    : "Add to plan"
+                  : isWebSelected
+                    ? "Ta bort från planen"
+                    : "Lägg till"}{" "}
+                -&gt;
               </button>
             </div>
             <div className="max-w-xs pt-8">
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                {lang === "en"
-                  ? "- Web development"
-                  : "- 2 requests åt gången"}
+                {lang === "en" ? "- Web development" : "- 2 requests åt gången"}
               </p>
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
                 {lang === "en"
@@ -140,11 +161,13 @@ export default function Home() {
             </div>
           </div>
           {/* Design Card */}
-          <div className="flex w-full flex-col rounded-md border border-zinc-500 bg-black p-8">
-            <h3 className="text-4xl tracking-tight text-white">Design</h3>
-            <h2 className="pt-12 text-5xl tracking-tight text-white">
-              $2,999/mo
-            </h2>
+          <div
+            className={`flex w-full flex-col rounded-md border border-zinc-500 ${
+              isDesignSelected ? "bg-white text-black" : "bg-black text-white"
+            } p-8`}
+          >
+            <h3 className="text-4xl tracking-tight ">Design</h3>
+            <h2 className="pt-12 text-5xl tracking-tight">$2,999/mo</h2>
             <p className="text-md pt-2 text-zinc-500">
               {lang === "en"
                 ? "Pause or cancel anytime"
@@ -152,26 +175,36 @@ export default function Home() {
             </p>
             <div className="pt-12">
               <button
-                className="rounded-full border border-white bg-white px-4 py-2 text-black hover:border-zinc-500 hover:bg-black hover:text-white"
+                className={`rounded-full border ${
+                  isDesignSelected
+                    ? "border-zinc-500 bg-white text-black hover:border-black hover:bg-black hover:text-white"
+                    : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
+                } px-4 py-2 `}
                 type="button"
+                onClick={handleDesignToggle}
               >
-                {lang === "en" ? "Add to plan" : "Lägg till"} -&gt;
+                {lang === "en"
+                  ? isDesignSelected
+                    ? "Remove from plan"
+                    : "Add to plan"
+                  : isDesignSelected
+                    ? "Ta bort från planen"
+                    : "Lägg till"}{" "}
+                -&gt;
               </button>
             </div>
             <div className="max-w-xs pt-8">
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                {lang === "en"
-                  ? "- Branding"
-                  : "- 2 requests åt gången"}
+                {lang === "en" ? "- Web development" : "- 2 requests åt gången"}
               </p>
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
                 {lang === "en"
-                  ? "- Web design"
+                  ? "- App development"
                   : "- Genomsnitt 2-4 dagar leverans"}
               </p>
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
                 {lang === "en"
-                  ? "- User experience"
+                  ? "- Unlimited brands"
                   : "- Obegränsade varumärken"}
               </p>
               <p className="text-md py-2 text-zinc-500">
@@ -182,11 +215,13 @@ export default function Home() {
             </div>
           </div>
           {/*Content Card */}
-          <div className="flex w-full flex-col rounded-md border border-zinc-500 bg-black p-8">
-            <h3 className="text-4xl tracking-tight text-white">Content</h3>
-            <h2 className="pt-12 text-5xl tracking-tight text-white">
-              $2,999/mo
-            </h2>
+          <div
+            className={`flex w-full flex-col rounded-md border border-zinc-500 ${
+              isContentSelected ? "bg-white text-black" : "bg-black text-white"
+            } p-8`}
+          >
+            <h3 className="text-4xl tracking-tight ">Content</h3>
+            <h2 className="pt-12 text-5xl tracking-tight">$2,999/mo</h2>
             <p className="text-md pt-2 text-zinc-500">
               {lang === "en"
                 ? "Pause or cancel anytime"
@@ -194,31 +229,41 @@ export default function Home() {
             </p>
             <div className="pt-12">
               <button
-                className="rounded-full border border-white bg-white px-4 py-2 text-black hover:border-zinc-500 hover:bg-black hover:text-white"
+                className={`rounded-full border ${
+                  isContentSelected
+                    ? "border-zinc-500 bg-white text-black hover:border-black hover:bg-black hover:text-white"
+                    : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
+                } px-4 py-2 `}
                 type="button"
+                onClick={handleContentToggle}
               >
-                {lang === "en" ? "Add to plan" : "Lägg till"} -&gt;
+                {lang === "en"
+                  ? isContentSelected
+                    ? "Remove from plan"
+                    : "Add to plan"
+                  : isContentSelected
+                    ? "Ta bort från planen"
+                    : "Lägg till"}{" "}
+                -&gt;
               </button>
             </div>
             <div className="max-w-xs pt-8">
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                {lang === "en"
-                  ? "- Short form"
-                  : "- 2 requests åt gången"}
+                {lang === "en" ? "- Web development" : "- 2 requests åt gången"}
               </p>
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
                 {lang === "en"
-                  ? "- Social media"
+                  ? "- App development"
                   : "- Genomsnitt 2-4 dagar leverans"}
               </p>
               <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
                 {lang === "en"
-                  ? "- Advertising"
+                  ? "- Unlimited brands"
                   : "- Obegränsade varumärken"}
               </p>
               <p className="text-md py-2 text-zinc-500">
                 {lang === "en"
-                  ? "- E-commerce"
+                  ? "- Unlimited users"
                   : "- Obegränsade användare"}
               </p>
             </div>
@@ -229,7 +274,7 @@ export default function Home() {
       <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
         <div className="flex flex-col items-center gap-6">
           <h2 className="xs:text-5xl text-4xl tracking-tight text-white">
-            {lang === "en" ? "Support" : "Support"}
+            {lang === "en" ? "Support & delivery" : "Support & leverans"}
           </h2>
           <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
             {lang === "en"
