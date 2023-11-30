@@ -6,7 +6,7 @@ import Logo from "../../public/logo.js";
 
 export default function Home() {
   const [lang, setLang] = useState("en");
-  
+
   return (
     <main
       className="flex flex-col items-center justify-between overflow-hidden"
@@ -76,7 +76,7 @@ export default function Home() {
           </div>
           <div>
             <button
-              className="rounded-full border glow-on-hover border-white bg-white px-4 py-2 text-black"
+              className="glow-on-hover rounded-full border border-white bg-white px-4 py-2 text-black"
               type="button"
             >
               {lang === "en" ? "Book a call" : "Boka samtal"} -&gt;
@@ -88,7 +88,148 @@ export default function Home() {
       <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
         <div className="flex flex-col items-center gap-6">
           <h2 className="xs:text-5xl text-4xl tracking-tight text-white">
-            {lang === "en" ? "Pricing plans" : "Prisplaner"}
+            {lang === "en" ? "How it works" : "Hur det går till"}
+          </h2>
+          <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
+            {lang === "en"
+              ? "Create your own plan. Only add the services you need each month."
+              : "Välj mellan en eller två requests åt gången. Obegränsad revision, alltid."}
+          </p>
+        </div>
+        <div className="flex w-full max-w-4xl flex-col gap-4 md:flex-row">
+          {/* Web Card */}
+          <div className="flex w-full flex-col rounded-md border border-zinc-500 bg-black p-8">
+            <h3 className="text-4xl tracking-tight text-white">Web</h3>
+            <h2 className="pt-12 text-5xl tracking-tight text-white">
+              $2,999/mo
+            </h2>
+            <p className="text-md pt-2 text-zinc-500">
+              {lang === "en"
+                ? "Pause or cancel anytime"
+                : "Pausa eller avbryt när du vill"}
+            </p>
+            <div className="pt-12">
+              <button
+                className="rounded-full border border-white bg-white px-4 py-2 text-black hover:border-zinc-500 hover:bg-black hover:text-white"
+                type="button"
+              >
+                {lang === "en" ? "Add to plan" : "Lägg till"} -&gt;
+              </button>
+            </div>
+            <div className="max-w-xs pt-8">
+              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                {lang === "en"
+                  ? "- Web development"
+                  : "- 2 requests åt gången"}
+              </p>
+              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                {lang === "en"
+                  ? "- App development"
+                  : "- Genomsnitt 2-4 dagar leverans"}
+              </p>
+              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                {lang === "en"
+                  ? "- Unlimited brands"
+                  : "- Obegränsade varumärken"}
+              </p>
+              <p className="text-md py-2 text-zinc-500">
+                {lang === "en"
+                  ? "- Unlimited users"
+                  : "- Obegränsade användare"}
+              </p>
+            </div>
+          </div>
+          {/* Design Card */}
+          <div className="flex w-full flex-col rounded-md border border-zinc-500 bg-black p-8">
+            <h3 className="text-4xl tracking-tight text-white">Design</h3>
+            <h2 className="pt-12 text-5xl tracking-tight text-white">
+              $2,999/mo
+            </h2>
+            <p className="text-md pt-2 text-zinc-500">
+              {lang === "en"
+                ? "Pause or cancel anytime"
+                : "Pausa eller avbryt när du vill"}
+            </p>
+            <div className="pt-12">
+              <button
+                className="rounded-full border border-white bg-white px-4 py-2 text-black hover:border-zinc-500 hover:bg-black hover:text-white"
+                type="button"
+              >
+                {lang === "en" ? "Add to plan" : "Lägg till"} -&gt;
+              </button>
+            </div>
+            <div className="max-w-xs pt-8">
+              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                {lang === "en"
+                  ? "- Branding"
+                  : "- 2 requests åt gången"}
+              </p>
+              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                {lang === "en"
+                  ? "- Web design"
+                  : "- Genomsnitt 2-4 dagar leverans"}
+              </p>
+              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                {lang === "en"
+                  ? "- User experience"
+                  : "- Obegränsade varumärken"}
+              </p>
+              <p className="text-md py-2 text-zinc-500">
+                {lang === "en"
+                  ? "- Unlimited users"
+                  : "- Obegränsade användare"}
+              </p>
+            </div>
+          </div>
+          {/*Content Card */}
+          <div className="flex w-full flex-col rounded-md border border-zinc-500 bg-black p-8">
+            <h3 className="text-4xl tracking-tight text-white">Content</h3>
+            <h2 className="pt-12 text-5xl tracking-tight text-white">
+              $2,999/mo
+            </h2>
+            <p className="text-md pt-2 text-zinc-500">
+              {lang === "en"
+                ? "Pause or cancel anytime"
+                : "Pausa eller avbryt när du vill"}
+            </p>
+            <div className="pt-12">
+              <button
+                className="rounded-full border border-white bg-white px-4 py-2 text-black hover:border-zinc-500 hover:bg-black hover:text-white"
+                type="button"
+              >
+                {lang === "en" ? "Add to plan" : "Lägg till"} -&gt;
+              </button>
+            </div>
+            <div className="max-w-xs pt-8">
+              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                {lang === "en"
+                  ? "- Short form"
+                  : "- 2 requests åt gången"}
+              </p>
+              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                {lang === "en"
+                  ? "- Social media"
+                  : "- Genomsnitt 2-4 dagar leverans"}
+              </p>
+              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                {lang === "en"
+                  ? "- Advertising"
+                  : "- Obegränsade varumärken"}
+              </p>
+              <p className="text-md py-2 text-zinc-500">
+                {lang === "en"
+                  ? "- E-commerce"
+                  : "- Obegränsade användare"}
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
+        <div className="flex flex-col items-center gap-6">
+          <h2 className="xs:text-5xl text-4xl tracking-tight text-white">
+            {lang === "en" ? "Support" : "Support"}
           </h2>
           <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
             {lang === "en"
@@ -106,7 +247,7 @@ export default function Home() {
               </div>
             </div>
             <h2 className="pt-12 text-5xl tracking-tight text-black">
-              $2,999/mo
+              $499/mo
             </h2>
             <p className="text-md pt-2 text-zinc-500">
               {lang === "en"
@@ -146,13 +287,13 @@ export default function Home() {
           {/* Card Right */}
           <div className="flex w-full flex-col rounded-md border border-zinc-500 bg-black p-8">
             <div className="flex flex-row justify-between">
-              <h3 className="text-4xl tracking-tight text-white">Premium</h3>
+              <h3 className="text-4xl tracking-tight text-white">Priority</h3>
               <div className="flex items-center rounded-full bg-zinc-800 px-4 py-1 font-medium text-white">
                 <p>{lang === "en" ? "1 spot left " : "1 plats kvar "}</p>
               </div>
             </div>
             <h2 className="pt-12 text-5xl tracking-tight text-white">
-              $5,999/mo
+              $999/mo
             </h2>
             <p className="text-md pt-2 text-zinc-500">
               {lang === "en"
