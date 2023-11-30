@@ -108,8 +108,10 @@ export default function Home() {
         <div className="flex w-full max-w-4xl flex-col gap-4 md:flex-row">
           {/* Web Card */}
           <div
-            className={`flex w-full flex-col rounded-md border border-zinc-500 ${
-              isWebSelected ? "bg-white text-black" : "bg-black text-white"
+            className={`flex w-full flex-col rounded-md border  ${
+              isWebSelected
+                ? "border-white bg-white text-black"
+                : "border-zinc-500 bg-black text-white"
             } p-8`}
           >
             <h3 className="text-4xl tracking-tight ">Web</h3>
@@ -162,8 +164,10 @@ export default function Home() {
           </div>
           {/* Design Card */}
           <div
-            className={`flex w-full flex-col rounded-md border border-zinc-500 ${
-              isDesignSelected ? "bg-white text-black" : "bg-black text-white"
+            className={`flex w-full flex-col rounded-md border  ${
+              isDesignSelected
+                ? "border-white bg-white text-black"
+                : "border-zinc-500 bg-black text-white"
             } p-8`}
           >
             <h3 className="text-4xl tracking-tight ">Design</h3>
@@ -216,8 +220,10 @@ export default function Home() {
           </div>
           {/*Content Card */}
           <div
-            className={`flex w-full flex-col rounded-md border border-zinc-500 ${
-              isContentSelected ? "bg-white text-black" : "bg-black text-white"
+            className={`flex w-full flex-col rounded-md border  ${
+              isContentSelected
+                ? "border-white bg-white text-black"
+                : "border-zinc-500 bg-black text-white"
             } p-8`}
           >
             <h3 className="text-4xl tracking-tight ">Content</h3>
