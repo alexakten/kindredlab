@@ -112,8 +112,8 @@ export default function Home() {
               style={{ lineHeight: 1.6 }}
             >
               {lang === "en"
-                ? "Increase conversion and grow your business with stunning design and blazing fast development. Make (almost) any request and we'll design it."
-                : "Öka din konvertering och väx ditt varumärke med fantastisk design. Gör (nästan) vilken request som helst och vi designar det."}
+                ? "Increase conversion and grow your business with stunning design and eye-catching content. Make (almost) any request and we'll design it."
+                : "Öka din konvertering och väx ditt varumärke med fantastisk design och content. Gör (nästan) vilken request som helst och vi designar det."}
             </p>
           </div>
           <div>
@@ -166,7 +166,7 @@ export default function Home() {
                   <button
                     className={`rounded-full border ${
                       isWebSelected
-                        ? "border-zinc-500 bg-white text-black hover:border-black hover:bg-black hover:text-white"
+                        ? "border-zinc-500 bg-white text-black hover:border-black"
                         : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
                     } px-4 py-2 `}
                     type="button"
@@ -223,7 +223,7 @@ export default function Home() {
                   <button
                     className={`rounded-full border ${
                       isDesignSelected
-                        ? "border-zinc-500 bg-white text-black hover:border-black hover:bg-black hover:text-white"
+                        ? "border-zinc-500 bg-white text-black hover:border-black"
                         : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
                     } px-4 py-2 `}
                     type="button"
@@ -280,7 +280,7 @@ export default function Home() {
                   <button
                     className={`rounded-full border ${
                       isContentSelected
-                        ? "border-zinc-500 bg-white text-black hover:border-black hover:bg-black hover:text-white"
+                        ? "border-zinc-500 bg-white text-black hover:border-black"
                         : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
                     } px-4 py-2 `}
                     type="button"
@@ -316,9 +316,9 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {/* Total Price Container */}
+          {/* Bottom Container */}
           <div className="grid w-full max-w-5xl gap-4 lg:grid-cols-3">
-            {/* Priority */}
+            {/* Priority Card*/}
             <div className="col-span-2 lg:col-span-1">
               <div
                 className={`flex w-full flex-col rounded-md border ${
@@ -340,7 +340,7 @@ export default function Home() {
                   <button
                     className={`rounded-full border ${
                       isPrioritySelected
-                        ? "border-zinc-500 bg-white text-black hover:border-black hover:bg-black hover:text-white"
+                        ? "border-zinc-500 bg-white text-black hover:border-black"
                         : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
                     } px-4 py-2 `}
                     type="button"
@@ -375,7 +375,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-            {/* Total Price */}
+            {/* Total Price Card */}
             <div className="col-span-2">
               <div className="flex h-full w-full flex-col justify-between rounded-md border border-zinc-500 bg-black p-8">
                 <div>
@@ -383,9 +383,9 @@ export default function Home() {
                     <h3 className="text-4xl tracking-tight text-white">
                       Your Plan
                     </h3>
-                    <div className="flex items-center rounded-full bg-zinc-800 px-4 py-1 font-medium text-white">
-                      <p>
-                        {lang === "en" ? "2 spots left " : "2 platser kvar "}
+                    <div className="flex items-center rounded-full border border-zinc-500 bg-zinc-900 px-4 py-1 font-normal text-zinc-500">
+                      <p className="font-medium text-white">
+                        {lang === "en" ? "2 spots left" : "2 platser kvar"}
                       </p>
                     </div>
                   </div>
