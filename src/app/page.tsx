@@ -19,7 +19,7 @@ export default function Home() {
   const handlePriorityToggle = () => setIsPrioritySelected(!isPrioritySelected);
 
   const cost = {
-    web: 3999,
+    web: 4999,
     design: 2999,
     content: 2999,
     priority: 999,
@@ -184,19 +184,13 @@ export default function Home() {
                 </div>
                 <div className="max-w-xs pt-8">
                   <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                    {lang === "en"
-                      ? "- Web design"
-                      : "- Webbdesign"}
+                    {lang === "en" ? "- Web design" : "- Webbdesign"}
                   </p>
                   <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                    {lang === "en"
-                      ? "- Web development"
-                      : "- Webbutveckling"}
+                    {lang === "en" ? "- Web development" : "- Webbutveckling"}
                   </p>
                   <p className="text-md py-2 text-zinc-500">
-                    {lang === "en"
-                      ? "- SEO & Analytics"
-                      : "- SEO & Analytics"}
+                    {lang === "en" ? "- SEO & Analytics" : "- SEO & Analytics"}
                   </p>
                 </div>
               </div>
@@ -241,19 +235,13 @@ export default function Home() {
                 </div>
                 <div className="max-w-xs pt-8">
                   <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                    {lang === "en"
-                      ? "- Branding"
-                      : "- Branding"}
+                    {lang === "en" ? "- Branding" : "- Branding"}
                   </p>
                   <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                    {lang === "en"
-                      ? "- UX/UI"
-                      : "- UX/UI"}
+                    {lang === "en" ? "- UX/UI" : "- UX/UI"}
                   </p>
                   <p className="text-md py-2 text-zinc-500">
-                    {lang === "en"
-                      ? "- Graphic design"
-                      : "- Grafisk design"}
+                    {lang === "en" ? "- Graphic design" : "- Grafisk design"}
                   </p>
                 </div>
               </div>
@@ -298,19 +286,13 @@ export default function Home() {
                 </div>
                 <div className="max-w-xs pt-8">
                   <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                    {lang === "en"
-                      ? "- Social media"
-                      : "- Sociala medier"}
+                    {lang === "en" ? "- Social media" : "- Sociala medier"}
                   </p>
                   <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                    {lang === "en"
-                      ? "- Photo & video"
-                      : "- Foto & video"}
+                    {lang === "en" ? "- Photo & video" : "- Foto & video"}
                   </p>
                   <p className="text-md py-2 text-zinc-500">
-                    {lang === "en"
-                      ? "- E-commerce"
-                      : "- E-commerce"}
+                    {lang === "en" ? "- E-commerce" : "- E-commerce"}
                   </p>
                 </div>
               </div>
@@ -381,7 +363,7 @@ export default function Home() {
                 <div>
                   <div className="flex flex-row justify-between">
                     <h3 className="text-4xl tracking-tight text-white">
-                    {lang === "en" ? "Your plan" : "Din plan"}
+                      {lang === "en" ? "Your plan" : "Din plan"}
                     </h3>
                     <div className="flex items-center rounded-full border border-zinc-500 bg-zinc-900 px-4 py-1 font-normal text-zinc-500">
                       <p className="font-medium text-white">
