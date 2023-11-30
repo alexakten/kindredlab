@@ -26,6 +26,13 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* In your global.css or a similar file */
+c {
+  background: linear-gradient(0deg, #e4e4e4, #ffffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .glow-on-hover {
   padding-left: 24px;
   padding-right: 24px;

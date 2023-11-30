@@ -14,7 +14,7 @@ const config: Config = {
       fontWeight: {
         normal: "300",
         medium: "400",
-        semibold: "450",
+        semibold: "500",
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",

@@ -22,7 +22,7 @@ export default function Home() {
     web: 4999,
     design: 2999,
     content: 2999,
-    priority: 999,
+    priority: 799,
   };
 
   const formatNumber = (num: any) => {
@@ -99,7 +99,7 @@ export default function Home() {
             </span>
           </div>
           <h1
-            className="xs:text-5xl text-4xl font-semibold tracking-tight sm:text-6xl"
+            className="xs:text-5xl gradient-text text-4xl font-semibold tracking-tight sm:text-6xl"
             style={{ lineHeight: 1.1 }}
           >
             {lang === "en"
@@ -112,7 +112,7 @@ export default function Home() {
               style={{ lineHeight: 1.6 }}
             >
               {lang === "en"
-                ? "Increase conversion and grow your business with stunning design and eye-catching content. Make (almost) any request and we'll design it."
+                ? "Increase conversion and grow your business with stunning design and content. Make (almost) any request and we'll design it."
                 : "Öka din konvertering och väx ditt varumärke med fantastisk design och content. Gör (nästan) vilken request som helst och vi designar det."}
             </p>
           </div>
@@ -131,12 +131,12 @@ export default function Home() {
       <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
         {/* Heading */}
         <div className="flex flex-col items-center gap-6">
-          <h2 className="xs:text-5xl text-4xl tracking-tight text-white">
+          <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
             {lang === "en" ? "How it works" : "Hur det går till"}
           </h2>
           <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
             {lang === "en"
-              ? "Create your own plan. Only add the services you need each month."
+              ? "Create your own plan. Each month you only pay for what you need."
               : "Välj mellan en eller två requests åt gången. Obegränsad revision, alltid."}
           </p>
         </div>
@@ -292,7 +292,7 @@ export default function Home() {
                     {lang === "en" ? "- Photo & video" : "- Foto & video"}
                   </p>
                   <p className="text-md py-2 text-zinc-500">
-                    {lang === "en" ? "- E-commerce" : "- E-commerce"}
+                    {lang === "en" ? "- E-commerce" : "- E-handel"}
                   </p>
                 </div>
               </div>
