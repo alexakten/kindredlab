@@ -185,18 +185,18 @@ export default function Home() {
                 <div className="max-w-xs pt-8">
                   <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
                     {lang === "en"
-                      ? "- Web development"
-                      : "- 2 requests åt gången"}
+                      ? "- Web design"
+                      : "- Webbdesign"}
                   </p>
                   <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
                     {lang === "en"
-                      ? "- Unlimited brands"
-                      : "- Obegränsade varumärken"}
+                      ? "- Web development"
+                      : "- Webbutveckling"}
                   </p>
                   <p className="text-md py-2 text-zinc-500">
                     {lang === "en"
-                      ? "- Unlimited users"
-                      : "- Obegränsade användare"}
+                      ? "- SEO & Analytics"
+                      : "- SEO & Analytics"}
                   </p>
                 </div>
               </div>
@@ -242,18 +242,18 @@ export default function Home() {
                 <div className="max-w-xs pt-8">
                   <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
                     {lang === "en"
-                      ? "- Web development"
-                      : "- 2 requests åt gången"}
+                      ? "- Branding"
+                      : "- Branding"}
                   </p>
                   <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
                     {lang === "en"
-                      ? "- Unlimited brands"
-                      : "- Obegränsade varumärken"}
+                      ? "- UX/UI"
+                      : "- UX/UI"}
                   </p>
                   <p className="text-md py-2 text-zinc-500">
                     {lang === "en"
-                      ? "- Unlimited users"
-                      : "- Obegränsade användare"}
+                      ? "- Graphic design"
+                      : "- Grafisk design"}
                   </p>
                 </div>
               </div>
@@ -299,18 +299,18 @@ export default function Home() {
                 <div className="max-w-xs pt-8">
                   <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
                     {lang === "en"
-                      ? "- Web development"
-                      : "- 2 requests åt gången"}
+                      ? "- Social media"
+                      : "- Sociala medier"}
                   </p>
                   <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
                     {lang === "en"
-                      ? "- Unlimited brands"
-                      : "- Obegränsade varumärken"}
+                      ? "- Photo & video"
+                      : "- Foto & video"}
                   </p>
                   <p className="text-md py-2 text-zinc-500">
                     {lang === "en"
-                      ? "- Unlimited users"
-                      : "- Obegränsade användare"}
+                      ? "- E-commerce"
+                      : "- E-commerce"}
                   </p>
                 </div>
               </div>
@@ -381,7 +381,7 @@ export default function Home() {
                 <div>
                   <div className="flex flex-row justify-between">
                     <h3 className="text-4xl tracking-tight text-white">
-                      Your Plan
+                    {lang === "en" ? "Your plan" : "Din plan"}
                     </h3>
                     <div className="flex items-center rounded-full border border-zinc-500 bg-zinc-900 px-4 py-1 font-normal text-zinc-500">
                       <p className="font-medium text-white">
