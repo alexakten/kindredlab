@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Logo from "../../public/logo.js";
 
 export default function Home() {
@@ -16,6 +16,29 @@ export default function Home() {
   const handleDesignToggle = () => setIsDesignSelected(!isDesignSelected);
   const handleContentToggle = () => setIsContentSelected(!isContentSelected);
 
+  const cost = {
+    web: 3999,
+    design: 2999,
+    content: 2999,
+  };
+
+  // State to store the total price
+  const [totalPrice, setTotalPrice] = useState(0);
+
+  // Function to calculate total price
+  const calculateTotal = () => {
+    let total = 0;
+    if (isWebSelected) total += cost.web;
+    if (isDesignSelected) total += cost.design;
+    if (isContentSelected) total += cost.content;
+    return total;
+  };
+
+  // Update the total price when the selection state changes
+  useEffect(() => {
+    setTotalPrice(calculateTotal());
+  }, [isWebSelected, isDesignSelected, isContentSelected]);
+
   return (
     <main
       className="flex flex-col items-center justify-between overflow-hidden"
@@ -27,6 +50,7 @@ export default function Home() {
 `,
       }}
     >
+      {/* Grid Overlay */}
       <div
         style={{
           position: "absolute",
@@ -57,6 +81,7 @@ export default function Home() {
         </div>
       </nav>
 
+      {/* Hero Section */}
       <section className="relative flex h-screen w-screen items-center justify-center overflow-hidden px-4">
         <div className="flex max-w-4xl flex-col items-center gap-6 text-center text-white">
           <div className="rounded-full border border-zinc-500 bg-zinc-900 px-4 py-1 font-normal text-zinc-500">
@@ -94,7 +119,9 @@ export default function Home() {
         </div>
       </section>
 
+      {/* How Section */}
       <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
+        {/* Heading */}
         <div className="flex flex-col items-center gap-6">
           <h2 className="xs:text-5xl text-4xl tracking-tight text-white">
             {lang === "en" ? "How it works" : "Hur det går till"}
@@ -105,179 +132,223 @@ export default function Home() {
               : "Välj mellan en eller två requests åt gången. Obegränsad revision, alltid."}
           </p>
         </div>
-        <div className="flex w-full max-w-4xl flex-col gap-4 md:flex-row">
-          {/* Web Card */}
-          <div
-            className={`flex w-full flex-col rounded-md border  ${
-              isWebSelected
-                ? "border-white bg-white text-black"
-                : "border-zinc-500 bg-black text-white"
-            } p-8`}
-          >
-            <h3 className="text-4xl tracking-tight ">Web</h3>
-            <h2 className="pt-12 text-5xl tracking-tight">$3,999/mo</h2>
-            <p className="text-md pt-2 text-zinc-500">
-              {lang === "en"
-                ? "Pause or cancel anytime"
-                : "Pausa eller avbryt när du vill"}
-            </p>
-            <div className="pt-12">
-              <button
-                className={`rounded-full border ${
-                  isWebSelected
-                    ? "border-zinc-500 bg-white text-black hover:border-black hover:bg-black hover:text-white"
-                    : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
-                } px-4 py-2 `}
-                type="button"
-                onClick={handleWebToggle}
-              >
+        {/* Outer Cards Container */}
+        <div className="flex flex-col gap-8">
+          {/* Cards Container */}
+          <div className="flex w-full max-w-5xl flex-col gap-4 md:flex-row">
+            {/* Web Card */}
+            <div
+              className={`flex w-full flex-col rounded-md border  ${
+                isWebSelected
+                  ? "border-white bg-white text-black"
+                  : "border-zinc-500 bg-black text-white"
+              } p-8`}
+            >
+              <h3 className="text-4xl tracking-tight ">Web</h3>
+              <h2 className="pt-12 text-5xl tracking-tight">$3,999/mo</h2>
+              <p className="text-md pt-2 text-zinc-500">
                 {lang === "en"
-                  ? isWebSelected
-                    ? "Remove from plan"
-                    : "Add to plan"
-                  : isWebSelected
-                    ? "Ta bort från planen"
-                    : "Lägg till"}{" "}
-                -&gt;
-              </button>
+                  ? "Pause or cancel anytime"
+                  : "Pausa eller avbryt när du vill"}
+              </p>
+              <div className="pt-12">
+                <button
+                  className={`rounded-full border ${
+                    isWebSelected
+                      ? "border-zinc-500 bg-white text-black hover:border-black hover:bg-black hover:text-white"
+                      : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
+                  } px-4 py-2 `}
+                  type="button"
+                  onClick={handleWebToggle}
+                >
+                  {lang === "en"
+                    ? isWebSelected
+                      ? "Remove from plan"
+                      : "Add to plan"
+                    : isWebSelected
+                      ? "Ta bort från planen"
+                      : "Lägg till"}{" "}
+                  -&gt;
+                </button>
+              </div>
+              <div className="max-w-xs pt-8">
+                <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                  {lang === "en"
+                    ? "- Web development"
+                    : "- 2 requests åt gången"}
+                </p>
+                <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                  {lang === "en"
+                    ? "- App development"
+                    : "- Genomsnitt 2-4 dagar leverans"}
+                </p>
+                <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                  {lang === "en"
+                    ? "- Unlimited brands"
+                    : "- Obegränsade varumärken"}
+                </p>
+                <p className="text-md py-2 text-zinc-500">
+                  {lang === "en"
+                    ? "- Unlimited users"
+                    : "- Obegränsade användare"}
+                </p>
+              </div>
             </div>
-            <div className="max-w-xs pt-8">
-              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                {lang === "en" ? "- Web development" : "- 2 requests åt gången"}
-              </p>
-              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+            {/* Design Card */}
+            <div
+              className={`flex w-full flex-col rounded-md border  ${
+                isDesignSelected
+                  ? "border-white bg-white text-black"
+                  : "border-zinc-500 bg-black text-white"
+              } p-8`}
+            >
+              <h3 className="text-4xl tracking-tight ">Design</h3>
+              <h2 className="pt-12 text-5xl tracking-tight">$2,999/mo</h2>
+              <p className="text-md pt-2 text-zinc-500">
                 {lang === "en"
-                  ? "- App development"
-                  : "- Genomsnitt 2-4 dagar leverans"}
+                  ? "Pause or cancel anytime"
+                  : "Pausa eller avbryt när du vill"}
               </p>
-              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+              <div className="pt-12">
+                <button
+                  className={`rounded-full border ${
+                    isDesignSelected
+                      ? "border-zinc-500 bg-white text-black hover:border-black hover:bg-black hover:text-white"
+                      : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
+                  } px-4 py-2 `}
+                  type="button"
+                  onClick={handleDesignToggle}
+                >
+                  {lang === "en"
+                    ? isDesignSelected
+                      ? "Remove from plan"
+                      : "Add to plan"
+                    : isDesignSelected
+                      ? "Ta bort från planen"
+                      : "Lägg till"}{" "}
+                  -&gt;
+                </button>
+              </div>
+              <div className="max-w-xs pt-8">
+                <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                  {lang === "en"
+                    ? "- Web development"
+                    : "- 2 requests åt gången"}
+                </p>
+                <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                  {lang === "en"
+                    ? "- App development"
+                    : "- Genomsnitt 2-4 dagar leverans"}
+                </p>
+                <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                  {lang === "en"
+                    ? "- Unlimited brands"
+                    : "- Obegränsade varumärken"}
+                </p>
+                <p className="text-md py-2 text-zinc-500">
+                  {lang === "en"
+                    ? "- Unlimited users"
+                    : "- Obegränsade användare"}
+                </p>
+              </div>
+            </div>
+            {/*Content Card */}
+            <div
+              className={`flex w-full flex-col rounded-md border  ${
+                isContentSelected
+                  ? "border-white bg-white text-black"
+                  : "border-zinc-500 bg-black text-white"
+              } p-8`}
+            >
+              <h3 className="text-4xl tracking-tight ">Content</h3>
+              <h2 className="pt-12 text-5xl tracking-tight">$2,999/mo</h2>
+              <p className="text-md pt-2 text-zinc-500">
                 {lang === "en"
-                  ? "- Unlimited brands"
-                  : "- Obegränsade varumärken"}
+                  ? "Pause or cancel anytime"
+                  : "Pausa eller avbryt när du vill"}
               </p>
-              <p className="text-md py-2 text-zinc-500">
-                {lang === "en"
-                  ? "- Unlimited users"
-                  : "- Obegränsade användare"}
-              </p>
+              <div className="pt-12">
+                <button
+                  className={`rounded-full border ${
+                    isContentSelected
+                      ? "border-zinc-500 bg-white text-black hover:border-black hover:bg-black hover:text-white"
+                      : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
+                  } px-4 py-2 `}
+                  type="button"
+                  onClick={handleContentToggle}
+                >
+                  {lang === "en"
+                    ? isContentSelected
+                      ? "Remove from plan"
+                      : "Add to plan"
+                    : isContentSelected
+                      ? "Ta bort från planen"
+                      : "Lägg till"}{" "}
+                  -&gt;
+                </button>
+              </div>
+              <div className="max-w-xs pt-8">
+                <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                  {lang === "en"
+                    ? "- Web development"
+                    : "- 2 requests åt gången"}
+                </p>
+                <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                  {lang === "en"
+                    ? "- App development"
+                    : "- Genomsnitt 2-4 dagar leverans"}
+                </p>
+                <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                  {lang === "en"
+                    ? "- Unlimited brands"
+                    : "- Obegränsade varumärken"}
+                </p>
+                <p className="text-md py-2 text-zinc-500">
+                  {lang === "en"
+                    ? "- Unlimited users"
+                    : "- Obegränsade användare"}
+                </p>
+              </div>
             </div>
           </div>
-          {/* Design Card */}
-          <div
-            className={`flex w-full flex-col rounded-md border  ${
-              isDesignSelected
-                ? "border-white bg-white text-black"
-                : "border-zinc-500 bg-black text-white"
-            } p-8`}
-          >
-            <h3 className="text-4xl tracking-tight ">Design</h3>
-            <h2 className="pt-12 text-5xl tracking-tight">$2,999/mo</h2>
-            <p className="text-md pt-2 text-zinc-500">
-              {lang === "en"
-                ? "Pause or cancel anytime"
-                : "Pausa eller avbryt när du vill"}
-            </p>
-            <div className="pt-12">
-              <button
-                className={`rounded-full border ${
-                  isDesignSelected
-                    ? "border-zinc-500 bg-white text-black hover:border-black hover:bg-black hover:text-white"
-                    : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
-                } px-4 py-2 `}
-                type="button"
-                onClick={handleDesignToggle}
-              >
+          {/* Total Price */}
+          <div className="flex w-full max-w-5xl flex-col gap-4 md:flex-row">
+            <div className="flex w-full flex-col rounded-md border border-zinc-500 bg-black p-8">
+              <div className="flex flex-row justify-between">
+                <h3 className="text-4xl tracking-tight text-white">
+                  Your Plan
+                </h3>
+                <div className="flex items-center rounded-full bg-zinc-800 px-4 py-1 font-medium text-white">
+                  <p>{lang === "en" ? "1 spot left " : "1 plats kvar "}</p>
+                </div>
+              </div>
+              <h2 className="pt-12 text-5xl tracking-tight text-white">
+                ${totalPrice}/mo
+              </h2>
+              <p className="text-md pt-2 text-zinc-500">
                 {lang === "en"
-                  ? isDesignSelected
-                    ? "Remove from plan"
-                    : "Add to plan"
-                  : isDesignSelected
-                    ? "Ta bort från planen"
-                    : "Lägg till"}{" "}
-                -&gt;
-              </button>
-            </div>
-            <div className="max-w-xs pt-8">
-              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                {lang === "en" ? "- Web development" : "- 2 requests åt gången"}
+                  ? "Pause or cancel anytime"
+                  : "Pausa eller avbryt när du vill"}
               </p>
-              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                {lang === "en"
-                  ? "- App development"
-                  : "- Genomsnitt 2-4 dagar leverans"}
-              </p>
-              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                {lang === "en"
-                  ? "- Unlimited brands"
-                  : "- Obegränsade varumärken"}
-              </p>
-              <p className="text-md py-2 text-zinc-500">
-                {lang === "en"
-                  ? "- Unlimited users"
-                  : "- Obegränsade användare"}
-              </p>
-            </div>
-          </div>
-          {/*Content Card */}
-          <div
-            className={`flex w-full flex-col rounded-md border  ${
-              isContentSelected
-                ? "border-white bg-white text-black"
-                : "border-zinc-500 bg-black text-white"
-            } p-8`}
-          >
-            <h3 className="text-4xl tracking-tight ">Content</h3>
-            <h2 className="pt-12 text-5xl tracking-tight">$2,999/mo</h2>
-            <p className="text-md pt-2 text-zinc-500">
-              {lang === "en"
-                ? "Pause or cancel anytime"
-                : "Pausa eller avbryt när du vill"}
-            </p>
-            <div className="pt-12">
-              <button
-                className={`rounded-full border ${
-                  isContentSelected
-                    ? "border-zinc-500 bg-white text-black hover:border-black hover:bg-black hover:text-white"
-                    : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
-                } px-4 py-2 `}
-                type="button"
-                onClick={handleContentToggle}
-              >
-                {lang === "en"
-                  ? isContentSelected
-                    ? "Remove from plan"
-                    : "Add to plan"
-                  : isContentSelected
-                    ? "Ta bort från planen"
-                    : "Lägg till"}{" "}
-                -&gt;
-              </button>
-            </div>
-            <div className="max-w-xs pt-8">
-              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                {lang === "en" ? "- Web development" : "- 2 requests åt gången"}
-              </p>
-              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                {lang === "en"
-                  ? "- App development"
-                  : "- Genomsnitt 2-4 dagar leverans"}
-              </p>
-              <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                {lang === "en"
-                  ? "- Unlimited brands"
-                  : "- Obegränsade varumärken"}
-              </p>
-              <p className="text-md py-2 text-zinc-500">
-                {lang === "en"
-                  ? "- Unlimited users"
-                  : "- Obegränsade användare"}
-              </p>
+              <div className="pt-12">
+                <button
+                  className="glow-on-hover rounded-full border border-white bg-white px-4 py-2 text-black"
+                  type="button"
+                >
+                  {lang === "en"
+                    ? "Get started with a call"
+                    : "Kom igång med ett samtal"}{" "}
+                  -&gt;
+                </button>
+              </div>
             </div>
           </div>
         </div>
       </section>
 
+      {/* Support Section */}
       <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
+        {/* Heading */}
         <div className="flex flex-col items-center gap-6">
           <h2 className="xs:text-5xl text-4xl tracking-tight text-white">
             {lang === "en" ? "Support & delivery" : "Support & leverans"}
@@ -288,6 +359,7 @@ export default function Home() {
               : "Välj mellan en eller två requests åt gången. Obegränsad revision, alltid."}
           </p>
         </div>
+        {/* Cards Container */}
         <div className="flex w-full max-w-4xl flex-col gap-4 md:flex-row">
           {/* Card Left */}
           <div className="flex w-full flex-col rounded-md bg-white p-8">
