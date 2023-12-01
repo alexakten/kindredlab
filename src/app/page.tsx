@@ -379,8 +379,43 @@ export default function Home() {
                       ? "Pause or cancel anytime"
                       : "Pausa eller avbryt när du vill"}
                   </p>
+                  {/* Selected Services */}
+                  <div className="max-w-xs pt-1">
+                    {isWebSelected && (
+                      <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                        <span className="font-medium text-white">
+                          ${formatNumber(cost.web)}/mo
+                        </span>
+                        {lang === "en" ? " | Web" : " | Webb"}
+                      </p>
+                    )}
+                    {isDesignSelected && (
+                      <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                        <span className="font-medium text-white">
+                          ${formatNumber(cost.design)}/mo
+                        </span>
+                        {lang === "en" ? " | Design" : " | Design"}
+                      </p>
+                    )}
+                    {isContentSelected && (
+                      <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                        <span className="font-medium text-white">
+                          ${formatNumber(cost.content)}/mo
+                        </span>
+                        {lang === "en" ? " | Content" : " | Content"}
+                      </p>
+                    )}
+                    {isPrioritySelected && (
+                      <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
+                        <span className="font-medium text-white">
+                          ${formatNumber(cost.priority)}/mo
+                        </span>
+                        {lang === "en" ? " | Priority Service" : " | Prioriterad Service"}
+                      </p>
+                    )}
+                  </div>
                 </div>
-                <div className="pt-12">
+                <div className="pt-8">
                   <button
                     className="glow-on-hover rounded-full border border-white bg-white px-4 py-2 text-black"
                     type="button"
