@@ -533,6 +533,7 @@ export default function Home() {
         </div>
         <div className="flex h-full w-full max-w-5xl flex-col justify-between rounded-md border border-zinc-500 bg-black p-1 text-white">
           <iframe
+            title="figma"
             width="100%"
             height="450"
             src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F0WhZBjMZkuuruMV2Ge5I7c%2FAirspace%3Ftype%3Ddesign%26node-id%3D158%253A698%26mode%3Ddesign%26t%3Dt0b5imcT1tXMwyW9-1"
