@@ -127,12 +127,12 @@ export default function Home() {
         </div>
       </section>
 
-      {/* How Section */}
+      {/* Price Section */}
       <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
         {/* Heading */}
         <div className="flex flex-col items-center gap-6">
           <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
-            {lang === "en" ? "How it works" : "Hur det går till"}
+            {lang === "en" ? "1. Select a plan" : "1. Välj en plan"}
           </h2>
           <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
             {lang === "en"
@@ -140,9 +140,9 @@ export default function Home() {
               : "Välj mellan en eller två requests åt gången. Obegränsad revision, alltid."}
           </p>
         </div>
-        {/* Outer Cards Container */}
+        {/* Cards Container */}
         <div className="flex w-full flex-col items-center gap-4">
-          {/* Cards Container */}
+          {/* Top Cards Container */}
           <div className="grid w-full max-w-5xl gap-4 lg:grid-cols-3">
             {/* Web Card */}
             <div className="col-span-1">
@@ -298,7 +298,7 @@ export default function Home() {
               </div>
             </div>
           </div>
-          {/* Bottom Container */}
+          {/* Bottom Cards Container */}
           <div className="grid w-full max-w-5xl gap-4 lg:grid-cols-3">
             {/* Priority Card*/}
             <div className="col-span-2 lg:col-span-1">
@@ -434,6 +434,97 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Request Section */}
+      <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
+        {/* Heading */}
+        <div className="flex max-w-sm flex-col items-center gap-6 text-center">
+          <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
+            {lang === "en" ? "2. Make requests" : "2. Gör requests"}
+          </h2>
+          <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
+            {lang === "en"
+              ? "This is an example of what we deliver in a month."
+              : "Här är vad våra kunder säger om oss."}
+          </p>
+        </div>
+        <div className="grid h-full w-full max-w-5xl grid-cols-4 gap-2 rounded-md border border-zinc-500 bg-black p-8 text-white">
+          {/* Requests*/}
+          <div className="col-span-1">
+            <div className="flex w-full flex-col rounded-md">
+              <h3 className="text-4xl tracking-tight ">Requests</h3>
+              <div className="pt-12">
+                <button
+                  className="rounded-full border border-zinc-500 bg-black px-4 py-2 text-white hover:border-white hover:bg-black"
+                  type="button"
+                  // onClick={handlePriorityToggle}
+                >
+                  {lang === "en" ? "New request " : "Ny request "}+
+                </button>
+              </div>
+            </div>
+          </div>
+          {/* To do*/}
+          <div className="col-span-1">
+            <div className="flex w-full flex-col gap-4 rounded-md p-8">
+              <p className="text-md">To do</p>
+              <div className="text-md font-normal w-48 rounded-md border border-zinc-500 px-4 py-2 text-white">
+                Create a new logo
+              </div>
+              <div className="text-md font-normal w-48 rounded-md border border-zinc-500 px-4 py-2 text-white">
+                Create a new logo
+              </div>
+            </div>
+          </div>
+          {/* Doing*/}
+          <div className="col-span-1">
+            <div className="flex w-full flex-col gap-4 rounded-md p-8">
+              <p className="text-md">Doing</p>
+              <div className="text-md w-48 rounded-md border border-zinc-500 px-4 py-2 font-normal text-white">
+                Update e-commerce 
+              </div>
+              <div className="text-md w-48 rounded-md border border-zinc-500 px-4 py-2 font-normal text-white">
+                Create a new logo
+              </div>
+            </div>
+          </div>
+          {/* Done*/}
+          <div className="col-span-1">
+            <div className="flex w-full flex-col gap-4 rounded-md p-8">
+              <p className="text-md">Done</p>
+              <div className="text-md w-48 rounded-md border border-zinc-500 px-4 py-2 font-normal text-white">
+                Create a new logo
+              </div>
+              <div className="text-md w-48 rounded-md border border-zinc-500 px-4 py-2 font-normal text-white">
+                Design landing page
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Figma Section */}
+      <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
+        {/* Heading */}
+        <div className="flex max-w-sm flex-col items-center gap-6 text-center">
+          <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
+            {lang === "en" ? "3. Get delivery" : "Recensioner"}
+          </h2>
+          <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
+            {lang === "en"
+              ? "This is an example of what we deliver in a month."
+              : "Här är vad våra kunder säger om oss."}
+          </p>
+        </div>
+        <div className="flex h-full w-full max-w-5xl flex-col justify-between rounded-md border border-zinc-500 bg-black p-1 text-white">
+          <iframe
+            title="figma"
+            width="100%"
+            height="450"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F0WhZBjMZkuuruMV2Ge5I7c%2FAirspace%3Ftype%3Ddesign%26node-id%3D158%253A698%26mode%3Ddesign%26t%3Dt0b5imcT1tXMwyW9-1"
+          ></iframe>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
         {/* Heading */}
@@ -545,29 +636,6 @@ export default function Home() {
               </div>
             </div>
           </div>
-        </div>
-      </section>
-
-      {/* Embed Section */}
-      <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
-        {/* Heading */}
-        <div className="flex max-w-sm flex-col items-center gap-6 text-center">
-          <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
-            {lang === "en" ? "What you get. Every month." : "Recensioner"}
-          </h2>
-          <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
-            {lang === "en"
-              ? "This is an example of what we deliver in a month."
-              : "Här är vad våra kunder säger om oss."}
-          </p>
-        </div>
-        <div className="flex h-full w-full max-w-5xl flex-col justify-between rounded-md border border-zinc-500 bg-black p-1 text-white">
-          <iframe
-            title="figma"
-            width="100%"
-            height="450"
-            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F0WhZBjMZkuuruMV2Ge5I7c%2FAirspace%3Ftype%3Ddesign%26node-id%3D158%253A698%26mode%3Ddesign%26t%3Dt0b5imcT1tXMwyW9-1"
-          ></iframe>
         </div>
       </section>
 
