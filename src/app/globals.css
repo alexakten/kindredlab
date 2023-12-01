@@ -27,8 +27,8 @@ body {
 }
 
 /* In your global.css or a similar file */
-c {
-  background: linear-gradient(0deg, #e4e4e4, #ffffff);
+.gradient-text {
+  background: linear-gradient(0deg, #dfdfdf, #ffffff);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
