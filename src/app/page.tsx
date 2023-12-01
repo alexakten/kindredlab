@@ -516,6 +516,38 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Ready Section */}
+      <section className="flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
+        <div className="flex max-w-4xl flex-col items-center gap-6 text-center text-white">
+          <h1
+            className="xs:text-5xl gradient-text text-4xl font-semibold tracking-tight sm:text-6xl"
+            style={{ lineHeight: 1.1 }}
+          >
+            {lang === "en"
+              ? "Ready to give it a try?"
+              : "Redo att komma igång?"}
+          </h1>
+          <div style={{ maxWidth: 640 }}>
+            <p
+              className="text-md xs:text-lg font-normal text-zinc-200"
+              style={{ lineHeight: 1.6 }}
+            >
+              {lang === "en"
+                ? "Let's have a chat and we'll see if we are a good fit for you."
+                : "Låt oss ta ett snabbt möte för att se om vi är rätt för er."}
+            </p>
+          </div>
+          <div>
+            <button
+              className="glow-on-hover rounded-full border border-white bg-white px-4 py-2 text-black"
+              type="button"
+            >
+              {lang === "en" ? "Book a call" : "Boka samtal"} -&gt;
+            </button>
+          </div>
+        </div>
+      </section>
     </main>
   );
 }
