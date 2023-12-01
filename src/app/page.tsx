@@ -434,6 +434,7 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Testimonials Section */}
       <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
         {/* Heading */}
         <div className="flex flex-col items-center gap-6">
@@ -514,6 +515,28 @@ export default function Home() {
               </div>
             </div>
           </div>
+        </div>
+      </section>
+
+      {/* Embed Section */}
+      <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
+        {/* Heading */}
+        <div className="flex max-w-sm flex-col items-center gap-6 text-center">
+          <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
+            {lang === "en" ? "What you get. Every month." : "Recensioner"}
+          </h2>
+          <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
+            {lang === "en"
+              ? "This is an example of what we deliver in a month."
+              : "Här är vad våra kunder säger om oss."}
+          </p>
+        </div>
+        <div className="flex h-full w-full max-w-5xl flex-col justify-between rounded-md border border-zinc-500 bg-black p-1 text-white">
+          <iframe
+            width="100%"
+            height="450"
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F0WhZBjMZkuuruMV2Ge5I7c%2FAirspace%3Ftype%3Ddesign%26node-id%3D158%253A698%26mode%3Ddesign%26t%3Dt0b5imcT1tXMwyW9-1"
+          ></iframe>
         </div>
       </section>
 
