@@ -443,7 +443,7 @@ export default function Home() {
           </h2>
           <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
             {lang === "en"
-              ? "Here is what our customers are saying about us."
+              ? "Here is what our customers are saying about our work."
               : "Här är vad våra kunder säger om oss."}
           </p>
         </div>
@@ -461,16 +461,31 @@ export default function Home() {
                 </p>
               </div>
               {/* Bottom Container */}
-              <div className="flex flex-row justify-between">
+              <div className="flex flex-row items-center justify-between pt-12">
                 {/* Name and Title */}
                 <div>
-                  <p className="text-md pt-8 text-white">Jan Eriksson</p>
-                  <p className="text-md text-zinc-500">
-                    {lang === "en" ? "CEO, Flexiwaggon" : "VD, Flexiwaggon"}
-                  </p>
+                  <div className="flex flex-row items-center gap-4">
+                    {/* Image */}
+                    <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full">
+                      <Image
+                        src="/jan.png"
+                        alt="Collect"
+                        width={48} // Adjust the width and height as needed
+                        height={48} // The values must be equal for a perfect circle
+                        objectFit="cover" // This ensures the image covers the entire area
+                      />
+                    </div>
+                    {/* Text */}
+                    <div>
+                      <p className="text-md text-white">Jan Eriksson</p>
+                      <p className="text-md text-zinc-500">
+                        {lang === "en" ? "CEO, Flexiwaggon" : "VD, Flexiwaggon"}
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 {/* Button */}
-                <div className="pt-8">
+                <div>
                   <button
                     className="rounded-full border border-zinc-500 bg-black px-4 py-2 text-white hover:border-white hover:bg-black"
                     type="button"
@@ -495,16 +510,31 @@ export default function Home() {
                 </p>
               </div>
               {/* Bottom Container */}
-              <div className="flex flex-row justify-between">
+              <div className="flex flex-row items-center justify-between pt-12">
                 {/* Name and Title */}
                 <div>
-                  <p className="text-md pt-8 text-white">Magnus Ivarsson</p>
-                  <p className="text-md text-zinc-500">
-                    {lang === "en" ? "CEO, MycoMine" : "VD, MycoMine"}
-                  </p>
+                  <div className="flex flex-row items-center gap-4">
+                    {/* Image */}
+                    <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full">
+                      <Image
+                        src="/magnus.png"
+                        alt="Collect"
+                        width={48} //
+                        height={48}
+                        objectFit="cover"
+                      />
+                    </div>
+                    {/* Text */}
+                    <div>
+                      <p className="text-md text-white">Magnus Ivarsson</p>
+                      <p className="text-md text-zinc-500">
+                        {lang === "en" ? "CEO, MycoMine" : "VD, MycoMine"}
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 {/* Button */}
-                <div className="pt-8">
+                <div>
                   <button
                     className="rounded-full border border-zinc-500 bg-black px-4 py-2 text-white hover:border-white hover:bg-black"
                     type="button"
