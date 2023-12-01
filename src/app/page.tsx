@@ -588,8 +588,8 @@ export default function Home() {
               style={{ lineHeight: 1.6 }}
             >
               {lang === "en"
-                ? "Let's have a chat and we'll see if we are a good fit for you."
-                : "Låt oss ta ett snabbt möte för att se om vi är rätt för er."}
+                ? "Let's have a chat and we'll see if we're a good fit."
+                : "Låt oss ta ett snabbt möte för att se om vi passar."}
             </p>
           </div>
           <div>
