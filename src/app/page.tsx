@@ -410,7 +410,9 @@ export default function Home() {
                         <span className="font-medium text-white">
                           ${formatNumber(cost.priority)}/mo
                         </span>
-                        {lang === "en" ? " | Priority Service" : " | Prioriterad Service"}
+                        {lang === "en"
+                          ? " | Priority Service"
+                          : " | Prioriterad Service"}
                       </p>
                     )}
                   </div>
@@ -424,6 +426,89 @@ export default function Home() {
                       ? "Get started with a call"
                       : "Kom igång med ett samtal"}{" "}
                     -&gt;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
+        {/* Heading */}
+        <div className="flex flex-col items-center gap-6">
+          <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
+            {lang === "en" ? "Testimonials" : "Recensioner"}
+          </h2>
+          <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
+            {lang === "en"
+              ? "Here is what our customers are saying about us."
+              : "Här är vad våra kunder säger om oss."}
+          </p>
+        </div>
+        <div className="grid w-full max-w-5xl gap-4 lg:grid-cols-2">
+          {/* Quote 1 */}
+          <div className="col-span-1">
+            <div className="flex h-full w-full flex-col justify-between rounded-md border border-zinc-500 bg-black p-8 text-white">
+              {/* Logo and Quote */}
+              <div>
+                <h3 className="text-4xl tracking-tight ">Flexiwaggon</h3>
+                <p className="text-md xs:text-lg pt-12 text-zinc-200">
+                  &quot;Professionellt team som gör ett mycket bra jobb. Efter
+                  första jobbet anlitade jag dom igen. Fick ett väldigt bra och
+                  proffesionellt bemötande.&quot;
+                </p>
+              </div>
+              {/* Bottom Container */}
+              <div className="flex flex-row justify-between">
+                {/* Name and Title */}
+                <div>
+                  <p className="text-md pt-8 text-white">Jan Eriksson</p>
+                  <p className="text-md text-zinc-500">
+                    {lang === "en" ? "CEO, Flexiwaggon" : "VD, Flexiwaggon"}
+                  </p>
+                </div>
+                {/* Button */}
+                <div className="pt-8">
+                  <button
+                    className="rounded-full border border-zinc-500 bg-black px-4 py-2 text-white hover:border-white hover:bg-black"
+                    type="button"
+                  >
+                    {lang === "en" ? "Visit site" : "Besök hemsida"} -&gt;
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          {/* Quote 2 */}
+          <div className="col-span-1">
+            <div className="flex h-full w-full flex-col justify-between rounded-md border border-zinc-500 bg-black p-8 text-white">
+              {/* Logo and Quote */}
+              <div>
+                <h3 className="text-4xl tracking-tight ">MycoMine</h3>
+                <p className="text-md xs:text-lg pt-12 text-zinc-200">
+                  &quot;Kindred Lab förstod vårt företag och hur man bäst
+                  kommunicerar vår vision. Vi är tacksamma över att få ha
+                  arbetat med dem, och hoppas på att göra det igen i framtiden.
+                  &quot;
+                </p>
+              </div>
+              {/* Bottom Container */}
+              <div className="flex flex-row justify-between">
+                {/* Name and Title */}
+                <div>
+                  <p className="text-md pt-8 text-white">Magnus Ivarsson</p>
+                  <p className="text-md text-zinc-500">
+                    {lang === "en" ? "CEO, MycoMine" : "VD, MycoMine"}
+                  </p>
+                </div>
+                {/* Button */}
+                <div className="pt-8">
+                  <button
+                    className="rounded-full border border-zinc-500 bg-black px-4 py-2 text-white hover:border-white hover:bg-black"
+                    type="button"
+                  >
+                    {lang === "en" ? "Visit site" : "Besök hemsida"} -&gt;
                   </button>
                 </div>
               </div>
