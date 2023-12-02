@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect } from "react";
+import { useState, useEffect, ChangeEvent  } from "react";
 import Logo from "../../public/logo.js";
 
 export default function Home() {
@@ -17,6 +17,20 @@ export default function Home() {
   const handleDesignToggle = () => setIsDesignSelected(!isDesignSelected);
   const handleContentToggle = () => setIsContentSelected(!isContentSelected);
   const handlePriorityToggle = () => setIsPrioritySelected(!isPrioritySelected);
+
+  const [requests, setRequests] = useState<string[]>([]);
+  const [newRequest, setNewRequest] = useState<string>("");
+
+  const handleAddRequest = () => {
+    if (newRequest.trim() !== "") {
+      setRequests([...requests, newRequest]);
+      setNewRequest(""); // Clear the input field after adding
+    }
+  };
+
+  const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
+    setNewRequest(e.target.value);
+  };
 
   const cost = {
     web: 4999,
@@ -443,59 +457,73 @@ export default function Home() {
           </h2>
           <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
             {lang === "en"
-              ? "This is an example of what we deliver in a month."
+              ? "We use a kanban board in Notion where you can make requests."
               : "Här är vad våra kunder säger om oss."}
           </p>
         </div>
-        <div className="grid h-full w-full max-w-5xl grid-cols-4 gap-2 rounded-md border border-zinc-500 bg-black p-8 text-white">
+        <div className="pt- grid h-full w-full max-w-5xl grid-cols-4 gap-2 rounded-md border border-zinc-500 bg-black p-8 text-white">
           {/* Requests*/}
           <div className="col-span-1">
             <div className="flex w-full flex-col rounded-md">
               <h3 className="text-4xl tracking-tight ">Requests</h3>
-              <div className="pt-12">
+              <div className="pt-6">
+                <p className="pb-3">Create new request</p>
+                <div className="pb-4">
+                  <input
+                    className="rounded-md border border-zinc-500 bg-black px-4 py-2 text-white"
+                    title="request"
+                    value={newRequest}
+                    onChange={handleInputChange}
+                  ></input>
+                </div>
                 <button
-                  className="rounded-full border border-zinc-500 bg-black px-4 py-2 text-white hover:border-white hover:bg-black"
+                  className="rounded-full border border-zinc-500 bg-black px-4 py-2 text-white hover:border-white"
                   type="button"
-                  // onClick={handlePriorityToggle}
+                  onClick={handleAddRequest}
                 >
-                  {lang === "en" ? "New request " : "Ny request "}+
+                  {lang === "en" ? "Add request " : "Lägg till "}+
                 </button>
               </div>
             </div>
           </div>
-          {/* To do*/}
-          <div className="col-span-1">
-            <div className="flex w-full flex-col gap-4 rounded-md p-8">
-              <p className="text-md">To do</p>
-              <div className="text-md font-normal w-48 rounded-md border border-zinc-500 px-4 py-2 text-white">
-                Create a new logo
-              </div>
-              <div className="text-md font-normal w-48 rounded-md border border-zinc-500 px-4 py-2 text-white">
-                Create a new logo
-              </div>
+          {/* To do */}
+          <div className="col-span-1 pt-8">
+            <div className="flex w-full flex-col gap-3 rounded-md p-8">
+              <p className="text-md">Requests</p>
+              {requests.map((request, index) => (
+                <div
+                  key={index}
+                  className="text-md w-48 rounded-md bg-zinc-200 px-4 py-2 font-medium text-black"
+                >
+                  {request}
+                </div>
+              ))}
             </div>
           </div>
           {/* Doing*/}
-          <div className="col-span-1">
-            <div className="flex w-full flex-col gap-4 rounded-md p-8">
+          <div className="col-span-1 pt-8">
+            <div className="flex w-full flex-col gap-3 rounded-md p-8">
               <p className="text-md">Doing</p>
-              <div className="text-md w-48 rounded-md border border-zinc-500 px-4 py-2 font-normal text-white">
-                Update e-commerce 
+              <div className="text-md w-48 rounded-md bg-zinc-200 px-4 py-2 font-medium text-black">
+                Change images
               </div>
-              <div className="text-md w-48 rounded-md border border-zinc-500 px-4 py-2 font-normal text-white">
-                Create a new logo
+              <div className="text-md w-48 rounded-md bg-zinc-200 px-4 py-2 font-medium text-black">
+                Social media ad
               </div>
             </div>
           </div>
           {/* Done*/}
-          <div className="col-span-1">
-            <div className="flex w-full flex-col gap-4 rounded-md p-8">
+          <div className="col-span-1 pt-8">
+            <div className="flex w-full flex-col gap-3 rounded-md p-8">
               <p className="text-md">Done</p>
-              <div className="text-md w-48 rounded-md border border-zinc-500 px-4 py-2 font-normal text-white">
-                Create a new logo
+              <div className="text-md w-48 rounded-md bg-zinc-200 px-4 py-2 font-medium text-black">
+                Add testimonials
               </div>
-              <div className="text-md w-48 rounded-md border border-zinc-500 px-4 py-2 font-normal text-white">
+              <div className="text-md w-48 rounded-md bg-zinc-200 px-4 py-2 font-medium text-black">
                 Design landing page
+              </div>
+              <div className="text-md w-48 rounded-md bg-zinc-200 px-4 py-2 font-medium text-black">
+                Create new logo
               </div>
             </div>
           </div>
