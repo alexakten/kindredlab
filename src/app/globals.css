@@ -26,11 +26,11 @@ body {
     rgb(var(--background-start-rgb));
 }
 
-/* In your global.css or a similar file */
 .gradient-text {
   background: linear-gradient(0deg, #dfdfdf, #ffffff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; /* Chrome, Safari, Opera */
+  background-clip: text; /* Standard property */
+  -webkit-text-fill-color: transparent; /* Chrome, Safari, Opera */
 }
 
 .glow-on-hover {

@@ -467,7 +467,7 @@ export default function Home() {
               : "Vi använder en kanban board i Notion där ni kan göra requests."}
           </p>
         </div>
-        <div className="pt- grid h-full w-full max-w-5xl grid-cols-4 gap-2 rounded-md border border-zinc-500 bg-black p-8 text-white">
+        <div className="grid h-full w-full max-w-5xl md:grid-cols-2 lg:grid-cols-4 gap-2 rounded-md border border-zinc-500 bg-black p-8 text-white">
           {/* Requests*/}
           <div className="col-span-1">
             <div className="flex w-full flex-col rounded-md">
