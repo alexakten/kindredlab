@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import { useState, useEffect, ChangeEvent  } from "react";
+import { useState, useEffect, ChangeEvent, useMemo } from "react";
 import Logo from "../../public/logo.js";
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
   const handlePriorityToggle = () => setIsPrioritySelected(!isPrioritySelected);
 
   const [requests, setRequests] = useState<string[]>([]);
-  const [newRequest, setNewRequest] = useState<string>("");
+  const [newRequest, setNewRequest] = useState<string>("Design ad template");
 
   const handleAddRequest = () => {
     if (newRequest.trim() !== "") {
@@ -32,13 +32,15 @@ export default function Home() {
     setNewRequest(e.target.value);
   };
 
-  const cost = {
-    web: 4999,
-    design: 2999,
-    content: 2999,
-    priority: 799,
-  };
-
+  const cost = useMemo(
+    () => ({
+      web: 4999,
+      design: 2999,
+      content: 2999,
+      priority: 799,
+    }),
+    [],
+  );
   const formatNumber = (num: any) => {
     return new Intl.NumberFormat("en-US").format(num);
   };
@@ -46,20 +48,24 @@ export default function Home() {
   // State to store the total price
   const [totalPrice, setTotalPrice] = useState(0);
 
-  // Function to calculate total price
-  const calculateTotal = () => {
-    let total = 0;
-    if (isWebSelected) total += cost.web;
-    if (isDesignSelected) total += cost.design;
-    if (isContentSelected) total += cost.content;
-    if (isPrioritySelected) total += cost.priority;
-    return total;
-  };
-
-  // Update the total price when the selection state changes
   useEffect(() => {
+    const calculateTotal = () => {
+      let total = 0;
+      if (isWebSelected) total += cost.web;
+      if (isDesignSelected) total += cost.design;
+      if (isContentSelected) total += cost.content;
+      if (isPrioritySelected) total += cost.priority;
+      return total;
+    };
+
     setTotalPrice(calculateTotal());
-  }, [isWebSelected, isDesignSelected, isContentSelected, isPrioritySelected]);
+  }, [
+    isWebSelected,
+    isDesignSelected,
+    isContentSelected,
+    isPrioritySelected,
+    cost,
+  ]);
 
   return (
     <main
@@ -458,7 +464,7 @@ export default function Home() {
           <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
             {lang === "en"
               ? "We use a kanban board in Notion where you can make requests."
-              : "Här är vad våra kunder säger om oss."}
+              : "Vi använder en kanban board i Notion där ni kan göra requests."}
           </p>
         </div>
         <div className="pt- grid h-full w-full max-w-5xl grid-cols-4 gap-2 rounded-md border border-zinc-500 bg-black p-8 text-white">
@@ -508,7 +514,7 @@ export default function Home() {
                 Change images
               </div>
               <div className="text-md w-48 rounded-md bg-zinc-200 px-4 py-2 font-medium text-black">
-                Social media ad
+                Social media content
               </div>
             </div>
           </div>
@@ -535,12 +541,12 @@ export default function Home() {
         {/* Heading */}
         <div className="flex max-w-sm flex-col items-center gap-6 text-center">
           <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
-            {lang === "en" ? "3. Get delivery" : "Recensioner"}
+            {lang === "en" ? "3. Get delivery" : "3. Få leverans"}
           </h2>
           <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
             {lang === "en"
               ? "This is an example of what we deliver in a month."
-              : "Här är vad våra kunder säger om oss."}
+              : "Det här är ett exempel på vad vi levererar under en månad."}
           </p>
         </div>
         <div className="flex h-full w-full max-w-5xl flex-col justify-between rounded-md border border-zinc-500 bg-black p-1 text-white">
@@ -574,9 +580,9 @@ export default function Home() {
               <div>
                 <h3 className="text-4xl tracking-tight ">Flexiwaggon</h3>
                 <p className="text-md xs:text-lg pt-12 text-zinc-200">
-                  &quot;Professionellt team som gör ett mycket bra jobb. Efter
-                  första jobbet anlitade jag dom igen. Fick ett väldigt bra och
-                  proffesionellt bemötande.&quot;
+                  {lang === "en"
+                    ? '"Professional team that does a very good job. After the first job, I hired them again. Received a very good and professional treatment."'
+                    : '"Professionellt team som gör ett mycket bra jobb. Efter första jobbet anlitade jag dom igen. Fick ett väldigt bra och proffesionellt bemötande."'}
                 </p>
               </div>
               {/* Bottom Container */}
@@ -608,6 +614,9 @@ export default function Home() {
                   <button
                     className="rounded-full border border-zinc-500 bg-black px-4 py-2 text-white hover:border-white hover:bg-black"
                     type="button"
+                    onClick={() =>
+                      (window.location.href = "https://www.flexiwaggon.se/")
+                    }
                   >
                     {lang === "en" ? "Visit site" : "Besök hemsida"} -&gt;
                   </button>
@@ -622,10 +631,9 @@ export default function Home() {
               <div>
                 <h3 className="text-4xl tracking-tight ">MycoMine</h3>
                 <p className="text-md xs:text-lg pt-12 text-zinc-200">
-                  &quot;Kindred Lab förstod vårt företag och hur man bäst
-                  kommunicerar vår vision. Vi är tacksamma över att få ha
-                  arbetat med dem, och hoppas på att göra det igen i framtiden.
-                  &quot;
+                  {lang === "en"
+                    ? '"Kindred Lab understood our company and how to best communicate our vision. We are grateful to have worked with them and hope to do so again in the future."'
+                    : '"Kindred Lab förstod vårt företag och hur man bäst kommunicerar vår vision. Vi är tacksamma över att få ha arbetat med dem, och hoppas på att göra det igen i framtiden."'}
                 </p>
               </div>
               {/* Bottom Container */}
@@ -657,6 +665,9 @@ export default function Home() {
                   <button
                     className="rounded-full border border-zinc-500 bg-black px-4 py-2 text-white hover:border-white hover:bg-black"
                     type="button"
+                    onClick={() =>
+                      (window.location.href = "https://www.mycomine.se/")
+                    }
                   >
                     {lang === "en" ? "Visit site" : "Besök hemsida"} -&gt;
                   </button>
