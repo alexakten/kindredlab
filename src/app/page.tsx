@@ -595,7 +595,7 @@ export default function Home() {
                 </p>
               </div>
               {/* Bottom Container */}
-              <div className="flex flex-row items-center justify-between pt-12">
+              <div className="xs:flex-row xs:items-center flex flex-col items-end justify-between gap-4 pt-12">
                 {/* Name and Title */}
                 <div>
                   <div className="flex flex-row items-center gap-4">
@@ -646,7 +646,7 @@ export default function Home() {
                 </p>
               </div>
               {/* Bottom Container */}
-              <div className="flex flex-row items-center justify-between pt-12">
+              <div className="xs:flex-row xs:items-center flex flex-col items-end justify-between gap-4 pt-12">
                 {/* Name and Title */}
                 <div>
                   <div className="flex flex-row items-center gap-4">
