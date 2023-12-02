@@ -151,9 +151,12 @@ export default function Home() {
       <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
         {/* Heading */}
         <div className="flex flex-col items-center gap-6">
-          <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
-            {lang === "en" ? "1. Select a plan" : "1. Välj en plan"}
-          </h2>
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-zinc-500">Step 1</p>
+            <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
+              {lang === "en" ? "Select a plan" : "Välj en plan"}
+            </h2>
+          </div>
           <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
             {lang === "en"
               ? "Create your own plan. Each month you only pay for what you need."
@@ -458,9 +461,12 @@ export default function Home() {
       <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
         {/* Heading */}
         <div className="flex max-w-sm flex-col items-center gap-6 text-center">
-          <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
-            {lang === "en" ? "2. Make requests" : "2. Gör requests"}
-          </h2>
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-zinc-500">Step 2</p>
+            <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
+              {lang === "en" ? "Make requests" : "Skapa requests"}
+            </h2>
+          </div>
           <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
             {lang === "en"
               ? "We use a kanban board in Notion where you can make requests."
@@ -540,9 +546,12 @@ export default function Home() {
       <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
         {/* Heading */}
         <div className="flex max-w-sm flex-col items-center gap-6 text-center">
-          <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
-            {lang === "en" ? "3. Get delivery" : "3. Få leverans"}
-          </h2>
+          <div className="flex flex-col items-center gap-2">
+            <p className="text-zinc-500">Step 3</p>
+            <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
+              {lang === "en" ? "Get delivery" : "Få leverans"}
+            </h2>
+          </div>
           <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
             {lang === "en"
               ? "This is an example of what we deliver in a month."
@@ -695,7 +704,7 @@ export default function Home() {
               style={{ lineHeight: 1.6 }}
             >
               {lang === "en"
-                ? "Let's have a chat and we'll see if we're a good fit."
+                ? "Let's have a quick chat to see if we're a good fit."
                 : "Låt oss ta ett snabbt möte för att se om vi passar."}
             </p>
           </div>
