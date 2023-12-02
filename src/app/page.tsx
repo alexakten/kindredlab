@@ -500,7 +500,7 @@ export default function Home() {
           </div>
           {/* To do */}
           <div className="col-span-1 pt-8">
-            <div className="flex w-full flex-col gap-3 rounded-md p-8">
+            <div className="flex w-full flex-col gap-3 rounded-md">
               <p className="text-md">Requests</p>
               {requests.map((request, index) => (
                 <div
@@ -514,7 +514,7 @@ export default function Home() {
           </div>
           {/* Doing*/}
           <div className="col-span-1 pt-8">
-            <div className="flex w-full flex-col gap-3 rounded-md p-8">
+            <div className="flex w-full flex-col gap-3 rounded-md">
               <p className="text-md">Doing</p>
               <div className="text-md w-48 rounded-md bg-zinc-200 px-4 py-2 font-medium text-black">
                 Change images
@@ -526,7 +526,7 @@ export default function Home() {
           </div>
           {/* Done*/}
           <div className="col-span-1 pt-8">
-            <div className="flex w-full flex-col gap-3 rounded-md p-8">
+            <div className="flex w-full flex-col gap-3 rounded-md">
               <p className="text-md">Done</p>
               <div className="text-md w-48 rounded-md bg-zinc-200 px-4 py-2 font-medium text-black">
                 Add testimonials
