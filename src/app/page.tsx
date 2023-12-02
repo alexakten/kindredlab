@@ -597,8 +597,8 @@ export default function Home() {
               {/* Bottom Container */}
               <div className="xs:flex-row xs:items-center flex flex-col items-end justify-between gap-4 pt-12">
                 {/* Name and Title */}
-                <div>
-                  <div className="flex flex-row items-center gap-4">
+                <div className="w-full">
+                  <div className="flex w-full flex-row items-center gap-4">
                     {/* Image */}
                     <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full">
                       <Image
@@ -648,7 +648,7 @@ export default function Home() {
               {/* Bottom Container */}
               <div className="xs:flex-row xs:items-center flex flex-col items-end justify-between gap-4 pt-12">
                 {/* Name and Title */}
-                <div>
+                <div className="w-full">
                   <div className="flex w-full flex-row items-center gap-4">
                     {/* Image */}
                     <div className="flex h-12 w-12 items-center justify-center overflow-hidden rounded-full">
