@@ -516,7 +516,7 @@ export default function Home() {
             <div className="flex w-full flex-col gap-3 rounded-md">
               <p className="text-md">Doing</p>
               <div className="text-md w-48 rounded-md bg-zinc-200 px-4 py-2 font-medium text-black">
-                Change images
+                Change hero image
               </div>
               <div className="text-md w-48 rounded-md bg-zinc-200 px-4 py-2 font-medium text-black">
                 Social media content
@@ -557,13 +557,15 @@ export default function Home() {
               : "Det här är ett exempel på vad vi levererar under en månad."}
           </p>
         </div>
-        <div className="flex h-full w-full max-w-5xl flex-col justify-between rounded-md border border-zinc-500 bg-black p-1 text-white">
-          <iframe
-            title="figma"
-            width="100%"
-            height="450"
-            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F0WhZBjMZkuuruMV2Ge5I7c%2FAirspace%3Ftype%3Ddesign%26node-id%3D158%253A698%26mode%3Ddesign%26t%3Dt0b5imcT1tXMwyW9-1"
-          ></iframe>
+        {/* Bento Grid */}
+        <div className="grid h-96 w-full max-w-5xl grid-cols-4 grid-rows-4 gap-4 ">
+          <div className="col-span-1 row-span-1 rounded-md border border-zinc-500"></div>
+          <div className="col-span-1 row-span-1 rounded-md border border-zinc-500"></div>
+          <div className="col-span-2 row-span-4 rounded-md border border-zinc-500"></div>
+          <div className="col-span-1 row-span-2 rounded-md border border-zinc-500"></div>
+          <div className="col-span-1 row-span-1 rounded-md border border-zinc-500"></div>
+          <div className="col-span-1 row-span-2 rounded-md border border-zinc-500"></div>
+          <div className="col-span-1 row-span-1 rounded-md border border-zinc-500"></div>
         </div>
       </section>
 
