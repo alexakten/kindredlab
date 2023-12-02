@@ -18,7 +18,7 @@ export default function Home() {
   const handleContentToggle = () => setIsContentSelected(!isContentSelected);
   const handlePriorityToggle = () => setIsPrioritySelected(!isPrioritySelected);
 
-  const [requests, setRequests] = useState<string[]>([]);
+  const [requests, setRequests] = useState<string[]>(["TikTok video"]);
   const [newRequest, setNewRequest] = useState<string>("Design ad template");
 
   const handleAddRequest = () => {
@@ -473,16 +473,15 @@ export default function Home() {
               : "Vi använder en kanban board i Notion där ni kan göra requests."}
           </p>
         </div>
-        <div className="grid h-full w-full max-w-5xl gap-2 rounded-md border border-zinc-500 bg-black p-8 text-white md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid h-full w-full max-w-5xl gap-4 rounded-md border border-zinc-500 bg-black p-8 text-white md:grid-cols-2 lg:grid-cols-4">
           {/* Requests*/}
           <div className="col-span-1">
             <div className="flex w-full flex-col rounded-md">
-              <h3 className="text-4xl tracking-tight ">Requests</h3>
-              <div className="pt-6">
+              <div className="pt">
                 <p className="pb-3">Create new request</p>
                 <div className="pb-4">
                   <input
-                    className="rounded-md border border-zinc-500 bg-black px-4 py-2 text-white"
+                    className="w-48 rounded-md border border-zinc-500 bg-black px-4 py-2 text-white"
                     title="request"
                     value={newRequest}
                     onChange={handleInputChange}
@@ -499,7 +498,7 @@ export default function Home() {
             </div>
           </div>
           {/* To do */}
-          <div className="col-span-1 pt-8">
+          <div className="col-span-1">
             <div className="flex w-full flex-col gap-3 rounded-md">
               <p className="text-md">Requests</p>
               {requests.map((request, index) => (
@@ -513,7 +512,7 @@ export default function Home() {
             </div>
           </div>
           {/* Doing*/}
-          <div className="col-span-1 pt-8">
+          <div className="col-span-1">
             <div className="flex w-full flex-col gap-3 rounded-md">
               <p className="text-md">Doing</p>
               <div className="text-md w-48 rounded-md bg-zinc-200 px-4 py-2 font-medium text-black">
@@ -525,7 +524,7 @@ export default function Home() {
             </div>
           </div>
           {/* Done*/}
-          <div className="col-span-1 pt-8">
+          <div className="col-span-1">
             <div className="flex w-full flex-col gap-3 rounded-md">
               <p className="text-md">Done</p>
               <div className="text-md w-48 rounded-md bg-zinc-200 px-4 py-2 font-medium text-black">
