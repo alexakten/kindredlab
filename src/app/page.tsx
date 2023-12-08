@@ -514,7 +514,7 @@ export default function Home() {
           {/* Doing*/}
           <div className="col-span-1">
             <div className="flex w-full flex-col gap-3 rounded-md">
-              <p className="text-md">Doing</p>
+              <p className="text-md">Working</p>
               <div className="text-md w-48 rounded-md bg-zinc-200 px-4 py-2 font-medium text-black">
                 Change hero image
               </div>
@@ -559,13 +559,27 @@ export default function Home() {
         </div>
         {/* Bento Grid */}
         <div className="grid h-96 w-full max-w-5xl grid-cols-4 grid-rows-4 gap-4 ">
+          <div className="relative col-span-1 row-span-1 rounded-md border border-zinc-500">
+            <Image
+              src="/flexiwaggon-logo.png"
+              alt="Flexiwaggon Logo"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
           <div className="col-span-1 row-span-1 rounded-md border border-zinc-500"></div>
+          <div className="relative col-span-2 row-span-3 rounded-md border border-zinc-500">
+            <Image
+              src="/flexiwaggon-hero.png"
+              alt="Flexiwaggon Hero"
+              layout="fill"
+              objectFit="cover"
+            />
+          </div>
+          <div className="col-span-1 row-span-3 rounded-md border border-zinc-500"></div>
           <div className="col-span-1 row-span-1 rounded-md border border-zinc-500"></div>
-          <div className="col-span-2 row-span-4 rounded-md border border-zinc-500"></div>
           <div className="col-span-1 row-span-2 rounded-md border border-zinc-500"></div>
-          <div className="col-span-1 row-span-1 rounded-md border border-zinc-500"></div>
-          <div className="col-span-1 row-span-2 rounded-md border border-zinc-500"></div>
-          <div className="col-span-1 row-span-1 rounded-md border border-zinc-500"></div>
+          <div className="col-span-2 row-span-1 rounded-md border border-zinc-500"></div>
         </div>
       </section>
 
