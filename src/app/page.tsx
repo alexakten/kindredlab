@@ -7,6 +7,8 @@ import TotalPriceCard from "./components/TotalPriceCard";
 import Logo from "../../public/logo.js";
 
 export default function Home() {
+  //#region
+
   const [lang, setLang] = useState("en");
 
   const serviceTitles = ["Web", "Design", "Content"];
@@ -67,6 +69,8 @@ export default function Home() {
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     setNewRequest(e.target.value);
   };
+
+  //#endregion
 
   return (
     <main
