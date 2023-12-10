@@ -158,7 +158,7 @@ export default function Home() {
           <div className="flex flex-col items-center gap-2">
             <p className="text-zinc-500">Step 1</p>
             <h2 className="gradient-text text-4xl tracking-tight text-white xs:text-5xl">
-              {lang === "en" ? "Select a plan" : "Välj en plan"}
+              {lang === "en" ? "Create your plan" : "Välj en plan"}
             </h2>
           </div>
           <p className="text-md max-w-xs text-center font-normal text-zinc-200 xs:text-lg">
