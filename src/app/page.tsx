@@ -2,21 +2,57 @@
 
 import Image from "next/image";
 import { useState, useEffect, ChangeEvent, useMemo } from "react";
+import ServiceCard from "./components/ServiceCard";
+import TotalPriceCard from "./components/TotalPriceCard";
 import Logo from "../../public/logo.js";
 
 export default function Home() {
   const [lang, setLang] = useState("en");
 
-  const [isWebSelected, setIsWebSelected] = useState(false);
-  const [isDesignSelected, setIsDesignSelected] = useState(false);
-  const [isContentSelected, setIsContentSelected] = useState(false);
-  const [isPrioritySelected, setIsPrioritySelected] = useState(false);
+  const serviceTitles = ["Web", "Design", "Content"];
 
-  // Handlers for each card
-  const handleWebToggle = () => setIsWebSelected(!isWebSelected);
-  const handleDesignToggle = () => setIsDesignSelected(!isDesignSelected);
-  const handleContentToggle = () => setIsContentSelected(!isContentSelected);
-  const handlePriorityToggle = () => setIsPrioritySelected(!isPrioritySelected);
+  // Costs for each service
+  const serviceCosts = useMemo(
+    () => ({
+      service1: 4999,
+      service2: 2999,
+      service3: 2999,
+    }),
+    [],
+  );
+
+  // Features for each service
+  const serviceFeatures = [
+    ["Web design", "Web development", "SEO & Analytics"],
+    ["Branding", "UX/UI", "Graphic design"],
+    ["Social media", "Productions", "E-commerce"],
+  ];
+
+  // State for each service's selection status
+  const [isService1Selected, setIsService1Selected] = useState(false);
+  const [isService2Selected, setIsService2Selected] = useState(false);
+  const [isService3Selected, setIsService3Selected] = useState(false);
+
+  // Handlers to toggle the selection of each service
+  const handleService1Toggle = () => setIsService1Selected(!isService1Selected);
+  const handleService2Toggle = () => setIsService2Selected(!isService2Selected);
+  const handleService3Toggle = () => setIsService3Selected(!isService3Selected);
+
+  // Calculate the total price based on selected services
+  const [totalPrice, setTotalPrice] = useState(0);
+
+  useEffect(() => {
+    let total = 0;
+    if (isService1Selected) total += serviceCosts.service1;
+    if (isService2Selected) total += serviceCosts.service2;
+    if (isService3Selected) total += serviceCosts.service3;
+    setTotalPrice(total);
+  }, [
+    isService1Selected,
+    isService2Selected,
+    isService3Selected,
+    serviceCosts,
+  ]);
 
   const [requests, setRequests] = useState<string[]>(["TikTok video"]);
   const [newRequest, setNewRequest] = useState<string>("Design ad template");
@@ -31,41 +67,6 @@ export default function Home() {
   const handleInputChange = (e: ChangeEvent<HTMLInputElement>) => {
     setNewRequest(e.target.value);
   };
-
-  const cost = useMemo(
-    () => ({
-      web: 4999,
-      design: 2999,
-      content: 2999,
-      priority: 799,
-    }),
-    [],
-  );
-  const formatNumber = (num: any) => {
-    return new Intl.NumberFormat("en-US").format(num);
-  };
-
-  // State to store the total price
-  const [totalPrice, setTotalPrice] = useState(0);
-
-  useEffect(() => {
-    const calculateTotal = () => {
-      let total = 0;
-      if (isWebSelected) total += cost.web;
-      if (isDesignSelected) total += cost.design;
-      if (isContentSelected) total += cost.content;
-      if (isPrioritySelected) total += cost.priority;
-      return total;
-    };
-
-    setTotalPrice(calculateTotal());
-  }, [
-    isWebSelected,
-    isDesignSelected,
-    isContentSelected,
-    isPrioritySelected,
-    cost,
-  ]);
 
   return (
     <main
@@ -89,7 +90,7 @@ export default function Home() {
           background: "radial-gradient(circle, transparent 20%, black 90%)",
         }}
       />
-      <nav className="xs:px-6 fixed top-5 z-20 flex w-full items-center justify-between px-4">
+      <nav className="fixed top-5 z-20 flex w-full items-center justify-between px-4 xs:px-6">
         <Logo />
         <div className="font-regular flex flex-row gap-4 text-white ">
           <button
@@ -119,16 +120,16 @@ export default function Home() {
             </span>
           </div>
           <h1
-            className="xs:text-5xl gradient-text text-4xl font-semibold tracking-tight sm:text-6xl"
+            className="gradient-text text-4xl font-semibold tracking-tight xs:text-5xl sm:text-6xl"
             style={{ lineHeight: 1.1 }}
           >
             {lang === "en"
-              ? "Unlimited design + unlimited content. One subscription."
+              ? "Unlimited design + unlimited content. One membership."
               : "Obegränsad design. Obegränsad revision. En prenumeration."}
           </h1>
           <div style={{ maxWidth: 640 }}>
             <p
-              className="text-md xs:text-lg font-normal text-zinc-200"
+              className="text-md font-normal text-zinc-200 xs:text-lg"
               style={{ lineHeight: 1.6 }}
             >
               {lang === "en"
@@ -140,6 +141,9 @@ export default function Home() {
             <button
               className="glow-on-hover rounded-full border border-white bg-white px-4 py-2 text-black"
               type="button"
+              onClick={() =>
+                (window.location.href = "mailto:alex.akten@outlook.com")
+              }
             >
               {lang === "en" ? "Book a call" : "Boka samtal"} -&gt;
             </button>
@@ -153,306 +157,64 @@ export default function Home() {
         <div className="flex flex-col items-center gap-6">
           <div className="flex flex-col items-center gap-2">
             <p className="text-zinc-500">Step 1</p>
-            <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
+            <h2 className="gradient-text text-4xl tracking-tight text-white xs:text-5xl">
               {lang === "en" ? "Select a plan" : "Välj en plan"}
             </h2>
           </div>
-          <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
+          <p className="text-md max-w-xs text-center font-normal text-zinc-200 xs:text-lg">
             {lang === "en"
               ? "Create your own plan. Each month you only pay for what you need."
               : "Välj mellan en eller två requests åt gången. Obegränsad revision, alltid."}
           </p>
         </div>
-        {/* Cards Container */}
-        <div className="flex w-full flex-col items-center gap-4">
-          {/* Top Cards Container */}
-          <div className="grid w-full max-w-5xl gap-4 lg:grid-cols-3">
-            {/* Web Card */}
-            <div className="col-span-1">
-              <div
-                className={`flex w-full flex-col rounded-md border  ${
-                  isWebSelected
-                    ? "border-white bg-white text-black"
-                    : "border-zinc-500 bg-black text-white"
-                } p-8`}
-              >
-                <h3 className="text-4xl tracking-tight ">Web</h3>
-                <h2 className="pt-12 text-5xl tracking-tight">
-                  ${formatNumber(cost.web)}/mo
-                </h2>
-                <p className="text-md pt-2 text-zinc-500">
-                  {lang === "en"
-                    ? "Pause or cancel anytime"
-                    : "Pausa eller avbryt när du vill"}
-                </p>
-                <div className="pt-12">
-                  <button
-                    className={`rounded-full border ${
-                      isWebSelected
-                        ? "border-zinc-500 bg-white text-black hover:border-black"
-                        : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
-                    } px-4 py-2 `}
-                    type="button"
-                    onClick={handleWebToggle}
-                  >
-                    {lang === "en"
-                      ? isWebSelected
-                        ? "Remove from plan"
-                        : "Add to plan"
-                      : isWebSelected
-                        ? "Ta bort från planen"
-                        : "Lägg till"}{" "}
-                    -&gt;
-                  </button>
-                </div>
-                <div className="max-w-xs pt-8">
-                  <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                    {lang === "en" ? "- Web design" : "- Webbdesign"}
-                  </p>
-                  <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                    {lang === "en" ? "- Web development" : "- Webbutveckling"}
-                  </p>
-                  <p className="text-md py-2 text-zinc-500">
-                    {lang === "en" ? "- SEO & Analytics" : "- SEO & Analytics"}
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* Design Card */}
-            <div className="col-span-1">
-              <div
-                className={`flex w-full flex-col rounded-md border  ${
-                  isDesignSelected
-                    ? "border-white bg-white text-black"
-                    : "border-zinc-500 bg-black text-white"
-                } p-8`}
-              >
-                <h3 className="text-4xl tracking-tight ">Design</h3>
-                <h2 className="pt-12 text-5xl tracking-tight">
-                  ${formatNumber(cost.design)}/mo
-                </h2>
-                <p className="text-md pt-2 text-zinc-500">
-                  {lang === "en"
-                    ? "Pause or cancel anytime"
-                    : "Pausa eller avbryt när du vill"}
-                </p>
-                <div className="pt-12">
-                  <button
-                    className={`rounded-full border ${
-                      isDesignSelected
-                        ? "border-zinc-500 bg-white text-black hover:border-black"
-                        : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
-                    } px-4 py-2 `}
-                    type="button"
-                    onClick={handleDesignToggle}
-                  >
-                    {lang === "en"
-                      ? isDesignSelected
-                        ? "Remove from plan"
-                        : "Add to plan"
-                      : isDesignSelected
-                        ? "Ta bort från planen"
-                        : "Lägg till"}{" "}
-                    -&gt;
-                  </button>
-                </div>
-                <div className="max-w-xs pt-8">
-                  <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                    {lang === "en" ? "- Branding" : "- Branding"}
-                  </p>
-                  <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                    {lang === "en" ? "- UX/UI" : "- UX/UI"}
-                  </p>
-                  <p className="text-md py-2 text-zinc-500">
-                    {lang === "en" ? "- Graphic design" : "- Grafisk design"}
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/*Content Card */}
-            <div className="col-span-1">
-              <div
-                className={`flex w-full flex-col rounded-md border  ${
-                  isContentSelected
-                    ? "border-white bg-white text-black"
-                    : "border-zinc-500 bg-black text-white"
-                } p-8`}
-              >
-                <h3 className="text-4xl tracking-tight ">Content</h3>
-                <h2 className="pt-12 text-5xl tracking-tight">
-                  ${formatNumber(cost.content)}/mo
-                </h2>
-                <p className="text-md pt-2 text-zinc-500">
-                  {lang === "en"
-                    ? "Pause or cancel anytime"
-                    : "Pausa eller avbryt när du vill"}
-                </p>
-                <div className="pt-12">
-                  <button
-                    className={`rounded-full border ${
-                      isContentSelected
-                        ? "border-zinc-500 bg-white text-black hover:border-black"
-                        : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
-                    } px-4 py-2 `}
-                    type="button"
-                    onClick={handleContentToggle}
-                  >
-                    {lang === "en"
-                      ? isContentSelected
-                        ? "Remove from plan"
-                        : "Add to plan"
-                      : isContentSelected
-                        ? "Ta bort från planen"
-                        : "Lägg till"}{" "}
-                    -&gt;
-                  </button>
-                </div>
-                <div className="max-w-xs pt-8">
-                  <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                    {lang === "en" ? "- Social media" : "- Sociala medier"}
-                  </p>
-                  <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                    {lang === "en" ? "- Photo & video" : "- Foto & video"}
-                  </p>
-                  <p className="text-md py-2 text-zinc-500">
-                    {lang === "en" ? "- E-commerce" : "- E-handel"}
-                  </p>
-                </div>
-              </div>
-            </div>
+
+        {/* Pricing Cards Grid */}
+        <div className="grid w-full max-w-5xl gap-4 lg:grid-cols-3 lg:grid-rows-2">
+          <div className="col-span-1 row-span-1">
+            {" "}
+            <ServiceCard
+              title={serviceTitles[0]}
+              cost={serviceCosts.service1}
+              features={serviceFeatures[0]}
+              isSelected={isService1Selected}
+              onToggle={handleService1Toggle}
+              lang="en"
+            />
           </div>
-          {/* Bottom Cards Container */}
-          <div className="grid w-full max-w-5xl gap-4 lg:grid-cols-3">
-            {/* Priority Card*/}
-            <div className="col-span-2 lg:col-span-1">
-              <div
-                className={`flex w-full flex-col rounded-md border ${
-                  isPrioritySelected
-                    ? "border-white bg-white text-black"
-                    : "border-zinc-500 bg-black text-white"
-                } p-8`}
-              >
-                <h3 className="text-4xl tracking-tight ">Priority Service</h3>
-                <h2 className="pt-12 text-5xl tracking-tight">
-                  ${formatNumber(cost.priority)}/mo
-                </h2>
-                <p className="text-md pt-2 text-zinc-500">
-                  {lang === "en"
-                    ? "Pause or cancel anytime"
-                    : "Pausa eller avbryt när du vill"}
-                </p>
-                <div className="pt-12">
-                  <button
-                    className={`rounded-full border ${
-                      isPrioritySelected
-                        ? "border-zinc-500 bg-white text-black hover:border-black"
-                        : "border-zinc-500 bg-black text-white hover:border-white hover:bg-black"
-                    } px-4 py-2 `}
-                    type="button"
-                    onClick={handlePriorityToggle}
-                  >
-                    {lang === "en"
-                      ? isPrioritySelected
-                        ? "Remove from plan"
-                        : "Add to plan"
-                      : isPrioritySelected
-                        ? "Ta bort från planen"
-                        : "Lägg till"}{" "}
-                    -&gt;
-                  </button>
-                </div>
-                <div className="max-w-xs pt-8">
-                  <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                    {lang === "en"
-                      ? "- Two requests at a time"
-                      : "- Två requests åt gången"}
-                  </p>
-                  <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                    {lang === "en"
-                      ? "- Faster delivery"
-                      : "- Snabbare leverans"}
-                  </p>
-                  <p className="text-md py-2 text-zinc-500">
-                    {lang === "en"
-                      ? "- Priority support"
-                      : "- Prioriterad support"}
-                  </p>
-                </div>
-              </div>
-            </div>
-            {/* Total Price Card */}
-            <div className="col-span-2">
-              <div className="flex h-full w-full flex-col justify-between rounded-md border border-zinc-500 bg-black p-8">
-                <div>
-                  <div className="flex flex-row justify-between">
-                    <h3 className="text-4xl tracking-tight text-white">
-                      {lang === "en" ? "Your plan" : "Din plan"}
-                    </h3>
-                    <div className="flex items-center rounded-full border border-zinc-500 bg-zinc-900 px-4 py-1 font-normal text-zinc-500">
-                      <p className="font-medium text-white">
-                        {lang === "en" ? "2 spots left" : "2 platser kvar"}
-                      </p>
-                    </div>
-                  </div>
-                  <h2 className="pt-12 text-5xl tracking-tight text-white">
-                    ${formatNumber(totalPrice)}/mo
-                  </h2>
-                  <p className="text-md pt-2 text-zinc-500">
-                    {lang === "en"
-                      ? "Pause or cancel anytime"
-                      : "Pausa eller avbryt när du vill"}
-                  </p>
-                  {/* Selected Services */}
-                  <div className="max-w-xs pt-1">
-                    {isWebSelected && (
-                      <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                        <span className="font-medium text-white">
-                          ${formatNumber(cost.web)}/mo
-                        </span>
-                        {lang === "en" ? " | Web" : " | Webb"}
-                      </p>
-                    )}
-                    {isDesignSelected && (
-                      <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                        <span className="font-medium text-white">
-                          ${formatNumber(cost.design)}/mo
-                        </span>
-                        {lang === "en" ? " | Design" : " | Design"}
-                      </p>
-                    )}
-                    {isContentSelected && (
-                      <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                        <span className="font-medium text-white">
-                          ${formatNumber(cost.content)}/mo
-                        </span>
-                        {lang === "en" ? " | Content" : " | Content"}
-                      </p>
-                    )}
-                    {isPrioritySelected && (
-                      <p className="text-md border-b border-zinc-800 py-2 text-zinc-500">
-                        <span className="font-medium text-white">
-                          ${formatNumber(cost.priority)}/mo
-                        </span>
-                        {lang === "en"
-                          ? " | Priority Service"
-                          : " | Prioriterad Service"}
-                      </p>
-                    )}
-                  </div>
-                </div>
-                <div className="pt-8">
-                  <button
-                    className="glow-on-hover rounded-full border border-white bg-white px-4 py-2 text-black"
-                    type="button"
-                  >
-                    {lang === "en"
-                      ? "Get started with a call"
-                      : "Kom igång med ett samtal"}{" "}
-                    -&gt;
-                  </button>
-                </div>
-              </div>
-            </div>
+          <div className="col-span-1 row-span-1">
+            {" "}
+            <ServiceCard
+              title={serviceTitles[1]}
+              cost={serviceCosts.service2}
+              features={serviceFeatures[1]}
+              isSelected={isService2Selected}
+              onToggle={handleService2Toggle}
+              lang="en"
+            />
+          </div>
+          <div className="col-span-1 row-span-1">
+            {" "}
+            <ServiceCard
+              title={serviceTitles[2]}
+              cost={serviceCosts.service3}
+              features={serviceFeatures[2]}
+              isSelected={isService3Selected}
+              onToggle={handleService3Toggle}
+              lang="en"
+            />
+          </div>
+          <div className="col-span-3 row-span-1">
+            <TotalPriceCard
+              serviceTitles={serviceTitles}
+              serviceCosts={serviceCosts}
+              selectedServices={[
+                isService1Selected,
+                isService2Selected,
+                isService3Selected,
+              ]}
+              totalPrice={totalPrice}
+              lang="en"
+            />
           </div>
         </div>
       </section>
@@ -463,11 +225,11 @@ export default function Home() {
         <div className="flex max-w-sm flex-col items-center gap-6 text-center">
           <div className="flex flex-col items-center gap-2">
             <p className="text-zinc-500">Step 2</p>
-            <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
+            <h2 className="gradient-text text-4xl tracking-tight text-white xs:text-5xl">
               {lang === "en" ? "Make requests" : "Skapa requests"}
             </h2>
           </div>
-          <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
+          <p className="text-md max-w-xs text-center font-normal text-zinc-200 xs:text-lg">
             {lang === "en"
               ? "We use a kanban board in Notion where you can make requests."
               : "Vi använder en kanban board i Notion där ni kan göra requests."}
@@ -547,11 +309,11 @@ export default function Home() {
         <div className="flex max-w-sm flex-col items-center gap-6 text-center">
           <div className="flex flex-col items-center gap-2">
             <p className="text-zinc-500">Step 3</p>
-            <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
+            <h2 className="gradient-text text-4xl tracking-tight text-white xs:text-5xl">
               {lang === "en" ? "Get delivery" : "Få leverans"}
             </h2>
           </div>
-          <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
+          <p className="text-md max-w-xs text-center font-normal text-zinc-200 xs:text-lg">
             {lang === "en"
               ? "This is an example of what we deliver in a month."
               : "Det här är ett exempel på vad vi levererar under en månad."}
@@ -587,10 +349,10 @@ export default function Home() {
       <section className="relative flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
         {/* Heading */}
         <div className="flex flex-col items-center gap-6">
-          <h2 className="xs:text-5xl gradient-text text-4xl tracking-tight text-white">
+          <h2 className="gradient-text text-4xl tracking-tight text-white xs:text-5xl">
             {lang === "en" ? "Testimonials" : "Recensioner"}
           </h2>
-          <p className="text-md xs:text-lg max-w-xs text-center font-normal text-zinc-200">
+          <p className="text-md max-w-xs text-center font-normal text-zinc-200 xs:text-lg">
             {lang === "en"
               ? "Here is what our customers are saying about our work."
               : "Här är vad våra kunder säger om oss."}
@@ -603,14 +365,14 @@ export default function Home() {
               {/* Logo and Quote */}
               <div>
                 <h3 className="text-4xl tracking-tight ">Flexiwaggon</h3>
-                <p className="text-md xs:text-lg pt-12 text-zinc-200">
+                <p className="text-md pt-12 text-zinc-200 xs:text-lg">
                   {lang === "en"
                     ? '"Professional team that does a very good job. After the first job, I hired them again. Received a very good and professional treatment."'
                     : '"Professionellt team som gör ett mycket bra jobb. Efter första jobbet anlitade jag dom igen. Fick ett väldigt bra och proffesionellt bemötande."'}
                 </p>
               </div>
               {/* Bottom Container */}
-              <div className="xs:flex-row flex flex-col items-center justify-between gap-4 pt-12">
+              <div className="flex flex-col items-center justify-between gap-4 pt-12 xs:flex-row">
                 {/* Name and Title */}
                 <div className="w-full">
                   <div className="flex flex-row items-center gap-4">
@@ -654,14 +416,14 @@ export default function Home() {
               {/* Logo and Quote */}
               <div>
                 <h3 className="text-4xl tracking-tight ">MycoMine</h3>
-                <p className="text-md xs:text-lg pt-12 text-zinc-200">
+                <p className="text-md pt-12 text-zinc-200 xs:text-lg">
                   {lang === "en"
                     ? '"Kindred Lab understood our company and how to best communicate our vision. We are grateful to have worked with them and hope to do so again in the future."'
                     : '"Kindred Lab förstod vårt företag och hur man bäst kommunicerar vår vision. Vi är tacksamma över att få ha arbetat med dem, och hoppas på att göra det igen i framtiden."'}
                 </p>
               </div>
               {/* Bottom Container */}
-              <div className="xs:flex-row xs:items-center flex flex-col items-end justify-between gap-4 pt-12">
+              <div className="flex flex-col items-end justify-between gap-4 pt-12 xs:flex-row xs:items-center">
                 {/* Name and Title */}
                 <div className="w-full">
                   <div className="flex w-full flex-row items-center gap-4">
@@ -706,7 +468,7 @@ export default function Home() {
       <section className="flex w-screen flex-col items-center justify-center gap-16 overflow-hidden bg-black px-4 pb-40">
         <div className="flex max-w-4xl flex-col items-center gap-6 text-center text-white">
           <h1
-            className="xs:text-5xl gradient-text text-4xl font-semibold tracking-tight sm:text-6xl"
+            className="gradient-text text-4xl font-semibold tracking-tight xs:text-5xl sm:text-6xl"
             style={{ lineHeight: 1.1 }}
           >
             {lang === "en"
@@ -715,7 +477,7 @@ export default function Home() {
           </h1>
           <div style={{ maxWidth: 640 }}>
             <p
-              className="text-md xs:text-lg font-normal text-zinc-200"
+              className="text-md font-normal text-zinc-200 xs:text-lg"
               style={{ lineHeight: 1.6 }}
             >
               {lang === "en"
@@ -727,6 +489,9 @@ export default function Home() {
             <button
               className="glow-on-hover rounded-full border border-white bg-white px-4 py-2 text-black"
               type="button"
+              onClick={() =>
+                (window.location.href = "mailto:alex.akten@outlook.com")
+              }
             >
               {lang === "en" ? "Book a call" : "Boka samtal"} -&gt;
             </button>

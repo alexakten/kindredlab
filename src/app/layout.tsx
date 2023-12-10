@@ -5,7 +5,7 @@ import { Analytics } from "@vercel/analytics/react";
 
 export const metadata: Metadata = {
   title: "Kindred Lab",
-  description: "Unlimited design subscription.",
+  description: "Unlimited design membership.",
 };
 
 export default function RootLayout({
