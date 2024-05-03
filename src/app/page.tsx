@@ -28,7 +28,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="z-10 mt-64 flex flex-col items-center">
+      <section className="z-10 mt-40 sm:mt-64 flex flex-col items-center">
         <h1 className="mt-4 max-w-2xl text-center text-6xl font-semibold leading-[1.1]">
           Teel
         </h1>
