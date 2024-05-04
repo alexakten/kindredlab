@@ -51,7 +51,7 @@ export default function Navbar() {
       <div className="flex gap-2">
         <Link
           href={"/"}
-          className="flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium hover:bg-gray-100"
+          className="flex tracking-normal items-center border border-gray-50 hover:border-gray-200 gap-1 rounded-full px-3 py-2 text-sm font-medium hover:bg-gray-100"
         >
           <svg
             xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +72,7 @@ export default function Navbar() {
         </Link>
         <Link
           href={"/"}
-          className="flex items-center gap-1 rounded-full px-3 py-2 text-sm font-medium hover:bg-gray-100"
+          className="flex tracking-normal items-center gap-1 border border-gray-50 hover:border-gray-200 rounded-full px-3 py-2 text-sm font-medium hover:bg-gray-100"
         >
           Sign up
         </Link>
