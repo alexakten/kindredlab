@@ -237,7 +237,7 @@ export default function Home() {
 
       {/* Projects */}
       <section className="mt-40 flex w-full flex-col items-center">
-        <h2 className="mt-4 max-w-2xl text-center text-[clamp(24px,5.5vw,48px)] font-semibold leading-[1.1] tracking-tighter">
+        <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-semibold leading-[1.1] tracking-tighter">
           Recent projects
         </h2>
         <p className="mt-4 text-xl opacity-75">Here are our recent project.</p>
@@ -304,7 +304,7 @@ export default function Home() {
 
       {/* Pricing */}
       <section className="mt-40 flex w-full max-w-4xl flex-col items-center">
-        <h2 className="mt-4 max-w-2xl text-center text-[clamp(24px,5.5vw,48px)] font-semibold leading-[1.1] tracking-tighter">
+        <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-semibold leading-[1.1] tracking-tighter">
           Get started
         </h2>
         <p className="mt-4 text-xl opacity-75">Choose a pricing plan. </p>
