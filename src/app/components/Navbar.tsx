@@ -49,20 +49,20 @@ export default function Navbar() {
         </p>
       </div>
       <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-        <div className="flex gap-8 justify-center tracking-normal border bg-opacity-80 backdrop-blur-md border-gray-200 rounded-full px-8 py-2 text-sm font-medium bg-gray-100">
+        <div className="flex gap-10 justify-center tracking-normal border bg-opacity-80 backdrop-blur-md border-gray-50 rounded-full px-8 py-2 text-sm font-medium bg-gray-100">
           <Link
             href={"/"}
-            className="hover:opacity-50">
+            className="hover:underline">
             Projects
           </Link>
           <Link
             href={"/"}
-            className="hover:opacity-50">
+            className="hover:underline">
             Pricing
           </Link>
           <Link
             href={"/"}
-            className="hover:opacity-50">
+            className="hover:underline">
             Contact
           </Link>
         </div>
@@ -70,7 +70,7 @@ export default function Navbar() {
 
       <Link
         href={"/"}
-        className="group flex items-center gap-1 rounded-full border border-gray-50 bg-gray-50 px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-100"
+        className="group flex items-center gap-1 rounded-full border border-gray-50 bg-gray-50 bg-opacity-80 backdrop-blur-md px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-100"
       >
         Say hello{" "}
         <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
