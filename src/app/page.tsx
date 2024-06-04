@@ -3,6 +3,7 @@ import Navbar from "./components/Navbar";
 import Testimonial from "./components/Testimonial";
 import Pricing from "./components/Pricing";
 import Project from "./components/Project";
+import Footer from "./components/Footer";
 
 export default function Home() {
   return (
@@ -302,7 +303,7 @@ export default function Home() {
       </section>
 
       {/* Pricing */}
-      <section className="my-40 flex w-full max-w-4xl flex-col items-center">
+      <section className="mt-40 flex w-full max-w-4xl flex-col items-center">
         <h2 className="mt-4 max-w-2xl text-center text-[clamp(24px,5.5vw,48px)] font-semibold leading-[1.1] tracking-tighter">
           Get started
         </h2>
@@ -359,6 +360,8 @@ export default function Home() {
           </Link>
         </div>
       </section>
+
+      <Footer />
     </main>
   );
 }
