@@ -2,8 +2,8 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="absolute left-0 top-0 z-10 flex w-full justify-between px-3 py-6 sm:px-8">
-      <div className="flex  gap-1">
+    <nav className="fixed left-0 top-0 z-20 flex w-full justify-between px-3 py-6 sm:px-8">
+      <div className="flex gap-1">
         <svg
           width="24"
           height="36"
@@ -48,35 +48,35 @@ export default function Navbar() {
           Laboratory
         </p>
       </div>
-      <div className="flex gap-2">
-        <Link
-          href={"/"}
-          className="flex tracking-normal items-center border border-gray-50 hover:border-gray-200 gap-1 rounded-full px-3 py-2 text-sm font-medium hover:bg-gray-100"
-        >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="#0A0A0A"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            className="feather feather-user"
-          >
-            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2" />
-            <circle cx="12" cy="7" r="4" />
-          </svg>
-          Log in
-        </Link>
-        <Link
-          href={"/"}
-          className="flex tracking-normal items-center gap-1 border border-gray-50 hover:border-gray-200 rounded-full px-3 py-2 text-sm font-medium hover:bg-gray-100"
-        >
-          Sign up
-        </Link>
+      <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <div className="flex gap-8 justify-center tracking-normal border bg-opacity-80 backdrop-blur-md border-gray-200 rounded-full px-8 py-2 text-sm font-medium bg-gray-100">
+          <Link
+            href={"/"}
+            className="hover:opacity-50">
+            Projects
+          </Link>
+          <Link
+            href={"/"}
+            className="hover:opacity-50">
+            Pricing
+          </Link>
+          <Link
+            href={"/"}
+            className="hover:opacity-50">
+            Contact
+          </Link>
+        </div>
       </div>
+
+      <Link
+        href={"/"}
+        className="group flex items-center gap-1 rounded-full border border-gray-50 bg-gray-50 px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-100"
+      >
+        Say hello{" "}
+        <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
+          -&gt;
+        </span>
+      </Link>
     </nav>
   );
 }
