@@ -323,7 +323,7 @@ export default function Home() {
             textColor="text-black"
           />
           <Pricing
-            title="Startup"
+            title="Scaleup"
             price="250,000 SEK"
             included={[
               "Branding",
