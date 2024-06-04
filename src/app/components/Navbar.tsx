@@ -48,7 +48,7 @@ export default function Navbar() {
           Laboratory
         </p>
       </div>
-      <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
+      <div className="absolute hidden sm:block left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
         <div className="flex gap-10 justify-center tracking-normal border bg-opacity-80 backdrop-blur-md border-gray-50 rounded-full px-8 py-2 text-sm font-medium bg-gray-100">
           <Link
             href={"/"}
