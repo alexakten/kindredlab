@@ -4,7 +4,7 @@ import Testimonial from './Testimonial';
 
 const Marquee = () => {
   return (
-    <>
+    <div className='marquee-wrapper flex flex-col gap-4'>
       <div className="marquee">
         {[...Array(3)].map((_, index) => (
           <div className="marquee-list" key={index}>
@@ -35,7 +35,7 @@ const Marquee = () => {
           </div>
         ))}
       </div>
-    </>
+    </div>
   );
 };
 
