@@ -39,11 +39,11 @@ export default function Home() {
           We help startups raise <br /> their next round
         </h1>
         <p className="mt-4 text-xl opacity-75">
-          Design and development partner <br className="sm:hidden"/>for startups.
+          Design and development partner <br className="sm:hidden" />for startups.
         </p>
         <div className="mt-6 flex gap-3 tracking-normal">
           <Link
-            href={"/"}
+            href={"mailto:hello@kindredlab.io"}
             className="rounded-full bg-gradient-to-t from-gray-200 to-gray-200 p-px shadow-sm hover:shadow-none"
           >
             {/* bg-gradient-to-tl from-gray-50 to-white */}
@@ -53,7 +53,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href={"/"}
+            href={"mailto:hello@kindredlab.io"}
             className="group flex items-center gap-1 rounded-full border border-gray-50 bg-gray-50 px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-100"
           >
             Say hello{" "}
@@ -198,7 +198,7 @@ export default function Home() {
         </div>
         <div className="mt-12 flex gap-3 tracking-normal">
           <Link
-            href={"/"}
+            href={"mailto:hello@kindredlab.io"}
             className="rounded-full bg-gradient-to-t from-gray-200 to-gray-200 p-px shadow-sm hover:shadow-none"
           >
             {/* bg-gradient-to-tl from-gray-50 to-white */}
@@ -208,7 +208,7 @@ export default function Home() {
           </Link>
 
           <Link
-            href={"/"}
+            href={"mailto:hello@kindredlab.io"}
             className="group flex items-center gap-1 rounded-full border border-gray-50 bg-gray-50 px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-100"
           >
             Say hello{" "}
