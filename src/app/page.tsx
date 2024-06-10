@@ -132,7 +132,33 @@ export default function Home() {
             borderColor="border-gray-200"
             textColor="text-black"
           />
-
+          <Project
+            client="Mendly"
+            imageUrl="/images/mendly.webp"
+            websiteUrl="https://www.mendly.app/"
+            description="Mendly is a minimalistic writing app. We build their brand, website, and app. "
+            bgColor="bg-white"
+            borderColor="border-gray-200"
+            textColor="text-black"
+          />
+          <Project
+            client="Redpoint"
+            imageUrl="/images/redpoint.webp"
+            websiteUrl="https://www.redpoint.top/"
+            description="Redpoint is a coupon system for climbing gyms. We created their brand and website from scratch, and designed their product."
+            bgColor="bg-white"
+            borderColor="border-gray-200"
+            textColor="text-black"
+          />
+          <Project
+            client="Tasktree"
+            imageUrl="/images/tasktree.webp"
+            websiteUrl="https://www.tasktree.co/"
+            description="Tasktree is a task manager. We created their brand, including logo and name, and made a wailist landing page website. We also designed and built their MVP."
+            bgColor="bg-white"
+            borderColor="border-gray-200"
+            textColor="text-black"
+          />
 
         </div>
       </section>

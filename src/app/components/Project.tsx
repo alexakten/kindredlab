@@ -31,20 +31,25 @@ export default function Pricing({
           className="object-top"
         />
       </div>
-      <p className="mt-6 text-2xl font-medium tracking-tight">{client}</p>
+      <div className="h-auto flex flex-col flex-grow justify-between">
+        <div>
+          <p className="mt-6 text-2xl font-medium tracking-tight">{client}</p>
 
-      <p className="text-sm mt-2 tracking-normal opacity-75">{description}</p>
+          <p className="text-sm mt-2 tracking-normal opacity-75">{description}</p>
+        </div>
 
-      <div className="mt-8 flex justify-end">
-        <Link
-          href={"/"}
-          className="group flex items-center gap-1 rounded-full border border-gray-50 bg-gray-50 px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-100"
-        >
-          Website{" "}
-          <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
-            -&gt;
-          </span>
-        </Link>
+
+        <div className="mt-8 flex justify-end">
+          <Link
+            href={"/"}
+            className="group flex items-center gap-1 rounded-full border border-gray-50 bg-gray-50 px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-100"
+          >
+            Website{" "}
+            <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
+              -&gt;
+            </span>
+          </Link>
+        </div>
       </div>
     </div>
   );
