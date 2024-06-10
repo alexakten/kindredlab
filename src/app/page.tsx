@@ -176,8 +176,6 @@ export default function Home() {
               "Branding",
               "Copywriting",
               "Website",
-              "A̶p̶p̶ ̶D̶e̶s̶i̶g̶n̶",
-              "B̶u̶s̶i̶n̶e̶s̶s̶ S̶t̶r̶a̶t̶e̶g̶y̶",
             ]}
             bgColor="bg-gray-100"
             borderColor="border-gray-200"
@@ -191,7 +189,7 @@ export default function Home() {
               "Copywriting",
               "Website",
               "App Design",
-              "Business Strategy",
+              "Content"
             ]}
             bgColor="bg-black"
             borderColor="border-black"
