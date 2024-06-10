@@ -21,7 +21,7 @@ export default function Pricing({
   return (
     <Link
       href={websiteUrl}
-      className={`flex w-full h-full flex-col rounded-lg hover:border-gray-350 border p-6 shadow-sm ${bgColor} ${borderColor} tracking-tight ${textColor}`}
+      className={`flex w-full h-full flex-col rounded-lg hover:border-gray-350 border px-6 py-8 shadow-sm ${bgColor} ${borderColor} tracking-tight ${textColor}`}
     >
       <div className="relative w-full aspect-video overflow-hidden rounded-md bg-gray-100">
         <Image
@@ -39,9 +39,9 @@ export default function Pricing({
           <p className="text-sm mt-3 tracking-normal opacity-75">{description}</p>
         </div>
 
-
+{/* 
         <div className="mt-8 flex justify-end">
-          {/* <Link
+          <Link
             href={websiteUrl}
             className="group flex items-center gap-1 rounded-full border border-gray-50 bg-gray-50 px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-100"
           >
@@ -49,8 +49,8 @@ export default function Pricing({
             <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
               -&gt;
             </span>
-          </Link> */}
-        </div>
+          </Link>
+        </div> */}
       </div>
     </Link>
   );
