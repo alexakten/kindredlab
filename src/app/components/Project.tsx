@@ -19,7 +19,8 @@ export default function Pricing({
   textColor: string;
 }) {
   return (
-    <div
+    <Link
+      href={websiteUrl}
       className={`flex w-full h-full flex-col rounded-lg  border p-6 shadow-sm ${bgColor} ${borderColor} tracking-tight ${textColor}`}
     >
       <div className="relative w-full aspect-video overflow-hidden rounded-md bg-gray-100">
@@ -40,17 +41,17 @@ export default function Pricing({
 
 
         <div className="mt-8 flex justify-end">
-          <Link
-            href={"/"}
+          {/* <Link
+            href={websiteUrl}
             className="group flex items-center gap-1 rounded-full border border-gray-50 bg-gray-50 px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-100"
           >
             Website{" "}
             <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
               -&gt;
             </span>
-          </Link>
+          </Link> */}
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
