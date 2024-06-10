@@ -105,14 +105,15 @@ export default function Home() {
             textColor="text-black"
           />
           <Project
-            client="MycoMine"
-            imageUrl="/images/mycomine.webp"
-            websiteUrl="https://www.mycomine.se/"
-            description="MycoMine uses microbial processes to treat waste. They asked us for help in rebranding and refreshing their website to attract new clients."
+            client="Mendly"
+            imageUrl="/images/mendly.webp"
+            websiteUrl="https://www.mendly.app/"
+            description="Mendly is a minimalistic writing app. We built their brand, website, and app. "
             bgColor="bg-white"
             borderColor="border-gray-200"
             textColor="text-black"
           />
+
           <Project
             client="Darwin"
             imageUrl="/images/darwin.webp"
@@ -132,10 +133,10 @@ export default function Home() {
             textColor="text-black"
           />
           <Project
-            client="Mendly"
-            imageUrl="/images/mendly.webp"
-            websiteUrl="https://www.mendly.app/"
-            description="Mendly is a minimalistic writing app. We build their brand, website, and app. "
+            client="MycoMine"
+            imageUrl="/images/mycomine.webp"
+            websiteUrl="https://www.mycomine.se/"
+            description="MycoMine uses microbial processes to treat waste. They asked us for help in rebranding and refreshing their website to attract new clients."
             bgColor="bg-white"
             borderColor="border-gray-200"
             textColor="text-black"
