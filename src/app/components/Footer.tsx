@@ -10,7 +10,7 @@ export default function Footer() {
 
 
       <div className="flex w-full justify-between">
-        <p className="text-sm opacity-50">© 2024 Kindred Lab</p>
+        <p className="text-sm opacity-50">© 2024 Kindred Laboratory</p>
 
         <div className="flex flex-col gap-3 text-right font-medium">
           <Link className="text-sm hover:underline" href={"/"}>
