@@ -34,7 +34,7 @@ export default function Home() {
       </section>
 
       {/* Hero */}
-      <section className="z-10 mt-32 flex flex-col items-center text-center sm:mt-52">
+      <section className="z-10 mt-28 flex flex-col items-center text-center sm:mt-52">
         <h1 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,60px)] font-semibold leading-[1.15] tracking-tighter">
           We help startups raise <br /> their next round
         </h1>
