@@ -10,15 +10,15 @@ export default function Home() {
   return (
     <main className="flex flex-col overflow-hidden items-center bg-gray-50 px-3 tracking-tight sm:px-8">
       <Navbar />
-      <section className="absolute top-0 w-full">
+      <section className="absolute max-w-8xl top-0 w-full">
         <div
-          className="relative h-72 w-full bg-gray-50"
+          className="relative h-56 w-full bg-gray-50"
           style={{
-            backgroundSize: "180px 180px",
+            backgroundSize: "120px 120px",
             backgroundPosition: "top",
             backgroundImage: `
-              linear-gradient(to right, rgba(0, 0, 0, 0.07) 1px, transparent 1px),
-              linear-gradient(to bottom, rgba(0, 0, 0, 0.07) 1px, transparent 1px)
+              linear-gradient(to right, rgba(0, 0, 0, 0.06) 1px, transparent 1px),
+              linear-gradient(to bottom, rgba(0, 0, 0, 0.06) 1px, transparent 1px)
             `,
           }}
         >
@@ -27,13 +27,12 @@ export default function Home() {
             className="absolute inset-0 overflow-hidden bg-gray-50"
             style={{
               background:
-                "radial-gradient(circle at top, transparent 1%, rgb(249 250 251) 100%)",
+                "radial-gradient(circle at top, transparent 0%, rgb(249 250 251) 100%)",
             }}
           />
         </div>
       </section>
 
-      <div className="overlay"></div>
 
       {/* Hero */}
       <section className="z-10 mt-40 flex flex-col items-center text-center sm:mt-52">
@@ -72,7 +71,7 @@ export default function Home() {
       </section>
 
       {/* Projects */}
-      <section className="mt-40 flex w-full flex-col items-center">
+      <section className="mt-40 max-w-8xl flex w-full flex-col items-center">
         <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-semibold leading-[1.1] tracking-tighter">
           Recent projects
         </h2>

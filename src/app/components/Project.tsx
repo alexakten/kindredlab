@@ -28,6 +28,7 @@ export default function Pricing({
           alt="Project Image"
           layout="fill"
           objectFit="cover"
+          className="object-top"
         />
       </div>
       <p className="mt-6 text-2xl font-medium tracking-tight">{client}</p>

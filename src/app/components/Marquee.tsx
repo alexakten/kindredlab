@@ -4,7 +4,9 @@ import Testimonial from './Testimonial';
 
 const Marquee = () => {
   return (
-    <div className='marquee-wrapper flex flex-col gap-4'>
+    <div className='marquee-wrapper max-w-8xl overflow-hidden relative flex flex-col gap-4'>
+      <div className='absolute z-10 bg-gradient-to-l from-transparent to-gray-50 left-0 top-0 h-full w-24'></div>
+      <div className='absolute z-10 bg-gradient-to-r from-transparent to-gray-50 right-0 top-0 h-full w-24'></div>
       <div className="marquee">
         {[...Array(3)].map((_, index) => (
           <div className="marquee-list" key={index}>
