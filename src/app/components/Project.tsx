@@ -21,7 +21,7 @@ export default function Pricing({
   return (
     <Link
       href={websiteUrl}
-      className={`flex w-full h-full flex-col rounded-lg  border p-6 shadow-sm ${bgColor} ${borderColor} tracking-tight ${textColor}`}
+      className={`flex w-full h-full flex-col rounded-lg hover:shadow-md border p-6 shadow-sm ${bgColor} ${borderColor} tracking-tight ${textColor}`}
     >
       <div className="relative w-full aspect-video overflow-hidden rounded-md bg-gray-100">
         <Image
@@ -36,7 +36,7 @@ export default function Pricing({
         <div>
           <p className="mt-6 text-2xl font-medium tracking-tight">{client}</p>
 
-          <p className="text-sm mt-2 tracking-normal opacity-75">{description}</p>
+          <p className="text-sm mt-3 tracking-normal opacity-75">{description}</p>
         </div>
 
 
