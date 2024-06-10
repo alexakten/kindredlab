@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="fixed max-w-8xl left-1/2 transform -translate-x-1/2 top-0 z-20 flex w-full justify-between px-3 py-6 sm:px-8">
+    <nav className="top-0 z-20 flex w-full max-w-8xl justify-between px-3 py-6 sm:fixed sm:left-1/2 sm:-translate-x-1/2 sm:transform sm:px-8">
       <div className="flex gap-1">
         <svg
           width="24"
@@ -43,7 +43,7 @@ export default function Navbar() {
           />
         </svg>
 
-        <p className="text-xl mix-blend-difference font-medium leading-[0.90] ">
+        <p className="text-xl font-medium leading-[0.90] mix-blend-difference ">
           Kindred <br />
           Laboratory
         </p>
@@ -71,7 +71,7 @@ export default function Navbar() {
 
       <Link
         href={"/"}
-        className="group flex items-center gap-1 rounded-full border border-gray-50 bg-gray-50 bg-opacity-80 backdrop-blur-md px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-100"
+        className="group flex items-center gap-1 rounded-full border border-gray-50 bg-gray-50 bg-opacity-80 px-5 py-2.5 text-sm font-medium backdrop-blur-md hover:border-gray-200  hover:bg-gray-100"
       >
         Say hello{" "}
         <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
