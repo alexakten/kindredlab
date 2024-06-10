@@ -9,7 +9,7 @@ export default function Testimonial({ imageUrl, text, user, role }: { imageUrl: 
 
           <Image
             src={imageUrl}
-            alt="Project Image"
+            alt="Profile Image"
             layout="fill"
             objectFit="cover"
           />
