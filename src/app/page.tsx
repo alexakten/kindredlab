@@ -33,7 +33,6 @@ export default function Home() {
         </div>
       </section>
 
-
       {/* Hero */}
       <section className="z-10 mt-40 flex flex-col items-center text-center sm:mt-52">
         <h1 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,60px)] font-semibold leading-[1.1] tracking-tighter">
