@@ -1,6 +1,6 @@
 export const testimonials = [
   {
-    text: "Working with the team at Kindred Lab is my favorite part of the week.",
+    text: "Working with the team is my favorite part of the week.",
     user: "Arvid Winterfeld",
     role: "CEO at Qura",
     imageUrl: ""
@@ -36,7 +36,7 @@ export const testimonials = [
     imageUrl: ""
   },
   {
-    text: "Really happy working with Kindred Lab.",
+    text: "Really happy working with them.",
     user: "Karthik Laxman",
     role: "CEO at Stockholm Water Tech",
     imageUrl: ""
