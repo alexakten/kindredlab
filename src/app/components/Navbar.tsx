@@ -48,7 +48,7 @@ export default function Navbar() {
         </svg>
 
         <p className="text-lg font-medium leading-[0.90] mix-blend-difference ">
-          next<br />house
+          first<br />house
 
         </p>
       </div>
