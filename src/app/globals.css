@@ -1,11 +1,18 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://use.typekit.net/zhy0giy.css');
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.font-freight {
+  font-family: 'freight-text-pro', serif;
+  font-variant-ligatures: normal; /* Enables common ligatures */
 }
 
 body {

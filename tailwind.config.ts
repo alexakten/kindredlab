@@ -8,9 +8,13 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        inter: ["Inter", "sans-serif"],
+        freight: ['"freight-text-pro"', "serif"],
+      },
       colors: {
         gray: {
-          350: '#B7BCC5', // Example value between gray-300 and gray-400
+          350: "#B7BCC5", // Example value between gray-300 and gray-400
         },
       },
       backgroundImage: {

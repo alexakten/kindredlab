@@ -21,7 +21,7 @@ export default function Pricing({
   return (
     <Link
       href={websiteUrl}
-      className={`flex w-full h-full flex-col rounded-lg hover:border-gray-350 border px-6 pt-6 pb-10 shadow-sm ${bgColor} ${borderColor} tracking-tight ${textColor}`}
+      className={`flex w-full h-full flex-col rounded-lg hover:border-gray-300 border px-6 pt-6 pb-10 shadow-sm ${bgColor} ${borderColor} tracking-tight ${textColor}`}
     >
       <div className="relative w-full aspect-video overflow-hidden rounded-md bg-gray-100">
         <Image

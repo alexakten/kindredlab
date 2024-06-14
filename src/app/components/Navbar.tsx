@@ -47,7 +47,7 @@ export default function Navbar() {
           <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H24V8V16H16V24H24V16H32H40V40H0V0ZM40 8V0H32V8H40Z" fill="black" />
         </svg>
 
-        <p className="text-lg font-medium leading-[0.90] mix-blend-difference ">
+        <p className="text-lg font-medium tracking-tight leading-[0.90] mix-blend-difference ">
           first<br />house
 
         </p>
