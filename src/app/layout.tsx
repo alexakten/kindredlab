@@ -7,7 +7,7 @@ import { GeistSans } from "geist/font/sans";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Kindred Laboratory",
+  title: "First House",
   description: "Design and development partner for startups",
 };
 

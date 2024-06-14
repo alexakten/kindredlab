@@ -2,9 +2,9 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="top-0 z-20 flex w-full max-w-8xl justify-between py-6 sm:fixed sm:left-1/2 sm:-translate-x-1/2 sm:transform sm:px-8">
-      <div className="flex gap-1">
-        <svg
+    <nav className="top-0 z-20 items-center flex w-full max-w-8xl justify-between py-6 sm:fixed sm:left-1/2 sm:-translate-x-1/2 sm:transform sm:px-8">
+      <div className="flex items-center gap-1">
+        {/* <svg
           width="24"
           height="36"
           viewBox="0 0 133 183"
@@ -41,11 +41,15 @@ export default function Navbar() {
             d="M105.75 52.6743L132.04 78.9647V78.9731L105.75 78.9731V52.6743Z"
             fill="black"
           />
+        </svg> */}
+
+        <svg width="29" height="29" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H24V8V16H16V24H24V16H32H40V40H0V0ZM40 8V0H32V8H40Z" fill="black" />
         </svg>
 
-        <p className="text-xl font-medium leading-[0.90] mix-blend-difference ">
-          Kindred <br />
-          Laboratory
+        <p className="text-lg font-medium leading-[0.90] mix-blend-difference ">
+          next<br />house
+
         </p>
       </div>
 
