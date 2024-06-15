@@ -1,57 +1,73 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Pricing({
+interface ProjectProps {
+  client: string;
+  description: Array<{ type: "text" | "link"; content: string; url?: string }>;
+  images: Array<{ type: "full" | "half"; url: string }>;
+  websiteUrl: string;
+}
+
+export default function Project({
   client,
   description,
-  imageUrl,
+  images,
   websiteUrl,
-  bgColor,
-  borderColor,
-  textColor,
-}: {
-  client: string;
-  description: string;
-  imageUrl: string;
-  websiteUrl: string;
-  bgColor: string;
-  borderColor: string;
-  textColor: string;
-}) {
+}: ProjectProps) {
   return (
-    <Link
-      href={websiteUrl}
-      className={`flex w-full h-full flex-col rounded-lg hover:border-gray-300 border px-6 pt-6 pb-10 shadow-sm ${bgColor} ${borderColor} tracking-tight ${textColor}`}
-    >
-      <div className="relative w-full aspect-video overflow-hidden rounded-md bg-gray-100">
-        <Image
-          src={imageUrl}
-          alt="Project Image"
-          layout="fill"
-          objectFit="cover"
-          className="object-top"
-        />
+    <div className="mt-56 flex flex-col items-center text-center">
+      <p className={`max-w-md text-2xl font-medium tracking-tight`}>{client}</p>
+      <div className="mt-2 max-w-sm text-xl font-normal tracking-tight">
+        {description.map((item, index) => {
+          if (item.type === "text") {
+            return <span key={index}>{item.content}</span>;
+          } else if (item.type === "link" && item.url) {
+            return (
+              <Link key={index} href={item.url} passHref>
+                <span className="underline cursor-pointer">{item.content}</span>
+              </Link>
+            );
+          }
+          return null;
+        })}
       </div>
-      <div className="h-auto flex flex-col flex-grow justify-between">
-        <div>
-          <p className="mt-6 text-2xl font-medium tracking-tight">{client}</p>
 
-          <p className="text-sm mt-3 tracking-normal opacity-75">{description}</p>
-        </div>
-
-{/* 
-        <div className="mt-8 flex justify-end">
-          <Link
-            href={websiteUrl}
-            className="group flex items-center gap-1 rounded-full border border-gray-50 bg-gray-50 px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-100"
-          >
-            Website{" "}
-            <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
-              -&gt;
-            </span>
-          </Link>
-        </div> */}
+      <div className="mt-12 grid w-full grid-cols-1 gap-4 md:grid-cols-2">
+        {images.map((image, index) => {
+          if (image.type === "full") {
+            return (
+              <div
+                key={index}
+                className={`aspect-w-16 aspect-h-9 relative col-span-1 w-full overflow-hidden rounded-3xl border border-gray-200 bg-gray-100 md:col-span-2`}
+              >
+                <Image
+                  src={image.url}
+                  alt={`Project Image ${index + 1}`}
+                  layout="fill"
+                  objectFit="cover"
+                  className="object-top"
+                />
+              </div>
+            );
+          } else if (image.type === "half") {
+            return (
+              <div
+                key={index}
+                className={`aspect-w-8 aspect-h-9 relative col-span-1 w-full overflow-hidden rounded-3xl border border-gray-200 bg-gray-100`}
+              >
+                <Image
+                  src={image.url}
+                  alt={`Project Image ${index + 1}`}
+                  layout="fill"
+                  objectFit="cover"
+                  className="object-top"
+                />
+              </div>
+            );
+          }
+          return null;
+        })}
       </div>
-    </Link>
+    </div>
   );
 }

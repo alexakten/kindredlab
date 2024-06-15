@@ -70,101 +70,58 @@ export default function Home() {
       </section>
 
       {/* Projects */}
-      <section className="mt-40 max-w-8xl flex w-full flex-col items-center">
-        <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-semibold leading-[1.1] tracking-tighter">
+      <section className=" max-w-8xl flex w-full flex-col items-center">
+        {/* <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-semibold leading-[1.1] tracking-tighter">
           Recent projects
-        </h2>
-        <p className="mt-4 text-xl opacity-75">Here are our recent project.</p>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full mt-12 gap-4">
-          <Project
-            client="Airbon"
-            imageUrl="/images/airbon.webp"
-            websiteUrl="https://www.airbon.co/"
-            description="Airbon is a climate tech startup working with regenerative farming and carbon sequestration. We created the name, brand, logo, and website."
-            bgColor="bg-white"
-            borderColor="border-gray-200"
-            textColor="text-black"
-          />
-          <Project
-            client="SWT"
-            imageUrl="/images/stockholm.webp"
-            websiteUrl="https://www.stockholmwater.com/"
-            description="Stockholm Water Technology deals with water purification and cleaning. They needed help refreshing their brand and website before trying to raise another round."
-            bgColor="bg-white"
-            borderColor="border-gray-200"
-            textColor="text-black"
-          />
-          <Project
-            client="Flexiwaggon"
-            imageUrl="/images/flexiwaggon.webp"
-            websiteUrl="https://flexiwaggon.webflow.io/"
-            description="Flexiwaggon is a sustainable transport scaleup. Before talking to investors, they needed help with creating a brand and website that showcased their product."
-            bgColor="bg-white"
-            borderColor="border-gray-200"
-            textColor="text-black"
-          />
-          <Project
-            client="Mendly"
-            imageUrl="/images/mendly.webp"
-            websiteUrl="https://www.mendly.app/"
-            description="Mendly is a minimalistic writing app. We built their brand, website, and app. "
-            bgColor="bg-white"
-            borderColor="border-gray-200"
-            textColor="text-black"
-          />
-
-          <Project
-            client="Darwin"
-            imageUrl="/images/darwin.webp"
-            websiteUrl="https://www.hiredarwin.ai/"
-            description="Darwin is an AI agent for sales outreach. They needed help with building a website from scratch that would display their product."
-            bgColor="bg-white"
-            borderColor="border-gray-200"
-            textColor="text-black"
-          />
+        </h2> */}
+        <div className="grid grid-cols-1 max-w-5xl w-full">
           <Project
             client="Qura"
-            imageUrl="/images/qura.webp"
-            websiteUrl="https://www.qura.law/"
-            description="Qura is an AI-powered legal research tool for lawyers. To help them raise their next round we created their entire website from scratch."
-            bgColor="bg-white"
-            borderColor="border-gray-200"
-            textColor="text-black"
+            description={[
+              { type: "text", content: "Legal research powered by AI. " },
+              // { type: "link", content: "payable.se", url: "https://www.payable.se" },
+
+            ]}
+            images={[
+              { type: "full", url: "/images/qura/qura-1.png" },
+              { type: "half", url: "/images/qura/qura-2.png" },
+              { type: "half", url: "/images/qura/qura-3.png" },
+            ]}
+            websiteUrl="https://www.airbon.co/"
           />
           <Project
-            client="MycoMine"
-            imageUrl="/images/mycomine.webp"
-            websiteUrl="https://www.mycomine.se/"
-            description="MycoMine uses microbial processes to treat waste. They asked us for help in rebranding and refreshing their website to attract new clients."
-            bgColor="bg-white"
-            borderColor="border-gray-200"
-            textColor="text-black"
+            client="Airbon"
+            description={[
+              { type: "text", content: "A climate tech startup tackling the biggest challenges of our time — " },
+              { type: "link", content: "airbon.co", url: "https://www.airbon.co" },
+
+            ]}
+            images={[
+              { type: "full", url: "/images/airbon/airbon-1.png" },
+              { type: "full", url: "/images/airbon/airbon-2.png" },
+            ]}
+            websiteUrl="https://www.airbon.co/"
           />
           <Project
-            client="Redpoint"
-            imageUrl="/images/redpoint.webp"
-            websiteUrl="https://www.redpoint.top/"
-            description="Redpoint is a coupon system for climbing gyms. We created their brand and website from scratch, and designed their product."
-            bgColor="bg-white"
-            borderColor="border-gray-200"
-            textColor="text-black"
-          />
-          <Project
-            client="Tasktree"
-            imageUrl="/images/tasktree.webp"
-            websiteUrl="https://www.tasktree.co/"
-            description="Tasktree is a task manager. We created their brand, including logo and name, and made a wailist landing page website. We also designed and built their MVP."
-            bgColor="bg-white"
-            borderColor="border-gray-200"
-            textColor="text-black"
+            client="Payable"
+            description={[
+              { type: "text", content: "A modern debt collection company. " },
+              // { type: "link", content: "payable.se", url: "https://www.payable.se" },
+
+            ]}
+            images={[
+              { type: "half", url: "/images/payable/payable-1.png" },
+              { type: "half", url: "/images/payable/payable-2.png" },
+              { type: "full", url: "/images/payable/payable-3.png" },
+            ]}
+            websiteUrl="https://www.airbon.co/"
           />
 
         </div>
       </section>
 
       {/* Pricing */}
-      <section className="mt-40 flex w-full max-w-4xl flex-col items-center">
+      <section className="mt-56 flex w-full max-w-4xl flex-col items-center">
         <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-semibold leading-[1.1] tracking-tighter">
           Get started
         </h2>
