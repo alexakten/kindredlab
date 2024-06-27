@@ -47,6 +47,7 @@ export default function Project({
                 />
               </div>
             );
+            
           } else if (image.type === "half") {
             return (
               <div
