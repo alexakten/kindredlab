@@ -16,7 +16,7 @@ export default function Footer() {
           <Link className="text-sm hover:underline" href={"/"}>
             +46 70-951 38 30          </Link>
           <Link className="text-sm hover:underline" href={"/"}>
-            hello@kindredlab.io
+            alex@thefirsthouse.se
           </Link>
         </div>
       </div>

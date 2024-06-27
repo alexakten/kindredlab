@@ -5,14 +5,12 @@ interface ProjectProps {
   client: string;
   description: Array<{ type: "text" | "link"; content: string; url?: string }>;
   images: Array<{ type: "full" | "half"; url: string }>;
-  websiteUrl: string;
 }
 
 export default function Project({
   client,
   description,
   images,
-  websiteUrl,
 }: ProjectProps) {
   return (
     <div className="mt-56 flex flex-col items-center text-center">

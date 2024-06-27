@@ -8,11 +8,11 @@ import Marquee from "./components/Marquee";
 
 export default function Home() {
   return (
-    <main className="flex flex-col overflow-hidden items-center bg-gray-50 px-3 tracking-tight sm:px-8">
+    <main className="flex flex-col overflow-hidden items-center bg-white px-3 tracking-tight sm:px-8">
       <Navbar />
       <section className="absolute max-w-8xl top-0 w-full">
         <div
-          className="relative h-56 w-full bg-gray-50"
+          className="relative h-56 w-full bg-white"
           style={{
             backgroundSize: "120px 120px",
             backgroundPosition: "top",
@@ -24,10 +24,11 @@ export default function Home() {
         >
           {/* Grid Overlay */}
           <div
-            className="absolute inset-0 overflow-hidden bg-gray-50"
+            className="absolute inset-0 overflow-hidden bg-white"
             style={{
               background:
-                "radial-gradient(circle at top, transparent 0%, rgb(249 250 251) 100%)",
+                "radial-gradient(circle at top, transparent 0%, rgb(255 255 255) 100%)",
+                // "radial-gradient(circle at top, transparent 0%, rgb(249 250 251) 100%)",
             }}
           />
         </div>
@@ -47,14 +48,14 @@ export default function Home() {
             className="rounded-full bg-gradient-to-t from-gray-200 to-gray-200 p-px shadow-sm hover:shadow-none"
           >
             {/* bg-gradient-to-tl from-gray-50 to-white */}
-            <div className="rounded-full  bg-white px-5 py-2.5 text-sm  font-medium hover:bg-gray-100">
+            <div className="rounded-full  bg-white px-5 py-2.5 text-sm  font-medium hover:bg-gray-50">
               Start scaling
             </div>
           </Link>
 
           <Link
-            href={"mailto:hello@kindredlab.io"}
-            className="group flex items-center gap-1 rounded-full border border-gray-50 bg-gray-50 px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-100"
+            href={"mailto:alex@thefirsthouse.se"}
+            className="group flex items-center gap-1 rounded-full border border-white bg-white px-5 py-2.5 text-sm font-medium hover:border-gray-100  hover:bg-gray-50"
           >
             Say hello{" "}
             <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
@@ -78,8 +79,8 @@ export default function Home() {
           <Project
             client="Qura"
             description={[
-              { type: "text", content: "Legal research powered by AI. " },
-              // { type: "link", content: "payable.se", url: "https://www.payable.se" },
+              { type: "text", content: "Legal research powered by AI — " },
+              { type: "link", content: "qura.law", url: "https://www.qura.law" },
 
             ]}
             images={[
@@ -87,12 +88,11 @@ export default function Home() {
               { type: "half", url: "/images/qura/qura-2.png" },
               { type: "half", url: "/images/qura/qura-3.png" },
             ]}
-            websiteUrl="https://www.airbon.co/"
           />
           <Project
             client="Airbon"
             description={[
-              { type: "text", content: "A climate tech startup tackling the biggest challenges of our time — " },
+              { type: "text", content: "A climate tech startup tackling emissions in agriculture — " },
               { type: "link", content: "airbon.co", url: "https://www.airbon.co" },
 
             ]}
@@ -100,13 +100,25 @@ export default function Home() {
               { type: "full", url: "/images/airbon/airbon-1.png" },
               { type: "full", url: "/images/airbon/airbon-2.png" },
             ]}
-            websiteUrl="https://www.airbon.co/"
+          />
+          <Project
+            client="MycoMine"
+            description={[
+              { type: "text", content: "Sustainable treatment of pollutants using microbial processes —  " },
+              { type: "link", content: "mycomine.se", url: "https://www.mycomine.se" },
+
+            ]}
+            images={[
+              { type: "full", url: "/images/mycomine/mycomine-1.png" },
+              { type: "full", url: "/images/mycomine/mycomine-2.png" },
+              { type: "full", url: "/images/mycomine/mycomine-3.png" },
+            ]}
           />
           <Project
             client="Payable"
             description={[
-              { type: "text", content: "A modern debt collection company. " },
-              // { type: "link", content: "payable.se", url: "https://www.payable.se" },
+              { type: "text", content: "A modern debt collection company — " },
+              { type: "link", content: "payable.se", url: "https://www.payable.se" },
 
             ]}
             images={[
@@ -114,14 +126,36 @@ export default function Home() {
               { type: "half", url: "/images/payable/payable-2.png" },
               { type: "full", url: "/images/payable/payable-3.png" },
             ]}
-            websiteUrl="https://www.airbon.co/"
+          />
+          <Project
+            client="Redpoint"
+            description={[
+              { type: "text", content: "Loyalty program app for climbing gyms — " },
+              { type: "link", content: "redpoint.top", url: "https://www.redpoint.top" },
+
+            ]}
+            images={[
+              { type: "full", url: "/images/redpoint/redpoint-1.png" },
+              { type: "full", url: "/images/redpoint/redpoint-2.png" },
+            ]}
+          />
+          <Project
+            client="Stockholm Water Technology"
+            description={[
+              { type: "text", content: "Sustainable water cleaning — " },
+              { type: "link", content: "stockholmwater.se", url: "https://www.stockholmwater.se" },
+
+            ]}
+            images={[
+              { type: "full", url: "/images/swt/swt-1.png" },
+            ]}
           />
 
         </div>
       </section>
 
       {/* Pricing */}
-      <section className="mt-56 flex w-full max-w-4xl flex-col items-center">
+      {/* <section className="mt-56 flex w-full max-w-4xl flex-col items-center">
         <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-semibold leading-[1.1] tracking-tighter">
           Get started
         </h2>
@@ -159,7 +193,6 @@ export default function Home() {
             href={"mailto:hello@kindredlab.io"}
             className="rounded-full bg-gradient-to-t from-gray-200 to-gray-200 p-px shadow-sm hover:shadow-none"
           >
-            {/* bg-gradient-to-tl from-gray-50 to-white */}
             <div className="rounded-full  bg-white px-5 py-2.5 text-sm  font-medium hover:bg-gray-100">
               Start scaling
             </div>
@@ -175,7 +208,7 @@ export default function Home() {
             </span>
           </Link>
         </div>
-      </section>
+      </section> */}
 
       <Footer />
     </main>
