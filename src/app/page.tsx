@@ -17,8 +17,8 @@ export default function Home() {
             backgroundSize: "120px 120px",
             backgroundPosition: "top",
             backgroundImage: `
-              linear-gradient(to right, rgba(0, 0, 0, 0.06) 1px, transparent 1px),
-              linear-gradient(to bottom, rgba(0, 0, 0, 0.06) 1px, transparent 1px)
+              linear-gradient(to right, rgba(0, 0, 0, 0.00) 1px, transparent 1px),
+              linear-gradient(to bottom, rgba(0, 0, 0, 0.00) 1px, transparent 1px)
             `,
           }}
         >
@@ -35,7 +35,7 @@ export default function Home() {
       </section>
 
       {/* Hero */}
-      <section className="z-10 mt-28 flex flex-col items-center text-center sm:mt-52">
+      <section className="z-10 mt-28 flex flex-col items-center text-center sm:mt-48">
         <h1 className="mt-4 max-w-2xl font text-center text-[clamp(32px,5.5vw,60px)] font-semibold leading-[1.15] tracking-tighter">
           We help startups raise <br /> their next round
         </h1>
