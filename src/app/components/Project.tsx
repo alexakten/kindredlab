@@ -15,7 +15,7 @@ export default function Project({
   return (
     <div className="mt-56 flex flex-col items-center text-center">
       <p className={`max-w-md text-xl sm:text-2xl font-medium tracking-tight`}>{client}</p>
-      <div className="mt-2 max-w-sm text-lg sm:text-xl font-normal tracking-tight">
+      <div className="mt-2 max-w-xs sm:max-w-sm text-lg sm:text-xl font-normal tracking-tight">
         {description.map((item, index) => {
           if (item.type === "text") {
             return <span key={index}>{item.content}</span>;
