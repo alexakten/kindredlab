@@ -42,6 +42,7 @@ export default function Project({
                   src={image.url}
                   alt={`Project Image ${index + 1}`}
                   layout="fill"
+                  loading="eager"
                   objectFit="cover"
                   className="object-top"
                 />
@@ -57,6 +58,7 @@ export default function Project({
                   src={image.url}
                   alt={`Project Image ${index + 1}`}
                   layout="fill"
+                  loading="eager"
                   objectFit="cover"
                   className="object-top"
                 />
