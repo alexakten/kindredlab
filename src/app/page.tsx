@@ -164,6 +164,19 @@ export default function Home() {
               { type: "full", url: "/images/swt/swt-1.png" },
             ]}
           />
+          <Project
+            client="(T–T) Solutions"
+            description={[
+              { type: "text", content: "Freight transport on tracks. " },
+
+            ]}
+            images={[
+              { type: "full", url: "/images/tts/tts-1.png" },
+              { type: "full", url: "/images/tts/tts-2.png" },
+              { type: "half", url: "/images/tts/tts-3.png" },
+              { type: "half", url: "/images/tts/tts-4.png" },
+            ]}
+          />
 
         </div>
       </section>
