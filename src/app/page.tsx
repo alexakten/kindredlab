@@ -144,7 +144,7 @@ export default function Home() {
           <Project
             client="Redpoint"
             description={[
-              { type: "text", content: "Loyalty program app for climbing gyms — " },
+              { type: "text", content: "Loyalty program for climbing gyms — " },
               { type: "link", content: "redpoint.top", url: "https://www.redpoint.top" },
 
             ]}
