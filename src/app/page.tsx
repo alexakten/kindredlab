@@ -55,7 +55,7 @@ export default function Home() {
 
           <Link
             href={"mailto:alex@thefirsthouse.se"}
-            className="group flex items-center gap-1 rounded-full border border-white bg-white px-5 py-2.5 text-sm font-medium hover:border-gray-100  hover:bg-gray-50"
+            className="group flex items-center gap-1 rounded-full border border-white bg-white px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-50"
           >
             Say hello{" "}
             <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">

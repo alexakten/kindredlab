@@ -75,7 +75,7 @@ export default function Navbar() {
 
       <Link
         href={"mailto:alex@thefirsthouse.se"}
-        className="group flex items-center gap-1 rounded-full border border-white bg-white bg-opacity-80 px-5 py-2.5 text-sm font-medium backdrop-blur-md hover:border-gray-100  hover:bg-gray-50"
+        className="group flex items-center gap-1 rounded-full border border-white bg-white bg-opacity-80 px-5 py-2.5 text-sm font-medium backdrop-blur-md hover:border-gray-200  hover:bg-gray-50"
       >
         Say hello{" "}
         <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
