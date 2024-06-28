@@ -151,6 +151,8 @@ export default function Home() {
             images={[
               { type: "full", url: "/images/redpoint/redpoint-1.png" },
               { type: "full", url: "/images/redpoint/redpoint-2.png" },
+              { type: "half", url: "/images/redpoint/redpoint-3.png" },
+              { type: "half", url: "/images/redpoint/redpoint-4.png" },
             ]}
           />
           <Project
