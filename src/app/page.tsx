@@ -117,8 +117,8 @@ export default function Home() {
           <Project
             client="Payable"
             description={[
-              { type: "text", content: "A modern debt collection company — " },
-              { type: "link", content: "payable.se", url: "https://www.payable.se" },
+              { type: "text", content: "A modern debt collection company. " },
+              // { type: "link", content: "payable.se", url: "https://www.payable.se" },
 
             ]}
             images={[
