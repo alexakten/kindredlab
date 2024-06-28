@@ -28,7 +28,7 @@ export default function Home() {
             style={{
               background:
                 "radial-gradient(circle at top, transparent 0%, rgb(255 255 255) 100%)",
-                // "radial-gradient(circle at top, transparent 0%, rgb(249 250 251) 100%)",
+              // "radial-gradient(circle at top, transparent 0%, rgb(249 250 251) 100%)",
             }}
           />
         </div>
@@ -111,7 +111,7 @@ export default function Home() {
             images={[
               { type: "full", url: "/images/mycomine/mycomine-1.png" },
               { type: "full", url: "/images/mycomine/mycomine-2.png" },
-              { type: "full", url: "/images/mycomine/mycomine-3.png" },
+              // { type: "full", url: "/images/mycomine/mycomine-3.png" },
             ]}
           />
           <Project
@@ -125,6 +125,20 @@ export default function Home() {
               { type: "half", url: "/images/payable/payable-1.png" },
               { type: "half", url: "/images/payable/payable-2.png" },
               { type: "full", url: "/images/payable/payable-3.png" },
+            ]}
+          />
+          <Project
+            client="Flexiwaggon"
+            description={[
+              { type: "text", content: "Intermodal truck transport." },
+              // { type: "link", content: "redpoint.top", url: "https://www.redpoint.top" },
+
+            ]}
+            images={[
+              { type: "full", url: "/images/flexiwaggon/flexiwaggon-1.png" },
+              { type: "full", url: "/images/flexiwaggon/flexiwaggon-2.png" },
+              { type: "half", url: "/images/flexiwaggon/flexiwaggon-3.png" },
+              { type: "half", url: "/images/flexiwaggon/flexiwaggon-4.png" },
             ]}
           />
           <Project
