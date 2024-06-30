@@ -167,7 +167,7 @@ export default function Home() {
             ]}
           />
           <Project
-            client="(T–T) Solutions"
+            client="Truck on Track Solutions"
             description={[
               { type: "text", content: "Freight transport on tracks. " },
 
