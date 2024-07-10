@@ -44,7 +44,7 @@ export default function Home() {
         </p>
         <div className="mt-6 flex gap-3 tracking-normal">
           <Link
-            href={"mailto:hello@kindredlab.io"}
+            href={"mailto:alex@thefirsthouse.se"}
             className="rounded-full bg-gradient-to-t from-gray-200 to-gray-200 p-px shadow-sm hover:shadow-none"
           >
             {/* bg-gradient-to-tl from-gray-50 to-white */}
@@ -53,7 +53,7 @@ export default function Home() {
             </div>
           </Link>
 
-          <Link
+          {/* <Link
             href={"mailto:alex@thefirsthouse.se"}
             className="group flex items-center gap-1 rounded-full border border-white bg-white px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-50"
           >
@@ -61,7 +61,7 @@ export default function Home() {
             <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
               -&gt;
             </span>
-          </Link>
+          </Link> */}
         </div>
       </section>
 
