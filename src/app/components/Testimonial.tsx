@@ -11,6 +11,7 @@ export default function Testimonial({ imageUrl, text, user, role }: { imageUrl: 
             src={imageUrl}
             alt="Profile Image"
             layout="fill"
+            loading="eager"
             objectFit="cover"
           />
 
