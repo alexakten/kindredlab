@@ -40,7 +40,7 @@ export default function Home() {
           We help startups raise <br /> their next round
         </h1>
         <p className="mt-4 text-xl opacity-75">
-          Design and development partner <br className="sm:hidden" />for startups.
+          Design, development & GTM partner <br className="sm:hidden" />for startups.
         </p>
         <div className="mt-6 flex gap-3 tracking-normal">
           <Link
