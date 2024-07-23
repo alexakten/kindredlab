@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="top-0 z-20 items-center flex w-full max-w-8xl justify-between py-6 sm:fixed sm:left-1/2 sm:-translate-x-1/2 sm:transform sm:px-10">
+    <nav className="top-0 z-20 flex w-full max-w-8xl items-center justify-between py-6 sm:fixed sm:left-1/2 sm:-translate-x-1/2 sm:transform sm:px-10">
       <div className="flex items-center gap-1">
         {/* <svg
           width="24"
@@ -43,14 +43,31 @@ export default function Navbar() {
           />
         </svg> */}
 
-        <svg width="29" height="29" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path fill-rule="evenodd" clip-rule="evenodd" d="M0 0H24V8V16H16V24H24V16H32H40V40H0V0ZM40 8V0H32V8H40Z" fill="black" />
+        <svg
+          width="29"
+          height="29"
+          viewBox="0 0 40 40"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M0 0H24V8V16H16V24H24V16H32H40V40H0V0ZM40 8V0H32V8H40Z"
+            fill="black"
+          />
         </svg>
 
-        <p className="text-lg font-medium tracking-tight leading-[0.90] mix-blend-difference ">
-          first<br />house
-
+        <p className="text-lg font-medium leading-[0.90] tracking-tight mix-blend-difference ">
+          first
+          <br />
+          house
         </p>
+        {/* <p className="relative text-xl font-medium leading-[0.90] tracking-tight mix-blend-difference ">
+          firstHouse
+          
+        </p> */}
+        {/* <span className="absolute -right-1 -top-0 text-[10px]">™</span> */}
       </div>
 
       {/* <div className="absolute hidden sm:block left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">

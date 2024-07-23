@@ -15,6 +15,11 @@
   font-variant-ligatures: normal; /* Enables common ligatures */
 }
 
+.font-freight {
+  font-family: 'neue-haas-grotesk-text', serif;
+  font-variant-ligatures: normal; /* Enables common ligatures */
+}
+
 body {
   background-color: rgb(255 255 255);
   -webkit-font-smoothing: antialiased;

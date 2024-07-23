@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import Navbar from "./components/Navbar";
 import Testimonial from "./components/Testimonial";
@@ -5,55 +6,39 @@ import Pricing from "./components/Pricing";
 import Project from "./components/Project";
 import Footer from "./components/Footer";
 import Marquee from "./components/Marquee";
+import { motion } from "framer-motion";
 
 export default function Home() {
   return (
-    <main className="flex flex-col overflow-hidden items-center bg-white px-3 tracking-tight sm:px-8">
+    <main className="flex flex-col items-center overflow-hidden bg-white px-3 tracking-tight sm:px-8">
       <Navbar />
-      <section className="absolute max-w-8xl top-0 w-full">
-        <div
-          className="relative h-56 w-full bg-white"
-          style={{
-            backgroundSize: "120px 120px",
-            backgroundPosition: "top",
-            backgroundImage: `
-              linear-gradient(to right, rgba(0, 0, 0, 0.00) 1px, transparent 1px),
-              linear-gradient(to bottom, rgba(0, 0, 0, 0.00) 1px, transparent 1px)
-            `,
-          }}
-        >
-          {/* Grid Overlay */}
-          <div
-            className="absolute inset-0 overflow-hidden bg-white"
-            style={{
-              background:
-                "radial-gradient(circle at top, transparent 0%, rgb(255 255 255) 100%)",
-              // "radial-gradient(circle at top, transparent 0%, rgb(249 250 251) 100%)",
-            }}
-          />
-        </div>
-      </section>
+      {/* <motion.div
+        initial={{ y: 20, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ ease: "easeInOut", duration: 0.5 }}
+      > */}
+        {/* Hero */}
+        <section className="z-10 mt-16 flex flex-col items-center text-center sm:mt-48">
+          {/* <div className="rounded-full text-sm border px-5 opacity-75 py-1">New spots open for Q3</div> */}
+          <h1 className="font max-w-2xl text-center text-[clamp(32px,5.5vw,60px)] font-[550] leading-[1.15] tracking-tighter">
+            We help startups <br /> raise their next round
+          </h1>
+          <p className="opacity-1 mt-4 text-xl">
+            Design, development & GTM partner <br className="sm:hidden" />
+            for startups.
+          </p>
+          <div className="mt-6 flex gap-3 tracking-normal">
+            <Link
+              href={"mailto:alex@thefirsthouse.se"}
+              className="rounded-full bg-gradient-to-t from-gray-200 to-gray-200 p-px shadow-sm hover:shadow-none"
+            >
+              {/* bg-gradient-to-tl from-gray-50 to-white */}
+              <div className="rounded-full  bg-white px-5 py-2.5 text-sm  font-medium hover:bg-gray-50">
+                Book a call
+              </div>
+            </Link>
 
-      {/* Hero */}
-      <section className="z-10 mt-16 flex flex-col items-center text-center sm:mt-48">
-        <h1 className="mt-4 max-w-2xl font text-center text-[clamp(32px,5.5vw,60px)] font-semibold leading-[1.15] tracking-tighter">
-          We help startups raise <br /> their next round
-        </h1>
-        <p className="mt-4 text-xl opacity-75">
-          Design, development & GTM partner <br className="sm:hidden" />for startups.
-        </p>
-        <div className="mt-6 flex gap-3 tracking-normal">
-          <Link
-            href={"mailto:alex@thefirsthouse.se"}
-            className="rounded-full bg-gradient-to-t from-gray-200 to-gray-200 p-px shadow-sm hover:shadow-none"
-          >
-            {/* bg-gradient-to-tl from-gray-50 to-white */}
-            <div className="rounded-full  bg-white px-5 py-2.5 text-sm  font-medium hover:bg-gray-50">
-              Start scaling
-            </div>
-          </Link>
-
-          {/* <Link
+            {/* <Link
             href={"mailto:alex@thefirsthouse.se"}
             className="group flex items-center gap-1 rounded-full border border-white bg-white px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-50"
           >
@@ -62,26 +47,30 @@ export default function Home() {
               -&gt;
             </span>
           </Link> */}
-        </div>
-      </section>
+          </div>
+        </section>
 
-      {/* Testimonials */}
-      <section className="mt-20 flex flex-col gap-4 items-center md:px-16">
-        <Marquee />
-      </section>
+        {/* Testimonials */}
+        <section className="mt-20 flex flex-col items-center gap-4 md:px-16">
+          <Marquee />
+        </section>
+      {/* </motion.div> */}
 
       {/* Projects */}
-      <section className=" max-w-8xl flex w-full flex-col items-center">
+      <section className=" flex w-full max-w-8xl flex-col items-center">
         {/* <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-semibold leading-[1.1] tracking-tighter">
           Recent projects
         </h2> */}
-        <div className="grid grid-cols-1 max-w-5xl w-full">
+        <div className="grid w-full max-w-5xl grid-cols-1">
           <Project
             client="Qura"
             description={[
               { type: "text", content: "Legal research powered by AI — " },
-              { type: "link", content: "qura.law", url: "https://www.qura.law" },
-
+              {
+                type: "link",
+                content: "qura.law",
+                url: "https://www.qura.law",
+              },
             ]}
             images={[
               { type: "full", url: "/images/qura/qura-1.png" },
@@ -92,9 +81,16 @@ export default function Home() {
           <Project
             client="Airbon"
             description={[
-              { type: "text", content: "A climate tech startup tackling emissions in agriculture — " },
-              { type: "link", content: "airbon.co", url: "https://www.airbon.co" },
-
+              {
+                type: "text",
+                content:
+                  "A climate tech startup tackling emissions in agriculture — ",
+              },
+              {
+                type: "link",
+                content: "airbon.co",
+                url: "https://www.airbon.co",
+              },
             ]}
             images={[
               { type: "full", url: "/images/airbon/airbon-1.png" },
@@ -104,9 +100,16 @@ export default function Home() {
           <Project
             client="MycoMine"
             description={[
-              { type: "text", content: "Sustainable treatment of pollutants using microbial processes —  " },
-              { type: "link", content: "mycomine.se", url: "https://www.mycomine.se" },
-
+              {
+                type: "text",
+                content:
+                  "Sustainable treatment of pollutants using microbial processes —  ",
+              },
+              {
+                type: "link",
+                content: "mycomine.se",
+                url: "https://www.mycomine.se",
+              },
             ]}
             images={[
               { type: "full", url: "/images/mycomine/mycomine-1.png" },
@@ -119,7 +122,6 @@ export default function Home() {
             description={[
               { type: "text", content: "A modern debt collection company. " },
               // { type: "link", content: "payable.se", url: "https://www.payable.se" },
-
             ]}
             images={[
               { type: "half", url: "/images/payable/payable-1.png" },
@@ -132,7 +134,6 @@ export default function Home() {
             description={[
               { type: "text", content: "Intermodal truck transport." },
               // { type: "link", content: "redpoint.top", url: "https://www.redpoint.top" },
-
             ]}
             images={[
               { type: "full", url: "/images/flexiwaggon/flexiwaggon-1.png" },
@@ -145,8 +146,11 @@ export default function Home() {
             client="Redpoint"
             description={[
               { type: "text", content: "Loyalty program for climbing gyms — " },
-              { type: "link", content: "redpoint.top", url: "https://www.redpoint.top" },
-
+              {
+                type: "link",
+                content: "redpoint.top",
+                url: "https://www.redpoint.top",
+              },
             ]}
             images={[
               { type: "full", url: "/images/redpoint/redpoint-1.png" },
@@ -159,18 +163,18 @@ export default function Home() {
             client="Stockholm Water Technology"
             description={[
               { type: "text", content: "Sustainable water cleaning — " },
-              { type: "link", content: "stockholmwater.se", url: "https://www.stockholmwater.se" },
-
+              {
+                type: "link",
+                content: "stockholmwater.se",
+                url: "https://www.stockholmwater.se",
+              },
             ]}
-            images={[
-              { type: "full", url: "/images/swt/swt-1.png" },
-            ]}
+            images={[{ type: "full", url: "/images/swt/swt-1.png" }]}
           />
           <Project
             client="Truck on Track Solutions"
             description={[
               { type: "text", content: "Freight transport on tracks. " },
-
             ]}
             images={[
               { type: "full", url: "/images/tts/tts-1.png" },
@@ -179,7 +183,6 @@ export default function Home() {
               { type: "half", url: "/images/tts/tts-4.png" },
             ]}
           />
-
         </div>
       </section>
 
