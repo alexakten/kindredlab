@@ -18,7 +18,7 @@ export default function Home() {
         transition={{ ease: "easeInOut", duration: 0.5 }}
       > */}
       {/* Hero */}
-      <section className="z-10 mt-12 flex flex-col items-center text-center sm:mt-48">
+      <section className="z-10 mt-16 flex flex-col items-center text-center sm:mt-40">
         {/* <div className="rounded-full text-sm border px-5 opacity-75 py-1">New spots open for Q3</div> */}
         <h1 className="font max-w-2xl text-center text-[clamp(32px,5.5vw,60px)] font-[550] leading-[1.15] tracking-tighter">
           We help startups <br /> raise their next round

@@ -1,6 +1,6 @@
 export const testimonials = [
   {
-    text: "Working with the team is my favorite part of the week.",
+    text: "After the new website launch one of our hard-to-get leads reached out. That says a lot.",
     user: "Arvid Winterfeld",
     role: "CEO at Qura",
     imageUrl: "/images/profiles/arvid.png",
@@ -24,19 +24,19 @@ export const testimonials = [
     imageUrl: "/images/profiles/magnus.png",
   },
   {
-    text: "They really understood our company and our vision. I can recommend these guys.",
+    text: "They totally understood our company and vision. I definitely recommend these guys.",
     user: "Hans Delking",
     role: "CEO at Payable",
     imageUrl: "/images/profiles/hans.png",
   },
+  // {
+  //   text: "My startup coach said my website looked like some million-dollar business.",
+  //   user: "Alex Aktén",
+  //   role: "CEO at Airbon",
+  //   imageUrl: "/images/profiles/alex-a.png",
+  // },
   {
-    text: "My startup coach said my website looked like some million-dollar business.",
-    user: "Alex Aktén",
-    role: "CEO at Airbon",
-    imageUrl: "/images/profiles/alex-a.png",
-  },
-  {
-    text: "Really happy working with them.",
+    text: "Really happy with how clean the new website and brand turned out. Thanks!",
     user: "Karthik Laxman",
     role: "CEO at SWT",
     imageUrl: "/images/profiles/karthik.png",
