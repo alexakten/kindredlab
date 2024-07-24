@@ -11,7 +11,7 @@ const config: Config = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         freight: ['"freight-text-pro"', "serif"],
-        neue: ['"neue-haas-grotesk-text"', "serif"],
+        // neue: ['"neue-haas-grotesk-text"', "serif"],
       },
       colors: {
         gray: {

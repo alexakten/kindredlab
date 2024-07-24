@@ -17,28 +17,28 @@ export default function Home() {
         animate={{ y: 0, opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.5 }}
       > */}
-        {/* Hero */}
-        <section className="z-10 mt-16 flex flex-col items-center text-center sm:mt-48">
-          {/* <div className="rounded-full text-sm border px-5 opacity-75 py-1">New spots open for Q3</div> */}
-          <h1 className="font max-w-2xl text-center text-[clamp(32px,5.5vw,60px)] font-[550] leading-[1.15] tracking-tighter">
-            We help startups <br /> raise their next round
-          </h1>
-          <p className="opacity-1 mt-4 text-xl">
-            Design, development & GTM partner <br className="sm:hidden" />
-            for startups.
-          </p>
-          <div className="mt-6 flex gap-3 tracking-normal">
-            <Link
-              href={"mailto:alex@thefirsthouse.se"}
-              className="rounded-full bg-gradient-to-t from-gray-200 to-gray-200 p-px shadow-sm hover:shadow-none"
-            >
-              {/* bg-gradient-to-tl from-gray-50 to-white */}
-              <div className="rounded-full  bg-white px-5 py-2.5 text-sm  font-medium hover:bg-gray-50">
-                Book a call
-              </div>
-            </Link>
+      {/* Hero */}
+      <section className="z-10 mt-12 flex flex-col items-center text-center sm:mt-48">
+        {/* <div className="rounded-full text-sm border px-5 opacity-75 py-1">New spots open for Q3</div> */}
+        <h1 className="font max-w-2xl text-center text-[clamp(32px,5.5vw,60px)] font-[550] leading-[1.15] tracking-tighter">
+          We help startups <br /> raise their next round
+        </h1>
+        <p className="opacity-1 mt-4 text-xl">
+          Design, UX/UI & GTM partner <br className="sm:hidden" />
+          for startups.
+        </p>
+        <div className="mt-6 flex gap-3 tracking-normal">
+          <Link
+            href={"mailto:alex@thefirsthouse.se"}
+            className="rounded-full bg-gradient-to-t from-gray-200 to-gray-200 p-px shadow-sm hover:shadow-none"
+          >
+            {/* bg-gradient-to-tl from-gray-50 to-white */}
+            <div className="rounded-full  bg-white px-5 py-2.5 text-sm  font-medium hover:bg-gray-50">
+              Book a call
+            </div>
+          </Link>
 
-            {/* <Link
+          <Link
             href={"mailto:alex@thefirsthouse.se"}
             className="group flex items-center gap-1 rounded-full border border-white bg-white px-5 py-2.5 text-sm font-medium hover:border-gray-200  hover:bg-gray-50"
           >
@@ -46,14 +46,14 @@ export default function Home() {
             <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
               -&gt;
             </span>
-          </Link> */}
-          </div>
-        </section>
+          </Link>
+        </div>
+      </section>
 
-        {/* Testimonials */}
-        <section className="mt-20 flex flex-col items-center gap-4 md:px-16">
-          <Marquee />
-        </section>
+      {/* Testimonials */}
+      <section className="mt-20 flex flex-col items-center gap-4 md:px-16">
+        <Marquee />
+      </section>
       {/* </motion.div> */}
 
       {/* Projects */}
