@@ -57,7 +57,7 @@ export default function Home() {
       {/* </motion.div> */}
 
       {/* Projects */}
-      <section className=" flex w-full max-w-8xl flex-col items-center">
+      <section className=" max-w-8xl flex w-full flex-col items-center">
         {/* <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-semibold leading-[1.1] tracking-tighter">
           Recent projects
         </h2> */}
