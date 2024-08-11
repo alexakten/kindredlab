@@ -6,6 +6,7 @@ import Project from "./components/Project";
 import Footer from "./components/Footer";
 import Marquee from "./components/Marquee";
 import { Motion } from "./components/Motion";
+import ProjectScroll from "./components/ProjectScroll";
 
 export default function Home() {
   return (
@@ -51,10 +52,12 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-20 flex flex-col items-center gap-4 md:px-16"></section>
+        <section className="relative mt-20 flex w-screen flex-col items-center gap-4 overflow-x-auto">
+          <ProjectScroll />
+        </section>
 
         {/* Testimonials */}
-        <section className="mt-20 flex flex-col items-center md:px-16">
+        <section className="mt-40 flex flex-col items-center md:px-16">
           <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-semibold leading-[1.1] tracking-tighter">
             Testimonials
           </h2>

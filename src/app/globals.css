@@ -1,9 +1,7 @@
-@import url('https://use.typekit.net/zhy0giy.css');
+@import url("https://use.typekit.net/zhy0giy.css");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
-
 
 * {
   margin: 0;
@@ -12,14 +10,13 @@
 }
 
 .font-freight {
-  font-family: 'freight-text-pro', serif;
+  font-family: "freight-text-pro", serif;
   font-variant-ligatures: normal; /* Enables common ligatures */
 }
 
 body {
   background-color: rgb(255 255 255);
   -webkit-font-smoothing: antialiased;
-
 }
 
 .marquee {
@@ -30,10 +27,13 @@ body {
   display: flex;
 }
 
-
 @keyframes scroll {
-  from { transform: translateX(0); }
-  to { transform: translateX(-100%); }
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
 }
 
 .marquee-list {
@@ -48,9 +48,17 @@ body {
   animation-direction: reverse;
 }
 
+/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
+.project-scroll-container::-webkit-scrollbar {
+  display: none;
+}
 
+/* Hide scrollbar for Firefox */
+.project-scroll-container {
+  scrollbar-width: none; /* Firefox */
+}
 
-
-
-
-
+/* Hide scrollbar for IE, Edge */
+.project-scroll-container {
+  -ms-overflow-style: none; /* IE and Edge */
+}
