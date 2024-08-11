@@ -4,14 +4,14 @@ import { Motion } from "../components/Motion";
 
 export default function Work() {
   return (
-    <>
+    <main className="flex flex-col items-center overflow-hidden bg-white px-3 tracking-tight sm:px-8">
       <Navbar />
       <Motion
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.5 }}
       >
-        <section className="flex w-full max-w-8xl flex-col items-center">
+        <section className="flex w-screen max-w-8xl flex-col items-center justify-center">
           <div className="grid w-full max-w-5xl grid-cols-1">
             <Project
               client="Qura"
@@ -140,6 +140,6 @@ export default function Work() {
           </div>
         </section>
       </Motion>
-    </>
+    </main>
   );
 }
