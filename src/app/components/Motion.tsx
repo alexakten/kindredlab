@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, MotionProps as FramerMotionProps } from "framer-motion";
+import { motion, MotionProps as FramerMotionProps } from "framer-motion"
 import React from "react";
 
 interface MotionProps extends Omit<FramerMotionProps, "ref"> {

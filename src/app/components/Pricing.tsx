@@ -1,5 +1,6 @@
 export default function Pricing({
   title,
+  tag,
   price,
   included,
   bgColor,
@@ -7,6 +8,7 @@ export default function Pricing({
   textColor,
 }: {
   title: string;
+  tag?: string;
   price: string;
   included: string[];
   bgColor: string;
@@ -15,17 +17,22 @@ export default function Pricing({
 }) {
   return (
     <div
-      className={`flex h-full w-full flex-col rounded-md border ${borderColor} shadow-sm tracking-tight ${textColor} ${bgColor} py-12 px-8`}
+      className={`flex h-full w-full flex-col rounded-2xl border ${borderColor} tracking-tight shadow-sm ${textColor} ${bgColor} px-8 py-12`}
     >
       <p className="text-3xl font-medium tracking-tight">{title}</p>
 
       <p className="mt-16 text-5xl font-medium tracking-tighter">{price}</p>
       <p className="mt-2 text-sm font-normal tracking-tight opacity-50">
-        One time fee
+        {tag}
       </p>
       <div className="mt-16">
         {included.map((item, index) => (
-          <p key={index} className="font-normal max-w-xs tracking-tight mb-5 opacity-80">{item}</p>
+          <p
+            key={index}
+            className="mb-5 max-w-xs font-normal tracking-tight opacity-80"
+          >
+            {item}
+          </p>
         ))}
       </div>
     </div>

@@ -6,8 +6,8 @@ import { GeistSans } from "geist/font/sans";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "First House",
-  description: "Design and development partner for startups",
+  title: "Kindred Laboratory",
+  description: "Design partner for startups",
 };
 
 export default function RootLayout({

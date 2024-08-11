@@ -2,27 +2,25 @@ import Image from "next/image";
 import Link from "next/link";
 
 interface ProjectProps {
-  client: string;
-  description: Array<{ type: "text" | "link"; content: string; url?: string }>;
+  client?: string;
+  description?: Array<{ type: "text" | "link"; content: string; url?: string }>;
   images: Array<{ type: "full" | "half"; url: string }>;
 }
 
-export default function Project({
-  client,
-  description,
-  images,
-}: ProjectProps) {
+export default function Project({ client, description, images }: ProjectProps) {
   return (
     <div className="mt-56 flex flex-col items-center text-center">
-      <p className={`max-w-md text-xl sm:text-2xl font-medium tracking-tight`}>{client}</p>
-      <div className="mt-2 max-w-xs sm:max-w-sm text-lg sm:text-xl font-normal tracking-tight">
-        {description.map((item, index) => {
+      <p className={`max-w-md text-xl font-medium tracking-tight sm:text-2xl`}>
+        {client}
+      </p>
+      <div className="mt-2 max-w-xs text-lg font-normal tracking-tight sm:max-w-sm sm:text-xl">
+        {description?.map((item, index) => {
           if (item.type === "text") {
             return <span key={index}>{item.content}</span>;
           } else if (item.type === "link" && item.url) {
             return (
               <Link key={index} href={item.url} passHref>
-                <span className="underline cursor-pointer">{item.content}</span>
+                <span className="cursor-pointer underline">{item.content}</span>
               </Link>
             );
           }
@@ -36,7 +34,7 @@ export default function Project({
             return (
               <div
                 key={index}
-                className={`aspect-w-16 aspect-h-9 relative col-span-1 w-full overflow-hidden rounded-3xl border border-gray-200 bg-gray-100 md:col-span-2`}
+                className={`aspect-h-9 aspect-w-16 relative col-span-1 w-full overflow-hidden rounded-3xl border border-gray-200 bg-gray-100 md:col-span-2`}
               >
                 <Image
                   src={image.url}
@@ -52,7 +50,7 @@ export default function Project({
             return (
               <div
                 key={index}
-                className={`aspect-w-8 aspect-h-9 relative col-span-1 w-full overflow-hidden rounded-3xl border border-gray-200 bg-gray-100`}
+                className={`aspect-h-9 aspect-w-8 relative col-span-1 w-full overflow-hidden rounded-3xl border border-gray-200 bg-gray-100`}
               >
                 <Image
                   src={image.url}

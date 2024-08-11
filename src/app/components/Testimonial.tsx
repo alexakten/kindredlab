@@ -12,7 +12,7 @@ export default function Testimonial({
   role: string;
 }) {
   return (
-    <div className="mx-2 flex h-full w-72 flex-col justify-between rounded-lg border border-gray-200 bg-white p-6 shadow-sm sm:w-96">
+    <div className="mx-2 flex h-full w-72 flex-col justify-between rounded-xl border border-gray-200 bg-white p-6 shadow-sm sm:w-96">
       <p>{text}</p>
       <div className="mt-5 flex items-center gap-2">
         <div className="relative h-10 w-10 overflow-hidden rounded-full bg-gray-200">
