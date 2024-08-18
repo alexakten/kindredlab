@@ -10,7 +10,7 @@ import ProjectScroll from "./components/ProjectScroll";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center overflow-hidden bg-white px-3 tracking-tight sm:px-8">
+    <main className="flex flex-col items-center bg-white px-3 tracking-tight sm:px-8">
       <Motion
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -52,7 +52,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="relative mt-20 flex w-screen flex-col items-center gap-4 overflow-x-auto">
+        <section className="mt-20 bg-red-200 w-screen">
           <ProjectScroll />
         </section>
 

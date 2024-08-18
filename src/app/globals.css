@@ -49,9 +49,9 @@ body {
 }
 
 /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
-.project-scroll-container::-webkit-scrollbar {
+/* .project-scroll-container::-webkit-scrollbar {
   display: none;
-}
+} */
 
 /* Hide scrollbar for Firefox */
 .project-scroll-container {

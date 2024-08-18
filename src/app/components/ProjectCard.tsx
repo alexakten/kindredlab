@@ -6,7 +6,7 @@ interface ProjectCardProps {
 
 export default function ProjectCard({ images }: ProjectCardProps) {
   return (
-    <div className="flex flex-row gap-4">
+    <div className="flex gap-4">
       {images.map((image, index) => {
         const isFull = image.type === "full";
         return (

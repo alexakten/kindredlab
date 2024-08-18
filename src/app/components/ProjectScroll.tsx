@@ -2,7 +2,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function ProjectScroll() {
   return (
-    <div className="project-scroll-container relative flex w-full gap-4 overflow-x-auto px-16">
+    <div className="project-scroll-container w-full overflow-x-auto px-16">
       <ProjectCard
         images={[
           { type: "full", url: "/images/qura/qura-1.png" },
