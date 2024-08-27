@@ -9,7 +9,7 @@ export default function Footer() {
 
       <div className="flex w-full justify-between gap-2 text-sm">
         {/* <p className="opacity-50">Designed in Stockholm</p> */}
-        <p className="opacity-50">© 2024 Kindred Lab AB</p>
+        <p className="opacity-50">© 2024 Kindred Lab</p>
         <div className="flex flex-col items-end gap-2">
           <Link
             className="text-black opacity-50 hover:opacity-100"
