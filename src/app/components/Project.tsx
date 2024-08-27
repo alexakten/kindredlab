@@ -28,7 +28,7 @@ export default function Project({ client, description, images }: ProjectProps) {
         })}
       </div>
 
-      <div className="mt-2 grid w-full grid-cols-1 gap-4 md:grid-cols-2">
+      <div className="mt-12 grid w-full grid-cols-1 gap-4 md:grid-cols-2">
         {images.map((image, index) => {
           if (image.type === "full") {
             return (

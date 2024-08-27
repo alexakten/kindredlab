@@ -36,11 +36,12 @@ export default function Home() {
             </span>
             <br />
             <br />
-            We're fully remote{" "}
-            <span className="opacity-50">and have limited availability.</span>
+            <span className="opacity-50">There are currently </span>
+            2 spots available.
             <br />
             <br />
-            Our pricing starts at 80,000 SEK per month.{" "}
+            <span className="opacity-50">Our pricing starts at </span>
+            80,000 SEK per month.{" "}
           </h1>
           <div className="mt-12 flex items-center gap-3 tracking-normal">
             <Link
