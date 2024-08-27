@@ -7,37 +7,34 @@ import Footer from "./components/Footer";
 import Marquee from "./components/Marquee";
 import { Motion } from "./components/Motion";
 import ProjectScroll from "./components/ProjectScroll";
+import ProjectCard from "./components/ProjectCard";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center bg-white px-3 tracking-tight sm:px-8">
+    <main className="flex flex-col items-center justify-center bg-white px-3 tracking-tight sm:px-8">
       <Motion
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.5 }}
+        className="flex flex-col items-start"
       >
         <Navbar />
         {/* Hero */}
-        <section className="z-10 mt-16 flex flex-col items-center text-center sm:mt-24">
-          <h1 className="max-w-2xl text-center text-[clamp(32px,5.5vw,56px)] font-normal leading-[1.15] tracking-tighter">
-            Product design for <br />
-            startups that{" "}
-            <span className="font-freight text-[clamp(37.12px,6.38vw,64.96px)] italic">
-              iterate fast
-            </span>
+        <section className="z-10 mt-24 flex w-full max-w-2xl flex-col items-start px-8 text-left">
+          <h1 className="text-4xl font-medium leading-[1.3] tracking-tight">
+            Brand design & UX/UI partner for startups{" "}
+            <br className="sm:hidden" />— simple monthly fee
+            {/* <span className="opacity-1">
+              for startups — all for a simple monthly fee.{" "}
+            </span> */}
           </h1>
-          <p className="opacity-1 mt-4 max-w-2xl text-xl">
-            World-class UX/UI design. Simple monthly fee.{" "}
-          </p>
-          <div className="mt-6 flex gap-3 tracking-normal">
+          {/* <p className="opacity-1 mt-4 text-xl"></p> */}
+          <div className="mt-6 flex items-center gap-3 tracking-normal">
             <Link
               href={"mailto:hello@kindredlab.io"}
-              className="rounded-full bg-gradient-to-t from-gray-200 to-gray-200 p-px shadow-sm hover:shadow-none"
+              className="rounded-full border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium shadow-sm  hover:bg-gray-50 hover:shadow-none"
             >
-              {/* bg-gradient-to-tl from-gray-50 to-white */}
-              <div className="rounded-full  bg-white px-5 py-2.5 text-sm  font-medium hover:bg-gray-50">
-                Book a call
-              </div>
+              Book a call
             </Link>
 
             <Link
@@ -52,29 +49,52 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-20 w-screen">
-          <ProjectScroll />
-        </section>
-
-        {/* Testimonials */}
-        <section className="mt-40 flex flex-col items-center md:px-16">
-          {/* <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-normal leading-[1.1] tracking-tighter">
-            Testimonials
-          </h2>
-          <p className="mt-4 text-xl opacity-75">What our clients say. </p> */}
-          <div className="">
-            <Marquee />
-          </div>
+        <section className="project-scroll-container mt-24 flex w-screen gap-4 overflow-y-auto  px-8">
+          <ProjectCard
+            client="Qura"
+            services="Product design"
+            description="Qura builds AI to make legal text searchable using natural language."
+            year="2024"
+            image="/images/qura/qura-1.png"
+          />
+          <ProjectCard
+            client="MycoMine"
+            services="Web design"
+            description="MycoMine develops green technology for sustainable waste management."
+            year="2024"
+            image="/images/mycomine/mycomine-1.png"
+          />
+          <ProjectCard
+            client="Payable"
+            services="Product design"
+            description="Qura builds AI to make legal text searchable using natural language."
+            year="2024"
+            image="/images/payable/payable-1.png"
+          />
+          <ProjectCard
+            client="Stockholm Water"
+            services="Product design"
+            description="Qura builds AI to make legal text searchable using natural language."
+            year="2024"
+            image="/images/swt/swt-1.png"
+          />
+          <ProjectCard
+            client="Flexiwaggon"
+            services="Product design"
+            description="Qura builds AI to make legal text searchable using natural language."
+            year="2024"
+            image="/images/flexiwaggon/flexiwaggon-1.png"
+          />
         </section>
       </Motion>
 
       {/* Pricing */}
-      <section className="mt-56 flex w-full max-w-4xl flex-col items-center">
-        {/* <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-normal leading-[1.1] tracking-tighter">
+      {/* <section className="mt-56 flex w-full max-w-4xl flex-col items-center"> */}
+      {/* <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-normal leading-[1.1] tracking-tighter">
           Get started
         </h2>
         <p className="mt-4 text-xl opacity-75">Choose a pricing plan. </p> */}
-        <div className="mt-12 grid w-full grid-cols-1 gap-4 sm:grid-cols-2">
+      {/* <div className="mt-12 grid w-full grid-cols-1 gap-4 sm:grid-cols-2">
           <Pricing
             title="Starter"
             price="At request"
@@ -107,8 +127,8 @@ export default function Home() {
               Book a call
             </div>
           </Link>
-        </div>
-      </section>
+        </div> */}
+      {/* </section> */}
 
       <Footer />
     </main>

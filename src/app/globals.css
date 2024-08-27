@@ -22,24 +22,14 @@
   font-display: swap;
 }
 
-/* @supports (font-variation-settings: normal) {
-  :root {
-    font-feature-settings:
-      "ss07" 0,
-      "ss03" 1,
-      "liga" 1,
-  }
-} */
-
 body {
   font-family: Inter, sans-serif;
+  font-feature-settings:
+    "ss07" 1,
+    "ss03" 1,
+    "liga" 1;
   background-color: rgb(255, 255, 255);
   -webkit-font-smoothing: antialiased;
-}
-
-/* Apply to specific classes or elements if needed */
-.square-punctuation {
-  font-feature-settings: "ss07" 1;
 }
 
 .marquee {
@@ -72,9 +62,9 @@ body {
 }
 
 /* Hide scrollbar for Webkit browsers (Chrome, Safari) */
-/* .project-scroll-container::-webkit-scrollbar {
+.project-scroll-container::-webkit-scrollbar {
   display: none;
-} */
+}
 
 /* Hide scrollbar for Firefox */
 .project-scroll-container {
