@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex w-full mt-12 items-center justify-center">
+    <nav className="mt-12 flex w-full items-center justify-center">
       <Link href={"/"} className="z-10 flex items-center gap-1">
         <svg
           width="19"
@@ -43,7 +43,7 @@ export default function Navbar() {
           />
         </svg>
 
-        <p className="text-base font-medium leading-[0.90] tracking-tight mix-blend-difference ">
+        <p className="text-base font-[450] leading-[0.95] tracking-tight mix-blend-difference ">
           Kindred
           <br />
           Laboratory

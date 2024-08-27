@@ -18,8 +18,8 @@ export default function Home() {
       >
         <Navbar />
         {/* Hero */}
-        <section className="z-10 mt-16 flex flex-col items-center text-center sm:mt-20">
-          <h1 className="max-w-2xl text-center text-[clamp(32px,5.5vw,56px)] font-[550] leading-[1.15] tracking-tighter">
+        <section className="z-10 mt-16 flex flex-col items-center text-center sm:mt-32">
+          <h1 className="max-w-2xl text-center text-[clamp(32px,5.5vw,56px)] font-normal leading-[1.15] tracking-tighter">
             Product design for <br />
             startups that{" "}
             <span className="font-freight text-[clamp(37.12px,6.38vw,64.96px)] italic">
@@ -52,17 +52,17 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="mt-20 bg-red-200 w-screen">
+        <section className="mt-20 w-screen">
           <ProjectScroll />
         </section>
 
         {/* Testimonials */}
         <section className="mt-40 flex flex-col items-center md:px-16">
-          <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-semibold leading-[1.1] tracking-tighter">
+          {/* <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-normal leading-[1.1] tracking-tighter">
             Testimonials
           </h2>
-          <p className="mt-4 text-xl opacity-75">What our clients say. </p>
-          <div className="mt-12">
+          <p className="mt-4 text-xl opacity-75">What our clients say. </p> */}
+          <div className="">
             <Marquee />
           </div>
         </section>
@@ -70,10 +70,10 @@ export default function Home() {
 
       {/* Pricing */}
       <section className="mt-56 flex w-full max-w-4xl flex-col items-center">
-        <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-semibold leading-[1.1] tracking-tighter">
+        {/* <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-normal leading-[1.1] tracking-tighter">
           Get started
         </h2>
-        <p className="mt-4 text-xl opacity-75">Choose a pricing plan. </p>
+        <p className="mt-4 text-xl opacity-75">Choose a pricing plan. </p> */}
         <div className="mt-12 grid w-full grid-cols-1 gap-4 sm:grid-cols-2">
           <Pricing
             title="Starter"
