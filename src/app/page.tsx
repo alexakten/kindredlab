@@ -23,7 +23,7 @@ export default function Home() {
         <section className="z-10 mt-24 flex w-full max-w-2xl flex-col items-start px-8 text-left">
           <h1 className="text-4xl font-medium leading-[1.3] tracking-tight">
             Brand design & UX/UI partner for startups{" "}
-            <br className="sm:hidden" />— simple monthly fee
+            <br className="sm:hidden" />— simple monthly fee.
             {/* <span className="opacity-1">
               for startups — all for a simple monthly fee.{" "}
             </span> */}

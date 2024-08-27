@@ -42,7 +42,7 @@ export default function Navbar() {
             fill="black"
           />
         </svg>
-        <p className="text-base font-[400] leading-[0.95] tracking-tight mix-blend-difference ">
+        <p className="text-base font-[450] leading-[0.95] tracking-tight mix-blend-difference ">
           Kindred <br />
           Laboratory
         </p>
