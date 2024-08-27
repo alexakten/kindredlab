@@ -9,7 +9,7 @@ interface ProjectProps {
 
 export default function Project({ client, description, images }: ProjectProps) {
   return (
-    <div className="mt-56 flex flex-col items-center text-center">
+    <div className="m-20 flex flex-col items-center text-center">
       <p className={`max-w-md text-xl font-medium tracking-tight sm:text-2xl`}>
         {client}
       </p>

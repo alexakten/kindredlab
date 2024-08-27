@@ -8,6 +8,7 @@ import Marquee from "./components/Marquee";
 import { Motion } from "./components/Motion";
 import ProjectScroll from "./components/ProjectScroll";
 import ProjectCard from "./components/ProjectCard";
+import { useRef } from "react";
 
 export default function Home() {
   return (
@@ -16,14 +17,17 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.5 }}
-        className="flex flex-col items-start"
+        className="flex flex-col items-center"
       >
         <Navbar />
         {/* Hero */}
-        <section className="z-10 mt-24 flex w-full max-w-2xl flex-col items-start px-8 text-left">
-          <h1 className="text-4xl font-medium leading-[1.3] tracking-tight">
-            Brand design & UX/UI partner for startups{" "}
-            <br className="sm:hidden" />— simple monthly fee.
+        <section className="z-10 mt-20 flex w-full max-w-lg flex-col items-center px-8 text-center">
+          <h1 className="text-3xl font-normal leading-[1.2] tracking-tight">
+            Brand, web and product design{" "}
+            <span className="opacity-50">
+              for startups that iterate fast <br className="sm:hidden" />— all
+              with one simple monthly fee.
+            </span>
             {/* <span className="opacity-1">
               for startups — all for a simple monthly fee.{" "}
             </span> */}
@@ -51,40 +55,62 @@ export default function Home() {
 
         <section className="project-scroll-container mt-24 flex w-screen gap-4 overflow-y-auto  px-8">
           <ProjectCard
-            client="Qura"
-            services="Product design"
-            description="Qura builds AI to make legal text searchable using natural language."
-            year="2024"
             image="/images/qura/qura-1.png"
+            orientation="landscape"
+          />
+          <ProjectCard image="/images/qura/qura-2.png" orientation="portrait" />
+          <ProjectCard image="/images/qura/qura-3.png" orientation="portrait" />
+          <ProjectCard
+            image="/images/airbon/airbon-1.png"
+            orientation="landscape"
           />
           <ProjectCard
-            client="MycoMine"
-            services="Web design"
-            description="MycoMine develops green technology for sustainable waste management."
-            year="2024"
+            image="/images/airbon/airbon-2.png"
+            orientation="landscape"
+          />
+          <ProjectCard
             image="/images/mycomine/mycomine-1.png"
+            orientation="landscape"
           />
           <ProjectCard
-            client="Payable"
-            services="Product design"
-            description="Qura builds AI to make legal text searchable using natural language."
-            year="2024"
+            image="/images/mycomine/mycomine-2.png"
+            orientation="landscape"
+          />
+          <ProjectCard
+            image="/images/mycomine/mycomine-3.png"
+            orientation="landscape"
+          />
+          <ProjectCard
             image="/images/payable/payable-1.png"
+            orientation="portrait"
           />
           <ProjectCard
-            client="Stockholm Water"
-            services="Product design"
-            description="Qura builds AI to make legal text searchable using natural language."
-            year="2024"
-            image="/images/swt/swt-1.png"
+            image="/images/payable/payable-2.png"
+            orientation="portrait"
           />
           <ProjectCard
-            client="Flexiwaggon"
-            services="Product design"
-            description="Qura builds AI to make legal text searchable using natural language."
-            year="2024"
-            image="/images/flexiwaggon/flexiwaggon-1.png"
+            image="/images/payable/payable-3.png"
+            orientation="landscape"
           />
+          <ProjectCard image="/images/swt/swt-1.png" />
+          <ProjectCard
+            image="/images/redpoint/redpoint-1.png"
+            orientation="landscape"
+          />
+          <ProjectCard
+            image="/images/redpoint/redpoint-2.png"
+            orientation="landscape"
+          />
+          <ProjectCard image="/images/flexiwaggon/flexiwaggon-1.png" />
+          <ProjectCard image="/images/flexiwaggon/flexiwaggon-2.png" />
+          <ProjectCard
+            image="/images/flexiwaggon/flexiwaggon-4.png"
+            orientation="portrait"
+          />
+          <ProjectCard image="/images/tts/tts-1.png" />
+          <ProjectCard image="/images/tts/tts-2.png" />
+          <ProjectCard image="/images/tts/tts-3.png" orientation="portrait" />
+          <ProjectCard image="/images/tts/tts-4.png" orientation="portrait" />
         </section>
       </Motion>
 

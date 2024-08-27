@@ -1,6 +1,7 @@
 import Project from "../components/Project";
 import Navbar from "../components/Navbar";
 import { Motion } from "../components/Motion";
+import Footer from "../components/Footer";
 
 export default function Work() {
   return (
@@ -139,6 +140,7 @@ export default function Work() {
             />
           </div>
         </section>
+        <Footer />
       </Motion>
     </main>
   );
