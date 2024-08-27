@@ -9,7 +9,7 @@ interface ProjectProps {
 
 export default function Project({ client, description, images }: ProjectProps) {
   return (
-    <div className="m-20 flex flex-col items-center text-center">
+    <div className="flex flex-col items-start text-left">
       <p className={`max-w-md text-xl font-medium tracking-tight sm:text-2xl`}>
         {client}
       </p>
@@ -28,7 +28,7 @@ export default function Project({ client, description, images }: ProjectProps) {
         })}
       </div>
 
-      <div className="mt-12 grid w-full grid-cols-1 gap-4 md:grid-cols-2">
+      <div className="mt-2 grid w-full grid-cols-1 gap-4 md:grid-cols-2">
         {images.map((image, index) => {
           if (image.type === "full") {
             return (

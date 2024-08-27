@@ -27,6 +27,7 @@ body {
   font-feature-settings:
     "ss07" 1,
     "ss03" 1,
+    "ss08" 1,
     "liga" 1;
   background-color: rgb(255, 255, 255);
   -webkit-font-smoothing: antialiased;

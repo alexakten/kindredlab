@@ -17,23 +17,32 @@ export default function Home() {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.5 }}
-        className="flex flex-col items-center"
+        className="flex w-full max-w-xl flex-col items-center"
       >
         <Navbar />
         {/* Hero */}
-        <section className="z-10 mt-20 flex w-full max-w-lg flex-col items-center px-8 text-center">
+        <section className="z-10 mt-20 flex w-full flex-col items-start text-left">
           <h1 className="text-3xl font-normal leading-[1.2] tracking-tight">
-            Brand, web and product design{" "}
+            We're a brand, web and product design studio{" "}
             <span className="opacity-50">
-              for startups that iterate fast <br className="sm:hidden" />— all
-              with one simple monthly fee.
+              for startups that iterate fast.
+              {/* — all with one simple monthly fee. */}
             </span>
-            {/* <span className="opacity-1">
-              for startups — all for a simple monthly fee.{" "}
-            </span> */}
+            <br />
+            <br />
+            Make any design request{" "}
+            <span className="opacity-50">
+              — we'll deliver it to you by the end of the week.
+            </span>
+            <br />
+            <br />
+            We're fully remote{" "}
+            <span className="opacity-50">and have limited availability.</span>
+            <br />
+            <br />
+            Our pricing starts at 80,000 SEK per month.{" "}
           </h1>
-          {/* <p className="opacity-1 mt-4 text-xl"></p> */}
-          <div className="mt-6 flex items-center gap-3 tracking-normal">
+          <div className="mt-12 flex items-center gap-3 tracking-normal">
             <Link
               href={"mailto:hello@kindredlab.io"}
               className="rounded-full border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium shadow-sm  hover:bg-gray-50 hover:shadow-none"
@@ -53,110 +62,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="project-scroll-container mt-24 flex w-screen gap-4 overflow-y-auto  px-8">
-          <ProjectCard
-            image="/images/qura/qura-1.png"
-            orientation="landscape"
-          />
-          <ProjectCard image="/images/qura/qura-2.png" orientation="portrait" />
-          <ProjectCard image="/images/qura/qura-3.png" orientation="portrait" />
-          <ProjectCard
-            image="/images/airbon/airbon-1.png"
-            orientation="landscape"
-          />
-          <ProjectCard
-            image="/images/airbon/airbon-2.png"
-            orientation="landscape"
-          />
-          <ProjectCard
-            image="/images/mycomine/mycomine-1.png"
-            orientation="landscape"
-          />
-          <ProjectCard
-            image="/images/mycomine/mycomine-2.png"
-            orientation="landscape"
-          />
-          <ProjectCard
-            image="/images/mycomine/mycomine-3.png"
-            orientation="landscape"
-          />
-          <ProjectCard
-            image="/images/payable/payable-1.png"
-            orientation="portrait"
-          />
-          <ProjectCard
-            image="/images/payable/payable-2.png"
-            orientation="portrait"
-          />
-          <ProjectCard
-            image="/images/payable/payable-3.png"
-            orientation="landscape"
-          />
-          <ProjectCard image="/images/swt/swt-1.png" />
-          <ProjectCard
-            image="/images/redpoint/redpoint-1.png"
-            orientation="landscape"
-          />
-          <ProjectCard
-            image="/images/redpoint/redpoint-2.png"
-            orientation="landscape"
-          />
-          <ProjectCard image="/images/flexiwaggon/flexiwaggon-1.png" />
-          <ProjectCard image="/images/flexiwaggon/flexiwaggon-2.png" />
-          <ProjectCard
-            image="/images/flexiwaggon/flexiwaggon-4.png"
-            orientation="portrait"
-          />
-          <ProjectCard image="/images/tts/tts-1.png" />
-          <ProjectCard image="/images/tts/tts-2.png" />
-          <ProjectCard image="/images/tts/tts-3.png" orientation="portrait" />
-          <ProjectCard image="/images/tts/tts-4.png" orientation="portrait" />
-        </section>
+        <Footer />
       </Motion>
-
-      {/* Pricing */}
-      {/* <section className="mt-56 flex w-full max-w-4xl flex-col items-center"> */}
-      {/* <h2 className="mt-4 max-w-2xl text-center text-[clamp(32px,5.5vw,48px)] font-normal leading-[1.1] tracking-tighter">
-          Get started
-        </h2>
-        <p className="mt-4 text-xl opacity-75">Choose a pricing plan. </p> */}
-      {/* <div className="mt-12 grid w-full grid-cols-1 gap-4 sm:grid-cols-2">
-          <Pricing
-            title="Starter"
-            price="At request"
-            included={["Branding", "Copywriting", "Website"]}
-            bgColor="bg-white"
-            borderColor="border-gray-100"
-            textColor="text-black"
-          />
-          <Pricing
-            title="Scaleup"
-            price="80,000 SEK/mo"
-            included={[
-              "Branding",
-              "Copywriting",
-              "Website",
-              "Product Design",
-              "Content",
-            ]}
-            bgColor="bg-black"
-            borderColor="border-black"
-            textColor="text-white"
-          />
-        </div>
-        <div className="mt-12 flex gap-3 tracking-normal">
-          <Link
-            href={"mailto:hello@kindredlab.io"}
-            className="rounded-full bg-gradient-to-t from-gray-200 to-gray-200 p-px shadow-sm hover:shadow-none"
-          >
-            <div className="rounded-full  bg-white px-5 py-2.5 text-sm  font-medium hover:bg-gray-100">
-              Book a call
-            </div>
-          </Link>
-        </div> */}
-      {/* </section> */}
-
-      <Footer />
     </main>
   );
 }
