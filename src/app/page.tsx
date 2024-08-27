@@ -18,7 +18,7 @@ export default function Home() {
       >
         <Navbar />
         {/* Hero */}
-        <section className="z-10 mt-16 flex flex-col items-center text-center sm:mt-32">
+        <section className="z-10 mt-16 flex flex-col items-center text-center sm:mt-24">
           <h1 className="max-w-2xl text-center text-[clamp(32px,5.5vw,56px)] font-normal leading-[1.15] tracking-tighter">
             Product design for <br />
             startups that{" "}
