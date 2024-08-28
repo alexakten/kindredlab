@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="flex items-center justify-start w-full pt-8">
+    <nav className="flex w-full items-center justify-start pt-8">
       <Link href={"/"} className="z-10 flex items-center gap-1">
         <svg
           width="19"

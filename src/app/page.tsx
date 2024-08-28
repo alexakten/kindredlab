@@ -23,7 +23,7 @@ export default function Home() {
         {/* Hero */}
         <section className="z-10 mt-20 flex w-full flex-col items-start text-left">
           <h1 className="text-3xl font-normal leading-[1.2] tracking-tight">
-            We're a brand, web and product design studio{" "}
+            We&apos;re a brand, web and product design studio{" "}
             <span className="opacity-50">
               for startups that iterate fast.
               {/* — all with one simple monthly fee. */}
@@ -32,7 +32,7 @@ export default function Home() {
             <br />
             Make any design request{" "}
             <span className="opacity-50">
-              — we'll deliver it to you by the end of the week.
+              — we&apos;ll deliver it to you by the end of the week.
             </span>
             <br />
             <br />
