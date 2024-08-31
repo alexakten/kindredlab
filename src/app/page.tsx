@@ -7,7 +7,7 @@ import ProjectCard from "./components/ProjectCard";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center bg-white px-3 tracking-tight sm:px-8 overflow-x-hidden ">
+    <main className="flex flex-col items-center justify-center overflow-x-hidden bg-white px-3 tracking-tight sm:px-8 ">
       <Motion
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -17,11 +17,11 @@ export default function Home() {
         <Navbar />
         {/* Hero */}
         <section className="z-10 mt-24 flex w-full max-w-2xl flex-col items-center text-center">
-          <h1 className="text-7xl font-medium leading-[1] tracking-tight">
-            Web and product{" "}
-            <span className="font-freight text-[80px] italic">
+          <h1 className="text-[clamp(48px,6vw,72px)] font-medium leading-[1] tracking-tight">
+            Web and product <br />
+            <span className="font-freight text-[clamp(53.33px,6.666vw,80px)] font-semibold italic">
               design studio
-            </span>{" "}
+            </span>
           </h1>
           <h2 className="mt-6 max-w-xl text-xl opacity-50">
             We&apos;re a fully remote studio designing landing pages and
@@ -50,7 +50,8 @@ export default function Home() {
             <Logos />
           </div>
         </section>
-        <section className="project-scroll-container mt-24 flex w-screen px-8 gap-4 overflow-y-auto ">
+
+        <section className="project-scroll-container mt-24 flex w-screen gap-4 overflow-y-auto px-8 ">
           <ProjectCard
             image="/images/qura/qura-1.png"
             orientation="landscape"
