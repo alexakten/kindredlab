@@ -20,6 +20,31 @@
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
+  
+}
+
+.font-freight {
+  font-family: "freight-text-pro", serif;
+  font-feature-settings:
+    "liga" 1,
+    "clig" 1,
+    "dlig" 1,
+    "hlig" 1,
+    "calt" 1;
+  font-variant-ligatures: common-ligatures discretionary-ligatures
+    historical-ligatures contextual;
+  -webkit-font-feature-settings:
+    "liga" 1,
+    "clig" 1,
+    "dlig" 1,
+    "hlig" 1,
+    "calt" 1;
+  -moz-font-feature-settings:
+    "liga" 1,
+    "clig" 1,
+    "dlig" 1,
+    "hlig" 1,
+    "calt" 1;
 }
 
 body {
