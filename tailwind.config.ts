@@ -5,7 +5,6 @@ const config: Config = {
     "./src/pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
-   
   ],
   theme: {
     extend: {
@@ -18,14 +17,13 @@ const config: Config = {
         gray: {
           350: "#B7BCC5", // Example value between gray-300 and gray-400
         },
+        black: "#111111", // Adjusted black color
       },
       maxWidth: {
         "8xl": "1440px",
       },
     },
   },
-  plugins: [
-    require('@tailwindcss/aspect-ratio'),
-  ],
+  plugins: [require("@tailwindcss/aspect-ratio")],
 };
 export default config;

@@ -53,7 +53,7 @@ export default function Home() {
             </Link>
           </div>
           <p className="mt-24 text-sm opacity-50">Trusted by teams at</p>
-          <div className="mt-6">
+          <div className="mt-5">
             <Logos />
           </div>
         </section>
