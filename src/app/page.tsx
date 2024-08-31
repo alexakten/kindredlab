@@ -52,7 +52,7 @@ export default function Home() {
               </span>
             </Link>
           </div>
-          <p className="mt-24 text-sm opacity-50">Trusted by teams at</p>
+          <p className="mt-32 text-sm opacity-50">Trusted by teams at</p>
           <div className="mt-5">
             <Logos />
           </div>
