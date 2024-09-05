@@ -7,7 +7,7 @@ import ProjectCard from "./components/ProjectCard";
 
 export default function Home() {
   return (
-    <main className="flex flex-col items-center justify-center overflow-x-hidden bg-white px-3 tracking-tight text-black sm:px-8 ">
+    <main className="flex flex-col items-center justify-center overflow-x-hidden bg-black px-0 tracking-tight text-zinc-100 sm:px-0">
       <Motion
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -16,40 +16,62 @@ export default function Home() {
       >
         <Navbar />
         {/* Hero */}
-        <section className="z-10 mt-32 flex w-full max-w-2xl flex-col items-center text-center">
-          <div className="border-gray-150 flex items-center rounded-full border py-1 pl-2 pr-3 text-sm">
-            <span className="relative flex h-3 w-3">
-              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-black opacity-75"></span>
-              <span className="relative inline-flex h-3 w-3 rounded-full bg-black"></span>
+        <section className="z-10 mt-[5rem] flex h-full w-full flex-col items-center rounded-3xl bg-[radial-gradient(170%_100%_at_top,_#010314_30%,_#592ED3_60%,_#fff_100%)] py-40 text-center backdrop-blur-sm">
+          <div className="bg-indigo-950"></div>
+          <div className="flex items-center rounded-full text-sm">
+            <span className="relative flex h-2 w-2">
+              <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75"></span>
+              <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
             </span>
             <p className="pl-2 opacity-50 ">2 spots open for September</p>
           </div>
-          <h1 className="mt-4 text-[clamp(48px,6vw,80px)] font-medium leading-[1] tracking-tight">
+          <h1 className="mt-4 max-w-2xl text-[clamp(48px,6vw,80px)] font-[450] leading-[1] tracking-tight">
             Web and product <br />
-            <span className="font-freight text-[clamp(53.33px,6.666vw,88px)] font-semibold italic">
+            <span className="font-freight text-[clamp(53.33px,6.666vw,88px)] font-medium italic">
               design studio
             </span>
           </h1>
-          <h2 className="mt-6 max-w-xl text-xl opacity-50">
+          <h2 className="mt-6 max-w-lg px-4 text-xl opacity-50">
             We&apos;re a fully remote studio designing landing pages and
             products for startups that iterate fast.
           </h2>
-          <div className="mt-8 flex items-center gap-3 tracking-normal">
+          {/* <div className="mt-8 flex items-center gap-3 tracking-normal">
             <Link
               href={"mailto:hello@kindredlab.io"}
-              className="rounded-full bg-black px-5 py-2.5 text-sm font-medium text-white hover:bg-zinc-800"
+              className="rounded-full bg-gradient-to-tl from-zinc-600 to-zinc-400 p-px"
             >
-              Book a call
+              <div className="rounded-full bg-black px-5 py-2.5 text-sm  font-medium hover:bg-zinc-800">
+                Book a call
+              </div>
             </Link>
 
             <Link
-              href={"/work"}
-              className="group flex items-center gap-1 rounded-full border border-gray-200 bg-white px-5 py-2.5 text-sm font-medium   hover:bg-gray-50"
+              href={"mailto:hello@kindredlab.io"}
+              className="group rounded-full bg-gradient-to-tl from-zinc-200 to-white p-px"
             >
-              See work{" "}
-              <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
-                -&gt;
+              <div className="rounded-full bg-zinc-50 px-5 py-2.5 text-sm font-medium text-black hover:bg-white">
+                See work{" "}
+                <span className="inline-block translate-x-[1px] tracking-normal transition-transform duration-200 group-hover:translate-x-1">
+                  -&gt;
+                </span>
+              </div>
+            </Link>
+          </div> */}
+          <div className="mt-8 flex gap-4">
+            <Link
+              href="mailto:hello@kindredlab.io"
+              className="flex items-center gap-2 rounded-lg bg-zinc-900 px-4 py-2.5 hover:bg-zinc-800"
+            >
+              <p className="text-base font-medium">Book demo</p>
+              <span className="flex h-6 w-6 items-center justify-center rounded-[4px] bg-zinc-800 text-[12px]">
+                B
               </span>
+            </Link>
+            <Link
+              href="mailto:hello@kindredlab.io"
+              className="rounded-lg bg-zinc-50 px-4 py-2.5 text-base font-medium text-zinc-950 hover:bg-white"
+            >
+              Say hello
             </Link>
           </div>
           <p className="mt-32 text-sm opacity-50">Trusted by teams at</p>

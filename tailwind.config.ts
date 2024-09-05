@@ -8,6 +8,9 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+      },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         freight: ['"freight-text-pro"', "serif"],
@@ -17,7 +20,7 @@ const config: Config = {
         gray: {
           350: "#B7BCC5", // Example value between gray-300 and gray-400
         },
-        black: "#111111", // Adjusted black color
+        black: "#010314", // Adjusted black color
       },
       maxWidth: {
         "8xl": "1440px",
