@@ -7,7 +7,7 @@ import ProjectCard from "./components/ProjectCard";
 
 export default function Home() {
   return (
-    <main className="flex text-black flex-col items-center justify-center overflow-x-hidden bg-white px-3 tracking-tight sm:px-8 ">
+    <main className="flex flex-col items-center justify-center overflow-x-hidden bg-white px-3 tracking-tight text-black sm:px-8 ">
       <Motion
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
