@@ -7,9 +7,9 @@ export default function Navbar() {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ ease: "easeInOut", delay: 0, duration: 0.5 }}
-      className="fixed z-50 flex w-full flex-col items-center px-8"
+      className="fixed z-50 flex w-full flex-col items-center"
     >
-      <nav className="fixed z-50 mt-4 flex w-full max-w-3xl items-center justify-between rounded-2xl border border-white border-opacity-20 bg-white bg-opacity-5  py-1.5 pl-3 pr-2 text-xs font-medium backdrop-blur-md">
+      <nav className="fixed z-50 mt-4 flex w-full max-w-3xl items-center justify-between rounded-2xl border border-white border-opacity-20 bg-white bg-opacity-5 py-1.5 pl-3 pr-2 text-xs font-medium backdrop-blur-md">
         <Link href={"/"} className="z-10 flex items-center gap-1.5">
           <svg
             width="17"
