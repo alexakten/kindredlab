@@ -20,7 +20,6 @@
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
-  
 }
 
 .font-freight {
@@ -103,7 +102,8 @@ body {
 }
 
 @keyframes rotate-light {
-  0%, 100% {
+  0%,
+  100% {
     background-position: center top;
   }
   12.5% {
@@ -129,13 +129,11 @@ body {
   }
 }
 
-
 .animate-rotate-light {
   animation: rotate-light 5s linear infinite;
 }
 
-
-/* @layer base {
+@layer base {
   :root {
     --background: 0 0% 100%;
     --foreground: 240 10% 3.9%;
@@ -189,8 +187,7 @@ body {
     --chart-4: 280 65% 60%;
     --chart-5: 340 75% 55%;
   }
-} */
-
+}
 
 @layer base {
   * {

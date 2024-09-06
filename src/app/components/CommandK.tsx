@@ -84,7 +84,7 @@ export default function CommandK({ isVisible }: CommandKProps) {
         <p className="mt-2 opacity-50">
           Tell us about your project and we'll be in touch.
         </p>
-        <p className="* mt-2 flex items-center gap-1 text-xs font-medium text-orange-500">
+        <p className="mt-2 flex items-center gap-1 text-xs font-medium text-orange-500">
           REQUIRED <span className="text-base">*</span>
         </p>
 
