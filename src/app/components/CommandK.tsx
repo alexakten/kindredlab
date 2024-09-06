@@ -70,7 +70,7 @@ export default function CommandK({ isVisible }: CommandKProps) {
 
   return (
     <div
-      className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center bg-white bg-opacity-10 backdrop-blur-md"
+      className="fixed px-3 left-0 top-0 z-50 flex h-screen w-screen items-center justify-center bg-white bg-opacity-10 backdrop-blur-md"
       onMouseDown={handleClickOutside}
     >
       <div
@@ -86,7 +86,7 @@ export default function CommandK({ isVisible }: CommandKProps) {
         </p>
 
         <form onSubmit={handleSubmit}>
-          <div className="mt-8 grid grid-cols-2 gap-x-4">
+          <div className="mt-8 grid grid-cols-1 gap-x-4 sm:grid-cols-2">
             <div className="mb-4">
               <label htmlFor="name" className="block text-sm font-medium">
                 Name
