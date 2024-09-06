@@ -55,7 +55,7 @@ export default function Navbar() {
           </p>
         </Link>
         {/* <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 gap-8 "> */}
-        <div className="flex gap-8 ">
+        <div className="hidden gap-8 sm:flex ">
           <Link
             className="opacity-75 hover:underline hover:opacity-100"
             href={"#"}
