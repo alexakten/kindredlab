@@ -20,7 +20,7 @@ export default function Home() {
           <Motion
             initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
-            transition={{ ease: "easeInOut", delay: 1, duration: 0.5 }}
+            transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
             className="flex w-full max-w-8xl flex-col items-center"
           >
             <div className="bg-indigo-950"></div>
@@ -90,8 +90,8 @@ export default function Home() {
                 className="flex items-center gap-2 rounded-lg bg-zinc-900 px-4 py-2.5 hover:bg-zinc-800"
               >
                 <p className="text-base font-medium">Book demo</p>
-                <span className="flex h-6 w-6 items-center justify-center rounded-[4px] bg-zinc-800 text-[12px]">
-                  B
+                <span className="flex h-6 w-8 border border-zinc-700 items-center justify-center rounded-[4px] bg-zinc-800 text-[12px]">
+                  ⌘ B
                 </span>
               </Link>
               <Link
@@ -109,7 +109,7 @@ export default function Home() {
             className="flex w-full max-w-8xl flex-col items-center"
           >
             <p className="mt-32 text-sm opacity-50">Trusted by teams at</p>
-            <div className="px-8 mt-5">
+            <div className="mt-5 px-8">
               <Logos />
             </div>
           </Motion>

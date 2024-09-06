@@ -93,15 +93,15 @@ export default function Navbar() {
             className="flex items-center gap-2 rounded-lg bg-zinc-900 px-3 py-2 hover:bg-zinc-800"
           >
             <p className="text-xs font-medium">Book demo</p>
-            <span className="flex h-4 w-4 items-center justify-center rounded-[4px] bg-zinc-800 text-[10px]">
-              B
+            <span className="flex h-5 w-7 items-center justify-center rounded-[4px] border border-zinc-700 bg-zinc-800 text-[10px]">
+              ⌘ B
             </span>
           </Link>
           <Link
             href="mailto:hello@kindredlab.io"
-            className="rounded-lg bg-zinc-50 px-3 py-2 text-xs font-medium text-zinc-950 hover:bg-white"
+            className="flex py-2 items-center justify-center rounded-lg bg-zinc-50 px-3 text-zinc-950 hover:bg-white"
           >
-            Say hello
+            <p className="text-xs font-medium">Say hello</p>
           </Link>
         </div>
       </nav>
