@@ -20,7 +20,7 @@ export default function Home() {
           <Motion
             initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
-            transition={{ ease: "easeInOut", delay: 1.5, duration: 0.5 }}
+            transition={{ ease: "easeInOut", delay: 1, duration: 0.5 }}
             className="flex w-full max-w-8xl flex-col items-center"
           >
             <div className="bg-indigo-950"></div>
@@ -35,7 +35,7 @@ export default function Home() {
           <Motion
             initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
-            transition={{ ease: "easeInOut", delay: 0.5, duration: 0.5 }}
+            transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
             className="flex w-full max-w-8xl flex-col items-center"
           >
             <h1 className="mt-4 max-w-2xl bg-gradient-to-t from-zinc-100 to-white bg-clip-text pb-3 text-[clamp(48px,6vw,80px)] font-[450] leading-[1] tracking-tight text-transparent">
@@ -48,7 +48,7 @@ export default function Home() {
           <Motion
             initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
-            transition={{ ease: "easeInOut", delay: 0.75, duration: 0.5 }}
+            transition={{ ease: "easeInOut", delay: 0.4, duration: 0.5 }}
             className="flex w-full max-w-8xl flex-col items-center"
           >
             <h2 className="mt-3 max-w-lg px-4 text-xl opacity-50">
@@ -81,7 +81,7 @@ export default function Home() {
           <Motion
             initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
-            transition={{ ease: "easeInOut", delay: 1, duration: 0.5 }}
+            transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
             className="flex w-full max-w-8xl flex-col items-center"
           >
             <div className="mt-8 flex gap-4">
@@ -105,7 +105,7 @@ export default function Home() {
           <Motion
             initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
-            transition={{ ease: "easeInOut", delay: 1.25, duration: 0.5 }}
+            transition={{ ease: "easeInOut", delay: 0.8, duration: 0.5 }}
             className="flex w-full max-w-8xl flex-col items-center"
           >
             <p className="mt-32 text-sm opacity-50">Trusted by teams at</p>
