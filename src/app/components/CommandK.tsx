@@ -140,7 +140,7 @@ export default function CommandK({ isVisible }: CommandKProps) {
             </div>
           </div>
 
-          <div className="flex mt-4 w-full items-center justify-end gap-4">
+          <div className="mt-4 flex w-full items-center justify-end gap-4">
             {message && (
               <p
                 className={`${message.includes("success") ? "text-green-500" : "text-red-500"}`}
