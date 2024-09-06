@@ -4,10 +4,19 @@ import Footer from "./components/Footer";
 import { Motion } from "./components/Motion";
 import Logos from "./components/Logos";
 import ProjectCard from "./components/ProjectCard";
+import CommandK from "./components/CommandK";
 
-export default function Home() {
+type SearchParamProps = {
+  searchParams: Record<string, string> | null | undefined;
+};
+
+export default function Home({ searchParams }: SearchParamProps) {
+  const bookDemo = searchParams?.BookDemo === "true";
+
   return (
     <main className="flex flex-col items-center justify-center overflow-x-hidden bg-black px-0 tracking-tight text-zinc-100 sm:px-0">
+      {bookDemo && <CommandK isVisible={bookDemo} />}
+
       <Motion
         initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
@@ -41,7 +50,7 @@ export default function Home() {
             <h1 className="mt-4 max-w-2xl bg-gradient-to-t from-zinc-100 to-white bg-clip-text pb-3 text-[clamp(48px,6vw,80px)] font-[450] leading-[1] tracking-tight text-transparent">
               Web and product <br />
               <span className="font-freight text-[clamp(53.33px,6.666vw,88px)] font-medium italic">
-                design studio
+                design agency
               </span>
             </h1>
           </Motion>
@@ -86,8 +95,9 @@ export default function Home() {
           >
             <div className="mt-8 flex gap-4">
               <Link
-                href="mailto:hello@kindredlab.io"
+                href="/?BookDemo=true"
                 className="flex items-center gap-2 rounded-lg bg-zinc-900 px-4 py-2.5 hover:bg-zinc-800"
+                replace
               >
                 <p className="text-base font-medium">Book demo</p>
                 <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-700 bg-zinc-800 text-[12px]">
@@ -115,7 +125,14 @@ export default function Home() {
           </Motion>
         </section>
 
-        <section className="project-scroll-container mt-24 flex w-screen gap-4 overflow-y-auto px-8 ">
+        <Footer />
+      </Motion>
+    </main>
+  );
+}
+
+{
+  /* <section className="project-scroll-container mt-24 flex w-screen gap-4 overflow-y-auto px-8 ">
           <ProjectCard
             image="/images/qura/qura-1.png"
             orientation="landscape"
@@ -173,10 +190,5 @@ export default function Home() {
           <ProjectCard image="/images/tts/tts-2.png" />
           <ProjectCard image="/images/tts/tts-3.png" orientation="portrait" />
           <ProjectCard image="/images/tts/tts-4.png" orientation="portrait" />
-        </section>
-
-        <Footer />
-      </Motion>
-    </main>
-  );
+        </section> */
 }

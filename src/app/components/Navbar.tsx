@@ -7,10 +7,10 @@ export default function Navbar() {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ ease: "easeInOut", delay: 0, duration: 0.5 }}
-      className="fixed z-50 flex w-full flex-col items-center"
+      className="fixed z-40 flex w-full flex-col items-center"
     >
-      <nav className="fixed z-50 mt-4 flex w-full max-w-3xl items-center justify-between rounded-2xl border border-white border-opacity-20 bg-white bg-opacity-5 py-1.5 pl-3 pr-2 text-xs font-medium backdrop-blur-md">
-        <Link href={"/"} className="z-10 flex items-center gap-1.5">
+      <nav className="fixed mt-4 flex w-full max-w-3xl items-center justify-between rounded-2xl border border-white border-opacity-20 bg-white bg-opacity-5 py-1.5 pl-3 pr-2 text-xs font-medium backdrop-blur-md">
+        <Link href={"/"} className="flex items-center gap-1.5">
           <svg
             width="17"
             height="30"
@@ -89,8 +89,9 @@ export default function Navbar() {
         </div>
         <div className="flex gap-4">
           <Link
-            href="mailto:hello@kindredlab.io"
+            href="/?BookDemo=true"
             className="flex items-center gap-2 rounded-lg bg-zinc-900 px-3 py-2 hover:bg-zinc-800"
+            replace
           >
             <p className="text-xs font-medium">Book demo</p>
             <span className="flex h-5 w-7 items-center justify-center rounded-[4px] border border-zinc-700 bg-zinc-800 text-[10px]">
@@ -99,7 +100,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="mailto:hello@kindredlab.io"
-            className="flex py-2 items-center justify-center rounded-lg bg-zinc-50 px-3 text-zinc-950 hover:bg-white"
+            className="flex items-center justify-center rounded-lg bg-zinc-50 px-3 py-2 text-zinc-950 hover:bg-white"
           >
             <p className="text-xs font-medium">Say hello</p>
           </Link>
