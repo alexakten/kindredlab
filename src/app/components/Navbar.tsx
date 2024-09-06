@@ -89,8 +89,9 @@ export default function Navbar() {
         </div>
         <div className="flex gap-4">
           <Link
-            href="mailto:hello@kindredlab.io"
+            href="/?BookDemo=true"
             className="flex items-center gap-2 rounded-lg bg-zinc-900 px-3 py-2 hover:bg-zinc-800"
+            replace
           >
             <p className="text-xs font-medium">Book demo</p>
             <span className="flex h-5 w-7 items-center justify-center rounded-[4px] border border-zinc-700 bg-zinc-800 text-[10px]">
@@ -99,7 +100,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="mailto:hello@kindredlab.io"
-            className="flex py-2 items-center justify-center rounded-lg bg-zinc-50 px-3 text-zinc-950 hover:bg-white"
+            className="flex items-center justify-center rounded-lg bg-zinc-50 px-3 py-2 text-zinc-950 hover:bg-white"
           >
             <p className="text-xs font-medium">Say hello</p>
           </Link>
