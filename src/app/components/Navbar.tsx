@@ -43,8 +43,8 @@ export default function Navbar() {
               fill="white"
             />
             <path
-              fill-rule="evenodd"
-              clip-rule="evenodd"
+              fillRule="evenodd"
+              clipRule="evenodd"
               d="M105.75 52.6743L132.04 78.9647V78.9731L105.75 78.9731V52.6743Z"
               fill="white"
             />
@@ -54,7 +54,6 @@ export default function Navbar() {
             Laboratory
           </p>
         </Link>
-        {/* <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 gap-8 "> */}
         <div className="hidden gap-8 sm:flex ">
           <Link
             className="opacity-75 hover:underline hover:opacity-100"
