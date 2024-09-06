@@ -109,7 +109,7 @@ export default function Home() {
             className="flex w-full max-w-8xl flex-col items-center"
           >
             <p className="mt-32 text-sm opacity-50">Trusted by teams at</p>
-            <div className="mt-5">
+            <div className="px-8 mt-5">
               <Logos />
             </div>
           </Motion>

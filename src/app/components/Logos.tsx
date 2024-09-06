@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Logos() {
   return (
-    <div className="flex items-center justify-center gap-12 opacity-80">
+    <div className="flex flex-wrap items-center justify-center gap-12 opacity-80">
       <svg
         width="100"
         height="32"
