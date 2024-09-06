@@ -9,9 +9,9 @@ export default function Home() {
   return (
     <main className="flex flex-col items-center justify-center overflow-x-hidden bg-black px-0 tracking-tight text-zinc-100 sm:px-0">
       <Motion
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
-        transition={{ ease: "easeInOut", duration: 0.5 }}
+        transition={{ ease: "easeInOut", duration: 0 }}
         className="flex w-full max-w-8xl flex-col items-center"
       >
         <Navbar />
