@@ -104,7 +104,7 @@ export default function Home({ searchParams }: SearchParamProps) {
           </Motion>
         </section>
 
-        <Footer />
+        {/* <Footer /> */}
       </Motion>
     </main>
   );
