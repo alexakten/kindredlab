@@ -82,7 +82,7 @@ export default function CommandK({ isVisible }: CommandKProps) {
       >
         <h2 className="text-2xl font-semibold">Contact the team</h2>
         <p className="mt-2 opacity-50">
-          Tell us about your project and we'll be in touch.
+          Tell us about your project and we&apos;ll be in touch.
         </p>
         <p className="mt-2 flex items-center gap-1 text-xs font-medium text-orange-500">
           REQUIRED <span className="text-base">*</span>
