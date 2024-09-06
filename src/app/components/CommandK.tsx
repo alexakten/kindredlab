@@ -137,7 +137,7 @@ export default function CommandK({ isVisible }: CommandKProps) {
               </label>
               <input
                 id="companyWebsite"
-                type="url"
+                type="string"
                 placeholder="lightyear.com"
                 value={formData.companyWebsite}
                 onChange={handleInputChange}
