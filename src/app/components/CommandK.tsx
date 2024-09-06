@@ -88,14 +88,6 @@ export default function CommandK({ isVisible }: CommandKProps) {
           REQUIRED <span className="text-base">*</span>
         </p>
 
-        {message && (
-          <p
-            className={`mb-4 ${message.includes("success") ? "text-green-500" : "text-red-500"}`}
-          >
-            {message}
-          </p>
-        )}
-
         <form onSubmit={handleSubmit}>
           <div className="mt-8 grid grid-cols-2 gap-x-4">
             <div className="mb-4">
@@ -139,7 +131,7 @@ export default function CommandK({ isVisible }: CommandKProps) {
               <Label htmlFor="companyWebsite">Company Website</Label>
               <Input
                 id="companyWebsite"
-                type="url"
+                type="string"
                 placeholder="lightyear.com"
                 value={formData.companyWebsite}
                 onChange={handleInputChange}
@@ -148,14 +140,21 @@ export default function CommandK({ isVisible }: CommandKProps) {
             </div>
           </div>
 
-          <div className="flex w-full justify-end">
-            <Button
+          <div className="flex mt-4 w-full items-center justify-end gap-4">
+            {message && (
+              <p
+                className={`${message.includes("success") ? "text-green-500" : "text-red-500"}`}
+              >
+                {message}
+              </p>
+            )}
+            <button
               type="submit"
-              className="mt-4 bg-zinc-900 px-4 py-2.5 hover:bg-zinc-800"
+              className=" rounded-lg bg-zinc-900 px-4 py-2.5 text-white hover:bg-zinc-800"
               disabled={isSubmitting}
             >
               {isSubmitting ? "Submitting..." : "Submit"}
-            </Button>
+            </button>
           </div>
         </form>
       </div>
