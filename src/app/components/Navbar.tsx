@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default function Navbar() {
   return (
-    <nav className="fixed z-50 mt-4 flex w-full max-w-8xl items-center justify-between px-8">
+    <nav className="fixed z-50 flex w-full max-w-8xl items-center justify-between px-8 py-4">
       <Link href={"/"} className="z-10 flex items-center gap-1.5">
         <svg
           width="17"
@@ -47,7 +47,7 @@ export default function Navbar() {
           Laboratory
         </p>
       </Link>
-      <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 gap-8 rounded-full border border-white border-opacity-20 bg-white bg-opacity-10 px-5 py-1.5 text-xs font-medium backdrop-blur-md">
+      <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 gap-8 rounded-full border border-white border-opacity-20 bg-white bg-opacity-5 px-5 py-1.5 text-xs font-medium backdrop-blur-md">
         <Link
           className="opacity-75 hover:underline hover:opacity-100"
           href={"#"}
