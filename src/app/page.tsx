@@ -90,8 +90,8 @@ export default function Home() {
                 className="flex items-center gap-2 rounded-lg bg-zinc-900 px-4 py-2.5 hover:bg-zinc-800"
               >
                 <p className="text-base font-medium">Book demo</p>
-                <span className="flex h-6 w-8 border border-zinc-700 items-center justify-center rounded-[4px] bg-zinc-800 text-[12px]">
-                  ⌘ B
+                <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-700 bg-zinc-800 text-[12px]">
+                  ⌘ K
                 </span>
               </Link>
               <Link

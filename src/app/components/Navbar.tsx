@@ -94,7 +94,7 @@ export default function Navbar() {
           >
             <p className="text-xs font-medium">Book demo</p>
             <span className="flex h-5 w-7 items-center justify-center rounded-[4px] border border-zinc-700 bg-zinc-800 text-[10px]">
-              ⌘ B
+              ⌘ K
             </span>
           </Link>
           <Link
