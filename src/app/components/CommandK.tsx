@@ -78,13 +78,15 @@ export default function CommandK({ isVisible }: CommandKProps) {
     >
       <div
         ref={modalRef}
-        className="w-full max-w-xl rounded-2xl bg-white p-6 text-black shadow-lg"
+        className="w-full max-w-xl rounded-2xl border-4 border-zinc-300 bg-zinc-100 p-6 text-black shadow-lg"
       >
         <h2 className="text-2xl font-semibold">Contact the team</h2>
-        <p className="mt-4 opacity-50">
+        <p className="mt-2 opacity-50">
           Tell us about your project and we'll be in touch.
         </p>
-        <p className="mt-4 text-xs font-medium text-blue-600">REQUIRED *</p>
+        <p className="* mt-2 flex items-center gap-1 text-xs font-medium text-orange-500">
+          REQUIRED <span className="text-base">*</span>
+        </p>
 
         {message && (
           <p
@@ -101,10 +103,10 @@ export default function CommandK({ isVisible }: CommandKProps) {
               <Input
                 id="name"
                 type="text"
-                placeholder="Your name"
+                placeholder="Buzz Lightyear"
                 value={formData.name}
                 onChange={handleInputChange}
-                className="mt-1"
+                className="mt-1 opacity-75"
               />
             </div>
 
@@ -113,24 +115,24 @@ export default function CommandK({ isVisible }: CommandKProps) {
               <Input
                 id="phone"
                 type="tel"
-                placeholder="Your phone number"
+                placeholder="+46 70-123 45 67"
                 value={formData.phone}
                 onChange={handleInputChange}
-                className="mt-1"
+                className="mt-1 opacity-75"
               />
             </div>
             <div className="mb-4">
               <Label htmlFor="email">
-                Email <span className="text-blue-500">*</span>
+                Email <span className="text-orange-500">*</span>
               </Label>
               <Input
                 id="email"
                 type="email"
-                placeholder="Your email"
+                placeholder="buzz@lightyear.com"
                 value={formData.email}
                 onChange={handleInputChange}
                 required
-                className="mt-1"
+                className="mt-1 opacity-75"
               />
             </div>
             <div className="mb-4">
@@ -138,16 +140,20 @@ export default function CommandK({ isVisible }: CommandKProps) {
               <Input
                 id="companyWebsite"
                 type="url"
-                placeholder="Your company website"
+                placeholder="lightyear.com"
                 value={formData.companyWebsite}
                 onChange={handleInputChange}
-                className="mt-1"
+                className="mt-1 opacity-75"
               />
             </div>
           </div>
 
           <div className="flex w-full justify-end">
-            <Button type="submit" className="mt-8" disabled={isSubmitting}>
+            <Button
+              type="submit"
+              className="mt-4 bg-zinc-900 px-4 py-2.5 hover:bg-zinc-800"
+              disabled={isSubmitting}
+            >
               {isSubmitting ? "Submitting..." : "Submit"}
             </Button>
           </div>
