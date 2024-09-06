@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, MotionProps as FramerMotionProps } from "framer-motion";
-import React from "react";
+import React, { ElementType } from "react";
 
 interface MotionProps extends Omit<FramerMotionProps, "ref"> {
   type?: keyof typeof motion;
@@ -10,12 +10,12 @@ interface MotionProps extends Omit<FramerMotionProps, "ref"> {
 }
 
 export const Motion: React.FC<MotionProps> = ({
-  type,
+  type = "div", // Default to div if no type is provided
   children,
   className,
   ...props
 }) => {
-  const Component = type ? motion[type] : motion.div;
+  const Component: ElementType = motion[type]; // Explicitly typing the component as `ElementType`
 
   return (
     <Component className={className} {...props}>
