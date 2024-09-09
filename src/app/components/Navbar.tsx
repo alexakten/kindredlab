@@ -9,9 +9,31 @@ export default function Navbar() {
       transition={{ ease: "easeInOut", delay: 0, duration: 0.5 }}
       className="fixed z-50 flex w-full flex-col items-center"
     >
-      <nav className="fixed z-50 mt-4 flex w-full max-w-3xl items-center justify-between rounded-2xl border border-white border-opacity-20 bg-white bg-opacity-5 py-1.5 pl-3 pr-2 text-xs font-medium backdrop-blur-md">
+      <nav className="fixed z-50 mt-4 flex w-full max-w-3xl items-center justify-between rounded-2xl border border-white border-opacity-20 bg-white bg-opacity-5 py-1.5 pl-4 pr-2 text-xs font-medium backdrop-blur-md">
         <Link href={"/"} className="z-10 flex items-center gap-1.5">
-          <svg
+          <div className="flex items-center justify-center gap-1">
+            {/* <svg
+              width="23"
+              height="23"
+              viewBox="0 0 40 40"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M0 0H24V8V16H16V24H24V16H32H40V40H0V0ZM40 8V0H32V8H40Z"
+                fill="white"
+              />
+            </svg> */}
+
+            <p className="relative font-freight text-lg font-semibold leading-[0.95] tracking-tight">
+              kindred
+              <span className="font-medium italic">house</span>
+              {/* <span className="absolute top-2 font-normal -right-1 font-inter text-[0.3rem]">®</span> */}
+            </p>
+          </div>
+          {/* <svg
             width="17"
             height="30"
             viewBox="0 0 133 183"
@@ -51,8 +73,8 @@ export default function Navbar() {
           </svg>
           <p className="text-sm font-[450] leading-[0.95] tracking-tight mix-blend-difference ">
             Kindred <br />
-            Laboratory
-          </p>
+            House
+          </p> */}
         </Link>
         {/* <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 gap-8 "> */}
         <div className="hidden gap-8 sm:flex ">

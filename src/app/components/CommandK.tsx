@@ -70,7 +70,7 @@ export default function CommandK({ isVisible }: CommandKProps) {
 
   return (
     <div
-      className="fixed px-3 left-0 top-0 z-50 flex h-screen w-screen items-center justify-center bg-white bg-opacity-10 backdrop-blur-md"
+      className="fixed left-0 top-0 z-50 flex h-screen w-screen items-center justify-center bg-white bg-opacity-10 px-3 backdrop-blur-md"
       onMouseDown={handleClickOutside}
     >
       <div
@@ -81,15 +81,18 @@ export default function CommandK({ isVisible }: CommandKProps) {
         <p className="mt-2 opacity-50">
           Tell us about your project and we&apos;ll be in touch.
         </p>
-        <p className="mt-2 flex items-center gap-1 text-xs font-medium text-orange-500">
+        {/* <p className="mt-2 flex items-center gap-1 text-xs font-medium text-orange-500">
           REQUIRED <span className="text-base">*</span>
-        </p>
+        </p> */}
 
         <form onSubmit={handleSubmit}>
           <div className="mt-8 grid grid-cols-1 gap-x-4 sm:grid-cols-2">
             <div className="mb-4">
-              <label htmlFor="name" className="block text-sm font-medium">
-                Name
+              <label
+                htmlFor="name"
+                className="flex items-end gap-1 text-sm font-medium"
+              >
+                <p>Name</p>
               </label>
               <input
                 id="name"
@@ -115,8 +118,12 @@ export default function CommandK({ isVisible }: CommandKProps) {
               />
             </div>
             <div className="mb-4">
-              <label htmlFor="email" className="block text-sm font-medium">
-                Email <span className="text-orange-500">*</span>
+              <label
+                htmlFor="email"
+                className="flex items-end gap-1 text-sm font-medium"
+              >
+                <p>Email</p>
+                <span className="text-[8px] text-orange-500">*REQUIRED</span>
               </label>
               <input
                 id="email"
