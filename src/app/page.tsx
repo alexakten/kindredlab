@@ -48,7 +48,7 @@ export default function Home({ searchParams }: SearchParamProps) {
             className="flex w-full max-w-8xl flex-col items-center"
           >
             <h1 className="mt-4 max-w-2xl bg-gradient-to-t from-zinc-100 to-white bg-clip-text pb-3 text-[clamp(48px,6vw,80px)] font-[450] leading-[1] tracking-tight text-transparent">
-              Your extended <br />
+              Extend your <br />
               <span className="font-freight text-[clamp(53.33px,6.666vw,88px)] font-medium italic">
                 design team
               </span>
@@ -109,4 +109,3 @@ export default function Home({ searchParams }: SearchParamProps) {
     </main>
   );
 }
-
