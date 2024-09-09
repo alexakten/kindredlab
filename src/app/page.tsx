@@ -50,7 +50,7 @@ export default function Home({ searchParams }: SearchParamProps) {
             <h1 className="mt-4 max-w-2xl bg-gradient-to-t from-zinc-100 to-white bg-clip-text pb-3 text-[clamp(48px,6vw,80px)] font-[450] leading-[1] tracking-tight text-transparent">
               Supercharge your <br />
               <span className="font-freight text-[clamp(53.33px,6.666vw,90px)] font-medium italic">
-                design team
+                design & marketing
               </span>
             </h1>
           </Motion>
