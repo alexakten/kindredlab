@@ -65,8 +65,8 @@ export default function Home({ searchParams }: SearchParamProps) {
             className="flex w-full max-w-8xl flex-col items-center"
           >
             <h2 className="mt-3 max-w-lg px-4 text-xl opacity-50">
-              We&apos;re a fully remote studio designing landing pages and
-              products for startups that iterate fast.
+              We&apos;re a fully remote design partner for next-gen businesses
+              that iterate fast.
             </h2>
           </Motion>
 
@@ -120,7 +120,8 @@ export default function Home({ searchParams }: SearchParamProps) {
         {/* Services */}
         <section className="mt-40 flex h-full w-full flex-col items-center rounded-[2rem] bg-[radial-gradient(170%_100%_at_bottom,_#010314_30%,_#592ED3_60%,_#fff_100%)] py-32 text-center backdrop-blur-sm">
           <h2 className="mb-16 max-w-2xl bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-5xl font-[450] leading-[1.2] tracking-tight text-transparent">
-            Boost your team&apos;s productivity and ship products faster
+            Boost your team&apos;s productivity <br />— ship products lightning
+            fast.
           </h2>
           <ServicesSection />
         </section>
@@ -143,7 +144,7 @@ export default function Home({ searchParams }: SearchParamProps) {
         </section>
 
         {/* CTA */}
-        <section className="mt-40 flex h-full w-full flex-col items-center rounded-[2rem] bg-[radial-gradient(170%_100%_at_bottom,_#010314_30%,_#592ED3_60%,_#fff_100%)] px-24 pt-32 pb-16 text-center backdrop-blur-sm">
+        <section className="mt-40 flex h-full w-full flex-col items-center rounded-[2rem] bg-[radial-gradient(170%_100%_at_bottom,_#010314_30%,_#592ED3_60%,_#fff_100%)] px-24 pb-16 pt-32 text-center backdrop-blur-sm">
           <h2 className="max-w-2xl bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-5xl font-[450] leading-[1.2] tracking-tight text-transparent">
             Ready to get started?
           </h2>
