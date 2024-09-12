@@ -106,6 +106,7 @@ export default function Navbar() {
         <div className="flex gap-4">
           <Link
             href="/?BookDemo=true"
+            scroll={false}
             className="flex items-center gap-2 rounded-lg bg-zinc-900 px-3 py-2 hover:bg-zinc-800"
             replace
           >

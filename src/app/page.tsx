@@ -17,7 +17,7 @@ export default function Home({ searchParams }: SearchParamProps) {
   const bookDemo = searchParams?.BookDemo === "true";
 
   return (
-    <main className="flex flex-col items-center justify-center overflow-x-hidden bg-black px-0 tracking-tight text-zinc-100 sm:px-2">
+    <main className="flex flex-col  items-center justify-center overflow-x-hidden bg-black px-0 tracking-tight text-zinc-100 sm:px-2">
       {bookDemo && <CommandK isVisible={bookDemo} />}
 
       <Motion
@@ -78,6 +78,7 @@ export default function Home({ searchParams }: SearchParamProps) {
             <div className="mt-8 flex gap-4">
               <Link
                 href="/?BookDemo=true"
+                scroll={false}
                 className="flex items-center gap-2 rounded-lg bg-zinc-900 px-4 py-2.5 hover:bg-zinc-800"
                 replace
               >

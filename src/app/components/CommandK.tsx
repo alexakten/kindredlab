@@ -23,7 +23,7 @@ export default function CommandK({ isVisible }: CommandKProps) {
   // Handle closing the modal when clicking outside
   const handleClickOutside = (event: React.MouseEvent) => {
     if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
-      router.push("/"); // Close the modal by removing 'BookDemo=true' from the URL
+      router.push("/", { scroll: false }); // Close the modal by removing 'BookDemo=true' from the URL without scrolling
     }
   };
 
@@ -82,9 +82,6 @@ export default function CommandK({ isVisible }: CommandKProps) {
           Tell us about your project and we&apos;ll be in touch as soon as
           possible.
         </p>
-        {/* <p className="mt-2 flex items-center gap-1 text-xs font-medium text-orange-500">
-          REQUIRED <span className="text-base">*</span>
-        </p> */}
 
         <form onSubmit={handleSubmit}>
           <div className="mt-8 grid grid-cols-1 gap-x-4">

@@ -17,9 +17,9 @@ export default function ShortcutListener() {
 
         // Toggle the modal: open it if closed, close it if open
         if (isModalOpen) {
-          router.push("/"); // Close the modal by navigating back to the root URL
+          router.push("/", { scroll: false }); // Close the modal without scrolling to the top
         } else {
-          router.push("/?BookDemo=true"); // Open the modal by adding 'BookDemo=true' to the URL
+          router.push("/?BookDemo=true", { scroll: false }); // Open the modal without scrolling to the top
         }
       }
     };
