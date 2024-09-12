@@ -2,7 +2,7 @@ import Testimonial from "../components/Testimonial";
 
 export default function TestimonialSection() {
   return (
-    <div className="flex">
+    <div className="flex flex-wrap">
       <div className="flex flex-1 flex-col gap-4">
         <Testimonial
           text="After the new website launch one of our hard-to-get leads reached out. That says a lot."
