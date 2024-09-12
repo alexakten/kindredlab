@@ -7,6 +7,27 @@ import ShortcutListener from "./components/ShortcutListener";
 export const metadata: Metadata = {
   title: "Kindred House",
   description: "Supercharge your design & marketing",
+
+  openGraph: {
+    title: "Kindred House",
+    description: "Supercharge your design & marketing",
+    url: "https://kindredhouse.se/",
+    type: "website",
+    images: [
+      {
+        url: "https://kindredhouse.se/open-graph.webp",
+        width: 1200,
+        height: 630,
+        alt: "Supercharge your design & marketing",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Kindred House",
+    description: "Supercharge your design & marketing",
+    images: ["https://kindredhouse.se/open-graph.webp"],
+  },
 };
 
 export default function RootLayout({
