@@ -4,7 +4,7 @@ export default function PricingSection() {
   const pricingPlans = [
     {
       title: "Starter",
-      tag: "For teams getting started",
+      tag: "For teams just getting started",
       price: "70,000",
       included: [
         "60 credits / mo",
@@ -19,7 +19,7 @@ export default function PricingSection() {
     {
       title: "Boost",
       mostPopular: true, // This flag is already set
-      tag: "For teams that are scaling",
+      tag: "For teams that are scaling fast",
       price: "100,000",
       included: [
         "100 credits / mo",
@@ -39,7 +39,7 @@ export default function PricingSection() {
       price: "140,000",
       included: [
         "160 credits / mo",
-        "24/7 access & on call support",
+        "Full time access",
         "At least 1 designer always available",
         "Unlimited design requests",
         "Average delivery time 2-7 days",

@@ -3,6 +3,7 @@ import {
   AlignLeft,
   Code,
   MagicWand,
+  CubeTransparent,
   Cube,
   Confetti,
   Cursor,
@@ -17,7 +18,7 @@ const services = [
   },
   {
     name: "Brand Design",
-    icon: Cube,
+    icon: CubeTransparent,
   },
   {
     name: "UX/UI Design",
