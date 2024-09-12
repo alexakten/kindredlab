@@ -5,6 +5,9 @@ import { Motion } from "./components/Motion";
 import Logos from "./components/Logos";
 import ProjectCard from "./components/ProjectCard";
 import CommandK from "./components/CommandK";
+import TestimonialSection from "./sections/TestimonialSection";
+import ServicesSection from "./sections/ServicesSection";
+import PricingSection from "./sections/PricingSection";
 
 type SearchParamProps = {
   searchParams: Record<string, string> | null | undefined;
@@ -14,7 +17,7 @@ export default function Home({ searchParams }: SearchParamProps) {
   const bookDemo = searchParams?.BookDemo === "true";
 
   return (
-    <main className="flex flex-col items-center justify-center overflow-x-hidden bg-black px-0 tracking-tight text-zinc-100 sm:px-0">
+    <main className="flex flex-col items-center justify-center overflow-x-hidden bg-black px-0 tracking-tight text-zinc-100 sm:px-2">
       {bookDemo && <CommandK isVisible={bookDemo} />}
 
       <Motion
@@ -25,7 +28,7 @@ export default function Home({ searchParams }: SearchParamProps) {
       >
         <Navbar />
         {/* Hero */}
-        <section className="z-10 mt-8 flex h-full w-full flex-col items-center rounded-3xl bg-[radial-gradient(170%_100%_at_top,_#010314_30%,_#592ED3_60%,_#fff_100%)] py-40 text-center backdrop-blur-sm">
+        <section className="z-10 mt-8 flex h-full w-full flex-col items-center rounded-[2rem] bg-[radial-gradient(170%_100%_at_top,_#010314_30%,_#592ED3_60%,_#fff_100%)] py-40 text-center backdrop-blur-sm">
           <Motion
             initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
@@ -102,6 +105,27 @@ export default function Home({ searchParams }: SearchParamProps) {
               <Logos />
             </div>
           </Motion>
+        </section>
+
+        <section className="mt-32 flex max-w-6xl flex-col items-center justify-center">
+          <h2 className="mb-16 bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-5xl font-[450] leading-[1.2] tracking-tight text-transparent ">
+            What our users are saying
+          </h2>
+          <TestimonialSection />
+        </section>
+
+        <section className="mt-32 flex h-full w-full flex-col items-center rounded-[2rem] bg-[radial-gradient(170%_100%_at_bottom,_#010314_30%,_#592ED3_60%,_#fff_100%)] py-32 text-center backdrop-blur-sm">
+          <h2 className="mb-16 max-w-2xl bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-5xl font-[450] leading-[1.2] tracking-tight text-transparent">
+            Boost your team&apos;s productivity and ship products faster
+          </h2>
+          <ServicesSection />
+        </section>
+
+        <section className="m-16 flex w-full max-w-5xl flex-col items-center justify-center">
+          <h2 className="mb-16 mt-1 bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-5xl font-[450] leading-[1.2] tracking-tight text-transparent ">
+            Pricing
+          </h2>
+          <PricingSection />
         </section>
 
         {/* <Footer /> */}

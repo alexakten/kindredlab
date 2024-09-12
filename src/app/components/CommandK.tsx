@@ -75,18 +75,19 @@ export default function CommandK({ isVisible }: CommandKProps) {
     >
       <div
         ref={modalRef}
-        className="w-full max-w-xl rounded-2xl border-4 border-zinc-300 bg-zinc-100 p-6 text-black shadow-lg"
+        className="w-full max-w-sm rounded-2xl border-4 border-zinc-700 bg-zinc-900 p-6 text-white shadow-lg"
       >
         <h2 className="text-2xl font-semibold">Contact the team</h2>
-        <p className="mt-2 opacity-50">
-          Tell us about your project and we&apos;ll be in touch.
+        <p className="mt-2 opacity-75">
+          Tell us about your project and we&apos;ll be in touch as soon as
+          possible.
         </p>
         {/* <p className="mt-2 flex items-center gap-1 text-xs font-medium text-orange-500">
           REQUIRED <span className="text-base">*</span>
         </p> */}
 
         <form onSubmit={handleSubmit}>
-          <div className="mt-8 grid grid-cols-1 gap-x-4 sm:grid-cols-2">
+          <div className="mt-8 grid grid-cols-1 gap-x-4">
             <div className="mb-4">
               <label
                 htmlFor="name"
@@ -100,7 +101,7 @@ export default function CommandK({ isVisible }: CommandKProps) {
                 placeholder="Buzz Lightyear"
                 value={formData.name}
                 onChange={handleInputChange}
-                className="mt-1 block w-full rounded-lg border-gray-300 p-2"
+                className="mt-1 block w-full rounded-lg border border-zinc-700 bg-zinc-800 p-2 text-white text-opacity-75"
               />
             </div>
 
@@ -114,7 +115,7 @@ export default function CommandK({ isVisible }: CommandKProps) {
                 placeholder="+46 70-123 45 67"
                 value={formData.phone}
                 onChange={handleInputChange}
-                className="mt-1 block w-full rounded-lg border-gray-300 p-2"
+                className="mt-1 block w-full rounded-lg border border-zinc-700 bg-zinc-800 p-2 text-white text-opacity-75"
               />
             </div>
             <div className="mb-4">
@@ -132,7 +133,7 @@ export default function CommandK({ isVisible }: CommandKProps) {
                 value={formData.email}
                 onChange={handleInputChange}
                 required
-                className="mt-1 block w-full rounded-lg border-gray-300 p-2"
+                className="mt-1 block w-full rounded-lg border border-zinc-700 bg-zinc-800 p-2 text-white text-opacity-75"
               />
             </div>
             <div className="mb-4">
@@ -148,7 +149,7 @@ export default function CommandK({ isVisible }: CommandKProps) {
                 placeholder="lightyear.com"
                 value={formData.companyWebsite}
                 onChange={handleInputChange}
-                className="mt-1 block w-full rounded-lg border-gray-300 p-2"
+                className="mt-1 block w-full rounded-lg border border-zinc-700 bg-zinc-800 p-2 text-white text-opacity-75"
               />
             </div>
           </div>
@@ -163,7 +164,7 @@ export default function CommandK({ isVisible }: CommandKProps) {
             )}
             <button
               type="submit"
-              className="rounded-lg bg-zinc-900 px-4 py-2.5 text-white hover:bg-zinc-800"
+              className="rounded-lg bg-zinc-50 px-4 py-2.5 text-black hover:bg-zinc-200"
               disabled={isSubmitting}
             >
               {isSubmitting ? "Submitting..." : "Submit"}

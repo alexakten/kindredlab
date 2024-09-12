@@ -17,7 +17,7 @@ export default function Pricing({
 }) {
   return (
     <div
-      className={`flex h-full w-full flex-col rounded-2xl border ${borderColor} tracking-tight shadow-sm ${textColor} ${bgColor} px-8 py-12`}
+      className={`flex h-full w-full flex-col rounded-2xl ${borderColor} overflow-hidden tracking-tight ${textColor} ${bgColor} px-8 py-12`}
     >
       <p className="text-3xl font-medium tracking-tight">{title}</p>
 

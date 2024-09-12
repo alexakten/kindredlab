@@ -5,8 +5,8 @@ import { Suspense } from "react";
 import ShortcutListener from "./components/ShortcutListener";
 
 export const metadata: Metadata = {
-  title: "Kindred Laboratory",
-  description: "Design partner for startups",
+  title: "Kindred House",
+  description: "Supercharge your design & marketing",
 };
 
 export default function RootLayout({

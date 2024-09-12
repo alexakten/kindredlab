@@ -27,7 +27,7 @@ export default function Navbar() {
               />
             </svg> */}
 
-            <p className="relative font-freight text-lg font-semibold leading-[0.95] tracking-tight">
+            <p className="relative font-freight text-xl font-semibold leading-[0.95] tracking-tight">
               kindred
               <span className="font-medium italic">house</span>
               {/* <span className="absolute top-2 font-normal -right-1 font-inter text-[0.3rem]">®</span> */}
@@ -83,12 +83,6 @@ export default function Navbar() {
             href={"#"}
           >
             Services
-          </Link>
-          <Link
-            className="opacity-75 hover:underline hover:opacity-100"
-            href={"#"}
-          >
-            About
           </Link>
           <Link
             className="opacity-75 hover:underline hover:opacity-100"
