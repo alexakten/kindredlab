@@ -96,12 +96,12 @@ export default function Navbar() {
           >
             Pricing
           </Link>
-          <Link
+          {/* <Link
             className="opacity-75 hover:underline hover:opacity-100"
             href={"#"}
           >
             Blog
-          </Link>
+          </Link> */}
         </div>
         <div className="flex gap-4">
           <Link
