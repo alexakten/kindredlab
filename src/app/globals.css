@@ -20,7 +20,6 @@
   font-weight: 100 900;
   font-style: normal;
   font-display: swap;
-  
 }
 
 .font-freight {
@@ -51,7 +50,7 @@ body {
   font-family: Inter, sans-serif;
   font-feature-settings:
     "ss07" 1,
-    "ss03" 1,
+    "ss03" 0,
     "ss08" 1,
     "liga" 1;
   background-color: #09090b;
@@ -103,7 +102,8 @@ body {
 }
 
 @keyframes rotate-light {
-  0%, 100% {
+  0%,
+  100% {
     background-position: center top;
   }
   12.5% {
@@ -128,7 +128,6 @@ body {
     background-position: left top;
   }
 }
-
 
 .animate-rotate-light {
   animation: rotate-light 5s linear infinite;

@@ -122,7 +122,7 @@ export default function Home({ searchParams }: SearchParamProps) {
           <ServicesSection />
         </section>
 
-        <section className="m-16 flex w-full max-w-5xl flex-col items-center justify-center">
+        <section className="m-16 flex w-full max-w-6xl flex-col items-center justify-center">
           <h2 className="mb-16 mt-1 bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-5xl font-[450] leading-[1.2] tracking-tight text-transparent ">
             Pricing
           </h2>
