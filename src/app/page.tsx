@@ -110,16 +110,16 @@ export default function Home({ searchParams }: SearchParamProps) {
         </section>
 
         {/* Testimonials */}
-        <section className="mt-40 px-4 flex max-w-6xl flex-col items-center justify-center">
-          <h2 className="mb-16 bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl sm:text-5xl font-[450] leading-[1.2] tracking-tight text-transparent ">
+        <section className="mt-40 flex max-w-6xl flex-col items-center justify-center px-4">
+          <h2 className="mb-16 bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-5xl ">
             What our users are saying
           </h2>
           <TestimonialSection />
         </section>
 
         {/* Services */}
-        <section className="mt-40 px-4 flex h-full w-full flex-col items-center rounded-[2rem] bg-[radial-gradient(170%_100%_at_bottom,_#010314_30%,_#592ED3_60%,_#fff_100%)] py-32 text-center backdrop-blur-sm">
-          <h2 className="mb-16 max-w-2xl bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl sm:text-5xl font-[450] leading-[1.2] tracking-tight text-transparent">
+        <section className="mt-40 flex h-full w-full flex-col items-center rounded-[2rem] bg-[radial-gradient(170%_100%_at_bottom,_#010314_30%,_#592ED3_60%,_#fff_100%)] px-4 py-32 text-center backdrop-blur-sm">
+          <h2 className="mb-16 max-w-2xl bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-5xl">
             Boost your team&apos;s productivity <br />— ship products lightning
             fast
           </h2>
@@ -128,15 +128,15 @@ export default function Home({ searchParams }: SearchParamProps) {
 
         {/* Projects */}
         <section className="mt-16 flex h-full w-full  flex-col items-center rounded-[2rem] bg-[radial-gradient(170%_100%_at_top,_#010314_30%,_#592ED3_60%,_#fff_100%)] py-32 text-center backdrop-blur-sm">
-          <h2 className="mb-16 max-w-2xl bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl sm:text-5xl font-[450] leading-[1.2] tracking-tight text-transparent">
+          <h2 className="mb-16 max-w-2xl bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-5xl">
             Recent work
           </h2>
           <ProjectScroll />
         </section>
 
         {/* Pricing */}
-        <section className="mt-40 px-4 flex w-full max-w-6xl flex-col items-center justify-center">
-          <h2 className="mb-16 mt-1 bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl sm:text-5xl font-[450] leading-[1.2] tracking-tight text-transparent ">
+        <section className="mt-40 flex w-full max-w-6xl flex-col items-center justify-center px-4">
+          <h2 className="mb-16 mt-1 bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-5xl ">
             Pricing
           </h2>
 
@@ -145,8 +145,14 @@ export default function Home({ searchParams }: SearchParamProps) {
 
         {/* CTA */}
         <section className="mt-40 flex h-full w-full flex-col items-center rounded-[2rem] bg-[radial-gradient(170%_100%_at_bottom,_#010314_30%,_#592ED3_60%,_#fff_100%)] px-4 pb-16 pt-32 text-center backdrop-blur-sm">
-          <h2 className="max-w-2xl bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl sm:text-5xlfont-[450] leading-[1.2] tracking-tight text-transparent">
+          {/* <h2 className="max-w-2xl bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl sm:text-5xl font-[450] leading-9 tracking-tight text-transparent">
             Ready to get started?
+          </h2> */}
+          <h2 className="mt-4 max-w-3xl bg-gradient-to-t from-zinc-100 to-white bg-clip-text pb-3 text-[clamp(36px,6vw,80px)] font-[450] leading-[1] tracking-tight text-transparent">
+            Ready to {" "}
+            <span className="font-freight text-[clamp(40px,6.666vw,90px)] font-medium italic">
+             get started?
+            </span>
           </h2>
           <h2 className="mt-3 max-w-sm px-4 text-xl opacity-50">
             Leave your details and we&apos;ll contact you to see if we&apos;re a
