@@ -41,7 +41,7 @@ export default function Home({ searchParams }: SearchParamProps) {
                 <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75"></span>
                 <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
               </span>
-              <p className="pl-2 opacity-50 ">2 spots open for September</p>
+              <p className="pl-2 opacity-50 ">2 spots open for October</p>
             </div>
           </Motion>
           <Motion
