@@ -121,7 +121,7 @@ export default function Home({ searchParams }: SearchParamProps) {
         <section className="mt-40 flex h-full w-full flex-col items-center rounded-[2rem] bg-[radial-gradient(170%_100%_at_bottom,_#010314_30%,_#592ED3_60%,_#fff_100%)] py-32 text-center backdrop-blur-sm">
           <h2 className="mb-16 max-w-2xl bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-5xl font-[450] leading-[1.2] tracking-tight text-transparent">
             Boost your team&apos;s productivity <br />— ship products lightning
-            fast.
+            fast
           </h2>
           <ServicesSection />
         </section>
