@@ -6,16 +6,17 @@ import {
   Cube,
   Confetti,
   Cursor,
+  CubeFocus,
   DeviceMobileCamera,
 } from "@phosphor-icons/react";
 
 const services = [
   {
-    name: "Landing Pages",
+    name: "Web Design",
     icon: AlignLeft,
   },
   {
-    name: "Logo Design",
+    name: "Brand Design",
     icon: Cube,
   },
   {
@@ -23,7 +24,7 @@ const services = [
     icon: MagicWand,
   },
   {
-    name: "Web Dev",
+    name: "Web Development",
     icon: Code,
   },
   {
@@ -36,6 +37,10 @@ const services = [
   },
   {
     name: "Content Creation",
+    icon: CubeFocus,
+  },
+  {
+    name: "Ad Creatives",
     icon: Confetti,
   },
 ];
