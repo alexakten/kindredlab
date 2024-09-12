@@ -5,7 +5,7 @@ export default function PricingSection() {
     {
       title: "Starter",
       tag: "For teams getting started",
-      price: "67,000",
+      price: "70,000",
       included: [
         "60 credits / mo",
         "Unlimited design requests",
@@ -20,7 +20,7 @@ export default function PricingSection() {
       title: "Boost",
       mostPopular: true, // This flag is already set
       tag: "For teams that are scaling",
-      price: "97,000",
+      price: "100,000",
       included: [
         "100 credits / mo",
         "At least 1 designer always available",
@@ -36,7 +36,7 @@ export default function PricingSection() {
     {
       title: "Superpowered",
       tag: "For teams that want full time access",
-      price: "137,000",
+      price: "140,000",
       included: [
         "160 credits / mo",
         "24/7 access & on call support",
