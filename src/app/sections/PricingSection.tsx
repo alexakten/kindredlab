@@ -52,7 +52,7 @@ export default function PricingSection() {
   ];
 
   return (
-    <div className="grid w-full grid-cols-1 gap-8 md:grid-cols-3">
+    <div className="grid w-full grid-cols-1 sm:grid-cols-2 gap-8 md:grid-cols-3">
       {pricingPlans.map((plan, index) => (
         <Pricing
           key={index}

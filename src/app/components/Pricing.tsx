@@ -24,7 +24,7 @@ export default function Pricing({
       <div className="flex w-full justify-between">
         <p className="text-3xl font-medium tracking-tight">{title}</p>
         {mostPopular && ( // Conditionally render "Most popular" if true
-          <div className="flex bg-white bg-opacity-10 border-white border-opacity-40 px-4 items-center rounded-full text-sm">
+          <div className="flex items-center rounded-full border-white border-opacity-40 bg-white bg-opacity-10 px-4 text-sm">
             <span className="relative flex h-2 w-2">
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75"></span>
               <span className="relative inline-flex h-2 w-2 rounded-full bg-white"></span>
@@ -36,7 +36,7 @@ export default function Pricing({
 
       <p className="mt-16 text-5xl font-medium tracking-tight">
         {price}
-        <span className="text-2xl"> SEK / month</span>
+        <span className="text-xl"> SEK / month</span>
       </p>
 
       <p className="mt-2 text-sm font-normal tracking-tight opacity-50">

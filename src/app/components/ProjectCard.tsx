@@ -14,7 +14,7 @@ export default function ProjectCard({
   return (
     <div className="flex flex-col">
       <div
-        className={`relative ${width} ${height} overflow-hidden rounded-2xl border border-zinc-200 bg-zinc-100`}
+        className={`relative ${width} ${height} overflow-hidden rounded-2xl`}
       >
         <Image src={image} alt="Design" layout="fill" objectFit="cover" />
       </div>
