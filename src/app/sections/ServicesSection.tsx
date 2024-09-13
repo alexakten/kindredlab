@@ -76,8 +76,8 @@ export default function ServicesSection() {
           );
         })}
       </div>
-      <div className="mt-24 grid w-full max-w-6xl grid-cols-2 gap-8 px-4 text-left">
-        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
+      <div className="mt-24 grid w-full max-w-6xl grid-cols-1 md:grid-cols-2 gap-8 px-4 text-left">
+        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-6 md:p-8">
           <p className="text-xs">Step 1</p>
           <h3 className="mt-2 text-2xl font-medium">Make any design request</h3>
           <p className="mt-2 opacity-75">
@@ -114,7 +114,8 @@ export default function ServicesSection() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
+
+        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-6 md:p-8">
           <p className="text-xs">Step 2</p>
           <h3 className="mt-2 text-2xl font-medium">
             Get designs delivered within 2-7 days
@@ -152,7 +153,7 @@ export default function ServicesSection() {
                   weight="duotone"
                   fill="white"
                 />
-                <div className="rounded-xs mt-3 bg-green-600 px-1 text-xs font-medium leading-[1.4]">
+                <div className="rounded-xs mt-3 text-nowrap bg-green-600 px-1 text-xs font-medium leading-[1.4]">
                   Eric B
                 </div>
               </div>
@@ -160,7 +161,7 @@ export default function ServicesSection() {
           </div>
         </div>
 
-        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
+        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-6 md:p-8">
           <p className="text-xs">Step 3</p>
           <h3 className="mt-2 text-2xl font-medium">
             Implement your designs and test
@@ -168,7 +169,7 @@ export default function ServicesSection() {
           <p className="mt-2 opacity-75">
             See how our designs perform in real life.
           </p>
-          <div className="relative mt-8 border-t border-white border-opacity-10 px-12 pb-12 pt-8">
+          <div className="relative mt-8 border-t border-white border-opacity-10 px-12 pt-8">
             <div className="absolute bottom-20 right-2 z-50 flex gap-1">
               <NavigationArrow
                 className="duocolor-pink"
@@ -236,7 +237,8 @@ export default function ServicesSection() {
             </div>
           </div>
         </div>
-        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
+
+        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-6 md:p-8">
           <p className="text-xs">Step 4</p>
           <h3 className="mt-2 text-2xl font-medium">
             Iterate on user feedback
@@ -244,7 +246,7 @@ export default function ServicesSection() {
           <p className="mt-2 opacity-75">
             Gather feedback and we iterate on our design.
           </p>
-          <div className="relative mt-8 border-t border-white border-opacity-10 px-8 pb-12 pt-8">
+          <div className="relative mt-8 border-t border-white border-opacity-10 px-0 md:px-8 pt-8">
             <div className="mx-2 flex flex-col justify-between rounded-2xl border border-white border-opacity-20 bg-white bg-opacity-10 p-6 shadow-sm ">
               <div className="flex items-center gap-2">
                 <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-purple-200">

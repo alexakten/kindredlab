@@ -132,7 +132,7 @@ export default function Home({ searchParams }: SearchParamProps) {
           <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
             Recent work
           </h2>
-          <div className="grid w-full max-w-6xl grid-cols-2 gap-x-8 gap-y-16 px-4">
+          <div className="grid w-full max-w-6xl grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 px-4">
             <Project
               client="Qura"
               year="2024"
