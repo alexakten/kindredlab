@@ -125,6 +125,45 @@ export default function Home({ searchParams }: SearchParamProps) {
             fast
           </h2>
           <ServicesSection />
+
+          <div className="mt-16 grid w-full max-w-6xl gap-4 grid-cols-2 px-4 text-left">
+            <div className="flex gap-4 flex-col">
+              <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
+                <p className="text-xs">Step 1</p>
+                <h3 className="mt-2 text-2xl font-medium">Revamp your brand</h3>
+                <p className="mt-2 opacity-75">
+                  From the ground up, we refresh all your visuals — from logo to
+                  font and colors.
+                </p>
+              </div>
+              <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
+                <p className="text-xs">Step 1</p>
+                <h3 className="mt-2 text-2xl font-medium">Revamp your brand</h3>
+                <p className="mt-2 opacity-75">
+                  From the ground up, we refresh all your visuals — from logo to
+                  font and colors.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-4 flex-col">
+              <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
+                <p className="text-xs">Step 1</p>
+                <h3 className="mt-2 text-2xl font-medium">Revamp your brand</h3>
+                <p className="mt-2 opacity-75">
+                  From the ground up, we refresh all your visuals — from logo to
+                  font and colors.
+                </p>
+              </div>
+              <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
+                <p className="text-xs">Step 1</p>
+                <h3 className="mt-2 text-2xl font-medium">Revamp your brand</h3>
+                <p className="mt-2 opacity-75">
+                  From the ground up, we refresh all your visuals — from logo to
+                  font and colors.
+                </p>
+              </div>
+            </div>
+          </div>
         </section>
 
         {/* Projects */}

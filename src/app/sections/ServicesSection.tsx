@@ -1,4 +1,3 @@
-"use client";
 import {
   AlignLeft,
   Code,
@@ -9,7 +8,7 @@ import {
   Cursor,
   CubeFocus,
   DeviceMobileCamera,
-} from "@phosphor-icons/react";
+} from "@phosphor-icons/react/dist/ssr";
 
 const services = [
   {
