@@ -9,6 +9,7 @@ import TestimonialSection from "./sections/TestimonialSection";
 import ServicesSection from "./sections/ServicesSection";
 import PricingSection from "./sections/PricingSection";
 import ProjectScroll from "./components/ProjectScroll";
+import Project from "./components/Project";
 
 type SearchParamProps = {
   searchParams: Record<string, string> | null | undefined;
@@ -126,8 +127,8 @@ export default function Home({ searchParams }: SearchParamProps) {
           </h2>
           <ServicesSection />
 
-          <div className="mt-16 grid w-full max-w-6xl gap-4 grid-cols-2 px-4 text-left">
-            <div className="flex gap-4 flex-col">
+          <div className="mt-16 grid w-full max-w-6xl grid-cols-2 gap-4 px-4 text-left">
+            <div className="flex flex-col gap-4">
               <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
                 <p className="text-xs">Step 1</p>
                 <h3 className="mt-2 text-2xl font-medium">Revamp your brand</h3>
@@ -145,7 +146,7 @@ export default function Home({ searchParams }: SearchParamProps) {
                 </p>
               </div>
             </div>
-            <div className="flex gap-4 flex-col">
+            <div className="flex flex-col gap-4">
               <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
                 <p className="text-xs">Step 1</p>
                 <h3 className="mt-2 text-2xl font-medium">Revamp your brand</h3>
@@ -171,7 +172,49 @@ export default function Home({ searchParams }: SearchParamProps) {
           <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
             Recent work
           </h2>
-          <ProjectScroll />
+          <div className="grid w-full max-w-6xl grid-cols-2 gap-x-8 gap-y-16 px-4">
+            <Project
+              client="Qura"
+              year="2024"
+              tags={["Web Design", "Web Dev", "UX/UI", "Product Design"]}
+              thumbnail="/images/qura/qura-1.png"
+            />
+
+            <Project
+              client="Airbon"
+              year="2024"
+              tags={["Web Design", "Web Dev", "Branding"]}
+              thumbnail="/images/airbon/airbon-1.png"
+            />
+            <Project
+              client="MycoMine"
+              year="2024"
+              tags={["Web Design", "Web Dev", "Branding", "Content"]}
+              thumbnail="/images/mycomine/mycomine-1.png"
+            />
+
+            <Project
+              client="Payable"
+              year="2024"
+              tags={["Web Design", "Web Dev", "Branding"]}
+              thumbnail="/images/payable/payable-3.png"
+            />
+            <Project
+              client="Flexiwaggon"
+              year="2024"
+              tags={["Web Design", "Web Dev", "Branding"]}
+              thumbnail="/images/flexiwaggon/flexiwaggon-1.png"
+            />
+
+            <Project
+              client="Truck on Track Solutions"
+              year="2024"
+              tags={["Web Design", "Web Dev", "Branding"]}
+              thumbnail="/images/tts/tts-1.png"
+            />
+          </div>
+
+          {/* <ProjectScroll /> */}
         </section>
 
         {/* Pricing */}
