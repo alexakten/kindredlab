@@ -47,7 +47,7 @@ const services = [
 
 export default function ServicesSection() {
   return (
-    <div className="flex flex-wrap gap-10">
+    <div className="flex flex-wrap justify-between w-full max-w-4xl gap-10">
       {services.map((service, index) => {
         const IconComponent = service.icon;
         return (

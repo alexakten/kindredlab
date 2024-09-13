@@ -126,43 +126,46 @@ export default function Home({ searchParams }: SearchParamProps) {
             fast
           </h2>
           <ServicesSection />
-
-          <div className="mt-16 grid w-full max-w-6xl grid-cols-2 gap-4 px-4 text-left">
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
-                <p className="text-xs">Step 1</p>
-                <h3 className="mt-2 text-2xl font-medium">Revamp your brand</h3>
-                <p className="mt-2 opacity-75">
-                  From the ground up, we refresh all your visuals — from logo to
-                  font and colors.
-                </p>
-              </div>
-              <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
-                <p className="text-xs">Step 1</p>
-                <h3 className="mt-2 text-2xl font-medium">Revamp your brand</h3>
-                <p className="mt-2 opacity-75">
-                  From the ground up, we refresh all your visuals — from logo to
-                  font and colors.
-                </p>
-              </div>
+          <div className="mt-24 grid w-full max-w-6xl grid-cols-2 gap-4 px-4 text-left">
+            <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
+              <p className="text-xs">Step 1</p>
+              <h3 className="mt-2 text-2xl font-medium">
+                Make any design request
+              </h3>
+              <p className="mt-2 opacity-75">
+                From the ground up, we refresh all your visuals — from logo to
+                font and colors.
+              </p>
             </div>
-            <div className="flex flex-col gap-4">
-              <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
-                <p className="text-xs">Step 1</p>
-                <h3 className="mt-2 text-2xl font-medium">Revamp your brand</h3>
-                <p className="mt-2 opacity-75">
-                  From the ground up, we refresh all your visuals — from logo to
-                  font and colors.
-                </p>
-              </div>
-              <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
-                <p className="text-xs">Step 1</p>
-                <h3 className="mt-2 text-2xl font-medium">Revamp your brand</h3>
-                <p className="mt-2 opacity-75">
-                  From the ground up, we refresh all your visuals — from logo to
-                  font and colors.
-                </p>
-              </div>
+            <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
+              <p className="text-xs">Step 2</p>
+              <h3 className="mt-2 text-2xl font-medium">
+                Get designs delivered within 2-7 days
+              </h3>
+              <p className="mt-2 opacity-75">
+                From the ground up, we refresh all your visuals — from logo to
+                font and colors.
+              </p>
+            </div>
+            <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
+              <p className="text-xs">Step 3</p>
+              <h3 className="mt-2 text-2xl font-medium">
+                Implement your designs and test
+              </h3>
+              <p className="mt-2 opacity-75">
+                From the ground up, we refresh all your visuals — from logo to
+                font and colors.
+              </p>
+            </div>
+            <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-8">
+              <p className="text-xs">Step 4</p>
+              <h3 className="mt-2 text-2xl font-medium">
+                Iterate on user feedback
+              </h3>
+              <p className="mt-2 opacity-75">
+                From the ground up, we refresh all your visuals — from logo to
+                font and colors.
+              </p>
             </div>
           </div>
         </section>
