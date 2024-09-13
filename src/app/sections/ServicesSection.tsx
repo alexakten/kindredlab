@@ -76,39 +76,39 @@ export default function ServicesSection() {
           );
         })}
       </div>
-      <div className="mt-24 grid w-full max-w-6xl grid-cols-1 md:grid-cols-2 gap-8 text-left">
+      <div className="mt-24 grid w-full max-w-6xl grid-cols-1 gap-8 text-left md:grid-cols-2">
         <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-6 md:p-8">
           <p className="text-xs">Step 1</p>
           <h3 className="mt-2 text-2xl font-medium">Make any design request</h3>
           <p className="mt-2 opacity-75">
             Use our custom board to make any request.
           </p>
-          <div className="relative mt-8 grid grid-cols-2 gap-4 border-t border-white border-opacity-10 pb-28 pt-8">
+          <div className="relative mt-8 grid grid-cols-1 gap-4 border-t border-white border-opacity-10 pb-28 pt-8 md:grid-cols-2">
             <div className="absolute bottom-24 right-24 flex gap-1">
               <NavigationArrow
                 className="duocolor-purple"
                 weight="duotone"
                 fill="white"
               />
-              <div className="rounded-xs mt-3 bg-purple-600 px-1 text-xs font-semibold leading-[1.4]">
+              <div className="rounded-xs z-50 mt-3 bg-purple-600 px-1 text-xs font-semibold leading-[1.4]">
                 You
               </div>
             </div>
-            <div className=" flex flex-col gap-2">
+            <div className="flex flex-col gap-2">
               <p className="font-medium">To do</p>
-              <div className="rotate-0 rounded-md border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
+              <div className="rotate-0 max-w-[240px] rounded-md border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
                 Create ads for campaign
               </div>
-              <div className="rotate-0 rounded-md border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
+              <div className="rotate-0 max-w-[240px] rounded-md border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
                 New UI for search feature
               </div>
-              <div className="absolute bottom-8  left-48 rotate-6 rounded-md  border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
+              <div className="absolute max-w-[240px] bottom-8  left-20 md:left-48 rotate-6 rounded-md  border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
                 Design a new website
               </div>
             </div>
-            <div className="flex flex-col gap-2">
+            <div className="hidden flex-col gap-2 md:flex">
               <p className="font-medium">Done</p>
-              <div className="rotate-0 rounded-md border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
+              <div className="rotate-0 max-w-[240px] rounded-md border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
                 Create a new logo
               </div>
             </div>
@@ -132,8 +132,8 @@ export default function ServicesSection() {
                     </span>
                   </p>
                   <p className="mt-2 max-w-[9rem] text-[8px] opacity-75">
-                    We&apos;re a fully remote design partner for next-gen businesses
-                    that iterate fast.
+                    We&apos;re a fully remote design partner for next-gen
+                    businesses that iterate fast.
                   </p>
                 </div>
               </div>
@@ -211,16 +211,16 @@ export default function ServicesSection() {
                 <div className="absolute -left-8 top-4 -rotate-[3deg] rounded-full border border-white border-opacity-40 bg-white bg-opacity-20 px-2 py-1 text-white">
                   <p className="text-sm opacity-100">+12% conversion</p>
                 </div>
-                <div className="absolute -right-8 scale-105 top-0 rotate-[4deg] rounded-full border border-white border-opacity-40 bg-white bg-opacity-20 px-2 py-1 text-white">
+                <div className="absolute -right-8 top-0 rotate-[4deg] scale-105 rounded-full border border-white border-opacity-40 bg-white bg-opacity-20 px-2 py-1 text-white">
                   <p className="text-sm opacity-100">+24 sign ups</p>
                 </div>
-                <div className="absolute right-12 top-20 rotate-[2deg] rounded-full border border-white border-opacity-40 bg-white bg-opacity-20 scale-150 px-2 py-1 text-white">
+                <div className="absolute right-12 top-20 rotate-[2deg] scale-150 rounded-full border border-white border-opacity-40 bg-white bg-opacity-20 px-2 py-1 text-white">
                   <p className="text-sm opacity-100">+$10,000 revenue</p>
                 </div>
-                <div className="absolute -bottom-4 right-16 -rotate-[2deg] rounded-full border border-white border-opacity-40 bg-white scale-110 bg-opacity-20 px-2 py-1 text-white">
+                <div className="absolute -bottom-4 right-16 -rotate-[2deg] scale-110 rounded-full border border-white border-opacity-40 bg-white bg-opacity-20 px-2 py-1 text-white">
                   <p className="text-sm opacity-100">+87 new leads</p>
                 </div>
-                <div className="absolute -left-8 scale-125 bottom-10 rotate-[6deg] rounded-full border border-white border-opacity-40 bg-white bg-opacity-20 px-2 py-1 text-white">
+                <div className="absolute -left-8 bottom-10 rotate-[6deg] scale-125 rounded-full border border-white border-opacity-40 bg-white bg-opacity-20 px-2 py-1 text-white">
                   <p className="text-sm opacity-100">98% retention rate</p>
                 </div>
                 {/* <p className="text-[12px] font-medium  leading-[1.1]">
@@ -246,7 +246,7 @@ export default function ServicesSection() {
           <p className="mt-2 opacity-75">
             Gather feedback and we iterate on our design.
           </p>
-          <div className="relative mt-8 border-t border-white border-opacity-10 px-0 md:px-8 pt-8">
+          <div className="relative mt-8 border-t border-white border-opacity-10 px-0 pt-8 md:px-8">
             <div className="mx-2 flex flex-col justify-between rounded-2xl border border-white border-opacity-20 bg-white bg-opacity-10 p-6 shadow-sm ">
               <div className="flex items-center gap-2">
                 <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-purple-200">
