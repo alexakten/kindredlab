@@ -132,3 +132,19 @@ body {
 .animate-rotate-light {
   animation: rotate-light 5s linear infinite;
 }
+
+
+.duocolor-orange [opacity="0.2"] {
+  opacity: 1;
+  fill: #ea580c;
+}
+
+.duocolor-green [opacity="0.2"] {
+  opacity: 1;
+  fill: #16a34a;
+}
+
+.duocolor-purple [opacity="0.2"] {
+  opacity: 1;
+  fill: #9333ea;
+}
