@@ -148,3 +148,8 @@ body {
   opacity: 1;
   fill: #9333ea;
 }
+
+.duocolor-pink [opacity="0.2"] {
+  opacity: 1;
+  fill: #db2777;
+}
