@@ -76,7 +76,7 @@ export default function ServicesSection() {
           );
         })}
       </div>
-      <div className="mt-24 grid w-full max-w-6xl grid-cols-1 md:grid-cols-2 gap-8 px-4 text-left">
+      <div className="mt-24 grid w-full max-w-6xl grid-cols-1 md:grid-cols-2 gap-8 text-left">
         <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-6 md:p-8">
           <p className="text-xs">Step 1</p>
           <h3 className="mt-2 text-2xl font-medium">Make any design request</h3>
