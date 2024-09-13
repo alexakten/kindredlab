@@ -170,7 +170,7 @@ export default function ServicesSection() {
             See how our designs perform in real life.
           </p>
           <div className="relative mt-8 border-t border-white border-opacity-10 px-12 pt-8">
-            <div className="absolute bottom-20 right-2 z-50 flex gap-1">
+            <div className="absolute bottom-12 right-2 z-50 flex gap-1">
               <NavigationArrow
                 className="duocolor-pink"
                 weight="duotone"
