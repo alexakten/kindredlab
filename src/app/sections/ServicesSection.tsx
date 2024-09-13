@@ -131,7 +131,7 @@ export default function ServicesSection() {
                     </span>
                   </p>
                   <p className="mt-2 max-w-[9rem] text-[8px] opacity-75">
-                    We're a fully remote design partner for next-gen businesses
+                    We&apos;re a fully remote design partner for next-gen businesses
                     that iterate fast.
                   </p>
                 </div>
