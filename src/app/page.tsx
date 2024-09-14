@@ -110,6 +110,17 @@ export default function Home({ searchParams }: SearchParamProps) {
           </Motion>
         </section>
 
+        {/* Services */}
+        <section className="mt-12 flex h-full w-full flex-col items-center rounded-[2rem]  px-4 py-32 text-center backdrop-blur-sm">
+          <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[4rem]">
+            Ship products{" "}
+            <span className="overflow-visible bg-gradient-to-r from-purple-200 to-purple-500 bg-clip-text text-transparent">
+              blazing fast
+            </span>
+          </h2>
+          <ServicesSection />
+        </section>
+
         {/* Testimonials */}
         <section className="mt-40 flex max-w-6xl flex-col items-center justify-center px-2">
           <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
@@ -119,20 +130,12 @@ export default function Home({ searchParams }: SearchParamProps) {
           <TestimonialSection />
         </section>
 
-        {/* Services */}
-        <section className="mt-40 flex h-full w-full flex-col items-center rounded-[2rem] bg-[radial-gradient(170%_100%_at_bottom,_#010314_30%,_#592ED3_60%,_#D6CBF5_100%)] px-4 py-32 text-center backdrop-blur-sm">
-          <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
-            Ship products blazing fast
-          </h2>
-          <ServicesSection />
-        </section>
-
         {/* Projects */}
         <section className="mt-16 flex h-full w-full  flex-col items-center rounded-[2rem] bg-[radial-gradient(170%_100%_at_top,_#010314_30%,_#592ED3_60%,_#D6CBF5_100%)] py-32 text-center backdrop-blur-sm">
           <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
             Recent work
           </h2>
-          <div className="grid w-full max-w-6xl grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-16 px-4">
+          <div className="grid w-full max-w-6xl grid-cols-1 gap-x-8 gap-y-16 px-4 md:grid-cols-2">
             <Project
               client="Qura"
               year="2024"

@@ -52,92 +52,28 @@ const services = [
 export default function ServicesSection() {
   return (
     <>
-      <div className="flex w-full max-w-4xl flex-wrap justify-between gap-10">
-        {services.map((service, index) => {
-          const IconComponent = service.icon;
-          return (
-            <div
-              key={index}
-              className="flex flex-1 flex-col items-center gap-2"
-            >
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10">
-                <IconComponent className="h-5 w-5 text-white" />
-              </div>
-              <p className="mt-1 whitespace-pre-wrap text-center text-xs leading-relaxed tracking-normal text-white opacity-75">
-                {/* Replace spaces with line breaks */}
-                {service.name.split(" ").map((word, i) => (
-                  <span key={i}>
-                    {word}
-                    <br />
-                  </span>
-                ))}
-              </p>
-            </div>
-          );
-        })}
-      </div>
-      <div className="mt-24 grid w-full max-w-6xl grid-cols-1 gap-8 text-left md:grid-cols-2">
+      <div className="grid w-full max-w-6xl grid-cols-1 gap-8 text-left md:grid-cols-2 lg:grid-cols-3">
         <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-6 md:p-8">
-          <p className="text-xs">Step 1</p>
-          <h3 className="mt-2 text-2xl font-medium">Make any design request</h3>
-          <p className="mt-2 opacity-75">
-            Use our custom board to make any request.
-          </p>
-          <div className="relative mt-8 grid grid-cols-1 gap-4 border-t border-white border-opacity-10 pb-28 pt-8 md:grid-cols-2">
-            <div className="absolute bottom-24 right-24 flex gap-1">
-              <NavigationArrow
-                className="duocolor-purple"
-                weight="duotone"
-                fill="white"
-              />
-              <div className="rounded-xs z-50 mt-3 bg-purple-600 px-1 text-xs font-semibold leading-[1.4]">
-                You
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <p className="font-medium">To do</p>
-              <div className="rotate-0 max-w-[240px] rounded-md border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
-                Create ads for campaign
-              </div>
-              <div className="rotate-0 max-w-[240px] rounded-md border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
-                New UI for search feature
-              </div>
-              <div className="absolute max-w-[240px] bottom-8  left-20 md:left-48 rotate-6 rounded-md  border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
-                Design a new website
-              </div>
-            </div>
-            <div className="hidden flex-col gap-2 md:flex">
-              <p className="font-medium">Done</p>
-              <div className="rotate-0 max-w-[240px] rounded-md border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
-                Create a new logo
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-6 md:p-8">
-          <p className="text-xs">Step 2</p>
-          <h3 className="mt-2 text-2xl font-medium">
-            Get designs delivered within 2-7 days
-          </h3>
-          <p className="mt-2 opacity-75">Access your own Figma board.</p>
+          {/* <p className="text-xs">Step 2</p> */}
+          <h3 className="mt-2 text-3xl font-medium">Websites</h3>
+          <p className="mt-2 opacity-75">Refresh your website and branding.</p>
           <div className="mt-8 w-full border-t border-white border-opacity-10 pt-8">
             <div className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-3xl border border-white border-opacity-40 bg-white bg-opacity-10 p-2 text-center">
               <div className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-2 text-center">
                 <div className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-lg border border-white border-opacity-40 bg-white bg-opacity-10 p-2 text-center">
-                  <p className="text-[20px] font-medium  leading-[1.2]">
+                  <p className="text-[12px] font-medium  leading-[1.2]">
                     Supercharge your <br />{" "}
-                    <span className="font-freight  text-[22px] italic">
+                    <span className="font-freight  text-[14px] italic">
                       design & marketing
                     </span>
                   </p>
-                  <p className="mt-2 max-w-[9rem] text-[8px] opacity-75">
+                  <p className="mt-1 max-w-[4rem] text-[4px] opacity-75">
                     We&apos;re a fully remote design partner for next-gen
                     businesses that iterate fast.
                   </p>
                 </div>
               </div>
-              <div className="absolute right-24 top-36 flex gap-1">
+              <div className="absolute bottom-8 right-12 flex gap-1">
                 <NavigationArrow
                   className="duocolor-orange"
                   weight="duotone"
@@ -147,7 +83,7 @@ export default function ServicesSection() {
                   Alex A
                 </div>
               </div>
-              <div className="absolute bottom-14 right-52 flex gap-1">
+              <div className="absolute left-8 top-8 flex gap-1">
                 <NavigationArrow
                   className="duocolor-green"
                   weight="duotone"
@@ -162,15 +98,49 @@ export default function ServicesSection() {
         </div>
 
         <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-6 md:p-8">
-          <p className="text-xs">Step 3</p>
-          <h3 className="mt-2 text-2xl font-medium">
-            Implement your designs and test
-          </h3>
+          {/* <p className="text-xs">Step 1</p> */}
+          <h3 className="mt-2 text-3xl font-medium">Design subscription</h3>
+          <p className="mt-2 opacity-75">Your extended design team.</p>
+          <div className="relative mt-8 grid grid-cols-1 gap-4 border-t border-white border-opacity-10 pb-28 pt-8 text-xs md:grid-cols-2">
+            <div className="absolute bottom-24 right-24 flex gap-1">
+              <NavigationArrow
+                className="duocolor-purple"
+                weight="duotone"
+                fill="white"
+              />
+              <div className="rounded-xs z-50 mt-3 bg-purple-600 px-1 text-xs font-semibold leading-[1.4]">
+                You
+              </div>
+            </div>
+            <div className="flex flex-col gap-2">
+              <p className="font-medium">To do</p>
+              <div className="max-w-[240px] rotate-0 rounded-md border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
+                Ads for campaign
+              </div>
+              <div className="max-w-[240px] rotate-0 rounded-md border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
+                New UI for search
+              </div>
+              <div className="absolute bottom-8 left-14 max-w-[240px] rotate-6 rounded-md border  border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2 md:left-32">
+                Design new website
+              </div>
+            </div>
+            <div className="hidden flex-col gap-2 md:flex">
+              <p className="font-medium">Done</p>
+              <div className="max-w-[240px] rotate-0 rounded-md border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
+                Create new logo
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-6 md:p-8">
+          {/* <p className="text-xs">Step 3</p> */}
+          <h3 className="mt-2 text-3xl font-medium">Content</h3>
           <p className="mt-2 opacity-75">
-            See how our designs perform in real life.
+            Fresh content for ads, socials & the web.
           </p>
-          <div className="relative mt-8 border-t border-white border-opacity-10 px-12 pt-8">
-            <div className="absolute bottom-12 right-2 z-50 flex gap-1">
+          <div className="relative mt-8 h-full w-full border-t border-white border-opacity-10 pt-8">
+            <div className="absolute bottom-16 right-2 z-50 flex gap-1">
               <NavigationArrow
                 className="duocolor-pink"
                 weight="duotone"
@@ -180,34 +150,12 @@ export default function ServicesSection() {
                 Marketing Team
               </div>
             </div>
-            {/* <div className="flex flex-col gap-2">
-              <div className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-xl border border-white border-opacity-40 bg-white bg-opacity-10 p-2 text-center">
-                <p className="text-[12px] font-medium  leading-[1.1]">
-                  Supercharge your <br />{" "}
-                  <span className="font-freight  text-[13px] italic">
-                    design & marketing
-                  </span>
-                </p>
-                <p className="mt-1 max-w-[4rem] text-[4px] opacity-75">
-                  We're a fully remote design partner for next-gen businesses
-                  that iterate fast.
-                </p>
-              </div>
-              <div className="mt-3 flex flex-wrap gap-x-2 gap-y-2">
-                <div className="rotate-4 rounded-full border border-white border-opacity-40 bg-white bg-opacity-10 px-2 py-1">
-                  <p className="text-sm opacity-75">+4% conversion</p>
-                </div>
-                <div className="rotate-4 rounded-full border border-white border-opacity-40 bg-white bg-opacity-10 px-2 py-1">
-                  <p className="text-sm opacity-75">+7 sign ups</p>
-                </div>
-                <div className="rotate-4 rounded-full border border-white border-opacity-40 bg-white bg-opacity-10 px-2 py-1">
-                  <p className="text-sm opacity-75">+16 new leads</p>
-                </div>
-              </div>
-            </div> */}
-
-            <div className="relative flex flex-col gap-2">
-              <div className="flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-xl border border-white border-opacity-0 bg-white bg-opacity-0 p-2 text-center">
+            <div className="relative flex aspect-[16/9] w-full h -rotate-0 flex-col items-center justify-center p-2 text-center">
+              <div className="absolute left-0 top-0 flex aspect-[16/9] w-2/3 -rotate-0 flex-col items-center justify-center rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-2 text-center"></div>
+              <div className="absolute right-0 top-8 flex aspect-[16/9] w-2/3 -rotate-0 flex-col items-center justify-center rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-2 text-center"></div>
+              <div className="absolute left-8 top-16 flex aspect-[16/9] w-2/3 -rotate-0 flex-col items-center justify-center rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-2 text-center"></div>
+            </div>
+            {/* <div className="flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-xl border border-white border-opacity-0 bg-white bg-opacity-0 p-2 text-center">
                 <div className="absolute -left-8 top-4 -rotate-[3deg] rounded-full border border-white border-opacity-40 bg-white bg-opacity-20 px-2 py-1 text-white">
                   <p className="text-sm opacity-100">+12% conversion</p>
                 </div>
@@ -223,22 +171,11 @@ export default function ServicesSection() {
                 <div className="absolute -left-8 bottom-10 rotate-[6deg] scale-125 rounded-full border border-white border-opacity-40 bg-white bg-opacity-20 px-2 py-1 text-white">
                   <p className="text-sm opacity-100">98% retention rate</p>
                 </div>
-                {/* <p className="text-[12px] font-medium  leading-[1.1]">
-                  Supercharge your <br />{" "}
-                  <span className="font-freight  text-[13px] italic">
-                    design & marketing
-                  </span>
-                </p>
-                <p className="mt-1 max-w-[4rem] text-[4px] opacity-75">
-                  We're a fully remote design partner for next-gen businesses
-                  that iterate fast.
-                </p> */}
-              </div>
-            </div>
+              </div> */}
           </div>
         </div>
 
-        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-6 md:p-8">
+        {/* <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-6 md:p-8">
           <p className="text-xs">Step 4</p>
           <h3 className="mt-2 text-2xl font-medium">
             Iterate on user feedback
@@ -269,7 +206,31 @@ export default function ServicesSection() {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
+      </div>
+      <div className="mt-24 flex w-full max-w-4xl flex-wrap justify-between gap-10">
+        {services.map((service, index) => {
+          const IconComponent = service.icon;
+          return (
+            <div
+              key={index}
+              className="flex flex-1 flex-col items-center gap-2"
+            >
+              <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10">
+                <IconComponent className="h-5 w-5 text-white" />
+              </div>
+              <p className="mt-1 whitespace-pre-wrap text-center text-xs leading-relaxed tracking-normal text-white opacity-75">
+                {/* Replace spaces with line breaks */}
+                {service.name.split(" ").map((word, i) => (
+                  <span key={i}>
+                    {word}
+                    <br />
+                  </span>
+                ))}
+              </p>
+            </div>
+          );
+        })}
       </div>
     </>
   );
