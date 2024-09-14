@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Logos() {
   return (
-    <div className="flex flex-wrap items-center justify-center gap-12 opacity-80">
+    <div className="flex w-full max-w-4xl flex-wrap items-center justify-center gap-x-12 gap-y-4 opacity-80">
       <svg
         width="100"
         height="32"
@@ -187,6 +187,43 @@ export default function Logos() {
           stroke-width="4.43246"
         />
       </svg>
+      <Image
+        height="20"
+        width="80"
+        alt="Triwa logo"
+        src="/images/logos/triwa.png"
+      />
+
+      <Image
+        height="20"
+        width="80"
+        alt="Arcteryx logo"
+        src="/images/logos/arcteryx.png"
+      />
+      <Image
+        height="32"
+        width="100"
+        alt="Lundhags logo"
+        src="/images/logos/lundhags.png"
+      />
+      <Image
+        height="28"
+        width="72"
+        alt="Stronger logo"
+        src="/images/logos/stronger.png"
+      />
+      <Image
+        height="20"
+        width="80"
+        alt="Under Armour logo"
+        src="/images/logos/underarmour.png"
+      />
+      <Image
+        height="40"
+        width="120"
+        alt="Ahlvar Gallery logo"
+        src="/images/logos/ahlvar.png"
+      />
     </div>
   );
 }
