@@ -99,7 +99,7 @@ export default function ServicesSection() {
 
         <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-6 md:p-8">
           {/* <p className="text-xs">Step 1</p> */}
-          <h3 className="mt-2 text-3xl font-medium">Design subscription</h3>
+          <h3 className="mt-2 text-3xl font-medium">Design</h3>
           <p className="mt-2 opacity-75">Your extended design team.</p>
           <div className="relative mt-8 grid grid-cols-1 gap-4 border-t border-white border-opacity-10 pb-28 pt-8 text-xs md:grid-cols-2">
             <div className="absolute bottom-24 right-24 flex gap-1">

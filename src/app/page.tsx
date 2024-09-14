@@ -10,6 +10,7 @@ import ServicesSection from "./sections/ServicesSection";
 import PricingSection from "./sections/PricingSection";
 import ProjectScroll from "./components/ProjectScroll";
 import Project from "./components/Project";
+import DetailsSection from "./sections/DetailsSection";
 
 type SearchParamProps = {
   searchParams: Record<string, string> | null | undefined;
@@ -30,7 +31,7 @@ export default function Home({ searchParams }: SearchParamProps) {
       >
         <Navbar />
         {/* Hero */}
-        <section className="mt-8 flex h-full w-full flex-col items-center rounded-[2rem] bg-gradient-radial-to-top px-4 py-40 text-center backdrop-blur-sm sm:px-0">
+        <section className="bg-gradient-radial-to-top mt-8 flex h-full w-full flex-col items-center rounded-[2rem] px-4 py-40 text-center backdrop-blur-sm sm:px-0">
           <Motion
             initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
@@ -65,8 +66,8 @@ export default function Home({ searchParams }: SearchParamProps) {
             transition={{ ease: "easeInOut", delay: 0.4, duration: 0.5 }}
             className="flex w-full max-w-8xl flex-col items-center"
           >
-            <h2 className="mt-3 max-w-lg px-4 text-xl opacity-50">
-              We&apos;re a fully remote design partner for next-gen businesses
+            <h2 className="mt-3 max-w-md px-4 text-xl opacity-50">
+              We&apos;re a fully remote design & content agency for next-gen businesses
               that iterate fast.
             </h2>
           </Motion>
@@ -103,7 +104,7 @@ export default function Home({ searchParams }: SearchParamProps) {
             transition={{ ease: "easeInOut", delay: 0.8, duration: 0.5 }}
             className="flex w-full max-w-8xl flex-col items-center"
           >
-            <p className="mt-32 text-sm opacity-50">Trusted by teams at</p>
+            <p className="mt-28 text-sm opacity-50">Trusted by teams at</p>
             <div className="mt-5 px-8">
               <Logos />
             </div>
@@ -111,7 +112,7 @@ export default function Home({ searchParams }: SearchParamProps) {
         </section>
 
         {/* Services */}
-        <section className="mt-12 flex h-full w-full flex-col items-center rounded-[2rem]  px-4 py-32 text-center backdrop-blur-sm">
+        {/* <section className="mt-12 flex h-full w-full flex-col items-center rounded-[2rem]  px-4 py-32 text-center backdrop-blur-sm">
           <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[4rem]">
             This is{" "}
             <span className="overflow-visible bg-gradient-to-r from-purple-200 to-purple-400 bg-clip-text text-transparent">
@@ -119,22 +120,28 @@ export default function Home({ searchParams }: SearchParamProps) {
             </span>
           </h2>
           <ServicesSection />
-        </section>
+        </section> */}
 
         {/* Services */}
-        <section className="mt-12 flex h-full w-full bg-gradient-radial-to-bottom from-black flex-col items-center rounded-[2rem]  px-4 py-32 text-center backdrop-blur-sm">
-          <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-200 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[4rem]">
+        <section className="flex h-full w-full flex-col items-center rounded-[2rem] from-black  px-4 py-40 text-center backdrop-blur-sm">
+          <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-200 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
             This is what we do
-            <span className="overflow-visible bg-clip-text text-transparent">
-             
-            </span>
+            <span className="overflow-visible bg-clip-text text-transparent"></span>
           </h2>
           <ServicesSection />
         </section>
 
+        <section className="bg-gradient-radial-to-bottom flex h-full w-full flex-col items-center rounded-[2rem] from-black  px-4 pt-32 pb-16 text-center backdrop-blur-sm">
+          <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-200 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
+            Here is how it works
+            <span className="overflow-visible bg-clip-text text-transparent"></span>
+          </h2>
+          <DetailsSection />
+        </section>
+
         {/* Testimonials */}
-        <section className="mt-40 flex max-w-6xl flex-col items-center justify-center px-2">
-          <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
+        <section className="mt-36 flex max-w-6xl flex-col items-center justify-center px-2">
+          <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-200 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
             What our users are saying
           </h2>
 
@@ -142,7 +149,7 @@ export default function Home({ searchParams }: SearchParamProps) {
         </section>
 
         {/* Projects */}
-        <section className="mt-16 flex h-full w-full  flex-col items-center rounded-[2rem] bg-gradient-radial-to-top py-32 text-center backdrop-blur-sm">
+        <section className="bg-gradient-radial-to-top mt-16 flex h-full  w-full flex-col items-center rounded-[2rem] py-32 text-center backdrop-blur-sm">
           <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
             Recent work
           </h2>
@@ -201,7 +208,7 @@ export default function Home({ searchParams }: SearchParamProps) {
         </section>
 
         {/* CTA */}
-        <section className="mt-40 flex h-full w-full flex-col items-center rounded-[2rem] bg-gradient-radial-to-bottom px-4 pb-16 pt-32 text-center backdrop-blur-sm">
+        <section className="bg-gradient-radial-to-bottom mt-40 flex h-full w-full flex-col items-center rounded-[2rem] px-4 pb-16 pt-32 text-center backdrop-blur-sm">
           {/* <h2 className="max-w-2xl bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl sm:text-5xl font-[450] leading-9 tracking-tight text-transparent">
             Ready to get started?
           </h2> */}
