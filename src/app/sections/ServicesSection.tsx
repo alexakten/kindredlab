@@ -150,7 +150,7 @@ export default function ServicesSection() {
                 Marketing Team
               </div>
             </div>
-            <div className="relative flex aspect-[16/9] w-full h -rotate-0 flex-col items-center justify-center p-2 text-center">
+            <div className="h relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center p-2 text-center">
               <div className="absolute left-0 top-0 flex aspect-[16/9] w-2/3 -rotate-0 flex-col items-center justify-center rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-2 text-center"></div>
               <div className="absolute right-0 top-8 flex aspect-[16/9] w-2/3 -rotate-0 flex-col items-center justify-center rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-2 text-center"></div>
               <div className="absolute left-8 top-16 flex aspect-[16/9] w-2/3 -rotate-0 flex-col items-center justify-center rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-2 text-center"></div>
@@ -208,7 +208,7 @@ export default function ServicesSection() {
           </div>
         </div> */}
       </div>
-      <div className="mt-24 flex w-full max-w-4xl flex-wrap justify-between gap-10">
+      {/* <div className="mt-24 flex w-full max-w-4xl flex-wrap justify-between gap-10">
         {services.map((service, index) => {
           const IconComponent = service.icon;
           return (
@@ -220,7 +220,7 @@ export default function ServicesSection() {
                 <IconComponent className="h-5 w-5 text-white" />
               </div>
               <p className="mt-1 whitespace-pre-wrap text-center text-xs leading-relaxed tracking-normal text-white opacity-75">
-                {/* Replace spaces with line breaks */}
+
                 {service.name.split(" ").map((word, i) => (
                   <span key={i}>
                     {word}
@@ -231,7 +231,7 @@ export default function ServicesSection() {
             </div>
           );
         })}
-      </div>
+      </div> */}
     </>
   );
 }

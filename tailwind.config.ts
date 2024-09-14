@@ -10,11 +10,14 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
+        "gradient-radial-to-top":
+          "radial-gradient(170% 100% at top, #010314 30%, #592ED3 60%, #D6CBF5 100%)",
+        "gradient-radial-to-bottom":
+          "radial-gradient(170% 100% at bottom, #010314 30%, #592ED3 60%, #D6CBF5 100%)",
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         freight: ['"freight-text-pro"', "serif"],
-        // neue: ['"neue-haas-grotesk-text"', "serif"],
       },
       colors: {
         gray: {
@@ -29,4 +32,5 @@ const config: Config = {
   },
   plugins: [require("@tailwindcss/aspect-ratio")],
 };
+
 export default config;
