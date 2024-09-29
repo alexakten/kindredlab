@@ -9,7 +9,7 @@ export default function Navbar() {
       transition={{ ease: "easeInOut", delay: 0, duration: 0.5 }}
       className="fixed z-50 flex w-full flex-col items-center"
     >
-      <nav className="z-50 mt-4 flex w-full max-w-3xl items-center justify-between rounded-2xl border border-white border-opacity-20 bg-white bg-opacity-5 py-1.5 pl-4 pr-2 text-xs font-medium backdrop-blur-md">
+      <nav className="z-50 mt-4 flex w-full max-w-3xl items-center justify-between rounded-2xl border border-white border-opacity-20 bg-white bg-opacity-[0.02] py-1.5 pl-4 pr-2 text-xs font-medium backdrop-blur-md">
         <Link href={"/"} className="z-10 flex items-center gap-1.5">
           <div className="flex items-center justify-center gap-1">
             {/* <svg
@@ -27,7 +27,7 @@ export default function Navbar() {
               />
             </svg> */}
 
-            <p className="relative font-freight text-xl font-semibold leading-[0.95] tracking-tight">
+            <p className="relative font-freight text-xl font-semibold leading-[0.95] tracking-[-0.020rem]">
               kindred
               <span className="font-medium italic">house</span>
             </p>
@@ -74,7 +74,7 @@ export default function Navbar() {
           </Link>
           <Link
             href="mailto:hello@kindredlab.io"
-            className="flex items-center justify-center rounded-lg bg-zinc-50 px-3 py-2 text-zinc-950 hover:bg-white"
+            className="flex items-center justify-center rounded-lg bg-zinc-50 px-3 py-2 text-zinc-950 hover:bg-zinc-200"
           >
             <p className="text-xs font-medium">Say hello</p>
           </Link>

@@ -9,11 +9,9 @@ const config: Config = {
   theme: {
     extend: {
       backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-radial-to-top":
-          "radial-gradient(170% 100% at top, #08090A 30%, #0E0F11 60%, #121315 100%)",
-        "gradient-radial-to-bottom":
-          "radial-gradient(170% 100% at bottom, #08090A 30%, #0E0F11 60%, #121315 100%)",
+        "linear-gradient":
+          "radial-gradient(circle at top left, transparent 40%, black 70%), linear-gradient(to top right, black, rgba(255, 255, 255, 0.02) 35%, rgba(255, 255, 255, 0.05) 45%, rgba(255, 255, 255, 0.1) 55%, rgba(255, 255, 255, 0.05) 65%, rgba(255, 255, 255, 0.02) 75%, black)",
+        // Fixed missing comma
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],

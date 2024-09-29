@@ -146,7 +146,7 @@ export default function ServicesSection() {
                 weight="duotone"
                 fill="white"
               />
-              <div className="rounded-xs mt-3 bg-pink-600 px-1 text-xs font-semibold leading-[1.4]">
+              <div className="rounded-xs mt-3 bg-fuchsia-500 px-1 text-xs font-semibold leading-[1.4]">
                 Marketing Team
               </div>
             </div>

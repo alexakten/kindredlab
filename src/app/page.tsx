@@ -30,7 +30,7 @@ export default function Home({ searchParams }: SearchParamProps) {
       >
         <Navbar />
         {/* Hero */}
-        <section className="flex h-full w-full flex-col items-center bg-gradient-radial-to-bottom px-4 py-40 text-center backdrop-blur-sm sm:px-0">
+        <section className="light-gradient bg-linear-gradient flex h-full w-full flex-col items-center px-4 py-44 text-center backdrop-blur-sm sm:px-0">
           <Motion
             initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
@@ -40,8 +40,8 @@ export default function Home({ searchParams }: SearchParamProps) {
             <div className="bg-indigo-950"></div>
             <div className="flex items-center rounded-full text-sm">
               <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-green-500 opacity-75"></span>
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-green-500"></span>
+                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-500 opacity-75"></span>
+                <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-500"></span>
               </span>
               <p className="pl-2 opacity-50 ">2 spots open for October</p>
             </div>
@@ -52,9 +52,9 @@ export default function Home({ searchParams }: SearchParamProps) {
             transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
             className="flex w-full max-w-8xl flex-col items-center"
           >
-            <h1 className="mt-4 max-w-2xl bg-gradient-to-t from-zinc-100 to-white bg-clip-text pb-3 text-[clamp(36px,6vw,80px)] font-[450] leading-[1] tracking-tight text-transparent">
+            <h1 className="mt-4 max-w-2xl bg-gradient-to-tl from-zinc-400 to-white bg-clip-text pb-3 text-[clamp(36px,6vw,72px)] font-[450] leading-[1] tracking-tight text-transparent">
               Supercharge your <br />
-              <span className="font-freight text-[clamp(40px,6.666vw,90px)] font-medium italic">
+              <span className="font-freight text-[clamp(40px,6.666vw,80px)] font-medium italic">
                 design & marketing
               </span>
             </h1>
@@ -91,7 +91,7 @@ export default function Home({ searchParams }: SearchParamProps) {
               </Link>
               <Link
                 href="mailto:hello@kindredlab.io"
-                className="rounded-lg bg-zinc-50 px-4 py-2.5 text-base font-medium text-zinc-950 hover:bg-white"
+                className="rounded-lg bg-zinc-50 px-4 py-2.5 text-base font-medium text-zinc-950 hover:bg-zinc-200"
               >
                 Say hello
               </Link>
