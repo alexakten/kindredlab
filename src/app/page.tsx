@@ -7,7 +7,6 @@ import CommandK from "./components/CommandK";
 import TestimonialSection from "./sections/TestimonialSection";
 import ServicesSection from "./sections/ServicesSection";
 import PricingSection from "./sections/PricingSection";
-import ProjectScroll from "./components/ProjectScroll";
 import Project from "./components/Project";
 import DetailsSection from "./sections/DetailsSection";
 import ProjectsSection from "./sections/ProjectsSection";
