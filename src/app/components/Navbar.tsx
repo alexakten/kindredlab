@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Motion } from "../components/Motion";
+import { Motion } from "./Motion";
 
 export default function Navbar() {
   return (

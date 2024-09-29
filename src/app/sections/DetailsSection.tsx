@@ -31,22 +31,22 @@ const services = [
     name: "Web Development",
     icon: Code,
   },
-  {
-    name: "SEO Optimization",
-    icon: Cursor,
-  },
-  {
-    name: "App Design",
-    icon: DeviceMobileCamera,
-  },
-  {
-    name: "Content Creation",
-    icon: CubeFocus,
-  },
-  {
-    name: "Ad Creatives",
-    icon: Confetti,
-  },
+  // {
+  //   name: "SEO Optimization",
+  //   icon: Cursor,
+  // },
+  // {
+  //   name: "App Design",
+  //   icon: DeviceMobileCamera,
+  // },
+  // {
+  //   name: "Content Creation",
+  //   icon: CubeFocus,
+  // },
+  // {
+  //   name: "Ad Creatives",
+  //   icon: Confetti,
+  // },
 ];
 export default function DetailsSection() {
   return (

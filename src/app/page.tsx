@@ -3,7 +3,6 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Motion } from "./components/Motion";
 import Logos from "./components/Logos";
-import ProjectCard from "./components/ProjectCard";
 import CommandK from "./components/CommandK";
 import TestimonialSection from "./sections/TestimonialSection";
 import ServicesSection from "./sections/ServicesSection";
@@ -11,6 +10,7 @@ import PricingSection from "./sections/PricingSection";
 import ProjectScroll from "./components/ProjectScroll";
 import Project from "./components/Project";
 import DetailsSection from "./sections/DetailsSection";
+import ProjectsSection from "./sections/ProjectsSection";
 
 type SearchParamProps = {
   searchParams: Record<string, string> | null | undefined;
@@ -20,7 +20,7 @@ export default function Home({ searchParams }: SearchParamProps) {
   const bookDemo = searchParams?.BookDemo === "true";
 
   return (
-    <main className="flex flex-col  items-center justify-center overflow-x-hidden bg-black px-0 tracking-tight text-zinc-100 sm:px-2">
+    <main className="flex flex-col  items-center justify-center overflow-x-hidden bg-black px-0 tracking-tight text-zinc-100">
       {bookDemo && <CommandK isVisible={bookDemo} />}
 
       <Motion
@@ -31,7 +31,7 @@ export default function Home({ searchParams }: SearchParamProps) {
       >
         <Navbar />
         {/* Hero */}
-        <section className="bg-gradient-radial-to-top mt-8 flex h-full w-full flex-col items-center rounded-[2rem] px-4 py-40 text-center backdrop-blur-sm sm:px-0">
+        <section className="flex h-full w-full flex-col items-center bg-gradient-radial-to-bottom px-4 py-40 text-center backdrop-blur-sm sm:px-0">
           <Motion
             initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
@@ -67,8 +67,8 @@ export default function Home({ searchParams }: SearchParamProps) {
             className="flex w-full max-w-8xl flex-col items-center"
           >
             <h2 className="mt-3 max-w-md px-4 text-xl opacity-50">
-              We&apos;re a fully remote design & content agency for next-gen businesses
-              that iterate fast.
+              We&apos;re a fully remote design & content agency for next-gen
+              businesses that iterate fast.
             </h2>
           </Motion>
 
@@ -131,7 +131,7 @@ export default function Home({ searchParams }: SearchParamProps) {
           <ServicesSection />
         </section>
 
-        <section className="bg-gradient-radial-to-bottom flex h-full w-full flex-col items-center rounded-[2rem] from-black  px-4 pt-32 pb-16 text-center backdrop-blur-sm">
+        <section className="flex h-full w-full flex-col items-center rounded-[2rem] bg-gradient-radial-to-bottom from-black  px-4 pb-16 pt-32 text-center backdrop-blur-sm">
           <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-200 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
             Here is how it works
             <span className="overflow-visible bg-clip-text text-transparent"></span>
@@ -148,55 +148,7 @@ export default function Home({ searchParams }: SearchParamProps) {
           <TestimonialSection />
         </section>
 
-        {/* Projects */}
-        <section className="bg-gradient-radial-to-top mt-16 flex h-full  w-full flex-col items-center rounded-[2rem] py-32 text-center backdrop-blur-sm">
-          <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
-            Recent work
-          </h2>
-          <div className="grid w-full max-w-6xl grid-cols-1 gap-x-8 gap-y-16 px-4 md:grid-cols-2">
-            <Project
-              client="Qura"
-              year="2024"
-              tags={["Web Design", "Web Dev", "UX/UI", "Product Design"]}
-              thumbnail="/images/qura/qura-1.png"
-            />
-
-            <Project
-              client="Airbon"
-              year="2024"
-              tags={["Web Design", "Web Dev", "Branding"]}
-              thumbnail="/images/airbon/airbon-1.png"
-            />
-            <Project
-              client="MycoMine"
-              year="2024"
-              tags={["Web Design", "Web Dev", "Branding", "Content"]}
-              thumbnail="/images/mycomine/mycomine-1.png"
-            />
-
-            <Project
-              client="Payable"
-              year="2024"
-              tags={["Web Design", "Web Dev", "Branding"]}
-              thumbnail="/images/payable/payable-3.png"
-            />
-            <Project
-              client="Flexiwaggon"
-              year="2024"
-              tags={["Web Design", "Web Dev", "Branding"]}
-              thumbnail="/images/flexiwaggon/flexiwaggon-1.png"
-            />
-
-            <Project
-              client="Truck on Track Solutions"
-              year="2024"
-              tags={["Web Design", "Web Dev", "Branding"]}
-              thumbnail="/images/tts/tts-1.png"
-            />
-          </div>
-
-          {/* <ProjectScroll /> */}
-        </section>
+        <ProjectsSection />
 
         {/* Pricing */}
         <section className="mt-40 flex w-full max-w-6xl flex-col items-center justify-center px-4">
@@ -208,7 +160,7 @@ export default function Home({ searchParams }: SearchParamProps) {
         </section>
 
         {/* CTA */}
-        <section className="bg-gradient-radial-to-bottom mt-40 flex h-full w-full flex-col items-center rounded-[2rem] px-4 pb-16 pt-32 text-center backdrop-blur-sm">
+        <section className="mt-40 flex h-full w-full flex-col items-center rounded-[2rem] bg-gradient-radial-to-bottom px-4 pb-16 pt-32 text-center backdrop-blur-sm">
           {/* <h2 className="max-w-2xl bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl sm:text-5xl font-[450] leading-9 tracking-tight text-transparent">
             Ready to get started?
           </h2> */}
