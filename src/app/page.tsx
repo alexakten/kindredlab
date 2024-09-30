@@ -18,6 +18,7 @@ type SearchParamProps = {
 export default function Home({ searchParams }: SearchParamProps) {
   const bookDemo = searchParams?.BookDemo === "true";
 
+
   return (
     <main className="flex flex-col  items-center justify-center overflow-x-hidden bg-black px-0 tracking-tight text-zinc-100">
       {bookDemo && <CommandK isVisible={bookDemo} />}
@@ -30,7 +31,7 @@ export default function Home({ searchParams }: SearchParamProps) {
       >
         <Navbar />
         {/* Hero */}
-        <section className="bg-linear-gradient flex h-full w-full flex-col items-center px-4 pt-44 pb-28 text-center backdrop-blur-sm sm:px-0">
+        <section className="flex h-full w-full flex-col items-center bg-linear-gradient px-4 pb-28 pt-44 text-center backdrop-blur-sm sm:px-0">
           <Motion
             initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
@@ -99,6 +100,7 @@ export default function Home({ searchParams }: SearchParamProps) {
           </Motion>
         </section>
 
+
         <section className="pb-28">
           <Motion
             initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
@@ -125,7 +127,7 @@ export default function Home({ searchParams }: SearchParamProps) {
         </section> */}
 
         {/* Services */}
-        <section className="bg-linear-gradient flex h-full w-full flex-col items-center rounded-[2rem] from-black  px-4 pt-32 text-center backdrop-blur-sm">
+        <section className="flex h-full w-full flex-col items-center rounded-[2rem] bg-linear-gradient from-black  px-4 pt-32 text-center backdrop-blur-sm">
           <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-400 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
             This is what we do
             <span className="overflow-visible bg-clip-text text-transparent"></span>
@@ -142,7 +144,7 @@ export default function Home({ searchParams }: SearchParamProps) {
         </section> */}
 
         {/* Testimonials */}
-        <section className="bg-linear-gradient mt-36 flex w-full flex-col items-center justify-center">
+        <section className="mt-36 flex w-full flex-col items-center justify-center bg-linear-gradient">
           <h2 className="m-16 overflow-visible bg-gradient-to-t from-zinc-400 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
             What our users are saying
           </h2>
@@ -163,7 +165,7 @@ export default function Home({ searchParams }: SearchParamProps) {
         </section>
 
         {/* CTA */}
-        <section className="mt-40 flex h-full w-full flex-col items-center rounded-[2rem] bg-gradient-radial-to-bottom px-4 pb-16 pt-32 text-center backdrop-blur-sm">
+        <section className="bg-gradient-radial-to-bottom mt-40 flex h-full w-full flex-col items-center rounded-[2rem] px-4 pb-16 pt-32 text-center backdrop-blur-sm">
           {/* <h2 className="max-w-2xl bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl sm:text-5xl font-[450] leading-9 tracking-tight text-transparent">
             Ready to get started?
           </h2> */}
