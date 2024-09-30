@@ -212,7 +212,7 @@ export default function ServicesSection() {
 
         <div className="flex flex-col rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
           <div className="relative flex h-80 w-full items-center justify-center ">
-            <div className="relative grid aspect-[16/9] h-auto w-3/4 -rotate-0 grid-cols-2 grid-rows-2 flex-col items-center justify-center gap-4 rounded-3xl border border-white border-opacity-40 bg-white bg-opacity-100 p-8 text-center">
+            <div className="relative grid aspect-[16/9] h-auto w-full -rotate-0 grid-cols-2 grid-rows-2 flex-col items-center justify-center gap-4 rounded-3xl border border-white border-opacity-40 bg-white bg-opacity-100 p-8 text-center">
               <div className="flex h-full w-full flex-col gap-1">
                 <div className="flex items-center gap-1">
                   <div className="h-2 w-2 rounded-full bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
@@ -270,6 +270,16 @@ export default function ServicesSection() {
                     <div className="h-0.5 w-8  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
                     <div className="h-0.5 w-4/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
                     <div className="h-0.5 w-3/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                  </div>
+                </div>
+
+                {/* Comment */}
+                <div className="mt-4 flex items-start gap-1">
+                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                  <div className="flex w-full flex-col gap-1">
+                    <div className="h-0.5 w-8  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                    <div className="h-0.5 w-2/3  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                    <div className="h-0.5 w-2/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
                   </div>
                 </div>
               </div>
