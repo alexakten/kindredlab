@@ -16,6 +16,7 @@ const config: Config = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         freight: ['"freight-text-pro"', "serif"],
+        basier: ["Basier", "monospace"],
       },
       colors: {
         gray: {

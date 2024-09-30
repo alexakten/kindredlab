@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Motion } from "./components/Motion";
@@ -10,6 +11,7 @@ import PricingSection from "./sections/PricingSection";
 import Project from "./components/Project";
 import DetailsSection from "./sections/DetailsSection";
 import ProjectsSection from "./sections/ProjectsSection";
+import { NavigationArrow } from "@phosphor-icons/react/dist/ssr";
 
 type SearchParamProps = {
   searchParams: Record<string, string> | null | undefined;
@@ -19,7 +21,7 @@ export default function Home({ searchParams }: SearchParamProps) {
   const bookDemo = searchParams?.BookDemo === "true";
 
   return (
-    <main className="flex flex-col  items-center justify-center overflow-x-hidden bg-black px-0 tracking-tight text-zinc-100">
+    <main className="flex flex-col items-center  justify-center overflow-x-hidden bg-black px-0 text-left tracking-tight text-zinc-100">
       {bookDemo && <CommandK isVisible={bookDemo} />}
 
       <Motion
@@ -30,84 +32,113 @@ export default function Home({ searchParams }: SearchParamProps) {
       >
         <Navbar />
         {/* Hero */}
-        <section className="flex h-full w-full flex-col items-center bg-linear-gradient px-4 pb-28 pt-44 text-center backdrop-blur-sm sm:px-0">
-          <Motion
-            initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
-            animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
-            transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
-            className="flex w-full max-w-8xl flex-col items-center"
-          >
-            <div className="bg-indigo-950"></div>
-            <div className="flex items-center rounded-full text-sm">
-              <span className="relative flex h-2 w-2">
-                <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-500 opacity-75"></span>
-                <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-500"></span>
-              </span>
-              <p className="pl-2 opacity-50 ">2 spots open for October</p>
-            </div>
-          </Motion>
-          <Motion
-            initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
-            animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
-            transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
-            className="flex w-full max-w-8xl flex-col items-center"
-          >
-            <h1 className="mt-4 max-w-2xl bg-gradient-to-tl from-zinc-400 to-white bg-clip-text pb-3 text-[clamp(40px,6vw,72px)] font-[450] leading-[1.1] tracking-tight text-transparent sm:leading-[1]">
-              Supercharge your <br />
-              <span className="font-freight text-[clamp(44px,6.666vw,80px)] font-medium italic">
-                design & marketing
-              </span>
-            </h1>
-          </Motion>
-          <Motion
-            initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
-            animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
-            transition={{ ease: "easeInOut", delay: 0.4, duration: 0.5 }}
-            className="flex w-full max-w-8xl flex-col items-center"
-          >
-            <h2 className="mt-3 max-w-md px-4 text-xl opacity-50">
-              We&apos;re a fully remote design & content agency for next-gen
-              businesses that iterate fast.
-            </h2>
-          </Motion>
-
-          <Motion
-            initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
-            animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
-            transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
-            className="flex w-full max-w-8xl flex-col items-center"
-          >
-            <div className="mt-8 flex gap-4">
-              <Link
-                href="/?BookDemo=true"
-                scroll={false}
-                className="flex items-center gap-2 rounded-lg bg-zinc-900 px-4 py-2.5 hover:bg-zinc-800"
-                replace
-              >
-                <p className="text-base font-medium">Book demo</p>
-                <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-700 bg-zinc-800 text-[12px]">
-                  ⌘ K
+        <section className="mt-24 flex h-full w-full flex-col items-center bg-black px-4 backdrop-blur-sm sm:px-16">
+          <div className="relative h-full w-full overflow-hidden rounded-md bg-blue-500 px-16 py-24">
+            <Image
+              src="/images/hero.png"
+              alt="Hero image"
+              width={1000}
+              height={1000}
+              className="absolute left-0 top-0 h-full w-full scale-105 object-cover blur-md"
+            />
+            <Motion
+              initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
+              animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
+              transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
+              className="flex w-full flex-col items-start"
+            >
+              <div className="flex items-center rounded-full text-sm">
+                {/* <span className="relative flex h-2 w-2">
+                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75"></span>
+                  <span className="relative inline-flex h-2 w-2 rounded-full bg-white"></span>
+                </span> */}
+                <p className="font-basier opacity-75 ">
+                  QURA RAISES €2.1M LED BY CHERRY VENTURES{" "}
+                </p>
+              </div>
+            </Motion>
+            <Motion
+              initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
+              animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
+              transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
+              className="flex w-full flex-col items-start"
+            >
+              <h1 className="relative mt-4 border border-white bg-gradient-to-tl from-white to-white bg-clip-text px-2 pb-3 text-[clamp(40px,6vw,72px)] font-[450] leading-[1.1] tracking-tight text-transparent sm:leading-[1]">
+                Supercharge your <br />
+                <span className="font-freight text-[clamp(44px,6.666vw,80px)] font-medium italic">
+                  design & marketing
                 </span>
-              </Link>
-              <Link
-                href="mailto:hello@kindredlab.io"
-                className="rounded-lg bg-zinc-50 px-4 py-2.5 text-base font-medium text-zinc-950 hover:bg-zinc-200"
-              >
-                Say hello
-              </Link>
-            </div>
-          </Motion>
+                <span className="absolute -bottom-1 -right-1 flex translate-x-full translate-y-full items-start gap-1">
+                  <NavigationArrow weight="fill" fill="#fff" size={16} />
+                  <div className="mt-3 h-4 rounded-sm bg-white px-1 text-xs font-medium leading-[1.4] tracking-tight text-black">
+                    Alex A
+                  </div>
+                </span>
+                {/* Boxes */}
+                <span className="absolute -left-1 -top-1 h-2 w-2 border border-white bg-white"></span>
+                <span className="absolute -right-1 -top-1 h-2 w-2 border border-white bg-white"></span>
+                <span className="absolute -bottom-1 -left-1 h-2 w-2 border border-white bg-white"></span>
+                <span className="absolute -bottom-1 -right-1 h-2 w-2 border border-white bg-white"></span>
+                <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 border bg-white px-1">
+                  <p className="text-sm tracking-tight text-black">
+                    1440 × 900
+                  </p>
+                </span>
+              </h1>
+            </Motion>
+            <Motion
+              initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
+              animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
+              transition={{ ease: "easeInOut", delay: 0.4, duration: 0.5 }}
+              className="flex w-full flex-col items-start"
+            >
+              <h2 className="mt-12   max-w-md text-xl opacity-100">
+                We&apos;re a fully remote design & content agency
+                <span className="opacity-50">
+                  {" "}
+                  for next-gen businesses that iterate fast.
+                </span>
+              </h2>
+            </Motion>
+
+            <Motion
+              initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
+              animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
+              transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
+              className="flex w-full flex-col items-start"
+            >
+              <div className="mt-8 flex gap-4">
+                <Link
+                  href="/?BookDemo=true"
+                  scroll={false}
+                  className="flex items-center gap-2 rounded-full bg-zinc-100 px-4 py-2.5 text-black hover:bg-zinc-200"
+                  replace
+                >
+                  <p className="text-base font-medium">Book demo</p>
+                  <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
+                    ⌘ K
+                  </span>
+                </Link>
+                {/* <Link
+                  href="mailto:hello@kindredlab.io"
+                  className="rounded-lg bg-zinc-50 px-4 py-2.5 text-base font-medium text-zinc-950 hover:bg-zinc-200"
+                >
+                  Say hello
+                </Link> */}
+              </div>
+            </Motion>
+          </div>
         </section>
 
         {/* Logos */}
-        <section className="pb-32">
+        <section className="my-24">
           <Motion
             initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
             transition={{ ease: "easeInOut", delay: 0.8, duration: 0.5 }}
             className="flex w-full max-w-8xl flex-col items-center"
           >
-            <p className="text-sm opacity-50">Trusted by teams at</p>
+            <p className="text-sm font-basier opacity-50">TRUSTED BY TEAMS AT</p>
             <div className="mt-5 px-2 sm:px-4">
               <Logos />
             </div>
