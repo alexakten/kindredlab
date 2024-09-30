@@ -113,6 +113,10 @@ export default function ServicesSection() {
             Refresh your website and branding. We build stunning websites in
             Webflow that showcase your products.
           </p>
+          <p className="mt-5 text-xs font-semibold">
+            PRICE: 70,000 - 150,000 SEK
+          </p>
+          <p className="mt-2 text-xs font-semibold">TIME: 4-8 WEEKS</p>
         </div>
 
         <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
