@@ -34,10 +34,10 @@ const services = [
     name: "Web Development",
     icon: Code,
   },
-  // {
-  //   name: "SEO Optimization",
-  //   icon: Cursor,
-  // },
+  {
+    name: "SEO Optimization",
+    icon: Cursor,
+  },
   // {
   //   name: "App Design",
   //   icon: DeviceMobileCamera,
@@ -117,6 +117,31 @@ export default function ServicesSection() {
             PRICE: 70,000 - 150,000 SEK
           </p>
           <p className="mt-2 text-xs font-semibold">TIME: 4-8 WEEKS</p>
+          <div className="mt-8 w-full border-t border-white border-opacity-10 pt-8">
+            <div className="flex w-full max-w-4xl flex-wrap justify-between gap-4">
+              {services.map((service, index) => {
+                const IconComponent = service.icon;
+                return (
+                  <div
+                    key={index}
+                    className="flex flex-1 flex-col items-center gap-2"
+                  >
+                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-zinc-300 bg-zinc-200 bg-opacity-10">
+                      <IconComponent className="h-5 w-5 text-black" />
+                    </div>
+                    <p className="mt-0.5 whitespace-pre-wrap text-center text-xs leading-normal tracking-normal text-black opacity-50">
+                      {service.name.split(" ").map((word, i) => (
+                        <span key={i}>
+                          {word}
+                          <br />
+                        </span>
+                      ))}
+                    </p>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
         </div>
 
         <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
