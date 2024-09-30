@@ -53,7 +53,7 @@ export default function ServicesSection() {
   return (
     <>
       <div className="grid w-full max-w-6xl grid-cols-1 gap-8 text-left md:grid-cols-2 lg:grid-cols-3">
-        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-6 md:p-8">
+        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-black bg-opacity-10 px-4 py-6 md:p-8">
           {/* <p className="text-xs">Step 2</p> */}
           <h3 className="mt-2 text-3xl font-medium">Websites</h3>
           <p className="mt-2 opacity-75">Refresh your website and branding.</p>
@@ -97,7 +97,7 @@ export default function ServicesSection() {
           </div>
         </div>
 
-        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-6 md:p-8">
+        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-black bg-opacity-10 px-4 py-6 md:p-8">
           {/* <p className="text-xs">Step 1</p> */}
           <h3 className="mt-2 text-3xl font-medium">Design</h3>
           <p className="mt-2 opacity-75">Your extended design team.</p>
@@ -133,7 +133,7 @@ export default function ServicesSection() {
           </div>
         </div>
 
-        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-6 md:p-8">
+        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-black bg-opacity-10 px-4 py-6 md:p-8">
           {/* <p className="text-xs">Step 3</p> */}
           <h3 className="mt-2 text-3xl font-medium">Content</h3>
           <p className="mt-2 opacity-75">

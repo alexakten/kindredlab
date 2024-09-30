@@ -29,7 +29,7 @@ export default function PricingSection() {
         "Unlimited revisions",
       ],
       bgColor:
-        "bg-gradient-radial-to-top",
+        "bg-linear-gradient",
       borderColor: "border border-zinc-500",
       textColor: "text-white",
     },

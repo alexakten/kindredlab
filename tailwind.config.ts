@@ -10,7 +10,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "linear-gradient":
-          "radial-gradient(circle at top left, transparent 40%, black 70%), linear-gradient(to top right, black, rgba(255, 255, 255, 0.02) 35%, rgba(255, 255, 255, 0.05) 45%, rgba(255, 255, 255, 0.1) 55%, rgba(255, 255, 255, 0.05) 65%, rgba(255, 255, 255, 0.02) 75%, black)",
+          "radial-gradient(circle at top left, transparent 40%, black 70%), linear-gradient(to top right, black, rgba(255, 255, 255, 0.01) 35%, rgba(255, 255, 255, 0.04) 45%, rgba(255, 255, 255, 0.08) 55%, rgba(255, 255, 255, 0.04) 65%, rgba(255, 255, 255, 0.01) 75%, black)",
         // Fixed missing comma
       },
       fontFamily: {

@@ -23,14 +23,14 @@ export default function Home({ searchParams }: SearchParamProps) {
       {bookDemo && <CommandK isVisible={bookDemo} />}
 
       <Motion
-        initial={{ opacity: 1 }}
+        initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        transition={{ ease: "easeInOut", duration: 0 }}
+        transition={{ ease: "easeInOut", duration: 0.5 }}
         className="flex w-full max-w-8xl flex-col items-center"
       >
         <Navbar />
         {/* Hero */}
-        <section className="light-gradient bg-linear-gradient flex h-full w-full flex-col items-center px-4 py-44 text-center backdrop-blur-sm sm:px-0">
+        <section className="bg-linear-gradient flex h-full w-full flex-col items-center px-4 pt-44 pb-28 text-center backdrop-blur-sm sm:px-0">
           <Motion
             initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
@@ -52,9 +52,9 @@ export default function Home({ searchParams }: SearchParamProps) {
             transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
             className="flex w-full max-w-8xl flex-col items-center"
           >
-            <h1 className="mt-4 max-w-2xl bg-gradient-to-tl from-zinc-400 to-white bg-clip-text pb-3 text-[clamp(36px,6vw,72px)] font-[450] leading-[1] tracking-tight text-transparent">
+            <h1 className="mt-4 max-w-2xl bg-gradient-to-tl from-zinc-400 to-white bg-clip-text pb-3 text-[clamp(40px,6vw,72px)] font-[450] leading-[1.1] tracking-tight text-transparent sm:leading-[1]">
               Supercharge your <br />
-              <span className="font-freight text-[clamp(40px,6.666vw,80px)] font-medium italic">
+              <span className="font-freight text-[clamp(44px,6.666vw,80px)] font-medium italic">
                 design & marketing
               </span>
             </h1>
@@ -97,14 +97,17 @@ export default function Home({ searchParams }: SearchParamProps) {
               </Link>
             </div>
           </Motion>
+        </section>
+
+        <section className="pb-28">
           <Motion
             initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
             transition={{ ease: "easeInOut", delay: 0.8, duration: 0.5 }}
             className="flex w-full max-w-8xl flex-col items-center"
           >
-            <p className="mt-28 text-sm opacity-50">Trusted by teams at</p>
-            <div className="mt-5 px-8">
+            <p className="text-sm opacity-50">Trusted by teams at</p>
+            <div className="mt-5 px-2 sm:px-4">
               <Logos />
             </div>
           </Motion>
@@ -122,29 +125,30 @@ export default function Home({ searchParams }: SearchParamProps) {
         </section> */}
 
         {/* Services */}
-        <section className="flex h-full w-full flex-col items-center rounded-[2rem] from-black  px-4 py-40 text-center backdrop-blur-sm">
-          <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-200 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
+        <section className="bg-linear-gradient flex h-full w-full flex-col items-center rounded-[2rem] from-black  px-4 pt-32 text-center backdrop-blur-sm">
+          <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-400 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
             This is what we do
             <span className="overflow-visible bg-clip-text text-transparent"></span>
           </h2>
           <ServicesSection />
         </section>
 
-        <section className="flex h-full w-full flex-col items-center rounded-[2rem] bg-gradient-radial-to-bottom from-black  px-4 pb-16 pt-32 text-center backdrop-blur-sm">
+        {/* <section className="flex h-full w-full flex-col items-center rounded-[2rem] bg-gradient-radial-to-bottom from-black  px-4 pb-16 pt-32 text-center backdrop-blur-sm">
           <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-200 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
             Here is how it works
             <span className="overflow-visible bg-clip-text text-transparent"></span>
           </h2>
           <DetailsSection />
-        </section>
+        </section> */}
 
         {/* Testimonials */}
-        <section className="mt-36 flex max-w-6xl flex-col items-center justify-center px-2">
-          <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-200 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
+        <section className="bg-linear-gradient mt-36 flex w-full flex-col items-center justify-center">
+          <h2 className="m-16 overflow-visible bg-gradient-to-t from-zinc-400 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
             What our users are saying
           </h2>
-
-          <TestimonialSection />
+          <div className="flex max-w-6xl items-center">
+            <TestimonialSection />
+          </div>
         </section>
 
         <ProjectsSection />
