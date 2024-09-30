@@ -1,4 +1,7 @@
 import {
+  HeartStraight,
+  ChatCircle,
+  PaperPlaneTilt,
   AlignLeft,
   Code,
   MagicWand,
@@ -154,105 +157,131 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
-          {/* <p className="text-xs">Step 3</p> */}
-          <h3 className="mt-2 text-3xl font-medium">Content</h3>
-          <p className="mt-2 opacity-75">
-            Fresh content for ads, socials & the web.
-          </p>
-          <div className="relative mt-8 h-full w-full border-t border-white border-opacity-10 pt-8">
-            <div className="absolute bottom-16 right-2 z-50 flex gap-1">
-              <NavigationArrow
-                className="duocolor-pink"
-                weight="duotone"
-                fill="white"
-              />
-              <div className="rounded-xs mt-3 bg-fuchsia-500 px-1 text-xs font-semibold leading-[1.4]">
-                Marketing Team
+        <div className="flex flex-col rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
+          <div className="h-80 w-full ">
+            <div className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-3xl border border-white border-opacity-40 bg-white bg-opacity-0 p-2">
+              {/* Code snippet */}
+              <div className="font-mono text-xs">
+                <div>
+                  <p>
+                    <span className="text-blue-500">export default</span>{" "}
+                    <span className="text-fuchsia-500">async function</span>{" "}
+                    Blog() &#123;
+                  </p>
+                  <p className="ml-4">
+                    <span className="text-fuchsia-500">let</span> data ={" "}
+                    <span className="text-fuchsia-500">await</span> fetch(
+                    <span className="text-green-500">
+                      &apos;https://api.kindredhouse.se/blog&apos;
+                    </span>
+                    );
+                  </p>
+                  <p className="ml-4">
+                    <span className="text-fuchsia-500">let</span> posts ={" "}
+                    <span className="text-fuchsia-500">await</span> data.json();
+                  </p>
+                  <p className="ml-4">
+                    <span className="text-fuchsia-500">return</span> {"("}
+                  </p>
+                  <p className="ml-8">
+                    &lt;<span className="text-blue-500">ul</span>&gt;
+                  </p>
+                  <p className="ml-12">&#123;posts.map((post) =&gt; {"("}</p>
+                  <p className="ml-16">
+                    &lt;<span className="text-blue-500">li</span>{" "}
+                    <span className="text-orange-600">key</span>
+                    =&#123;post.id&#125;&gt;&#123;post.title&#125;&lt;/
+                    <span className="text-blue-500">li</span>&gt;
+                  </p>
+                  <p className="ml-12">&#41;&#125;</p>
+                  <p className="ml-8">
+                    &lt;/<span className="text-blue-500">ul</span>&gt;
+                  </p>
+                  <p className="ml-4">);</p>
+                  <p>&#125;</p>
+                </div>
               </div>
             </div>
-            <div className="h relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center p-2 text-center">
-              <div className="absolute left-0 top-0 flex aspect-[16/9] w-2/3 -rotate-0 flex-col items-center justify-center rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-2 text-center"></div>
-              <div className="absolute right-0 top-8 flex aspect-[16/9] w-2/3 -rotate-0 flex-col items-center justify-center rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-2 text-center"></div>
-              <div className="absolute left-8 top-16 flex aspect-[16/9] w-2/3 -rotate-0 flex-col items-center justify-center rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-2 text-center"></div>
-            </div>
-            {/* <div className="flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-xl border border-white border-opacity-0 bg-white bg-opacity-0 p-2 text-center">
-                <div className="absolute -left-8 top-4 -rotate-[3deg] rounded-full border border-white border-opacity-40 bg-white bg-opacity-20 px-2 py-1 text-white">
-                  <p className="text-sm opacity-100">+12% conversion</p>
-                </div>
-                <div className="absolute -right-8 top-0 rotate-[4deg] scale-105 rounded-full border border-white border-opacity-40 bg-white bg-opacity-20 px-2 py-1 text-white">
-                  <p className="text-sm opacity-100">+24 sign ups</p>
-                </div>
-                <div className="absolute right-12 top-20 rotate-[2deg] scale-150 rounded-full border border-white border-opacity-40 bg-white bg-opacity-20 px-2 py-1 text-white">
-                  <p className="text-sm opacity-100">+$10,000 revenue</p>
-                </div>
-                <div className="absolute -bottom-4 right-16 -rotate-[2deg] scale-110 rounded-full border border-white border-opacity-40 bg-white bg-opacity-20 px-2 py-1 text-white">
-                  <p className="text-sm opacity-100">+87 new leads</p>
-                </div>
-                <div className="absolute -left-8 bottom-10 rotate-[6deg] scale-125 rounded-full border border-white border-opacity-40 bg-white bg-opacity-20 px-2 py-1 text-white">
-                  <p className="text-sm opacity-100">98% retention rate</p>
-                </div>
-              </div> */}
           </div>
+          <h3 className="mt-12 text-2xl font-medium">Development</h3>
+          <p className="mt-1 max-w-sm opacity-50">
+            Refresh your website and branding. We build stunning websites in
+            Webflow that showcase your products.
+          </p>
         </div>
 
-        {/* <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-6 md:p-8">
-          <p className="text-xs">Step 4</p>
-          <h3 className="mt-2 text-2xl font-medium">
-            Iterate on user feedback
-          </h3>
-          <p className="mt-2 opacity-75">
-            Gather feedback and we iterate on our design.
-          </p>
-          <div className="relative mt-8 border-t border-white border-opacity-10 px-0 pt-8 md:px-8">
-            <div className="mx-2 flex flex-col justify-between rounded-2xl border border-white border-opacity-20 bg-white bg-opacity-10 p-6 shadow-sm ">
-              <div className="flex items-center gap-2">
-                <div className="relative flex h-10 w-10 items-center justify-center overflow-hidden rounded-full bg-purple-200">
-                  <p className="text-lg">🦄</p>
+        <div className="flex flex-col rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
+          <div className="relative flex h-80 w-full items-center justify-center ">
+            <div className="relative grid aspect-[16/9] h-auto w-3/4 -rotate-0 grid-cols-2 grid-rows-2 flex-col items-center justify-center gap-4 rounded-3xl border border-white border-opacity-40 bg-white bg-opacity-100 p-8 text-center">
+              <div className="flex h-full w-full flex-col gap-1">
+                <div className="flex items-center gap-1">
+                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                  <div className="h-0.5 w-8  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
                 </div>
-                <div className="">
-                  <p className="font-medium">User</p>
-                  <p className="text-xs tracking-normal opacity-50">4h ago</p>
+                <div className="aspect-[3/2] h-auto w-full rounded-lg bg-gradient-to-r from-blue-100 to-blue-500"></div>
+                <div className="mt-1 flex gap-1">
+                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-red-300 to-red-400"></div>
+                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-zinc-100 to-zinc-200"></div>
+                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-zinc-100 to-zinc-200"></div>
+                  {/* <HeartStraight weight="fill" size={8} color="#f87171" />
+                  <ChatCircle weight="regular" size={8} color="#a1a1aa" />
+                  <PaperPlaneTilt weight="regular" size={8} color="#a1a1aa" /> */}
+                </div>
+                <div className="mt-1 flex flex-col gap-1">
+                  <div className="h-0.5 w-full  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                  <div className="h-0.5 w-4/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
                 </div>
               </div>
-              <p className="mt-5">
-                The app looks fantastic — so much better than before! Would it
-                be possible to add a back button to the navigation?{" "}
-              </p>
-              <div className="mt-5 flex items-center justify-between rounded-lg border-white border-opacity-40 bg-white bg-opacity-20 px-2 py-2">
-                <p>Thanks for your feedback! | </p>
-                <div className="flex h-6 w-8 items-center justify-center rounded-full border border-white border-opacity-40 bg-white bg-opacity-30">
-                  <ArrowBendRightUp />
+              <div className="row-span-2 h-full w-full rounded-lg bg-gradient-to-r from-zinc-50 to-zinc-200 p-4 ">
+                {/* Comment */}
+                <div className="flex items-start gap-1">
+                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                  <div className="flex w-full flex-col gap-1">
+                    <div className="h-0.5 w-8  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                    <div className="h-0.5 w-2/3  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                    <div className="h-0.5 w-2/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                  </div>
+                </div>
+
+                {/* Comment */}
+                <div className="mt-4 flex items-start gap-1">
+                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                  <div className="flex w-full flex-col gap-1">
+                    <div className="h-0.5 w-8  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                    <div className="h-0.5 w-4/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                    <div className="h-0.5 w-3/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                  </div>
+                </div>
+
+                {/* Comment */}
+                <div className="mt-4 flex items-start gap-1">
+                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                  <div className="flex w-full flex-col gap-1">
+                    <div className="h-0.5 w-8  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                    <div className="h-0.5 w-2/3  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                    <div className="h-0.5 w-2/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                  </div>
+                </div>
+
+                {/* Comment */}
+                <div className="mt-4 flex items-start gap-1">
+                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                  <div className="flex w-full flex-col gap-1">
+                    <div className="h-0.5 w-8  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                    <div className="h-0.5 w-4/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                    <div className="h-0.5 w-3/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-        </div> */}
+          <h3 className="mt-12 text-2xl font-medium">Content</h3>
+          <p className="mt-1 max-w-sm opacity-50">
+            Refresh your website and branding. We build stunning websites in
+            Webflow that showcase your products.
+          </p>
+        </div>
       </div>
-      {/* <div className="mt-24 flex w-full max-w-4xl flex-wrap justify-between gap-10">
-        {services.map((service, index) => {
-          const IconComponent = service.icon;
-          return (
-            <div
-              key={index}
-              className="flex flex-1 flex-col items-center gap-2"
-            >
-              <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10">
-                <IconComponent className="h-5 w-5 text-white" />
-              </div>
-              <p className="mt-1 whitespace-pre-wrap text-center text-xs leading-relaxed tracking-normal text-white opacity-75">
-
-                {service.name.split(" ").map((word, i) => (
-                  <span key={i}>
-                    {word}
-                    <br />
-                  </span>
-                ))}
-              </p>
-            </div>
-          );
-        })}
-      </div> */}
     </>
   );
 }

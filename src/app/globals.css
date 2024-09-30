@@ -133,7 +133,6 @@ body {
   animation: rotate-light 5s linear infinite;
 }
 
-
 .duocolor-orange [opacity="0.2"] {
   opacity: 1;
   fill: #ea580c;
@@ -153,3 +152,4 @@ body {
   opacity: 1;
   fill: #d946ef;
 }
+
