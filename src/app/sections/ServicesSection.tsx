@@ -31,109 +31,130 @@ const services = [
     name: "Web Development",
     icon: Code,
   },
-  {
-    name: "SEO Optimization",
-    icon: Cursor,
-  },
-  {
-    name: "App Design",
-    icon: DeviceMobileCamera,
-  },
-  {
-    name: "Content Creation",
-    icon: CubeFocus,
-  },
-  {
-    name: "Ad Creatives",
-    icon: Confetti,
-  },
+  // {
+  //   name: "SEO Optimization",
+  //   icon: Cursor,
+  // },
+  // {
+  //   name: "App Design",
+  //   icon: DeviceMobileCamera,
+  // },
+  // {
+  //   name: "Content Creation",
+  //   icon: CubeFocus,
+  // },
+  // {
+  //   name: "Ad Creatives",
+  //   icon: Confetti,
+  // },
 ];
 
 export default function ServicesSection() {
   return (
     <>
-      <div className="grid w-full max-w-6xl grid-cols-1 gap-8 text-left md:grid-cols-2 lg:grid-cols-3">
-        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-black bg-opacity-10 px-4 py-6 md:p-8">
-          {/* <p className="text-xs">Step 2</p> */}
-          <h3 className="mt-2 text-3xl font-medium">Websites</h3>
-          <p className="mt-2 opacity-75">Refresh your website and branding.</p>
-          <div className="mt-8 w-full border-t border-white border-opacity-10 pt-8">
-            <div className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-3xl border border-white border-opacity-40 bg-white bg-opacity-10 p-2 text-center">
-              <div className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-2xl border border-white border-opacity-40 bg-white bg-opacity-10 p-2 text-center">
-                <div className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-lg border border-white border-opacity-40 bg-white bg-opacity-10 p-2 text-center">
-                  <p className="text-[12px] font-medium  leading-[1.2]">
-                    Supercharge your <br />{" "}
-                    <span className="font-freight  text-[14px] italic">
-                      design & marketing
-                    </span>
-                  </p>
-                  <p className="mt-1 max-w-[4rem] text-[4px] opacity-75">
-                    We&apos;re a fully remote design partner for next-gen
-                    businesses that iterate fast.
-                  </p>
+      <div className="grid w-full max-w-6xl grid-cols-1 gap-8 text-left text-black md:grid-cols-2 lg:grid-cols-2">
+        <div className="flex flex-col rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
+          <div className="h-80 w-full ">
+            <div className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-3xl border border-white border-opacity-40 bg-white bg-opacity-100 p-2 text-center">
+              <div className="relative flex aspect-[16/9] h-auto w-2/3 flex-col items-center justify-center border border-blue-500">
+                {/* Navbar */}
+                <div className="absolute top-0 flex w-full justify-between  px-2 py-1">
+                  <div className="h-1 w-4 rounded-sm bg-gradient-to-r from-blue-100 to-blue-500"></div>
+                  <div className="flex gap-1">
+                    <div className="h-1.5 w-4 rounded-sm bg-gradient-to-r from-blue-300 to-blue-500"></div>
+                    <div className="h-1.5 w-4 rounded-sm bg-gradient-to-r from-zinc-100 to-zinc-300"></div>
+                  </div>
                 </div>
-              </div>
-              <div className="absolute bottom-8 right-12 flex gap-1">
-                <NavigationArrow
-                  className="duocolor-orange"
-                  weight="duotone"
-                  fill="white"
-                />
-                <div className="rounded-xs mt-3 bg-orange-600 px-1 text-xs font-medium leading-[1.4]">
-                  Alex A
+                <div className="h-3 w-full max-w-[8rem] rounded-sm bg-gradient-to-r from-blue-100 to-blue-400"></div>
+                <div className="mt-1 h-3 w-full max-w-[8rem] rounded-sm bg-gradient-to-r from-blue-100 to-blue-400"></div>
+                <div className="mt-2 h-1 w-full max-w-[6rem] rounded-sm bg-gradient-to-r from-blue-100 to-blue-400"></div>
+                <div className="mt-1 h-1 w-full max-w-[6rem] rounded-sm bg-gradient-to-r from-blue-100 to-blue-400"></div>
+                <div className="mt-2 flex w-full flex-row items-center justify-center gap-1">
+                  <div className="h-2 w-full max-w-[2rem] rounded-sm bg-gradient-to-r from-blue-300 to-blue-500"></div>
+                  <div className=" h-2 w-full max-w-[2rem] rounded-sm bg-gradient-to-r from-zinc-100 to-zinc-300"></div>
                 </div>
-              </div>
-              <div className="absolute left-8 top-8 flex gap-1">
-                <NavigationArrow
-                  className="duocolor-green"
-                  weight="duotone"
-                  fill="white"
-                />
-                <div className="rounded-xs mt-3 text-nowrap bg-green-600 px-1 text-xs font-medium leading-[1.4]">
-                  Eric B
+                <div className="absolute left-6 top-2 flex gap-1">
+                  <NavigationArrow
+                    className="duocolor-green"
+                    weight="fill"
+                    fill="#16a34a"
+                  />
+                  <div className="mt-3 text-nowrap rounded-sm bg-green-600 px-1 text-xs font-medium leading-[1.4] text-white">
+                    Eric B
+                  </div>
+                </div>
+                {/* Boxes in corners */}
+                <div className="absolute -left-1 -top-1 h-2 w-2 border border-blue-500 bg-white"></div>
+                <div className="absolute -right-1 -top-1 h-2 w-2 border border-blue-500 bg-white"></div>
+                <div className="absolute -bottom-1 -left-1 h-2 w-2 border border-blue-500 bg-white"></div>
+                <div className="absolute -bottom-1 -right-1 h-2 w-2 border border-blue-500 bg-white"></div>
+                {/* --- */}
+                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 border border-blue-500 bg-blue-500 px-1">
+                  <p className="text-sm text-white">1440 × 900</p>
+                </div>
+                <div className="absolute -bottom-1 -right-1 flex translate-x-full translate-y-full gap-1">
+                  <NavigationArrow
+                    className="duocolor-orange"
+                    weight="fill"
+                    fill="#ea580c"
+                  />
+                  <div className="mt-3 rounded-sm bg-orange-600 px-1 text-xs font-medium leading-[1.4] text-white">
+                    Alex A
+                  </div>
                 </div>
               </div>
             </div>
           </div>
+          <h3 className="mt-12 text-2xl font-medium">Websites</h3>
+          <p className="mt-1 max-w-sm opacity-50">
+            Refresh your website and branding. We build stunning websites in
+            Webflow that showcase your products.
+          </p>
         </div>
 
-        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-black bg-opacity-10 px-4 py-6 md:p-8">
+        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
+          <div className="h-80 w-full ">
+            <div className="relative mt-8 grid grid-cols-1 gap-4 pb-28 pt-8 text-xs md:grid-cols-2">
+              <div className="absolute bottom-24 right-24 flex gap-1">
+                <NavigationArrow
+                  className="duocolor-purple"
+                  weight="fill"
+                  fill="#d946ef"
+                />
+                <div className="z-50 mt-3 rounded-sm bg-fuchsia-500 px-1 text-xs font-semibold leading-[1.4] text-white">
+                  You
+                </div>
+              </div>
+
+              <div className="flex flex-col gap-2">
+                <p className="font-medium">To do</p>
+                <div className="max-w-[240px] rotate-0 rounded-md bg-white px-4 py-2 shadow-sm">
+                  Ads for campaign
+                </div>
+                <div className="max-w-[240px] rotate-0 rounded-md bg-white px-4 py-2 shadow-sm">
+                  New UI for search
+                </div>
+                <div className="absolute bottom-8 left-14 w-full max-w-[240px] rotate-6 rounded-md bg-white px-4 py-2 shadow-sm md:left-32">
+                  Design new website
+                </div>
+              </div>
+              <div className="hidden flex-col gap-2 md:flex">
+                <p className="font-medium">Done</p>
+                <div className="max-w-[240px] rotate-0 rounded-md bg-white px-4 py-2 shadow-sm">
+                  Create new logo
+                </div>
+              </div>
+            </div>
+          </div>
           {/* <p className="text-xs">Step 1</p> */}
-          <h3 className="mt-2 text-3xl font-medium">Design</h3>
-          <p className="mt-2 opacity-75">Your extended design team.</p>
-          <div className="relative mt-8 grid grid-cols-1 gap-4 border-t border-white border-opacity-10 pb-28 pt-8 text-xs md:grid-cols-2">
-            <div className="absolute bottom-24 right-24 flex gap-1">
-              <NavigationArrow
-                className="duocolor-purple"
-                weight="duotone"
-                fill="white"
-              />
-              <div className="rounded-xs z-50 mt-3 bg-purple-600 px-1 text-xs font-semibold leading-[1.4]">
-                You
-              </div>
-            </div>
-            <div className="flex flex-col gap-2">
-              <p className="font-medium">To do</p>
-              <div className="max-w-[240px] rotate-0 rounded-md border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
-                Ads for campaign
-              </div>
-              <div className="max-w-[240px] rotate-0 rounded-md border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
-                New UI for search
-              </div>
-              <div className="absolute bottom-8 left-14 max-w-[240px] rotate-6 rounded-md border  border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2 md:left-32">
-                Design new website
-              </div>
-            </div>
-            <div className="hidden flex-col gap-2 md:flex">
-              <p className="font-medium">Done</p>
-              <div className="max-w-[240px] rotate-0 rounded-md border border-white border-opacity-40 bg-white bg-opacity-10 px-4 py-2">
-                Create new logo
-              </div>
-            </div>
-          </div>
+          <h3 className="mt-12 text-2xl font-medium">Design</h3>
+          <p className="mt-2 max-w-sm opacity-50">
+            Your extended design team. Make any design request and get it
+            delivered within days to your developers.
+          </p>
         </div>
 
-        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-black bg-opacity-10 px-4 py-6 md:p-8">
+        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
           {/* <p className="text-xs">Step 3</p> */}
           <h3 className="mt-2 text-3xl font-medium">Content</h3>
           <p className="mt-2 opacity-75">

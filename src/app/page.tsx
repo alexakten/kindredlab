@@ -18,7 +18,6 @@ type SearchParamProps = {
 export default function Home({ searchParams }: SearchParamProps) {
   const bookDemo = searchParams?.BookDemo === "true";
 
-
   return (
     <main className="flex flex-col  items-center justify-center overflow-x-hidden bg-black px-0 tracking-tight text-zinc-100">
       {bookDemo && <CommandK isVisible={bookDemo} />}
@@ -100,8 +99,8 @@ export default function Home({ searchParams }: SearchParamProps) {
           </Motion>
         </section>
 
-
-        <section className="pb-28">
+        {/* Logos */}
+        <section className="pb-32">
           <Motion
             initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
@@ -116,32 +115,21 @@ export default function Home({ searchParams }: SearchParamProps) {
         </section>
 
         {/* Services */}
-        {/* <section className="mt-12 flex h-full w-full flex-col items-center rounded-[2rem]  px-4 py-32 text-center backdrop-blur-sm">
-          <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[4rem]">
-            This is{" "}
-            <span className="overflow-visible bg-gradient-to-r from-purple-200 to-purple-400 bg-clip-text text-transparent">
-              what we do
-            </span>
-          </h2>
-          <ServicesSection />
-        </section> */}
-
-        {/* Services */}
-        <section className="flex h-full w-full flex-col items-center rounded-[2rem] bg-linear-gradient from-black  px-4 pt-32 text-center backdrop-blur-sm">
-          <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-400 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
+        <section className="flex h-full w-full flex-col items-center  bg-white px-4 py-32 text-center backdrop-blur-sm">
+          {/* <h2 className="mb-16 overflow-visible bg-gradient-to-t from-black to-black bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
             This is what we do
             <span className="overflow-visible bg-clip-text text-transparent"></span>
-          </h2>
+          </h2> */}
           <ServicesSection />
         </section>
 
-        {/* <section className="flex h-full w-full flex-col items-center rounded-[2rem] bg-gradient-radial-to-bottom from-black  px-4 pb-16 pt-32 text-center backdrop-blur-sm">
-          <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-200 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
+        <section className="flex h-full w-full flex-col items-center px-4 pb-16 pt-32 text-center backdrop-blur-sm">
+          <h2 className="mb-16 overflow-visible bg-gradient-to-t from-black to-black bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
             Here is how it works
             <span className="overflow-visible bg-clip-text text-transparent"></span>
           </h2>
           <DetailsSection />
-        </section> */}
+        </section>
 
         {/* Testimonials */}
         <section className="mt-36 flex w-full flex-col items-center justify-center bg-linear-gradient">

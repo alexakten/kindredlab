@@ -49,9 +49,9 @@
 body {
   font-family: Inter, sans-serif;
   font-feature-settings:
-    "ss07" 1,
+    "ss07" 0,
     "ss03" 0,
-    "ss08" 1,
+    "ss08" 0,
     "liga" 1;
   background-color: #09090b;
   -webkit-font-smoothing: antialiased;
@@ -146,7 +146,7 @@ body {
 
 .duocolor-purple [opacity="0.2"] {
   opacity: 1;
-  fill: #9333ea;
+  fill: #d946ef;
 }
 
 .duocolor-pink [opacity="0.2"] {

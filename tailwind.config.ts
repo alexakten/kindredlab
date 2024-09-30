@@ -19,9 +19,11 @@ const config: Config = {
       },
       colors: {
         gray: {
-          350: "#B7BCC5", // Example value between gray-300 and gray-400
+          350: "#B7BCC5",
         },
-        // black: "#010314",
+        zinc: {
+          100: "#f7f7f7", // Changed zinc-100 to #f7f7f7
+        },
       },
       maxWidth: {
         "8xl": "1440px",
