@@ -41,6 +41,8 @@ export default function Home({ searchParams }: SearchParamProps) {
               width={1000}
               height={1000}
               className="pointer-events-none absolute left-0 top-0 h-full w-full object-left blur-3xl sm:w-full sm:scale-105 sm:object-cover"
+              priority
+              loading="eager"
             />
             <Motion
               initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
