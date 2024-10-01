@@ -132,7 +132,7 @@ export default function Home({ searchParams }: SearchParamProps) {
                   for next-gen businesses that iterate fast.
                 </span>
               </h2>
-              <div className="flex mt-8 sm:mt-0 items-center justify-center gap-8">
+              <div className="flex flex-row-reverse sm:flex-row mt-8 sm:mt-0 items-center justify-center gap-8">
                 <Link
                   href="mailto:hello@kindredlab.io"
                   className="font-basier text-sm hover:underline"
