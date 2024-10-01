@@ -79,7 +79,7 @@ export default function ServicesSection() {
                     fill="#fff"
                   />
                   <div className="mt-3 text-nowrap rounded-sm bg-white px-1 text-xs font-medium leading-[1.4] text-black">
-                    Eric B
+                    Eric
                   </div>
                 </div>
                 {/* Boxes in corners */}
