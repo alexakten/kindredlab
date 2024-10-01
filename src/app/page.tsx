@@ -34,7 +34,7 @@ export default function Home({ searchParams }: SearchParamProps) {
         <Navbar />
         {/* Hero */}
         <section className="mt-20 flex h-full w-full flex-col items-center bg-black px-4 backdrop-blur-sm sm:px-16">
-          <div className="relative h-full w-full overflow-hidden rounded-md py-20">
+          <div className="relative h-full w-full overflow-hidden rounded-md py-12 sm:py-20">
             <Image
               src="/images/full-hero-3.png"
               alt="Hero image"
@@ -86,10 +86,10 @@ export default function Home({ searchParams }: SearchParamProps) {
               transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
               className="flex w-full flex-col items-start px-4 sm:px-16"
             >
-              <div className="relative mt-4 border border-white bg-gradient-to-tl from-white to-white bg-clip-text px-2 pb-3 text-[clamp(40px,6vw,72px)] font-medium leading-[1.1] tracking-tight text-transparent sm:leading-[1]">
+              <div className="relative mt-4 border border-white bg-gradient-to-tl from-white to-white bg-clip-text px-2 pb-3 text-[clamp(36px,6vw,72px)] font-medium leading-[1.1] tracking-tight text-transparent sm:leading-[1]">
                 <h1>
                   Supercharge your <br />
-                  <span className="font-freight text-[clamp(44px,6.666vw,80px)] italic">
+                  <span className="font-freight text-[clamp(40px,6.666vw,80px)] italic">
                     design & marketing
                   </span>
                 </h1>
