@@ -12,6 +12,7 @@ import Project from "./components/Project";
 import DetailsSection from "./sections/DetailsSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import { NavigationArrow } from "@phosphor-icons/react/dist/ssr";
+// import Dimensions from "./components/Dimensions";
 
 type SearchParamProps = {
   searchParams: Record<string, string> | null | undefined;
@@ -39,7 +40,7 @@ export default function Home({ searchParams }: SearchParamProps) {
               alt="Hero image"
               width={1000}
               height={1000}
-              className="absolute left-0 top-0 h-full w-full scale-105 object-cover blur-md"
+              className="pointer-events-none absolute left-0 top-0 h-full w-full scale-105 object-cover blur-md"
             />
             <Motion
               initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
@@ -52,8 +53,27 @@ export default function Home({ searchParams }: SearchParamProps) {
                   <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75"></span>
                   <span className="relative inline-flex h-2 w-2 rounded-full bg-white"></span>
                 </span> */}
-                <p className="font-basier opacity-75 ">
-                  QURA RAISES €2.1M LED BY CHERRY VENTURES{" "}
+                {/* <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  className="feather feather-arrow-up-right"
+                >
+                  <line x1="7" y1="17" x2="17" y2="7" />
+                  <polyline points="7 7 17 7 17 17" />
+                </svg> */}
+                <p className="pl-0 font-basier opacity-100 ">
+                  ANNOUNCEMENT /
+                  <span className="opacity-75">
+                    {" "}
+                    CLIENT QURA RAISES €2.1M LED BY CHERRY VENTURES{" "}
+                  </span>
                 </p>
               </div>
             </Motion>
@@ -63,15 +83,17 @@ export default function Home({ searchParams }: SearchParamProps) {
               transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
               className="flex w-full flex-col items-start"
             >
-              <h1 className="relative mt-4 border border-white bg-gradient-to-tl from-white to-white bg-clip-text px-2 pb-3 text-[clamp(40px,6vw,72px)] font-[450] leading-[1.1] tracking-tight text-transparent sm:leading-[1]">
-                Supercharge your <br />
-                <span className="font-freight text-[clamp(44px,6.666vw,80px)] font-medium italic">
-                  design & marketing
-                </span>
+              <div className="relative mt-4 border border-white bg-gradient-to-tl from-white to-white bg-clip-text px-2 pb-3 text-[clamp(40px,6vw,72px)] font-[450] leading-[1.1] tracking-tight text-transparent sm:leading-[1]">
+                <h1>
+                  Supercharge your <br />
+                  <span className="font-freight text-[clamp(44px,6.666vw,80px)] font-medium italic">
+                    design & marketing
+                  </span>
+                </h1>
                 <span className="absolute -bottom-1 -right-1 flex translate-x-full translate-y-full items-start gap-1">
                   <NavigationArrow weight="fill" fill="#fff" size={16} />
                   <div className="mt-3 h-4 rounded-sm bg-white px-1 text-xs font-medium leading-[1.4] tracking-tight text-black">
-                    Alex A
+                    Alex
                   </div>
                 </span>
                 {/* Boxes */}
@@ -79,12 +101,12 @@ export default function Home({ searchParams }: SearchParamProps) {
                 <span className="absolute -right-1 -top-1 h-2 w-2 border border-white bg-white"></span>
                 <span className="absolute -bottom-1 -left-1 h-2 w-2 border border-white bg-white"></span>
                 <span className="absolute -bottom-1 -right-1 h-2 w-2 border border-white bg-white"></span>
-                <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 border bg-white px-1">
+                {/* <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 border bg-white px-1">
                   <p className="text-sm tracking-tight text-black">
                     1440 × 900
                   </p>
-                </span>
-              </h1>
+                </span> */}
+              </div>
             </Motion>
             <Motion
               initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
@@ -92,7 +114,7 @@ export default function Home({ searchParams }: SearchParamProps) {
               transition={{ ease: "easeInOut", delay: 0.4, duration: 0.5 }}
               className="flex w-full flex-col items-start"
             >
-              <h2 className="mt-12   max-w-md text-xl opacity-100">
+              <h2 className="mt-6   max-w-md text-xl opacity-100">
                 We&apos;re a fully remote design & content agency
                 <span className="opacity-50">
                   {" "}
@@ -111,7 +133,7 @@ export default function Home({ searchParams }: SearchParamProps) {
                 <Link
                   href="/?BookDemo=true"
                   scroll={false}
-                  className="flex items-center gap-2 rounded-full bg-zinc-100 px-4 py-2.5 text-black hover:bg-zinc-200"
+                  className="flex items-center gap-2 rounded-full bg-zinc-50 px-4 py-2.5 text-black hover:bg-zinc-100"
                   replace
                 >
                   <p className="text-base font-medium">Book demo</p>
@@ -138,7 +160,9 @@ export default function Home({ searchParams }: SearchParamProps) {
             transition={{ ease: "easeInOut", delay: 0.8, duration: 0.5 }}
             className="flex w-full max-w-8xl flex-col items-center"
           >
-            <p className="text-sm font-basier opacity-50">TRUSTED BY TEAMS AT</p>
+            <p className="font-basier text-sm opacity-50">
+              TRUSTED BY TEAMS AT
+            </p>
             <div className="mt-5 px-2 sm:px-4">
               <Logos />
             </div>
@@ -146,7 +170,7 @@ export default function Home({ searchParams }: SearchParamProps) {
         </section>
 
         {/* Services */}
-        <section className="flex h-full w-full flex-col items-center  bg-white px-4 py-32 text-center backdrop-blur-sm">
+        <section className="flex h-full w-full flex-col items-center overflow-x-auto bg-white px-4 py-32 backdrop-blur-sm">
           {/* <h2 className="mb-16 overflow-visible bg-gradient-to-t from-black to-black bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
             This is what we do
             <span className="overflow-visible bg-clip-text text-transparent"></span>

@@ -6,14 +6,10 @@ import {
   Code,
   MagicWand,
   CubeTransparent,
-  Cube,
   NavigationArrow,
-  Confetti,
   Cursor,
-  CubeFocus,
-  DeviceMobileCamera,
-  ArrowBendRightUp,
 } from "@phosphor-icons/react/dist/ssr";
+import Link from "next/link";
 
 import Image from "next/image";
 
@@ -55,96 +51,92 @@ const services = [
 export default function ServicesSection() {
   return (
     <>
-      <div className="grid w-full max-w-6xl grid-cols-1 gap-8 text-left text-black md:grid-cols-2 lg:grid-cols-2">
-        <div className="flex flex-col rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
-          <div className="h-80 w-full ">
-            <div className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-3xl border border-white border-opacity-40 bg-white bg-opacity-100 p-2 text-center">
-              <div className="relative flex aspect-[16/9] h-auto w-2/3 flex-col items-center justify-center border border-blue-500">
+      <div className="flex w-full max-w-7xl gap-4 overflow-x-auto text-left text-white">
+        {/* Websites */}
+        <div className="relative flex w-[36rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md md:p-8">
+          <Image
+            src="/images/websites.png"
+            alt="Websites"
+            width={100}
+            height={100}
+            className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-105 object-cover blur-md"
+          />
+          <p className="font-basier text-xs opacity-50">WEB DEVELOPMENT</p>
+          <h3 className="mt-12 text-6xl font-semibold">
+            Stunning websites built in Webflow
+          </h3>
+          <p className="mt-4 max-w-sm opacity-50">
+            Refresh your website and branding. We build stunning websites in
+            Webflow that showcase your products.
+          </p>
+          <div className="mt-12 w-full ">
+            <div
+              className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-3xl border-2 border-white border-opacity-100 bg-white bg-opacity-10 p-2 text-center"
+              style={{ mixBlendMode: "plus-lighter" }}
+            >
+              <div className="relative flex aspect-[16/9] h-auto w-2/3 flex-col items-center justify-center border border-white">
                 {/* Navbar */}
                 <div className="absolute top-0 flex w-full justify-between  px-2 py-1">
-                  <div className="h-1 w-4 rounded-sm bg-gradient-to-r from-blue-100 to-blue-500"></div>
+                  <div className="h-1 w-4 rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
                   <div className="flex gap-1">
-                    <div className="h-1.5 w-4 rounded-sm bg-gradient-to-r from-blue-300 to-blue-500"></div>
-                    <div className="h-1.5 w-4 rounded-sm bg-gradient-to-r from-zinc-100 to-zinc-300"></div>
+                    <div className="h-1.5 w-4 rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
+                    <div className="h-1.5 w-4 rounded-sm bg-gradient-to-r from-white to-white"></div>
                   </div>
                 </div>
-                <div className="h-3 w-full max-w-[8rem] rounded-sm bg-gradient-to-r from-blue-100 to-blue-400"></div>
-                <div className="mt-1 h-3 w-full max-w-[8rem] rounded-sm bg-gradient-to-r from-blue-100 to-blue-400"></div>
-                <div className="mt-2 h-1 w-full max-w-[6rem] rounded-sm bg-gradient-to-r from-blue-100 to-blue-400"></div>
-                <div className="mt-1 h-1 w-full max-w-[6rem] rounded-sm bg-gradient-to-r from-blue-100 to-blue-400"></div>
+                <div className="h-3 w-full max-w-[8rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
+                <div className="mt-1 h-3 w-full max-w-[8rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
+                <div className="mt-2 h-1 w-full max-w-[6rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
+                <div className="mt-1 h-1 w-full max-w-[6rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
                 <div className="mt-2 flex w-full flex-row items-center justify-center gap-1">
-                  <div className="h-2 w-full max-w-[2rem] rounded-sm bg-gradient-to-r from-blue-300 to-blue-500"></div>
-                  <div className=" h-2 w-full max-w-[2rem] rounded-sm bg-gradient-to-r from-zinc-100 to-zinc-300"></div>
+                  <div className="h-2 w-full max-w-[2rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
+                  <div className=" h-2 w-full max-w-[2rem] rounded-sm bg-gradient-to-r from-white to-white"></div>
                 </div>
                 <div className="absolute left-6 top-2 flex gap-1">
                   <NavigationArrow
-                    className="duocolor-green"
+                    // className="duocolor-green"
                     weight="fill"
-                    fill="#16a34a"
+                    fill="#fff"
                   />
-                  <div className="mt-3 text-nowrap rounded-sm bg-green-600 px-1 text-xs font-medium leading-[1.4] text-white">
+                  <div className="mt-3 text-nowrap rounded-sm bg-white px-1 text-xs font-medium leading-[1.4] text-black">
                     Eric B
                   </div>
                 </div>
                 {/* Boxes in corners */}
-                <div className="absolute -left-1 -top-1 h-2 w-2 border border-blue-500 bg-white"></div>
-                <div className="absolute -right-1 -top-1 h-2 w-2 border border-blue-500 bg-white"></div>
-                <div className="absolute -bottom-1 -left-1 h-2 w-2 border border-blue-500 bg-white"></div>
-                <div className="absolute -bottom-1 -right-1 h-2 w-2 border border-blue-500 bg-white"></div>
+                <div className="absolute -left-1 -top-1 h-2 w-2 border border-white bg-white"></div>
+                <div className="absolute -right-1 -top-1 h-2 w-2 border border-white bg-white"></div>
+                <div className="absolute -bottom-1 -left-1 h-2 w-2 border border-white bg-white"></div>
+                <div className="absolute -bottom-1 -right-1 h-2 w-2 border border-white bg-white"></div>
                 {/* --- */}
-                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 border border-blue-500 bg-blue-500 px-1">
-                  <p className="text-sm text-white">1440 × 900</p>
+                <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 border border-white bg-white px-1">
+                  <p className="text-sm text-black">1440 × 900</p>
                 </div>
                 <div className="absolute -bottom-1 -right-1 flex translate-x-full translate-y-full gap-1">
                   <NavigationArrow
-                    className="duocolor-orange"
+                    // className="duocolor-orange"
                     weight="fill"
-                    fill="#ea580c"
+                    fill="#fff"
                   />
-                  <div className="mt-3 rounded-sm bg-orange-600 px-1 text-xs font-medium leading-[1.4] text-white">
-                    Alex A
+                  <div className="mt-3 rounded-sm bg-white px-1 text-xs font-medium leading-[1.4] text-black">
+                    Bianca
                   </div>
                 </div>
               </div>
             </div>
           </div>
-          <h3 className="mt-12 text-2xl font-medium">Websites</h3>
-          <p className="mt-1 max-w-sm opacity-50">
-            Refresh your website and branding. We build stunning websites in
-            Webflow that showcase your products.
-          </p>
-          <p className="mt-5 text-xs font-semibold">
-            PRICE: 70,000 - 150,000 SEK
-          </p>
-          <p className="mt-2 text-xs font-semibold">TIME: 4-8 WEEKS</p>
-          <div className="mt-8 w-full border-t border-white border-opacity-10 pt-8">
-            <div className="flex w-full max-w-4xl flex-wrap justify-between gap-4">
-              {services.map((service, index) => {
-                const IconComponent = service.icon;
-                return (
-                  <div
-                    key={index}
-                    className="flex flex-1 flex-col items-center gap-2"
-                  >
-                    <div className="flex h-16 w-16 items-center justify-center rounded-2xl border border-zinc-300 bg-zinc-200 bg-opacity-10">
-                      <IconComponent className="h-5 w-5 text-black" />
-                    </div>
-                    <p className="mt-0.5 whitespace-pre-wrap text-center text-xs leading-normal tracking-normal text-black opacity-50">
-                      {service.name.split(" ").map((word, i) => (
-                        <span key={i}>
-                          {word}
-                          <br />
-                        </span>
-                      ))}
-                    </p>
-                  </div>
-                );
-              })}
-            </div>
+          <div className="mt-16 flex w-full items-center justify-between">
+            <p className="font-basier text-xs opacity-50">
+              BOOK A FREE DEMO{" "}
+            </p>
+            <Link
+              href={"/"}
+              className="rounded-full bg-white px-16 py-3 font-basier text-xs text-black hover:bg-zinc-100"
+            >
+              LEARN MORE
+            </Link>
           </div>
         </div>
-
-        <div className="flex flex-col rounded-2xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
+        {/* Design */}
+        <div className="flex flex-1 flex-col rounded-2xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
           <div className="h-80 w-full ">
             <div className="relative mt-8 grid grid-cols-1 gap-4 pb-28 pt-8 text-xs md:grid-cols-2">
               <div className="absolute bottom-24 right-24 flex gap-1">
@@ -186,60 +178,8 @@ export default function ServicesSection() {
           </p>
         </div>
 
-        <div className="flex flex-col rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
-          <div className="h-80 w-full ">
-            <div className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-3xl border border-white border-opacity-40 bg-white bg-opacity-0 p-2">
-              {/* Code snippet */}
-              <div className="font-mono text-xs">
-                <div>
-                  <p>
-                    <span className="text-blue-500">export default</span>{" "}
-                    <span className="text-fuchsia-500">async function</span>{" "}
-                    Blog() &#123;
-                  </p>
-                  <p className="ml-4">
-                    <span className="text-fuchsia-500">let</span> data ={" "}
-                    <span className="text-fuchsia-500">await</span> fetch(
-                    <span className="text-green-500">
-                      &apos;https://api.kindredhouse.se/blog&apos;
-                    </span>
-                    );
-                  </p>
-                  <p className="ml-4">
-                    <span className="text-fuchsia-500">let</span> posts ={" "}
-                    <span className="text-fuchsia-500">await</span> data.json();
-                  </p>
-                  <p className="ml-4">
-                    <span className="text-fuchsia-500">return</span> {"("}
-                  </p>
-                  <p className="ml-8">
-                    &lt;<span className="text-blue-500">ul</span>&gt;
-                  </p>
-                  <p className="ml-12">&#123;posts.map((post) =&gt; {"("}</p>
-                  <p className="ml-16">
-                    &lt;<span className="text-blue-500">li</span>{" "}
-                    <span className="text-orange-600">key</span>
-                    =&#123;post.id&#125;&gt;&#123;post.title&#125;&lt;/
-                    <span className="text-blue-500">li</span>&gt;
-                  </p>
-                  <p className="ml-12">&#41;&#125;</p>
-                  <p className="ml-8">
-                    &lt;/<span className="text-blue-500">ul</span>&gt;
-                  </p>
-                  <p className="ml-4">);</p>
-                  <p>&#125;</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <h3 className="mt-12 text-2xl font-medium">Development</h3>
-          <p className="mt-1 max-w-sm opacity-50">
-            Refresh your website and branding. We build stunning websites in
-            Webflow that showcase your products.
-          </p>
-        </div>
-
-        <div className="flex flex-col rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
+        {/* Content */}
+        <div className="flex flex-1 flex-col rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
           <div className="relative flex h-80 w-full items-center justify-center ">
             <div className="relative grid aspect-[16/9] h-auto w-full -rotate-0 grid-cols-2 grid-rows-2 flex-col items-center justify-center gap-4 rounded-3xl border border-white border-opacity-40 bg-white bg-opacity-100 p-8 text-center">
               <div className="flex h-full w-full flex-col gap-1">
