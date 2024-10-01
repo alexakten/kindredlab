@@ -40,7 +40,7 @@ export default function ServicesSection() {
             alt="Websites"
             width={100}
             height={100}
-            className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-105 object-cover blur-md"
+            className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-150 object-cover blur-2xl sm:scale-125"
           />
           <p className="font-basier text-xs opacity-50">WEB DEVELOPMENT</p>
           <h3 className="mt-12 text-3xl font-semibold sm:text-6xl">
@@ -121,11 +121,11 @@ export default function ServicesSection() {
         {/* Design */}
         <div className="relative flex min-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md sm:min-w-[36rem] md:p-8">
           <Image
-            src="/images/design.png"
+            src="/images/design.webp"
             alt="Websites"
             width={100}
             height={100}
-            className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-105 object-cover blur-md"
+            className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-150 object-cover blur-2xl sm:scale-125"
           />
           <p className="font-basier text-xs opacity-50">DESIGN SUBSCRIPTION</p>
           <h3 className="mt-12 text-3xl font-semibold sm:text-6xl">
@@ -185,11 +185,11 @@ export default function ServicesSection() {
         {/* Content */}
         <div className="relative flex min-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md sm:min-w-[36rem] md:p-8">
           <Image
-            src="/images/content.png"
-            alt="Websites"
+            src="/images/content.webp"
+            alt="Content"
             width={100}
             height={100}
-            className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-105 object-cover blur-md"
+            className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-150 object-cover blur-2xl sm:scale-125"
           />
           <p className="font-basier text-xs opacity-50">DESIGN SUBSCRIPTION</p>
           <h3 className="mt-12 text-3xl font-semibold sm:text-6xl">
