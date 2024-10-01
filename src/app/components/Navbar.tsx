@@ -7,26 +7,11 @@ export default function Navbar() {
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ ease: "easeInOut", delay: 0, duration: 0.5 }}
-      className="fixed mix-blend-exclusion z-50 flex w-full flex-col items-center"
+      className="fixed z-50 flex w-full flex-col items-center mix-blend-difference"
     >
       <nav className="z-50 mt-5 flex w-full max-w-8xl items-center justify-between px-4 text-xs font-medium sm:px-32">
         <Link href={"/"} className="z-10 flex items-center gap-1.5">
           <div className="flex items-center justify-center gap-1">
-            {/* <svg
-              width="23"
-              height="23"¯
-              viewBox="0 0 40 40"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                fill-rule="evenodd"
-                clip-rule="evenodd"
-                d="M0 0H24V8V16H16V24H24V16H32H40V40H0V0ZM40 8V0H32V8H40Z"
-                fill="white"
-              />
-            </svg> */}
-
             <p className="relative font-freight text-xl font-semibold leading-[0.95] tracking-[-0.020rem]">
               kindred
               <span className="font-medium italic">house</span>

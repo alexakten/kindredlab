@@ -19,23 +19,22 @@ import { useDraggable } from "react-use-draggable-scroll";
 export default function ServicesSection() {
   const ref =
     useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
-  const { events } = useDraggable(ref, {
-  });
+  const { events } = useDraggable(ref, {});
   return (
     <>
-      <div className="px-16">
+      <div className="px-4 sm:px-16">
         <p className="font-basier text-sm text-black opacity-50">THE MENU</p>
         <h2 className="mb-12 mt-2 overflow-visible bg-gradient-to-t from-black to-black bg-clip-text text-center text-4xl font-semibold leading-[1.2] tracking-tight text-transparent sm:text-4xl">
           Services
         </h2>
       </div>
       <div
-        className="flex w-full items-start gap-4 overflow-x-auto px-16 text-white [-ms-overflow-style:'none'] [scrollbar-width:'none'] hover:cursor-grab [&::-webkit-scrollbar]:hidden"
+        className="flex w-full items-start gap-4 overflow-x-auto px-4 text-white [-ms-overflow-style:'none'] [scrollbar-width:'none'] hover:cursor-grab sm:px-16 [&::-webkit-scrollbar]:hidden"
         {...events}
         ref={ref}
       >
         {/* Websites */}
-        <div className="relative  flex min-w-[36rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md md:p-8">
+        <div className="relative  flex min-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md sm:min-w-[36rem] md:p-8">
           <Image
             src="/images/websites.png"
             alt="Websites"
@@ -44,14 +43,14 @@ export default function ServicesSection() {
             className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-105 object-cover blur-md"
           />
           <p className="font-basier text-xs opacity-50">WEB DEVELOPMENT</p>
-          <h3 className="mt-12 text-6xl font-semibold">
+          <h3 className="mt-12 text-3xl font-semibold sm:text-6xl">
             Stunning websites built in Webflow
           </h3>
           <p className="mt-4 max-w-sm opacity-50">
             Refresh your website and branding. We build stunning websites in
             Webflow that showcase your products.
           </p>
-          <div className="mt-12 h-64 w-full ">
+          <div className="mt-12 h-40 w-full sm:h-64 ">
             <div
               className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-3xl border-2 border-white border-opacity-100 bg-white bg-opacity-10 p-2 text-center"
               style={{ mixBlendMode: "plus-lighter" }}
@@ -106,18 +105,21 @@ export default function ServicesSection() {
             </div>
           </div>
           <div className="mt-16 flex w-full items-center justify-between">
-            <p className="font-basier text-xs opacity-50">BOOK A FREE DEMO </p>
+            <p className="hidden font-basier text-xs opacity-50 sm:block">
+              BOOK A FREE DEMO{" "}
+            </p>
             <Link
               href={"/"}
-              className="rounded-full  bg-white px-16 py-3 font-basier text-xs text-black hover:bg-zinc-100"
+              className="w-full  rounded-full bg-white px-16 py-3 text-center font-basier text-xs text-black hover:bg-zinc-100 sm:w-auto sm:text-left"
               style={{ mixBlendMode: "plus-lighter" }}
             >
               LEARN MORE
             </Link>
           </div>
         </div>
+
         {/* Design */}
-        <div className="relative flex min-w-[36rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md md:p-8">
+        <div className="relative flex min-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md sm:min-w-[36rem] md:p-8">
           <Image
             src="/images/design.png"
             alt="Websites"
@@ -126,14 +128,14 @@ export default function ServicesSection() {
             className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-105 object-cover blur-md"
           />
           <p className="font-basier text-xs opacity-50">DESIGN SUBSCRIPTION</p>
-          <h3 className="mt-12 text-6xl font-semibold">
+          <h3 className="mt-12 text-3xl font-semibold sm:text-6xl">
             Flexible design subscription
           </h3>
           <p className="mt-4 max-w-sm opacity-50">
             Refresh your website and branding. We build stunning websites in
             Webflow that showcase your products.
           </p>
-          <div className="mt-12 h-64 w-full ">
+          <div className="mt-12 h-40 w-full sm:h-64 ">
             <div className="relative mt-8 grid grid-cols-1 gap-4 pb-28 pt-8 text-xs md:grid-cols-2">
               <div className="absolute bottom-24 right-24 flex gap-1">
                 <NavigationArrow
@@ -167,10 +169,12 @@ export default function ServicesSection() {
             </div>
           </div>
           <div className="mt-16 flex w-full items-center justify-between">
-            <p className="font-basier text-xs opacity-50">BOOK A FREE DEMO </p>
+            <p className="hidden font-basier text-xs opacity-50 sm:block">
+              BOOK A FREE DEMO{" "}
+            </p>
             <Link
               href={"/"}
-              className="rounded-full  bg-white px-16 py-3 font-basier text-xs text-black hover:bg-zinc-100"
+              className="w-full  rounded-full bg-white px-16 py-3 text-center font-basier text-xs text-black hover:bg-zinc-100 sm:w-auto sm:text-left"
               style={{ mixBlendMode: "plus-lighter" }}
             >
               LEARN MORE
@@ -179,7 +183,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Content */}
-        <div className="relative flex min-w-[36rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md md:p-8">
+        <div className="relative flex min-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md sm:min-w-[36rem] md:p-8">
           <Image
             src="/images/content.png"
             alt="Websites"
@@ -188,14 +192,14 @@ export default function ServicesSection() {
             className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-105 object-cover blur-md"
           />
           <p className="font-basier text-xs opacity-50">DESIGN SUBSCRIPTION</p>
-          <h3 className="mt-12 text-6xl font-semibold">
+          <h3 className="mt-12 text-3xl font-semibold sm:text-6xl">
             Content to elevate your marketing
           </h3>
           <p className="mt-4 max-w-sm opacity-50">
             Refresh your website and branding. We build stunning websites in
             Webflow that showcase your products.
           </p>
-          <div className="mt-12 h-64 w-full ">
+          <div className="mt-12 h-40 w-full sm:h-64">
             <div className="relative mt-8 grid grid-cols-1 gap-4 pb-28 pt-8 text-xs md:grid-cols-2">
               <div className="absolute bottom-24 right-24 flex gap-1">
                 <NavigationArrow
@@ -229,10 +233,12 @@ export default function ServicesSection() {
             </div>
           </div>
           <div className="mt-16 flex w-full items-center justify-between">
-            <p className="font-basier text-xs opacity-50">BOOK A FREE DEMO </p>
+            <p className="hidden font-basier text-xs opacity-50 sm:block">
+              BOOK A FREE DEMO{" "}
+            </p>
             <Link
               href={"/"}
-              className="rounded-full  bg-white px-16 py-3 font-basier text-xs text-black hover:bg-zinc-100"
+              className="w-full  rounded-full bg-white px-16 py-3 text-center font-basier text-xs text-black hover:bg-zinc-100 sm:w-auto sm:text-left"
               style={{ mixBlendMode: "plus-lighter" }}
             >
               LEARN MORE
