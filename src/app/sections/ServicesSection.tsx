@@ -51,7 +51,7 @@ const services = [
 export default function ServicesSection() {
   return (
     <>
-      <div className="flex w-full max-w-7xl gap-4 overflow-x-auto text-left text-white">
+      <div className="flex items-start gap-4 overflow-x-auto text-white">
         {/* Websites */}
         <div className="relative flex w-[36rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md md:p-8">
           <Image
@@ -196,86 +196,64 @@ export default function ServicesSection() {
         </div>
 
         {/* Content */}
-        <div className="flex flex-1 flex-col rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
-          <div className="relative flex h-80 w-full items-center justify-center ">
-            <div className="relative grid aspect-[16/9] h-auto w-full -rotate-0 grid-cols-2 grid-rows-2 flex-col items-center justify-center gap-4 rounded-3xl border border-white border-opacity-40 bg-white bg-opacity-100 p-8 text-center">
-              <div className="flex h-full w-full flex-col gap-1">
-                <div className="flex items-center gap-1">
-                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                  <div className="h-0.5 w-8  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                </div>
-                <div className="aspect-[3/2] h-auto w-full rounded-lg bg-gradient-to-r from-blue-100 to-blue-500"></div>
-                <div className="mt-1 flex gap-1">
-                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-red-300 to-red-400"></div>
-                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-zinc-100 to-zinc-200"></div>
-                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-zinc-100 to-zinc-200"></div>
-                  {/* <HeartStraight weight="fill" size={8} color="#f87171" />
-                  <ChatCircle weight="regular" size={8} color="#a1a1aa" />
-                  <PaperPlaneTilt weight="regular" size={8} color="#a1a1aa" /> */}
-                </div>
-                <div className="mt-1 flex flex-col gap-1">
-                  <div className="h-0.5 w-full  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                  <div className="h-0.5 w-4/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
+        <div className="relative flex w-[36rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md md:p-8">
+          <Image
+            src="/images/design.png"
+            alt="Websites"
+            width={100}
+            height={100}
+            className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-105 object-cover blur-md"
+          />
+          <p className="font-basier text-xs opacity-50">DESIGN SUBSCRIPTION</p>
+          <h3 className="mt-12 text-6xl font-semibold">
+            Flexible design subscription
+          </h3>
+          <p className="mt-4 max-w-sm opacity-50">
+            Refresh your website and branding. We build stunning websites in
+            Webflow that showcase your products.
+          </p>
+          <div className="mt-12 h-64 w-full ">
+            <div className="relative mt-8 grid grid-cols-1 gap-4 pb-28 pt-8 text-xs md:grid-cols-2">
+              <div className="absolute bottom-24 right-24 flex gap-1">
+                <NavigationArrow
+                  // className="duocolor-purple"
+                  weight="fill"
+                  fill="#fff"
+                />
+                <div className="z-50 mt-3 rounded-sm bg-white px-1 text-xs font-semibold leading-[1.4] text-black">
+                  You
                 </div>
               </div>
-              <div className="row-span-2 h-full w-full rounded-lg bg-gradient-to-r from-zinc-50 to-zinc-200 p-4 ">
-                {/* Comment */}
-                <div className="flex items-start gap-1">
-                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                  <div className="flex w-full flex-col gap-1">
-                    <div className="h-0.5 w-8  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                    <div className="h-0.5 w-2/3  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                    <div className="h-0.5 w-2/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                  </div>
-                </div>
 
-                {/* Comment */}
-                <div className="mt-4 flex items-start gap-1">
-                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                  <div className="flex w-full flex-col gap-1">
-                    <div className="h-0.5 w-8  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                    <div className="h-0.5 w-4/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                    <div className="h-0.5 w-3/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                  </div>
+              <div className="flex flex-col gap-2">
+                <p className="font-medium">To do</p>
+                <div className="max-w-[240px] rotate-0 rounded-md bg-white px-4 py-2 shadow-sm">
+                  Ads for campaign
                 </div>
-
-                {/* Comment */}
-                <div className="mt-4 flex items-start gap-1">
-                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                  <div className="flex w-full flex-col gap-1">
-                    <div className="h-0.5 w-8  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                    <div className="h-0.5 w-2/3  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                    <div className="h-0.5 w-2/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                  </div>
+                <div className="max-w-[240px] rotate-0 rounded-md bg-white px-4 py-2 shadow-sm">
+                  New UI for search
                 </div>
-
-                {/* Comment */}
-                <div className="mt-4 flex items-start gap-1">
-                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                  <div className="flex w-full flex-col gap-1">
-                    <div className="h-0.5 w-8  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                    <div className="h-0.5 w-4/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                    <div className="h-0.5 w-3/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                  </div>
+                <div className="absolute bottom-8 left-14 w-full max-w-[240px] rotate-6 rounded-md bg-white px-4 py-2 shadow-sm md:left-32">
+                  Design new website
                 </div>
-
-                {/* Comment */}
-                <div className="mt-4 flex items-start gap-1">
-                  <div className="h-2 w-2 rounded-full bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                  <div className="flex w-full flex-col gap-1">
-                    <div className="h-0.5 w-8  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                    <div className="h-0.5 w-2/3  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                    <div className="h-0.5 w-2/5  rounded-lg bg-gradient-to-r from-zinc-100 to-zinc-400"></div>
-                  </div>
+              </div>
+              <div className="hidden flex-col gap-2 md:flex">
+                <p className="font-medium">Done</p>
+                <div className="max-w-[240px] rotate-0 rounded-md bg-white px-4 py-2 shadow-sm">
+                  Create new logo
                 </div>
               </div>
             </div>
           </div>
-          <h3 className="mt-12 text-2xl font-medium">Content</h3>
-          <p className="mt-1 max-w-sm opacity-50">
-            Refresh your website and branding. We build stunning websites in
-            Webflow that showcase your products.
-          </p>
+          <div className="mt-16 flex w-full items-center justify-between">
+            <p className="font-basier text-xs opacity-50">BOOK A FREE DEMO </p>
+            <Link
+              href={"/"}
+              className="rounded-full bg-white px-16 py-3 font-basier text-xs text-black hover:bg-zinc-100"
+            >
+              LEARN MORE
+            </Link>
+          </div>
         </div>
       </div>
     </>

@@ -133,10 +133,11 @@ export default function Home({ searchParams }: SearchParamProps) {
                 <Link
                   href="/?BookDemo=true"
                   scroll={false}
-                  className="flex items-center gap-2 rounded-full bg-zinc-50 px-4 py-2.5 text-black hover:bg-zinc-100"
+                  className="flex items-center gap-2 rounded-full bg-white px-4 py-2.5 text-black hover:bg-zinc-100"
                   replace
+                  style={{ mixBlendMode: "plus-lighter" }}
                 >
-                  <p className="text-base font-medium">Book demo</p>
+                  Book demo
                   <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
                     ⌘ K
                   </span>
@@ -170,7 +171,7 @@ export default function Home({ searchParams }: SearchParamProps) {
         </section>
 
         {/* Services */}
-        <section className="flex h-full w-full flex-col items-center overflow-x-auto bg-white px-4 py-32 backdrop-blur-sm">
+        <section className="flex h-full w-full flex-col items-start overflow-x-auto bg-white px-16 py-32 backdrop-blur-sm">
           {/* <h2 className="mb-16 overflow-visible bg-gradient-to-t from-black to-black bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
             This is what we do
             <span className="overflow-visible bg-clip-text text-transparent"></span>
