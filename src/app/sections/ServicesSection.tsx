@@ -159,7 +159,7 @@ export default function ServicesSection() {
                   weight="fill"
                   fill="#fff"
                 />
-                <div className="z-50 mt-3 rounded-sm bg-white px-1 text-xs font-semibold leading-[1.4] text-black">
+                <div className="z-50 mt-3 rounded-sm bg-white px-1 text-xs font-medium leading-[1.4] text-black">
                   You
                 </div>
               </div>
@@ -188,7 +188,8 @@ export default function ServicesSection() {
             <p className="font-basier text-xs opacity-50">BOOK A FREE DEMO </p>
             <Link
               href={"/"}
-              className="rounded-full bg-white px-16 py-3 font-basier text-xs text-black hover:bg-zinc-100"
+              className="rounded-full  bg-white px-16 py-3 font-basier text-xs text-black hover:bg-zinc-100"
+              style={{ mixBlendMode: "plus-lighter" }}
             >
               LEARN MORE
             </Link>
@@ -249,7 +250,8 @@ export default function ServicesSection() {
             <p className="font-basier text-xs opacity-50">BOOK A FREE DEMO </p>
             <Link
               href={"/"}
-              className="rounded-full bg-white px-16 py-3 font-basier text-xs text-black hover:bg-zinc-100"
+              className="rounded-full  bg-white px-16 py-3 font-basier text-xs text-black hover:bg-zinc-100"
+              style={{ mixBlendMode: "plus-lighter" }}
             >
               LEARN MORE
             </Link>
