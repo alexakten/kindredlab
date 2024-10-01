@@ -69,7 +69,7 @@ export default function ServicesSection() {
             Refresh your website and branding. We build stunning websites in
             Webflow that showcase your products.
           </p>
-          <div className="mt-12 w-full ">
+          <div className="mt-12 h-64 w-full ">
             <div
               className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-3xl border-2 border-white border-opacity-100 bg-white bg-opacity-10 p-2 text-center"
               style={{ mixBlendMode: "plus-lighter" }}
@@ -124,9 +124,7 @@ export default function ServicesSection() {
             </div>
           </div>
           <div className="mt-16 flex w-full items-center justify-between">
-            <p className="font-basier text-xs opacity-50">
-              BOOK A FREE DEMO{" "}
-            </p>
+            <p className="font-basier text-xs opacity-50">BOOK A FREE DEMO </p>
             <Link
               href={"/"}
               className="rounded-full bg-white px-16 py-3 font-basier text-xs text-black hover:bg-zinc-100"
@@ -136,8 +134,23 @@ export default function ServicesSection() {
           </div>
         </div>
         {/* Design */}
-        <div className="flex flex-1 flex-col rounded-2xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
-          <div className="h-80 w-full ">
+        <div className="relative flex w-[36rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md md:p-8">
+          <Image
+            src="/images/design.png"
+            alt="Websites"
+            width={100}
+            height={100}
+            className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-105 object-cover blur-md"
+          />
+          <p className="font-basier text-xs opacity-50">WEB DEVELOPMENT</p>
+          <h3 className="mt-12 text-6xl font-semibold">
+            Stunning websites built in Webflow
+          </h3>
+          <p className="mt-4 max-w-sm opacity-50">
+            Refresh your website and branding. We build stunning websites in
+            Webflow that showcase your products.
+          </p>
+          <div className="mt-12 h-64 w-full ">
             <div className="relative mt-8 grid grid-cols-1 gap-4 pb-28 pt-8 text-xs md:grid-cols-2">
               <div className="absolute bottom-24 right-24 flex gap-1">
                 <NavigationArrow
@@ -170,12 +183,15 @@ export default function ServicesSection() {
               </div>
             </div>
           </div>
-          {/* <p className="text-xs">Step 1</p> */}
-          <h3 className="mt-12 text-2xl font-medium">Design</h3>
-          <p className="mt-2 max-w-sm opacity-50">
-            Your extended design team. Make any design request and get it
-            delivered within days to your developers.
-          </p>
+          <div className="mt-16 flex w-full items-center justify-between">
+            <p className="font-basier text-xs opacity-50">BOOK A FREE DEMO </p>
+            <Link
+              href={"/"}
+              className="rounded-full bg-white px-16 py-3 font-basier text-xs text-black hover:bg-zinc-100"
+            >
+              LEARN MORE
+            </Link>
+          </div>
         </div>
 
         {/* Content */}
