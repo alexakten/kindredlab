@@ -40,7 +40,7 @@ export default function Home({ searchParams }: SearchParamProps) {
               alt="Hero image"
               width={1000}
               height={1000}
-              className="pointer-events-none absolute left-0 top-0 h-full w-full scale-105 object-cover blur-md"
+              className="pointer-events-none absolute left-0 top-0 h-full w-full object-left blur-md sm:w-full sm:scale-105 sm:object-cover"
             />
             <Motion
               initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
@@ -93,7 +93,7 @@ export default function Home({ searchParams }: SearchParamProps) {
                     design & marketing
                   </span>
                 </h1>
-                <span className="absolute -bottom-1 -right-1 hidden sm:flex translate-x-full translate-y-full items-start gap-1">
+                <span className="absolute -bottom-1 -right-1 hidden translate-x-full translate-y-full items-start gap-1 sm:flex">
                   <NavigationArrow weight="fill" fill="#fff" size={16} />
                   <div className="mt-3 h-4 rounded-sm bg-white px-1 text-xs font-medium leading-[1.4] tracking-tight text-black">
                     Alex
@@ -123,16 +123,17 @@ export default function Home({ searchParams }: SearchParamProps) {
               initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
               transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
-              className="mt-8 sm:mt-16 flex flex-col sm:flex-row w-full items-start sm:items-center justify-between px-4 sm:px-16"
+              className="mt-8 flex w-full flex-col items-start justify-between px-4 sm:mt-16 sm:flex-row sm:items-center sm:px-16"
             >
               <h2 className="max-w-md text-xl opacity-100">
-                We&apos;re a fully remote design & content agency <br className="hidden sm:block" />
+                We&apos;re a fully remote design & content agency{" "}
+                <br className="hidden sm:block" />
                 <span className="opacity-50">
                   {" "}
                   for next-gen businesses that iterate fast.
                 </span>
               </h2>
-              <div className="flex flex-row-reverse sm:flex-row mt-8 sm:mt-0 items-center justify-center gap-8">
+              <div className="mt-8 flex flex-row-reverse items-center justify-center gap-8 sm:mt-0 sm:flex-row">
                 <Link
                   href="mailto:hello@kindredlab.io"
                   className="font-basier text-sm hover:underline"
