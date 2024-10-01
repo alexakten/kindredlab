@@ -68,13 +68,13 @@ export default function Home({ searchParams }: SearchParamProps) {
                   <line x1="7" y1="17" x2="17" y2="7" />
                   <polyline points="7 7 17 7 17 17" />
                 </svg> */}
-                <p className="pl-0 font-basier opacity-100 ">
+                <Link href={"/"} className="pl-0 hover:underline font-basier opacity-100 ">
                   ANNOUNCEMENT /
                   <span className="opacity-75">
                     {" "}
                     CLIENT QURA RAISES €2.1M LED BY CHERRY VENTURES{" "}
                   </span>
-                </p>
+                </Link>
               </div>
             </Motion>
             <Motion
@@ -132,10 +132,10 @@ export default function Home({ searchParams }: SearchParamProps) {
               <div className="mt-8 flex items-center justify-center gap-4">
                 <Link
                   href={"/"}
-                  className="flex items-center justify-center gap-2 rounded-full bg-white px-8 py-3 font-basier text-sm text-black hover:bg-zinc-100"
+                  className="flex items-center justify-center gap-3 rounded-full bg-white px-8 py-3 font-basier text-sm text-black hover:bg-zinc-100"
                   style={{ mixBlendMode: "plus-lighter" }}
                 >
-                  LEARN MORE
+                  BOOK DEMO
                   <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
                     ⌘ K
                   </span>
@@ -169,21 +169,8 @@ export default function Home({ searchParams }: SearchParamProps) {
         </section>
 
         {/* Services */}
-        <section className="flex h-full w-full flex-col items-start overflow-x-auto bg-white px-16 py-32 backdrop-blur-sm">
-          <p className="font-basier text-sm text-black opacity-50">THE MENU</p>
-          <h2 className="mb-12 mt-2 overflow-visible bg-gradient-to-t from-black to-black bg-clip-text text-center text-4xl font-semibold leading-[1.2] tracking-tight text-transparent sm:text-4xl">
-            Services
-            <span className="overflow-visible bg-clip-text text-transparent"></span>
-          </h2>
+        <section className="flex h-full w-full flex-col items-start bg-white px-0 py-32 backdrop-blur-sm">
           <ServicesSection />
-        </section>
-
-        <section className="flex h-full w-full flex-col items-center px-4 pb-16 pt-32 text-center backdrop-blur-sm">
-          <h2 className="mb-16 overflow-visible bg-gradient-to-t from-black to-black bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
-            Here is how it works
-            <span className="overflow-visible bg-clip-text text-transparent"></span>
-          </h2>
-          <DetailsSection />
         </section>
 
         {/* Testimonials */}

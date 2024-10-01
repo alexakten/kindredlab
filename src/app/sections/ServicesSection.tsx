@@ -51,9 +51,15 @@ const services = [
 export default function ServicesSection() {
   return (
     <>
-      <div className="flex items-start gap-4 overflow-x-auto text-white">
+      <div className="px-16">
+        <p className="font-basier text-sm text-black opacity-50">THE MENU</p>
+        <h2 className="mb-12 mt-2 overflow-visible bg-gradient-to-t from-black to-black bg-clip-text text-center text-4xl font-semibold leading-[1.2] tracking-tight text-transparent sm:text-4xl">
+          Services
+        </h2>
+      </div>
+      <div className="flex px-16 w-full items-start gap-4 overflow-x-auto text-white">
         {/* Websites */}
-        <div className="relative flex w-[36rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md md:p-8">
+        <div className="relative flex min-w-[36rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md md:p-8">
           <Image
             src="/images/websites.png"
             alt="Websites"
@@ -135,7 +141,7 @@ export default function ServicesSection() {
           </div>
         </div>
         {/* Design */}
-        <div className="relative flex w-[36rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md md:p-8">
+        <div className="relative flex min-w-[36rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md md:p-8">
           <Image
             src="/images/design.png"
             alt="Websites"
@@ -197,7 +203,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Content */}
-        <div className="relative flex w-[36rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md md:p-8">
+        <div className="relative flex min-w-[36rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md md:p-8">
           <Image
             src="/images/content.png"
             alt="Websites"
