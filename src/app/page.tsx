@@ -46,7 +46,7 @@ export default function Home({ searchParams }: SearchParamProps) {
               initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
               transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
-              className="flex w-full flex-col items-start px-16"
+              className="flex w-full flex-col items-start px-4 sm:px-16"
             >
               <div className="flex items-center rounded-full text-sm">
                 {/* <span className="relative flex h-2 w-2">
@@ -84,16 +84,16 @@ export default function Home({ searchParams }: SearchParamProps) {
               initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
               transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
-              className="flex w-full flex-col items-start px-16"
+              className="flex w-full flex-col items-start px-4 sm:px-16"
             >
-              <div className="relative mt-4 border  border-white bg-gradient-to-tl from-white to-white bg-clip-text px-2 pb-3 text-[clamp(40px,6vw,72px)] font-medium leading-[1.1] tracking-tight text-transparent sm:leading-[1]">
+              <div className="relative mt-4 border border-white bg-gradient-to-tl from-white to-white bg-clip-text px-2 pb-3 text-[clamp(40px,6vw,72px)] font-medium leading-[1.1] tracking-tight text-transparent sm:leading-[1]">
                 <h1>
                   Supercharge your <br />
                   <span className="font-freight text-[clamp(44px,6.666vw,80px)] italic">
                     design & marketing
                   </span>
                 </h1>
-                <span className="absolute -bottom-1 -right-1 flex translate-x-full translate-y-full items-start gap-1">
+                <span className="absolute -bottom-1 -right-1 hidden sm:flex translate-x-full translate-y-full items-start gap-1">
                   <NavigationArrow weight="fill" fill="#fff" size={16} />
                   <div className="mt-3 h-4 rounded-sm bg-white px-1 text-xs font-medium leading-[1.4] tracking-tight text-black">
                     Alex
@@ -123,7 +123,7 @@ export default function Home({ searchParams }: SearchParamProps) {
               initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
               transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
-              className="mt-16 flex w-full items-center justify-between px-16"
+              className="mt-8 sm:mt-16 flex flex-col sm:flex-row w-full items-start sm:items-center justify-between px-4 sm:px-16"
             >
               <h2 className="max-w-md text-xl opacity-100">
                 We&apos;re a fully remote design & content agency <br className="hidden sm:block" />
@@ -132,7 +132,7 @@ export default function Home({ searchParams }: SearchParamProps) {
                   for next-gen businesses that iterate fast.
                 </span>
               </h2>
-              <div className="flex items-center justify-center gap-8">
+              <div className="flex mt-8 sm:mt-0 items-center justify-center gap-8">
                 <Link
                   href="mailto:hello@kindredlab.io"
                   className="font-basier text-sm hover:underline"

@@ -9,7 +9,7 @@ export default function HeroScroll() {
   const { events } = useDraggable(ref, {});
   return (
     <div
-      className="mt-16 flex w-full items-start gap-4 overflow-x-auto px-16 text-white [-ms-overflow-style:'none'] [scrollbar-width:'none'] hover:cursor-grab [&::-webkit-scrollbar]:hidden"
+      className="mt-8 sm:mt-16 flex w-full items-start gap-4 overflow-x-auto px-4 sm:px-16 text-white [-ms-overflow-style:'none'] [scrollbar-width:'none'] hover:cursor-grab [&::-webkit-scrollbar]:hidden"
       {...events}
       ref={ref}
     >

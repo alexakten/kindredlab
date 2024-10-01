@@ -9,7 +9,7 @@ export default function Navbar() {
       transition={{ ease: "easeInOut", delay: 0, duration: 0.5 }}
       className="fixed z-50 flex w-full flex-col items-center"
     >
-      <nav className="z-50 mt-5 flex w-full max-w-8xl items-center justify-between rounded-2xl px-32 text-xs font-medium mix-blend-difference backdrop-blur-md">
+      <nav className="z-50 mt-5 flex w-full max-w-8xl items-center justify-between rounded-2xl px-4 sm:px-32 text-xs font-medium mix-blend-difference backdrop-blur-md">
         <Link href={"/"} className="z-10 flex items-center gap-1.5">
           <div className="flex items-center justify-center gap-1">
             {/* <svg
@@ -63,7 +63,7 @@ export default function Navbar() {
         <div className="flex gap-4">
           <Link
             href={"/"}
-            className="flex items-center justify-center gap-3 rounded-full bg-white px-4 py-1.5 font-basier text-xs text-black hover:bg-zinc-100"
+            className="flex items-center justify-center gap-3 rounded-full bg-white px-4 py-1.5 font-basier text-xs text-black hover:bg-zinc-200"
             style={{ mixBlendMode: "plus-lighter" }}
           >
             BOOK DEMO
