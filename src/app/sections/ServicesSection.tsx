@@ -199,7 +199,7 @@ export default function ServicesSection() {
         {/* Content */}
         <div className="relative flex w-[36rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md md:p-8">
           <Image
-            src="/images/design.png"
+            src="/images/content.png"
             alt="Websites"
             width={100}
             height={100}
