@@ -9,7 +9,7 @@ export default function Navbar() {
       transition={{ ease: "easeInOut", delay: 0, duration: 0.5 }}
       className="fixed z-50 flex w-full flex-col items-center"
     >
-      <nav className="z-50 mt-5 flex w-full px-32 items-center justify-between rounded-2xl max-w-8xl text-xs font-medium mix-blend-difference backdrop-blur-md">
+      <nav className="z-50 mt-5 flex w-full max-w-8xl items-center justify-between rounded-2xl px-32 text-xs font-medium mix-blend-difference backdrop-blur-md">
         <Link href={"/"} className="z-10 flex items-center gap-1.5">
           <div className="flex items-center justify-center gap-1">
             {/* <svg
@@ -62,22 +62,15 @@ export default function Navbar() {
         </div>
         <div className="flex gap-4">
           <Link
-            href="/?BookDemo=true"
-            scroll={false}
-            className="flex items-center gap-2 rounded-full bg-white px-3 py-2 text-black hover:bg-zinc-100"
-            replace
+            href={"/"}
+            className="flex items-center justify-center gap-3 rounded-full bg-white px-4 py-1.5 font-basier text-xs text-black hover:bg-zinc-100"
+            style={{ mixBlendMode: "plus-lighter" }}
           >
-            <p className="text-xs font-medium">Book demo</p>
-            <span className="flex h-5 w-7 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[10px]">
+            BOOK DEMO
+            <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
               ⌘ K
             </span>
           </Link>
-          {/* <Link
-            href="mailto:hello@kindredlab.io"
-            className="flex items-center justify-center rounded-lg bg-zinc-50 px-3 py-2 text-zinc-950 hover:bg-zinc-200"
-          >
-            <p className="text-xs font-medium">Say hello</p>
-          </Link> */}
         </div>
       </nav>
     </Motion>
