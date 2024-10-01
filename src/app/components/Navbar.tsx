@@ -115,7 +115,8 @@ export default function Navbar() {
                 <Link
                   href={"/?BookDemo=true"}
                   className="flex items-center justify-center gap-3 rounded-full bg-white px-4 py-1.5 font-basier text-xs text-black hover:bg-zinc-200"
-                  style={{ mixBlendMode: "plus-lighter" }}
+                  scroll={false}
+                  replace
                 >
                   BOOK DEMO
                   <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
