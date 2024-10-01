@@ -33,10 +33,10 @@ export default function Home({ searchParams }: SearchParamProps) {
       >
         <Navbar />
         {/* Hero */}
-        <section className="mt-20 flex h-full w-full flex-col items-center bg-black px-4 backdrop-blur-sm sm:px-16">
+        <section className="mt-[4.5rem] flex h-full w-full flex-col items-center bg-black px-4 backdrop-blur-sm sm:px-16">
           <div className="relative h-full w-full overflow-hidden rounded-md py-12 sm:py-20">
             <Image
-              src="/images/hero.png"
+              src="/images/full-hero-3.png"
               alt="Hero image"
               width={1000}
               height={1000}

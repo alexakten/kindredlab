@@ -34,11 +34,11 @@ export default function Navbar() {
     <Motion
       initial={{ opacity: 0, y: -20 }}
       animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -80 }}
-      transition={{ ease: "easeInOut", duration: 0.5 }}
-      className="fixed bg-black z-50 flex w-full flex-col items-center"
+      transition={{ ease: "easeInOut", duration: 0.3 }}
+      className="fixed z-50 flex w-full flex-col items-center bg-black"
       id="navbar"
     >
-      <nav className="z-50 py-5 flex w-full max-w-8xl items-center justify-between px-4 text-xs font-medium sm:px-32">
+      <nav className="z-50 flex w-full max-w-8xl items-center justify-between px-4 py-4 text-xs font-medium sm:px-32">
         <Link href={"/"} className="z-10 flex items-center gap-1.5">
           <div className="flex items-center justify-center gap-1">
             <p className="relative font-freight text-xl font-semibold leading-[0.95] tracking-[-0.020rem]">
@@ -48,22 +48,13 @@ export default function Navbar() {
           </div>
         </Link>
         <div className="hidden gap-8 sm:flex">
-          <Link
-            className="opacity-75 hover:underline hover:opacity-100"
-            href={"#"}
-          >
+          <Link className="hover:underline" href={"#"}>
             Services
           </Link>
-          <Link
-            className="opacity-75 hover:underline hover:opacity-100"
-            href={"#"}
-          >
+          <Link className="hover:underline" href={"#"}>
             Projects
           </Link>
-          <Link
-            className="opacity-75 hover:underline hover:opacity-100"
-            href={"#"}
-          >
+          <Link className="hover:underline" href={"#"}>
             Pricing
           </Link>
         </div>
