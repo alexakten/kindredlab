@@ -86,10 +86,10 @@ export default function Home({ searchParams }: SearchParamProps) {
               transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
               className="flex w-full flex-col items-start px-16"
             >
-              <div className="relative mt-4 border border-white bg-gradient-to-tl from-white to-white bg-clip-text px-2 pb-3 text-[clamp(40px,6vw,72px)] font-[450] leading-[1.1] tracking-tight text-transparent sm:leading-[1]">
+              <div className="relative mt-4 border  border-white bg-gradient-to-tl from-white to-white bg-clip-text px-2 pb-3 text-[clamp(40px,6vw,72px)] font-medium leading-[1.1] tracking-tight text-transparent sm:leading-[1]">
                 <h1>
                   Supercharge your <br />
-                  <span className="font-freight text-[clamp(44px,6.666vw,80px)] font-medium italic">
+                  <span className="font-freight text-[clamp(44px,6.666vw,80px)] italic">
                     design & marketing
                   </span>
                 </h1>
