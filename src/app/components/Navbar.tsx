@@ -66,7 +66,7 @@ export default function Navbar() {
               backdropFilter: showModal ? "blur(24px)" : "blur(24px)",
               backgroundColor: showModal
                 ? "rgba(0, 0, 0, 0)" // Fully transparent on hover
-                : "rgba(0, 0, 0, 0.9)", // Fully opaque black when visible after scroll
+                : "rgba(0, 0, 0, 0.85)", // Fully opaque black when visible after scroll
             }}
             exit={{ opacity: 0, y: -20 }} // Apply exit animation
             transition={{ ease: "easeInOut", duration: 0.2 }}
