@@ -164,21 +164,21 @@ export default function ServicesSection() {
                 </div>
               </div>
 
-              <div className="flex flex-col gap-2">
+              <div className="text-b flex flex-col gap-2">
                 <p className="font-medium">To do</p>
-                <div className="max-w-[240px] rotate-0 rounded-md bg-white px-4 py-2 shadow-sm">
+                <div className="max-w-[240px] rotate-0 rounded-md border border-white bg-white bg-opacity-10 px-4 py-2 shadow-sm">
                   Ads for campaign
                 </div>
-                <div className="max-w-[240px] rotate-0 rounded-md bg-white px-4 py-2 shadow-sm">
+                <div className="max-w-[240px] rotate-0 rounded-md border border-white bg-white bg-opacity-10 px-4 py-2 shadow-sm">
                   New UI for search
                 </div>
-                <div className="absolute bottom-8 left-14 w-full max-w-[240px] rotate-6 rounded-md bg-white px-4 py-2 shadow-sm md:left-32">
+                <div className="absolute bottom-8 left-14 w-full max-w-[240px] rotate-6 rounded-md border  border-white bg-white bg-opacity-10 px-4 py-2 shadow-sm md:left-32">
                   Design new website
                 </div>
               </div>
               <div className="hidden flex-col gap-2 md:flex">
                 <p className="font-medium">Done</p>
-                <div className="max-w-[240px] rotate-0 rounded-md bg-white px-4 py-2 shadow-sm">
+                <div className="max-w-[240px] rotate-0 rounded-md border border-white bg-white bg-opacity-10 px-4 py-2 shadow-sm">
                   Create new logo
                 </div>
               </div>
