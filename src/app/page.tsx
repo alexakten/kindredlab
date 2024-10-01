@@ -132,7 +132,7 @@ export default function Home({ searchParams }: SearchParamProps) {
                   for next-gen businesses that iterate fast.
                 </span>
               </h2>
-              <div className="flex items-center justify-center gap-4">
+              <div className="flex items-center justify-center gap-8">
                 <Link
                   href="mailto:hello@kindredlab.io"
                   className="font-basier text-sm hover:underline"
@@ -151,13 +151,6 @@ export default function Home({ searchParams }: SearchParamProps) {
                 </Link>
               </div>
             </Motion>
-
-            {/* <Motion
-              initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
-              animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
-              transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
-              className="flex w-full flex-col items-start"
-            ></Motion> */}
           </div>
         </section>
 
