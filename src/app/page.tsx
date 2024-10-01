@@ -22,7 +22,7 @@ export default function Home({ searchParams }: SearchParamProps) {
   const bookDemo = searchParams?.BookDemo === "true";
 
   return (
-    <main className="flex flex-col items-center  justify-center overflow-x-hidden bg-black px-0 text-left tracking-tight text-zinc-100">
+    <main className="flex select-none flex-col items-center  justify-center overflow-x-hidden bg-black px-0 text-left tracking-tight text-zinc-100">
       {bookDemo && <CommandK isVisible={bookDemo} />}
 
       <Motion
@@ -68,7 +68,10 @@ export default function Home({ searchParams }: SearchParamProps) {
                   <line x1="7" y1="17" x2="17" y2="7" />
                   <polyline points="7 7 17 7 17 17" />
                 </svg> */}
-                <Link href={"/"} className="pl-0 hover:underline font-basier opacity-100 ">
+                <Link
+                  href={"/"}
+                  className="pl-0 font-basier opacity-100 hover:underline "
+                >
                   ANNOUNCEMENT /
                   <span className="opacity-75">
                     {" "}

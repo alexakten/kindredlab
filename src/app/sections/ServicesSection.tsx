@@ -1,3 +1,4 @@
+"use client";
 import {
   HeartStraight,
   ChatCircle,
@@ -12,43 +13,15 @@ import {
 import Link from "next/link";
 
 import Image from "next/image";
-
-const services = [
-  {
-    name: "Web Design",
-    icon: AlignLeft,
-  },
-  {
-    name: "Brand Design",
-    icon: CubeTransparent,
-  },
-  {
-    name: "UX/UI Design",
-    icon: MagicWand,
-  },
-  {
-    name: "Web Development",
-    icon: Code,
-  },
-  {
-    name: "SEO Optimization",
-    icon: Cursor,
-  },
-  // {
-  //   name: "App Design",
-  //   icon: DeviceMobileCamera,
-  // },
-  // {
-  //   name: "Content Creation",
-  //   icon: CubeFocus,
-  // },
-  // {
-  //   name: "Ad Creatives",
-  //   icon: Confetti,
-  // },
-];
+import { useRef } from "react";
+import { useDraggable } from "react-use-draggable-scroll";
 
 export default function ServicesSection() {
+  const ref =
+    useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
+  const { events } = useDraggable(ref, {
+    applyRubberBandEffect: true, // activate rubber band effect
+  });
   return (
     <>
       <div className="px-16">
@@ -57,9 +30,13 @@ export default function ServicesSection() {
           Services
         </h2>
       </div>
-      <div className="flex px-16 w-full items-start gap-4 overflow-x-auto text-white">
+      <div
+        className="flex w-full items-start gap-4 overflow-x-auto px-16 text-white [-ms-overflow-style:'none'] [scrollbar-width:'none'] hover:cursor-grab [&::-webkit-scrollbar]:hidden"
+        {...events}
+        ref={ref}
+      >
         {/* Websites */}
-        <div className="relative flex min-w-[36rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md md:p-8">
+        <div className="relative  flex min-w-[36rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md md:p-8">
           <Image
             src="/images/websites.png"
             alt="Websites"
