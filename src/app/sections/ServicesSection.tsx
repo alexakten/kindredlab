@@ -127,7 +127,8 @@ export default function ServicesSection() {
             <p className="font-basier text-xs opacity-50">BOOK A FREE DEMO </p>
             <Link
               href={"/"}
-              className="rounded-full bg-white px-16 py-3 font-basier text-xs text-black hover:bg-zinc-100"
+              className="rounded-full  bg-white px-16 py-3 font-basier text-xs text-black hover:bg-zinc-100"
+              style={{ mixBlendMode: "plus-lighter" }}
             >
               LEARN MORE
             </Link>
@@ -142,9 +143,9 @@ export default function ServicesSection() {
             height={100}
             className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-105 object-cover blur-md"
           />
-          <p className="font-basier text-xs opacity-50">WEB DEVELOPMENT</p>
+          <p className="font-basier text-xs opacity-50">DESIGN SUBSCRIPTION</p>
           <h3 className="mt-12 text-6xl font-semibold">
-            Stunning websites built in Webflow
+            Flexible design subscription
           </h3>
           <p className="mt-4 max-w-sm opacity-50">
             Refresh your website and branding. We build stunning websites in
@@ -154,11 +155,11 @@ export default function ServicesSection() {
             <div className="relative mt-8 grid grid-cols-1 gap-4 pb-28 pt-8 text-xs md:grid-cols-2">
               <div className="absolute bottom-24 right-24 flex gap-1">
                 <NavigationArrow
-                  className="duocolor-purple"
+                  // className="duocolor-purple"
                   weight="fill"
-                  fill="#d946ef"
+                  fill="#fff"
                 />
-                <div className="z-50 mt-3 rounded-sm bg-fuchsia-500 px-1 text-xs font-semibold leading-[1.4] text-white">
+                <div className="z-50 mt-3 rounded-sm bg-white px-1 text-xs font-semibold leading-[1.4] text-black">
                   You
                 </div>
               </div>
