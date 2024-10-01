@@ -20,7 +20,6 @@ export default function ServicesSection() {
   const ref =
     useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
   const { events } = useDraggable(ref, {
-    applyRubberBandEffect: true, // activate rubber band effect
   });
   return (
     <>
