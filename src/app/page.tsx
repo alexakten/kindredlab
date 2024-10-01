@@ -33,14 +33,14 @@ export default function Home({ searchParams }: SearchParamProps) {
       >
         <Navbar />
         {/* Hero */}
-        <section className="mt-[4.5rem] flex h-full w-full flex-col items-center bg-black px-4 backdrop-blur-sm sm:px-16">
+        <section className="mt-[4.5rem] flex h-full w-full flex-col items-center bg-black px-4 sm:px-16">
           <div className="relative h-full w-full overflow-hidden rounded-md py-12 sm:py-20">
             <Image
               src="/images/full-hero-3.png"
               alt="Hero image"
               width={1000}
               height={1000}
-              className="pointer-events-none absolute left-0 top-0 h-full w-full object-left blur-md sm:w-full sm:scale-105 sm:object-cover"
+              className="pointer-events-none absolute left-0 top-0 h-full w-full object-left blur-3xl sm:w-full sm:scale-105 sm:object-cover"
             />
             <Motion
               initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
