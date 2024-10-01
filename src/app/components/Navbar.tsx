@@ -113,7 +113,7 @@ export default function Navbar() {
 
               <div className="flex gap-4">
                 <Link
-                  href={"/"}
+                  href={"/?BookDemo=true"}
                   className="flex items-center justify-center gap-3 rounded-full bg-white px-4 py-1.5 font-basier text-xs text-black hover:bg-zinc-200"
                   style={{ mixBlendMode: "plus-lighter" }}
                 >

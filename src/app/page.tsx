@@ -122,7 +122,7 @@ export default function Home({ searchParams }: SearchParamProps) {
                   SAY HELLO
                 </Link>
                 <Link
-                  href={"/"}
+                  href={"/?BookDemo=true"}
                   className="flex items-center justify-center gap-3 rounded-full bg-white px-8 py-3 font-basier text-sm text-black hover:bg-zinc-100"
                   style={{ mixBlendMode: "plus-lighter" }}
                 >
