@@ -49,25 +49,6 @@ export default function Home({ searchParams }: SearchParamProps) {
               className="flex w-full flex-col items-start px-4 sm:px-16"
             >
               <div className="flex items-center rounded-full text-sm">
-                {/* <span className="relative flex h-2 w-2">
-                  <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-white opacity-75"></span>
-                  <span className="relative inline-flex h-2 w-2 rounded-full bg-white"></span>
-                </span> */}
-                {/* <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  className="feather feather-arrow-up-right"
-                >
-                  <line x1="7" y1="17" x2="17" y2="7" />
-                  <polyline points="7 7 17 7 17 17" />
-                </svg> */}
                 <Link
                   href={"/"}
                   className="pl-0 font-basier opacity-100 hover:underline "
