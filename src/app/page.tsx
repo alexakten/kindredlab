@@ -36,7 +36,7 @@ export default function Home({ searchParams }: SearchParamProps) {
         <section className="mt-[4.5rem] flex h-full w-full flex-col items-center bg-black px-4 sm:px-16">
           <div className="relative h-full w-full overflow-hidden rounded-md py-12 sm:py-20">
             <Image
-              src="/images/full-hero-3.png"
+              src="/images/hero-small.webp"
               alt="Hero image"
               width={1000}
               height={1000}
