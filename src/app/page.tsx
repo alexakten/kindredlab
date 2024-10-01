@@ -126,7 +126,7 @@ export default function Home({ searchParams }: SearchParamProps) {
               className="mt-16 flex w-full items-center justify-between px-16"
             >
               <h2 className="max-w-md text-xl opacity-100">
-                We&apos;re a fully remote design & content agency
+                We&apos;re a fully remote design & content agency <br className="hidden sm:block" />
                 <span className="opacity-50">
                   {" "}
                   for next-gen businesses that iterate fast.
