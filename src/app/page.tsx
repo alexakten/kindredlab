@@ -172,10 +172,11 @@ export default function Home({ searchParams }: SearchParamProps) {
 
         {/* Services */}
         <section className="flex h-full w-full flex-col items-start overflow-x-auto bg-white px-16 py-32 backdrop-blur-sm">
-          {/* <h2 className="mb-16 overflow-visible bg-gradient-to-t from-black to-black bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
-            This is what we do
+          <p className="font-basier text-black text-sm opacity-50">THE MENU</p>
+          <h2 className="mt-2 mb-12 overflow-visible bg-gradient-to-t from-black to-black bg-clip-text text-center text-4xl font-semibold leading-[1.2] tracking-tight text-transparent sm:text-4xl">
+            Services
             <span className="overflow-visible bg-clip-text text-transparent"></span>
-          </h2> */}
+          </h2>
           <ServicesSection />
         </section>
 
