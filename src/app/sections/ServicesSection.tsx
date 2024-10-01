@@ -207,7 +207,7 @@ export default function ServicesSection() {
           />
           <p className="font-basier text-xs opacity-50">DESIGN SUBSCRIPTION</p>
           <h3 className="mt-12 text-6xl font-semibold">
-            Flexible design subscription
+            Content to elevate your marketing
           </h3>
           <p className="mt-4 max-w-sm opacity-50">
             Refresh your website and branding. We build stunning websites in
