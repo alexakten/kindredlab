@@ -12,7 +12,7 @@ import Project from "./components/Project";
 import DetailsSection from "./sections/DetailsSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import { NavigationArrow } from "@phosphor-icons/react/dist/ssr";
-// import Dimensions from "./components/Dimensions";
+import HeroScroll from "./components/HeroScroll";
 
 type SearchParamProps = {
   searchParams: Record<string, string> | null | undefined;
@@ -33,8 +33,8 @@ export default function Home({ searchParams }: SearchParamProps) {
       >
         <Navbar />
         {/* Hero */}
-        <section className="mt-24 flex h-full w-full flex-col items-center bg-black px-4 backdrop-blur-sm sm:px-16">
-          <div className="relative h-full w-full overflow-hidden rounded-md bg-blue-500 px-16 py-24">
+        <section className="mt-20 flex h-full w-full flex-col items-center bg-black px-4 backdrop-blur-sm sm:px-16">
+          <div className="relative h-full w-full overflow-hidden rounded-md py-24">
             <Image
               src="/images/hero.png"
               alt="Hero image"
@@ -46,7 +46,7 @@ export default function Home({ searchParams }: SearchParamProps) {
               initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
               transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
-              className="flex w-full flex-col items-start"
+              className="flex w-full flex-col items-start px-16"
             >
               <div className="flex items-center rounded-full text-sm">
                 {/* <span className="relative flex h-2 w-2">
@@ -84,7 +84,7 @@ export default function Home({ searchParams }: SearchParamProps) {
               initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
               transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
-              className="flex w-full flex-col items-start"
+              className="flex w-full flex-col items-start px-16"
             >
               <div className="relative mt-4 border border-white bg-gradient-to-tl from-white to-white bg-clip-text px-2 pb-3 text-[clamp(40px,6vw,72px)] font-[450] leading-[1.1] tracking-tight text-transparent sm:leading-[1]">
                 <h1>
@@ -112,27 +112,33 @@ export default function Home({ searchParams }: SearchParamProps) {
               </div>
             </Motion>
             <Motion
-              initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
+              initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
               transition={{ ease: "easeInOut", delay: 0.4, duration: 0.5 }}
               className="flex w-full flex-col items-start"
             >
-              <h2 className="mt-6 max-w-md text-xl opacity-100">
+              <HeroScroll />
+            </Motion>
+            <Motion
+              initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
+              animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
+              transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
+              className="mt-16 flex w-full items-center justify-between px-16"
+            >
+              <h2 className="max-w-md text-xl opacity-100">
                 We&apos;re a fully remote design & content agency
                 <span className="opacity-50">
                   {" "}
                   for next-gen businesses that iterate fast.
                 </span>
               </h2>
-            </Motion>
-
-            <Motion
-              initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
-              animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
-              transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
-              className="flex w-full flex-col items-start"
-            >
-              <div className="mt-8 flex items-center justify-center gap-4">
+              <div className="flex items-center justify-center gap-4">
+                <Link
+                  href="mailto:hello@kindredlab.io"
+                  className="font-basier text-sm hover:underline"
+                >
+                  SAY HELLO
+                </Link>
                 <Link
                   href={"/"}
                   className="flex items-center justify-center gap-3 rounded-full bg-white px-8 py-3 font-basier text-sm text-black hover:bg-zinc-100"
@@ -143,14 +149,15 @@ export default function Home({ searchParams }: SearchParamProps) {
                     ⌘ K
                   </span>
                 </Link>
-                <Link
-                  href="mailto:hello@kindredlab.io"
-                  className="font-basier text-sm hover:underline"
-                >
-                  SAY HELLO
-                </Link>
               </div>
             </Motion>
+
+            {/* <Motion
+              initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
+              animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
+              transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
+              className="flex w-full flex-col items-start"
+            ></Motion> */}
           </div>
         </section>
 
