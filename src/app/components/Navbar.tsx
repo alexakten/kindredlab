@@ -1,15 +1,44 @@
+"use client";
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { Motion } from "./Motion";
 
 export default function Navbar() {
+  const [isVisible, setIsVisible] = useState(true); // Navbar visibility
+  const [lastScrollTop, setLastScrollTop] = useState(0); // Last scroll position
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop =
+        window.pageYOffset || document.documentElement.scrollTop;
+
+      if (scrollTop > lastScrollTop) {
+        // Scrolling down
+        setIsVisible(false);
+      } else {
+        // Scrolling up
+        setIsVisible(true);
+      }
+
+      setLastScrollTop(scrollTop);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollTop]);
+
   return (
     <Motion
       initial={{ opacity: 0, y: -20 }}
-      animate={{ opacity: 1, y: 0 }}
-      transition={{ ease: "easeInOut", delay: 0, duration: 0.5 }}
-      className="fixed z-50 flex w-full flex-col items-center mix-blend-difference"
+      animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : -80 }}
+      transition={{ ease: "easeInOut", duration: 0.5 }}
+      className="fixed bg-black z-50 flex w-full flex-col items-center"
+      id="navbar"
     >
-      <nav className="z-50 mt-5 flex w-full max-w-8xl items-center justify-between px-4 text-xs font-medium sm:px-32">
+      <nav className="z-50 py-5 flex w-full max-w-8xl items-center justify-between px-4 text-xs font-medium sm:px-32">
         <Link href={"/"} className="z-10 flex items-center gap-1.5">
           <div className="flex items-center justify-center gap-1">
             <p className="relative font-freight text-xl font-semibold leading-[0.95] tracking-[-0.020rem]">
@@ -18,8 +47,7 @@ export default function Navbar() {
             </p>
           </div>
         </Link>
-        {/* <div className="absolute left-1/2 top-1/2 flex -translate-x-1/2 -translate-y-1/2 gap-8 "> */}
-        <div className="hidden gap-8 sm:flex ">
+        <div className="hidden gap-8 sm:flex">
           <Link
             className="opacity-75 hover:underline hover:opacity-100"
             href={"#"}
@@ -38,12 +66,6 @@ export default function Navbar() {
           >
             Pricing
           </Link>
-          {/* <Link
-            className="opacity-75 hover:underline hover:opacity-100"
-            href={"#"}
-          >
-            Blog
-          </Link> */}
         </div>
         <div className="flex gap-4">
           <Link
