@@ -130,7 +130,7 @@ export default function Home({ searchParams }: SearchParamProps) {
               className="flex w-full flex-col items-start"
             >
               <div className="mt-8 flex gap-4">
-                <Link
+                {/* <Link
                   href="/?BookDemo=true"
                   scroll={false}
                   className="flex items-center gap-2 rounded-full bg-white px-4 py-2.5 text-black hover:bg-zinc-100"
@@ -138,6 +138,16 @@ export default function Home({ searchParams }: SearchParamProps) {
                   style={{ mixBlendMode: "plus-lighter" }}
                 >
                   Book demo
+                  <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
+                    ⌘ K
+                  </span>
+                </Link> */}
+                <Link
+                  href={"/"}
+                  className="rounded-full items-center justify-center gap-2 flex bg-white px-8 py-3 font-basier text-xs text-black hover:bg-zinc-100"
+                  style={{ mixBlendMode: "plus-lighter" }}
+                >
+                  LEARN MORE
                   <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
                     ⌘ K
                   </span>
@@ -172,8 +182,8 @@ export default function Home({ searchParams }: SearchParamProps) {
 
         {/* Services */}
         <section className="flex h-full w-full flex-col items-start overflow-x-auto bg-white px-16 py-32 backdrop-blur-sm">
-          <p className="font-basier text-black text-sm opacity-50">THE MENU</p>
-          <h2 className="mt-2 mb-12 overflow-visible bg-gradient-to-t from-black to-black bg-clip-text text-center text-4xl font-semibold leading-[1.2] tracking-tight text-transparent sm:text-4xl">
+          <p className="font-basier text-sm text-black opacity-50">THE MENU</p>
+          <h2 className="mb-12 mt-2 overflow-visible bg-gradient-to-t from-black to-black bg-clip-text text-center text-4xl font-semibold leading-[1.2] tracking-tight text-transparent sm:text-4xl">
             Services
             <span className="overflow-visible bg-clip-text text-transparent"></span>
           </h2>
