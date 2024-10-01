@@ -114,7 +114,7 @@ export default function Home({ searchParams }: SearchParamProps) {
               transition={{ ease: "easeInOut", delay: 0.4, duration: 0.5 }}
               className="flex w-full flex-col items-start"
             >
-              <h2 className="mt-6   max-w-md text-xl opacity-100">
+              <h2 className="mt-6 max-w-md text-xl opacity-100">
                 We&apos;re a fully remote design & content agency
                 <span className="opacity-50">
                   {" "}
@@ -129,22 +129,10 @@ export default function Home({ searchParams }: SearchParamProps) {
               transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
               className="flex w-full flex-col items-start"
             >
-              <div className="mt-8 flex gap-4">
-                {/* <Link
-                  href="/?BookDemo=true"
-                  scroll={false}
-                  className="flex items-center gap-2 rounded-full bg-white px-4 py-2.5 text-black hover:bg-zinc-100"
-                  replace
-                  style={{ mixBlendMode: "plus-lighter" }}
-                >
-                  Book demo
-                  <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
-                    ⌘ K
-                  </span>
-                </Link> */}
+              <div className="mt-8 flex items-center justify-center gap-4">
                 <Link
                   href={"/"}
-                  className="rounded-full items-center justify-center gap-2 flex bg-white px-8 py-3 font-basier text-xs text-black hover:bg-zinc-100"
+                  className="flex items-center justify-center gap-2 rounded-full bg-white px-8 py-3 font-basier text-sm text-black hover:bg-zinc-100"
                   style={{ mixBlendMode: "plus-lighter" }}
                 >
                   LEARN MORE
@@ -152,12 +140,12 @@ export default function Home({ searchParams }: SearchParamProps) {
                     ⌘ K
                   </span>
                 </Link>
-                {/* <Link
+                <Link
                   href="mailto:hello@kindredlab.io"
-                  className="rounded-lg bg-zinc-50 px-4 py-2.5 text-base font-medium text-zinc-950 hover:bg-zinc-200"
+                  className="font-basier text-sm hover:underline"
                 >
-                  Say hello
-                </Link> */}
+                  SAY HELLO
+                </Link>
               </div>
             </Motion>
           </div>
