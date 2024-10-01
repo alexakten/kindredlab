@@ -6,18 +6,21 @@ import { Motion } from "./Motion";
 export default function Navbar() {
   const [isVisible, setIsVisible] = useState(true); // Navbar visibility
   const [lastScrollTop, setLastScrollTop] = useState(0); // Last scroll position
+  const scrollThreshold = 10; // Minimum scroll threshold to trigger hiding
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollTop =
         window.pageYOffset || document.documentElement.scrollTop;
 
-      if (scrollTop > lastScrollTop) {
-        // Scrolling down
+      // Ignore bouncing by setting a minimum threshold
+      if (Math.abs(scrollTop - lastScrollTop) < scrollThreshold) return;
+
+      // If scrolling down and not at the top, hide navbar
+      if (scrollTop > lastScrollTop && scrollTop > 0) {
         setIsVisible(false);
-      } else {
-        // Scrolling up
-        setIsVisible(true);
+      } else if (scrollTop < lastScrollTop) {
+        setIsVisible(true); // Scrolling up shows navbar
       }
 
       setLastScrollTop(scrollTop);
