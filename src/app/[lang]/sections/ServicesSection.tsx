@@ -16,10 +16,14 @@ import Image from "next/image";
 import { useRef } from "react";
 import { useDraggable } from "react-use-draggable-scroll";
 
-export default function ServicesSection() {
+interface ServicesSectionProps {
+  dict: Record<string, string>; // All props in dict will be strings
+}
+export default function ServicesSection({ dict }: ServicesSectionProps) {
   const ref =
     useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
   const { events } = useDraggable(ref, {});
+
   return (
     <>
       <div className="px-4 sm:px-16">
@@ -43,7 +47,7 @@ export default function ServicesSection() {
             className="pointer-events-none absolute left-0 top-0 z-0 h-full w-full scale-150 object-cover blur-lg sm:scale-125"
           />
           <p className="font-basier text-xs opacity-50">WEB DEVELOPMENT</p>
-          <h3 className="z-10 mt-6 text-3xl font-semibold sm:mt-12 sm:text-6xl">
+          <h3 className="z-10 mt-6 text-3xl font-semibold tracking-tight sm:mt-12 sm:text-6xl">
             Stunning websites built in Webflow
           </h3>
           <p className="mt-4 max-w-sm opacity-50">
@@ -128,7 +132,7 @@ export default function ServicesSection() {
             className="pointer-events-none absolute left-0 top-0 h-full w-full scale-150 object-cover blur-lg sm:scale-125"
           />
           <p className="font-basier text-xs opacity-50">DESIGN SUBSCRIPTION</p>
-          <h3 className="z-10 mt-6 text-3xl font-semibold sm:mt-12 sm:text-6xl">
+          <h3 className="z-10 mt-6 text-3xl font-semibold tracking-tight sm:mt-12 sm:text-6xl">
             Flexible design subscription
           </h3>
           <p className="mt-4 max-w-sm opacity-50">
@@ -192,7 +196,7 @@ export default function ServicesSection() {
             className="pointer-events-none absolute left-0 top-0 h-full w-full scale-150 object-cover blur-lg sm:scale-125"
           />
           <p className="font-basier text-xs opacity-50">CONTENT</p>
-          <h3 className="z-10 mt-6 text-3xl font-semibold sm:mt-12 sm:text-6xl">
+          <h3 className="z-10 mt-6 text-3xl font-semibold tracking-tight sm:mt-12 sm:text-6xl">
             Content to elevate your marketing
           </h3>
           <p className="mt-4 max-w-sm opacity-50">

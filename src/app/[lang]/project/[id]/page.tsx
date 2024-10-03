@@ -1,12 +1,16 @@
 import { notFound } from "next/navigation";
 import Image from "next/image";
-import { projectsData } from "../../ProjectData"; // Adjust the path as necessary
-import Navbar from "@/app/components/Navbar";
-import CommandK from "@/app/components/CommandK";
-import { Motion } from "@/app/components/Motion";
+import { projectsData } from "@/app/ProjectData";
+import Navbar from "@/app/[lang]/components/Navbar";
+import CommandK from "@/app/[lang]/components/CommandK";
+import { Motion } from "@/app/[lang]/components/Motion";
+import { getDictionary } from "@/app/[lang]/dictionaries"; // Adjust the path to where your dictionaries are stored
+
+type Locale = "en" | "sv"; // Define Locale types
 
 type ProjectPageParams = {
   params: {
+    lang: Locale; // Use the Locale type
     id: string;
   };
 };
@@ -22,7 +26,7 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function ProjectPage({
+export default async function ProjectPage({
   params,
   searchParams,
 }: {
@@ -30,7 +34,10 @@ export default function ProjectPage({
   searchParams: SearchParamProps["searchParams"];
 }) {
   const bookDemo = searchParams?.BookDemo === "true";
-  const projectId = params.id;
+  const { id: projectId, lang } = params; // Destructure lang and id from params
+
+  // Get the dictionary for the current language
+  const dict = await getDictionary(lang); // Fetch the dictionary using lang
 
   // Find the project by its ID (in this case, the slugified version of the client name)
   const project = projectsData.find(
@@ -43,7 +50,7 @@ export default function ProjectPage({
   }
 
   return (
-    <section className="flex flex-col items-center justify-center overflow-x-hidden bg-black bg-gradient-radial-to-top px-0 text-left tracking-tight text-zinc-100 sm:px-2">
+    <section className="bg-gradient-radial-to-top flex flex-col items-center justify-center overflow-x-hidden bg-black px-0 text-left tracking-tight text-zinc-100 sm:px-2">
       {bookDemo && <CommandK isVisible={bookDemo} />}
 
       <Motion
@@ -52,7 +59,9 @@ export default function ProjectPage({
         transition={{ ease: "easeInOut", duration: 0 }}
         className="flex w-full max-w-8xl flex-col items-center"
       >
-        <Navbar />
+        {/* Pass lang and dict as props to Navbar */}
+        <Navbar lang={lang} dict={dict} />
+
         <Motion
           initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
           animate={{ opacity: 1, y: 0, filter: "blur(0)" }}

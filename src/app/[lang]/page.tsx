@@ -14,15 +14,26 @@ import ProjectsSection from "./sections/ProjectsSection";
 import { NavigationArrow } from "@phosphor-icons/react/dist/ssr";
 import HeroScroll from "./components/HeroScroll";
 
+import { getDictionary } from "./dictionaries";
+
+type Locale = "en" | "sv";
+
 type SearchParamProps = {
   searchParams: Record<string, string> | null | undefined;
+  params: {
+    lang: Locale;
+  };
 };
 
-export default function Home({ searchParams }: SearchParamProps) {
+export default async function Home({
+  searchParams,
+  params: { lang },
+}: SearchParamProps) {
   const bookDemo = searchParams?.BookDemo === "true";
+  const dict = await getDictionary(lang);
 
   return (
-    <main className="flex select-none flex-col items-center  justify-center overflow-x-hidden bg-black px-0 text-left tracking-tight text-zinc-100">
+    <main className="flex select-none flex-col items-center justify-center overflow-x-hidden bg-black px-0 text-left tracking-tight text-zinc-100">
       {bookDemo && <CommandK isVisible={bookDemo} />}
 
       <Motion
@@ -31,7 +42,7 @@ export default function Home({ searchParams }: SearchParamProps) {
         transition={{ ease: "easeInOut", duration: 0.5 }}
         className="flex w-full max-w-8xl flex-col items-center"
       >
-        <Navbar />
+        <Navbar lang={lang} dict={dict} />
         {/* Hero */}
         <section className="mt-[4.5rem] flex h-full w-full flex-col items-center bg-black px-4 sm:px-16">
           <div className="relative h-full w-full overflow-hidden rounded-md py-12 sm:py-20">
@@ -55,10 +66,10 @@ export default function Home({ searchParams }: SearchParamProps) {
                   href={"/"}
                   className="pl-0 font-basier opacity-100 hover:underline "
                 >
-                  ANNOUNCEMENT /
+                  {dict.home.announcement.tag} /
                   <span className="opacity-75">
                     {" "}
-                    CLIENT QURA RAISES €2.1M LED BY CHERRY VENTURES{" "}
+                    {dict.home.announcement.text}
                   </span>
                 </Link>
               </div>
@@ -71,9 +82,9 @@ export default function Home({ searchParams }: SearchParamProps) {
             >
               <div className="relative mt-4 border border-white bg-gradient-to-tl from-white to-white bg-clip-text px-2 pb-3 text-[clamp(36px,6vw,72px)] font-medium leading-[1.1] tracking-tight text-transparent sm:leading-[1]">
                 <h1>
-                  Supercharge your <br />
+                  {dict.home.hero.title.line1} <br />
                   <span className="font-freight text-[clamp(40px,6.666vw,80px)] italic">
-                    design & marketing
+                    {dict.home.hero.title.line2}
                   </span>
                 </h1>
                 <span className="absolute -bottom-1 -right-1 hidden translate-x-full translate-y-full items-start gap-1 sm:flex">
@@ -109,11 +120,11 @@ export default function Home({ searchParams }: SearchParamProps) {
               className="mt-8 flex w-full flex-col items-start justify-between px-4 sm:mt-16 sm:flex-row sm:items-center sm:px-16"
             >
               <h2 className="max-w-md text-xl opacity-100">
-                We&apos;re a fully remote design & content agency{" "}
+                {dict.home.hero.subtext.line1}
                 <br className="hidden sm:block" />
                 <span className="opacity-50">
                   {" "}
-                  for next-gen businesses that iterate fast.
+                  {dict.home.hero.subtext.line2}
                 </span>
               </h2>
               <div className="mt-8 flex flex-row-reverse items-center justify-center gap-8 sm:mt-0 sm:flex-row">
@@ -121,7 +132,7 @@ export default function Home({ searchParams }: SearchParamProps) {
                   href="mailto:hello@kindredlab.io"
                   className="font-basier text-sm hover:underline"
                 >
-                  SAY HELLO
+                  {dict.home.hero.cta1}
                 </Link>
                 <Link
                   href={"/?BookDemo=true"}
@@ -129,7 +140,7 @@ export default function Home({ searchParams }: SearchParamProps) {
                   scroll={false}
                   replace
                 >
-                  BOOK DEMO
+                  {dict.home.hero.cta2}
                   <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
                     ⌘ K
                   </span>
@@ -158,7 +169,7 @@ export default function Home({ searchParams }: SearchParamProps) {
 
         {/* Services */}
         <section className="flex h-full w-full flex-col items-start bg-white px-0 py-32 backdrop-blur-sm">
-          <ServicesSection />
+          <ServicesSection dict={dict} />
         </section>
 
         {/* Testimonials */}

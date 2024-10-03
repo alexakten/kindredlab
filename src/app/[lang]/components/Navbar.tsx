@@ -1,10 +1,16 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { AnimatePresence } from "framer-motion"; // Import AnimatePresence
+import { AnimatePresence } from "framer-motion";
 import { Motion } from "./Motion";
 
-export default function Navbar() {
+// Define prop types for lang and dict
+interface NavbarProps {
+  lang: string; // Could be "en", "sv", etc.
+  dict: Record<string, any>; // All dict items are strings, even if nested
+}
+
+export default function Navbar({ lang, dict }: NavbarProps) {
   const [isVisible, setIsVisible] = useState(true); // Navbar visibility
   const [lastScrollTop, setLastScrollTop] = useState(0); // Last scroll position
   const [showModal, setShowModal] = useState(false); // Modal visibility state
@@ -41,7 +47,7 @@ export default function Navbar() {
           <Motion
             initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
             animate={{ opacity: 1, backdropFilter: "blur(24px)" }}
-            exit={{ opacity: 0, backdropFilter: "blur(0px)" }} // Apply exit animation
+            exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
             transition={{ ease: "easeInOut", duration: 0.2 }}
             className="fixed inset-0 z-40 h-screen w-screen bg-black bg-opacity-20"
           >
@@ -68,13 +74,16 @@ export default function Navbar() {
                 ? "rgba(0, 0, 0, 0)" // Fully transparent on hover
                 : "rgba(0, 0, 0, 0.85)", // Fully opaque black when visible after scroll
             }}
-            exit={{ opacity: 0, y: -20 }} // Apply exit animation
+            exit={{ opacity: 0, y: -20 }}
             transition={{ ease: "easeInOut", duration: 0.2 }}
             className={`fixed z-50 flex w-full flex-col items-center`}
             id="navbar"
           >
             <nav className="z-50 flex w-full max-w-8xl items-center justify-between px-4 py-4 text-xs font-medium sm:px-32">
-              <Link href={"/"} className="z-10 flex items-center gap-1.5">
+              <Link
+                href={`/${lang}`}
+                className="z-10 flex items-center gap-1.5"
+              >
                 <div className="flex items-center justify-center gap-1">
                   <p className="relative font-freight text-xl font-semibold leading-[0.95] tracking-[-0.020rem]">
                     kindred
@@ -91,7 +100,7 @@ export default function Navbar() {
                   onMouseEnter={() => setShowModal(true)}
                   onMouseLeave={() => setShowModal(false)}
                 >
-                  Services
+                  {dict.nav.menu.item1}
                 </Link>
                 <Link
                   className="hover:underline"
@@ -99,7 +108,7 @@ export default function Navbar() {
                   onMouseEnter={() => setShowModal(true)}
                   onMouseLeave={() => setShowModal(false)}
                 >
-                  Projects
+                  {dict.nav.menu.item2}
                 </Link>
                 <Link
                   className="hover:underline"
@@ -107,7 +116,7 @@ export default function Navbar() {
                   onMouseEnter={() => setShowModal(true)}
                   onMouseLeave={() => setShowModal(false)}
                 >
-                  Pricing
+                  {dict.nav.menu.item3}
                 </Link>
               </div>
 
@@ -118,7 +127,7 @@ export default function Navbar() {
                   scroll={false}
                   replace
                 >
-                  BOOK DEMO
+                  {dict.nav.cta} 
                   <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
                     ⌘ K
                   </span>

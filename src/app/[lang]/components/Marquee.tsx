@@ -1,5 +1,5 @@
 import React from "react";
-import { testimonials, reversedTestimonials } from "../TestimonialData";
+import { testimonials, reversedTestimonials } from "../../TestimonialData";
 import Testimonial from "./Testimonial";
 
 const Marquee = () => {

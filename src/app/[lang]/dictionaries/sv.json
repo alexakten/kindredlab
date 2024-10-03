@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "menu": {
+      "item1": "Tjänster",
+      "item2": "Projekt",
+      "item3": "Priser"
+    },
+    "cta": "BOKA DEMO"
+  },
+  "home": {
+    "announcement": {
+      "tag": "NYHET",
+      "text": "KUNDEN QURA RESER €2.1M MED CHERRY VENTURES"
+    },
+    "hero": {
+      "title": {
+        "line1": "Superladda din",
+        "line2": "design & marketing"
+      },
+      "subtext": {
+        "line1": "Vi är en remote design- och contentbyrå",
+        "line2": "för nästa generations företag."
+      },
+      "cta1": "SÄG HALLÅ",
+      "cta2": "BOKA DEMO"
+    }
+  }
+}

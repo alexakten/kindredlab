@@ -1,5 +1,5 @@
 import Link from "next/link"; // Import the Link component
-import { projectsData } from "../ProjectData"; // adjust the path as necessary
+import { projectsData } from "../../ProjectData"; // adjust the path as necessary
 import Project from "../components/Project";
 
 export default function ProjectsSection() {

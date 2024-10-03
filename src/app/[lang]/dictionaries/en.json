@@ -1,0 +1,28 @@
+{
+  "nav": {
+    "menu": {
+      "item1": "Services",
+      "item2": "Projects",
+      "item3": "Pricing",
+      "item4": "Book Demo"
+    }
+  },
+  "home": {
+    "announcement": {
+      "tag": "ANNOUNCEMENT",
+      "text": "CLIENT QURA RAISES €2.1M LED BY CHERRY VENTURES"
+    },
+    "hero": {
+      "title": {
+        "line1": "Supercharge your",
+        "line2": "design & marketing"
+      },
+      "subtext": {
+        "line1": "We're a fully remote design & content agency",
+        "line2": "for next-gen businesses that iterate fast."
+      },
+      "cta1": "SAY HELLO",
+      "cta2": "BOOK A CALL"
+    }
+  }
+}
