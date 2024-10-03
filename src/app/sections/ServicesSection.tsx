@@ -34,16 +34,16 @@ export default function ServicesSection() {
         ref={ref}
       >
         {/* Websites */}
-        <div className="relative flex min-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-sm sm:min-w-[36rem] md:p-8">
+        <div className="relative flex min-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 sm:min-w-[36rem] md:p-8">
           <Image
             src="/images/websites.png"
             alt="Websites"
             width={100}
             height={100}
-            className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-150 object-cover blur-lg sm:scale-125"
+            className="pointer-events-none absolute left-0 top-0 z-0 h-full w-full scale-150 object-cover blur-lg sm:scale-125"
           />
           <p className="font-basier text-xs opacity-50">WEB DEVELOPMENT</p>
-          <h3 className="mt-6 text-3xl font-semibold sm:mt-12 sm:text-6xl">
+          <h3 className="z-10 mt-6 text-3xl font-semibold sm:mt-12 sm:text-6xl">
             Stunning websites built in Webflow
           </h3>
           <p className="mt-4 max-w-sm opacity-50">
