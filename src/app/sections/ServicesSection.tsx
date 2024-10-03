@@ -40,7 +40,7 @@ export default function ServicesSection() {
             alt="Websites"
             width={100}
             height={100}
-            className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-150 object-cover blur-2xl sm:scale-125"
+            className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-150 object-cover blur-lg sm:scale-125"
           />
           <p className="font-basier text-xs opacity-50">WEB DEVELOPMENT</p>
           <h3 className="mt-12 text-3xl font-semibold sm:text-6xl">
@@ -125,7 +125,7 @@ export default function ServicesSection() {
             alt="Websites"
             width={100}
             height={100}
-            className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-150 object-cover blur-2xl sm:scale-125"
+            className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-150 object-cover blur-lg sm:scale-125"
           />
           <p className="font-basier text-xs opacity-50">DESIGN SUBSCRIPTION</p>
           <h3 className="mt-12 text-3xl font-semibold sm:text-6xl">
@@ -189,7 +189,7 @@ export default function ServicesSection() {
             alt="Content"
             width={100}
             height={100}
-            className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-150 object-cover blur-2xl sm:scale-125"
+            className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-150 object-cover blur-lg sm:scale-125"
           />
           <p className="font-basier text-xs opacity-50">DESIGN SUBSCRIPTION</p>
           <h3 className="mt-12 text-3xl font-semibold sm:text-6xl">
