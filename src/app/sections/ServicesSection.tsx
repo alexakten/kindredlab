@@ -34,7 +34,7 @@ export default function ServicesSection() {
         ref={ref}
       >
         {/* Websites */}
-        <div className="relative flex min-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 sm:min-w-[36rem] md:p-8">
+        <div className="relative flex min-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-sm sm:min-w-[36rem] md:p-8">
           <Image
             src="/images/websites.png"
             alt="Websites"
@@ -119,7 +119,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Design */}
-        <div className="relative flex min-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md sm:min-w-[36rem] md:p-8">
+        <div className="relative flex min-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-sm sm:min-w-[36rem] md:p-8">
           <Image
             src="/images/design.webp"
             alt="Websites"
@@ -183,7 +183,7 @@ export default function ServicesSection() {
         </div>
 
         {/* Content */}
-        <div className="relative flex min-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-md sm:min-w-[36rem] md:p-8">
+        <div className="relative flex min-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 backdrop-blur-sm sm:min-w-[36rem] md:p-8">
           <Image
             src="/images/content.webp"
             alt="Content"
