@@ -40,7 +40,7 @@ export default function Home({ searchParams }: SearchParamProps) {
               alt="Hero image"
               width={1000}
               height={1000}
-              className="pointer-events-none absolute left-0 top-0 h-full w-full object-left blur-3xl sm:w-full sm:scale-105 sm:object-cover"
+              className="pointer-events-none absolute left-0 top-0 h-full w-full object-left blur-lg sm:w-full sm:scale-105 sm:object-cover"
               priority
               loading="eager"
             />
