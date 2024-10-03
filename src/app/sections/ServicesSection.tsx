@@ -43,14 +43,14 @@ export default function ServicesSection() {
             className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-150 object-cover blur-lg sm:scale-125"
           />
           <p className="font-basier text-xs opacity-50">WEB DEVELOPMENT</p>
-          <h3 className="mt-12 text-3xl font-semibold sm:text-6xl">
+          <h3 className="mt-6 text-3xl font-semibold sm:mt-12 sm:text-6xl">
             Stunning websites built in Webflow
           </h3>
           <p className="mt-4 max-w-sm opacity-50">
             Refresh your website and branding. We build stunning websites in
             Webflow that showcase your products.
           </p>
-          <div className="mt-12 h-40 w-full sm:h-64 ">
+          <div className="mt-6 sm:mt-12 h-40 w-full sm:h-72 ">
             <div
               className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-3xl border-2 border-white border-opacity-100 bg-white bg-opacity-10 p-2 text-center"
               style={{ mixBlendMode: "plus-lighter" }}
@@ -104,7 +104,7 @@ export default function ServicesSection() {
               </div>
             </div>
           </div>
-          <div className="mt-16 flex w-full items-center justify-between">
+          <div className="sm:mt-16 mt-10 flex w-full items-center justify-between">
             <p className="hidden font-basier text-xs opacity-50 sm:block">
               BOOK A FREE DEMO{" "}
             </p>
@@ -128,15 +128,15 @@ export default function ServicesSection() {
             className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-150 object-cover blur-lg sm:scale-125"
           />
           <p className="font-basier text-xs opacity-50">DESIGN SUBSCRIPTION</p>
-          <h3 className="mt-12 text-3xl font-semibold sm:text-6xl">
+          <h3 className="mt-6 sm:mt-12 text-3xl font-semibold sm:text-6xl">
             Flexible design subscription
           </h3>
           <p className="mt-4 max-w-sm opacity-50">
             Refresh your website and branding. We build stunning websites in
             Webflow that showcase your products.
           </p>
-          <div className="mt-12 h-40 w-full sm:h-64 ">
-            <div className="relative mt-8 grid grid-cols-1 gap-4 pb-28 pt-8 text-xs md:grid-cols-2">
+          <div className="mt-6 sm:mt-12 h-40 w-full sm:h-72 ">
+            <div className="relative mt-0 grid grid-cols-1 gap-4 pb-28 text-xs md:grid-cols-2">
               <div className="absolute bottom-24 right-24 flex gap-1">
                 <NavigationArrow
                   // className="duocolor-purple"
@@ -156,7 +156,7 @@ export default function ServicesSection() {
                 <div className="max-w-[240px] rotate-0 rounded-md border border-white bg-white bg-opacity-10 px-4 py-2 shadow-sm">
                   New UI for search
                 </div>
-                <div className="absolute bottom-8 left-14 w-full max-w-[240px] rotate-6 rounded-md border  border-white bg-white bg-opacity-10 px-4 py-2 shadow-sm md:left-32">
+                <div className="absolute bottom-12 sm:bottom-8 left-14 w-full sm:max-w-[240px] max-w-[220px] rotate-6 rounded-md border  border-white bg-white bg-opacity-10 px-4 py-2 shadow-sm md:left-32">
                   Design new website
                 </div>
               </div>
@@ -168,7 +168,7 @@ export default function ServicesSection() {
               </div>
             </div>
           </div>
-          <div className="mt-16 flex w-full items-center justify-between">
+          <div className="sm:mt-16 mt-10 flex w-full items-center justify-between">
             <p className="hidden font-basier text-xs opacity-50 sm:block">
               BOOK A FREE DEMO{" "}
             </p>
@@ -192,45 +192,15 @@ export default function ServicesSection() {
             className="pointer-events-none absolute left-0 top-0 -z-10 h-full w-full scale-150 object-cover blur-lg sm:scale-125"
           />
           <p className="font-basier text-xs opacity-50">DESIGN SUBSCRIPTION</p>
-          <h3 className="mt-12 text-3xl font-semibold sm:text-6xl">
+          <h3 className="mt-6 sm:mt-12 text-3xl font-semibold sm:text-6xl">
             Content to elevate your marketing
           </h3>
           <p className="mt-4 max-w-sm opacity-50">
             Refresh your website and branding. We build stunning websites in
             Webflow that showcase your products.
           </p>
-          <div className="mt-12 h-40 w-full sm:h-64">
-            <div className="relative mt-8 grid grid-cols-1 gap-4 pb-28 pt-8 text-xs md:grid-cols-2">
-              <div className="absolute bottom-24 right-24 flex gap-1">
-                <NavigationArrow
-                  // className="duocolor-purple"
-                  weight="fill"
-                  fill="#fff"
-                />
-                <div className="z-50 mt-3 rounded-sm bg-white px-1 text-xs font-semibold leading-[1.4] text-black">
-                  You
-                </div>
-              </div>
-
-              <div className="flex flex-col gap-2">
-                <p className="font-medium">To do</p>
-                <div className="max-w-[240px] rotate-0 rounded-md bg-white px-4 py-2 shadow-sm">
-                  Ads for campaign
-                </div>
-                <div className="max-w-[240px] rotate-0 rounded-md bg-white px-4 py-2 shadow-sm">
-                  New UI for search
-                </div>
-                <div className="absolute bottom-8 left-14 w-full max-w-[240px] rotate-6 rounded-md bg-white px-4 py-2 shadow-sm md:left-32">
-                  Design new website
-                </div>
-              </div>
-              <div className="hidden flex-col gap-2 md:flex">
-                <p className="font-medium">Done</p>
-                <div className="max-w-[240px] rotate-0 rounded-md bg-white px-4 py-2 shadow-sm">
-                  Create new logo
-                </div>
-              </div>
-            </div>
+          <div className="mb-0 sm:mt-12 h-40 w-full sm:h-64">
+            
           </div>
           <div className="mt-16 flex w-full items-center justify-between">
             <p className="hidden font-basier text-xs opacity-50 sm:block">
