@@ -25,20 +25,23 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
   const { events } = useDraggable(ref, {});
 
   return (
-    <div className="flex flex-col items-center  ">
-      <div className="flex w-full max-w-8xl flex-col items-start px-4 sm:px-16">
-        <p className="font-basier text-sm text-black opacity-50">THE MENU</p>
-        <h2 className="mb-12 mt-2 overflow-visible bg-gradient-to-t from-black to-black bg-clip-text text-center text-4xl font-semibold leading-[1.2] tracking-tight text-transparent sm:text-4xl">
-          Services
-        </h2>
+    <>
+      <div className="flex w-full flex-col items-center">
+        <div className="flex w-full max-w-8xl flex-col items-start px-4 sm:px-16">
+          <p className="font-basier text-sm text-black opacity-50">THE MENU</p>
+          <h2 className="mb-12 mt-2 overflow-visible bg-gradient-to-t from-black to-black bg-clip-text text-center text-4xl font-semibold leading-[1.2] tracking-tight text-transparent sm:text-4xl">
+            Services
+          </h2>
+        </div>
       </div>
+
       <div
         className="flex w-full max-w-8xl items-start gap-4 overflow-visible overflow-x-auto px-4 text-white [-ms-overflow-style:'none'] [scrollbar-width:'none'] hover:cursor-grab sm:px-16 [&::-webkit-scrollbar]:hidden"
         {...events}
         ref={ref}
       >
         {/* Websites */}
-        <div className="relative flex min-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 sm:min-w-[36rem] md:p-8">
+        <div className="relative flex min-w-[20rem] max-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 sm:min-w-[36rem] md:p-8">
           <Image
             src="/images/websites.png"
             alt="Websites"
@@ -123,8 +126,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
         </div>
 
         {/* Design */}
-
-        <div className="relative flex min-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 sm:min-w-[36rem] md:p-8">
+        <div className="relative col-span-1 flex min-w-[20rem] max-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 sm:min-w-[36rem] md:p-8">
           <Image
             src="/images/design.webp"
             alt="Websites"
@@ -188,7 +190,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
         </div>
 
         {/* Content */}
-        <div className="relative flex min-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 sm:min-w-[36rem] md:p-8">
+        <div className="relative flex min-w-[20rem] max-w-[20rem]  flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 sm:min-w-[36rem] md:p-8">
           <Image
             src="/images/content.webp"
             alt="Websites"
@@ -251,6 +253,6 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 }
