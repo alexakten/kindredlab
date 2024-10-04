@@ -1,25 +1,28 @@
 "use client";
 import { useEffect } from "react";
-import { useRouter, useSearchParams } from "next/navigation"; // For client-side navigation
+import { useRouter, useSearchParams, usePathname } from "next/navigation"; // For client-side navigation
 
 export default function ShortcutListener() {
   const router = useRouter();
   const searchParams = useSearchParams();
+  const pathname = usePathname(); // To get the current path, including language
 
   useEffect(() => {
     const handleKeydown = (event: KeyboardEvent) => {
-      // Check if Command (on Mac) or Ctrl (on Windows) and K are pressed
       if ((event.metaKey || event.ctrlKey) && event.key.toLowerCase() === "k") {
         event.preventDefault(); // Prevent the default behavior
+
+        // Get the current language from the pathname (e.g., '/en', '/sv')
+        const lang = pathname.split("/")[1]; // Assuming the language is the first segment of the URL
 
         // Check if 'BookDemo=true' is already in the URL
         const isModalOpen = searchParams.get("BookDemo") === "true";
 
         // Toggle the modal: open it if closed, close it if open
         if (isModalOpen) {
-          router.push("/", { scroll: false }); // Close the modal without scrolling to the top
+          router.push(`/${lang}`, { scroll: false }); // Close the modal without scrolling to the top
         } else {
-          router.push("/?BookDemo=true", { scroll: false }); // Open the modal without scrolling to the top
+          router.push(`/${lang}?BookDemo=true`, { scroll: false }); // Open the modal in the current language
         }
       }
     };
@@ -31,7 +34,7 @@ export default function ShortcutListener() {
     return () => {
       window.removeEventListener("keydown", handleKeydown);
     };
-  }, [router, searchParams]);
+  }, [router, searchParams, pathname]);
 
   return null;
 }

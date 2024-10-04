@@ -122,7 +122,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
 
               <div className="flex gap-4">
                 <Link
-                  href={"/?BookDemo=true"}
+                  href={`/${lang}/?BookDemo=true`}
                   className="flex items-center justify-center gap-3 rounded-full bg-white px-4 py-1.5 font-basier text-xs text-black hover:bg-zinc-200"
                   scroll={false}
                   replace

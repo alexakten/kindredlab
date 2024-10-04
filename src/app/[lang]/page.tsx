@@ -135,7 +135,7 @@ export default async function Home({
                   {dict.home.hero.cta1}
                 </Link>
                 <Link
-                  href={"/?BookDemo=true"}
+                  href={`/${lang}/?BookDemo=true`}
                   className="flex items-center justify-center gap-3 rounded-full bg-white px-8 py-3 font-basier text-sm text-black hover:bg-zinc-100"
                   scroll={false}
                   replace
