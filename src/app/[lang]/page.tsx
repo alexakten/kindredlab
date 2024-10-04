@@ -168,18 +168,13 @@ export default async function Home({
         </section>
 
         {/* Services */}
-        <section className="flex rounded-md h-full w-full flex-col items-center bg-white px-0 py-32 backdrop-blur-sm">
-            <ServicesSection dict={dict} />
+        <section className="flex h-full w-full flex-col items-center rounded-md bg-white px-0 py-32 backdrop-blur-sm">
+          <ServicesSection dict={dict} />
         </section>
 
         {/* Testimonials */}
-        <section className="mt-36 flex w-full flex-col items-center justify-center bg-linear-gradient">
-          <h2 className="m-16 overflow-visible bg-gradient-to-t from-zinc-400 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
-            What our users are saying
-          </h2>
-          <div className="flex max-w-8xl items-center">
-            <TestimonialSection />
-          </div>
+        <section className="mt-36 flex w-full flex-col items-center justify-center ">
+          <TestimonialSection />
         </section>
 
         <ProjectsSection />
