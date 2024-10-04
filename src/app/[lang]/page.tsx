@@ -40,11 +40,11 @@ export default async function Home({
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.5 }}
-        className="flex w-full max-w-8xl flex-col items-center"
+        className="flex w-full flex-col items-center"
       >
         <Navbar lang={lang} dict={dict} />
         {/* Hero */}
-        <section className="mt-[4.5rem] flex h-full w-full flex-col items-center bg-black px-4 sm:px-16">
+        <section className="mt-[4.5rem] flex h-full w-full max-w-8xl flex-col items-center bg-black px-4 sm:px-16">
           <div className="relative h-full w-full overflow-hidden rounded-md py-12 sm:py-20">
             <Image
               src="/images/hero-small.webp"
@@ -168,8 +168,8 @@ export default async function Home({
         </section>
 
         {/* Services */}
-        <section className="flex h-full w-full flex-col items-start bg-white px-0 py-32 backdrop-blur-sm">
-          <ServicesSection dict={dict} />
+        <section className="flex rounded-md h-full w-full flex-col items-center bg-white px-0 py-32 backdrop-blur-sm">
+            <ServicesSection dict={dict} />
         </section>
 
         {/* Testimonials */}
@@ -177,7 +177,7 @@ export default async function Home({
           <h2 className="m-16 overflow-visible bg-gradient-to-t from-zinc-400 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
             What our users are saying
           </h2>
-          <div className="flex max-w-6xl items-center">
+          <div className="flex max-w-8xl items-center">
             <TestimonialSection />
           </div>
         </section>
