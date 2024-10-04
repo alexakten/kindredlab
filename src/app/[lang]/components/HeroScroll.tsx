@@ -51,7 +51,7 @@ export default function HeroScroll() {
       </div>
       <div className="relative aspect-[3/2] h-64 min-w-[24rem] overflow-hidden rounded-2xl border-2 border-white border-opacity-40 bg-white">
         <Image
-          src="/images/hero-scroll/hero-4.jpg"
+          src="/images/hero-scroll/hero-6.jpg"
           alt="Hero image 4"
           width={1000}
           height={1000}
@@ -60,8 +60,26 @@ export default function HeroScroll() {
       </div>
       <div className="relative aspect-[2/3] h-64 min-w-[12rem] overflow-hidden rounded-2xl border-2 border-white border-opacity-40 bg-white">
         <Image
-          src="/images/hero-scroll/hero-8.png"
+          src="/images/hero-scroll/hero-7.png"
           alt="Hero image 3"
+          width={1000}
+          height={1000}
+          className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
+        />
+      </div>
+      <div className="relative aspect-[2/3] h-64 min-w-[12rem] overflow-hidden rounded-2xl border-2 border-white border-opacity-40 bg-white">
+        <Image
+          src="/images/hero-scroll/hero-9.png"
+          alt="Hero image 3"
+          width={1000}
+          height={1000}
+          className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
+        />
+      </div>
+      <div className="relative aspect-[3/2] h-64 min-w-[24rem] overflow-hidden rounded-2xl border-2 border-white border-opacity-40 bg-white">
+        <Image
+          src="/images/hero-scroll/hero-4.jpg"
+          alt="Hero image 4"
           width={1000}
           height={1000}
           className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
