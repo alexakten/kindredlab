@@ -127,7 +127,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
                   scroll={false}
                   replace
                 >
-                  {dict.nav.cta} 
+                  {dict.nav.cta}
                   <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
                     ⌘ K
                   </span>
