@@ -43,7 +43,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
         {/* Websites */}
         <div className="relative flex min-w-[20rem] max-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 sm:min-w-[36rem] md:p-8">
           <Image
-            src="/images/websites.png"
+            src="/images/websites.webp"
             alt="Websites"
             width={100}
             height={100}
