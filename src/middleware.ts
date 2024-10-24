@@ -33,14 +33,17 @@ export function middleware(request: NextRequest) {
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
   );
 
-  // If the path does not contain a locale and is not a static asset, redirect to the preferred locale
-  if (!pathnameHasLocale && !isStaticAsset) {
+  // Prevent redirect if the path is explicitly /se or similar
+  const isManualLocaleSwitch = pathname.startsWith("/se");
+
+  // If the path does not contain a locale, is not a static asset, and is not manually set to /se, redirect
+  if (!pathnameHasLocale && !isStaticAsset && !isManualLocaleSwitch) {
     const locale = getLocale(request); // Get the preferred or default locale
     const url = new URL(`/${locale}${pathname}`, request.url);
     return NextResponse.redirect(url);
   }
 
-  // Allow request to proceed if it already contains a locale or is a static asset
+  // Allow request to proceed if it already contains a locale or is a static asset or is manually switched
   return NextResponse.next();
 }
 
