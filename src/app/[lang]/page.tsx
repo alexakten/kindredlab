@@ -168,7 +168,7 @@ export default async function Home({
         </section>
 
         {/* Services */}
-        <section className="flex h-full w-full flex-col items-center rounded-md bg-white px-0 py-32 backdrop-blur-sm">
+        <section className="flex h-full w-full flex-col items-center rounded-md bg-white py-32 ">
           <ServicesSection dict={dict} />
         </section>
 
