@@ -9,6 +9,12 @@
   display: none !important;
 }
 
+/* Hide the pagination for splide */
+.splide__pagination {
+  visibility: hidden !important;
+}
+
+
 @layer utilities {
   .masonry {
     column-gap: 0.25rem;
