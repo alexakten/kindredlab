@@ -177,13 +177,27 @@ export default async function Home({
           <TestimonialSection />
         </section>
 
-        <ProjectsSection />
+        <ProjectsSection dict={dict} lang={lang} />
 
         {/* Pricing */}
-        <section className="mt-40 flex w-full max-w-6xl flex-col items-center justify-center px-4">
-          <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
-            Pricing
-          </h2>
+        <section className="relative flex w-full max-w-8xl flex-col items-start justify-center overflow-hidden px-4 py-28 sm:px-16">
+          <Image
+            src="/images/hero.png"
+            alt="Hero image"
+            width={1000}
+            height={1000}
+            className="pointer-events-none absolute left-0 top-0 z-0 h-full w-full object-left blur-lg sm:w-full sm:scale-105 sm:object-cover"
+            priority
+            loading="eager"
+          />
+          <div className="relative z-10 flex w-full max-w-8xl flex-col text-white">
+            <div className="flex w-full max-w-8xl flex-col items-start">
+              <p className="font-basier text-sm opacity-50">OUR PLANS</p>
+              <h2 className="mb-12 mt-2 text-center text-4xl font-semibold leading-[1.2] tracking-tight sm:text-4xl">
+                Pricing
+              </h2>
+            </div>
+          </div>
 
           <PricingSection />
         </section>

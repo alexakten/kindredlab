@@ -2,7 +2,19 @@ import Link from "next/link"; // Import the Link component
 import { projectsData } from "../../ProjectData"; // adjust the path as necessary
 import Project from "../components/Project";
 
-export default function ProjectsSection() {
+import { getDictionary } from "../dictionaries";
+
+type Locale = "en" | "sv";
+
+interface ProjectsSectionProps {
+  lang: string; // Could be "en", "sv", etc.
+  dict: Record<string, any>; // All dict items are strings, even if nested
+}
+
+export default async function ProjectsSection({
+  lang,
+  dict,
+}: ProjectsSectionProps) {
   return (
     <section className="flex h-full w-full flex-col items-start rounded-md bg-white px-4 py-28 text-center text-black backdrop-blur-sm sm:px-16">
       <p className="font-basier text-sm text-black opacity-50">OUR CASES</p>
@@ -13,7 +25,7 @@ export default function ProjectsSection() {
         {projectsData.map((project) => (
           <Link
             key={project.client}
-            href={`/project/${project.client.toLowerCase().replace(/\s+/g, "-")}`}
+            href={`/${lang}/project/${project.client.toLowerCase().replace(/\s+/g, "-")}`}
             passHref
           >
             {" "}
