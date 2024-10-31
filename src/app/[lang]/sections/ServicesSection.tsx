@@ -28,10 +28,10 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
         </div>
       </div>
 
-      <div className="relative mx-auto max-w-full">
-        <div className="grid w-full max-w-8xl grid-cols-3 items-start gap-4 overflow-x-auto px-4 text-white sm:px-16">
+      <div className="relative w-full">
+        <div className="grid w-full max-w-8xl grid-cols-1 gap-4 overflow-x-auto px-4 text-white sm:px-16 xl:grid-cols-3">
           {/* Websites */}
-          <div className="relative flex flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
+          <div className="relative flex w-full flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
             <Image
               src="/images/websites.webp"
               alt="Websites"
