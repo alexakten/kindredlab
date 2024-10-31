@@ -3,6 +3,7 @@ import Link from "next/link";
 
 interface ProjectProps {
   client?: string;
+  tagline?: string;
   year?: string;
   tags?: string[]; // Update tags to be an array of strings
   thumbnail: string;
@@ -10,13 +11,14 @@ interface ProjectProps {
 
 export default function Project({
   client,
+  tagline,
   year,
   tags,
   thumbnail,
 }: ProjectProps) {
   return (
     <div className="flex flex-col items-start text-left">
-      <div className="h-full w-full rounded-3xl border border-white border-opacity-40 bg-white bg-opacity-10 p-2">
+      <div className="h-full w-full rounded-3xl border border-black border-opacity-20 bg-white bg-opacity-10 p-2">
         <div className="aspect-h-9 aspect-w-16 relative w-full overflow-hidden ">
           <Image
             src={thumbnail}
@@ -29,21 +31,10 @@ export default function Project({
         </div>
       </div>
 
-      <div className="flex mt-3 w-full items-end justify-between">
-        <h3 className="text-[20px] leading-[30px]">{client}</h3>
-        <p className="text-sm leading-[30px]">{year}</p>
-      </div>
-
-      {/* Display tags */}
-      <div className="mt-3 flex flex-wrap gap-2">
-        {tags?.map((tag, index) => (
-          <div
-            key={index}
-            className="rounded-full border border-white border-opacity-40 bg-white bg-opacity-10 px-2 py-1"
-          >
-            <p className="text-sm opacity-75">{tag}</p>
-          </div>
-        ))}
+      <div className="mt-3 grid w-full grid-cols-5 items-baseline">
+        <h3 className="text col-span-1 font-medium">{client}</h3>
+        <p className="col-span-3 text-sm opacity-50">{tagline}</p>
+        <p className="col-span-1 flex w-full justify-end text-sm">{year}</p>
       </div>
     </div>
   );

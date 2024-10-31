@@ -1,4 +1,3 @@
-"use client";
 import {
   HeartStraight,
   ChatCircle,
@@ -13,17 +12,11 @@ import {
 import Link from "next/link";
 
 import Image from "next/image";
-import { useRef } from "react";
-import { useDraggable } from "react-use-draggable-scroll";
 
 interface ServicesSectionProps {
   dict: Record<string, string>; // All props in dict will be strings
 }
 export default function ServicesSection({ dict }: ServicesSectionProps) {
-  const ref =
-    useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
-  const { events } = useDraggable(ref, {});
-
   return (
     <>
       <div className="flex w-full flex-col items-center">
@@ -36,13 +29,9 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
       </div>
 
       <div className="relative mx-auto max-w-full">
-        <div
-          className="flex w-full max-w-8xl items-start gap-4 overflow-x-auto bg-red-400 px-4 text-white hover:cursor-grab sm:px-16"
-          {...events}
-          ref={ref}
-        >
+        <div className="grid w-full max-w-8xl grid-cols-3 items-start gap-4 overflow-x-auto px-4 text-white sm:px-16">
           {/* Websites */}
-          <div className="relative flex min-w-[20rem] max-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 sm:min-w-[36rem] md:p-8">
+          <div className="relative flex flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
             <Image
               src="/images/websites.webp"
               alt="Websites"
@@ -51,7 +40,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
               className="pointer-events-none absolute left-0 top-0 z-0 h-full w-full scale-150 object-cover blur-lg sm:scale-125"
             />
             <p className="font-basier text-xs opacity-50">WEB DEVELOPMENT</p>
-            <h3 className="z-10 mt-6 text-3xl font-semibold tracking-tight sm:mt-12 sm:text-6xl">
+            <h3 className="z-10 mt-6 text-3xl font-semibold tracking-tight sm:mt-12 sm:text-4xl">
               Stunning websites built in Webflow
             </h3>
             <p className="mt-4 max-w-sm opacity-50">
@@ -66,21 +55,21 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
                 <div className="relative flex aspect-[16/9] h-auto w-2/3 flex-col items-center justify-center border border-white">
                   {/* Navbar */}
                   <div className="absolute top-0 flex w-full justify-between  px-2 py-1">
-                    <div className="h-1 w-4 rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
+                    <div className="h-1.5 w-4 rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
                     <div className="flex gap-1">
                       <div className="h-1.5 w-4 rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
                       <div className="h-1.5 w-4 rounded-sm bg-gradient-to-r from-white to-white"></div>
                     </div>
                   </div>
-                  <div className="h-3 w-full max-w-[8rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
-                  <div className="mt-1 h-3 w-full max-w-[8rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
-                  <div className="mt-2 h-1 w-full max-w-[6rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
-                  <div className="mt-1 h-1 w-full max-w-[6rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
+                  <div className="h-2 w-full max-w-[6rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
+                  <div className="mt-1 h-2.5 w-full max-w-[6rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
+                  <div className="mt-2 h-1 w-full max-w-[4rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
+                  <div className="mt-1 h-1 w-full max-w-[4rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
                   <div className="mt-2 flex w-full flex-row items-center justify-center gap-1">
-                    <div className="h-2 w-full max-w-[2rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
-                    <div className=" h-2 w-full max-w-[2rem] rounded-sm bg-gradient-to-r from-white to-white"></div>
+                    <div className="h-2 w-full max-w-[1.5rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
+                    <div className=" h-2 w-full max-w-[1.5rem] rounded-sm bg-gradient-to-r from-white to-white"></div>
                   </div>
-                  <div className="absolute left-6 top-2 flex gap-1">
+                  <div className="absolute right-7 top-20 flex gap-1">
                     <NavigationArrow
                       // className="duocolor-green"
                       weight="fill"
@@ -96,10 +85,10 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
                   <div className="absolute -bottom-1 -left-1 h-2 w-2 border border-white bg-white"></div>
                   <div className="absolute -bottom-1 -right-1 h-2 w-2 border border-white bg-white"></div>
                   {/* --- */}
-                  <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 border border-white bg-white px-1">
-                    <p className="text-sm text-black">1440 × 900</p>
+                  <div className="absolute -bottom-7 left-1/2 -translate-x-1/2 border border-white bg-white px-1">
+                    <p className="text-xs text-black">1440 × 900</p>
                   </div>
-                  <div className="absolute -bottom-1 -right-1 flex translate-x-full translate-y-full gap-1">
+                  {/* <div className="absolute -bottom-1 -right-1 flex translate-x-full translate-y-full gap-1">
                     <NavigationArrow
                       // className="duocolor-orange"
                       weight="fill"
@@ -108,11 +97,11 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
                     <div className="mt-3 rounded-sm bg-white px-1 text-xs font-medium leading-[1.4] text-black">
                       Bianca
                     </div>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </div>
-            <div className="mt-10 flex w-full items-center justify-between sm:mt-16">
+            <div className="flex w-full items-center justify-between">
               <p className="hidden font-basier text-xs opacity-50 sm:block">
                 BOOK A FREE DEMO{" "}
               </p>
@@ -127,7 +116,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
           </div>
 
           {/* Design */}
-          <div className="relative col-span-1 flex min-w-[20rem] max-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 sm:min-w-[36rem] md:p-8">
+          <div className="relative flex flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
             <Image
               src="/images/design.webp"
               alt="Websites"
@@ -138,7 +127,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
             <p className="font-basier text-xs opacity-50">
               DESIGN SUBSCRIPTION
             </p>
-            <h3 className="z-10 mt-6 text-3xl font-semibold tracking-tight sm:mt-12 sm:text-6xl">
+            <h3 className="z-10 mt-6 text-3xl font-semibold tracking-tight sm:mt-12 sm:text-4xl">
               Flexible design subscription
             </h3>
             <p className="mt-4 max-w-sm opacity-50">
@@ -153,7 +142,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
                     weight="fill"
                     fill="#fff"
                   />
-                  <div className="z-50 mt-3 rounded-sm bg-white px-1 text-xs font-medium leading-[1.4] text-black">
+                  <div className="z-10 mt-3 rounded-sm bg-white px-1 text-xs font-medium leading-[1.4] text-black">
                     You
                   </div>
                 </div>
@@ -178,7 +167,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
                 </div>
               </div>
             </div>
-            <div className="mt-10 flex w-full items-center justify-between sm:mt-16">
+            <div className="flex w-full items-center justify-between">
               <p className="hidden font-basier text-xs opacity-50 sm:block">
                 BOOK A FREE DEMO{" "}
               </p>
@@ -193,7 +182,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
           </div>
 
           {/* Content */}
-          <div className="relative flex min-w-[20rem] max-w-[20rem]  flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 sm:min-w-[36rem] md:p-8">
+          <div className="relative flex flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
             <Image
               src="/images/content.webp"
               alt="Websites"
@@ -202,14 +191,14 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
               className="pointer-events-none absolute left-0 top-0 h-full w-full scale-150 object-cover blur-lg sm:scale-125"
             />
             <p className="font-basier text-xs opacity-50">CONTENT</p>
-            <h3 className="z-10 mt-6 text-3xl font-semibold tracking-tight sm:mt-12 sm:text-6xl">
+            <h3 className="z-10 mt-6 text-3xl font-semibold tracking-tight sm:mt-12 sm:text-4xl">
               Content to elevate your marketing
             </h3>
             <p className="mt-4 max-w-sm opacity-50">
               Refresh your website and branding. We build stunning websites in
               Webflow that showcase your products.
             </p>
-            <div className="mt-6 h-40 w-full sm:mt-12 sm:h-72 ">
+            <div className="mt-6 h-40 w-full sm:mt-12 sm:h-72">
               <div className="relative mt-0 grid grid-cols-1 gap-4 pb-28 text-xs md:grid-cols-2">
                 <div className="absolute bottom-24 right-24 flex gap-1">
                   <NavigationArrow
@@ -217,7 +206,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
                     weight="fill"
                     fill="#fff"
                   />
-                  <div className="z-50 mt-3 rounded-sm bg-white px-1 text-xs font-medium leading-[1.4] text-black">
+                  <div className="z-10 mt-3 rounded-sm bg-white px-1 text-xs font-medium leading-[1.4] text-black">
                     You
                   </div>
                 </div>
@@ -242,7 +231,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
                 </div>
               </div>
             </div>
-            <div className="mt-10 flex w-full items-center justify-between sm:mt-16">
+            <div className="flex w-full items-center justify-between">
               <p className="hidden font-basier text-xs opacity-50 sm:block">
                 BOOK A FREE DEMO{" "}
               </p>

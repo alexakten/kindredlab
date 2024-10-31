@@ -1,5 +1,6 @@
 export interface ProjectProps {
   client: string;
+  tagline?: string;
   year: string;
   tags: string[];
   thumbnail: string;
@@ -11,6 +12,7 @@ export interface ProjectProps {
 export const projectsData: ProjectProps[] = [
   {
     client: "Qura",
+    tagline: "AI-powered legal research",
     year: "2024",
     tags: ["Web Design", "Web Dev", "UX/UI", "Product Design"],
     thumbnail: "/images/qura/qura-1.png",
@@ -24,6 +26,7 @@ export const projectsData: ProjectProps[] = [
   },
   {
     client: "Airbon",
+    tagline: "Air purification for urban spaces",
     year: "2024",
     tags: ["Web Design", "Web Dev", "Branding"],
     thumbnail: "/images/airbon/airbon-1.png",
@@ -37,6 +40,7 @@ export const projectsData: ProjectProps[] = [
   },
   {
     client: "MycoMine",
+    tagline: "Sustainable waste management",
     year: "2024",
     tags: ["Web Design", "Web Dev", "Branding", "Content"],
     thumbnail: "/images/mycomine/mycomine-1.png",
@@ -53,6 +57,7 @@ export const projectsData: ProjectProps[] = [
   },
   {
     client: "Payable",
+    tagline: "Simplified payment solutions",
     year: "2024",
     tags: ["Web Design", "Web Dev", "Branding"],
     thumbnail: "/images/payable/payable-3.png",

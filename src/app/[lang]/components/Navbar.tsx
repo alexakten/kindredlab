@@ -69,17 +69,20 @@ export default function Navbar({ lang, dict }: NavbarProps) {
             animate={{
               opacity: 1,
               y: 0,
-              backdropFilter: showModal ? "blur(24px)" : "blur(24px)",
-              backgroundColor: showModal
-                ? "rgba(0, 0, 0, 0)" // Fully transparent on hover
-                : "rgba(0, 0, 0, 0.85)", // Fully opaque black when visible after scroll
+              backdropFilter: lastScrollTop === 0 ? "blur(0px)" : "blur(24px)",
+              backgroundColor:
+                lastScrollTop === 0
+                  ? "transparent" // No background when at the top
+                  : showModal
+                    ? "transparent" // No background on hover
+                    : "rgba(0, 0, 0, 0.85)", // Fully opaque black when visible after scroll
             }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ ease: "easeInOut", duration: 0.2 }}
             className={`fixed z-50 flex w-full flex-col items-center`}
             id="navbar"
           >
-            <nav className="z-50 flex w-full max-w-8xl items-center justify-between px-4 py-4 text-xs font-medium sm:px-32">
+            <nav className="z-50 flex w-full max-w-8xl items-center justify-between px-4 py-4 text-xs font-medium sm:px-16">
               <Link
                 href={`/${lang}`}
                 className="z-10 flex items-center gap-1.5"

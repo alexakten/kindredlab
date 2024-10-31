@@ -44,10 +44,10 @@ export default async function Home({
       >
         <Navbar lang={lang} dict={dict} />
         {/* Hero */}
-        <section className="mt-[4.5rem] flex h-full w-full max-w-8xl flex-col items-center bg-black px-4 sm:px-16">
-          <div className="relative h-full w-full overflow-hidden rounded-md py-12 sm:py-20">
+        <section className="flex h-screen w-full max-w-8xl flex-col items-center bg-black">
+          <div className="relative h-full w-full overflow-hidden rounded-md py-12 sm:pt-36">
             <Image
-              src="/images/hero-small.webp"
+              src="/images/hero.png"
               alt="Hero image"
               width={1000}
               height={1000}
@@ -151,7 +151,7 @@ export default async function Home({
         </section>
 
         {/* Logos */}
-        <section className="my-24">
+        <section className="my-28">
           <Motion
             initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
@@ -161,19 +161,19 @@ export default async function Home({
             <p className="font-basier text-sm opacity-50">
               TRUSTED BY TEAMS AT
             </p>
-            <div className="mt-5 px-2 sm:px-4">
+            <div className="mt-6 px-2 sm:px-4">
               <Logos />
             </div>
           </Motion>
         </section>
 
         {/* Services */}
-        <section className="flex h-full w-full flex-col items-center rounded-md bg-white py-32 ">
+        <section className="flex h-full w-full flex-col items-center rounded-md bg-white py-28">
           <ServicesSection dict={dict} />
         </section>
 
         {/* Testimonials */}
-        <section className="mt-36 flex w-full flex-col items-center justify-center ">
+        <section className="flex w-full flex-col items-center justify-center overflow-hidden rounded-md">
           <TestimonialSection />
         </section>
 

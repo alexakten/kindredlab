@@ -4,11 +4,12 @@ import Project from "../components/Project";
 
 export default function ProjectsSection() {
   return (
-    <section className="mt-16 flex h-full w-full flex-col items-center rounded-[2rem] bg-gradient-radial-to-top py-32 text-center backdrop-blur-sm">
-      <h2 className="mb-16 overflow-visible bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl font-[450] leading-[1.2] tracking-tight text-transparent sm:text-[3rem]">
+    <section className="flex h-full w-full flex-col items-start rounded-md bg-white px-4 py-28 text-center text-black backdrop-blur-sm sm:px-16">
+      <p className="font-basier text-sm text-black opacity-50">OUR CASES</p>
+      <h2 className="mb-12 mt-2 overflow-visible bg-gradient-to-t from-black to-black bg-clip-text text-center text-4xl font-semibold leading-[1.2] tracking-tight text-transparent sm:text-4xl">
         Recent work
       </h2>
-      <div className="grid w-full max-w-6xl grid-cols-1 gap-x-8 gap-y-16 px-4 md:grid-cols-2">
+      <div className="grid w-full max-w-8xl grid-cols-1 gap-x-4 gap-y-16  md:grid-cols-2">
         {projectsData.map((project) => (
           <Link
             key={project.client}
@@ -22,6 +23,7 @@ export default function ProjectsSection() {
               year={project.year}
               tags={project.tags}
               thumbnail={project.thumbnail}
+              tagline={project.tagline}
             />
           </Link>
         ))}

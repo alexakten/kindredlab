@@ -1,9 +1,18 @@
 import Testimonial from "../components/Testimonial";
-
+import Image from "next/image";
 export default function TestimonialSection() {
   return (
-    <>
-      <div className="flex w-full max-w-8xl flex-col items-center text-white">
+    <section className="relative py-28">
+      <Image
+        src="/images/hero.png"
+        alt="Hero image"
+        width={1000}
+        height={1000}
+        className="pointer-events-none absolute left-0 top-0 z-0 h-full w-full object-left blur-lg sm:w-full sm:scale-105 sm:object-cover"
+        priority
+        loading="eager"
+      />
+      <div className="relative z-10 flex w-full max-w-8xl flex-col items-center text-white">
         <div className="flex w-full  max-w-8xl flex-col items-start px-4 sm:px-16">
           <p className="font-basier text-sm  opacity-50">OUR CLIENTS</p>
           <h2 className="mb-12 mt-2 text-center text-4xl font-semibold leading-[1.2] tracking-tight sm:text-4xl">
@@ -11,7 +20,7 @@ export default function TestimonialSection() {
           </h2>
         </div>
       </div>
-      <div className="masonry max-w-8xl px-4 sm:px-16">
+      <div className="masonry relative z-10 max-w-8xl px-4 sm:px-16">
         <Testimonial
           text="After the new website launch one of our hard-to-get leads reached out. That says a lot."
           user="Arvid Winterfeld"
@@ -86,6 +95,6 @@ export default function TestimonialSection() {
           imageUrl="/images/profiles/arvid.png"
         />
       </div>
-    </>
+    </section>
   );
 }
