@@ -47,7 +47,7 @@ export default function HeroScroll() {
   };
 
   return (
-    <div className="splide mt-8 w-full cursor-grab text-white sm:mt-16">
+    <div className="splide relative z-10 mt-8 w-full cursor-grab text-white sm:mt-16">
       <div className="splide__track">
         <ul className="splide__list flex gap-1">
           {images.map((image, index) => {
