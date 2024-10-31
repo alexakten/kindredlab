@@ -9,13 +9,15 @@ export default function HeroScroll() {
     // Initialize Splide when the component mounts
     new Splide(".splide", {
       type: "loop",
-      perPage: 4, // Adjust according to the number of items you want visible
+      perPage: 5, // Adjust according to the number of items you want visible
       gap: "0.25rem",
       autoScroll: {
         speed: 0.5, // Customize the scroll speed
       },
       drag: "free", // Enable free drag mode
       arrows: false,
+      pagination: false,
+      updateOnMove: false,
     }).mount({ AutoScroll });
   }, []);
 
@@ -40,7 +42,7 @@ export default function HeroScroll() {
   };
 
   return (
-    <div className="splide mt-8 w-full px-4 text-white sm:mt-16 sm:px-16">
+    <div className="splide mt-8 w-full cursor-grab text-white sm:mt-16">
       <div className="splide__track">
         <ul className="splide__list flex gap-1">
           {images.map((image, index) => {

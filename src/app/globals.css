@@ -3,6 +3,12 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* Hide the span element with the class splide__sr */
+.splide__sr {
+  display: none !important;
+}
+
 @layer utilities {
   .masonry {
     column-gap: 0.25rem;
@@ -70,50 +76,6 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-.marquee {
-  display: flex;
-}
-
-.marquee-list {
-  display: flex;
-}
-
-@keyframes scroll {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.marquee-list {
-  animation: scroll 45s linear infinite;
-}
-
-.marquee-wrapper:hover .marquee-list {
-  animation-play-state: paused;
-}
-
-.reverse {
-  animation-direction: reverse;
-}
-
-/* Hide scrollbar for Webkit browsers (Chrome, Safari) */
-.project-scroll-container::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for Firefox */
-.project-scroll-container {
-  scrollbar-width: none; /* Firefox */
-}
-
-/* Hide scrollbar for IE, Edge */
-.project-scroll-container {
-  -ms-overflow-style: none; /* IE and Edge */
-}
-
 @keyframes rotate-light {
   0%,
   100% {
@@ -165,4 +127,3 @@ body {
   opacity: 1;
   fill: #d946ef;
 }
-

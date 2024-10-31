@@ -117,7 +117,7 @@ export default async function Home({
               initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
               transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
-              className="flex w-full flex-col items-start justify-between px-4 sm:flex-row sm:items-center sm:px-16"
+              className="flex mt-16 w-full flex-col items-start justify-between px-4 sm:flex-row sm:items-center sm:px-16"
             >
               <h2 className="max-w-md text-xl opacity-100">
                 {dict.home.hero.subtext.line1}
