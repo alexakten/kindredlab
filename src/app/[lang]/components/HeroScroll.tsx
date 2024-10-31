@@ -1,138 +1,68 @@
 "use client";
+import { useEffect } from "react";
 import Image from "next/image";
-import { useRef } from "react";
-import { useDraggable } from "react-use-draggable-scroll";
+import Splide from "@splidejs/splide";
+import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 
 export default function HeroScroll() {
-  // const ref =
-  //   useRef<HTMLDivElement>() as React.MutableRefObject<HTMLInputElement>;
-  // const { events } = useDraggable(ref, {});
+  useEffect(() => {
+    // Initialize Splide when the component mounts
+    new Splide(".splide", {
+      type: "loop",
+      perPage: 4, // Adjust according to the number of items you want visible
+      gap: "0.25rem",
+      autoScroll: {
+        speed: 0.5, // Customize the scroll speed
+      },
+      drag: "free", // Enable free drag mode
+      arrows: false,
+    }).mount({ AutoScroll });
+  }, []);
+
+  // Array of image objects with orientation and source
+  const images = [
+    { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-1.webp" },
+    { orientation: "landscape", src: "/images/hero-scroll/hero-scroll-2.webp" },
+    { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-3.webp" },
+    { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-4.webp" },
+    { orientation: "landscape", src: "/images/hero-scroll/hero-scroll-5.webp" },
+    { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-6.webp" },
+    { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-7.webp" },
+  ];
+
+  // Function to determine aspect ratio and min width based on orientation
+  const getAspectAndMinWidth = (orientation: string) => {
+    if (orientation === "landscape") {
+      return { aspect: "aspect-[3/2]", minWidth: "min-w-[24rem]" };
+    } else {
+      return { aspect: "aspect-[2/3]", minWidth: "min-w-[12rem]" };
+    }
+  };
 
   return (
-    <div
-      className="marquee mt-8 w-full overflow-x-hidden px-4 text-white [-ms-overflow-style:'none'] [scrollbar-width:'none'] hover:cursor-grab sm:mt-16 sm:px-16 [&::-webkit-scrollbar]:hidden"
-      // {...events}
-      // ref={ref}
-    >
-      <div className="marquee-list">
-        {[...Array(1)].map((_, index) => (
-          <div key={index} className="flex gap-4">
-            <div className="relative aspect-[2/3] h-72 min-w-[12rem] overflow-hidden rounded-2xl border-2 border-white border-opacity-40 bg-white">
-              <Image
-                src="/images/hero-scroll/hero-5.png"
-                alt="Hero image 5"
-                width={1000}
-                height={1000}
-                className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
-              />
-            </div>
-            <div className="relative aspect-[3/2] h-72 min-w-[24rem] overflow-hidden rounded-2xl border-2 border-white border-opacity-10 bg-white">
-              <Image
-                src="/images/hero-scroll/hero-1.png"
-                alt="Hero image 1"
-                width={1000}
-                height={1000}
-                className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
-              />
-            </div>
-            <div className="relative aspect-[2/3] h-72 min-w-[12rem] overflow-hidden rounded-2xl border-2 border-white border-opacity-40 bg-white">
-              <Image
-                src="/images/hero-scroll/hero-2.png"
-                alt="Hero image 2"
-                width={1000}
-                height={1000}
-                className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
-              />
-            </div>
-            <div className="relative aspect-[3/2] h-72 min-w-[24rem] overflow-hidden rounded-2xl border-2 border-white border-opacity-10 bg-white">
-              <Image
-                src="/images/hero-scroll/hero-3.png"
-                alt="Hero image 3"
-                width={1000}
-                height={1000}
-                className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
-              />
-            </div>
-            <div className="relative aspect-[2/3] h-72 min-w-[12rem] overflow-hidden rounded-2xl border-2 border-white border-opacity-40 bg-white">
-              <Image
-                src="/images/hero-scroll/hero-4.png"
-                alt="Hero image 4"
-                width={1000}
-                height={1000}
-                className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
-              />
-            </div>
-            <div className="relative aspect-[3/2] h-72 min-w-[24rem] overflow-hidden rounded-2xl border-2 border-white border-opacity-10 bg-white">
-              <Image
-                src="/images/hero-scroll/hero-6.png"
-                alt="Hero image 6"
-                width={1000}
-                height={1000}
-                className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
-              />
-            </div>
-          </div>
-        ))}
-      </div>
-      <div className="marquee-list">
-        {[...Array(1)].map((_, index) => (
-          <div key={index} className="flex gap-4">
-            <div className="relative aspect-[2/3] h-72 min-w-[12rem] overflow-hidden rounded-2xl border-2 border-white border-opacity-40 bg-white">
-              <Image
-                src="/images/hero-scroll/hero-5.png"
-                alt="Hero image 5"
-                width={1000}
-                height={1000}
-                className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
-              />
-            </div>
-            <div className="relative aspect-[3/2] h-72 min-w-[24rem] overflow-hidden rounded-2xl border-2 border-white border-opacity-10 bg-white">
-              <Image
-                src="/images/hero-scroll/hero-1.png"
-                alt="Hero image 1"
-                width={1000}
-                height={1000}
-                className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
-              />
-            </div>
-            <div className="relative aspect-[2/3] h-72 min-w-[12rem] overflow-hidden rounded-2xl border-2 border-white border-opacity-40 bg-white">
-              <Image
-                src="/images/hero-scroll/hero-2.png"
-                alt="Hero image 2"
-                width={1000}
-                height={1000}
-                className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
-              />
-            </div>
-            <div className="relative aspect-[3/2] h-72 min-w-[24rem] overflow-hidden rounded-2xl border-2 border-white border-opacity-10 bg-white">
-              <Image
-                src="/images/hero-scroll/hero-3.png"
-                alt="Hero image 3"
-                width={1000}
-                height={1000}
-                className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
-              />
-            </div>
-            <div className="relative aspect-[2/3] h-72 min-w-[12rem] overflow-hidden rounded-2xl border-2 border-white border-opacity-40 bg-white">
-              <Image
-                src="/images/hero-scroll/hero-4.png"
-                alt="Hero image 4"
-                width={1000}
-                height={1000}
-                className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
-              />
-            </div>
-            <div className="relative aspect-[3/2] h-72 min-w-[24rem] overflow-hidden rounded-2xl border-2 border-white border-opacity-10 bg-white">
-              <Image
-                src="/images/hero-scroll/hero-6.png"
-                alt="Hero image 6"
-                width={1000}
-                height={1000}
-                className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
-              />
-            </div>
-          </div>
-        ))}
+    <div className="splide mt-8 w-full px-4 text-white sm:mt-16 sm:px-16">
+      <div className="splide__track">
+        <ul className="splide__list flex gap-1">
+          {images.map((image, index) => {
+            const { aspect, minWidth } = getAspectAndMinWidth(
+              image.orientation,
+            );
+            return (
+              <li
+                key={index}
+                className={`splide__slide relative ${aspect} h-72 ${minWidth} overflow-hidden rounded-2xl border-2 border-white border-opacity-10 bg-white`}
+              >
+                <Image
+                  src={image.src}
+                  alt={`Hero image ${index + 1}`}
+                  width={1000}
+                  height={1000}
+                  className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
+                />
+              </li>
+            );
+          })}
+        </ul>
       </div>
     </div>
   );
