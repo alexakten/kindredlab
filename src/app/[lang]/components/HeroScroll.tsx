@@ -12,7 +12,7 @@ export default function HeroScroll() {
       perPage: 5, // Adjust according to the number of items you want visible
       gap: "0.25rem",
       autoScroll: {
-        speed: 0.5, // Customize the scroll speed
+        speed: 0.4, // Customize the scroll speed
       },
       drag: "free", // Enable free drag mode
       arrows: false,
@@ -26,16 +26,18 @@ export default function HeroScroll() {
     { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-1.webp" },
     { orientation: "landscape", src: "/images/hero-scroll/hero-scroll-2.webp" },
     { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-3.webp" },
-    { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-4.webp" },
+    { orientation: "square", src: "/images/hero-scroll/hero-scroll-4.webp" },
     { orientation: "landscape", src: "/images/hero-scroll/hero-scroll-5.webp" },
     { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-6.webp" },
-    { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-7.webp" },
+    { orientation: "square", src: "/images/hero-scroll/hero-scroll-7.webp" },
   ];
 
   // Function to determine aspect ratio and min width based on orientation
   const getAspectAndMinWidth = (orientation: string) => {
     if (orientation === "landscape") {
       return { aspect: "aspect-[3/2]", minWidth: "min-w-[24rem]" };
+    } else if (orientation === "square") {
+      return { aspect: "aspect-[1/1]", minWidth: "min-w-[18rem]" };
     } else {
       return { aspect: "aspect-[2/3]", minWidth: "min-w-[12rem]" };
     }
@@ -52,7 +54,7 @@ export default function HeroScroll() {
             return (
               <li
                 key={index}
-                className={`splide__slide relative ${aspect} h-72 ${minWidth} overflow-hidden rounded-2xl border-2 border-white border-opacity-10 bg-white`}
+                className={`splide__slide relative ${aspect} h-72 ${minWidth} overflow-hidden rounded-2xl border border-white border-opacity-100`}
               >
                 <Image
                   src={image.src}

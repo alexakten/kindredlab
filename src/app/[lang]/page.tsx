@@ -117,7 +117,7 @@ export default async function Home({
               initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
               transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
-              className="flex mt-16 w-full flex-col items-start justify-between px-4 sm:flex-row sm:items-center sm:px-16"
+              className="mt-16 flex w-full flex-col items-start justify-between px-4 sm:flex-row sm:items-center sm:px-16"
             >
               <h2 className="max-w-md text-xl opacity-100">
                 {dict.home.hero.subtext.line1}
@@ -180,7 +180,7 @@ export default async function Home({
         <ProjectsSection dict={dict} lang={lang} />
 
         {/* Pricing */}
-        <section className="relative flex w-full max-w-8xl flex-col items-start justify-center overflow-hidden px-4 py-28 sm:px-16">
+        {/* <section className="relative flex w-full max-w-8xl flex-col items-start justify-center overflow-hidden px-4 py-28 sm:px-16">
           <Image
             src="/images/hero.png"
             alt="Hero image"
@@ -200,14 +200,21 @@ export default async function Home({
           </div>
 
           <PricingSection />
-        </section>
+        </section> */}
 
         {/* CTA */}
-        <section className="bg-gradient-radial-to-bottom mt-40 flex h-full w-full flex-col items-center rounded-[2rem] px-4 pb-16 pt-32 text-center backdrop-blur-sm">
-          {/* <h2 className="max-w-2xl bg-gradient-to-t from-zinc-300 to-white bg-clip-text text-center text-4xl sm:text-5xl font-[450] leading-9 tracking-tight text-transparent">
-            Ready to get started?
-          </h2> */}
-          <h2 className="mt-4 max-w-3xl bg-gradient-to-t from-zinc-100 to-white bg-clip-text pb-3 text-[clamp(36px,6vw,64px)] font-[450] leading-[1] tracking-tight text-transparent">
+        <section className="relative flex h-full w-full flex-col items-center overflow-hidden rounded-[2rem] px-4 pb-16 pt-32 text-center backdrop-blur-sm">
+          <Image
+            src="/images/hero.png"
+            alt="Hero image"
+            width={1000}
+            height={1000}
+            className="pointer-events-none absolute left-0 top-0 z-0 h-full w-full object-left blur-lg sm:w-full sm:scale-105 sm:object-cover"
+            priority
+            loading="eager"
+          />
+
+          <h2 className="relative z-10 mt-4 max-w-3xl bg-gradient-to-t from-zinc-100 to-white bg-clip-text pb-3 text-[clamp(36px,6vw,64px)] font-[450] leading-[1] tracking-tight text-transparent">
             Ready to{" "}
             <span className="font-freight text-[clamp(40px,6.666vw,71px)] font-medium italic">
               get started?
@@ -217,7 +224,7 @@ export default async function Home({
             Leave your details and we&apos;ll contact you to see if we&apos;re a
             good fit.
           </h2>
-          <div className="mt-8 flex gap-4">
+          <div className="relative z-10 mt-8 flex gap-4">
             <Link
               href="/?BookDemo=true"
               scroll={false}
@@ -237,7 +244,7 @@ export default async function Home({
             </Link>
           </div>
           {/* <div className="mt-24 w-full max-w-6xl border-t border-white border-opacity-40"></div> */}
-          <div className="mt-32 flex w-full max-w-6xl justify-between gap-2 text-sm">
+          <div className="relative z-10 mt-32 flex w-full max-w-6xl justify-between gap-2 text-sm text-white">
             <p className="opacity-50">© 2024 Kindred House</p>
             <div className="flex flex-col items-end gap-2">
               <Link
