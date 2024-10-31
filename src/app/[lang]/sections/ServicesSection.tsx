@@ -31,7 +31,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
       <div className="relative w-full">
         <div className="grid w-full max-w-8xl grid-cols-1 gap-4 overflow-x-auto px-4 text-white sm:px-16 xl:grid-cols-3">
           {/* Websites */}
-          <div className="relative flex w-full flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
+          <div className="relative flex w-full flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 p-6 md:p-8">
             <Image
               src="/images/websites.webp"
               alt="Websites"
@@ -47,7 +47,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
               Refresh your website and branding. We build stunning websites in
               Webflow that showcase your products.
             </p>
-            <div className="mt-6 h-40 w-full sm:mt-12 sm:h-72 ">
+            <div className="mt-6 w-full sm:mt-12 ">
               <div
                 className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-3xl border-2 border-white border-opacity-100 bg-white bg-opacity-10 p-2 text-center"
                 style={{ mixBlendMode: "plus-lighter" }}
@@ -101,13 +101,13 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
                 </div>
               </div>
             </div>
-            <div className="flex w-full items-center justify-between">
+            <div className="flex mt-8 w-full items-center justify-between">
               <p className="hidden font-basier text-xs opacity-50 sm:block">
                 BOOK A FREE DEMO{" "}
               </p>
               <Link
                 href={"/"}
-                className="w-full  rounded-full bg-white px-16 py-3 text-center font-basier text-xs text-black hover:bg-zinc-100 sm:w-auto sm:text-left"
+                className="w-full rounded-full bg-white px-16 py-3 text-center font-basier text-xs text-black hover:bg-zinc-100 sm:w-auto sm:text-left"
                 style={{ mixBlendMode: "plus-lighter" }}
               >
                 LEARN MORE
@@ -116,7 +116,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
           </div>
 
           {/* Design */}
-          <div className="relative flex flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
+          <div className="relative flex flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 p-6 md:p-8">
             <Image
               src="/images/design.webp"
               alt="Websites"
@@ -134,8 +134,8 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
               Refresh your website and branding. We build stunning websites in
               Webflow that showcase your products.
             </p>
-            <div className="mt-6 h-40 w-full sm:mt-12 sm:h-72 ">
-              <div className="relative mt-0 grid grid-cols-1 gap-4 pb-28 text-xs md:grid-cols-2">
+            <div className="mt-6 w-full sm:mt-12">
+              <div className="relative mt-0 grid grid-cols-1 gap-4 pb-28 text-xs sm:grid-cols-2">
                 <div className="absolute bottom-24 right-24 flex gap-1">
                   <NavigationArrow
                     // className="duocolor-purple"
@@ -147,7 +147,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
                   </div>
                 </div>
 
-                <div className="text-b flex flex-col gap-2">
+                <div className="flex flex-col gap-2">
                   <p className="font-medium">To do</p>
                   <div className="max-w-[240px] rotate-0 rounded-md border border-white bg-white bg-opacity-10 px-4 py-2 shadow-sm">
                     Ads for campaign
@@ -155,11 +155,11 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
                   <div className="max-w-[240px] rotate-0 rounded-md border border-white bg-white bg-opacity-10 px-4 py-2 shadow-sm">
                     New UI for search
                   </div>
-                  <div className="absolute bottom-12 left-14 w-full max-w-[220px] rotate-6 rounded-md border border-white bg-white  bg-opacity-10 px-4 py-2 shadow-sm sm:bottom-8 sm:max-w-[240px] md:left-32">
+                  <div className="absolute bottom-12 left-14 w-full max-w-[220px] rotate-6 rounded-md border border-white bg-white  bg-opacity-10 px-4 py-2 shadow-sm sm:bottom-8 sm:max-w-[160px] md:left-32">
                     Design new website
                   </div>
                 </div>
-                <div className="hidden flex-col gap-2 md:flex">
+                <div className="hidden flex-col gap-2 sm:flex">
                   <p className="font-medium">Done</p>
                   <div className="max-w-[240px] rotate-0 rounded-md border border-white bg-white bg-opacity-10 px-4 py-2 shadow-sm">
                     Create new logo
@@ -167,7 +167,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
                 </div>
               </div>
             </div>
-            <div className="flex w-full items-center justify-between">
+            <div className="flex mt-8 w-full items-center justify-between">
               <p className="hidden font-basier text-xs opacity-50 sm:block">
                 BOOK A FREE DEMO{" "}
               </p>
@@ -182,7 +182,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
           </div>
 
           {/* Content */}
-          <div className="relative flex flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 md:p-8">
+          <div className="relative flex flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 p-6 md:p-8">
             <Image
               src="/images/content.webp"
               alt="Websites"
@@ -199,37 +199,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
               Webflow that showcase your products.
             </p>
             <div className="mt-6 h-40 w-full sm:mt-12 sm:h-72">
-              <div className="relative mt-0 grid grid-cols-1 gap-4 pb-28 text-xs md:grid-cols-2">
-                <div className="absolute bottom-24 right-24 flex gap-1">
-                  <NavigationArrow
-                    // className="duocolor-purple"
-                    weight="fill"
-                    fill="#fff"
-                  />
-                  <div className="z-10 mt-3 rounded-sm bg-white px-1 text-xs font-medium leading-[1.4] text-black">
-                    You
-                  </div>
-                </div>
-
-                <div className="text-b flex flex-col gap-2">
-                  <p className="font-medium">To do</p>
-                  <div className="max-w-[240px] rotate-0 rounded-md border border-white bg-white bg-opacity-10 px-4 py-2 shadow-sm">
-                    Ads for campaign
-                  </div>
-                  <div className="max-w-[240px] rotate-0 rounded-md border border-white bg-white bg-opacity-10 px-4 py-2 shadow-sm">
-                    New UI for search
-                  </div>
-                  <div className="absolute bottom-12 left-14 w-full max-w-[220px] rotate-6 rounded-md border border-white bg-white  bg-opacity-10 px-4 py-2 shadow-sm sm:bottom-8 sm:max-w-[240px] md:left-32">
-                    Design new website
-                  </div>
-                </div>
-                <div className="hidden flex-col gap-2 md:flex">
-                  <p className="font-medium">Done</p>
-                  <div className="max-w-[240px] rotate-0 rounded-md border border-white bg-white bg-opacity-10 px-4 py-2 shadow-sm">
-                    Create new logo
-                  </div>
-                </div>
-              </div>
+              
             </div>
             <div className="flex w-full items-center justify-between">
               <p className="hidden font-basier text-xs opacity-50 sm:block">
