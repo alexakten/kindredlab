@@ -3,21 +3,34 @@
 @tailwind components;
 @tailwind utilities;
 
-
 /* Hide the span element with the class splide__sr */
 .splide__sr {
   display: none !important;
 }
 
-
 @layer utilities {
   .masonry {
     column-gap: 0.25rem;
-    column-count: 4;
+    column-count: 1;
   }
-  .break-inside {
-    break-inside: avoid;
+  @screen sm {
+    .masonry {
+      column-count: 2;
+    }
   }
+  @screen md {
+    .masonry {
+      column-count: 3;
+    }
+  }
+  @screen lg {
+    .masonry {
+      column-count: 4;
+    }
+  }
+}
+.break-inside {
+  break-inside: avoid;
 }
 
 * {
