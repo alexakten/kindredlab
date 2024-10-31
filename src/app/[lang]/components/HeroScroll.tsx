@@ -17,6 +17,7 @@ export default function HeroScroll() {
       drag: "free", // Enable free drag mode
       arrows: false,
       pagination: false,
+      snap: true,
       updateOnMove: false,
     }).mount({ AutoScroll });
   }, []);

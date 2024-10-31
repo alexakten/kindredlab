@@ -9,15 +9,6 @@
   display: none !important;
 }
 
-/* Hide the pagination for splide */
-.splide__pagination {
-  visibility: hidden !important;
-}
-
-.splide__list {
-  transform: translate3d(0, 0, 0); /* Enable hardware acceleration */
-}
-
 
 @layer utilities {
   .masonry {
