@@ -18,7 +18,9 @@ export default function HeroScroll() {
       arrows: false,
       pagination: false,
       updateOnMove: false,
-      flickPower: 0.01,
+      flickPower: 0.00,
+      flickMaxPages: 1, // Limit to moving only one page at a time
+
     }).mount({ AutoScroll });
   }, []);
 
