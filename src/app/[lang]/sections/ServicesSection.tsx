@@ -37,19 +37,19 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
 
       <div className="relative mx-auto max-w-full">
         <div
-          className="flex w-full max-w-8xl items-start gap-4 overflow-x-auto bg-red-400 px-4 text-white hover:cursor-grab sm:px-16"
+          className="flex w-full max-w-8xl items-start gap-4 overflow-x-auto px-4 text-white hover:cursor-grab sm:px-16"
           {...events}
           ref={ref}
         >
           {/* Websites */}
-          <div className="relative flex min-w-[20rem] max-w-[20rem] flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 px-4 py-6 sm:min-w-[36rem] md:p-8">
-            <Image
+          <div className="relative flex min-w-[20rem] max-w-[20rem] flex-col overflow-hidden border border-black border-opacity-40 bg-white px-4 py-6 text-black sm:min-w-[36rem] md:p-8">
+            {/* <Image
               src="/images/websites.webp"
               alt="Websites"
               width={100}
               height={100}
               className="pointer-events-none absolute left-0 top-0 z-0 h-full w-full scale-150 object-cover blur-lg sm:scale-125"
-            />
+            /> */}
             <p className="font-basier text-xs opacity-50">WEB DEVELOPMENT</p>
             <h3 className="z-10 mt-6 text-3xl font-semibold tracking-tight sm:mt-12 sm:text-6xl">
               Stunning websites built in Webflow
@@ -60,25 +60,25 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
             </p>
             <div className="mt-6 h-40 w-full sm:mt-12 sm:h-72 ">
               <div
-                className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-3xl border-2 border-white border-opacity-100 bg-white bg-opacity-10 p-2 text-center"
-                style={{ mixBlendMode: "plus-lighter" }}
+                className="relative flex aspect-[16/9] w-full -rotate-0 flex-col items-center justify-center rounded-3xl border-2 border-black border-opacity-100 bg-black bg-opacity-10 p-2 text-center"
+                // style={{ mixBlendMode: "plus-lighter" }}
               >
-                <div className="relative flex aspect-[16/9] h-auto w-2/3 flex-col items-center justify-center border border-white">
+                <div className="relative flex aspect-[16/9] h-auto w-2/3 flex-col items-center justify-center border border-black">
                   {/* Navbar */}
                   <div className="absolute top-0 flex w-full justify-between  px-2 py-1">
-                    <div className="h-1 w-4 rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
+                    <div className="h-1 w-4 rounded-sm bg-gradient-to-r from-black/50 to-black"></div>
                     <div className="flex gap-1">
-                      <div className="h-1.5 w-4 rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
-                      <div className="h-1.5 w-4 rounded-sm bg-gradient-to-r from-white to-white"></div>
+                      <div className="h-1.5 w-4 rounded-sm bg-gradient-to-r from-black/50 to-black"></div>
+                      <div className="h-1.5 w-4 rounded-sm bg-gradient-to-r from-black to-black"></div>
                     </div>
                   </div>
-                  <div className="h-3 w-full max-w-[8rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
-                  <div className="mt-1 h-3 w-full max-w-[8rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
-                  <div className="mt-2 h-1 w-full max-w-[6rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
-                  <div className="mt-1 h-1 w-full max-w-[6rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
+                  <div className="h-3 w-full max-w-[8rem] rounded-sm bg-gradient-to-r from-black/50 to-black"></div>
+                  <div className="mt-1 h-3 w-full max-w-[8rem] rounded-sm bg-gradient-to-r from-black to-black"></div>
+                  <div className="mt-2 h-1 w-full max-w-[6rem] rounded-sm bg-gradient-to-r from-black to-black"></div>
+                  <div className="mt-1 h-1 w-full max-w-[6rem] rounded-sm bg-gradient-to-r from-black to-black"></div>
                   <div className="mt-2 flex w-full flex-row items-center justify-center gap-1">
-                    <div className="h-2 w-full max-w-[2rem] rounded-sm bg-gradient-to-r from-white/50 to-white"></div>
-                    <div className=" h-2 w-full max-w-[2rem] rounded-sm bg-gradient-to-r from-white to-white"></div>
+                    <div className="h-2 w-full max-w-[2rem] rounded-sm bg-gradient-to-r from-black/50 to-black"></div>
+                    <div className=" h-2 w-full max-w-[2rem] rounded-sm bg-gradient-to-r from-black to-black"></div>
                   </div>
                   <div className="absolute left-6 top-2 flex gap-1">
                     <NavigationArrow
@@ -91,12 +91,12 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
                     </div>
                   </div>
                   {/* Boxes in corners */}
-                  <div className="absolute -left-1 -top-1 h-2 w-2 border border-white bg-white"></div>
-                  <div className="absolute -right-1 -top-1 h-2 w-2 border border-white bg-white"></div>
-                  <div className="absolute -bottom-1 -left-1 h-2 w-2 border border-white bg-white"></div>
-                  <div className="absolute -bottom-1 -right-1 h-2 w-2 border border-white bg-white"></div>
+                  <div className="absolute -left-1 -top-1 h-2 w-2 border border-black bg-black"></div>
+                  <div className="absolute -right-1 -top-1 h-2 w-2 border border-black bg-black"></div>
+                  <div className="absolute -bottom-1 -left-1 h-2 w-2 border border-black bg-black"></div>
+                  <div className="absolute -bottom-1 -right-1 h-2 w-2 border border-black bg-black"></div>
                   {/* --- */}
-                  <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 border border-white bg-white px-1">
+                  <div className="absolute -bottom-8 left-1/2 -translate-x-1/2 border border-black bg-white px-1">
                     <p className="text-sm text-black">1440 × 900</p>
                   </div>
                   <div className="absolute -bottom-1 -right-1 flex translate-x-full translate-y-full gap-1">

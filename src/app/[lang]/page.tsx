@@ -45,8 +45,8 @@ export default async function Home({
         <Navbar lang={lang} dict={dict} />
         {/* Hero */}
         <section className="mt-[4.5rem] flex h-full w-full max-w-8xl flex-col items-center bg-black px-4 sm:px-16">
-          <div className="relative h-full w-full overflow-hidden rounded-md py-12 sm:py-20">
-            <Image
+          <div className="relative h-full w-full overflow-hidden border border-white py-12 sm:py-20">
+            {/* <Image
               src="/images/hero-small.webp"
               alt="Hero image"
               width={1000}
@@ -54,7 +54,7 @@ export default async function Home({
               className="pointer-events-none absolute left-0 top-0 h-full w-full object-left blur-lg sm:w-full sm:scale-105 sm:object-cover"
               priority
               loading="eager"
-            />
+            /> */}
             <Motion
               initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
