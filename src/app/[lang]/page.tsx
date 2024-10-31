@@ -44,8 +44,8 @@ export default async function Home({
       >
         <Navbar lang={lang} dict={dict} />
         {/* Hero */}
-        <section className="flex min-h-screen overflow-hidden w-full max-w-8xl flex-col items-center bg-black">
-          <div className="relative h-full w-full overflow-hidden rounded-md py-12 sm:pt-36">
+        <section className="flex min-h-[100svh] w-full max-w-8xl flex-col items-center overflow-hidden bg-black">
+          <div className="relative h-full w-full overflow-hidden rounded-md py-20 sm:pt-36">
             <Image
               src="/images/hero.png"
               alt="Hero image"
