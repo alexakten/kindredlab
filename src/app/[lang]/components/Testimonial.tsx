@@ -12,7 +12,7 @@ export default function Testimonial({
   role: string;
 }) {
   return (
-    <div className="break-inside relative z-10 mx-2 mb-4 flex flex-col justify-between rounded-2xl border border-white border-opacity-20 bg-white bg-opacity-20 p-6 text-white">
+    <div className="break-inside relative z-10 mb-4 flex flex-col justify-between rounded-2xl border border-white border-opacity-20 bg-white bg-opacity-20 p-6 text-white">
       <div className="flex items-center gap-2">
         <div className="relative h-10 w-10 overflow-hidden rounded-full bg-gray-200">
           <Image

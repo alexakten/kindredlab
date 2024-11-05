@@ -10,7 +10,7 @@
 
 @layer utilities {
   .masonry {
-    column-gap: 0.25rem;
+    column-gap: 1rem;
     column-count: 1;
   }
   @screen sm {
