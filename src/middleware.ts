@@ -4,8 +4,8 @@ import { match } from "@formatjs/intl-localematcher";
 import Negotiator from "negotiator";
 
 // Define the locales you support
-const locales = ["en", "sv"];
-const defaultLocale = "sv"; // Default to Swedish
+const locales = ["en", "se"];
+const defaultLocale = "se"; // Default to Swedish
 
 // Function to get the user's preferred locale
 function getLocale(request: NextRequest): string {

@@ -14,15 +14,16 @@
     },
     "hero": {
       "title": {
-        "line1": "Superladda din",
-        "line2": "design & marketing"
+        "line1": "Oändlig ",
+        "highlight": "kreativitet",
+        "line2": "Ett abonnemang."
       },
       "subtext": {
-        "line1": "Vi är en remote design- och contentbyrå",
-        "line2": "för nästa generations företag."
+        "line1": "Iterera snabbt med leverans av design var 48:e timme. ",
+        "line2": "Prenumerera och pausa eller avsluta när som helst."
       },
       "cta1": "SÄG HEJ",
-      "cta2": "BOKA DEMO"
+      "cta2": "SE ABONNEMANG"
     }
   }
 }

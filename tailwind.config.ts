@@ -17,6 +17,7 @@ const config: Config = {
         inter: ["Inter", "sans-serif"],
         freight: ['"freight-text-pro"', "serif"],
         basier: ["Basier", "monospace"],
+        sabon: ["Sabon", "serif"],
       },
       colors: {
         gray: {

@@ -16,7 +16,7 @@ import HeroScroll from "./components/HeroScroll";
 
 import { getDictionary } from "./dictionaries";
 
-type Locale = "en" | "sv";
+type Locale = "en" | "se";
 
 type SearchParamProps = {
   searchParams: Record<string, string> | null | undefined;
@@ -47,15 +47,15 @@ export default async function Home({
         <section className="flex min-h-[100svh] w-full max-w-8xl flex-col items-center overflow-hidden bg-black">
           <div className="relative h-full w-full overflow-hidden rounded-md py-20 pt-28 sm:pt-36">
             <Image
-              src="/images/hero.png"
+              src="/images/hero.webp"
               alt="Hero image"
               width={1000}
               height={1000}
-              className="pointer-events-none absolute left-0 top-0 h-full w-full object-left blur-lg sm:w-full sm:scale-105 sm:object-cover"
+              className="pointer-events-none absolute left-0 top-0 h-full w-full brightness-50 sm:w-full sm:scale-105 sm:object-cover"
               priority
               loading="eager"
             />
-            <Motion
+            {/* <Motion
               initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
               transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
@@ -73,36 +73,82 @@ export default async function Home({
                   </span>
                 </Link>
               </div>
-            </Motion>
+            </Motion> */}
             <Motion
               initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
               transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
-              className="flex w-full flex-col items-start px-4 sm:px-16"
+              className="flex w-full flex-col items-center px-4 sm:px-16"
             >
-              <div className="relative mt-4 border border-white bg-gradient-to-tl from-white to-white bg-clip-text px-2 pb-3 text-[clamp(36px,6vw,72px)] font-medium leading-[1.1] tracking-tight text-transparent sm:leading-[1]">
-                <h1>
-                  {dict.home.hero.title.line1} <br />
-                  <span className="font-freight text-[clamp(40px,6.666vw,80px)] italic">
-                    {dict.home.hero.title.line2}
-                  </span>
-                </h1>
-                <span className="absolute -bottom-1 -right-1 hidden translate-x-full translate-y-full items-start gap-1 sm:flex">
-                  <NavigationArrow weight="fill" fill="#fff" size={16} />
-                  <div className="mt-3 h-4 rounded-sm bg-white px-1 text-xs font-medium leading-[1.4] tracking-tight text-black">
-                    Alex
-                  </div>
-                </span>
-                {/* Boxes */}
-                <span className="absolute -left-1 -top-1 h-2 w-2 border border-white bg-white"></span>
-                <span className="absolute -right-1 -top-1 h-2 w-2 border border-white bg-white"></span>
-                <span className="absolute -bottom-1 -left-1 h-2 w-2 border border-white bg-white"></span>
-                <span className="absolute -bottom-1 -right-1 h-2 w-2 border border-white bg-white"></span>
-                {/* <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 border bg-white px-1">
-                  <p className="text-sm tracking-tight text-black">
+              <div className="relative mt-4 px-2 pb-3 text-[clamp(36px,6vw,72px)] font-medium leading-[1.1] tracking-tight sm:leading-[1]">
+                <h1 className="text-center font-sabon text-[clamp(40px,6.666vw,80px)] text-white">
+                  {dict.home.hero.title.line1}
+                  <span className="relative border border-white pl-1 pr-2">
+                    {dict.home.hero.title.highlight}
+                    <span className="absolute -bottom-1 -right-1 hidden translate-x-full translate-y-full items-start gap-1 sm:flex">
+                      <NavigationArrow weight="fill" fill="#4C00F1" size={16} />
+                      <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-[#4C00F1] px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
+                        Kindred
+                      </div>
+                    </span>
+                    {/* Boxes */}
+                    <span className="absolute -left-1 -top-1 h-2 w-2 border border-white bg-white"></span>
+                    <span className="absolute -right-1 -top-1 h-2 w-2 border border-white bg-white"></span>
+                    <span className="absolute -bottom-1 -left-1 h-2 w-2 border border-white bg-white"></span>
+                    <span className="absolute -bottom-1 -right-1 h-2 w-2 border border-white bg-white"></span>
+                    {/* <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 border bg-white px-1">
+                  <p className="text-xs tracking-tight text-black">
                     1440 × 900
                   </p>
                 </span> */}
+                  </span>
+                  <br />
+                  {dict.home.hero.title.line2}
+                </h1>
+              </div>
+              <Motion
+                initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
+                animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
+                transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
+                className="mt-4"
+              >
+                <h2 className="max-w-lg text-center text-lg opacity-100">
+                  {dict.home.hero.subtext.line1}
+                  <br className="hidden sm:block" />
+                  <span className="opacity-50">
+                    {" "}
+                    {dict.home.hero.subtext.line2}
+                  </span>
+                </h2>
+                <div className="mt-8 flex flex-row-reverse items-center justify-center gap-8 sm:mt-6 sm:flex-row">
+                  {/* <Link
+                    href="mailto:hello@kindredlab.io"
+                    className="font-basier text-sm hover:underline"
+                  >
+                    {dict.home.hero.cta1}
+                  </Link> */}
+                  <Link
+                    href={`/${lang}/?BookDemo=true`}
+                    className="flex items-center justify-center gap-3 rounded-full bg-white px-8 py-3 font-basier text-sm text-black hover:bg-zinc-100"
+                    scroll={false}
+                    replace
+                  >
+                    {dict.home.hero.cta2}
+                    <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
+                      ⌘ K
+                    </span>
+                  </Link>
+                </div>
+              </Motion>
+            </Motion>
+            <Motion
+              initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
+              animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
+              transition={{ ease: "easeInOut", delay: 0.8, duration: 0.5 }}
+              className="flex w-full max-w-8xl flex-col items-center"
+            >
+              <div className="mt-12 px-2 sm:px-4">
+                <Logos />
               </div>
             </Motion>
             <Motion
@@ -113,58 +159,7 @@ export default async function Home({
             >
               <HeroScroll />
             </Motion>
-            <Motion
-              initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
-              animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
-              transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
-              className="mt-16 flex w-full flex-col items-start justify-between px-4 sm:flex-row sm:items-center sm:px-16"
-            >
-              <h2 className="max-w-md text-xl opacity-100">
-                {dict.home.hero.subtext.line1}
-                <br className="hidden sm:block" />
-                <span className="opacity-50">
-                  {" "}
-                  {dict.home.hero.subtext.line2}
-                </span>
-              </h2>
-              <div className="mt-8 flex flex-row-reverse items-center justify-center gap-8 sm:mt-0 sm:flex-row">
-                <Link
-                  href="mailto:hello@kindredlab.io"
-                  className="font-basier text-sm hover:underline"
-                >
-                  {dict.home.hero.cta1}
-                </Link>
-                <Link
-                  href={`/${lang}/?BookDemo=true`}
-                  className="flex items-center justify-center gap-3 rounded-full bg-white px-8 py-3 font-basier text-sm text-black hover:bg-zinc-100"
-                  scroll={false}
-                  replace
-                >
-                  {dict.home.hero.cta2}
-                  <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
-                    ⌘ K
-                  </span>
-                </Link>
-              </div>
-            </Motion>
           </div>
-        </section>
-
-        {/* Logos */}
-        <section className="my-28">
-          <Motion
-            initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
-            animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
-            transition={{ ease: "easeInOut", delay: 0.8, duration: 0.5 }}
-            className="flex w-full max-w-8xl flex-col items-center"
-          >
-            <p className="font-basier text-sm opacity-50">
-              TRUSTED BY TEAMS AT
-            </p>
-            <div className="mt-6 px-2 sm:px-4">
-              <Logos />
-            </div>
-          </Motion>
         </section>
 
         {/* Services */}
@@ -224,23 +219,23 @@ export default async function Home({
             Leave your details and we&apos;ll contact you to see if we&apos;re a
             good fit.
           </h2>
-          <div className="relative z-10 mt-8 flex gap-4">
+          <div className="relative z-10 mt-8 flex flex-row-reverse items-center justify-center gap-8 sm:mt-8 sm:flex-row">
+            {/* <Link
+              href="mailto:hello@kindredlab.io"
+              className="font-basier text-sm hover:underline"
+            >
+              {dict.home.hero.cta1}
+            </Link> */}
             <Link
-              href="/?BookDemo=true"
+              href={`/${lang}/?BookDemo=true`}
+              className="flex items-center justify-center gap-3 rounded-full bg-white px-8 py-3 font-basier text-sm text-black hover:bg-zinc-100"
               scroll={false}
-              className="flex items-center gap-2 rounded-lg bg-zinc-900 px-4 py-2.5 hover:bg-zinc-800"
               replace
             >
-              <p className="text-base font-medium">Book demo</p>
-              <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-700 bg-zinc-800 text-[12px]">
+              {dict.home.hero.cta2}
+              <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
                 ⌘ K
               </span>
-            </Link>
-            <Link
-              href="mailto:hello@kindredlab.io"
-              className="rounded-lg bg-zinc-50 px-4 py-2.5 text-base font-medium text-zinc-950 hover:bg-white"
-            >
-              Say hello
             </Link>
           </div>
           {/* <div className="mt-24 w-full max-w-6xl border-t border-white border-opacity-40"></div> */}

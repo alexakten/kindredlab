@@ -88,37 +88,26 @@ export default function Navbar({ lang, dict }: NavbarProps) {
                 className="z-10 flex items-center gap-1.5"
               >
                 <div className="flex items-center justify-center gap-1">
-                  <p className="relative font-freight text-xl font-semibold leading-[0.95] tracking-[-0.020rem]">
+                  <p className="relative font-sabon text-xl font-semibold leading-[0.95] tracking-[-0.020rem]">
                     kindred
-                    <span className="font-medium italic">house</span>
+                    {/* <span className="font-medium italic">house</span> */}
                   </p>
                 </div>
               </Link>
 
               {/* Menu links with hover effects */}
-              <div className="hidden gap-8 sm:flex">
-                <Link
-                  className="hover:underline"
-                  href={"#"}
-                  onMouseEnter={() => setShowModal(true)}
-                  onMouseLeave={() => setShowModal(false)}
-                >
+              <div
+                className="absolute left-1/2 hidden -translate-x-1/2 gap-8 sm:flex"
+                onMouseEnter={() => setShowModal(true)}
+                onMouseLeave={() => setShowModal(false)}
+              >
+                <Link className="hover:underline" href={"#"}>
                   {dict.nav.menu.item1}
                 </Link>
-                <Link
-                  className="hover:underline"
-                  href={"#"}
-                  onMouseEnter={() => setShowModal(true)}
-                  onMouseLeave={() => setShowModal(false)}
-                >
+                <Link className="hover:underline" href={"#"}>
                   {dict.nav.menu.item2}
                 </Link>
-                <Link
-                  className="hover:underline"
-                  href={"#"}
-                  onMouseEnter={() => setShowModal(true)}
-                  onMouseLeave={() => setShowModal(false)}
-                >
+                <Link className="hover:underline" href={"#"}>
                   {dict.nav.menu.item3}
                 </Link>
               </div>
