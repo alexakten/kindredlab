@@ -23,7 +23,7 @@ export default function HeroScroll() {
 
   // Array of image objects with orientation and source
   const images = [
-    // { orientation: "landscape", src: "/images/hero-scroll/hero-scroll-2.webp" },
+    { orientation: "landscape", src: "/images/hero-scroll/hero-scroll-2.webp" },
     // { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-3.webp" },
     // { orientation: "square", src: "/images/hero-scroll/hero-scroll-4.webp" },
     { orientation: "landscape", src: "/images/hero-scroll/qura-website.png" },
