@@ -12,7 +12,7 @@ export default function HeroScroll() {
       perPage: 5, // Adjust according to the number of items you want visible
       gap: "0.25rem",
       autoScroll: {
-        speed: 0.3, // Customize the scroll speed
+        speed: 1, // Customize the scroll speed
       },
       drag: false,
       arrows: false,
