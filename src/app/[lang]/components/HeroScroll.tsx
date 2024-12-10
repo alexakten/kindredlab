@@ -14,7 +14,7 @@ export default function HeroScroll() {
       autoScroll: {
         speed: 0.4, // Customize the scroll speed
       },
-      drag: "free",
+      drag: false,
       arrows: false,
       pagination: false,
       updateOnMove: false,
