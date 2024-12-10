@@ -10,6 +10,7 @@ export default function HeroScroll() {
     new Splide(".splide", {
       type: "loop",
       perPage: 10,
+      autoWidth: true,
       gap: "0.25rem",
       autoScroll: {
         speed: 1, // Customize the scroll speed
