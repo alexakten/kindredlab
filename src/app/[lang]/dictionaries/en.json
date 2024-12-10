@@ -15,7 +15,7 @@
     },
     "hero": {
       "title": {
-        "line1": "Unlimited",
+        "line1": "Unlimited ",
         "highlight": "design",
         "line2": "One subscription."
       },
@@ -25,6 +25,19 @@
       },
       "cta1": "SAY HELLO",
       "cta2": "BOOK DEMO"
+    },
+    "services": {
+      "tag": "OUR SERVICES",
+      "title": "Apps, brands, websites and more...",
+      "list": [
+        "APP DESIGN",
+        "UX/UI",
+        "BRANDING",
+        "ADVERTISEMENTS",
+        "WEBSITES",
+        "PITCH DECKS",
+        "SOCIAL MEDIA"
+      ]
     }
   }
 }

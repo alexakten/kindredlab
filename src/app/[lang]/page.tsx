@@ -80,8 +80,8 @@ export default async function Home({
               transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
               className="flex w-full flex-col items-center px-4 sm:px-16"
             >
-              <div className="relative mt-4 px-2 pb-3 text-[clamp(36px,6vw,72px)] font-medium leading-[1.1] tracking-tight sm:leading-[1]">
-                <h1 className="text-center font-sabon text-[clamp(40px,6.666vw,80px)] text-white">
+              <div className="relative mt-4 px-2 pb-3  ">
+                <h1 className="text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:leading-[1]">
                   {dict.home.hero.title.line1}
                   <span className="relative border border-white pl-1 pr-2">
                     {dict.home.hero.title.highlight}
@@ -163,9 +163,31 @@ export default async function Home({
         </section>
 
         {/* Services */}
-        <section className="flex h-full w-full flex-col items-center rounded-md bg-white py-28">
-          <ServicesSection dict={dict} />
+        <section className="flex h-full w-full flex-col items-center rounded-md bg-white px-4 py-8 text-zinc-800 sm:px-16">
+          <div className="flex w-full max-w-8xl flex-col items-center rounded-3xl bg-zinc-100 py-64">
+            <p className="font-basier text-sm opacity-50">
+              {dict.home.services.tag}
+            </p>
+            <h2 className="mt-4 max-w-2xl text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
+              {dict.home.services.title}
+            </h2>
+            <div className="mt-8 flex max-w-2xl flex-wrap items-center justify-center gap-2">
+              {dict.home.services.list.map((service: string, index: number) => (
+                <p
+                  key={index}
+                  className="rounded-full bg-white px-4 py-1 font-basier tracking-normal"
+                >
+                  {service}
+                </p>
+              ))}
+            </div>
+          </div>
         </section>
+
+        {/* Services */}
+        {/* <section className="flex h-full w-full flex-col items-center rounded-md bg-white py-28">
+          <ServicesSection dict={dict} />
+        </section> */}
 
         {/* Testimonials */}
         <section className="flex w-full flex-col items-center justify-center overflow-hidden rounded-md">

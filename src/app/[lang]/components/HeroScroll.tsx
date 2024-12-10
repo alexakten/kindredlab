@@ -54,7 +54,7 @@ export default function HeroScroll() {
             return (
               <li
                 key={index}
-                className={`splide__slide relative h-80 ${minWidth} overflow-hidden rounded-2xl border border-white border-opacity-100`}
+                className={`splide__slide relative h-80 ${minWidth} overflow-hidden rounded-2xl  border-opacity-100`}
               >
                 <Image
                   src={image.src}

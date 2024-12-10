@@ -24,6 +24,19 @@
       },
       "cta1": "SÄG HEJ",
       "cta2": "SE ABONNEMANG"
+    },
+    "services": {
+      "tag": "VÅRA TJÄNSTER",
+      "title": "Appar, varumärken, hemsidor och mer...",
+      "list": [
+        "APP DESIGN",
+        "UX/UI",
+        "BRANDING",
+        "ANNONSER",
+        "HEMSIDOR",
+        "PRESENTATIONER",
+        "SOCIALA MEDIER"
+      ]
     }
   }
 }

@@ -6,7 +6,7 @@ import CommandK from "@/app/[lang]/components/CommandK";
 import { Motion } from "@/app/[lang]/components/Motion";
 import { getDictionary } from "@/app/[lang]/dictionaries"; // Adjust the path to where your dictionaries are stored
 
-type Locale = "en" | "sv"; // Define Locale types
+type Locale = "en" | "se"; // Define Locale types
 
 type ProjectPageParams = {
   params: {
