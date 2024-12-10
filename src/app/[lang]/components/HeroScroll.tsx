@@ -9,7 +9,7 @@ export default function HeroScroll() {
     // Initialize Splide when the component mounts
     new Splide(".splide", {
       type: "loop",
-      perPage: Math.min(5, images.length),
+      perPage: 10,
       gap: "0.25rem",
       autoScroll: {
         speed: 1, // Customize the scroll speed
