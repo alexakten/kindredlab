@@ -6,23 +6,21 @@ import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 
 export default function HeroScroll() {
   useEffect(() => {
-    // Initialize Splide when the component mounts
     new Splide(".splide", {
-      type: "loop",
-      perPage: 10,
-      autoWidth: true,
-      gap: "0.25rem",
+      type: "loop", // Enable infinite loop
+      autoWidth: true, // Allow dynamic widths for slides
+      gap: "0.5rem", // Gap between slides
       autoScroll: {
-        speed: 1, // Customize the scroll speed
+        speed: 1.5, // Smooth and continuous scrolling
       },
-      drag: false,
+      drag: false, // Disable manual dragging
       arrows: false,
       pagination: false,
-      updateOnMove: true,
+      updateOnMove: false,
+      easing: "linear", // Linear easing for consistent scrolling
     }).mount({ AutoScroll });
   }, []);
 
-  // Array of image objects with orientation and source
   const images = [
     { orientation: "landscape", src: "/images/hero-scroll/hero-scroll-2.webp" },
     { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-3.webp" },
@@ -33,7 +31,6 @@ export default function HeroScroll() {
     { orientation: "square", src: "/images/hero-scroll/hero-scroll-7.webp" },
   ];
 
-  // Function to determine aspect ratio and min width based on orientation
   const getAspectAndMinWidth = (orientation: string) => {
     if (orientation === "landscape") {
       return { minWidth: "min-w-[36rem]" };
@@ -52,21 +49,31 @@ export default function HeroScroll() {
       <div className="splide__track">
         <ul
           className="splide__list flex gap-1"
-          style={{ willChange: "transform", transform: "translate3d(0, 0, 0)" }}
+          style={{
+            willChange: "transform",
+            transform: "translate3d(0, 0, 0)",
+            backfaceVisibility: "hidden",
+          }}
         >
           {images.map((image, index) => {
             const { minWidth } = getAspectAndMinWidth(image.orientation);
             return (
               <li
                 key={index}
-                className={`splide__slide relative h-80 ${minWidth} overflow-hidden rounded-2xl  border-opacity-100`}
+                className={`splide__slide relative h-80 ${minWidth} overflow-hidden rounded-2xl`}
+                style={{ flex: "0 0 auto" }} // Ensure each slide has its own width
               >
                 <Image
                   src={image.src}
                   alt={`Hero image ${index + 1}`}
                   width={1000}
                   height={1000}
-                  style={{ objectFit: "cover", width: "100%", height: "100%" }}
+                  priority={true} // Ensure images are preloaded
+                  style={{
+                    objectFit: "cover",
+                    width: "100%",
+                    height: "100%",
+                  }}
                   className="pointer-events-none absolute left-0 top-0"
                 />
               </li>
