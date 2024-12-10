@@ -9,7 +9,7 @@ export default function HeroScroll() {
     // Initialize Splide when the component mounts
     new Splide(".splide", {
       type: "loop",
-      perPage: 5, // Adjust according to the number of items you want visible
+      perPage: Math.min(5, images.length),
       gap: "0.25rem",
       autoScroll: {
         speed: 1, // Customize the scroll speed
@@ -23,13 +23,13 @@ export default function HeroScroll() {
 
   // Array of image objects with orientation and source
   const images = [
-    // { orientation: "landscape", src: "/images/hero-scroll/hero-scroll-2.webp" },
+    { orientation: "landscape", src: "/images/hero-scroll/hero-scroll-2.webp" },
     { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-3.webp" },
-    // { orientation: "square", src: "/images/hero-scroll/hero-scroll-4.webp" },
+    { orientation: "square", src: "/images/hero-scroll/hero-scroll-4.webp" },
     { orientation: "landscape", src: "/images/hero-scroll/qura-website.png" },
-    // { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-1.webp" },
-    // { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-6.webp" },
-    // { orientation: "square", src: "/images/hero-scroll/hero-scroll-7.webp" },
+    { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-1.webp" },
+    { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-6.webp" },
+    { orientation: "square", src: "/images/hero-scroll/hero-scroll-7.webp" },
   ];
 
   // Function to determine aspect ratio and min width based on orientation
