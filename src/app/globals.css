@@ -149,3 +149,7 @@ body {
   opacity: 1;
   fill: #d946ef;
 }
+
+.splide--track {
+  Direction:rtl;
+}
