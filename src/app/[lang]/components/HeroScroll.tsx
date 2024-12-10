@@ -50,7 +50,7 @@ export default function HeroScroll() {
       <div className="splide__track">
         <ul
           className="splide__list flex gap-1"
-          style={{ willChange: "transform" }}
+          style={{ willChange: "transform", transform: "translate3d(0, 0, 0)" }}
         >
           {images.map((image, index) => {
             const { minWidth } = getAspectAndMinWidth(image.orientation);
@@ -64,7 +64,8 @@ export default function HeroScroll() {
                   alt={`Hero image ${index + 1}`}
                   width={1000}
                   height={1000}
-                  className="pointer-events-none absolute left-0 top-0 h-full w-full object-cover"
+                  style={{ objectFit: "cover", width: "100%", height: "100%" }}
+                  className="pointer-events-none absolute left-0 top-0"
                 />
               </li>
             );
