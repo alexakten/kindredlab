@@ -168,7 +168,7 @@ export default async function Home({
             <p className="font-basier text-sm opacity-50">
               {dict.home.services.tag}
             </p>
-            <h2 className="mt-4 max-w-2xl text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
+            <h2 className="mt-2 max-w-2xl text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
               {dict.home.services.title}
             </h2>
             <div className="mt-8 flex max-w-2xl flex-wrap items-center justify-center gap-2">
@@ -183,11 +183,6 @@ export default async function Home({
             </div>
           </div>
         </section>
-
-        {/* Services */}
-        {/* <section className="flex h-full w-full flex-col items-center rounded-md bg-white py-28">
-          <ServicesSection dict={dict} />
-        </section> */}
 
         {/* Testimonials */}
         <section className="flex w-full flex-col items-center justify-center overflow-hidden rounded-md">

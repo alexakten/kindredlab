@@ -150,6 +150,7 @@ body {
   fill: #d946ef;
 }
 
-.splide--track {
-  Direction:rtl;
-}
+/* .splide__list {
+  transition: transform 0.1s linear;
+  backface-visibility: hidden;
+} */

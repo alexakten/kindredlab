@@ -46,7 +46,10 @@ export default function HeroScroll() {
   };
 
   return (
-    <div className="splide relative z-10 mt-8 w-full text-white sm:mt-6">
+    <div
+      className="splide relative z-10 mt-8 w-full text-white sm:mt-6"
+      style={{ transform: "translate3d(0, 0, 0)" }}
+    >
       <div className="splide__track">
         <ul
           className="splide__list flex gap-1"
