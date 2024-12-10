@@ -150,7 +150,9 @@ body {
   fill: #d946ef;
 }
 
-/* .splide__list {
-  transition: transform 0.1s linear;
+.splide__list,
+.splide__slide {
+  transform: translate3d(0, 0, 0);
   backface-visibility: hidden;
-} */
+  will-change: transform;
+}
