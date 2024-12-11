@@ -11,9 +11,9 @@ export default function HeroScroll() {
       autoWidth: true, // Allow dynamic widths for slides
       gap: "0.5rem", // Gap between slides
       autoScroll: {
-        speed: 0.2, // Smooth and continuous scrolling
+        speed: 0.2, // Smooth and continuous scrolling, 1.5 before was working smooth
       },
-      drag: false, // Disable manual dragging
+      drag: "free", // Disable manual dragging
       arrows: false,
       pagination: false,
       updateOnMove: false,

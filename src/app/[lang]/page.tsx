@@ -129,7 +129,7 @@ export default async function Home({
                   </Link> */}
                   <Link
                     href={`/${lang}/?BookDemo=true`}
-                    className="flex items-center justify-center gap-3 rounded-full bg-white px-8 py-3 font-basier text-sm text-black hover:bg-zinc-100"
+                    className="flex items-center justify-center gap-3 rounded-full bg-black px-8 py-3 font-basier text-sm text-white hover:bg-zinc-800"
                     scroll={false}
                     replace
                   >
