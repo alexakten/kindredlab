@@ -47,11 +47,11 @@ export default async function Home({
         <section className="flex min-h-[100svh] w-full max-w-8xl flex-col items-center overflow-hidden bg-black">
           <div className="relative h-full w-full overflow-hidden rounded-md py-20 pt-28 sm:pt-36">
             <Image
-              src="/images/hero.webp"
+              src="/images/hero-green.png"
               alt="Hero image"
               width={1000}
               height={1000}
-              className="pointer-events-none absolute left-0 top-0 h-full w-full brightness-50 sm:w-full sm:scale-105 sm:object-cover"
+              className="pointer-events-none absolute left-0 top-0 h-full w-full brightness-75 sm:w-full sm:scale-105 blur-xl sm:object-cover"
               priority
               loading="eager"
             />
@@ -129,7 +129,7 @@ export default async function Home({
                   </Link> */}
                   <Link
                     href={`/${lang}/?BookDemo=true`}
-                    className="flex items-center justify-center gap-3 rounded-full bg-zinc-900 px-8 py-3 font-basier text-sm text-white hover:bg-zinc-800"
+                    className="flex items-center justify-center gap-3 rounded-full bg-black px-8 py-3 font-basier text-sm text-white hover:bg-zinc-800"
                     scroll={false}
                     replace
                   >
