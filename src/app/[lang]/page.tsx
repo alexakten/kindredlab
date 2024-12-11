@@ -129,12 +129,12 @@ export default async function Home({
                   </Link> */}
                   <Link
                     href={`/${lang}/?BookDemo=true`}
-                    className="flex items-center justify-center gap-3 rounded-full bg-black px-8 py-3 font-basier text-sm text-white hover:bg-zinc-800"
+                    className="flex items-center justify-center gap-3 rounded-full bg-zinc-900 px-8 py-3 font-basier text-sm text-white hover:bg-zinc-800"
                     scroll={false}
                     replace
                   >
                     {dict.home.hero.cta2}
-                    <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
+                    <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-700 bg-zinc-900 text-[12px]">
                       ⌘ K
                     </span>
                   </Link>
