@@ -18,6 +18,7 @@ const config: Config = {
         freight: ['"freight-text-pro"', "serif"],
         basier: ["Basier", "monospace"],
         sabon: ["Sabon", "serif"],
+        marydale: ["Marydale", "serif"],
       },
       colors: {
         gray: {

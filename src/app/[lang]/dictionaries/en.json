@@ -27,6 +27,8 @@
       "cta2": "BOOK DEMO"
     },
     "services": {
+      "slack": "the designs look fantastic! Send our thanks to the entire team!",
+      "postit": "Todo: New brand + new website",
       "tag": "OUR SERVICES",
       "title": "Apps, brands, websites and more...",
       "list": [

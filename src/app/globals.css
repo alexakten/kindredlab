@@ -63,6 +63,14 @@
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Marydale";
+  src: url("/fonts/Marydale.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 .font-freight {
   font-family: "freight-text-pro", serif;
   font-feature-settings:

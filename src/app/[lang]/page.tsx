@@ -15,6 +15,8 @@ import { NavigationArrow } from "@phosphor-icons/react/dist/ssr";
 import HeroScroll from "./components/HeroScroll";
 
 import { getDictionary } from "./dictionaries";
+import SlackMessage from "./components/SlackMessage";
+import PostIt from "./components/PostIt";
 
 type Locale = "en" | "se";
 
@@ -51,7 +53,7 @@ export default async function Home({
               alt="Hero image"
               width={1000}
               height={1000}
-              className="pointer-events-none absolute left-0 top-0 h-full w-full brightness-75 sm:w-full sm:scale-105 blur-xl sm:object-cover"
+              className="pointer-events-none absolute left-0 top-0 h-full w-full blur-xl brightness-75 sm:w-full sm:scale-105 sm:object-cover"
               priority
               loading="eager"
             />
@@ -164,7 +166,43 @@ export default async function Home({
 
         {/* Services */}
         <section className="flex h-full w-full flex-col items-center rounded-md bg-white px-4 py-8 text-zinc-800 sm:px-16">
-          <div className="flex w-full max-w-8xl flex-col items-center rounded-3xl bg-zinc-100 py-64">
+          <div className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden rounded-3xl bg-zinc-100 py-64">
+            {/* Artwork */}
+            <aside className="absolute -right-8 top-16 rotate-6">
+              <SlackMessage
+                channel="#design-requests"
+                author="Jonathan W."
+                messageParts={[
+                  { text: "", highlight: false },
+                  { text: "@kindred", highlight: true },
+                  {
+                    text: ` ${dict.home.services.slack}`,
+                    highlight: false,
+                  },
+                ]}
+                date="Today at 14:32"
+              />
+            </aside>
+            <aside className="absolute bottom-12 left-8 -rotate-6">
+              <PostIt message={dict.home.services.postit} />
+            </aside>
+            <aside className="aspect-[16/9] absolute -left-8 -top-8 w-96 rotate-6">
+              <div className="relative h-full w-full">
+                <Image
+                  src="/images/qura-hero.png"
+                  alt="Hero image"
+                  width={1000}
+                  height={1000}
+                  className="absolute rounded-xl left-0 top-0 h-full w-full object-cover"
+                />
+                <span className="absolute -right-2 top-24 hidden translate-x-full translate-y-full items-start gap-1 sm:flex">
+                  <NavigationArrow weight="fill" fill="#4C00F1" size={16} />
+                  <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-[#4C00F1] px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
+                    Kindred
+                  </div>
+                </span>
+              </div>
+            </aside>
             <p className="font-basier text-sm opacity-50">
               {dict.home.services.tag}
             </p>
@@ -277,6 +315,14 @@ export default async function Home({
 
         {/* <Footer /> */}
       </Motion>
+      {/* <div
+        className="pointer-events-none fixed inset-x-0 bottom-0 h-24 bg-transparent  backdrop-blur-md"
+        style={{
+          WebkitMaskImage:
+            "linear-gradient(to bottom, transparent 0%, black 60%)",
+          maskImage: "linear-gradient(to bottom, transparent 0%, black 60%)",
+        }}
+      ></div> */}
     </main>
   );
 }
