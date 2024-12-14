@@ -26,8 +26,32 @@
       "cta2": "SE ABONNEMANG"
     },
     "services": {
-      "slack": "nya designen är helt magisk! Tack till hela teamet, ni är grymma!",
-      "postit": "Att göra: Nytt varumärke + ny hemsida",
+      "slack": {
+        "channel": "#design-requests",
+        "author": "Eric Lorentz",
+        "message": "nya designen är helt magisk! Tack till hela teamet, ni är grymma!"
+      },
+      "postit": "VIKTIGT: Köp fredagsfika! Bullar och kaffe!!!",
+      "calendar": {
+        "event1": {
+          "title": "Varumärkesstrategi",
+          "type": "Onlinemöte",
+          "time": "13:00-14:00"
+        },
+        "event2": {
+          "title": "Kindred x Payable Designmöte",
+          "type": "Onlinemöte",
+          "time": "14:00-15:00"
+        }
+      },
+      "kanban": {
+        "group": "Att göra",
+        "items": "2 uppgifter",
+        "task1": "Designa nytt varumärke",
+        "task2": "Bygg ny hemsida",
+        "comments": "1 kommentar",
+        "days": "2 dagar sedan"
+      },
       "tag": "VÅRA TJÄNSTER",
       "title": "Appar, varumärken, hemsidor och mer...",
       "list": [

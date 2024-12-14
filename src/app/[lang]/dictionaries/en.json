@@ -27,8 +27,32 @@
       "cta2": "BOOK DEMO"
     },
     "services": {
-      "slack": "the designs look fantastic! Send our thanks to the entire team!",
+      "slack": {
+        "channel": "#design-requests",
+        "author": "Jonathan W.",
+        "message": "the designs look fantastic! Send our thanks to the entire team!"
+      },
       "postit": "Todo: New brand + new website",
+      "calendar": {
+        "event1": {
+          "title": "Kindred x Payable Design Meeting",
+          "type": "Online Meeting",
+          "time": "13:00-14:00"
+        },
+        "event2": {
+          "title": "Kindred x Payable Design Meeting",
+          "type": "Online Meeting",
+          "time": "13:00-14:00"
+        }
+      },
+      "kanban": {
+        "group": "Tasks",
+        "items": "2 items",
+        "task1": "Design new logo",
+        "task2": "Build new website",
+        "comments": "1 comment",
+        "days": "2 days ago"
+      },
       "tag": "OUR SERVICES",
       "title": "Apps, brands, websites and more...",
       "list": [

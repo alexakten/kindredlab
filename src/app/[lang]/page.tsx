@@ -13,12 +13,14 @@ import DetailsSection from "./sections/DetailsSection";
 import ProjectsSection from "./sections/ProjectsSection";
 import { NavigationArrow } from "@phosphor-icons/react/dist/ssr";
 import HeroScroll from "./components/HeroScroll";
+import { AnimatePresence, motion } from "motion/react";
 
 import { getDictionary } from "./dictionaries";
 import SlackMessage from "./components/SlackMessage";
 import PostIt from "./components/PostIt";
 import Polaroid from "./components/Polaroid";
-
+import Kanban from "./components/Kanban";
+import CalendarEvent from "./components/CalendarEvent";
 type Locale = "en" | "se";
 
 type SearchParamProps = {
@@ -169,53 +171,141 @@ export default async function Home({
         <section className="flex h-full w-full flex-col items-center rounded-md bg-white px-4 py-8 text-zinc-800 sm:px-16">
           <div className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden rounded-3xl bg-zinc-100 py-64">
             {/* Artwork */}
-            <aside className="absolute -right-8 top-16 rotate-6">
-              <SlackMessage
-                channel="#design-requests"
-                author="Jonathan W."
-                messageParts={[
-                  { text: "", highlight: false },
-                  { text: "@kindred", highlight: true },
-                  {
-                    text: ` ${dict.home.services.slack}`,
-                    highlight: false,
-                  },
-                ]}
-                date="Today at 14:32"
-              />
-            </aside>
-            <aside className="absolute bottom-12 left-8 -rotate-6">
-              <PostIt message={dict.home.services.postit} />
-            </aside>
-            <aside className="absolute -left-8 -top-8 aspect-[16/9] w-96 rotate-6">
-              <div className="relative h-full w-full border border-blue-500">
-                <Image
-                  src="/images/qura-hero.png"
-                  alt="Hero image"
-                  width={1000}
-                  height={1000}
-                  className="absolute left-0 top-0 h-full w-full object-cover"
+
+            <AnimatePresence>
+              <Motion
+                className="absolute -right-8 top-16 rotate-6"
+                initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
+                whileInView={{ x: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
+                exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
+                transition={{
+                  type: "spring",
+                  stiffness: 120,
+                  damping: 20,
+                }}
+                viewport={{ once: false, margin: "-100px" }}
+              >
+                <SlackMessage
+                  channel={dict.home.services.slack.channel}
+                  author={dict.home.services.slack.author}
+                  messageParts={[
+                    { text: "", highlight: false },
+                    { text: "@kindred", highlight: true },
+                    {
+                      text: ` ${dict.home.services.slack.message}`,
+                      highlight: false,
+                    },
+                  ]}
+                  date="Today at 14:32"
                 />
-                <span className="absolute -right-2 top-24 hidden translate-x-full translate-y-full items-start gap-1 sm:flex">
-                  <NavigationArrow weight="fill" fill="#f97316" size={16} />
-                  <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-orange-500 px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
-                    Alex
-                  </div>
-                </span>
-                <span className="absolute -left-1 -top-1 h-2 w-2 border border-blue-500 bg-white"></span>
-                <span className="absolute -right-1 -top-1 h-2 w-2 border border-blue-500 bg-white"></span>
-                <span className="absolute -bottom-1 -left-1 h-2 w-2 border border-blue-500 bg-white"></span>
-                <span className="absolute -bottom-1 -right-1 h-2 w-2 border border-blue-500 bg-white"></span>
-                <span className="absolute -bottom-7 left-1/2 -translate-x-1/2 bg-blue-500 px-1">
-                  <p className="text-xs font-medium tracking-tight text-white">
-                    1440 × 900
-                  </p>
-                </span>
-              </div>
-            </aside>
-            <aside className="absolute -right-8 -bottom-4 rotate-6">
-              <Polaroid image="/images/hero-scroll/hero-scroll-1.webp" />
-            </aside>
+              </Motion>
+
+              <Motion
+                className="absolute top-72 left-10 -rotate-6"
+                initial={{ x: -100, opacity: 0, rotate: 0 }} // Start off-screen to the left with no rotation
+                whileInView={{ x: 0, opacity: 1, rotate: -6 }} // Animate to rotated position
+                exit={{ x: -100, opacity: 0, rotate: 0 }} // Slide out with no rotation
+                transition={{
+                  type: "spring",
+                  stiffness: 120,
+                  damping: 20,
+                }}
+                viewport={{ once: false, margin: "-100px" }}
+              >
+                <PostIt message={dict.home.services.postit} />
+              </Motion>
+
+              <Motion
+                className="absolute -left-8 -top-8 aspect-[16/9] w-96 rotate-6"
+                initial={{ y: -100, opacity: 0, rotate: 0 }} // Start off-screen at the top with no rotation
+                whileInView={{ y: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
+                exit={{ y: -100, opacity: 0, rotate: 0 }} // Slide out with no rotation
+                transition={{
+                  type: "spring",
+                  stiffness: 120,
+                  damping: 20,
+                }}
+                viewport={{ once: false, margin: "-100px" }}
+              >
+                <div className="relative h-full w-full border border-blue-500">
+                  <Image
+                    src="/images/qura-hero.png"
+                    alt="Hero image"
+                    width={1000}
+                    height={1000}
+                    className="absolute left-0 top-0 h-full w-full object-cover"
+                  />
+                  <span className="absolute -right-2 top-24 hidden translate-x-full translate-y-full items-start gap-1 sm:flex">
+                    <NavigationArrow weight="fill" fill="#f97316" size={16} />
+                    <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-orange-500 px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
+                      Alex
+                    </div>
+                  </span>
+                </div>
+              </Motion>
+
+              <Motion
+                className="absolute -bottom-4 -right-8 rotate-6"
+                initial={{ y: 100, opacity: 0, rotate: 0 }} // Start off-screen at the bottom with no rotation
+                whileInView={{ y: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
+                exit={{ y: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
+                transition={{
+                  type: "spring",
+                  stiffness: 120,
+                  damping: 20,
+                }}
+                viewport={{ once: false, margin: "-100px" }}
+              >
+                <Polaroid image="/images/hero-scroll/hero-scroll-1.webp" />
+              </Motion>
+
+              <Motion
+                className="absolute -right-12 top-56 -rotate-6"
+                initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
+                whileInView={{ x: 0, opacity: 1, rotate: -6 }} // Animate to rotated position
+                exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
+                transition={{
+                  type: "spring",
+                  stiffness: 120,
+                  damping: 20,
+                }}
+                viewport={{ once: false, margin: "-100px" }}
+              >
+                <Kanban
+                  group={dict.home.services.kanban.group}
+                  items={dict.home.services.kanban.items}
+                  task1={dict.home.services.kanban.task1}
+                  task2={dict.home.services.kanban.task2}
+                  comments={dict.home.services.kanban.comments}
+                  days={dict.home.services.kanban.days}
+                />
+              </Motion>
+
+              <Motion
+                className="absolute bottom-16 left-8 flex rotate-6 flex-col gap-0.5"
+                initial={{ x: -100, opacity: 0, rotate: 0 }} // Start off-screen to the left with no rotation
+                whileInView={{ x: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
+                exit={{ x: -100, opacity: 0, rotate: 0 }} // Slide out with no rotation
+                transition={{
+                  type: "spring",
+                  stiffness: 120,
+                  damping: 20,
+                }}
+                viewport={{ once: false, margin: "-100px" }}
+              >
+                <CalendarEvent
+                  event={dict.home.services.calendar.event1.title}
+                  location={dict.home.services.calendar.event1.type}
+                  time={dict.home.services.calendar.event1.time}
+                />
+                <CalendarEvent
+                  event={dict.home.services.calendar.event2.title}
+                  location={dict.home.services.calendar.event2.type}
+                  time={dict.home.services.calendar.event2.time}
+                />
+              </Motion>
+            </AnimatePresence>
+
             <p className="font-basier text-sm opacity-50">
               {dict.home.services.tag}
             </p>
