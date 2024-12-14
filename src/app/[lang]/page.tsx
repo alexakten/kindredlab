@@ -213,7 +213,7 @@ export default async function Home({
                 </span>
               </div>
             </aside>
-            <aside className="absolute -right-8 -bottom-8 rotate-6">
+            <aside className="absolute -right-8 -bottom-4 rotate-6">
               <Polaroid image="/images/hero-scroll/hero-scroll-1.webp" />
             </aside>
             <p className="font-basier text-sm opacity-50">
