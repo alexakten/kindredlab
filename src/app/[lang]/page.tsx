@@ -17,6 +17,7 @@ import HeroScroll from "./components/HeroScroll";
 import { getDictionary } from "./dictionaries";
 import SlackMessage from "./components/SlackMessage";
 import PostIt from "./components/PostIt";
+import Polaroid from "./components/Polaroid";
 
 type Locale = "en" | "se";
 
@@ -186,22 +187,34 @@ export default async function Home({
             <aside className="absolute bottom-12 left-8 -rotate-6">
               <PostIt message={dict.home.services.postit} />
             </aside>
-            <aside className="aspect-[16/9] absolute -left-8 -top-8 w-96 rotate-6">
-              <div className="relative h-full w-full">
+            <aside className="absolute -left-8 -top-8 aspect-[16/9] w-96 rotate-6">
+              <div className="relative h-full w-full border border-blue-500">
                 <Image
                   src="/images/qura-hero.png"
                   alt="Hero image"
                   width={1000}
                   height={1000}
-                  className="absolute rounded-xl left-0 top-0 h-full w-full object-cover"
+                  className="absolute left-0 top-0 h-full w-full object-cover"
                 />
                 <span className="absolute -right-2 top-24 hidden translate-x-full translate-y-full items-start gap-1 sm:flex">
-                  <NavigationArrow weight="fill" fill="#4C00F1" size={16} />
-                  <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-[#4C00F1] px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
-                    Kindred
+                  <NavigationArrow weight="fill" fill="#f97316" size={16} />
+                  <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-orange-500 px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
+                    Alex
                   </div>
                 </span>
+                <span className="absolute -left-1 -top-1 h-2 w-2 border border-blue-500 bg-white"></span>
+                <span className="absolute -right-1 -top-1 h-2 w-2 border border-blue-500 bg-white"></span>
+                <span className="absolute -bottom-1 -left-1 h-2 w-2 border border-blue-500 bg-white"></span>
+                <span className="absolute -bottom-1 -right-1 h-2 w-2 border border-blue-500 bg-white"></span>
+                <span className="absolute -bottom-7 left-1/2 -translate-x-1/2 bg-blue-500 px-1">
+                  <p className="text-xs font-medium tracking-tight text-white">
+                    1440 × 900
+                  </p>
+                </span>
               </div>
+            </aside>
+            <aside className="absolute -right-8 -bottom-8 rotate-6">
+              <Polaroid image="/images/hero-scroll/hero-scroll-1.webp" />
             </aside>
             <p className="font-basier text-sm opacity-50">
               {dict.home.services.tag}
