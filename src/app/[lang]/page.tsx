@@ -201,7 +201,7 @@ export default async function Home({
               </Motion>
 
               <Motion
-                className="absolute top-72 left-10 -rotate-6"
+                className="absolute left-10 top-72 -rotate-6"
                 initial={{ x: -100, opacity: 0, rotate: 0 }} // Start off-screen to the left with no rotation
                 whileInView={{ x: 0, opacity: 1, rotate: -6 }} // Animate to rotated position
                 exit={{ x: -100, opacity: 0, rotate: 0 }} // Slide out with no rotation
@@ -240,6 +240,15 @@ export default async function Home({
                     <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-orange-500 px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
                       Alex
                     </div>
+                  </span>
+                  <span className="absolute -left-1 -top-1 h-2 w-2 border border-blue-500 bg-white"></span>
+                  <span className="absolute -right-1 -top-1 h-2 w-2 border border-blue-500 bg-white"></span>
+                  <span className="absolute -bottom-1 -left-1 h-2 w-2 border border-blue-500 bg-white"></span>
+                  <span className="absolute -bottom-1 -right-1 h-2 w-2 border border-blue-500 bg-white"></span>
+                  <span className="absolute -bottom-7 left-1/2 -translate-x-1/2 bg-blue-500 px-1">
+                    <p className="text-xs font-medium tracking-tight text-white">
+                      1440 × 900
+                    </p>
                   </span>
                 </div>
               </Motion>
