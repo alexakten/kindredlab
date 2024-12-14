@@ -28,8 +28,8 @@ export default function Kanban({
         <div className="mt-1 w-full rounded-lg border border-sky-700 bg-zinc-800">
           <p className="px-4 py-4 font-medium">{task2}</p>
           <div className="flex items-center gap-2 border-t border-zinc-700 px-4 py-3">
-            <div className="relative h-6 w-6 overflow-hidden rounded-md">
-              <Image src="/images/avatar.png" alt="avatar" fill />
+            <div className="relative h-6 w-6 overflow-hidden rounded-full">
+              <Image src="/images/memoji.png" alt="avatar" fill />
             </div>
             <p className="text-xs font-semibold text-sky-500">{comments}</p>
             <p className="text-xs font-regular text-white opacity-75">{days}</p>
