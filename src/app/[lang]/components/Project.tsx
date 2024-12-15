@@ -32,7 +32,7 @@ export default function Project({
 }: ProjectProps) {
   return (
     <div
-      className={`flex h-[28rem] w-full items-center rounded-2xl bg-white px-4 gap-4 py-4 text-left shadow-sm ${
+      className={`flex h-[28rem] w-full items-center gap-4 rounded-2xl bg-white px-4 py-4 text-left shadow-sm ${
         thumbnailLocation === "left" ? "flex-row" : "flex-row-reverse"
       }`}
     >
@@ -71,7 +71,7 @@ export default function Project({
         </aside>
         <aside className="border-t border-zinc-200">
           <p className="mt-4 text-base italic tracking-tight">
-            "{testimonial}"
+            &quot;{testimonial}&quot;
           </p>
           <div className="mt-4 flex gap-4">
             <div className="relative h-10 w-10 overflow-hidden rounded-md bg-zinc-200">
