@@ -30,6 +30,13 @@ type SearchParamProps = {
   };
 };
 
+// Define the type for the items in the list
+type ListItem = {
+  image: string;
+  title: string;
+  description: string;
+};
+
 export default async function Home({
   searchParams,
   params: { lang },
@@ -168,7 +175,7 @@ export default async function Home({
         </section>
 
         {/* Services */}
-        <section className="flex h-full w-full flex-col items-center rounded-md bg-white px-4 py-8 text-zinc-800 sm:px-16">
+        <section className="flex h-full w-full flex-col items-center rounded-md bg-white px-4 py-8 text-zinc-900 sm:px-16">
           <div className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden rounded-3xl bg-zinc-100 py-64">
             {/* Artwork */}
 
@@ -334,12 +341,162 @@ export default async function Home({
           </div>
         </section>
 
-        {/* Testimonials */}
-        <section className="flex w-full flex-col items-center justify-center overflow-hidden rounded-md">
-          <TestimonialSection />
+        {/* Projects */}
+        <section className="flex h-full w-full flex-col items-center rounded-md bg-zinc-100 px-4 py-40 text-zinc-900 sm:px-16">
+          <p className="font-basier text-sm opacity-50">
+            {dict.home.services.tag}
+          </p>
+          <h2 className="mt-2 max-w-2xl text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
+            {dict.home.projects.title}
+          </h2>
+
+          <div className="mt-24 flex w-full max-w-6xl flex-col gap-4">
+            <AnimatePresence>
+              <Motion
+                initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
+                whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
+                exit={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
+                transition={{ ease: "easeInOut", duration: 0.5 }}
+                viewport={{ once: false, margin: "-100px" }} // Animates both on enter and exit
+              >
+                <Project
+                  thumbnailLocation="left"
+                  thumbnail1="/images/qura/qura-3.png"
+                  thumbnail2="/images/qura/qura-3.png"
+                  thumbnail3="/images/qura/qura-2.png"
+                  company="Qura"
+                  logo="/images/qura/qura-logo.png"
+                  tagline="Hjälper Qura att resa $2.1M genom blixtsnabb designiteration."
+                  tags={["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"]}
+                  testimonial="Med Kindred kan vi testa nya versioner av vår app och få feedback direkt från användare. Varje design som levereras är helt magisk!"
+                  profile="/images/profiles/arvid.png"
+                  name="Arvid Winterfeldt"
+                  role="CEO at Qura"
+                />
+              </Motion>
+
+              <Motion
+                initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
+                whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
+                exit={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
+                transition={{ ease: "easeInOut", duration: 0.5 }}
+                viewport={{ once: false, margin: "-100px" }} // Animates both on enter and exit
+              >
+                <Project
+                  thumbnailLocation="right"
+                  thumbnail1="/images/mycomine/mycomine-1.png"
+                  thumbnail2="/images/mycomine/mycomine-2.png"
+                  thumbnail3="/images/mycomine/mycomine-3.png"
+                  company="MycoMine"
+                  logo="/images/mycomine/mycomine-logo.png"
+                  tagline="MycoMine får ett komplett facelift med en ny hemsida. "
+                  tags={["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"]}
+                  testimonial="Med Kindred kan vi testa nya versioner av vår app och få feedback direkt från användare. Varje design som levereras är helt magisk!"
+                  profile="/images/profiles/magnus.png"
+                  name="Magnus Ivarsson"
+                  role="CEO at MycoMine"
+                />
+              </Motion>
+
+              <Motion
+                initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
+                whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
+                exit={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
+                transition={{ ease: "easeInOut", duration: 0.5 }}
+                viewport={{ once: false, margin: "-100px" }} // Animates both on enter and exit
+              >
+                <Project
+                  thumbnailLocation="left"
+                  thumbnail1="/images/payable/payable-2.png"
+                  thumbnail2="/images/payable/payable-2.png"
+                  thumbnail3="/images/payable/payable-3.png"
+                  company="Payable"
+                  logo="/images/payable/payable-logo.png"
+                  tagline="Lanserar Payable på den Nordiska marknaden."
+                  tags={["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"]}
+                  testimonial="Med Kindred kan vi testa nya versioner av vår app och få feedback direkt från användare. Varje design som levereras är helt magisk!"
+                  profile="/images/profiles/hans.png"
+                  name="Hans Delking"
+                  role="CEO at Payable"
+                />
+              </Motion>
+            </AnimatePresence>
+          </div>
         </section>
 
-        <ProjectsSection dict={dict} lang={lang} />
+        {/* How */}
+        <section className="flex h-full w-full flex-col items-center rounded-md bg-white px-4 py-40 text-zinc-900 sm:px-16">
+          <p className="font-basier text-sm opacity-50">{dict.home.how.tag}</p>
+          <h2 className="mt-2 max-w-5xl text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
+            {dict.home.how.title}
+          </h2>
+
+          <div className="mt-32 flex w-full max-w-8xl flex-col gap-4">
+            <AnimatePresence>
+              <Motion
+                className="grid w-full grid-cols-3 gap-8"
+                initial="hidden"
+                animate="visible"
+                exit="hidden"
+                variants={{
+                  visible: {
+                    opacity: 1,
+                    transition: {
+                      staggerChildren: 0.2, // Add a delay between each child's animation
+                    },
+                  },
+                  hidden: {
+                    opacity: 0,
+                    transition: {
+                      staggerChildren: 0.2,
+                      staggerDirection: -1, // Reverse the stagger when exiting
+                    },
+                  },
+                }}
+              >
+                {dict.home.how.list.map((item: ListItem, index: number) => (
+                  <Motion
+                    key={index}
+                    className="flex w-full flex-col"
+                    initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }} // Initial state
+                    whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }} // Trigger when in view
+                    exit={{ opacity: 0, y: 20, filter: "blur(1rem)" }} // Exit state
+                    transition={{
+                      ease: "easeInOut",
+                      duration: 0.5,
+                      delay: index * 0.2, // Stagger effect per item
+                    }}
+                    viewport={{ once: false, margin: "-100px" }} // Trigger both on scroll in and out
+                  >
+                    {/* Image */}
+                    <aside className="relative h-[32rem] w-full overflow-hidden rounded-xl">
+                      <Image
+                        src={item.image} // Use dynamic image source
+                        alt={item.title} // Use the title as alt text for accessibility
+                        width={1000}
+                        height={1000}
+                        className="absolute left-0 top-0 h-full w-full object-cover"
+                      />
+                      <div className="absolute left-4 top-4 rounded-full bg-white px-8 py-1">
+                        <p className="font-basier text-sm font-medium tracking-tight">
+                          {index + 1}
+                        </p>
+                      </div>
+                    </aside>
+
+                    {/* Title and Description */}
+                    <aside className="mt-8 flex flex-col">
+                      <p className="text-2xl tracking-tight">{item.title}</p>
+                      <p className="mt-2 max-w-sm opacity-50">
+                        {item.description}
+                      </p>
+                    </aside>
+                  </Motion>
+                ))}
+              </Motion>
+            </AnimatePresence>
+          </div>
+        </section>
 
         {/* Pricing */}
         {/* <section className="relative flex w-full max-w-8xl flex-col items-start justify-center overflow-hidden px-4 py-28 sm:px-16">
@@ -365,7 +522,7 @@ export default async function Home({
         </section> */}
 
         {/* CTA */}
-        <section className="relative flex h-full w-full flex-col items-center overflow-hidden rounded-[2rem] px-4 pb-16 pt-32 text-center backdrop-blur-sm">
+        <section className="relative flex h-full w-full flex-col items-center overflow-hidden rounded-[2rem] px-4 pb-16 pt-32 text-center">
           <Image
             src="/images/hero.png"
             alt="Hero image"
@@ -376,15 +533,12 @@ export default async function Home({
             loading="eager"
           />
 
-          <h2 className="relative z-10 mt-4 max-w-3xl bg-gradient-to-t from-zinc-100 to-white bg-clip-text pb-3 text-[clamp(36px,6vw,64px)] font-[450] leading-[1] tracking-tight text-transparent">
-            Ready to{" "}
-            <span className="font-freight text-[clamp(40px,6.666vw,71px)] font-medium italic">
-              get started?
-            </span>
+          <h2 className="text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:leading-[1]">
+            Redo att komma igång?
           </h2>
           <h2 className="mt-3 max-w-sm px-4 text-xl opacity-50">
-            Leave your details and we&apos;ll contact you to see if we&apos;re a
-            good fit.
+            Lämna dina uppgifter och vi hör av oss till dig för att se om vi
+            passar bra.
           </h2>
           <div className="relative z-10 mt-8 flex flex-row-reverse items-center justify-center gap-8 sm:mt-8 sm:flex-row">
             {/* <Link

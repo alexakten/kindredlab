@@ -63,6 +63,30 @@
         "PRESENTATIONER",
         "SOCIALA MEDIER"
       ]
+    },
+    "projects": {
+      "title": "Senaste projekt"
+    },
+    "how": {
+      "tag": "SÅ FUNGERAR DET",
+      "title": "Kindred (abonnemang) är enkelt.",
+      "list": [
+        {
+          "image": "/images/hero-scroll/hero-scroll-1.webp",
+          "title": "Välj ett abonnemang.",
+          "description": "Vi har tre olika abonnemang att välja mellan."
+        },
+        {
+          "image": "/images/hero-scroll/hero-scroll-8.webp",
+          "title": "Lägg in to do's.",
+          "description": "Lägg in to do's och vi hjälper dig att prioritera dem."
+        },
+        {
+          "image": "/images/hero-scroll/hero-scroll-3.webp",
+          "title": "Leverans inom 48 timmar.",
+          "description": "Leverans inom 48 timmar."
+        }
+      ]
     }
   }
 }

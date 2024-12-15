@@ -64,6 +64,30 @@
         "PITCH DECKS",
         "SOCIAL MEDIA"
       ]
+    },
+    "projects": {
+      "title": "Recent projects"
+    },
+    "how": {
+      "tag": "HOW IT WORKS",
+      "title": "We help you create your vision",
+      "list": [
+        {
+          "image": "/images/hero-scroll/hero-scroll-1.webp",
+          "title": "1. Contact us",
+          "description": "Vi har tre olika abonnemang att välja mellan."
+        },
+        {
+          "image": "/images/hero-scroll/hero-scroll-8.webp",
+          "title": "2. We create a plan",
+          "description": "Vi har tre olika abonnemang att välja mellan."
+        },
+        {
+          "image": "/images/hero-scroll/hero-scroll-3.webp",
+          "title":  "3. We build your vision",
+          "description": "Vi har tre olika abonnemang att välja mellan."
+        }
+      ]
     }
   }
 }
