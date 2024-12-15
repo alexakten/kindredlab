@@ -10,7 +10,6 @@ import ServicesSection from "./sections/ServicesSection";
 import PricingSection from "./sections/PricingSection";
 import Project from "./components/Project";
 import DetailsSection from "./sections/DetailsSection";
-import ProjectsSection from "./sections/ProjectsSection";
 import { NavigationArrow } from "@phosphor-icons/react/dist/ssr";
 import HeroScroll from "./components/HeroScroll";
 import { AnimatePresence, motion } from "motion/react";
