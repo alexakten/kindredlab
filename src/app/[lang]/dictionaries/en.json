@@ -20,8 +20,8 @@
         "line2": "One subscription."
       },
       "subtext": {
-        "line1": "We're a fully remote design & content agency",
-        "line2": "for next-gen businesses that iterate fast."
+        "line1": "Iterate fast with delivery every 48 hours.",
+        "line2": "Subscribe and pause or cancel anytime."
       },
       "cta1": "SAY HELLO",
       "cta2": "BOOK DEMO"
@@ -70,29 +70,29 @@
     },
     "how": {
       "tag": "HOW IT WORKS",
-      "title": "We help you create your vision",
+      "title": "Kindred (subscription) is easy.",
       "list": [
         {
           "image": "/images/hero-scroll/hero-scroll-1.webp",
-          "title": "1. Contact us",
-          "description": "Vi har tre olika abonnemang att välja mellan."
+          "title": "Select a plan.",
+          "description": "We have three different plans to choose from."
         },
         {
           "image": "/images/hero-scroll/hero-scroll-8.webp",
-          "title": "2. We create a plan",
-          "description": "Vi har tre olika abonnemang att välja mellan."
+          "title": "Submit your request.",
+          "description": "Submit your request in Slack or email."
         },
         {
           "image": "/images/hero-scroll/hero-scroll-3.webp",
-          "title": "3. We build your vision",
-          "description": "Vi har tre olika abonnemang att välja mellan."
+          "title": "Delivery within 48h.",
+          "description": "We deliver your designs within 48 hours."
         }
       ]
     },
     "faq": {
       "tag": "FAQ",
-      "title": "Frequently asked questions",
-      "postit": "Are you reading this?",
+      "title": "Questions (& answers)",
+      "postit": "Oh hello there, are you reading this?",
       "questions": [
         {
           "question": "What is the price for a design project?",
@@ -119,6 +119,15 @@
           "answer": "No worries! We'll continue to revise the design until you're 100% satisfied."
         }
       ]
+    },
+    "cta": {
+      "tag": "BOOK DEMO",
+      "title": "Ready to get started?",
+      "subtext": {
+        "line1": "Book a call to make your first request.",
+        "line2": "We'll get back to you within 24 hours."
+      },
+      "cta1": "BOOK DEMO"
     }
   }
 }

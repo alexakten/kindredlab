@@ -609,14 +609,14 @@ export default async function Home({
             priority
             loading="eager"
           />
-
-          <h2 className="z-10 text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:leading-[1]">
-            Redo att komma igång?
+          {/* <p className="font-basier text-sm opacity-50">{dict.home.cta.tag}</p> */}
+          <h2 className="z-10  text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:leading-[1]">
+            {dict.home.cta.title}
           </h2>
           <h2 className="z-10 mt-8 max-w-lg text-left text-lg opacity-100 sm:text-center">
-            {dict.home.hero.subtext.line1}
+            {dict.home.cta.subtext.line1}
             <br className="hidden sm:block" />
-            <span className="opacity-50"> {dict.home.hero.subtext.line2}</span>
+            <span className="opacity-50"> {dict.home.cta.subtext.line2}</span>
           </h2>
           <div className="relative z-10 mt-8 flex flex-row-reverse items-center justify-center gap-8 sm:mt-8 sm:flex-row">
             {/* <Link
@@ -631,7 +631,7 @@ export default async function Home({
               scroll={false}
               replace
             >
-              {dict.home.hero.cta2}
+              {dict.home.cta.cta1}
               <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
                 ⌘ K
               </span>
@@ -639,7 +639,7 @@ export default async function Home({
           </div>
           {/* <div className="mt-24 w-full max-w-6xl border-t border-white border-opacity-40"></div> */}
           <div className="relative z-10 mt-32 flex w-full max-w-8xl justify-between gap-2 px-4 text-sm text-white sm:px-16">
-            <p className="opacity-50">© 2024 Kindred House</p>
+            <p className="opacity-50">© 2024 Kindred Laboratory</p>
             <div className="flex flex-col items-end gap-2">
               <Link
                 className="opacity-50 hover:opacity-100"

@@ -110,6 +110,15 @@
           "answer": "Inget problem! Vi kommer att fortsätta att revidera designen tills du är 100% nöjd."
         }
       ]
+    },
+    "cta": {
+      "tag": "BOKA DEMO",
+      "title": "Redo att komma igång?",
+      "subtext": {
+        "line1": "Boka ett möte för att göra din första förfrågan.",
+        "line2": "Vi hör av oss inom 24 timmar."
+      },
+      "cta1": "BOKA MÖTE"
     }
   }
 }
