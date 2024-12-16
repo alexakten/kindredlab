@@ -91,6 +91,7 @@
     "faq": {
       "tag": "FAQ",
       "title": "Vanliga frågor (& svar)",
+      "postit": "Glöm inte bullarna! Det är viktigt!",
       "questions": [
         {
           "question": "Vad är priset för ett designprojekt?",

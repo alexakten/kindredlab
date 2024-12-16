@@ -92,6 +92,7 @@
     "faq": {
       "tag": "FAQ",
       "title": "Frequently asked questions",
+      "postit": "Are you reading this?",
       "questions": [
         {
           "question": "What is the price for a design project?",

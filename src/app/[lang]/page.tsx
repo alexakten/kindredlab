@@ -49,7 +49,7 @@ export default async function Home({
       {bookDemo && <CommandK isVisible={bookDemo} />}
 
       <Motion
-        initial={{ opacity: 0 }}
+        initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
         transition={{ ease: "easeInOut", duration: 0.5 }}
         className="flex w-full flex-col items-center"
@@ -57,7 +57,7 @@ export default async function Home({
         <Navbar lang={lang} dict={dict} />
         {/* Hero */}
         <section className="flex min-h-[100svh] w-full max-w-8xl flex-col items-center overflow-hidden bg-black">
-          <div className="relative h-full w-full overflow-hidden rounded-md py-20 pt-28 sm:pt-36">
+          <div className="rounded-m relative h-full w-full overflow-hidden py-20 pt-28 sm:pt-36">
             <Image
               src="/images/hero-green.png"
               alt="Hero image"
@@ -175,7 +175,7 @@ export default async function Home({
         </section>
 
         {/* Services */}
-        <section className="flex h-full w-full flex-col items-center rounded-md bg-white px-4 py-8 text-zinc-900 sm:px-16">
+        <section className="rounded-m flex h-full w-full flex-col items-center bg-white px-4 py-8 text-zinc-900 sm:px-16">
           <div className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden rounded-3xl bg-zinc-100 py-64">
             {/* Artwork */}
 
@@ -219,7 +219,10 @@ export default async function Home({
                 }}
                 viewport={{ once: false, margin: "-100px" }}
               >
-                <PostIt message={dict.home.services.postit} />
+                <PostIt
+                  color="bg-yellow-300"
+                  message={dict.home.services.postit}
+                />
               </Motion>
 
               <Motion
@@ -342,7 +345,7 @@ export default async function Home({
         </section>
 
         {/* Projects */}
-        <section className="flex h-full w-full flex-col items-center rounded-md bg-zinc-100 px-4 py-40 text-zinc-900 sm:px-16">
+        <section className="rounded-m flex h-full w-full flex-col items-center bg-zinc-100 px-4 py-40 text-zinc-900 sm:px-16">
           <p className="font-basier text-sm opacity-50">
             {dict.home.services.tag}
           </p>
@@ -350,7 +353,7 @@ export default async function Home({
             {dict.home.projects.title}
           </h2>
 
-          <div className="mt-24 flex w-full max-w-6xl flex-col gap-4">
+          <div className="mt-32 flex w-full max-w-6xl flex-col gap-4">
             <AnimatePresence>
               <Motion
                 initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
@@ -425,7 +428,7 @@ export default async function Home({
         </section>
 
         {/* How */}
-        <section className="flex h-full w-full flex-col items-center rounded-md bg-white px-4 py-40 text-zinc-900 sm:px-16">
+        <section className="rounded-m flex h-full w-full flex-col items-center bg-white px-4 py-40 text-zinc-900 sm:px-16">
           <p className="font-basier text-sm opacity-50">{dict.home.how.tag}</p>
           <h2 className="mt-2 max-w-5xl text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
             {dict.home.how.title}
@@ -499,7 +502,7 @@ export default async function Home({
         </section>
 
         {/* FAQ */}
-        <section className="flex h-full w-full flex-col items-center rounded-md bg-white px-4 py-8 text-zinc-900 sm:px-16">
+        <section className="rounded-m flex h-full w-full flex-col items-center bg-white px-4 py-8 text-zinc-900 sm:px-16">
           <div className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden rounded-3xl bg-zinc-100 py-64">
             <p className="font-basier text-sm opacity-50">
               {dict.home.faq.tag}
@@ -507,6 +510,65 @@ export default async function Home({
             <h2 className="mt-2 max-w-3xl text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
               {dict.home.faq.title}
             </h2>
+            <AnimatePresence>
+              {/* <Motion
+                className="absolute left-4 top-4 -rotate-6 sm:left-8 sm:top-16"
+                initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
+                whileInView={{ x: 0, opacity: 1, rotate: -6 }} // Animate to rotated position
+                exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
+                transition={{
+                  type: "spring",
+                  stiffness: 120,
+                  damping: 20,
+                }}
+                viewport={{ once: false, margin: "-100px" }}
+              >
+                <SlackMessage
+                  channel={dict.home.services.slack.channel}
+                  author={dict.home.services.slack.author}
+                  messageParts={[
+                    { text: "", highlight: false },
+                    { text: "@kindred", highlight: true },
+                    {
+                      text: ` ${dict.home.services.slack.message}`,
+                      highlight: false,
+                    },
+                  ]}
+                  date="Today at 14:32"
+                />
+              </Motion> */}
+
+              <Motion
+                className="absolute right-10 top-24  rotate-6"
+                initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
+                whileInView={{ x: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
+                exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out to the right with no rotation
+                transition={{
+                  type: "spring",
+                  stiffness: 120,
+                  damping: 20,
+                }}
+                viewport={{ once: false, margin: "-100px" }}
+              >
+                <PostIt color="bg-blue-200" message={dict.home.faq.postit} />
+              </Motion>
+
+              <Motion
+                className="absolute -bottom-24 left-10 -rotate-6"
+                initial={{ y: 100, opacity: 0, rotate: 0 }} // Start off-screen at the bottom with no rotation
+                whileInView={{ y: 0, opacity: 1, rotate: -6 }} // Animate to rotated position
+                exit={{ y: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
+                transition={{
+                  type: "spring",
+                  stiffness: 120,
+                  damping: 20,
+                }}
+                viewport={{ once: false, margin: "-100px" }}
+              >
+                <Polaroid image="/images/hero-scroll/hero-scroll-4.webp" />
+              </Motion>
+            </AnimatePresence>
+
             <div className="mt-16 w-full max-w-2xl">
               <FAQ questions={dict.home.faq.questions} />
             </div>
@@ -537,7 +599,7 @@ export default async function Home({
         </section> */}
 
         {/* CTA */}
-        <section className="relative flex h-full w-full flex-col items-center overflow-hidden rounded-[2rem] px-4 pb-16 pt-32 text-center">
+        <section className="rounded-m relative flex h-full w-full flex-col items-center overflow-hidden  px-4 pb-16 pt-32 text-center">
           <Image
             src="/images/hero-green.png"
             alt="Hero image"
@@ -598,7 +660,7 @@ export default async function Home({
         {/* <Footer /> */}
       </Motion>
       {/* <div
-        className="pointer-events-none fixed inset-x-0 bottom-0 h-24 bg-transparent  backdrop-blur-md"
+        className="pointer-events-none fixed inset-x-0 bottom-0 h-16 bg-transparent  backdrop-blur-sm"
         style={{
           WebkitMaskImage:
             "linear-gradient(to bottom, transparent 0%, black 60%)",
