@@ -535,7 +535,7 @@ export default async function Home({
           <h2 className="text-center z-10 font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:leading-[1]">
             Redo att komma igång?
           </h2>
-          <h2 className="mt-3 max-w-sm px-4 text-xl opacity-50">
+          <h2 className="mt-6 max-w-sm px-4 text-xl opacity-50">
             Lämna dina uppgifter och vi hör av oss till dig för att se om vi
             passar bra.
           </h2>
