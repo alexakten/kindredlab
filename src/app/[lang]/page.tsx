@@ -20,6 +20,7 @@ import PostIt from "./components/PostIt";
 import Polaroid from "./components/Polaroid";
 import Kanban from "./components/Kanban";
 import CalendarEvent from "./components/CalendarEvent";
+import FAQ from "./components/FAQ";
 type Locale = "en" | "se";
 
 type SearchParamProps = {
@@ -494,6 +495,21 @@ export default async function Home({
                 ))}
               </Motion>
             </AnimatePresence>
+          </div>
+        </section>
+
+        {/* FAQ */}
+        <section className="flex h-full w-full flex-col items-center rounded-md bg-white px-4 py-8 text-zinc-900 sm:px-16">
+          <div className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden rounded-3xl bg-zinc-100 py-64">
+            <p className="font-basier text-sm opacity-50">
+              {dict.home.faq.tag}
+            </p>
+            <h2 className="mt-2 max-w-3xl text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
+              {dict.home.faq.title}
+            </h2>
+            <div className="mt-16 w-full max-w-2xl">
+              <FAQ questions={dict.home.faq.questions} />
+            </div>
           </div>
         </section>
 

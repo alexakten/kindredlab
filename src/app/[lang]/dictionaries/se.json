@@ -87,6 +87,28 @@
           "description": "Leverans inom 48 timmar."
         }
       ]
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Vanliga frågor (& svar)",
+      "questions": [
+        {
+          "question": "Vad är priset för ett designprojekt?",
+          "answer": "Priset för ett designprojekt beror på projektets komplexitet och antalet design vi behöver skapa."
+        },
+        {
+          "question": "Hur snabbt får jag mina design?",
+          "answer": "På genomsnittligt 2 dagar eller mindre. Mer komplexa projekt kan ta längre tid."
+        },
+        {
+          "question": "Hur hanterar ni större projekt?",
+          "answer": "Vi hanterar större projekt genom att dela upp dem i mindre, mer hanterbara delar. Vi hanterar sedan varje del en och en, säkerställande att det slutliga produkten är av högsta kvalitet."
+        },
+        {
+          "question": "Vad händer om jag inte gillar designen?",
+          "answer": "Inget problem! Vi kommer att fortsätta att revidera designen tills du är 100% nöjd."
+        }
+      ]
     }
   }
 }
