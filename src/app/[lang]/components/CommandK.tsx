@@ -1,6 +1,6 @@
 "use client";
 import { useRef, useState } from "react";
-import { useRouter } from "next/navigation"; // For client-side navigation
+import { useRouter, usePathname } from "next/navigation"; // For client-side navigation
 
 type CommandKProps = {
   isVisible: boolean;
@@ -9,6 +9,7 @@ type CommandKProps = {
 export default function CommandK({ isVisible }: CommandKProps) {
   const modalRef = useRef<HTMLDivElement | null>(null);
   const router = useRouter();
+  const pathname = usePathname(); // Get the current path
 
   const [formData, setFormData] = useState({
     name: "",
@@ -23,7 +24,13 @@ export default function CommandK({ isVisible }: CommandKProps) {
   // Handle closing the modal when clicking outside
   const handleClickOutside = (event: React.MouseEvent) => {
     if (modalRef.current && !modalRef.current.contains(event.target as Node)) {
-      router.push("/", { scroll: false }); // Close the modal by removing 'BookDemo=true' from the URL without scrolling
+      // Extract the language part from the path (e.g., /en or /se)
+      const lang = pathname.split("/").filter(Boolean)[0];
+
+      // Preserve the language in the URL
+      const newPath = lang ? `/${lang}` : `/`;
+
+      router.push(newPath, { scroll: false }); // Close the modal without scrolling
     }
   };
 
@@ -154,7 +161,11 @@ export default function CommandK({ isVisible }: CommandKProps) {
           <div className="mt-4 flex w-full items-center justify-end gap-4">
             {message && (
               <p
-                className={`${message.includes("success") ? "text-green-500" : "text-red-500"}`}
+                className={`${
+                  message.includes("success")
+                    ? "text-green-500"
+                    : "text-red-500"
+                }`}
               >
                 {message}
               </p>

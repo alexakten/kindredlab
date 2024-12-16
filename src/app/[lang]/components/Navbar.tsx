@@ -42,7 +42,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
   return (
     <>
       {/* Wrap the modal in AnimatePresence */}
-      <AnimatePresence>
+      {/* <AnimatePresence>
         {showModal && (
           <Motion
             initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
@@ -54,7 +54,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
             <div></div>
           </Motion>
         )}
-      </AnimatePresence>
+      </AnimatePresence> */}
 
       {/* Navbar */}
       <AnimatePresence>
@@ -98,8 +98,8 @@ export default function Navbar({ lang, dict }: NavbarProps) {
               {/* Menu links with hover effects */}
               <div
                 className="absolute left-1/2 hidden -translate-x-1/2 gap-8 sm:flex"
-                onMouseEnter={() => setShowModal(true)}
-                onMouseLeave={() => setShowModal(false)}
+                // onMouseEnter={() => setShowModal(true)}
+                // onMouseLeave={() => setShowModal(false)}
               >
                 <Link className="hover:underline" href={"#"}>
                   {dict.nav.menu.item1}

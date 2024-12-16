@@ -553,7 +553,7 @@ export default async function Home({
                 <PostIt color="bg-blue-200" message={dict.home.faq.postit} />
               </Motion>
 
-              <Motion
+              {/* <Motion
                 className="absolute -bottom-24 left-10 -rotate-6"
                 initial={{ y: 100, opacity: 0, rotate: 0 }} // Start off-screen at the bottom with no rotation
                 whileInView={{ y: 0, opacity: 1, rotate: -6 }} // Animate to rotated position
@@ -566,7 +566,7 @@ export default async function Home({
                 viewport={{ once: false, margin: "-100px" }}
               >
                 <Polaroid image="/images/hero-scroll/hero-scroll-4.webp" />
-              </Motion>
+              </Motion> */}
             </AnimatePresence>
 
             <div className="mt-16 w-full max-w-2xl">
