@@ -32,11 +32,11 @@ export default function Project({
 }: ProjectProps) {
   return (
     <div
-      className={`flex h-[28rem] w-full items-center gap-4 rounded-2xl bg-white px-4 py-4 text-left shadow-sm ${
+      className={`flex w-full flex-col items-center gap-4 rounded-2xl bg-white px-4 py-4 text-left shadow-sm sm:h-[28rem] sm:flex-row ${
         thumbnailLocation === "left" ? "flex-row" : "flex-row-reverse"
       }`}
     >
-      <div className="relative h-full w-1/2 flex-shrink-0 gap-2 overflow-hidden rounded-xl">
+      <div className="relative h-48 w-full flex-shrink-0 gap-2 overflow-hidden rounded-xl sm:h-full sm:w-1/2">
         <Image
           className="object-cover"
           src={thumbnail1}
@@ -57,8 +57,10 @@ export default function Project({
               quality={100} // High image quality
             />
           </div>
-          <p className="mt-6 text-3xl font-medium tracking-tight">{tagline}</p>
-          <div className="mt-6 flex gap-2">
+          <p className="mt-6 text-xl font-medium tracking-tight sm:text-3xl">
+            {tagline}
+          </p>
+          <div className="mt-6 mb-6 sm:mb-0 flex flex-wrap gap-2">
             {tags?.map((tag, index) => (
               <p
                 key={index}

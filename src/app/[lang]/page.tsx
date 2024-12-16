@@ -89,10 +89,10 @@ export default async function Home({
               initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
               transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
-              className="flex w-full flex-col items-center px-4 sm:px-16"
+              className="flex w-full flex-col items-start px-4 sm:items-center sm:px-16"
             >
-              <div className="relative mt-4 px-2 pb-3  ">
-                <h1 className="text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:leading-[1]">
+              <div className="relative mt-4 px-0 pb-3 sm:px-2  ">
+                <h1 className="text-left font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:text-center sm:leading-[1]">
                   {dict.home.hero.title.line1}
                   <span className="relative border border-white pl-1 pr-2">
                     {dict.home.hero.title.highlight}
@@ -123,7 +123,7 @@ export default async function Home({
                 transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
                 className="mt-4"
               >
-                <h2 className="max-w-lg text-center text-lg opacity-100">
+                <h2 className="max-w-lg text-left text-lg opacity-100 sm:text-center">
                   {dict.home.hero.subtext.line1}
                   <br className="hidden sm:block" />
                   <span className="opacity-50">
@@ -433,7 +433,7 @@ export default async function Home({
           <div className="mt-32 flex w-full max-w-8xl flex-col gap-4">
             <AnimatePresence>
               <Motion
-                className="grid w-full grid-cols-3 gap-8"
+                className="grid w-full grid-cols-1 sm:grid-cols-3 gap-8"
                 initial="hidden"
                 animate="visible"
                 exit="hidden"
@@ -523,7 +523,7 @@ export default async function Home({
         {/* CTA */}
         <section className="relative flex h-full w-full flex-col items-center overflow-hidden rounded-[2rem] px-4 pb-16 pt-32 text-center">
           <Image
-            src="/images/hero.png"
+            src="/images/hero-green.png"
             alt="Hero image"
             width={1000}
             height={1000}
@@ -532,7 +532,7 @@ export default async function Home({
             loading="eager"
           />
 
-          <h2 className="text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:leading-[1]">
+          <h2 className="text-center z-10 font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:leading-[1]">
             Redo att komma igång?
           </h2>
           <h2 className="mt-3 max-w-sm px-4 text-xl opacity-50">
