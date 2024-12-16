@@ -180,7 +180,7 @@ export default async function Home({
 
             <AnimatePresence>
               <Motion
-                className="absolute -right-4 top-4 sm:-right-8 sm:top-16 rotate-6"
+                className="absolute -right-4 top-4 rotate-6 sm:-right-8 sm:top-16"
                 initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
                 whileInView={{ x: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
@@ -222,7 +222,7 @@ export default async function Home({
               </Motion>
 
               <Motion
-                className="absolute -left-24 scale-75 -top-8 sm:-left-8 sm:-top-8 aspect-[16/9] w-96 rotate-6"
+                className="absolute -left-24 -top-8 aspect-[16/9] w-96 rotate-6 scale-75 sm:-left-8 sm:-top-8"
                 initial={{ y: -100, opacity: 0, rotate: 0 }} // Start off-screen at the top with no rotation
                 whileInView={{ y: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ y: -100, opacity: 0, rotate: 0 }} // Slide out with no rotation
@@ -433,7 +433,7 @@ export default async function Home({
           <div className="mt-32 flex w-full max-w-8xl flex-col gap-4">
             <AnimatePresence>
               <Motion
-                className="grid w-full grid-cols-1 sm:grid-cols-3 gap-8"
+                className="grid w-full grid-cols-1 gap-8 sm:grid-cols-3"
                 initial="hidden"
                 animate="visible"
                 exit="hidden"
@@ -532,12 +532,13 @@ export default async function Home({
             loading="eager"
           />
 
-          <h2 className="text-center z-10 font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:leading-[1]">
+          <h2 className="z-10 text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:leading-[1]">
             Redo att komma igång?
           </h2>
-          <h2 className="mt-6 max-w-sm px-4 text-xl opacity-50">
-            Lämna dina uppgifter och vi hör av oss till dig för att se om vi
-            passar bra.
+          <h2 className="z-10 mt-8 max-w-lg text-left text-lg opacity-100 sm:text-center">
+            {dict.home.hero.subtext.line1}
+            <br className="hidden sm:block" />
+            <span className="opacity-50"> {dict.home.hero.subtext.line2}</span>
           </h2>
           <div className="relative z-10 mt-8 flex flex-row-reverse items-center justify-center gap-8 sm:mt-8 sm:flex-row">
             {/* <Link
@@ -559,7 +560,7 @@ export default async function Home({
             </Link>
           </div>
           {/* <div className="mt-24 w-full max-w-6xl border-t border-white border-opacity-40"></div> */}
-          <div className="relative z-10 mt-32 flex w-full max-w-6xl justify-between gap-2 text-sm text-white">
+          <div className="relative z-10 mt-32 flex w-full max-w-8xl justify-between gap-2 px-4 text-sm text-white sm:px-16">
             <p className="opacity-50">© 2024 Kindred House</p>
             <div className="flex flex-col items-end gap-2">
               <Link
