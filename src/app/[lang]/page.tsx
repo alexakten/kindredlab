@@ -264,7 +264,7 @@ export default async function Home({
               </Motion>
 
               <Motion
-                className="absolute -bottom-4 -right-8 rotate-6"
+                className="absolute -bottom-28 -right-8 rotate-6"
                 initial={{ y: 100, opacity: 0, rotate: 0 }} // Start off-screen at the bottom with no rotation
                 whileInView={{ y: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ y: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
