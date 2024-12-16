@@ -180,7 +180,7 @@ export default async function Home({
 
             <AnimatePresence>
               <Motion
-                className="absolute -right-8 top-16 rotate-6"
+                className="absolute -right-4 top-4 sm:-right-8 sm:top-16 rotate-6"
                 initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
                 whileInView={{ x: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
@@ -222,7 +222,7 @@ export default async function Home({
               </Motion>
 
               <Motion
-                className="absolute -left-8 -top-8 aspect-[16/9] w-96 rotate-6"
+                className="absolute -left-24 scale-75 -top-8 sm:-left-8 sm:-top-8 aspect-[16/9] w-96 rotate-6"
                 initial={{ y: -100, opacity: 0, rotate: 0 }} // Start off-screen at the top with no rotation
                 whileInView={{ y: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ y: -100, opacity: 0, rotate: 0 }} // Slide out with no rotation
