@@ -15,7 +15,7 @@
     },
     "hero": {
       "title": {
-        "line1": "Unlimited ",
+        "line1": "Unlimited",
         "highlight": "creativity",
         "line2": "One subscription."
       },
@@ -75,7 +75,7 @@
         {
           "image": "/images/hero-scroll/hero-scroll-1.webp",
           "title": "Select a plan.",
-          "description": "We have three different plans to choose from."
+          "description": "Book a call to create a custom plan."
         },
         {
           "image": "/images/hero-scroll/hero-scroll-8.webp",
@@ -83,7 +83,7 @@
           "description": "Submit your request in Slack or email."
         },
         {
-          "image": "/images/hero-scroll/hero-scroll-3.webp",
+          "image": "/images/hero-scroll/package.webp",
           "title": "Delivery within 48h.",
           "description": "We deliver your designs within 48 hours."
         }
@@ -92,7 +92,7 @@
     "faq": {
       "tag": "FAQ",
       "title": "Questions (& answers)",
-      "postit": "You didn't forget the coffee, did you?",
+      "postit": "You didn't forget to buy coffee, did you?",
       "questions": [
         {
           "question": "What is the price for a design project?",

@@ -69,20 +69,20 @@ export default function Navbar({ lang, dict }: NavbarProps) {
             animate={{
               opacity: 1,
               y: 0,
-              backdropFilter: lastScrollTop === 0 ? "blur(0px)" : "blur(24px)",
+              backdropFilter: lastScrollTop === 0 ? "blur(0px)" : "blur(12px)",
               backgroundColor:
                 lastScrollTop === 0
                   ? "transparent" // No background when at the top
                   : showModal
                     ? "transparent" // No background on hover
-                    : "rgba(0, 0, 0, 0.85)", // Fully opaque black when visible after scroll
+                    : "rgba(0, 0, 0, 0.5)", // Fully opaque black when visible after scroll
             }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ ease: "easeInOut", duration: 0.2 }}
             className={`fixed z-50 flex w-full flex-col items-center`}
             id="navbar"
           >
-            <nav className="z-50 flex w-full max-w-8xl items-center justify-between px-4 py-4 text-xs font-medium sm:px-16">
+            <nav className="z-50 flex w-full max-w-8xl items-center justify-between px-4 py-3 text-xs font-medium sm:px-16">
               <Link
                 href={`/${lang}`}
                 className="z-10 flex items-center gap-1.5"
@@ -96,7 +96,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
               </Link>
 
               {/* Menu links with hover effects */}
-              <div
+              {/* <div
                 className="absolute left-1/2 hidden -translate-x-1/2 gap-8 sm:flex"
                 // onMouseEnter={() => setShowModal(true)}
                 // onMouseLeave={() => setShowModal(false)}
@@ -110,17 +110,17 @@ export default function Navbar({ lang, dict }: NavbarProps) {
                 <Link className="hover:underline" href={"#"}>
                   {dict.nav.menu.item3}
                 </Link>
-              </div>
+              </div> */}
 
               <div className="flex gap-4">
                 <Link
                   href={`/${lang}/?BookDemo=true`}
-                  className="flex items-center justify-center gap-3 rounded-full bg-white px-4 py-1.5 font-basier text-xs text-black hover:bg-zinc-200"
+                  className="flex items-center justify-center gap-3 rounded-full bg-black px-4 py-1.5 font-basier text-xs text-white hover:bg-zinc-900"
                   scroll={false}
                   replace
                 >
                   {dict.nav.cta}
-                  <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
+                  <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-700 bg-zinc-900 text-[12px]">
                     ⌘ K
                   </span>
                 </Link>

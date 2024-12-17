@@ -14,7 +14,7 @@
     },
     "hero": {
       "title": {
-        "line1": "Oändlig ",
+        "line1": "Oändlig",
         "highlight": "kreativitet",
         "line2": "Ett abonnemang."
       },
@@ -82,7 +82,7 @@
           "description": "Lägg in to do's och vi hjälper dig att prioritera dem."
         },
         {
-          "image": "/images/hero-scroll/hero-scroll-3.webp",
+          "image": "/images/hero-scroll/package.webp",
           "title": "Leverans inom 48 timmar.",
           "description": "Leverans inom 48 timmar."
         }

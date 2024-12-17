@@ -95,7 +95,7 @@ export default async function Home({
               <div className="relative mt-4 px-0 pb-3 sm:px-2  ">
                 <h1 className="text-left font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:text-center sm:leading-[1]">
                   {dict.home.hero.title.line1}
-                  <span className="relative border border-white pl-1 pr-2">
+                  <span className="relative ml-2 border border-white pl-1 pr-2 sm:ml-2 md:ml-3 lg:ml-4">
                     {dict.home.hero.title.highlight}
                     <span className="absolute -bottom-1 -right-1 hidden translate-x-full translate-y-full items-start gap-1 sm:flex">
                       <NavigationArrow weight="fill" fill="#4C00F1" size={16} />
@@ -141,7 +141,7 @@ export default async function Home({
                   </Link> */}
                   <Link
                     href={`/${lang}/?BookDemo=true`}
-                    className="flex items-center justify-center gap-3 rounded-full bg-black px-8 py-3 font-basier text-sm text-white hover:bg-zinc-800"
+                    className="flex items-center justify-center gap-3 rounded-full bg-black px-8 py-3 font-basier text-sm text-white hover:bg-zinc-900"
                     scroll={false}
                     replace
                   >
