@@ -325,8 +325,11 @@ export default async function Home({
               </Motion>
             </AnimatePresence>
 
-            <p className="font-basier text-sm opacity-50">
-              {dict.home.services.tag}
+            <p className="font-sabon text-base font-bold">
+              kindred
+              <span className="font-basier text-sm font-normal opacity-50">
+                {dict.home.services.tag}
+              </span>
             </p>
             <h2 className="mt-2 max-w-2xl text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
               {dict.home.services.title}
