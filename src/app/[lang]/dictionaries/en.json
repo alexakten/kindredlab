@@ -53,7 +53,7 @@
         "comments": "1 comment",
         "days": "2 days ago"
       },
-      "tag": " SUBSCRIPTION",
+      "tag": "SUBSCRIPTION",
       "title": "Apps, brands, websites and more...",
       "list": [
         "APP DESIGN",
@@ -66,6 +66,7 @@
       ]
     },
     "projects": {
+      "tag": "WORK",
       "title": "Recent projects"
     },
     "how": {

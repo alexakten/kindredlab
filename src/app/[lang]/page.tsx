@@ -181,7 +181,7 @@ export default async function Home({
 
             <AnimatePresence>
               <Motion
-                className="absolute -right-4 top-4 rotate-6 sm:-right-8 sm:top-16"
+                className="absolute z-10 -right-24 md:-right-4 top-6 rotate-6 sm:-right-8 sm:top-16"
                 initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
                 whileInView={{ x: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
@@ -264,7 +264,7 @@ export default async function Home({
               </Motion>
 
               <Motion
-                className="absolute -bottom-28 -right-8 rotate-6"
+                className="absolute z-10 -bottom-40 md:-bottom-28 -right-8 rotate-6"
                 initial={{ y: 100, opacity: 0, rotate: 0 }} // Start off-screen at the bottom with no rotation
                 whileInView={{ y: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ y: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
@@ -275,7 +275,7 @@ export default async function Home({
                 }}
                 viewport={{ once: false, margin: "-100px" }}
               >
-                <Polaroid image="/images/hero-scroll/hero-scroll-1.webp" />
+                <Polaroid image="/images/hero-scroll/hero-scroll-3.webp" />
               </Motion>
 
               <Motion
@@ -301,7 +301,7 @@ export default async function Home({
               </Motion>
 
               <Motion
-                className="absolute bottom-16 left-8 flex rotate-6 flex-col gap-0.5"
+                className="absolute bottom-8 md:bottom-16 left-4 md:left-8 flex rotate-6 flex-col gap-0.5"
                 initial={{ x: -100, opacity: 0, rotate: 0 }} // Start off-screen to the left with no rotation
                 whileInView={{ x: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ x: -100, opacity: 0, rotate: 0 }} // Slide out with no rotation
@@ -325,9 +325,9 @@ export default async function Home({
               </Motion>
             </AnimatePresence>
 
-            <p className="font-sabon text-base font-bold">
+            <p className="font-sabon text-lg font-bold">
               kindred
-              <span className="font-basier text-sm font-normal opacity-50">
+              <span className="ml-1 font-basier text-sm font-normal opacity-50">
                 {dict.home.services.tag}
               </span>
             </p>
@@ -350,7 +350,7 @@ export default async function Home({
         {/* Projects */}
         <section className="rounded-m flex h-full w-full flex-col items-center bg-zinc-100 px-4 py-40 text-zinc-900 sm:px-16">
           <p className="font-basier text-sm opacity-50">
-            {dict.home.services.tag}
+            {dict.home.projects.tag}
           </p>
           <h2 className="mt-2 max-w-2xl text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
             {dict.home.projects.title}

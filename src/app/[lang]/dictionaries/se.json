@@ -52,7 +52,7 @@
         "comments": "1 kommentar",
         "days": "2 dagar sedan"
       },
-      "tag": " ABONNEMANG",
+      "tag": "ABONNEMANG",
       "title": "Appar, varumärken, hemsidor och mer...",
       "list": [
         "APP DESIGN",
@@ -65,6 +65,7 @@
       ]
     },
     "projects": {
+      "tag": "PROJEKT",
       "title": "Senaste projekt"
     },
     "how": {
