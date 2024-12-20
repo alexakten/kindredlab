@@ -616,7 +616,7 @@ export default async function Home({
           <h2 className="z-10  text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:leading-[1]">
             {dict.home.cta.title}
           </h2>
-          <h2 className="z-10 mt-8 max-w-lg text-left text-lg opacity-100 sm:text-center">
+          <h2 className="z-10 mt-8 max-w-lg text-center text-lg opacity-100 sm:text-center">
             {dict.home.cta.subtext.line1}
             <br className="hidden sm:block" />
             <span className="opacity-50"> {dict.home.cta.subtext.line2}</span>
