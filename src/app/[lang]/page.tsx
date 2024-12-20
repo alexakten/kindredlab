@@ -181,7 +181,7 @@ export default async function Home({
 
             <AnimatePresence>
               <Motion
-                className="-right-24 top-6 z-10 hidden rotate-6 sm:-right-8 sm:top-16 md:absolute md:-right-4"
+                className="-right-24 top-6 z-10 hidden md:block rotate-6 sm:-right-8 sm:top-16 md:absolute md:-right-4"
                 initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
                 whileInView={{ x: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
