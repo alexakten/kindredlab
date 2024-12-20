@@ -7,17 +7,17 @@ import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 export default function HeroScroll() {
   useEffect(() => {
     new Splide(".splide", {
-      type: "loop", // Enable infinite loop
-      autoWidth: true, // Allow dynamic widths for slides
-      gap: "0.5rem", // Gap between slides
+      type: "loop",
+      autoWidth: true,
+      gap: "0.5rem",
       autoScroll: {
-        speed: 0.2, // Smooth and continuous scrolling, 1.5 before was working smooth
+        speed: 0.2,
       },
-      drag: "free", // Disable manual dragging
+      drag: "free",
       arrows: false,
       pagination: false,
       updateOnMove: false,
-      easing: "linear", // Linear easing for consistent scrolling
+      easing: "linear",
     }).mount({ AutoScroll });
   }, []);
 
@@ -31,13 +31,16 @@ export default function HeroScroll() {
     { orientation: "square", src: "/images/hero-scroll/hero-scroll-7.webp" },
   ];
 
-  const getAspectAndMinWidth = (orientation: string) => {
-    if (orientation === "landscape") {
-      return { minWidth: "min-w-[36rem]" };
-    } else if (orientation === "square") {
-      return { minWidth: "min-w-[18rem]" };
-    } else {
-      return { minWidth: "min-w-[12rem]" };
+  const getClassesForOrientation = (orientation: string) => {
+    switch (orientation) {
+      case "landscape":
+        // Smaller min-width on mobile, larger on md and above
+        return "aspect-[16/9] min-w-[20rem] md:min-w-[36rem]";
+      case "square":
+        return "aspect-square min-w-[12rem] md:min-w-[18rem]";
+      case "portrait":
+      default:
+        return "aspect-[9/16] min-w-[8rem] md:min-w-[12rem]";
     }
   };
 
@@ -56,25 +59,19 @@ export default function HeroScroll() {
           }}
         >
           {images.map((image, index) => {
-            const { minWidth } = getAspectAndMinWidth(image.orientation);
+            const classes = getClassesForOrientation(image.orientation);
             return (
               <li
                 key={index}
-                className={`splide__slide relative h-80 ${minWidth} overflow-hidden rounded-2xl`}
-                style={{ flex: "0 0 auto" }} // Ensure each slide has its own width
+                className={`splide__slide relative overflow-hidden rounded-2xl ${classes}`}
+                style={{ flex: "0 0 auto" }}
               >
                 <Image
                   src={image.src}
                   alt={`Hero image ${index + 1}`}
-                  width={1000}
-                  height={1000}
-                  priority={true} // Ensure images are preloaded
-                  style={{
-                    objectFit: "cover",
-                    width: "100%",
-                    height: "100%",
-                  }}
-                  className="pointer-events-none absolute left-0 top-0"
+                  fill
+                  priority={true}
+                  className="pointer-events-none object-cover"
                 />
               </li>
             );

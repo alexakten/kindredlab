@@ -505,8 +505,8 @@ export default async function Home({
         </section>
 
         {/* FAQ */}
-        <section className="rounded-m flex h-full w-full flex-col items-center bg-white px-4 py-8 text-zinc-900 sm:px-16">
-          <div className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden rounded-3xl bg-zinc-100 py-64">
+        <section className="rounded-m flex h-full w-full flex-col items-center bg-white md:py-8 text-zinc-900 sm:px-16">
+          <div className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden px-4 md:rounded-3xl bg-zinc-100 py-64 sm:px-16">
             <p className="font-basier text-sm opacity-50">
               {dict.home.faq.tag}
             </p>
@@ -542,7 +542,7 @@ export default async function Home({
               </Motion> */}
 
               <Motion
-                className="absolute right-10 top-24  rotate-6"
+                className="absolute right-10 top-6 md:top-24  rotate-6"
                 initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
                 whileInView={{ x: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out to the right with no rotation

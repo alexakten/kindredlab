@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Logos() {
   return (
-    <div className="flex w-full scale-100 flex-wrap justify-between items-center gap-x-12 gap-y-4 opacity-80 md:scale-100 md:flex-wrap md:items-center md:justify-center">
+    <div className="grid w-full scale-100 grid-cols-3 flex-wrap items-center justify-between gap-x-12 gap-y-8 opacity-80 md:flex md:scale-100 md:flex-wrap md:items-center md:justify-center">
       <svg
         width="100"
         height="32"
@@ -223,6 +223,7 @@ export default function Logos() {
         width="120"
         alt="Ahlvar Gallery logo"
         src="/images/logos/ahlvar.png"
+        className="hidden md:block"
       />
     </div>
   );

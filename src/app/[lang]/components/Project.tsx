@@ -57,10 +57,10 @@ export default function Project({
               quality={100} // High image quality
             />
           </div>
-          <p className="mt-6 text-xl font-medium tracking-tight sm:text-3xl">
+          <p className="mt-6 mb-6 md:mb-0 text-xl font-medium tracking-tight sm:text-3xl">
             {tagline}
           </p>
-          <div className="mt-6 mb-6 sm:mb-0 flex flex-wrap gap-2">
+          <div className="mb-6 hidden mt-6 md:flex flex-wrap gap-2 sm:mb-0">
             {tags?.map((tag, index) => (
               <p
                 key={index}
