@@ -11,7 +11,7 @@ export default function HeroScroll() {
       autoWidth: true,
       gap: "0.5rem",
       autoScroll: {
-        speed: 0.2,
+        speed: 0.5,
       },
       drag: "free",
       arrows: false,
