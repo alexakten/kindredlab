@@ -268,7 +268,7 @@ export default async function Home({
 
               {/* Polaroid */}
               <Motion
-                className="absolute -bottom-40 -right-8 z-10 rotate-6 "
+                className="absolute -bottom-40 -right-8 z-10 hidden rotate-6 lg:block "
                 initial={{ y: 100, opacity: 0, rotate: 0 }} // Start off-screen at the bottom with no rotation
                 whileInView={{ y: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ y: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
@@ -284,7 +284,7 @@ export default async function Home({
 
               {/* Kanban */}
               <Motion
-                className="absolute -right-12 top-56 hidden -rotate-6 lg:block"
+                className="absolute -bottom-12 rotate-6 sm:-right-12 sm:top-56 sm:-rotate-6"
                 initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
                 whileInView={{ x: 0, opacity: 1, rotate: -6 }} // Animate to rotated position
                 exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
