@@ -376,14 +376,14 @@ export default async function Home({
                   thumbnail1="/images/qura/qura-3.png"
                   thumbnail2="/images/qura/qura-3.png"
                   thumbnail3="/images/qura/qura-2.png"
-                  company="Qura"
+                  company={dict.home.projects.projects[0].client}
                   logo="/images/qura/qura-logo.png"
-                  tagline="Hjälper Qura att resa $2.1M genom blixtsnabb designiteration."
-                  tags={["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"]}
-                  testimonial="Med Kindred kan vi testa nya versioner av vår app och få feedback direkt från användare. Varje design som levereras är helt magisk!"
-                  profile="/images/profiles/arvid.png"
-                  name="Arvid Winterfeldt"
-                  role="CEO at Qura"
+                  tagline={dict.home.projects.projects[0].tagline}
+                  tags={dict.home.projects.projects[0].tags}
+                  testimonial={dict.home.projects.projects[0].testimonial}
+                  profile={dict.home.projects.projects[0].profile}
+                  name={dict.home.projects.projects[0].name}
+                  role={dict.home.projects.projects[0].role}
                 />
               </Motion>
 
@@ -399,14 +399,14 @@ export default async function Home({
                   thumbnail1="/images/mycomine/mycomine-1.png"
                   thumbnail2="/images/mycomine/mycomine-2.png"
                   thumbnail3="/images/mycomine/mycomine-3.png"
-                  company="MycoMine"
+                  company={dict.home.projects.projects[1].client}
                   logo="/images/mycomine/mycomine-logo.png"
-                  tagline="MycoMine får ett komplett facelift med en ny hemsida. "
-                  tags={["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"]}
-                  testimonial="Med Kindred kan vi testa nya versioner av vår app och få feedback direkt från användare. Varje design som levereras är helt magisk!"
-                  profile="/images/profiles/magnus.png"
-                  name="Magnus Ivarsson"
-                  role="CEO at MycoMine"
+                  tagline={dict.home.projects.projects[1].tagline}
+                  tags={dict.home.projects.projects[1].tags}
+                  testimonial={dict.home.projects.projects[1].testimonial}
+                  profile={dict.home.projects.projects[1].profile}
+                  name={dict.home.projects.projects[1].name}
+                  role={dict.home.projects.projects[1].role}
                 />
               </Motion>
 
@@ -422,14 +422,14 @@ export default async function Home({
                   thumbnail1="/images/payable/payable-2.png"
                   thumbnail2="/images/payable/payable-2.png"
                   thumbnail3="/images/payable/payable-3.png"
-                  company="Payable"
+                  company={dict.home.projects.projects[2].client}
                   logo="/images/payable/payable-logo.png"
-                  tagline="Lanserar Payable på den Nordiska marknaden."
-                  tags={["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"]}
-                  testimonial="Med Kindred kan vi testa nya versioner av vår app och få feedback direkt från användare. Varje design som levereras är helt magisk!"
-                  profile="/images/profiles/hans.png"
-                  name="Hans Delking"
-                  role="CEO at Payable"
+                  tagline={dict.home.projects.projects[2].tagline}
+                  tags={dict.home.projects.projects[2].tags}
+                  testimonial={dict.home.projects.projects[2].testimonial}
+                  profile={dict.home.projects.projects[2].profile}
+                  name={dict.home.projects.projects[2].name}
+                  role={dict.home.projects.projects[2].role}
                 />
               </Motion>
             </AnimatePresence>

@@ -67,7 +67,36 @@
     },
     "projects": {
       "tag": "WORK",
-      "title": "Recent projects"
+      "title": "Recent projects",
+      "projects": [
+        {
+          "client": "Qura",
+          "tagline": "Helping Qura raise $2.1M through lightning-fast design iteration.",
+          "tags": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+          "testimonial": "With Kindred, we can test new versions of our app and get feedback directly from users. Every design delivered is completely magical!",
+          "profile": "/images/profiles/arvid.png",
+          "name": "Arvid Winterfeldt",
+          "role": "CEO at Qura"
+        },
+        {
+          "client": "MycoMine",
+          "tagline": "MycoMine gets a complete facelift with a new website.",
+          "tags": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+          "testimonial": "With Kindred, we can test new versions of our app and get feedback directly from users. Every design delivered is completely magical!",
+          "profile": "/images/profiles/magnus.png",
+          "name": "Magnus Ivarsson",
+          "role": "CEO at MycoMine"
+        },
+        {
+          "client": "Payable",
+          "tagline": "Launching Payable on the Nordic market.",
+          "tags": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+          "testimonial": "With Kindred, we can test new versions of our app and get feedback directly from users. Every design delivered is completely magical!",
+          "profile": "/images/profiles/hans.png",
+          "name": "Hans Delking",
+          "role": "CEO at Payable"
+        }
+      ]
     },
     "how": {
       "tag": "HOW IT WORKS",
