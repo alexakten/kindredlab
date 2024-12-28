@@ -268,7 +268,7 @@ export default async function Home({
 
               {/* Polaroid */}
               <Motion
-                className="absolute -bottom-40 -right-8 z-10 rotate-6 md:-bottom-28"
+                className="absolute -bottom-40 -right-8 z-10 rotate-6 "
                 initial={{ y: 100, opacity: 0, rotate: 0 }} // Start off-screen at the bottom with no rotation
                 whileInView={{ y: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ y: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
