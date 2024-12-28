@@ -648,7 +648,7 @@ export default async function Home({
           </div>
           {/* <div className="mt-24 w-full max-w-6xl border-t border-white border-opacity-40"></div> */}
           <div className="relative z-10 mt-32 flex w-full max-w-8xl justify-between gap-2 px-4 text-sm text-white sm:px-16">
-            <p className="opacity-50">© 2024 Kindred Laboratory</p>
+            <p className="opacity-50">© 2025 Kindred Laboratory</p>
             <div className="flex flex-col items-end gap-2">
               <Link
                 className="opacity-50 hover:opacity-100"
