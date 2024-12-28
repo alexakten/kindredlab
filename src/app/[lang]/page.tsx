@@ -180,8 +180,9 @@ export default async function Home({
             {/* Artwork */}
 
             <AnimatePresence>
+              {/* Slack */}
               <Motion
-                className="-right-24 top-6 z-10 hidden md:block rotate-6 sm:-right-8 sm:top-16 md:absolute md:-right-4"
+                className="-right-24 top-6 z-10 hidden rotate-6 sm:-right-8 sm:top-16 md:absolute md:-right-4 md:block"
                 initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
                 whileInView={{ x: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
@@ -207,6 +208,7 @@ export default async function Home({
                 />
               </Motion>
 
+              {/* Postit */}
               <Motion
                 className="absolute left-10 top-80 hidden -rotate-6 lg:block"
                 initial={{ x: -100, opacity: 0, rotate: 0 }} // Start off-screen to the left with no rotation
@@ -225,6 +227,7 @@ export default async function Home({
                 />
               </Motion>
 
+              {/* Figma Website */}
               <Motion
                 className="absolute -left-24 -top-8 aspect-[16/9] w-96 rotate-6 scale-75 sm:-left-8 sm:-top-8"
                 initial={{ y: -100, opacity: 0, rotate: 0 }} // Start off-screen at the top with no rotation
@@ -245,7 +248,7 @@ export default async function Home({
                     height={1000}
                     className="absolute left-0 top-0 h-full w-full object-cover"
                   />
-                  <span className="absolute -right-2 top-24 translate-x-full translate-y-full items-start gap-1 flex">
+                  <span className="absolute -right-2 top-24 flex translate-x-full translate-y-full items-start gap-1">
                     <NavigationArrow weight="fill" fill="#f97316" size={16} />
                     <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-orange-500 px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
                       Alex
@@ -263,6 +266,7 @@ export default async function Home({
                 </div>
               </Motion>
 
+              {/* Polaroid */}
               <Motion
                 className="absolute -bottom-40 -right-8 z-10 rotate-6 md:-bottom-28"
                 initial={{ y: 100, opacity: 0, rotate: 0 }} // Start off-screen at the bottom with no rotation
@@ -278,6 +282,7 @@ export default async function Home({
                 <Polaroid image="/images/hero-scroll/hero-scroll-3.webp" />
               </Motion>
 
+              {/* Kanban */}
               <Motion
                 className="absolute -right-12 top-56 hidden -rotate-6 lg:block"
                 initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
@@ -300,6 +305,7 @@ export default async function Home({
                 />
               </Motion>
 
+              {/* Calendar */}
               <Motion
                 className="bottom-8 left-4 hidden rotate-6 flex-col gap-0.5 md:absolute md:bottom-16 md:left-8 md:flex"
                 initial={{ x: -100, opacity: 0, rotate: 0 }} // Start off-screen to the left with no rotation
@@ -348,7 +354,7 @@ export default async function Home({
         </section>
 
         {/* Projects */}
-        <section className="rounded-m flex h-full w-full flex-col items-center bg-zinc-100 px-4 py-16 md:py-40 text-zinc-900 sm:px-16">
+        <section className="rounded-m flex h-full w-full flex-col items-center bg-zinc-100 px-4 py-16 text-zinc-900 sm:px-16 md:py-40">
           <p className="font-basier text-sm opacity-50">
             {dict.home.projects.tag}
           </p>
@@ -356,7 +362,7 @@ export default async function Home({
             {dict.home.projects.title}
           </h2>
 
-          <div className="mt-16 md:mt-32 flex w-full max-w-6xl flex-col gap-4">
+          <div className="mt-16 flex w-full max-w-6xl flex-col gap-4 md:mt-32">
             <AnimatePresence>
               <Motion
                 initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
@@ -431,13 +437,13 @@ export default async function Home({
         </section>
 
         {/* How */}
-        <section className="rounded-m flex h-full w-full flex-col items-center bg-white px-4 py-16 md:py-40 text-zinc-900 sm:px-16">
+        <section className="rounded-m flex h-full w-full flex-col items-center bg-white px-4 py-16 text-zinc-900 sm:px-16 md:py-40">
           <p className="font-basier text-sm opacity-50">{dict.home.how.tag}</p>
           <h2 className="mt-2 max-w-5xl text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
             {dict.home.how.title}
           </h2>
 
-          <div className="mt-16 md:mt-32 flex w-full max-w-8xl flex-col gap-4">
+          <div className="mt-16 flex w-full max-w-8xl flex-col gap-4 md:mt-32">
             <AnimatePresence>
               <Motion
                 className="grid w-full grid-cols-1 gap-8 sm:grid-cols-3"
@@ -506,7 +512,7 @@ export default async function Home({
 
         {/* FAQ */}
         <section className="rounded-m flex h-full w-full flex-col items-center bg-white text-zinc-900 sm:px-16 md:py-8">
-          <div className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-zinc-100 px-4 pt-16 pb-64 md:py-64 sm:px-16 md:rounded-3xl">
+          <div className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-zinc-100 px-4 pb-64 pt-16 sm:px-16 md:rounded-3xl md:py-64">
             <p className="font-basier text-sm opacity-50">
               {dict.home.faq.tag}
             </p>
@@ -542,7 +548,7 @@ export default async function Home({
               </Motion> */}
 
               <Motion
-                className="absolute right-10 md:right-24 bottom-6 rotate-6  md:top-24"
+                className="absolute bottom-6 right-10 rotate-6 md:right-24  md:top-24"
                 initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
                 whileInView={{ x: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out to the right with no rotation
