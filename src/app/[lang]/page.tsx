@@ -21,6 +21,7 @@ import Polaroid from "./components/Polaroid";
 import Kanban from "./components/Kanban";
 import CalendarEvent from "./components/CalendarEvent";
 import FAQ from "./components/FAQ";
+import CalEmbed from "./components/CalEmbed";
 type Locale = "en" | "se";
 
 type SearchParamProps = {
@@ -581,18 +582,17 @@ export default async function Home({
           <h2 className="z-10  text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:leading-[1]">
             {dict.home.cta.title}
           </h2>
-          <h2 className="z-10 mt-8 max-w-lg text-center text-lg opacity-100 sm:text-center">
+
+          <div className="z-10 mt-20 w-full">
+            <CalEmbed />
+          </div>
+
+          {/* <h2 className="z-10 mt-8 max-w-lg text-center text-lg opacity-100 sm:text-center">
             {dict.home.cta.subtext.line1}
             <br className="hidden sm:block" />
             <span className="opacity-50"> {dict.home.cta.subtext.line2}</span>
           </h2>
           <div className="relative z-10 mt-8 flex flex-row-reverse items-center justify-center gap-8 sm:mt-8 sm:flex-row">
-            {/* <Link
-              href="mailto:hello@kindredlab.io"
-              className="font-basier text-sm hover:underline"
-            >
-              {dict.home.hero.cta1}
-            </Link> */}
             <Link
               href={`/${lang}/?BookDemo=true`}
               className="flex items-center justify-center gap-3 rounded-full bg-white px-8 py-3 font-basier text-sm text-black hover:bg-zinc-100"
@@ -604,10 +604,10 @@ export default async function Home({
                 ⌘ K
               </span>
             </Link>
-          </div>
+          </div> */}
           {/* <div className="mt-24 w-full max-w-6xl border-t border-white border-opacity-40"></div> */}
-          <div className="relative z-10 mt-32 flex w-full max-w-8xl justify-between gap-2 px-4 text-sm text-white sm:px-16">
-            <p className="opacity-50">© 2025 Kindred House</p>
+          <div className="relative z-10 mt-12 flex w-full max-w-8xl justify-between gap-2 px-4 text-sm text-white sm:px-16">
+            <p className="opacity-50">© 2025 Kindred Lab</p>
             <div className="flex flex-col items-end gap-2">
               <Link
                 className="opacity-50 hover:opacity-100"

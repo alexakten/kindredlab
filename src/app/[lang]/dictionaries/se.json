@@ -55,13 +55,14 @@
       "tag": "ABONNEMANG",
       "title": "Appar, varumärken, hemsidor och mer...",
       "list": [
-        "APP DESIGN",
+        "APPAR",
         "UX/UI",
         "BRANDING",
         "ANNONSER",
         "HEMSIDOR",
-        "PRESENTATIONER",
-        "SOCIALA MEDIER"
+        "PITCH DECKS",
+        "SOCIALA MEDIER",
+        "CONTENT"
       ]
     },
     "projects": {
@@ -71,7 +72,7 @@
         {
           "client": "Qura",
           "tagline": "Hjälper Qura att resa $2.1M genom blixtsnabb designiteration.",
-          "tags": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+          "tags": ["UX/UI", "PRODUKTDESIGN", "DESIGNSYSTEM", "WEBB"],
           "testimonial": "Med Kindred kan vi testa nya versioner av vår app och få feedback direkt från användare. Varje design som levereras är helt magisk!",
           "profile": "/images/profiles/arvid.png",
           "name": "Arvid Winterfeldt",
@@ -80,7 +81,7 @@
         {
           "client": "MycoMine",
           "tagline": "MycoMine får ett komplett facelift med en ny hemsida. ",
-          "tags": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+          "tags": ["WEBB", "VARUMÄRKE", "CONTENT"],
           "testimonial": "Vi är tacksamma över att få ha arbetat med Kindred, och hoppas på att göra det igen i framtiden.",
           "profile": "/images/profiles/magnus.png",
           "name": "Magnus Ivarsson",
@@ -89,7 +90,7 @@
         {
           "client": "Payable",
           "tagline": "Lanserar Payable på den Nordiska marknaden.",
-          "tags": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+          "tags": ["WEBB", "VARUMÄRKE", "UX/UI", "DESIGNSYSTEM"],
           "testimonial": "Under min karriär har jag jobbat med flera stora designbyråer i internationella bolag — jag kan helt klart säga att Kindred är den bästa jag har jobbat med.",
           "profile": "/images/profiles/hans.png",
           "name": "Hans Delking",
@@ -103,18 +104,18 @@
       "list": [
         {
           "image": "/images/hero-scroll/hero-scroll-1.webp",
-          "title": "Välj ett abonnemang.",
-          "description": "Vi har tre olika abonnemang att välja mellan."
+          "title": "Skapa ett abonnemang.",
+          "description": "Vi hjälper dig skräddarsy ett abonnemang som passar dina behov."
         },
         {
           "image": "/images/hero-scroll/hero-scroll-8.webp",
           "title": "Lägg in to do's.",
-          "description": "Lägg in to do's och vi hjälper dig att prioritera dem."
+          "description": "Skapa designförfrågningar i Slack och vi hjälper dig att prioritera dem."
         },
         {
           "image": "/images/hero-scroll/package.webp",
           "title": "Leverans inom 48 timmar.",
-          "description": "Leverans inom 48 timmar."
+          "description": "Få din design inom 48 timmar. Vi revidererar tills du är 100% nöjd."
         }
       ]
     },
@@ -124,20 +125,32 @@
       "postit": "Du har väl inte glömt köpa kaffe, eller?",
       "questions": [
         {
-          "question": "Vad är priset för ett designprojekt?",
-          "answer": "Priset för ett designprojekt beror på projektets komplexitet och antalet design vi behöver skapa."
+          "question": "Vad kostar abonnemanget?",
+          "answer": "Vi skräddarsyr alltid våra abonnemang utefter behov och designkomplexitet — vanligtvis hamnar våra kunder mellan 80 000 - 180 000 SEK per månad."
         },
         {
-          "question": "Hur snabbt får jag mina design?",
-          "answer": "På genomsnittligt 2 dagar eller mindre. Mer komplexa projekt kan ta längre tid."
+          "question": "Hur snabbt får jag min design?",
+          "answer": "I genomsnitt får du din design inom 48 timmar eller mindre. Mer komplexa projekt som större hemsidor eller appar kan ta längre tid. Då bryter vi upp förfrågningen i mindre delar och levererar dessa i steg."
+        },
+        {
+          "question": "Hur många förfrågningar kan jag göra?",
+          "answer": "Hur många du vill! Vi hanterar dem en och en utifrån prioritet och levererar inom 48 timmar."
         },
         {
           "question": "Hur hanterar ni större projekt?",
-          "answer": "Vi hanterar större projekt genom att dela upp dem i mindre, mer hanterbara delar. Vi hanterar sedan varje del en och en, säkerställande att det slutliga produkten är av högsta kvalitet."
+          "answer": "Vi hanterar större projekt genom att dela upp dem i mindre, mer hanterbara delar. Vi hanterar sedan varje del en och en och levererar inom 48 timmar."
         },
         {
-          "question": "Vad händer om jag inte gillar designen?",
-          "answer": "Inget problem! Vi kommer att fortsätta att revidera designen tills du är 100% nöjd."
+          "question": "Hur fungerar det att pausa abonnemanget?",
+          "answer": "När du pausar abonnemanget så sparar du dina resterande dagar för den månaden som du kan använda när som helst i framtiden. Låt säga att du har 10 dagar kvar en månad och du pausar abonnemanget. Då kan du använda dessa 10 dagar när som helst i framtiden utan någon extra kostnad."
+        },
+        {
+          "question": "Vad händer om jag bara har en designförfrågning?",
+          "answer": "Om du bara har en designförfrågning, såsom en hemsida, så kan du pausa ditt abonnemang när denna är klar. På så sätt går dina resterande dagar inte till spillo och du kan använda dem igen när du har en ny designförfrågning."
+        },
+        {
+          "question": "Vad händer om jag inte är nöjd med en design?",
+          "answer": "Inga problem! Vi kommer att fortsätta att revidera tills du är 100% nöjd."
         }
       ]
     },

@@ -56,13 +56,14 @@
       "tag": "SUBSCRIPTION",
       "title": "Apps, brands, websites and more...",
       "list": [
-        "APP DESIGN",
+        "APPS",
         "UX/UI",
         "BRANDING",
-        "ADVERTISEMENTS",
+        "ANNONSER",
         "WEBSITES",
         "PITCH DECKS",
-        "SOCIAL MEDIA"
+        "SOCIAL MEDIA",
+        "CONTENT"
       ]
     },
     "projects": {
@@ -81,7 +82,7 @@
         {
           "client": "MycoMine",
           "tagline": "MycoMine gets a complete facelift with a new website.",
-          "tags": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+          "tags": ["WEB", "BRANDING", "CONTENT"],
           "testimonial": "We are grateful to have worked with Kindred, and we hope to work with them again in the future.",
           "profile": "/images/profiles/magnus.png",
           "name": "Magnus Ivarsson",
@@ -90,7 +91,7 @@
         {
           "client": "Payable",
           "tagline": "Launching Payable in the Nordics.",
-          "tags": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+          "tags": ["BRANDING", "UX/UI", "DESIGN SYSTEM", "WEB"],
           "testimonial": "During my career, I have worked with several big design agencies in international companies — I must say that Kindred is the best I have worked with.",
           "profile": "/images/profiles/hans.png",
           "name": "Hans Delking",
