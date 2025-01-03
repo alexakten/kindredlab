@@ -136,7 +136,7 @@ export default function Logos() {
         </svg>
       </div>
 
-      <div className="flex justify-start sm:justify-center">
+      <div className="flex justify-center sm:justify-center">
         <Image
           height="24"
           width="60"
@@ -231,7 +231,7 @@ export default function Logos() {
         />
       </div>
 
-      <div className="flex justify-end sm:justify-center ">
+      <div className="flex justify-end sm:justify-center">
         <Image
           height="20"
           width="80"
