@@ -94,9 +94,10 @@ export default async function Home({
             >
               <div className="relative mt-4 px-0 pb-3 sm:px-2  ">
                 <h1 className="text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:text-center sm:leading-[1]">
-                  {dict.home.hero.title.line1}
+                  {dict.home.hero.title.line1}{" "}
                   <span className="relative ml-2 border-white pl-1 pr-2 sm:ml-2 md:ml-3 md:border lg:ml-4">
                     {dict.home.hero.title.highlight}
+                    <span className="md:hidden">.</span>
                     <span className="absolute -bottom-1 -right-1 hidden translate-x-full translate-y-full items-start gap-1 md:flex">
                       <NavigationArrow weight="fill" fill="#4C00F1" size={16} />
                       <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-[#4C00F1] px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
