@@ -41,21 +41,6 @@ export default function Navbar({ lang, dict }: NavbarProps) {
 
   return (
     <>
-      {/* Wrap the modal in AnimatePresence */}
-      {/* <AnimatePresence>
-        {showModal && (
-          <Motion
-            initial={{ opacity: 0, backdropFilter: "blur(0px)" }}
-            animate={{ opacity: 1, backdropFilter: "blur(24px)" }}
-            exit={{ opacity: 0, backdropFilter: "blur(0px)" }}
-            transition={{ ease: "easeInOut", duration: 0.2 }}
-            className="fixed inset-0 z-40 h-screen w-screen bg-black bg-opacity-20"
-          >
-            <div></div>
-          </Motion>
-        )}
-      </AnimatePresence> */}
-
       {/* Navbar */}
       <AnimatePresence>
         {isVisible && (
@@ -114,8 +99,10 @@ export default function Navbar({ lang, dict }: NavbarProps) {
 
               <div className="flex gap-4">
                 <Link
-                  href={`/${lang}/?BookDemo=true`}
-                  className="flex items-center justify-center gap-3 rounded-full bg-black px-4 py-1.5 font-basier text-xs text-white hover:bg-zinc-900"
+                  // href={`/${lang}/?BookDemo=true`}
+                  href="https://cal.com/kindred-lab/30min"
+                  className="flex items-center justify-center 
+                  gap-3 rounded-full bg-black px-4 py-1.5 font-basier text-xs text-white hover:bg-zinc-900"
                   scroll={false}
                   replace
                 >
