@@ -512,7 +512,7 @@ export default async function Home({
         </section>
 
         {/* FAQ */}
-        <section className="rounded-m flex h-full w-full flex-col items-center bg-white text-zinc-900 sm:px-16 md:py-8">
+        <section className="rounded-m flex h-full w-full flex-col items-center bg-white text-zinc-900 md:px-16 md:py-8">
           <div className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-zinc-100 px-4 pb-64 pt-16 sm:px-16 md:rounded-3xl md:py-64">
             <p className="font-basier text-sm opacity-50">
               {dict.home.faq.tag}
@@ -521,35 +521,8 @@ export default async function Home({
               {dict.home.faq.title}
             </h2>
             <AnimatePresence>
-              {/* <Motion
-                className="absolute left-4 top-4 -rotate-6 sm:left-8 sm:top-16"
-                initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
-                whileInView={{ x: 0, opacity: 1, rotate: -6 }} // Animate to rotated position
-                exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
-                transition={{
-                  type: "spring",
-                  stiffness: 120,
-                  damping: 20,
-                }}
-                viewport={{ once: false, margin: "-100px" }}
-              >
-                <SlackMessage
-                  channel={dict.home.services.slack.channel}
-                  author={dict.home.services.slack.author}
-                  messageParts={[
-                    { text: "", highlight: false },
-                    { text: "@kindred", highlight: true },
-                    {
-                      text: ` ${dict.home.services.slack.message}`,
-                      highlight: false,
-                    },
-                  ]}
-                  date="Today at 14:32"
-                />
-              </Motion> */}
-
               <Motion
-                className="absolute bottom-6 right-10 rotate-6 md:right-24  md:top-24"
+                className="absolute bottom-6 right-10 hidden rotate-6 md:right-24 md:top-24  md:block"
                 initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
                 whileInView={{ x: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out to the right with no rotation
@@ -562,21 +535,6 @@ export default async function Home({
               >
                 <PostIt color="bg-blue-200" message={dict.home.faq.postit} />
               </Motion>
-
-              {/* <Motion
-                className="absolute -bottom-24 left-10 -rotate-6"
-                initial={{ y: 100, opacity: 0, rotate: 0 }} // Start off-screen at the bottom with no rotation
-                whileInView={{ y: 0, opacity: 1, rotate: -6 }} // Animate to rotated position
-                exit={{ y: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
-                transition={{
-                  type: "spring",
-                  stiffness: 120,
-                  damping: 20,
-                }}
-                viewport={{ once: false, margin: "-100px" }}
-              >
-                <Polaroid image="/images/hero-scroll/hero-scroll-4.webp" />
-              </Motion> */}
             </AnimatePresence>
 
             <div className="mt-16 w-full max-w-2xl">
