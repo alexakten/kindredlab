@@ -94,7 +94,7 @@ export default async function Home({
             >
               <div className="relative mt-4 px-0 pb-3 sm:px-2  ">
                 <h1 className="text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:text-center sm:leading-[1]">
-                  {dict.home.hero.title.line1}{" "}
+                  {dict.home.hero.title.line1}
                   <span className="relative ml-2 border-white pl-1 pr-2 sm:ml-2 md:ml-3 md:border lg:ml-4">
                     {dict.home.hero.title.highlight}
                     <span className="md:hidden">.</span>
