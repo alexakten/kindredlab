@@ -142,7 +142,7 @@ export default async function Home({
                     {dict.home.hero.cta1}
                   </Link> */}
                   <Link
-                    href={`/${lang}/?BookDemo=true`}
+                    href="https://cal.com/kindred-lab/30min"
                     className="flex items-center justify-center gap-3 rounded-full bg-black px-8 py-3 font-basier text-sm text-white hover:bg-zinc-900"
                     scroll={false}
                     replace
@@ -342,7 +342,7 @@ export default async function Home({
             <h2 className="mt-2 max-w-2xl text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
               {dict.home.services.title}
             </h2>
-            <div className="mt-8 flex max-w-2xl flex-wrap items-center justify-center gap-2">
+            <div className="mt-8 flex max-w-2xl flex-wrap items-center justify-center gap-2 px-4">
               {dict.home.services.list.map((service: string, index: number) => (
                 <p
                   key={index}
