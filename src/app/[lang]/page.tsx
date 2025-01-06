@@ -58,8 +58,8 @@ export default async function Home({
         <Navbar lang={lang} dict={dict} />
         {/* Hero */}
         <section className="flex min-h-[100svh] w-full max-w-8xl flex-col items-center overflow-hidden bg-black">
-          <div className="rounded-m relative h-full w-full overflow-hidden py-20 pt-28 sm:pt-36">
-            <Image
+          <div className="rounded-m relative h-full w-full overflow-hidden bg-zinc-950 py-20 pt-28 sm:pt-36">
+            {/* <Image
               src="/images/hero-green.png"
               alt="Hero image"
               width={1000}
@@ -67,7 +67,7 @@ export default async function Home({
               className="pointer-events-none absolute left-0 top-0 h-full w-full blur-xl brightness-75 sm:w-full sm:scale-105 sm:object-cover"
               priority
               loading="eager"
-            />
+            /> */}
             {/* <Motion
               initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
@@ -143,7 +143,7 @@ export default async function Home({
                   </Link> */}
                   <Link
                     href="https://cal.com/kindred-lab/30min"
-                    className="flex items-center justify-center gap-3 rounded-full bg-black px-8 py-3 font-basier text-sm text-white hover:bg-zinc-900"
+                    className="flex items-center justify-center gap-3 rounded-full bg-zinc-900 px-8 py-3 font-basier text-sm text-white hover:bg-zinc-800"
                     scroll={false}
                     replace
                   >
@@ -568,8 +568,8 @@ export default async function Home({
         </section> */}
 
         {/* CTA */}
-        <section className="rounded-m relative flex h-full w-full flex-col items-center overflow-hidden  px-4 pb-16 pt-32 text-center">
-          <Image
+        <section className="rounded-m relative flex h-full w-full flex-col items-center overflow-hidden bg-zinc-950  px-4 pb-16 pt-32 text-center">
+          {/* <Image
             src="/images/hero-green.png"
             alt="Hero image"
             width={1000}
@@ -577,7 +577,7 @@ export default async function Home({
             className="pointer-events-none absolute left-0 top-0 z-0 h-full w-full object-left blur-lg sm:w-full sm:scale-105 sm:object-cover"
             priority
             loading="eager"
-          />
+          /> */}
           {/* <p className="font-basier text-sm opacity-50">{dict.home.cta.tag}</p> */}
           <h2 className="z-10  text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:leading-[1]">
             {dict.home.cta.title}
