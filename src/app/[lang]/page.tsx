@@ -143,7 +143,7 @@ export default async function Home({
                   </Link> */}
                   <Link
                     href="https://cal.com/kindred-lab/30min"
-                    className="flex items-center justify-center gap-3 rounded-full bg-zinc-900 px-8 py-3 font-basier text-sm text-white hover:bg-zinc-800"
+                    className="flex items-center justify-center gap-3 rounded-full bg-black px-8 py-3 font-basier text-sm text-white hover:bg-zinc-900"
                     scroll={false}
                     replace
                   >
