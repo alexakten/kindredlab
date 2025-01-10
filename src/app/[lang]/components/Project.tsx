@@ -46,7 +46,7 @@ export default function Project({
       </div>
       <div className="flex h-full flex-col items-start justify-between px-6 py-4">
         <aside className="w-full">
-          <aside className="flex w-full justify-between">
+          <aside className="flex w-full items-center justify-between">
             <div className="relative flex h-4 items-center">
               <Image
                 src={logo}
