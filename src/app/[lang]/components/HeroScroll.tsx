@@ -29,6 +29,7 @@ export default function HeroScroll() {
     { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-1.webp" },
     { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-6.webp" },
     { orientation: "square", src: "/images/hero-scroll/hero-scroll-7.webp" },
+    { orientation: "landscape", src: "/images/hero-scroll/mycomine-hero.webp" },
   ];
 
   const getClassesForOrientation = (orientation: string) => {
