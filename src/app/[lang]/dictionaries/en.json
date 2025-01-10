@@ -72,6 +72,7 @@
       "projects": [
         {
           "client": "Qura",
+          "topTag": "CASE COMING SOON",
           "tagline": "Helping Qura raise $2.1M through lightning-fast design iteration.",
           "tags": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
           "testimonial": "With Kindred, we can test new versions of our app and get feedback directly from users. Every design delivered is completely magical!",
@@ -81,6 +82,7 @@
         },
         {
           "client": "MycoMine",
+          "topTag": "CASE COMING SOON",
           "tagline": "MycoMine gets a complete facelift with a new brand and website.",
           "tags": ["WEB", "BRANDING", "CONTENT"],
           "testimonial": "I got goosebumps when I saw the new website. We are grateful to have worked with Kindred, and hope to do so again in the future.",
@@ -90,6 +92,7 @@
         },
         {
           "client": "Payable",
+          "topTag": "CASE COMING SOON",
           "tagline": "Launching Payable in the Nordics.",
           "tags": ["BRANDING", "UX/UI", "DESIGN SYSTEM", "WEB"],
           "testimonial": "During my career, I have worked with several big design agencies in international companies — I must say that Kindred is the best I have worked with.",

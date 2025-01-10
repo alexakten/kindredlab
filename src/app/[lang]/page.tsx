@@ -380,6 +380,7 @@ export default async function Home({
                   thumbnail3="/images/qura/qura-2.png"
                   company={dict.home.projects.projects[0].client}
                   logo="/images/qura/qura-logo.png"
+                  topTag={dict.home.projects.projects[0].topTag}
                   tagline={dict.home.projects.projects[0].tagline}
                   tags={dict.home.projects.projects[0].tags}
                   testimonial={dict.home.projects.projects[0].testimonial}
@@ -403,6 +404,7 @@ export default async function Home({
                   thumbnail3="/images/mycomine/mycomine-3.png"
                   company={dict.home.projects.projects[1].client}
                   logo="/images/mycomine/mycomine-logo.png"
+                  topTag={dict.home.projects.projects[1].topTag}
                   tagline={dict.home.projects.projects[1].tagline}
                   tags={dict.home.projects.projects[1].tags}
                   testimonial={dict.home.projects.projects[1].testimonial}
@@ -426,6 +428,7 @@ export default async function Home({
                   thumbnail3="/images/payable/payable-3.png"
                   company={dict.home.projects.projects[2].client}
                   logo="/images/payable/payable-logo.png"
+                  topTag={dict.home.projects.projects[2].topTag}
                   tagline={dict.home.projects.projects[2].tagline}
                   tags={dict.home.projects.projects[2].tags}
                   testimonial={dict.home.projects.projects[2].testimonial}

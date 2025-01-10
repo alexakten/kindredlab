@@ -71,6 +71,7 @@
       "projects": [
         {
           "client": "Qura",
+          "topTag": "CASE KOMMER SNART",
           "tagline": "Hjälper Qura att resa $2.1M genom blixtsnabb designiteration.",
           "tags": ["UX/UI", "PRODUKTDESIGN", "DESIGNSYSTEM", "WEBB"],
           "testimonial": "Med Kindred kan vi testa nya versioner av vår app och få feedback direkt från användare. Varje design som levereras är helt magisk!",
@@ -80,6 +81,7 @@
         },
         {
           "client": "MycoMine",
+          "topTag": "CASE KOMMER SNART",
           "tagline": "MycoMine får ett komplett facelift med ett nytt varumärke och hemsida. ",
           "tags": ["WEBB", "VARUMÄRKE", "CONTENT"],
           "testimonial": "Fick gåshud när jag såg den nya hemsidan. Vi är tacksamma över att få ha arbetat med Kindred, och hoppas på att göra det igen i framtiden.",
@@ -89,6 +91,7 @@
         },
         {
           "client": "Payable",
+          "topTag": "CASE KOMMER SNART",
           "tagline": "Lanserar Payable i Norden.",
           "tags": ["WEBB", "VARUMÄRKE", "UX/UI", "DESIGNSYSTEM"],
           "testimonial": "Under min karriär har jag jobbat med flera stora designbyråer i internationella bolag — jag kan helt klart säga att Kindred är den bästa jag har jobbat med.",

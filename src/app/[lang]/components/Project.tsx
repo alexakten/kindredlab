@@ -7,6 +7,7 @@ interface ProjectProps {
   thumbnail3: string;
   company: string;
   logo: string;
+  topTag: string;
   tagline?: string;
   tags?: string[]; // Update tags to be an array of strings
   testimonial?: string;
@@ -22,6 +23,7 @@ export default function Project({
   thumbnail3,
   company,
   logo,
+  topTag,
   tagline,
   tags,
   testimonial,
@@ -59,7 +61,7 @@ export default function Project({
               />
             </div>
             <p className="rounded-full bg-zinc-100 px-2 py-1 font-basier text-xs text-zinc-900 text-opacity-50">
-              CASE COMING SOON
+              {topTag}
             </p>
           </aside>
           <p className="mb-6 mt-6 text-xl font-medium tracking-tight sm:text-3xl md:mb-0">
