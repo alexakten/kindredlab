@@ -45,22 +45,27 @@ export default function Project({
         />
       </div>
       <div className="flex h-full flex-col items-start justify-between px-6 py-4">
-        <aside>
-          <div className="relative flex h-4 items-center">
-            <Image
-              src={logo}
-              alt="Logo"
-              height={1000} // Fixed height
-              width={1000} // Let width adjust dynamically
-              className="h-full w-auto" // Tailwind ensures height consistency and width scaling
-              priority // Ensures faster loading
-              quality={100} // High image quality
-            />
-          </div>
-          <p className="mt-6 mb-6 md:mb-0 text-xl font-medium tracking-tight sm:text-3xl">
+        <aside className="w-full">
+          <aside className="flex w-full justify-between">
+            <div className="relative flex h-4 items-center">
+              <Image
+                src={logo}
+                alt="Logo"
+                height={1000} // Fixed height
+                width={1000} // Let width adjust dynamically
+                className="h-full w-auto" // Tailwind ensures height consistency and width scaling
+                priority // Ensures faster loading
+                quality={100} // High image quality
+              />
+            </div>
+            <p className="rounded-full bg-zinc-100 px-2 py-1 font-basier text-xs text-zinc-900 text-opacity-50">
+              CASE COMING SOON
+            </p>
+          </aside>
+          <p className="mb-6 mt-6 text-xl font-medium tracking-tight sm:text-3xl md:mb-0">
             {tagline}
           </p>
-          <div className="mb-6 hidden mt-6 md:flex flex-wrap gap-2 sm:mb-0">
+          <div className="mb-6 mt-6 hidden flex-wrap gap-2 sm:mb-0 md:flex">
             {tags?.map((tag, index) => (
               <p
                 key={index}
