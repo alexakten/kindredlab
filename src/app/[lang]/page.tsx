@@ -517,7 +517,7 @@ export default async function Home({
 
         {/* FAQ */}
         <section className="rounded-m flex h-full w-full flex-col items-center bg-white text-zinc-900 md:px-16 md:py-8">
-          <div className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-zinc-100 px-4 pb-64 pt-16 sm:px-16 md:rounded-3xl md:py-64">
+          <div className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-zinc-100 px-6 pb-64 pt-16 sm:px-16 md:rounded-3xl md:py-64">
             <p className="font-basier text-sm opacity-50">
               {dict.home.faq.tag}
             </p>
