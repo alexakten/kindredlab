@@ -63,11 +63,11 @@ export default async function Home({
             alt="Hero image"
             width={1000}
             height={1000}
-            className="pointer-events-none absolute left-0 top-0 h-full w-full blur-xl brightness-75 sm:w-full sm:scale-105 sm:object-cover"
+            className="pointer-events-none absolute left-0 top-0 hidden h-full w-full blur-xl brightness-75 sm:block sm:w-full sm:scale-105 sm:object-cover"
             priority
             loading="eager"
           />
-          <div className="rounded-m relative h-full w-full flex flex-col items-center overflow-hidden py-20 pt-28 sm:pt-36">
+          <div className="rounded-m relative flex h-full w-full flex-col items-center overflow-hidden py-20 pt-28 sm:pt-36">
             {/* <Motion
               initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
