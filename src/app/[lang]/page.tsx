@@ -99,7 +99,7 @@ export default async function Home({
                   <span className="relative ml-2 border-white pl-1 pr-2 sm:ml-2 md:ml-3 md:border lg:ml-4">
                     {dict.home.hero.title.highlight}
                     <span className="md:hidden">.</span>
-                    <span className="absolute -bottom-1 -right-1 hidden translate-x-full translate-y-full items-start gap-1 md:flex">
+                    <span className="absolute -bottom-1 -right-1 hidden  translate-x-full translate-y-full items-start gap-1 md:flex">
                       <NavigationArrow weight="fill" fill="#d946ef" size={16} />
                       <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-[#d946ef] px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
                         Kindred
@@ -143,13 +143,19 @@ export default async function Home({
                   </Link> */}
                   <Link
                     href="https://cal.com/kindred-lab/30min"
-                    className="flex items-center justify-center gap-3 rounded-full bg-zinc-900 px-8 py-3 font-basier text-sm text-white hover:bg-zinc-800"
+                    className="flex relative items-center justify-center gap-3 rounded-full bg-zinc-900 px-8 py-3 font-basier text-sm text-white hover:bg-zinc-800"
                     scroll={false}
                     replace
                   >
                     {dict.home.hero.cta2}
                     <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-700 bg-zinc-900 text-[12px]">
                       ⌘ K
+                    </span>
+                    <span className="absolute bottom-1/2 -right-1 flex translate-x-full translate-y-full items-start gap-1 md:hidden">
+                      <NavigationArrow weight="fill" fill="#d946ef" size={16} />
+                      <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-[#d946ef] px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
+                        Kindred
+                      </div>
                     </span>
                   </Link>
                 </div>
