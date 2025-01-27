@@ -100,8 +100,8 @@ export default async function Home({
                     {dict.home.hero.title.highlight}
                     <span className="md:hidden">.</span>
                     <span className="absolute -bottom-1 -right-1 hidden translate-x-full translate-y-full items-start gap-1 md:flex">
-                      <NavigationArrow weight="fill" fill="#4C00F1" size={16} />
-                      <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-[#4C00F1] px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
+                      <NavigationArrow weight="fill" fill="#d946ef" size={16} />
+                      <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-[#d946ef] px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
                         Kindred
                       </div>
                     </span>
