@@ -75,7 +75,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
                 <div className="flex items-center justify-center gap-1">
                   <p className="relative font-freight text-xl font-medium leading-[0.95] tracking-[-0.000rem]">
                     kindred
-                    <span className="font-normal italic">house</span>
+                    {/* <span className="font-normal italic">house</span> */}
                   </p>
                 </div>
               </Link>
