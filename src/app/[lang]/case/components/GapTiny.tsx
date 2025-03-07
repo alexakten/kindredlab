@@ -1,3 +1,3 @@
-export default function GapSmall() {
+export default function GapTiny() {
   return <div className="mt-4" />
 }

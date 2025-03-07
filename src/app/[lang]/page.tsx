@@ -46,7 +46,7 @@ export default async function Home({
   const dict = await getDictionary(lang);
 
   return (
-    <main className="flex select-none flex-col items-center justify-center overflow-x-hidden bg-white px-1.5 sm:px-4 py-1 sm:py-4 text-left tracking-tight text-neutral-100">
+    <main className="flex select-none flex-col items-center justify-center overflow-x-hidden bg-white px-1.5 py-1 text-left tracking-tight text-neutral-100 sm:px-4 sm:py-4">
       {bookDemo && <CommandK isVisible={bookDemo} />}
 
       <Motion
@@ -57,8 +57,8 @@ export default async function Home({
       >
         {/* <Navbar lang={lang} dict={dict} /> */}
         {/* Hero */}
-        <section className="rounded-4xl relative flex min-h-[100svh] w-full max-w-8xl flex-col items-center bg-black overflow-hidden">
-          <Image
+        <section className="rounded-4xl relative flex min-h-[100svh] w-full max-w-8xl flex-col items-center overflow-hidden bg-neutral-950">
+          {/* <Image
             src="/images/hero.webp"
             alt="Hero image"
             layout="fill"
@@ -66,7 +66,7 @@ export default async function Home({
             className="pointer-events-none brightness-50"
             priority
             loading="eager"
-          />
+          /> */}
           <div className="rounded-m relative flex h-full w-full flex-col items-center overflow-hidden py-20 pt-12 sm:pt-28">
             <Motion
               initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
@@ -74,7 +74,7 @@ export default async function Home({
               transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
               className="flex w-full flex-col items-center pb-4"
             >
-              <p className="font-minion flex items-center font-medium rounded-full text-xl">
+              <p className="font-minion flex items-center rounded-full text-xl font-medium">
                 kindred
                 {/* kindred <span className="italic">house</span> */}
               </p>
@@ -88,7 +88,7 @@ export default async function Home({
               <div className="relative mt-4 px-0 pb-3 sm:px-2">
                 <h1 className="font-minion text-center text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:text-center sm:leading-[1.1]">
                   {dict.home.hero.title.line1}
-                  <span className="relative ml-2 border-white pl-1 pr-2 sm:ml-2 md:ml-3 md:border lg:ml-4">
+                  <span className="relative ml-2 border-white pb-1 pl-2 pr-2.5 sm:ml-2 md:ml-3 md:border lg:ml-4">
                     {dict.home.hero.title.highlight}
                     {/* <span className="md:hidden">.</span> */}
                     <span className="absolute -bottom-1 -right-1 hidden  translate-x-full translate-y-full items-start gap-1 md:flex">
@@ -103,10 +103,10 @@ export default async function Home({
                     <span className="-bottom-1 -left-1 hidden h-2 w-2 border border-white bg-white md:absolute md:block"></span>
                     <span className="-bottom-1 -right-1 hidden h-2 w-2 border border-white bg-white md:absolute md:block"></span>
                     {/* <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 border bg-white px-1">
-                  <p className="text-xs tracking-tight text-black">
-                    1440 × 900
-                  </p>
-                </span> */}
+                      <p className="text-xs tracking-tight text-black">
+                        1440 × 900
+                      </p>
+                    </span> */}
                   </span>
                   <br />
                   {dict.home.hero.title.line2}
@@ -134,13 +134,13 @@ export default async function Home({
                     {dict.home.hero.cta1}
                   </Link> */}
                   <Link
-                    href="https://cal.com/kindred-lab/30min"
-                    className="relative flex items-center justify-center gap-3 rounded-full bg-neutral-800 px-8 py-3 font-basier text-xs sm:text-sm text-white hover:bg-neutral-900"
+                    href="https://cal.com/kindred-house/30min"
+                    className="relative flex items-center justify-center gap-3 rounded-full bg-black px-6 py-2 font-basier text-xs text-white hover:bg-neutral-800 sm:text-sm"
                     scroll={false}
                     replace
                   >
                     {dict.home.hero.cta2}
-                    <span className="hidden sm:flex h-6 w-8 items-center justify-center rounded-[4px] border border-neutral-600 bg-neutral-900 text-[12px]">
+                    <span className="hidden h-6 w-8 items-center justify-center rounded-[4px] border border-neutral-600 bg-neutral-900 text-[12px] sm:flex">
                       ⌘ K
                     </span>
                     <span className="absolute -right-1 bottom-1/2 flex translate-x-full translate-y-full items-start gap-1 md:hidden">
@@ -175,8 +175,8 @@ export default async function Home({
         </section>
 
         {/* Services */}
-        <section className="rounded-m flex h-full w-full flex-col items-center bg-white py-2 sm:py-4 text-neutral-900">
-          <div className="rounded-4xl px-2 relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-neutral-100 py-64">
+        <section className="rounded-m flex h-full w-full flex-col items-center bg-white py-2 text-neutral-900 sm:py-4">
+          <div className="rounded-4xl relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-neutral-100 px-2 py-64">
             {/* Artwork */}
 
             <AnimatePresence>
@@ -373,10 +373,8 @@ export default async function Home({
               >
                 <Project
                   thumbnailLocation="left"
-                  thumbnail1="/images/qura/qura-3.png"
-                  thumbnail2="/images/qura/qura-3.png"
-                  thumbnail3="/images/qura/qura-2.png"
-                  company={dict.home.projects.projects[0].client}
+                  thumbnail="/images/qura/qura-3.png"
+                  link={`/${lang}/case/qura`}
                   logo="/images/qura/qura-logo.png"
                   topTag={dict.home.projects.projects[0].topTag}
                   tagline={dict.home.projects.projects[0].tagline}
@@ -397,10 +395,8 @@ export default async function Home({
               >
                 <Project
                   thumbnailLocation="right"
-                  thumbnail1="/images/mycomine/mycomine-1.png"
-                  thumbnail2="/images/mycomine/mycomine-2.png"
-                  thumbnail3="/images/mycomine/mycomine-3.png"
-                  company={dict.home.projects.projects[1].client}
+                  thumbnail="/images/mycomine/mycomine-1.png"
+                  link={`/${lang}/case/mycomine`}
                   logo="/images/mycomine/mycomine-logo.png"
                   topTag={dict.home.projects.projects[1].topTag}
                   tagline={dict.home.projects.projects[1].tagline}
@@ -421,10 +417,8 @@ export default async function Home({
               >
                 <Project
                   thumbnailLocation="left"
-                  thumbnail1="/images/payable/payable-2.png"
-                  thumbnail2="/images/payable/payable-2.png"
-                  thumbnail3="/images/payable/payable-3.png"
-                  company={dict.home.projects.projects[2].client}
+                  thumbnail="/images/payable/payable-2.png"
+                  link={`/${lang}/case/payable`}
                   logo="/images/payable/payable-logo.png"
                   topTag={dict.home.projects.projects[2].topTag}
                   tagline={dict.home.projects.projects[2].tagline}

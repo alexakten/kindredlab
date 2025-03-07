@@ -1,12 +1,13 @@
-export default function Paragraph({
+export default function LineText({
   title,
   text,
 }: {
-  title: string
-  text: string
+  title: string;
+  text: string;
 }) {
   return (
-    <div className="flex w-full">
+    <div className="grid w-full grid-cols-2">
+      <aside className="col-span-1"></aside>
       <div className="col-span-1 flex max-w-lg flex-col ">
         <p className="mt-8 whitespace-pre-line border-b border-neutral-300 pb-2 font-[450] leading-[1.6]">
           {title}
@@ -16,5 +17,5 @@ export default function Paragraph({
         </p>
       </div>
     </div>
-  )
+  );
 }

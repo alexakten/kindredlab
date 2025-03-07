@@ -1,11 +1,10 @@
+import { link } from "fs";
 import Image from "next/image";
 import Link from "next/link";
 
 interface ProjectProps {
-  thumbnail1: string;
-  thumbnail2: string;
-  thumbnail3: string;
-  company: string;
+  thumbnail: string;
+  link: string;
   logo: string;
   topTag: string;
   tagline?: string;
@@ -18,10 +17,8 @@ interface ProjectProps {
 }
 
 export default function Project({
-  thumbnail1,
-  thumbnail2,
-  thumbnail3,
-  company,
+  thumbnail,
+  link,
   logo,
   topTag,
   tagline,
@@ -33,7 +30,8 @@ export default function Project({
   thumbnailLocation = "right", // Default to "right"
 }: ProjectProps) {
   return (
-    <div
+    <Link
+      href={link}
       className={`flex w-full flex-col items-center gap-4 rounded-2xl bg-white px-4 py-4 text-left shadow-sm sm:h-[28rem] sm:flex-row ${
         thumbnailLocation === "left" ? "flex-row" : "flex-row-reverse"
       }`}
@@ -41,7 +39,7 @@ export default function Project({
       <div className="relative h-48 w-full flex-shrink-0 gap-2 overflow-hidden rounded-xl sm:h-full sm:w-1/2">
         <Image
           className="object-cover"
-          src={thumbnail1}
+          src={thumbnail}
           alt="Thumbnail Image"
           layout="fill"
         />
@@ -71,7 +69,7 @@ export default function Project({
             {tags?.map((tag, index) => (
               <p
                 key={index}
-                className="py rounded-full border border-neutral-300 px-2 font-basier text-sm"
+                className="py rounded-full border border-neutral-200 px-2 font-basier text-sm"
               >
                 {tag}
               </p>
@@ -98,6 +96,6 @@ export default function Project({
           </div>
         </aside>
       </div>
-    </div>
+    </Link>
   );
 }

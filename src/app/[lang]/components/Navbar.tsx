@@ -49,31 +49,34 @@ export default function Navbar({ lang, dict }: NavbarProps) {
               opacity: 0,
               y: -20,
               backdropFilter: "blur(0px)",
-              backgroundColor: "rgba(0, 0, 0, 1)", // Default to fully opaque black
+              backgroundColor: "rgba(0, 0, 0, 0.0)",
+              // backgroundColor: "rgba(0, 0, 0, 1)", // Default to fully opaque black
             }}
             animate={{
               opacity: 1,
               y: 0,
-              backdropFilter: lastScrollTop === 0 ? "blur(0px)" : "blur(12px)",
+              backdropFilter: lastScrollTop === 0 ? "blur(0px)" : "blur(0px)",
+              // backdropFilter: lastScrollTop === 0 ? "blur(0px)" : "blur(12px)",
               backgroundColor:
                 lastScrollTop === 0
                   ? "transparent" // No background when at the top
                   : showModal
                     ? "transparent" // No background on hover
-                    : "rgba(0, 0, 0, 0.5)", // Fully opaque black when visible after scroll
+                    : "rgba(0, 0, 0, 0.0)", // Fully opaque black when visible after scroll
+              // : "rgba(0, 0, 0, 0.5)", // Fully opaque black when visible after scroll
             }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ ease: "easeInOut", duration: 0.2 }}
             className={`fixed top-0 z-50 flex w-full flex-col items-center`}
             id="navbar"
           >
-            <nav className="z-50 flex w-full max-w-8xl items-center justify-between px-4 py-3 text-xs font-medium sm:px-16">
+            <nav className="z-50 flex w-full max-w-8xl items-center justify-between px-4 py-3 text-xs font-medium sm:px-8">
               <Link
                 href={`/${lang}`}
                 className="z-10 flex items-center gap-1.5"
               >
                 <div className="flex items-center justify-center gap-1">
-                  <p className="relative font-minion text-xl font-medium leading-[0.95] tracking-[-0.000rem]">
+                  <p className="font-minion relative text-2xl font-semibold leading-[0.95] tracking-[-0.000rem]">
                     kindred
                     {/* <span className="font-normal italic">house</span> */}
                   </p>
