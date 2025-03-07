@@ -15,7 +15,7 @@ export default function MyApp() {
   return (
     <Cal
       namespace="30min"
-      calLink="kindred-lab/30min"
+      calLink="kindred-house/30min"
       style={{
         width: "100%",
         height: "100%",

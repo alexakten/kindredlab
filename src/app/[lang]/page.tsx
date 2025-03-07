@@ -57,9 +57,9 @@ export default async function Home({
       >
         {/* <Navbar lang={lang} dict={dict} /> */}
         {/* Hero */}
-        <section className="rounded-4xl relative flex min-h-[100svh] w-full max-w-8xl flex-col items-center overflow-hidden bg-black">
+        <section className="rounded-4xl relative flex min-h-[100svh] w-full max-w-8xl flex-col items-center bg-black overflow-hidden">
           <Image
-            src="/images/hero-green.png"
+            src="/images/hero.webp"
             alt="Hero image"
             layout="fill"
             objectFit="cover"
@@ -126,7 +126,7 @@ export default async function Home({
                     {dict.home.hero.subtext.line2}
                   </span>
                 </h2>
-                <div className="mt-8 flex flex-row-reverse items-center justify-center gap-8 sm:mt-6 sm:flex-row">
+                <div className="mt-8 flex flex-row-reverse items-center justify-center gap-8 sm:mt-8 sm:flex-row">
                   {/* <Link
                     href="mailto:hello@kindredlab.io"
                     className="font-basier text-sm hover:underline"
@@ -135,12 +135,12 @@ export default async function Home({
                   </Link> */}
                   <Link
                     href="https://cal.com/kindred-lab/30min"
-                    className="relative flex items-center justify-center gap-3 rounded-full bg-white px-8 py-3 font-basier text-xssm:text-sm text-black hover:bg-neutral-200"
+                    className="relative flex items-center justify-center gap-3 rounded-full bg-neutral-800 px-8 py-3 font-basier text-xs sm:text-sm text-white hover:bg-neutral-900"
                     scroll={false}
                     replace
                   >
                     {dict.home.hero.cta2}
-                    <span className="hidden sm:flex h-6 w-8 items-center justify-center rounded-[4px] border border-neutral-200 bg-neutral-100 text-[12px]">
+                    <span className="hidden sm:flex h-6 w-8 items-center justify-center rounded-[4px] border border-neutral-600 bg-neutral-900 text-[12px]">
                       ⌘ K
                     </span>
                     <span className="absolute -right-1 bottom-1/2 flex translate-x-full translate-y-full items-start gap-1 md:hidden">

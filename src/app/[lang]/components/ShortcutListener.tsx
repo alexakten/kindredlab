@@ -15,7 +15,7 @@ export default function ShortcutListener() {
         const lang = pathname.split("/")[1]; // Assuming the language is the first segment of the URL
 
         // Navigate directly to the Cal.com booking page
-        window.location.href = `https://cal.com/kindred-lab/30min`;
+        window.location.href = `https://cal.com/kindred-house/30min`;
 
         // --- Commented-out modal-related code ---
         // const isModalOpen = searchParams.get("BookDemo") === "true";
