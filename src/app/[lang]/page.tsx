@@ -46,7 +46,7 @@ export default async function Home({
   const dict = await getDictionary(lang);
 
   return (
-    <main className="flex select-none flex-col items-center justify-center overflow-x-hidden bg-black px-0 text-left tracking-tight text-zinc-100">
+    <main className="flex select-none flex-col items-center justify-center overflow-x-hidden bg-white px-1 sm:px-4 py-1 sm:py-4 text-left tracking-tight text-zinc-100">
       {bookDemo && <CommandK isVisible={bookDemo} />}
 
       <Motion
@@ -55,50 +55,42 @@ export default async function Home({
         transition={{ ease: "easeInOut", duration: 0.5 }}
         className="flex w-full flex-col items-center"
       >
-        <Navbar lang={lang} dict={dict} />
+        {/* <Navbar lang={lang} dict={dict} /> */}
         {/* Hero */}
-        <section className="max-w- flex min-h-[100svh] w-full flex-col items-center overflow-hidden bg-black">
+        <section className="rounded-4xl relative flex min-h-[100svh] w-full max-w-8xl flex-col items-center overflow-hidden bg-black">
           {/* <Image
             src="/images/hero-green.png"
             alt="Hero image"
-            width={1000}
-            height={1000}
-            className="pointer-events-none absolute left-0 top-0 hidden h-full w-full blur-xl brightness-75 sm:block sm:w-full sm:scale-105 sm:object-cover"
+            layout="fill"
+            objectFit="cover"
+            className="pointer-events-none brightness-50"
             priority
             loading="eager"
           /> */}
-          <div className="rounded-m relative flex h-full w-full flex-col items-center overflow-hidden py-20 pt-28 sm:pt-36">
-            {/* <Motion
+          <div className="rounded-m relative flex h-full w-full flex-col items-center overflow-hidden py-20 pt-12 sm:pt-36">
+            <Motion
               initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
-              transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
-              className="flex w-full flex-col items-start px-4 sm:px-16"
+              transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
+              className="flex w-full flex-col items-center pb-4"
             >
-              <div className="flex items-center rounded-full text-sm">
-                <Link
-                  href={"/"}
-                  className="pl-0 font-basier opacity-100 hover:underline "
-                >
-                  {dict.home.announcement.tag} /
-                  <span className="opacity-75">
-                    {" "}
-                    {dict.home.announcement.text}
-                  </span>
-                </Link>
-              </div>
-            </Motion> */}
+              <p className="font-minion flex items-center font-medium rounded-full text-xl">
+                kindred
+                {/* kindred <span className="italic">house</span> */}
+              </p>
+            </Motion>
             <Motion
               initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
               transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
               className="flex w-full flex-col items-center px-4 sm:items-center sm:px-16"
             >
-              <div className="relative mt-4 px-0 pb-3 sm:px-2  ">
-                <h1 className="text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:text-center sm:leading-[1]">
+              <div className="relative mt-4 px-0 pb-3 sm:px-2">
+                <h1 className="font-minion text-center text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:text-center sm:leading-[1.1]">
                   {dict.home.hero.title.line1}
                   <span className="relative ml-2 border-white pl-1 pr-2 sm:ml-2 md:ml-3 md:border lg:ml-4">
                     {dict.home.hero.title.highlight}
-                    <span className="md:hidden">.</span>
+                    {/* <span className="md:hidden">.</span> */}
                     <span className="absolute -bottom-1 -right-1 hidden  translate-x-full translate-y-full items-start gap-1 md:flex">
                       <NavigationArrow weight="fill" fill="#d946ef" size={16} />
                       <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-[#d946ef] px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
@@ -126,7 +118,7 @@ export default async function Home({
                 transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
                 className="mt-4"
               >
-                <h2 className="max-w-lg text-center text-lg opacity-100 sm:text-center">
+                <h2 className="max-w-xl text-center text-lg opacity-100 sm:text-center">
                   {dict.home.hero.subtext.line1}
                   <br className="hidden sm:block" />
                   <span className="opacity-50">
@@ -183,8 +175,8 @@ export default async function Home({
         </section>
 
         {/* Services */}
-        <section className="rounded-m flex h-full w-full flex-col items-center bg-white px-4 py-8 text-zinc-900 sm:px-16">
-          <div className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden rounded-3xl bg-zinc-100 py-64">
+        <section className="rounded-m flex h-full w-full flex-col items-center bg-white py-2 sm:py-4 text-zinc-900">
+          <div className="rounded-4xl px-2 relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-zinc-100 py-64">
             {/* Artwork */}
 
             <AnimatePresence>
@@ -339,13 +331,13 @@ export default async function Home({
               </Motion>
             </AnimatePresence>
 
-            <p className="font-sabon text-lg font-bold">
+            <p className="font-minion text-lg font-bold">
               kindred
               <span className="ml-1 font-basier text-sm font-normal opacity-50">
                 {dict.home.services.tag}
               </span>
             </p>
-            <h2 className="mt-2 max-w-2xl text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
+            <h2 className="font-minion mt-2 max-w-2xl text-center text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
               {dict.home.services.title}
             </h2>
             <div className="mt-8 flex max-w-2xl flex-wrap items-center justify-center gap-2 px-4">
@@ -362,11 +354,11 @@ export default async function Home({
         </section>
 
         {/* Projects */}
-        <section className="rounded-m flex h-full w-full flex-col items-center bg-zinc-100 px-4 py-16 text-zinc-900 sm:px-16 md:py-40">
+        <section className="rounded-4xl flex h-full w-full flex-col items-center bg-zinc-100 px-4 py-16 text-zinc-900 sm:px-16 md:py-40">
           <p className="font-basier text-sm opacity-50">
             {dict.home.projects.tag}
           </p>
-          <h2 className="mt-2 max-w-2xl text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
+          <h2 className="font-minion mt-2 max-w-2xl text-center text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
             {dict.home.projects.title}
           </h2>
 
@@ -450,7 +442,7 @@ export default async function Home({
         {/* How */}
         <section className="rounded-m flex h-full w-full flex-col items-center bg-white px-4 py-16 text-zinc-900 sm:px-16 md:py-40">
           <p className="font-basier text-sm opacity-50">{dict.home.how.tag}</p>
-          <h2 className="mt-2 max-w-5xl text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
+          <h2 className="font-minion mt-2 max-w-5xl text-center text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
             {dict.home.how.title}
           </h2>
 
@@ -522,12 +514,12 @@ export default async function Home({
         </section>
 
         {/* FAQ */}
-        <section className="rounded-m flex h-full w-full flex-col items-center bg-white text-zinc-900 md:px-16 md:py-8">
-          <div className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-zinc-100 px-6 pb-64 pt-16 sm:px-16 md:rounded-3xl md:py-64">
+        <section className="rounded-4xl flex h-full w-full flex-col items-center bg-white text-zinc-900 md:px-0 md:py-4">
+          <div className="md:rounded-4xl relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-zinc-100 px-6 pb-64 pt-16 sm:px-16 md:py-64">
             <p className="font-basier text-sm opacity-50">
               {dict.home.faq.tag}
             </p>
-            <h2 className="mt-2 max-w-3xl text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
+            <h2 className="font-minion mt-2 max-w-3xl text-center text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
               {dict.home.faq.title}
             </h2>
             <AnimatePresence>
@@ -577,7 +569,7 @@ export default async function Home({
         </section> */}
 
         {/* CTA */}
-        <section className="rounded-m relative flex h-full w-full flex-col items-center overflow-hidden bg-zinc-950  px-4 pb-16 pt-32 text-center">
+        <section className="rounded-4xl relative flex h-full w-full flex-col items-center overflow-hidden bg-zinc-950  px-4 pb-16 pt-32 text-center">
           {/* <Image
             src="/images/hero-green.png"
             alt="Hero image"
@@ -588,11 +580,11 @@ export default async function Home({
             loading="eager"
           /> */}
           {/* <p className="font-basier text-sm opacity-50">{dict.home.cta.tag}</p> */}
-          <h2 className="z-10  text-center font-sabon text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:leading-[1]">
+          <h2 className="font-minion  z-10 text-center text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:leading-[1]">
             {dict.home.cta.title}
           </h2>
 
-          <div className="z-10 mt-20 w-full">
+          <div className="z-10 mt-20 w-full rounded-2xl">
             <CalEmbed />
           </div>
 

@@ -15,13 +15,13 @@
     },
     "hero": {
       "title": {
-        "line1": "Unlimited",
-        "highlight": "creativity",
-        "line2": "One subscription."
+        "line1": "Product design",
+        "highlight": "partner",
+        "line2": "for tech & AI businesses"
       },
       "subtext": {
-        "line1": "Iterate fast with delivery every 48 hours.",
-        "line2": "Subscribe and pause or cancel anytime."
+        "line1": "Kindred is a subscription for next-gen businesses.",
+        "line2": "Iterate fast with delivery every 48 hours."
       },
       "cta1": "SAY HELLO",
       "cta2": "BOOK DEMO"
@@ -134,8 +134,8 @@
           "answer": "We always tailor our subscriptions based on needs and design complexity — typically, our clients pay between 80,000 - 160,000 SEK per month."
         },
         {
-          "question": "How quickly will I get my design?",
-          "answer": "On average, you'll receive your design within 48 hours or less. More complex projects, like larger websites or apps, may take longer. In such cases, we break down the request into smaller parts and deliver them step by step."
+          "question": "How quickly will I get my designs?",
+          "answer": "On average, you'll receive your designs within 48 hours or less. More complex projects, like larger websites or apps, may take longer. In such cases, we break down the request into smaller parts and deliver them step by step."
         },
         {
           "question": "How many requests can I make?",
@@ -154,7 +154,7 @@
           "answer": "If you only have one design request, such as a website, you can pause your subscription once it's completed. This way, your remaining days won't go to waste, and you can use them again when you have a new design request."
         },
         {
-          "question": "What happens if I’m not satisfied with a design?",
+          "question": "What happens if I'm not satisfied with a design?",
           "answer": "No problem! We will continue revising until you are 100% satisfied."
         }
       ]

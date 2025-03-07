@@ -15,9 +15,8 @@ const config: Config = {
       },
       fontFamily: {
         inter: ["Inter", "sans-serif"],
-        freight: ['freight-text-pro"', "serif"],
         basier: ["Basier", "monospace"],
-        sabon: ["Sabon", "serif"],
+        minion: ["minion-pro-subhead", "serif"],
         marydale: ["Marydale", "serif"],
       },
       colors: {
@@ -75,6 +74,7 @@ const config: Config = {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+        "4xl": "2rem",
       },
       keyframes: {
         "accordion-down": {

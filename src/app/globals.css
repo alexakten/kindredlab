@@ -1,4 +1,5 @@
-@import url("https://use.typekit.net/zhy0giy.css");
+@import url("https://use.typekit.net/kom5eci.css");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -33,10 +34,18 @@
   break-inside: avoid;
 }
 
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: none; /* For Firefox */
+  -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+*::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Opera */
 }
 
 @font-face {
@@ -53,46 +62,6 @@
   font-weight: 400;
   font-style: normal;
   font-display: swap;
-}
-
-@font-face {
-  font-family: "Sabon";
-  src: url("/fonts/Sabon.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-@font-face {
-  font-family: "Marydale";
-  src: url("/fonts/Marydale.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
-.font-freight {
-  font-family: "freight-text-pro", serif;
-  font-feature-settings:
-    "liga" 1,
-    "clig" 1,
-    "dlig" 1,
-    "hlig" 1,
-    "calt" 1;
-  font-variant-ligatures: common-ligatures discretionary-ligatures
-    historical-ligatures contextual;
-  -webkit-font-feature-settings:
-    "liga" 1,
-    "clig" 1,
-    "dlig" 1,
-    "hlig" 1,
-    "calt" 1;
-  -moz-font-feature-settings:
-    "liga" 1,
-    "clig" 1,
-    "dlig" 1,
-    "hlig" 1,
-    "calt" 1;
 }
 
 body {

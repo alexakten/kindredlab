@@ -16,7 +16,11 @@ export default function MyApp() {
     <Cal
       namespace="30min"
       calLink="kindred-lab/30min"
-      style={{ width: "100%", height: "100%", overflow: "scroll" }}
+      style={{
+        width: "100%",
+        height: "100%",
+        overflow: "scroll",
+      }}
       config={{ layout: "month_view" }}
     />
   );

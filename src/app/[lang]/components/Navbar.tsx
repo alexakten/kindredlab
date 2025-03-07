@@ -64,7 +64,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
             }}
             exit={{ opacity: 0, y: -20 }}
             transition={{ ease: "easeInOut", duration: 0.2 }}
-            className={`fixed z-50 flex w-full flex-col items-center`}
+            className={`fixed top-0 z-50 flex w-full flex-col items-center`}
             id="navbar"
           >
             <nav className="z-50 flex w-full max-w-8xl items-center justify-between px-4 py-3 text-xs font-medium sm:px-16">
@@ -73,7 +73,7 @@ export default function Navbar({ lang, dict }: NavbarProps) {
                 className="z-10 flex items-center gap-1.5"
               >
                 <div className="flex items-center justify-center gap-1">
-                  <p className="relative font-sabon text-xl font-medium leading-[0.95] tracking-[-0.000rem]">
+                  <p className="relative font-minion text-xl font-medium leading-[0.95] tracking-[-0.000rem]">
                     kindred
                     {/* <span className="font-normal italic">house</span> */}
                   </p>
