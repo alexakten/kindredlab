@@ -30,8 +30,7 @@ export default function Project({
   thumbnailLocation = "right", // Default to "right"
 }: ProjectProps) {
   return (
-    <Link
-      href={link}
+    <div
       className={`flex w-full flex-col items-center gap-4 rounded-2xl bg-white px-4 py-4 text-left shadow-sm sm:h-[28rem] sm:flex-row ${
         thumbnailLocation === "left" ? "flex-row" : "flex-row-reverse"
       }`}
@@ -96,6 +95,6 @@ export default function Project({
           </div>
         </aside>
       </div>
-    </Link>
+    </div>
   );
 }
