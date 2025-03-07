@@ -46,7 +46,7 @@ export default async function Home({
   const dict = await getDictionary(lang);
 
   return (
-    <main className="flex select-none flex-col items-center justify-center overflow-x-hidden bg-white px-1 sm:px-4 py-1 sm:py-4 text-left tracking-tight text-zinc-100">
+    <main className="flex select-none flex-col items-center justify-center overflow-x-hidden bg-white px-1.5 sm:px-4 py-1 sm:py-4 text-left tracking-tight text-zinc-100">
       {bookDemo && <CommandK isVisible={bookDemo} />}
 
       <Motion
