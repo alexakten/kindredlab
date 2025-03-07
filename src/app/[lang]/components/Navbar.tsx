@@ -102,12 +102,12 @@ export default function Navbar({ lang, dict }: NavbarProps) {
                   // href={`/${lang}/?BookDemo=true`}
                   href="https://cal.com/kindred-lab/30min"
                   className="flex items-center justify-center 
-                  gap-3 rounded-full bg-zinc-900 px-4 py-1.5 font-basier text-xs text-white hover:bg-zinc-800"
+                  gap-3 rounded-full bg-neutral-900 px-4 py-1.5 font-basier text-xs text-white hover:bg-neutral-800"
                   scroll={false}
                   replace
                 >
                   {dict.nav.cta}
-                  <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-700 bg-zinc-900 text-[12px]">
+                  <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-neutral-700 bg-neutral-900 text-[12px]">
                     ⌘ K
                   </span>
                 </Link>

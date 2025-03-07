@@ -60,7 +60,7 @@ export default function Project({
                 quality={100} // High image quality
               />
             </div>
-            <p className="rounded-full bg-zinc-100 px-2 py-1 font-basier text-xs text-zinc-900 text-opacity-50">
+            <p className="rounded-full bg-neutral-100 px-2 py-1 font-basier text-xs text-neutral-900 text-opacity-50">
               {topTag}
             </p>
           </aside>
@@ -71,19 +71,19 @@ export default function Project({
             {tags?.map((tag, index) => (
               <p
                 key={index}
-                className="py rounded-full border border-zinc-300 px-2 font-basier text-sm"
+                className="py rounded-full border border-neutral-300 px-2 font-basier text-sm"
               >
                 {tag}
               </p>
             ))}
           </div>
         </aside>
-        <aside className="border-t border-zinc-200">
+        <aside className="border-t border-neutral-200">
           <p className="mt-4 text-base italic tracking-tight">
             &quot;{testimonial}&quot;
           </p>
           <div className="mt-4 flex gap-4">
-            <div className="relative h-10 w-10 overflow-hidden rounded-md bg-zinc-200">
+            <div className="relative h-10 w-10 overflow-hidden rounded-md bg-neutral-200">
               <Image
                 src={profile || "/path/to/default/image.jpg"}
                 alt="Profile"

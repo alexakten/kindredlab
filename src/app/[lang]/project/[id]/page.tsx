@@ -50,7 +50,7 @@ export default async function ProjectPage({
   }
 
   return (
-    <section className="bg-gradient-radial-to-top flex flex-col items-center justify-center overflow-x-hidden bg-black px-0 text-left tracking-tight text-zinc-100 sm:px-2">
+    <section className="bg-gradient-radial-to-top flex flex-col items-center justify-center overflow-x-hidden bg-black px-0 text-left tracking-tight text-neutral-100 sm:px-2">
       {bookDemo && <CommandK isVisible={bookDemo} />}
 
       <Motion

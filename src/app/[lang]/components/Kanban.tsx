@@ -22,12 +22,12 @@ export default function Kanban({
         <p className="text-xs font-medium text-sky-200">{items}</p>
       </div>
       <section className="mt-4 px-2">
-        <div className="w-full rounded-lg border border-sky-700 bg-zinc-800 px-4 py-4">
+        <div className="w-full rounded-lg border border-sky-700 bg-neutral-800 px-4 py-4">
           <p className="font-medium">{task1}</p>
         </div>
-        <div className="mt-1 w-full rounded-lg border border-sky-700 bg-zinc-800">
+        <div className="mt-1 w-full rounded-lg border border-sky-700 bg-neutral-800">
           <p className="px-4 py-4 font-medium">{task2}</p>
-          <div className="flex items-center gap-2 border-t border-zinc-700 px-4 py-3">
+          <div className="flex items-center gap-2 border-t border-neutral-700 px-4 py-3">
             <div className="relative h-6 w-6 overflow-hidden rounded-full">
               <Image src="/images/memoji.png" alt="avatar" fill />
             </div>

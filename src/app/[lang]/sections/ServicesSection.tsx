@@ -31,7 +31,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
       <div className="relative w-full">
         <div className="grid w-full max-w-8xl grid-cols-1 gap-4 overflow-x-auto px-4 text-white sm:px-16 xl:grid-cols-3">
           {/* Websites */}
-          <div className="relative flex w-full flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 p-6 md:p-8">
+          <div className="relative flex w-full flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-neutral-100 p-6 md:p-8">
             <Image
               src="/images/websites.webp"
               alt="Websites"
@@ -107,7 +107,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
               </p>
               <Link
                 href={"/"}
-                className="w-full rounded-full bg-white px-16 py-3 text-center font-basier text-xs text-black hover:bg-zinc-100 sm:w-auto sm:text-left"
+                className="w-full rounded-full bg-white px-16 py-3 text-center font-basier text-xs text-black hover:bg-neutral-100 sm:w-auto sm:text-left"
                 style={{ mixBlendMode: "plus-lighter" }}
               >
                 LEARN MORE
@@ -116,7 +116,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
           </div>
 
           {/* Design */}
-          <div className="relative flex flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 p-6 md:p-8">
+          <div className="relative flex flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-neutral-100 p-6 md:p-8">
             <Image
               src="/images/design.webp"
               alt="Websites"
@@ -173,7 +173,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
               </p>
               <Link
                 href={"/"}
-                className="w-full  rounded-full bg-white px-16 py-3 text-center font-basier text-xs text-black hover:bg-zinc-100 sm:w-auto sm:text-left"
+                className="w-full  rounded-full bg-white px-16 py-3 text-center font-basier text-xs text-black hover:bg-neutral-100 sm:w-auto sm:text-left"
                 style={{ mixBlendMode: "plus-lighter" }}
               >
                 LEARN MORE
@@ -182,7 +182,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
           </div>
 
           {/* Content */}
-          <div className="relative flex flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-zinc-100 p-6 md:p-8">
+          <div className="relative flex flex-col overflow-hidden rounded-3xl border border-white border-opacity-40 bg-neutral-100 p-6 md:p-8">
             <Image
               src="/images/content.webp"
               alt="Websites"
@@ -207,7 +207,7 @@ export default function ServicesSection({ dict }: ServicesSectionProps) {
               </p>
               <Link
                 href={"/"}
-                className="w-full  rounded-full bg-white px-16 py-3 text-center font-basier text-xs text-black hover:bg-zinc-100 sm:w-auto sm:text-left"
+                className="w-full  rounded-full bg-white px-16 py-3 text-center font-basier text-xs text-black hover:bg-neutral-100 sm:w-auto sm:text-left"
                 style={{ mixBlendMode: "plus-lighter" }}
               >
                 LEARN MORE

@@ -46,7 +46,7 @@ export default async function Home({
   const dict = await getDictionary(lang);
 
   return (
-    <main className="flex select-none flex-col items-center justify-center overflow-x-hidden bg-white px-1.5 sm:px-4 py-1 sm:py-4 text-left tracking-tight text-zinc-100">
+    <main className="flex select-none flex-col items-center justify-center overflow-x-hidden bg-white px-1.5 sm:px-4 py-1 sm:py-4 text-left tracking-tight text-neutral-100">
       {bookDemo && <CommandK isVisible={bookDemo} />}
 
       <Motion
@@ -135,12 +135,12 @@ export default async function Home({
                   </Link> */}
                   <Link
                     href="https://cal.com/kindred-lab/30min"
-                    className="relative flex items-center justify-center gap-3 rounded-full bg-zinc-900 px-8 py-3 font-basier text-xssm:text-sm text-white hover:bg-zinc-800"
+                    className="relative flex items-center justify-center gap-3 rounded-full bg-white px-8 py-3 font-basier text-xssm:text-sm text-black hover:bg-neutral-200"
                     scroll={false}
                     replace
                   >
                     {dict.home.hero.cta2}
-                    <span className="hidden sm:flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-700 bg-zinc-900 text-[12px]">
+                    <span className="hidden sm:flex h-6 w-8 items-center justify-center rounded-[4px] border border-neutral-200 bg-neutral-100 text-[12px]">
                       ⌘ K
                     </span>
                     <span className="absolute -right-1 bottom-1/2 flex translate-x-full translate-y-full items-start gap-1 md:hidden">
@@ -175,8 +175,8 @@ export default async function Home({
         </section>
 
         {/* Services */}
-        <section className="rounded-m flex h-full w-full flex-col items-center bg-white py-2 sm:py-4 text-zinc-900">
-          <div className="rounded-4xl px-2 relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-zinc-100 py-64">
+        <section className="rounded-m flex h-full w-full flex-col items-center bg-white py-2 sm:py-4 text-neutral-900">
+          <div className="rounded-4xl px-2 relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-neutral-100 py-64">
             {/* Artwork */}
 
             <AnimatePresence>
@@ -354,7 +354,7 @@ export default async function Home({
         </section>
 
         {/* Projects */}
-        <section className="rounded-4xl flex h-full w-full flex-col items-center bg-zinc-100 px-4 py-16 text-zinc-900 sm:px-16 md:py-40">
+        <section className="rounded-4xl flex h-full w-full flex-col items-center bg-neutral-100 px-4 py-16 text-neutral-900 sm:px-16 md:py-40">
           <p className="font-basier text-sm opacity-50">
             {dict.home.projects.tag}
           </p>
@@ -440,7 +440,7 @@ export default async function Home({
         </section>
 
         {/* How */}
-        <section className="rounded-m flex h-full w-full flex-col items-center bg-white px-4 py-16 text-zinc-900 sm:px-16 md:py-40">
+        <section className="rounded-m flex h-full w-full flex-col items-center bg-white px-4 py-16 text-neutral-900 sm:px-16 md:py-40">
           <p className="font-basier text-sm opacity-50">{dict.home.how.tag}</p>
           <h2 className="font-minion mt-2 max-w-5xl text-center text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
             {dict.home.how.title}
@@ -514,8 +514,8 @@ export default async function Home({
         </section>
 
         {/* FAQ */}
-        <section className="rounded-4xl flex h-full w-full flex-col items-center bg-white text-zinc-900 md:px-0 md:py-4">
-          <div className="md:rounded-4xl relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-zinc-100 px-6 pb-64 pt-16 sm:px-16 md:py-64">
+        <section className="rounded-4xl flex h-full w-full flex-col items-center bg-white text-neutral-900 md:px-0 md:py-4">
+          <div className="md:rounded-4xl relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-neutral-100 px-6 pb-64 pt-16 sm:px-16 md:py-64">
             <p className="font-basier text-sm opacity-50">
               {dict.home.faq.tag}
             </p>
@@ -569,7 +569,7 @@ export default async function Home({
         </section> */}
 
         {/* CTA */}
-        <section className="rounded-4xl relative flex h-full w-full flex-col items-center overflow-hidden bg-zinc-950  px-4 pb-16 pt-32 text-center">
+        <section className="rounded-4xl relative flex h-full w-full flex-col items-center overflow-hidden bg-neutral-950  px-4 pb-16 pt-32 text-center">
           {/* <Image
             src="/images/hero-green.png"
             alt="Hero image"
@@ -596,12 +596,12 @@ export default async function Home({
           <div className="relative z-10 mt-8 flex flex-row-reverse items-center justify-center gap-8 sm:mt-8 sm:flex-row">
             <Link
               href={`/${lang}/?BookDemo=true`}
-              className="flex items-center justify-center gap-3 rounded-full bg-white px-8 py-3 font-basier text-sm text-black hover:bg-zinc-100"
+              className="flex items-center justify-center gap-3 rounded-full bg-white px-8 py-3 font-basier text-sm text-black hover:bg-neutral-100"
               scroll={false}
               replace
             >
               {dict.home.cta.cta1}
-              <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-200 bg-zinc-100 text-[12px]">
+              <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-neutral-200 bg-neutral-100 text-[12px]">
                 ⌘ K
               </span>
             </Link>

@@ -13,7 +13,7 @@ export default function PricingSection() {
         "Unlimited revisions",
       ],
       bgColor: "bg-white bg-opacity-10",
-      borderColor: "border border-zinc-500",
+      borderColor: "border border-neutral-500",
       textColor: "text-white",
     },
     {
@@ -29,7 +29,7 @@ export default function PricingSection() {
         "Unlimited revisions",
       ],
       bgColor: "bg-black",
-      borderColor: "border border-zinc-500",
+      borderColor: "border border-neutral-500",
       textColor: "text-white",
     },
     {
@@ -45,7 +45,7 @@ export default function PricingSection() {
         "Unlimited revisions",
       ],
       bgColor: "bg-white bg-opacity-10",
-      borderColor: "border border-zinc-500",
+      borderColor: "border border-neutral-500",
       textColor: "text-white",
     },
   ];

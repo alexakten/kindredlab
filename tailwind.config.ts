@@ -23,7 +23,7 @@ const config: Config = {
         gray: {
           "350": "#B7BCC5",
         },
-        zinc: {
+        neutral: {
           "100": "#f7f7f7",
         },
         background: "hsl(var(--background))",
