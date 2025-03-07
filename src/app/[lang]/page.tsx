@@ -135,12 +135,12 @@ export default async function Home({
                   </Link> */}
                   <Link
                     href="https://cal.com/kindred-lab/30min"
-                    className="relative flex items-center justify-center gap-3 rounded-full bg-zinc-900 px-8 py-3 font-basier text-sm text-white hover:bg-zinc-800"
+                    className="relative flex items-center justify-center gap-3 rounded-full bg-zinc-900 px-8 py-3 font-basier text-xssm:text-sm text-white hover:bg-zinc-800"
                     scroll={false}
                     replace
                   >
                     {dict.home.hero.cta2}
-                    <span className="flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-700 bg-zinc-900 text-[12px]">
+                    <span className="hidden sm:flex h-6 w-8 items-center justify-center rounded-[4px] border border-zinc-700 bg-zinc-900 text-[12px]">
                       ⌘ K
                     </span>
                     <span className="absolute -right-1 bottom-1/2 flex translate-x-full translate-y-full items-start gap-1 md:hidden">
