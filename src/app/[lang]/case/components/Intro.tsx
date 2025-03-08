@@ -32,7 +32,7 @@ export default function Intro({ image, description, quote, tags }: IntroProps) {
           </div>
         ))}
       </div>
-      <div className="mt-16 flex w-full flex-col px-8">
+      <div className="mt-16 max-w-8xl flex w-full flex-col px-8">
         <div className="rounded-4xl relative aspect-[16/9] h-full w-full overflow-hidden bg-neutral-100">
           <Image
             src={image}

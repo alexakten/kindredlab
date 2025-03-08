@@ -42,13 +42,10 @@ export default async function Home({
   searchParams,
   params: { lang },
 }: SearchParamProps) {
-  const bookDemo = searchParams?.BookDemo === "true";
   const dict = await getDictionary(lang);
 
   return (
     <main className="flex select-none flex-col items-center justify-center overflow-x-hidden bg-white px-1.5 py-1 text-left tracking-tight text-neutral-100 sm:px-4 sm:py-4">
-      {bookDemo && <CommandK isVisible={bookDemo} />}
-
       <Motion
         initial={{ opacity: 1 }}
         animate={{ opacity: 1 }}
@@ -354,7 +351,7 @@ export default async function Home({
         </section>
 
         {/* Projects */}
-        <section className="rounded-4xl max-w-8xl flex h-full w-full flex-col items-center bg-neutral-100 px-4 py-16 text-neutral-900 sm:px-16 md:py-40">
+        <section className="rounded-4xl flex h-full w-full max-w-8xl flex-col items-center bg-neutral-100 px-4 py-16 text-neutral-900 sm:px-16 md:py-40">
           <p className="font-basier text-sm opacity-50">
             {dict.home.projects.tag}
           </p>
@@ -563,7 +560,7 @@ export default async function Home({
         </section> */}
 
         {/* CTA */}
-        <section className="rounded-4xl max-w-8xl relative flex h-full w-full flex-col items-center overflow-hidden bg-neutral-950  px-4 pb-16 pt-32 text-center">
+        <section className="rounded-4xl relative flex h-full w-full max-w-8xl flex-col items-center overflow-hidden bg-neutral-950  px-4 pb-16 pt-32 text-center">
           {/* <Image
             src="/images/hero-green.png"
             alt="Hero image"
@@ -623,11 +620,11 @@ export default async function Home({
         {/* <Footer /> */}
       </Motion>
       {/* <div
-        className="pointer-events-none fixed inset-x-0 bottom-0 h-16 bg-transparent  backdrop-blur-sm"
+        className="pointer-events-none max-w-8xl fixed inset-x-0 bottom-0 h-16 bg-transparent  backdrop-blur-md"
         style={{
           WebkitMaskImage:
-            "linear-gradient(to bottom, transparent 0%, black 60%)",
-          maskImage: "linear-gradient(to bottom, transparent 0%, black 60%)",
+            "linear-gradient(to bottom, transparent 0%, white 80%)",
+          maskImage: "linear-gradient(to bottom, transparent 0%, white 80%)",
         }}
       ></div> */}
     </main>
