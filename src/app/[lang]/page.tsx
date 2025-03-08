@@ -57,7 +57,7 @@ export default async function Home({
       >
         {/* <Navbar lang={lang} dict={dict} /> */}
         {/* Hero */}
-        <section className="rounded-4xl relative flex min-h-[100svh] w-full max-w-8xl flex-col items-center overflow-hidden bg-neutral-950">
+        <section className="rounded-4xl relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-neutral-950">
           {/* <Image
             src="/images/hero.webp"
             alt="Hero image"
@@ -354,7 +354,7 @@ export default async function Home({
         </section>
 
         {/* Projects */}
-        <section className="rounded-4xl flex h-full w-full flex-col items-center bg-neutral-100 px-4 py-16 text-neutral-900 sm:px-16 md:py-40">
+        <section className="rounded-4xl max-w-8xl flex h-full w-full flex-col items-center bg-neutral-100 px-4 py-16 text-neutral-900 sm:px-16 md:py-40">
           <p className="font-basier text-sm opacity-50">
             {dict.home.projects.tag}
           </p>
@@ -563,7 +563,7 @@ export default async function Home({
         </section> */}
 
         {/* CTA */}
-        <section className="rounded-4xl relative flex h-full w-full flex-col items-center overflow-hidden bg-neutral-950  px-4 pb-16 pt-32 text-center">
+        <section className="rounded-4xl max-w-8xl relative flex h-full w-full flex-col items-center overflow-hidden bg-neutral-950  px-4 pb-16 pt-32 text-center">
           {/* <Image
             src="/images/hero-green.png"
             alt="Hero image"
