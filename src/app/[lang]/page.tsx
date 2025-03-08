@@ -67,7 +67,7 @@ export default async function Home({
             priority
             loading="eager"
           /> */}
-          <div className="rounded-m relative flex h-full w-full flex-col items-center overflow-hidden py-20 pt-12 sm:pt-28">
+          <div className="rounded-m relative flex h-full w-full flex-col items-center overflow-hidden pb-20 pt-12 sm:pt-28">
             <Motion
               initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
