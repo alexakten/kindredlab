@@ -62,7 +62,7 @@ export default async function Home({
             priority
             loading="eager"
           /> */}
-          <div className="rounded-m relative flex h-full w-full flex-col items-center overflow-hidden pb-20 pt-12 sm:pt-10">
+          <div className="rounded-m relative flex h-full w-full flex-col items-center overflow-hidden pt-8 sm:pt-10">
             <Motion
               initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
@@ -79,7 +79,7 @@ export default async function Home({
               transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
               className="flex w-full flex-col items-center px-4 sm:items-center sm:px-16"
             >
-              <div className="relative mt-28 pb-3">
+              <div className="relative mt-16 sm:mt-28 pb-3">
                 <h1 className="text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:text-center sm:leading-[1.1]">
                   {dict.home.hero.title.line1}
                   <span className="-py-5 relative ml-2 border-white pl-1 pr-2.5 sm:ml-2 md:ml-3 md:border lg:ml-4">
