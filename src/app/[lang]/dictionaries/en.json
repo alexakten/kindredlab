@@ -6,7 +6,7 @@
       "item3": "Pricing",
       "item4": "Book Demo"
     },
-    "cta": "BOOK DEMO"
+    "cta": "SCHEDULE MEETING"
   },
   "home": {
     "announcement": {
@@ -15,16 +15,16 @@
     },
     "hero": {
       "title": {
-        "line1": "Product design",
-        "highlight": "partner",
-        "line2": "for tech & AI startups"
+        "line1": "Design",
+        "highlight": "Partner",
+        "line2": "for Ambitious Brands"
       },
       "subtext": {
         "line1": "Kindred is a subscription for next-gen businesses.",
         "line2": "Iterate fast with delivery every 48 hours."
       },
       "cta1": "SAY HELLO",
-      "cta2": "BOOK DEMO"
+      "cta2": "SCHEDULE MEETING"
     },
     "services": {
       "slack": {

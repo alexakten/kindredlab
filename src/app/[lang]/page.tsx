@@ -4,12 +4,8 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import { Motion } from "./components/Motion";
 import Logos from "./components/Logos";
-import CommandK from "./components/CommandK";
-import TestimonialSection from "./sections/TestimonialSection";
-import ServicesSection from "./sections/ServicesSection";
-import PricingSection from "./sections/PricingSection";
+
 import Project from "./components/Project";
-import DetailsSection from "./sections/DetailsSection";
 import { NavigationArrow } from "@phosphor-icons/react/dist/ssr";
 import HeroScroll from "./components/HeroScroll";
 import { AnimatePresence, motion } from "motion/react";
@@ -22,6 +18,8 @@ import Kanban from "./components/Kanban";
 import CalendarEvent from "./components/CalendarEvent";
 import FAQ from "./components/FAQ";
 import CalEmbed from "./components/CalEmbed";
+import KindredLogo from "./components/KindredLogo";
+
 type Locale = "en" | "se";
 
 type SearchParamProps = {
@@ -64,17 +62,16 @@ export default async function Home({
             priority
             loading="eager"
           /> */}
-          <div className="rounded-m relative flex h-full w-full flex-col items-center overflow-hidden pb-20 pt-12 sm:pt-28">
+          <div className="rounded-m relative flex h-full w-full flex-col items-center overflow-hidden pb-20 pt-12 sm:pt-8">
             <Motion
               initial={{ opacity: 0, y: -20, filter: "blur(1rem)" }}
               animate={{ opacity: 1, y: 0, filter: "blur(0)" }}
               transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
-              className="flex w-full flex-col items-center pb-4"
+              className="flex w-full flex-col items-center"
             >
-              <p className="flex items-center rounded-full font-minion text-xl font-medium">
-                kindred
-                {/* kindred <span className="italic">house</span> */}
-              </p>
+              <div className="invert">
+                <KindredLogo />
+              </div>
             </Motion>
             <Motion
               initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
@@ -82,15 +79,20 @@ export default async function Home({
               transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
               className="flex w-full flex-col items-center px-4 sm:items-center sm:px-16"
             >
-              <div className="relative mt-4 px-0 pb-3 sm:px-2">
+              <div className="relative mt-28 pb-3">
                 <h1 className="text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:text-center sm:leading-[1.1]">
                   {dict.home.hero.title.line1}
-                  <span className="relative ml-2 border-white pb-1 pl-2 pr-2.5 sm:ml-2 md:ml-3 md:border lg:ml-4">
+                  <span className="-py-5 relative ml-2 border-white pl-1 pr-2.5 sm:ml-2 md:ml-3 md:border lg:ml-4">
                     {dict.home.hero.title.highlight}
                     {/* <span className="md:hidden">.</span> */}
-                    <span className="absolute -bottom-1 -right-1 hidden  translate-x-full translate-y-full items-start gap-1 md:flex">
-                      <NavigationArrow weight="fill" fill="#d946ef" size={16} />
-                      <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-[#d946ef] px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
+                    <span className="absolute -right-1 -top-1 hidden -translate-y-full translate-x-full items-end gap-1 md:flex">
+                      <NavigationArrow
+                        weight="fill"
+                        fill="#571CFF"
+                        size={16}
+                        style={{ transform: "scaleY(-1)" }}
+                      />
+                      <div className="mb-3 flex h-5 items-center justify-center rounded-full bg-[#571CFF] px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
                         Kindred
                       </div>
                     </span>
@@ -99,11 +101,6 @@ export default async function Home({
                     <span className="-right-1 -top-1 hidden h-2 w-2 border border-white bg-white md:absolute md:block"></span>
                     <span className="-bottom-1 -left-1 hidden h-2 w-2 border border-white bg-white md:absolute md:block"></span>
                     <span className="-bottom-1 -right-1 hidden h-2 w-2 border border-white bg-white md:absolute md:block"></span>
-                    {/* <span className="absolute -bottom-8 left-1/2 -translate-x-1/2 border bg-white px-1">
-                      <p className="text-xs tracking-tight text-black">
-                        1440 × 900
-                      </p>
-                    </span> */}
                   </span>
                   <br />
                   {dict.home.hero.title.line2}
@@ -132,14 +129,14 @@ export default async function Home({
                   </Link> */}
                   <Link
                     href="https://cal.com/kindred-house/30min"
-                    className="relative flex items-center justify-center gap-3 rounded-full bg-black px-6 py-2 font-basier text-xs text-white hover:bg-neutral-800 sm:text-sm"
+                    className="relative flex items-center justify-center gap-3 rounded-full bg-white px-6 py-2 font-basier text-xs text-black hover:bg-neutral-200 sm:text-sm"
                     scroll={false}
                     replace
                   >
                     {dict.home.hero.cta2}
-                    <span className="hidden h-6 w-8 items-center justify-center rounded-[4px] border border-neutral-600 bg-neutral-900 text-[12px] sm:flex">
+                    {/* <span className="hidden h-6 w-8 items-center justify-center rounded-[4px] border border-neutral-600 bg-neutral-900 text-[12px] sm:flex">
                       ⌘ K
-                    </span>
+                    </span> */}
                     <span className="absolute -right-1 bottom-1/2 flex translate-x-full translate-y-full items-start gap-1 md:hidden">
                       <NavigationArrow weight="fill" fill="#d946ef" size={16} />
                       <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-[#d946ef] px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
