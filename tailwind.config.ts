@@ -67,8 +67,11 @@ const config: Config = {
           "5": "hsl(var(--chart-5))",
         },
       },
+      // maxWidth: {
+      //   "8xl": "1440px",
+      // },
       maxWidth: {
-        "8xl": "1440px",
+        "8xl": "1800px",
       },
       borderRadius: {
         lg: "var(--radius)",

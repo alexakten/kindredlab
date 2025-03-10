@@ -54,7 +54,7 @@ export default async function Home({
       >
         {/* <Navbar lang={lang} dict={dict} /> */}
         {/* Hero */}
-        <section className="rounded-4xl relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-neutral-950">
+        <section className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden rounded-4xl bg-neutral-950">
           {/* <Image
             src="/images/hero.webp"
             alt="Hero image"
@@ -71,7 +71,7 @@ export default async function Home({
               transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
               className="flex w-full flex-col items-center pb-4"
             >
-              <p className="font-minion flex items-center rounded-full text-xl font-medium">
+              <p className="flex items-center rounded-full font-minion text-xl font-medium">
                 kindred
                 {/* kindred <span className="italic">house</span> */}
               </p>
@@ -83,7 +83,7 @@ export default async function Home({
               className="flex w-full flex-col items-center px-4 sm:items-center sm:px-16"
             >
               <div className="relative mt-4 px-0 pb-3 sm:px-2">
-                <h1 className="font-minion text-center text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:text-center sm:leading-[1.1]">
+                <h1 className="text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:text-center sm:leading-[1.1]">
                   {dict.home.hero.title.line1}
                   <span className="relative ml-2 border-white pb-1 pl-2 pr-2.5 sm:ml-2 md:ml-3 md:border lg:ml-4">
                     {dict.home.hero.title.highlight}
@@ -173,7 +173,7 @@ export default async function Home({
 
         {/* Services */}
         <section className="rounded-m flex h-full w-full flex-col items-center bg-white py-2 text-neutral-900 sm:py-4">
-          <div className="rounded-4xl relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-neutral-100 px-2 py-64">
+          <div className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden rounded-4xl bg-neutral-100 px-2 py-64">
             {/* Artwork */}
 
             <AnimatePresence>
@@ -334,7 +334,7 @@ export default async function Home({
                 {dict.home.services.tag}
               </span>
             </p>
-            <h2 className="font-minion mt-2 max-w-2xl text-center text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
+            <h2 className="mt-2 max-w-2xl text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
               {dict.home.services.title}
             </h2>
             <div className="mt-8 flex max-w-2xl flex-wrap items-center justify-center gap-2 px-4">
@@ -351,11 +351,11 @@ export default async function Home({
         </section>
 
         {/* Projects */}
-        <section className="rounded-4xl flex h-full w-full max-w-8xl flex-col items-center bg-neutral-100 px-4 py-16 text-neutral-900 sm:px-16 md:py-40">
+        <section className="flex h-full w-full max-w-8xl flex-col items-center rounded-4xl bg-neutral-100 px-4 py-16 text-neutral-900 sm:px-16 md:py-40">
           <p className="font-basier text-sm opacity-50">
             {dict.home.projects.tag}
           </p>
-          <h2 className="font-minion mt-2 max-w-2xl text-center text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
+          <h2 className="mt-2 max-w-2xl text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
             {dict.home.projects.title}
           </h2>
 
@@ -433,7 +433,7 @@ export default async function Home({
         {/* How */}
         <section className="rounded-m flex h-full w-full flex-col items-center bg-white px-4 py-16 text-neutral-900 sm:px-16 md:py-40">
           <p className="font-basier text-sm opacity-50">{dict.home.how.tag}</p>
-          <h2 className="font-minion mt-2 max-w-5xl text-center text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
+          <h2 className="mt-2 max-w-5xl text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
             {dict.home.how.title}
           </h2>
 
@@ -505,12 +505,12 @@ export default async function Home({
         </section>
 
         {/* FAQ */}
-        <section className="rounded-4xl flex h-full w-full flex-col items-center bg-white text-neutral-900 md:px-0 md:py-4">
-          <div className="md:rounded-4xl relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-neutral-100 px-6 pb-64 pt-16 sm:px-16 md:py-64">
+        <section className="flex h-full w-full flex-col items-center rounded-4xl bg-white text-neutral-900 md:px-0 md:py-4">
+          <div className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden bg-neutral-100 px-6 pb-64 pt-16 sm:px-16 md:rounded-4xl md:py-64">
             <p className="font-basier text-sm opacity-50">
               {dict.home.faq.tag}
             </p>
-            <h2 className="font-minion mt-2 max-w-3xl text-center text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
+            <h2 className="mt-2 max-w-3xl text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
               {dict.home.faq.title}
             </h2>
             <AnimatePresence>
@@ -560,7 +560,7 @@ export default async function Home({
         </section> */}
 
         {/* CTA */}
-        <section className="rounded-4xl relative flex h-full w-full max-w-8xl flex-col items-center overflow-hidden bg-neutral-950  px-4 pb-16 pt-32 text-center">
+        <section className="relative flex h-full w-full max-w-8xl flex-col items-center overflow-hidden rounded-4xl bg-neutral-950  px-4 pb-16 pt-32 text-center">
           {/* <Image
             src="/images/hero-green.png"
             alt="Hero image"
@@ -571,7 +571,7 @@ export default async function Home({
             loading="eager"
           /> */}
           {/* <p className="font-basier text-sm opacity-50">{dict.home.cta.tag}</p> */}
-          <h2 className="font-minion  z-10 text-center text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:leading-[1]">
+          <h2 className="z-10  text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:leading-[1]">
             {dict.home.cta.title}
           </h2>
 
