@@ -82,7 +82,7 @@ export default async function Home({
               <div className="relative mt-16 sm:mt-28 pb-3">
                 <h1 className="text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:text-center sm:leading-[1.1]">
                   {dict.home.hero.title.line1}
-                  <span className="-py-5 relative ml-2 border-white pl-1 pr-2.5 sm:ml-2 md:ml-3 md:border lg:ml-4">
+                  <span className="relative ml-2 border-white pl-1 pr-2.5 sm:ml-2 md:ml-3 md:border lg:ml-4">
                     {dict.home.hero.title.highlight}
                     {/* <span className="md:hidden">.</span> */}
                     <span className="absolute -right-1 -top-1 hidden -translate-y-full translate-x-full items-end gap-1 md:flex">
@@ -138,8 +138,8 @@ export default async function Home({
                       ⌘ K
                     </span> */}
                     <span className="absolute -right-1 bottom-1/2 flex translate-x-full translate-y-full items-start gap-1 md:hidden">
-                      <NavigationArrow weight="fill" fill="#d946ef" size={16} />
-                      <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-[#d946ef] px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
+                      <NavigationArrow weight="fill" fill="#571CFF" size={16} />
+                      <div className="mt-3 flex h-5 items-center justify-center rounded-full bg-[#571CFF] px-2 font-inter text-xs font-medium leading-[1.4] tracking-tight text-white">
                         Kindred
                       </div>
                     </span>
