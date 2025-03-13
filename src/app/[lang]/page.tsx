@@ -82,7 +82,7 @@ export default async function Home({
               <div className="relative mt-16 pb-3 sm:mt-28">
                 <h1 className="text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:text-center sm:leading-[1.1]">
                   {dict.home.hero.title.line1}
-                  <span className="relative ml-2 border-white pl-1 pr-2.5 sm:ml-2 md:ml-3 md:border lg:ml-4">
+                  <span className="relative ml-1 border-white pl-1 pr-2.5 sm:ml-2 md:ml-3 md:border lg:ml-4">
                     {dict.home.hero.title.highlight}
                     {/* <span className="md:hidden">.</span> */}
                     <span className="absolute -right-1 -top-1 hidden -translate-y-full translate-x-full items-end gap-1 md:flex">
