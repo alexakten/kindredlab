@@ -3,6 +3,7 @@ import Link from "next/link";
 
 interface ProjectProps {
   thumbnail: string;
+  comingSoon?: boolean;
   link: string;
   logo: string;
   topTag: string;
@@ -17,6 +18,7 @@ interface ProjectProps {
 
 export default function Project({
   thumbnail,
+  comingSoon,
   link,
   logo,
   topTag,
@@ -30,10 +32,10 @@ export default function Project({
 }: ProjectProps) {
   return (
     <Link
-      href={link}
+      href={comingSoon ? "#" : { href: link }}
       className={`flex w-full flex-col items-center gap-4 rounded-2xl bg-white px-4 py-4 text-left shadow-sm sm:h-[28rem] ${
         thumbnailLocation === "right" ? "sm:flex-row" : "sm:flex-row-reverse"
-      }`}
+      } ${!comingSoon ? "cursor-pointer" : "pointer-events-none"}`}
     >
       <div className="relative h-48 w-full flex-shrink-0 gap-2 overflow-hidden rounded-xl sm:h-full sm:w-1/2">
         <Image
@@ -57,9 +59,11 @@ export default function Project({
                 quality={100}
               />
             </div>
-            <p className="rounded-full bg-neutral-100 px-2 py-1 font-basier text-xs text-neutral-900 text-opacity-50">
-              {topTag}
-            </p>
+            {comingSoon && (
+              <p className="rounded-full bg-neutral-100 px-2 py-1 font-basier text-xs text-neutral-900 text-opacity-50">
+                {topTag}
+              </p>
+            )}
           </aside>
           <p className="mb-6 mt-6 text-xl font-medium tracking-tight sm:text-3xl md:mb-0">
             {tagline}

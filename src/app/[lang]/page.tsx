@@ -411,7 +411,8 @@ export default async function Home({
               >
                 <Project
                   thumbnailLocation="left"
-                  thumbnail="/images/payable/payable-2.png"
+                  comingSoon={true}
+                  thumbnail="/images/payable/payable-thumbnail.webp"
                   link={`/${lang}/case/payable`}
                   logo="/images/payable/payable-logo.png"
                   topTag={dict.home.projects.projects[2].topTag}
