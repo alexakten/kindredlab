@@ -369,7 +369,7 @@ export default async function Home({
                   thumbnailLocation="left"
                   thumbnail="/images/qura/qura-thumbnail.webp"
                   link={`/${lang}/case/qura`}
-                  logo="/images/qura/qura-logo.png"
+                  logo="/images/qura/qura-logo.webp"
                   topTag={dict.home.projects.projects[0].topTag}
                   tagline={dict.home.projects.projects[0].tagline}
                   tags={dict.home.projects.projects[0].tags}
