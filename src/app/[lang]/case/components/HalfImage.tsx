@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import Image from "next/image";
 
 interface HalfImageProps {
-  leftImage: string
-  rightImage: string
-  altText: string
+  leftImage: string;
+  rightImage: string;
+  altText: string;
 }
 
 const HalfImage: React.FC<HalfImageProps> = ({
@@ -12,8 +12,8 @@ const HalfImage: React.FC<HalfImageProps> = ({
   altText,
 }) => {
   return (
-    <section className="grid w-full grid-cols-2 px-8 max-w-8xl gap-6">
-      <div className="relative h-full w-full overflow-hidden rounded-4xl ">
+    <section className="grid w-full max-w-8xl grid-cols-1 gap-6 sm:grid-cols-2">
+      <div className="relative h-full w-full overflow-hidden rounded-xl sm:rounded-4xl">
         <Image
           src={leftImage}
           layout="responsive"
@@ -23,7 +23,7 @@ const HalfImage: React.FC<HalfImageProps> = ({
           alt={altText}
         />
       </div>
-      <div className="relative h-full w-full overflow-hidden rounded-4xl">
+      <div className="relative h-full w-full overflow-hidden rounded-xl sm:rounded-4xl">
         <Image
           src={rightImage}
           layout="responsive"
@@ -34,7 +34,7 @@ const HalfImage: React.FC<HalfImageProps> = ({
         />
       </div>
     </section>
-  )
-}
+  );
+};
 
-export default HalfImage
+export default HalfImage;

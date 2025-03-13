@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import FullWidthImage from "./FullWidthImage";
 interface IntroProps {
   image: string;
   description: string;
@@ -9,13 +10,13 @@ interface IntroProps {
 export default function Intro({ image, description, tags }: IntroProps) {
   return (
     <section className="mt-20 flex w-full flex-col items-center">
-      <h2 className="max-w-3xl text-center font-minion text-6xl leading-[1.2] tracking-tight">
+      <h2 className="max-w-3xl text-center font-minion text-3xl leading-[1.2] tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
         {description}
       </h2>
-      <div className="mt-16 flex w-full max-w-4xl items-center justify-center gap-16 rounded-3xl border px-32 py-5">
+      <div className="mt-16 grid grid-cols-2 w-full max-w-4xl flex-col items-start justify-center gap-16 rounded-3xl border px-8 sm:px-32 py-5 sm:flex sm:flex-row sm:items-center">
         {tags.map((tag, index) => (
           <div
-            className="flex flex-col items-center justify-center text-center"
+            className="flex flex-col items-start justify-center text-left sm:items-center sm:text-center"
             key={index}
           >
             <p className="font-regular font-medium">{tag.title}</p>
@@ -31,16 +32,8 @@ export default function Intro({ image, description, tags }: IntroProps) {
           </div>
         ))}
       </div>
-      <div className="mt-16 flex w-full max-w-8xl flex-col px-8">
-        <div className="relative aspect-[16/9] h-full w-full overflow-hidden rounded-4xl bg-neutral-100">
-          <Image
-            src={image}
-            alt=""
-            layout="fill"
-            className="object-cover"
-            priority={true}
-          />
-        </div>
+      <div className="mt-16 flex w-full max-w-8xl flex-col">
+        <FullWidthImage image={image} />
       </div>
     </section>
   );

@@ -6,7 +6,7 @@ export default function LineText({
   text: string;
 }) {
   return (
-    <div className="grid w-full grid-cols-2">
+    <div className="grid w-full grid-cols-1 sm:grid-cols-2">
       <aside className="col-span-1"></aside>
       <div className="col-span-1 flex max-w-lg flex-col ">
         <p className="mt-8 whitespace-pre-line border-b border-neutral-300 pb-2 font-[450] leading-[1.6]">
