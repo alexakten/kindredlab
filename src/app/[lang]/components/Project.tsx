@@ -1,6 +1,4 @@
-import { link } from "fs";
 import Image from "next/image";
-import Link from "next/link";
 
 interface ProjectProps {
   thumbnail: string;
@@ -8,12 +6,12 @@ interface ProjectProps {
   logo: string;
   topTag: string;
   tagline?: string;
-  tags?: string[]; // Update tags to be an array of strings
+  tags?: string[];
   testimonial?: string;
   profile?: string;
   name?: string;
   role?: string;
-  thumbnailLocation?: "left" | "right"; // Add the thumbnailLocation prop
+  thumbnailLocation?: "left" | "right";
 }
 
 export default function Project({
@@ -27,12 +25,12 @@ export default function Project({
   profile,
   name,
   role,
-  thumbnailLocation = "right", // Default to "right"
+  thumbnailLocation = "right",
 }: ProjectProps) {
   return (
     <div
-      className={`flex w-full flex-col items-center gap-4 rounded-2xl bg-white px-4 py-4 text-left shadow-sm sm:h-[28rem] sm:flex-row ${
-        thumbnailLocation === "left" ? "flex-row" : "flex-row-reverse"
+      className={`flex w-full flex-col items-center gap-4 rounded-2xl bg-white px-4 py-4 text-left shadow-sm sm:h-[28rem] ${
+        thumbnailLocation === "right" ? "sm:flex-row" : "sm:flex-row-reverse"
       }`}
     >
       <div className="relative h-48 w-full flex-shrink-0 gap-2 overflow-hidden rounded-xl sm:h-full sm:w-1/2">
@@ -50,11 +48,11 @@ export default function Project({
               <Image
                 src={logo}
                 alt="Logo"
-                height={1000} // Fixed height
-                width={1000} // Let width adjust dynamically
-                className="h-full w-auto" // Tailwind ensures height consistency and width scaling
-                priority // Ensures faster loading
-                quality={100} // High image quality
+                height={1000}
+                width={1000}
+                className="h-full w-auto"
+                priority
+                quality={100}
               />
             </div>
             <p className="rounded-full bg-neutral-100 px-2 py-1 font-basier text-xs text-neutral-900 text-opacity-50">
