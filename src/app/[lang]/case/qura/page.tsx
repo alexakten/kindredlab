@@ -13,6 +13,7 @@ import Quote from "../components/Quote";
 import KindredLogo from "../../components/KindredLogo";
 
 import { getDictionary } from "../../dictionaries";
+import HalfImage from "../components/HalfImage";
 
 type Locale = "en" | "se";
 
@@ -101,9 +102,18 @@ export default async function Home({
 
         <GapMedium />
 
-        <FullWidthImage image="/images/qura/qura-1.webp" />
+        <FullWidthImage image="/images/qura/qura-2.webp" />
 
         <GapMedium />
+
+        <HalfImage
+          leftImage="/images/qura/qura-3.webp"
+          rightImage="/images/qura/qura-4.webp"
+          altText="Qura"
+        />
+
+        <GapMedium />
+
         {/* CTA */}
 
         <section className="my-12 flex w-full flex-col items-center justify-center">
