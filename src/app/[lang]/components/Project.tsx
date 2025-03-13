@@ -48,13 +48,13 @@ export default function Project({
       <div className="flex h-full flex-col items-start justify-between px-6 py-4">
         <aside className="w-full">
           <aside className="flex w-full items-center justify-between">
-            <div className="relative flex h-4 items-center">
+            <div className="relative flex items-center">
               <Image
                 src={logo}
                 alt="Logo"
-                height={1000}
-                width={1000}
-                className="h-full w-auto"
+                height={40}
+                width={64}
+                className="h-auto w-auto"
                 priority
                 quality={100}
               />
