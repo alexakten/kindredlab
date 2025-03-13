@@ -141,7 +141,7 @@ export default function Logos() {
           height="24"
           width="60"
           alt="Qura logo"
-          src="/images/qura/qura-logo.png"
+          src="/images/qura/qura-logo.webp"
           style={{ filter: "invert(100%)" }}
         />
       </div>
