@@ -79,7 +79,7 @@ export default async function Home({
               transition={{ ease: "easeInOut", delay: 0.2, duration: 0.5 }}
               className="flex w-full flex-col items-center px-4 sm:items-center sm:px-16"
             >
-              <div className="relative mt-16 sm:mt-28 pb-3">
+              <div className="relative mt-16 pb-3 sm:mt-28">
                 <h1 className="text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:text-center sm:leading-[1.1]">
                   {dict.home.hero.title.line1}
                   <span className="relative ml-2 border-white pl-1 pr-2.5 sm:ml-2 md:ml-3 md:border lg:ml-4">
@@ -325,12 +325,12 @@ export default async function Home({
               </Motion>
             </AnimatePresence>
 
-            <p className="font-minion text-lg font-bold">
-              kindred
+            <aside className="flex items-center justify-center">
+              <KindredLogo />
               <span className="ml-1 font-basier text-sm font-normal opacity-50">
                 {dict.home.services.tag}
               </span>
-            </p>
+            </aside>
             <h2 className="mt-2 max-w-2xl text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
               {dict.home.services.title}
             </h2>
