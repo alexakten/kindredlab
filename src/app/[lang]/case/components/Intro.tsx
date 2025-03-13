@@ -10,7 +10,7 @@ interface IntroProps {
 export default function Intro({ image, description, tags }: IntroProps) {
   return (
     <section className="mt-20 flex w-full flex-col items-center">
-      <h2 className="max-w-3xl text-center font-minion text-3xl leading-[1.2] tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
+      <h2 className="max-w-3xl text-center font-minion text-4xl leading-[1.2] tracking-tight sm:text-4xl md:text-5xl lg:text-6xl">
         {description}
       </h2>
       <div className="mt-16 grid grid-cols-2 w-full max-w-4xl flex-col items-start justify-center gap-16 rounded-3xl border px-8 sm:px-32 py-5 sm:flex sm:flex-row sm:items-center">
