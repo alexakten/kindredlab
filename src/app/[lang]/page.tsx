@@ -389,7 +389,7 @@ export default async function Home({
               >
                 <Project
                   thumbnailLocation="right"
-                  thumbnail="/images/mycomine/mycomine-1.png"
+                  thumbnail="/images/mycomine/mycomine-thumbnail.webp"
                   link={`/${lang}/case/mycomine`}
                   logo="/images/mycomine/mycomine-logo.png"
                   topTag={dict.home.projects.projects[1].topTag}

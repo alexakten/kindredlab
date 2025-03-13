@@ -48,7 +48,7 @@ export default async function Home({
           },
           {
             title: "Website",
-            text: ["qura.law"],
+            text: ["Qura.law"],
           },
           {
             title: "Year",
@@ -60,7 +60,7 @@ export default async function Home({
       <GapLarge />
 
       <Quote
-        quote="Kindred helped us refine the UX of Qura to make legal research easier"
+        quote="Kindred helped us refine the UX/UI of Qura to make legal research easier"
         author="Arvid Winterfeldt"
         role="CEO at Qura"
       />
@@ -72,21 +72,21 @@ export default async function Home({
       <GapMedium />
 
       <Paragraph
-        blackTitle="The complexities of legal research"
-        grayTitle="Simplifying workflows with AI"
-        text={`Qura is an AI-driven legal search engine that transforms how legal professionals access and analyze vast databases of legal information.
-            
-            Our team collaborated with Qura to refine its product design and UX, ensuring that legal professionals could effortlessly interact with the platform while maintaining accuracy, efficiency, and trust in the AI-driven results.`}
+        blackTitle="Optimizing legal research with better UX"
+        grayTitle="A product designed for clarity and trust"
+        text={`Qura is revolutionizing legal research with AI, but to secure funding and adoption, they needed an intuitive and seamless user experience. 
+  
+  Our team at Kindred collaborated with Qura to refine their product design, ensuring that legal professionals could navigate vast legal databases effortlessly. Through a human-centered approach, we simplified complex workflows and created a clear, accessible interface that elevates user confidence and efficiency.`}
       />
       <GapTiny />
       <LineText
-        title="Complexity of Legal Research"
-        text={`Legal professionals require precision and clarity when searching for sources, making UX crucial for trust and usability.`}
+        title="From complexity to simplicity"
+        text={`Legal research requires precision, clarity, and trust. We designed an interface that prioritizes structured results, making it easy for legal professionals to find and validate sources without unnecessary friction.`}
       />
       <GapTiny />
       <LineText
-        title="Overwhelming Information"
-        text={`Legal professionals require precision and clarity when searching for sources, making UX crucial for trust and usability.`}
+        title="A design built for funding and growth"
+        text={`Our work with Qura helped them present a polished, investor-ready product, supporting their successful €2.1M funding round led by Cherry Ventures.`}
       />
 
       <GapMedium />
