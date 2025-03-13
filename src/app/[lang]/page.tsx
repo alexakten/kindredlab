@@ -52,7 +52,7 @@ export default async function Home({
       >
         {/* <Navbar lang={lang} dict={dict} /> */}
         {/* Hero */}
-        <section className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden rounded-4xl bg-neutral-950">
+        <section className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden rounded-4xl pb-20 bg-neutral-950">
           {/* <Image
             src="/images/hero.webp"
             alt="Hero image"

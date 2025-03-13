@@ -3,14 +3,13 @@ import Image from "next/image";
 interface IntroProps {
   image: string;
   description: string;
-  quote: string;
   tags: Array<{ title: string; text: string | string[] }>;
 }
 
-export default function Intro({ image, description, quote, tags }: IntroProps) {
+export default function Intro({ image, description, tags }: IntroProps) {
   return (
     <section className="mt-20 flex w-full flex-col items-center">
-      <h2 className="font-minion max-w-3xl text-center text-6xl leading-[1.2] tracking-tight">
+      <h2 className="max-w-3xl text-center font-minion text-6xl leading-[1.2] tracking-tight">
         {description}
       </h2>
       <div className="mt-16 flex w-full max-w-4xl items-center justify-center gap-16 rounded-3xl border px-32 py-5">
@@ -32,8 +31,8 @@ export default function Intro({ image, description, quote, tags }: IntroProps) {
           </div>
         ))}
       </div>
-      <div className="mt-16 max-w-8xl flex w-full flex-col px-8">
-        <div className="rounded-4xl relative aspect-[16/9] h-full w-full overflow-hidden bg-neutral-100">
+      <div className="mt-16 flex w-full max-w-8xl flex-col px-8">
+        <div className="relative aspect-[16/9] h-full w-full overflow-hidden rounded-4xl bg-neutral-100">
           <Image
             src={image}
             alt=""
