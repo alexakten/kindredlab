@@ -72,8 +72,8 @@ export default async function Home({
       <GapMedium />
 
       <Paragraph
-        blackTitle="Optimizing legal research with better UX"
-        grayTitle="A product designed for clarity and trust"
+        blackTitle="The complexities of legal research"
+        grayTitle="Simplifying workflows with AI"
         text={`Qura is revolutionizing legal research with AI, but to secure funding and adoption, they needed an intuitive and seamless user experience. 
   
   Our team at Kindred collaborated with Qura to refine their product design, ensuring that legal professionals could navigate vast legal databases effortlessly. Through a human-centered approach, we simplified complex workflows and created a clear, accessible interface that elevates user confidence and efficiency.`}
