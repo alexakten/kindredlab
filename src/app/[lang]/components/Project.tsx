@@ -32,7 +32,7 @@ export default function Project({
 }: ProjectProps) {
   return (
     <Link
-      href={comingSoon ? "#" : { href: link }}
+      href={comingSoon ? "#" : link}
       className={`flex w-full flex-col items-center gap-4 rounded-2xl bg-white px-4 py-4 text-left shadow-sm sm:h-[28rem] ${
         thumbnailLocation === "right" ? "sm:flex-row" : "sm:flex-row-reverse"
       } ${!comingSoon ? "cursor-pointer" : "pointer-events-none"}`}
