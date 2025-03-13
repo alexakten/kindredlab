@@ -10,6 +10,7 @@ import FullWidthImage from "../components/FullWidthImage";
 import Paragraph from "../components/Paragraph";
 import LineText from "../components/LineText";
 import Quote from "../components/Quote";
+import KindredLogo from "../../components/KindredLogo";
 
 import { getDictionary } from "../../dictionaries";
 
@@ -36,9 +37,10 @@ export default async function Home({
         transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
         className="flex w-full flex-col items-center"
       >
-        <Navbar lang={lang} dict={dict} />
+        <GapTiny />
+        <KindredLogo />
         <Intro
-          image="/images/qura/qura-1.webp"
+          image="/images/qura/qura-hero.webp"
           description={
             "Helping Qura raise $2.1M through lightning fast design iteration"
           }

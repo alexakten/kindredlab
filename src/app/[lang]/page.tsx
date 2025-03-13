@@ -367,7 +367,7 @@ export default async function Home({
               >
                 <Project
                   thumbnailLocation="left"
-                  thumbnail="/images/qura/qura-3.png"
+                  thumbnail="/images/qura/qura-thumbnail.webp"
                   link={`/${lang}/case/qura`}
                   logo="/images/qura/qura-logo.png"
                   topTag={dict.home.projects.projects[0].topTag}

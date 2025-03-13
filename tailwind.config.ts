@@ -16,7 +16,7 @@ const config: Config = {
       fontFamily: {
         inter: ["Inter", "sans-serif"],
         basier: ["Basier", "monospace"],
-        minion: ["minion-pro-subhead", "serif"],
+        minion: ["minion-pro-display", "serif"],
         marydale: ["Marydale", "serif"],
       },
       colors: {

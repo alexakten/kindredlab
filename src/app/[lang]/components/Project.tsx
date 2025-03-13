@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface ProjectProps {
   thumbnail: string;
@@ -28,7 +29,8 @@ export default function Project({
   thumbnailLocation = "right",
 }: ProjectProps) {
   return (
-    <div
+    <Link
+      href={link}
       className={`flex w-full flex-col items-center gap-4 rounded-2xl bg-white px-4 py-4 text-left shadow-sm sm:h-[28rem] ${
         thumbnailLocation === "right" ? "sm:flex-row" : "sm:flex-row-reverse"
       }`}
@@ -93,6 +95,6 @@ export default function Project({
           </div>
         </aside>
       </div>
-    </div>
+    </Link>
   );
 }
