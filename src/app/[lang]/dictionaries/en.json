@@ -232,11 +232,9 @@
     "payable": {
       "thumbnailLocation": "right",
       "thumbnail": "/images/payable/payable-thumbnail.webp",
-      "comingSoon": true,
-      "topTag": "CASE COMING SOON",
       "link": "/case/payable",
       "logo": "/images/payable/payable-logo.png",
-      "tagline": "Launching Payable in the Nordics.",
+      "tagline": "Launching a next generation debt collection agency in the Nordics.",
       "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
       "tags": [
         {
@@ -259,7 +257,22 @@
       "quote": "During my career, I have worked with several big design agencies in international companies — I must say that Kindred is the best I have worked with.",
       "profile": "/images/profiles/hans.png",
       "author": "Hans Delking",
-      "role": "CEO at Payable"
+      "role": "CEO at Payable",
+      "paragraph": {
+        "blackTitle": "Next-gen debt collection",
+        "grayTitle": "The human way to pay",
+        "text": "Payable is a fintech company that provides a platform for managing and automating payments. We worked with Payable to refine their brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in sustainable waste management."
+      },
+      "lineText": [
+        {
+          "title": "A brand built for trust and innovation",
+          "text": "To resonate with investors and industry stakeholders, we developed a visual identity that balances scientific credibility with an approachable, modern aesthetic."
+        },
+        {
+          "title": "A website designed to drive funding",
+          "text": "We crafted a structured, compelling web experience that highlights MycoMine’s technology, success stories, and measurable impact—ensuring clarity for investors and partners."
+        }
+      ]
     }
   }
 }
