@@ -6,12 +6,12 @@ interface ProjectProps {
   comingSoon?: boolean;
   link: string;
   logo: string;
-  topTag: string;
+  topTag?: string;
   tagline?: string;
-  tags?: string[];
-  testimonial?: string;
+  services?: string[];
+  quote?: string;
   profile?: string;
-  name?: string;
+  author?: string;
   role?: string;
   thumbnailLocation?: "left" | "right";
 }
@@ -23,10 +23,10 @@ export default function Project({
   logo,
   topTag,
   tagline,
-  tags,
-  testimonial,
+  services,
+  quote,
   profile,
-  name,
+  author,
   role,
   thumbnailLocation = "right",
 }: ProjectProps) {
@@ -69,19 +69,19 @@ export default function Project({
             {tagline}
           </p>
           <div className="mb-6 mt-6 hidden flex-wrap gap-2 sm:mb-0 md:flex">
-            {tags?.map((tag, index) => (
+            {services?.map((service, index) => (
               <p
                 key={index}
                 className="py rounded-full border border-neutral-200 px-2 font-basier text-sm"
               >
-                {tag}
+                {service}
               </p>
             ))}
           </div>
         </aside>
         <aside className="border-t border-neutral-200">
           <p className="mt-4 text-base italic tracking-tight">
-            &quot;{testimonial}&quot;
+            &quot;{quote}&quot;
           </p>
           <div className="mt-4 flex gap-4">
             <div className="relative h-10 w-10 overflow-hidden rounded-md bg-neutral-200">
@@ -93,7 +93,7 @@ export default function Project({
               />
             </div>
             <div className="flex flex-col">
-              <p className="text-sm font-medium">{name}</p>
+              <p className="text-sm font-medium">{author}</p>
               <p className="text-sm opacity-50">{role}</p>
             </div>
           </div>

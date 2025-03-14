@@ -25,11 +25,11 @@ export default function HeroScroll() {
     { orientation: "landscape", src: "/images/hero-scroll/hero-scroll-2.webp" },
     { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-3.webp" },
     { orientation: "square", src: "/images/hero-scroll/hero-scroll-4.webp" },
-    { orientation: "landscape", src: "/images/hero-scroll/qura-website.png" },
+    { orientation: "landscape", src: "/images/qura/qura-hero.webp" },
     { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-1.webp" },
     { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-6.webp" },
     { orientation: "square", src: "/images/hero-scroll/hero-scroll-7.webp" },
-    { orientation: "landscape", src: "/images/hero-scroll/mycomine-hero.webp" },
+    { orientation: "landscape", src: "/images/mycomine/mycomine-hero.webp" },
   ];
 
   const getClassesForOrientation = (orientation: string) => {

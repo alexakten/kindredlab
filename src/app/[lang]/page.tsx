@@ -52,7 +52,7 @@ export default async function Home({
       >
         {/* <Navbar lang={lang} dict={dict} /> */}
         {/* Hero */}
-        <section className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden rounded-4xl pb-20 bg-neutral-950">
+        <section className="relative flex w-full max-w-8xl flex-col items-center overflow-hidden rounded-4xl bg-neutral-950 pb-20">
           {/* <Image
             src="/images/hero.webp"
             alt="Hero image"
@@ -358,72 +358,49 @@ export default async function Home({
 
           <div className="mt-16 flex w-full max-w-6xl flex-col gap-4 md:mt-32">
             <AnimatePresence>
-              <Motion
-                initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
-                whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
-                exit={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
-                transition={{ ease: "easeInOut", duration: 0.5 }}
-                viewport={{ once: false, margin: "-100px" }} // Animates both on enter and exit
-              >
-                <Project
-                  thumbnailLocation="left"
-                  thumbnail="/images/qura/qura-thumbnail.webp"
-                  link={`/${lang}/case/qura`}
-                  logo="/images/qura/qura-logo.webp"
-                  topTag={dict.home.projects.projects[0].topTag}
-                  tagline={dict.home.projects.projects[0].tagline}
-                  tags={dict.home.projects.projects[0].tags}
-                  testimonial={dict.home.projects.projects[0].testimonial}
-                  profile={dict.home.projects.projects[0].profile}
-                  name={dict.home.projects.projects[0].name}
-                  role={dict.home.projects.projects[0].role}
-                />
-              </Motion>
+              {Object.entries(dict.case).map(([key, project]) => {
+                // Explicitly define the type of `project`
+                const typedProject = project as {
+                  thumbnailLocation: "left" | "right";
+                  comingSoon?: boolean;
+                  thumbnail: string;
+                  link: string;
+                  logo: string;
+                  topTag?: string;
+                  tagline?: string;
+                  services?: string[];
+                  quote?: string;
+                  profile?: string;
+                  author?: string;
+                  role?: string;
+                };
 
-              <Motion
-                initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
-                whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
-                exit={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
-                transition={{ ease: "easeInOut", duration: 0.5 }}
-                viewport={{ once: false, margin: "-100px" }} // Animates both on enter and exit
-              >
-                <Project
-                  thumbnailLocation="right"
-                  thumbnail="/images/mycomine/mycomine-thumbnail.webp"
-                  link={`/${lang}/case/mycomine`}
-                  logo="/images/mycomine/mycomine-logo.png"
-                  topTag={dict.home.projects.projects[1].topTag}
-                  tagline={dict.home.projects.projects[1].tagline}
-                  tags={dict.home.projects.projects[1].tags}
-                  testimonial={dict.home.projects.projects[1].testimonial}
-                  profile={dict.home.projects.projects[1].profile}
-                  name={dict.home.projects.projects[1].name}
-                  role={dict.home.projects.projects[1].role}
-                />
-              </Motion>
-
-              <Motion
-                initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
-                whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
-                exit={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
-                transition={{ ease: "easeInOut", duration: 0.5 }}
-                viewport={{ once: false, margin: "-100px" }} // Animates both on enter and exit
-              >
-                <Project
-                  thumbnailLocation="left"
-                  comingSoon={true}
-                  thumbnail="/images/payable/payable-thumbnail.webp"
-                  link={`/${lang}/case/payable`}
-                  logo="/images/payable/payable-logo.png"
-                  topTag={dict.home.projects.projects[2].topTag}
-                  tagline={dict.home.projects.projects[2].tagline}
-                  tags={dict.home.projects.projects[2].tags}
-                  testimonial={dict.home.projects.projects[2].testimonial}
-                  profile={dict.home.projects.projects[2].profile}
-                  name={dict.home.projects.projects[2].name}
-                  role={dict.home.projects.projects[2].role}
-                />
-              </Motion>
+                return (
+                  <Motion
+                    key={key}
+                    initial={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
+                    whileInView={{ opacity: 1, y: 0, filter: "blur(0)" }}
+                    exit={{ opacity: 0, y: 20, filter: "blur(1rem)" }}
+                    transition={{ ease: "easeInOut", duration: 0.5 }}
+                    viewport={{ once: false, margin: "-100px" }}
+                  >
+                    <Project
+                      thumbnailLocation={typedProject.thumbnailLocation}
+                      comingSoon={typedProject.comingSoon}
+                      thumbnail={typedProject.thumbnail}
+                      link={`/${lang}${typedProject.link}`}
+                      logo={typedProject.logo}
+                      topTag={typedProject.topTag}
+                      tagline={typedProject.tagline}
+                      services={typedProject.services}
+                      quote={typedProject.quote}
+                      profile={typedProject.profile}
+                      author={typedProject.author}
+                      role={typedProject.role}
+                    />
+                  </Motion>
+                );
+              })}
             </AnimatePresence>
           </div>
         </section>
@@ -533,29 +510,6 @@ export default async function Home({
             </div>
           </div>
         </section>
-
-        {/* Pricing */}
-        {/* <section className="relative flex w-full max-w-8xl flex-col items-start justify-center overflow-hidden px-4 py-28 sm:px-16">
-          <Image
-            src="/images/hero.png"
-            alt="Hero image"
-            width={1000}
-            height={1000}
-            className="pointer-events-none absolute left-0 top-0 z-0 h-full w-full object-left blur-lg sm:w-full sm:scale-105 sm:object-cover"
-            priority
-            loading="eager"
-          />
-          <div className="relative z-10 flex w-full max-w-8xl flex-col text-white">
-            <div className="flex w-full max-w-8xl flex-col items-start">
-              <p className="font-basier text-sm opacity-50">OUR PLANS</p>
-              <h2 className="mb-12 mt-2 text-center text-4xl font-semibold leading-[1.2] tracking-tight sm:text-4xl">
-                Pricing
-              </h2>
-            </div>
-          </div>
-
-          <PricingSection />
-        </section> */}
 
         {/* CTA */}
         <section className="relative flex h-full w-full max-w-8xl flex-col items-center overflow-hidden rounded-4xl bg-neutral-950  px-4 pb-16 pt-32 text-center">

@@ -99,6 +99,16 @@
           "profile": "/images/profiles/hans.png",
           "name": "Hans Delking",
           "role": "CEO på Payable"
+        },
+        {
+          "client": "Lundhags",
+          "topTag": "CASE COMING SOON",
+          "tagline": "Launching Payable in the Nordics.",
+          "tags": ["CONTENT", "PHOTOGRAPHY", "VIDEOGRAPHY", "ADS"],
+          "testimonial": "During my career, I have worked with several big design agencies in international companies — I must say that Kindred is the best I have worked with.",
+          "profile": "/images/profiles/hans.png",
+          "name": "Hans Delking",
+          "role": "CEO at Payable"
         }
       ]
     },
@@ -166,6 +176,130 @@
         "line2": "Vi hör av oss inom 24 timmar."
       },
       "cta1": "BOKA MÖTE"
+    }
+  },
+  "case": {
+    "qura": {
+      "thumbnailLocation": "right",
+      "thumbnail": "/images/qura/qura-thumbnail.webp",
+      "link": "/case/qura",
+      "logo": "/images/qura/qura-logo.webp",
+      "tagline": "Hjälper Qura att resa $2.1M genom blixtsnabb designiteration.",
+      "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEBB"],
+      "tags": [
+        {
+          "title": "Bransch",
+          "text": ["Legal Tech"]
+        },
+        {
+          "title": "Huvudkontor",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Hemsida",
+          "text": ["Qura.law"]
+        },
+        {
+          "title": "År",
+          "text": ["Pågående"]
+        }
+      ],
+      "quote": "Varje design som Kindred levererar är helt magisk!",
+      "profile": "/images/profiles/arvid.png",
+      "author": "Arvid Winterfeldt",
+      "role": "CEO på Qura",
+      "paragraph": {
+        "blackTitle": "The complexities of legal research",
+        "grayTitle": "Simplifying workflows with AI",
+        "text": "Qura is revolutionizing legal research with AI, but to secure funding and adoption, they needed an intuitive and seamless user experience. Our team at Kindred collaborated with Qura to refine their product design, ensuring that legal professionals could navigate vast legal databases effortlessly. Through a human-centered approach, we simplified complex workflows and created a clear, accessible interface that elevates user confidence and efficiency."
+      },
+      "lineText": [
+        {
+          "title": "From complexity to simplicity",
+          "text": "Legal research requires precision, clarity, and trust. We designed an interface that prioritizes structured results, making it easy for legal professionals to find and validate sources without unnecessary friction."
+        },
+        {
+          "title": "A design built for funding and growth",
+          "text": "Our work with Qura helped them present a polished, investor-ready product, supporting their successful €2.1M funding round led by Cherry Ventures."
+        }
+      ]
+    },
+    "mycomine": {
+      "thumbnailLocation": "left",
+      "thumbnail": "/images/mycomine/mycomine-thumbnail.webp",
+      "link": "/case/mycomine",
+      "logo": "/images/mycomine/mycomine-logo.png",
+      "tagline": "MycoMine får ett komplett facelift med ett nytt varumärke och hemsida.",
+      "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+      "tags": [
+        {
+          "title": "Bransch",
+          "text": ["Cleantech"]
+        },
+        {
+          "title": "Huvudkontor",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Hemsida",
+          "text": ["Mycomine.com"]
+        },
+        {
+          "title": "År",
+          "text": ["Pågående"]
+        }
+      ],
+      "quote": "Jag fick gåshud när jag såg den nya hemsidan. Vi är tacksamma över att ha arbetat med Kindred, och hoppas på att göra det igen i framtiden.",
+      "profile": "/images/profiles/magnus.png",
+      "author": "Magnus Ivarsson",
+      "role": "CEO på Mycomine",
+      "paragraph": {
+        "blackTitle": "Bioremediation as a Service",
+        "grayTitle": "Harnessing nature for sustainability",
+        "text": "MycoMine is pioneering bioremediation with cutting-edge fungal technology, and they needed a compelling brand and digital presence to match their innovation. We worked with MycoMine to refine their brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in sustainable waste management."
+      },
+      "lineText": [
+        {
+          "title": "A brand built for trust and innovation",
+          "text": "To resonate with investors and industry stakeholders, we developed a visual identity that balances scientific credibility with an approachable, modern aesthetic."
+        },
+        {
+          "title": "A website designed to drive funding",
+          "text": "We crafted a structured, compelling web experience that highlights MycoMine’s technology, success stories, and measurable impact—ensuring clarity for investors and partners."
+        }
+      ]
+    },
+    "payable": {
+      "thumbnailLocation": "right",
+      "thumbnail": "/images/payable/payable-thumbnail.webp",
+      "comingSoon": true,
+      "topTag": "CASE KOMMER SNART",
+      "link": "/case/payable",
+      "logo": "/images/payable/payable-logo.png",
+      "tagline": "Lanserar Payable i Norden.",
+      "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+      "tags": [
+        {
+          "title": "Bransch",
+          "text": ["Fintech"]
+        },
+        {
+          "title": "Huvudkontor",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Hemsida",
+          "text": ["Payable.se"]
+        },
+        {
+          "title": "År",
+          "text": ["Pågående"]
+        }
+      ],
+      "quote": "Under min karriär har jag jobbat med flera stora designbyråer i internationella bolag — jag kan helt klart säga att Kindred är den bästa jag har jobbat med.",
+      "profile": "/images/profiles/hans.png",
+      "author": "Hans Delking",
+      "role": "CEO på Payable"
     }
   }
 }

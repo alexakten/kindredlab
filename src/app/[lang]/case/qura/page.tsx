@@ -34,35 +34,16 @@ export default async function Home({
       <KindredLogo />
       <Intro
         image="/images/qura/qura-hero.webp"
-        description={
-          "Helping Qura raise $2.1M through lightning fast design iteration"
-        }
-        tags={[
-          {
-            title: "Industry",
-            text: ["Legal Tech"],
-          },
-          {
-            title: "Headquarters",
-            text: ["Stockholm, SE"],
-          },
-          {
-            title: "Website",
-            text: ["Qura.law"],
-          },
-          {
-            title: "Year",
-            text: ["Ongoing"],
-          },
-        ]}
+        description={dict.case.qura.tagline}
+        tags={dict.case.qura.tags}
       />
 
       <GapLarge />
 
       <Quote
-        quote="Kindred helped us refine the UX/UI of Qura to make legal research easier"
-        author="Arvid Winterfeldt"
-        role="CEO at Qura"
+        quote={dict.case.qura.quote}
+        author={dict.case.qura.author}
+        role={dict.case.qura.role}
       />
 
       <GapLarge />
@@ -72,21 +53,19 @@ export default async function Home({
       <GapMedium />
 
       <Paragraph
-        blackTitle="The complexities of legal research"
-        grayTitle="Simplifying workflows with AI"
-        text={`Qura is revolutionizing legal research with AI, but to secure funding and adoption, they needed an intuitive and seamless user experience. 
-  
-  Our team at Kindred collaborated with Qura to refine their product design, ensuring that legal professionals could navigate vast legal databases effortlessly. Through a human-centered approach, we simplified complex workflows and created a clear, accessible interface that elevates user confidence and efficiency.`}
+        blackTitle={dict.case.qura.paragraph.blackTitle}
+        grayTitle={dict.case.qura.paragraph.grayTitle}
+        text={dict.case.qura.paragraph.text}
       />
       <GapTiny />
       <LineText
-        title="From complexity to simplicity"
-        text={`Legal research requires precision, clarity, and trust. We designed an interface that prioritizes structured results, making it easy for legal professionals to find and validate sources without unnecessary friction.`}
+        title={dict.case.qura.lineText[0].title}
+        text={dict.case.qura.lineText[0].text}
       />
       <GapTiny />
       <LineText
-        title="A design built for funding and growth"
-        text={`Our work with Qura helped them present a polished, investor-ready product, supporting their successful €2.1M funding round led by Cherry Ventures.`}
+        title={dict.case.qura.lineText[1].title}
+        text={dict.case.qura.lineText[1].text}
       />
 
       <GapMedium />
