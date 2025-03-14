@@ -28,6 +28,7 @@ export default function HeroScroll() {
     { orientation: "landscape", src: "/images/qura/qura-hero.webp" },
     { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-1.webp" },
     { orientation: "portrait", src: "/images/hero-scroll/hero-scroll-6.webp" },
+    { orientation: "landscape", src: "/images/payable/payable-thumbnail.webp" },
     { orientation: "square", src: "/images/hero-scroll/hero-scroll-7.webp" },
     { orientation: "landscape", src: "/images/mycomine/mycomine-hero.webp" },
   ];
