@@ -37,7 +37,7 @@ export default function HeroScroll() {
     switch (orientation) {
       case "landscape":
         // Smaller min-width on mobile, larger on md and above
-        return "aspect-[16/9] min-w-[20rem] md:min-w-[36rem]";
+        return "aspect-[16/9] min-w-[24rem] md:min-w-[36rem]";
       case "square":
         return "aspect-square min-w-[12rem] md:min-w-[18rem]";
       case "portrait":
