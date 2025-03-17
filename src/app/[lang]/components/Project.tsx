@@ -45,7 +45,7 @@ export default function Project({
           layout="fill"
         />
       </div>
-      <div className="flex h-full flex-col items-start justify-between px-6 py-4">
+      <div className="flex h-full flex-col items-start justify-between px-3 sm:px-6 py-4">
         <aside className="w-full">
           <aside className="flex w-full items-center justify-between">
             <div className="relative flex items-center">
