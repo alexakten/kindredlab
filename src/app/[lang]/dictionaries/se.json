@@ -230,7 +230,7 @@
       "link": "/case/mycomine",
       "logo": "/images/mycomine/mycomine-logo.png",
       "tagline": "MycoMine gets a complete facelift with a new brand and website.",
-      "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+      "services": ["BRANDING", "DESIGN SYSTEM", "WEB", "CONTENT"],
       "tags": [
         {
           "title": "Industry",
@@ -319,8 +319,8 @@
       "thumbnail": "/images/lundhags/lundhags-thumbnail.webp",
       "link": "/case/lundhags",
       "logo": "/images/lundhags/lundhags-logo.webp",
-      "tagline": "Lundhags gets a complete facelift with a new brand and website.",
-      "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+      "tagline": "Helping Lundhags drive sales with ad creatives and photography.",
+      "services": ["GRAPHIC DESIGN", "PHOTOGRAPHY", "CONTENT"],
       "tags": [
         {
           "title": "Industry",
@@ -332,17 +332,13 @@
         },
         {
           "title": "Website",
-          "text": ["Mycomine.com"]
+          "text": ["Lundhags.se"]
         },
         {
           "title": "Year",
           "text": ["Ongoing"]
         }
       ],
-      "quote": "I got goosebumps when I saw the new website. We are grateful to have worked with Kindred, and hope to do so again in the future.",
-      "profile": "/images/profiles/magnus.png",
-      "author": "Magnus Ivarsson",
-      "role": "CEO at Mycomine",
       "paragraph": {
         "blackTitle": "Bioremediation as a Service",
         "grayTitle": "Harnessing nature for sustainability",
@@ -365,7 +361,7 @@
       "link": "/case/airbon",
       "logo": "/images/airbon/airbon-logo.png",
       "tagline": "Building a brand and MVP for regenerative farming startup Airbon.",
-      "services": ["BRANDING", "DESIGN SYSTEM", "WEB"],
+      "services": ["BRANDING", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
       "tags": [
         {
           "title": "Industry",
@@ -377,7 +373,7 @@
         },
         {
           "title": "Website",
-          "text": ["airbon.co"]
+          "text": ["Airbon.co"]
         },
         {
           "title": "Year",
@@ -441,7 +437,7 @@
         },
         {
           "title": "A website designed to drive funding",
-          "text": "We crafted a structured, compelling web experience that highlights MycoMine's technology, success stories, and measurable impact—ensuring clarity for investors and partners."
+          "text": "We crafted a structured, compelling web experience that highlights MycoMine’s technology, success stories, and measurable impact—ensuring clarity for investors and partners."
         }
       ]
     },
@@ -450,12 +446,12 @@
       "thumbnail": "/images/swt/swt-thumbnail.webp",
       "link": "/case/swt",
       "logo": "/images/swt/swt-logo.png",
-      "tagline": "Swedish is a new way to learn Swedish.",
-      "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+      "tagline": "Creating a visual identity for Stockholm Water Technology.",
+      "services": ["BRANDING", "DESIGN SYSTEM", "WEB"],
       "tags": [
         {
           "title": "Industry",
-          "text": ["Transport"]
+          "text": ["Cleantech"]
         },
         {
           "title": "Headquarters",
@@ -470,10 +466,10 @@
           "text": ["Ongoing"]
         }
       ],
-      "quote": "These guys are great. After the first job I hired them again.",
-      "profile": "/images/profiles/jan.png",
-      "author": "Jan Eriksson",
-      "role": "CEO at TTS",
+      "quote": "The new site really looks so much better. Thank you very much!",
+      "profile": "/images/profiles/karthik.png",
+      "author": "Karthik Laxman",
+      "role": "CEO at SWT",
       "paragraph": {
         "blackTitle": "Bioremediation as a Service",
         "grayTitle": "Harnessing nature for sustainability",
