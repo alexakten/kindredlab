@@ -176,7 +176,7 @@ export default async function Home({
             <AnimatePresence>
               {/* Slack */}
               <Motion
-                className="-right-20 top-6 z-10 absolute rotate-6 sm:-right-8 sm:top-16 md:absolute md:-right-4 md:block"
+                className="absolute -right-20 top-6 z-10 rotate-6 sm:-right-8 sm:top-16 md:absolute md:-right-4 md:block"
                 initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
                 whileInView={{ x: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
@@ -236,7 +236,7 @@ export default async function Home({
               >
                 <div className="relative h-full w-full border border-blue-500">
                   <Image
-                    src="/images/qura-hero.png"
+                    src="/images/qura-hero-screen.webp"
                     alt="Hero image"
                     width={1000}
                     height={1000}
@@ -278,7 +278,7 @@ export default async function Home({
 
               {/* Kanban */}
               <Motion
-                className="absolute -bottom-12 -right-20 z-10 rotate-6 sm:-right-12 lg:top-56 sm:-rotate-6"
+                className="absolute -bottom-12 -right-20 z-10 rotate-6 sm:-right-12 sm:-rotate-6 lg:top-56"
                 initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
                 whileInView={{ x: 0, opacity: 1, rotate: -6 }} // Animate to rotated position
                 exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
@@ -331,7 +331,7 @@ export default async function Home({
                 {dict.home.services.tag}
               </span>
             </aside>
-            <h2 className="mt-2 px-6 max-w-2xl text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
+            <h2 className="mt-2 max-w-2xl px-6 text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
               {dict.home.services.title}
             </h2>
             <div className="mt-8 flex max-w-2xl flex-wrap items-center justify-center gap-2 px-4">
