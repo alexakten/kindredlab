@@ -408,7 +408,7 @@ export default async function Home({
         {/* How */}
         <section className="rounded-m flex h-full w-full flex-col items-center bg-white px-4 py-16 text-neutral-900 sm:px-16 md:py-40">
           <p className="font-basier text-sm opacity-50">{dict.home.how.tag}</p>
-          <h2 className="mt-2 max-w-5xl text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
+          <h2 className="mt-2 px-4 max-w-5xl text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
             {dict.home.how.title}
           </h2>
 

@@ -45,7 +45,7 @@ export default function Project({
           layout="fill"
         />
       </div>
-      <div className="flex h-full flex-col items-start justify-between px-3 sm:px-6 py-4">
+      <div className="flex h-full flex-col items-start justify-between px-3 py-4 sm:px-6">
         <aside className="w-full">
           <aside className="flex w-full items-center justify-between">
             <div className="relative flex items-center">
@@ -83,20 +83,20 @@ export default function Project({
           <aside className="border-t border-neutral-200">
             <p className="mt-4 text-base italic tracking-tight">
               &quot;{quote}&quot;
-          </p>
-          <div className="mt-4 flex gap-4">
-            <div className="relative h-10 w-10 overflow-hidden rounded-md bg-neutral-200">
-              <Image
-                src={profile || "/path/to/default/image.jpg"}
-                alt="Profile"
-                layout="fill"
-                objectFit="cover"
-              />
-            </div>
-            <div className="flex flex-col">
-              <p className="text-sm font-medium">{author}</p>
-              <p className="text-sm opacity-50">{role}</p>
-            </div>
+            </p>
+            <div className="mt-4 flex gap-4">
+              <div className="relative h-10 w-10 overflow-hidden rounded-md bg-neutral-200">
+                <Image
+                  src={profile || "/path/to/default/image.jpg"}
+                  alt="Profile"
+                  layout="fill"
+                  objectFit="cover"
+                />
+              </div>
+              <div className="flex flex-col">
+                <p className="text-sm font-medium">{author}</p>
+                <p className="text-sm opacity-50">{role}</p>
+              </div>
             </div>
           </aside>
         )}
