@@ -189,7 +189,7 @@
       "link": "/case/mycomine",
       "logo": "/images/mycomine/mycomine-logo.png",
       "tagline": "MycoMine gets a complete facelift with a new brand and website.",
-      "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+      "services": ["BRANDING", "DESIGN SYSTEM", "WEB", "CONTENT"],
       "tags": [
         {
           "title": "Industry",
@@ -279,7 +279,7 @@
       "link": "/case/lundhags",
       "logo": "/images/lundhags/lundhags-logo.webp",
       "tagline": "Lundhags gets a complete facelift with a new brand and website.",
-      "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+      "services": ["GRAPHIC DESIGN", "PHOTOGRAPHY", "CONTENT"],
       "tags": [
         {
           "title": "Industry",
@@ -291,7 +291,7 @@
         },
         {
           "title": "Website",
-          "text": ["Mycomine.com"]
+          "text": ["Lundhags.se"]
         },
         {
           "title": "Year",
@@ -324,7 +324,7 @@
       "link": "/case/airbon",
       "logo": "/images/airbon/airbon-logo.png",
       "tagline": "Building a brand and MVP for regenerative farming startup Airbon.",
-      "services": ["BRANDING", "DESIGN SYSTEM", "WEB"],
+      "services": ["BRANDING", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
       "tags": [
         {
           "title": "Industry",
@@ -336,7 +336,7 @@
         },
         {
           "title": "Website",
-          "text": ["airbon.co"]
+          "text": ["Airbon.co"]
         },
         {
           "title": "Year",
@@ -410,11 +410,11 @@
       "link": "/case/swt",
       "logo": "/images/swt/swt-logo.png",
       "tagline": "Swedish is a new way to learn Swedish.",
-      "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+      "services": ["BRANDING", "DESIGN SYSTEM", "WEB"],
       "tags": [
         {
           "title": "Industry",
-          "text": ["Transport"]
+          "text": ["Cleantech"]
         },
         {
           "title": "Headquarters",
