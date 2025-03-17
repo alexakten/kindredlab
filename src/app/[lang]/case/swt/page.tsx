@@ -52,7 +52,7 @@ export default async function Home({
 
       <GapMedium />
 
-      <Paragraph
+      {/* <Paragraph
         blackTitle={dict.case.mycomine.paragraph.blackTitle}
         grayTitle={dict.case.mycomine.paragraph.grayTitle}
         text={dict.case.mycomine.paragraph.text}
@@ -68,7 +68,7 @@ export default async function Home({
         text={dict.case.mycomine.lineText[1].text}
       />
 
-      <GapMedium />
+      <GapMedium /> */}
 
       <FullWidthImage image="/images/swt/swt-2.webp" />
 

@@ -50,7 +50,7 @@ export default async function Home({
 
       <FullWidthImage image="/images/qura/qura-1.webp" />
 
-      <GapMedium />
+      {/* <GapMedium />
 
       <Paragraph
         blackTitle={dict.case.qura.paragraph.blackTitle}
@@ -66,7 +66,7 @@ export default async function Home({
       <LineText
         title={dict.case.qura.lineText[1].title}
         text={dict.case.qura.lineText[1].text}
-      />
+      /> */}
 
       <GapMedium />
 

@@ -52,7 +52,7 @@ export default async function Home({
 
       <GapMedium />
 
-      <Paragraph
+      {/* <Paragraph
         blackTitle={dict.case.payable.paragraph.blackTitle}
         grayTitle={dict.case.payable.paragraph.grayTitle}
         text={dict.case.payable.paragraph.text}
@@ -68,7 +68,7 @@ export default async function Home({
         text={dict.case.payable.lineText[1].text}
       />
 
-      <GapMedium />
+      <GapMedium /> */}
 
       <FullWidthImage image="/images/payable/payable-2.webp" />
 

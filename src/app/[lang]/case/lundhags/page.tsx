@@ -52,7 +52,7 @@ export default async function Home({
 
       <GapMedium />
 
-      <Paragraph
+      {/* <Paragraph
         blackTitle={dict.case.lundhags.paragraph.blackTitle}
         grayTitle={dict.case.lundhags.paragraph.grayTitle}
         text={dict.case.lundhags.paragraph.text}
@@ -68,7 +68,7 @@ export default async function Home({
         text={dict.case.lundhags.lineText[1].text}
       />
 
-      <GapMedium />
+      <GapMedium /> */}
 
       <FullWidthImage image="/images/lundhags/lundhags-2.webp" />
 
