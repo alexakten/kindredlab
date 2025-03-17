@@ -79,9 +79,10 @@ export default function Project({
             ))}
           </div>
         </aside>
-        <aside className="border-t border-neutral-200">
-          <p className="mt-4 text-base italic tracking-tight">
-            &quot;{quote}&quot;
+        {quote && (
+          <aside className="border-t border-neutral-200">
+            <p className="mt-4 text-base italic tracking-tight">
+              &quot;{quote}&quot;
           </p>
           <div className="mt-4 flex gap-4">
             <div className="relative h-10 w-10 overflow-hidden rounded-md bg-neutral-200">
@@ -96,8 +97,9 @@ export default function Project({
               <p className="text-sm font-medium">{author}</p>
               <p className="text-sm opacity-50">{role}</p>
             </div>
-          </div>
-        </aside>
+            </div>
+          </aside>
+        )}
       </div>
     </Link>
   );

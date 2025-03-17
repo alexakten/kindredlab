@@ -33,44 +33,44 @@ export default async function Home({
       <GapTiny />
       <KindredLogo />
       <Intro
-        image="/images/lundhags/lundhags-hero.webp"
-        description={dict.case.lundhags.tagline}
-        tags={dict.case.lundhags.tags}
+        image="/images/swt/swt-hero.webp"
+        description={dict.case.swt.tagline}
+        tags={dict.case.swt.tags}
       />
 
       <GapLarge />
 
       <Quote
-        quote={dict.case.lundhags.quote}
-        author={dict.case.lundhags.author}
-        role={dict.case.lundhags.role}
+        quote={dict.case.swt.quote}
+        author={dict.case.swt.author}
+        role={dict.case.swt.role}
       />
 
       <GapLarge />
 
-      <FullWidthImage image="/images/lundhags/lundhags-1.webp" />
+      <FullWidthImage image="/images/swt/swt-1.webp" />
 
       <GapMedium />
 
       <Paragraph
-        blackTitle={dict.case.lundhags.paragraph.blackTitle}
-        grayTitle={dict.case.lundhags.paragraph.grayTitle}
-        text={dict.case.lundhags.paragraph.text}
+        blackTitle={dict.case.mycomine.paragraph.blackTitle}
+        grayTitle={dict.case.mycomine.paragraph.grayTitle}
+        text={dict.case.mycomine.paragraph.text}
       />
       <GapTiny />
       <LineText
-        title={dict.case.lundhags.lineText[0].title}
-        text={dict.case.lundhags.lineText[0].text}
+        title={dict.case.mycomine.lineText[0].title}
+        text={dict.case.mycomine.lineText[0].text}
       />
       <GapTiny />
       <LineText
-        title={dict.case.lundhags.lineText[1].title}
-        text={dict.case.lundhags.lineText[1].text}
+        title={dict.case.mycomine.lineText[1].title}
+        text={dict.case.mycomine.lineText[1].text}
       />
 
       <GapMedium />
 
-      <FullWidthImage image="/images/lundhags/lundhags-2.webp" />
+      <FullWidthImage image="/images/swt/swt-2.webp" />
 
       <GapMedium />
 

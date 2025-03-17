@@ -135,8 +135,7 @@
         "line2": "We'll get back to you within 24 hours."
       },
       "cta1": "BOOK DEMO"
-    },
-    "welcomeMessage": "Welcome to our site! It's great to have you here."
+    }
   },
   "case": {
     "qura": {
@@ -170,8 +169,8 @@
       "role": "CEO at Qura",
       "paragraph": {
         "blackTitle": "The complexities of legal research",
-        "grayTitle": "Simplifying workflows with AI",
-        "text": "Qura is revolutionizing legal research with AI, but to secure funding and adoption, they needed an intuitive and seamless user experience. Our team at Kindred collaborated with Qura to refine their product design, ensuring that legal professionals could navigate vast legal databases effortlessly. Through a human-centered approach, we simplified complex workflows and created a clear, accessible interface that elevates user confidence and efficiency."
+        "grayTitle": "Kindred helps Qura iterate fast",
+        "text": "Qura is revolutionizing legal research with AI, allowing lawyers to search hundreds of databases in seconds from a single natural-language prompt. To secure funding and adoption, they needed an intuitive and seamless user experience. Our team at Kindred collaborated with Qura to refine their product design, ensuring that legal professionals could navigate vast legal databases effortlessly. Through a human-centered approach, we simplified complex workflows and created a clear, accessible interface that elevates user confidence and efficiency."
       },
       "lineText": [
         {
@@ -261,6 +260,92 @@
       "paragraph": {
         "blackTitle": "Next-gen debt collection",
         "grayTitle": "The human way to pay",
+        "text": "Payable is a next-generation debt collection agency in the Nordics. We collaborated with Payable to refine their brand identity and product design, ensuring a strong and cohesive presence in the market. Our efforts focused on creating a compelling brand that resonates with their target audience and developing a user-friendly platform that effectively communicates their innovative approach to debt collection."
+      },
+      "lineText": [
+        {
+          "title": "A brand built for trust and innovation",
+          "text": "To resonate with investors and industry stakeholders, we developed a visual identity that balances financial credibility with an approachable, modern aesthetic."
+        },
+        {
+          "title": "A platform designed for the future",
+          "text": "We designed a user-friendly platform that highlights Payable's innovative solutions, success stories, and measurable impact—ensuring clarity and confidence for users and partners."
+        }
+      ]
+    },
+    "lundhags": {
+      "thumbnailLocation": "left",
+      "thumbnail": "/images/lundhags/lundhags-thumbnail.webp",
+      "link": "/case/lundhags",
+      "logo": "/images/lundhags/lundhags-logo.webp",
+      "tagline": "Lundhags gets a complete facelift with a new brand and website.",
+      "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+      "tags": [
+        {
+          "title": "Industry",
+          "text": ["Outdoor"]
+        },
+        {
+          "title": "Headquarters",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Website",
+          "text": ["Mycomine.com"]
+        },
+        {
+          "title": "Year",
+          "text": ["Ongoing"]
+        }
+      ],
+      "quote": "I got goosebumps when I saw the new website. We are grateful to have worked with Kindred, and hope to do so again in the future.",
+      "profile": "/images/profiles/magnus.png",
+      "author": "Magnus Ivarsson",
+      "role": "CEO at Mycomine",
+      "paragraph": {
+        "blackTitle": "Bioremediation as a Service",
+        "grayTitle": "Harnessing nature for sustainability",
+        "text": "MycoMine is pioneering bioremediation with cutting-edge fungal technology, and they needed a compelling brand and digital presence to match their innovation. We worked with MycoMine to refine their brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in sustainable waste management."
+      },
+      "lineText": [
+        {
+          "title": "A brand built for trust and innovation",
+          "text": "To resonate with investors and industry stakeholders, we developed a visual identity that balances scientific credibility with an approachable, modern aesthetic."
+        },
+        {
+          "title": "A website designed to drive funding",
+          "text": "We crafted a structured, compelling web experience that highlights MycoMine's technology, success stories, and measurable impact—ensuring clarity for investors and partners."
+        }
+      ]
+    },
+    "airbon": {
+      "thumbnailLocation": "right",
+      "thumbnail": "/images/airbon/airbon-thumbnail.webp",
+      "link": "/case/airbon",
+      "logo": "/images/airbon/airbon-logo.png",
+      "tagline": "Building a brand and MVP for regenerative farming startup Airbon.",
+      "services": ["BRANDING", "DESIGN SYSTEM", "WEB"],
+      "tags": [
+        {
+          "title": "Industry",
+          "text": ["Cleantech"]
+        },
+        {
+          "title": "Headquarters",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Website",
+          "text": ["airbon.co"]
+        },
+        {
+          "title": "Year",
+          "text": ["Ongoing"]
+        }
+      ],
+      "paragraph": {
+        "blackTitle": "Next-gen debt collection",
+        "grayTitle": "The human way to pay",
         "text": "Payable is a fintech company that provides a platform for managing and automating payments. We worked with Payable to refine their brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in sustainable waste management."
       },
       "lineText": [
@@ -271,6 +356,96 @@
         {
           "title": "A website designed to drive funding",
           "text": "We crafted a structured, compelling web experience that highlights MycoMine’s technology, success stories, and measurable impact—ensuring clarity for investors and partners."
+        }
+      ]
+    },
+    "tts": {
+      "thumbnailLocation": "left",
+      "thumbnail": "/images/tts/tts-thumbnail.webp",
+      "link": "/case/tts",
+      "logo": "/images/tts/tts-logo.webp",
+      "tagline": "Revolutionizing intermodal freight transport with TTS.",
+      "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+      "tags": [
+        {
+          "title": "Industry",
+          "text": ["Transport"]
+        },
+        {
+          "title": "Headquarters",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Website",
+          "text": ["Launching soon"]
+        },
+        {
+          "title": "Year",
+          "text": ["Ongoing"]
+        }
+      ],
+      "quote": "These guys are great. After the first job I hired them again.",
+      "profile": "/images/profiles/jan.png",
+      "author": "Jan Eriksson",
+      "role": "CEO at TTS",
+      "paragraph": {
+        "blackTitle": "Bioremediation as a Service",
+        "grayTitle": "Harnessing nature for sustainability",
+        "text": "MycoMine is pioneering bioremediation with cutting-edge fungal technology, and they needed a compelling brand and digital presence to match their innovation. We worked with MycoMine to refine their brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in sustainable waste management."
+      },
+      "lineText": [
+        {
+          "title": "A brand built for trust and innovation",
+          "text": "To resonate with investors and industry stakeholders, we developed a visual identity that balances scientific credibility with an approachable, modern aesthetic."
+        },
+        {
+          "title": "A website designed to drive funding",
+          "text": "We crafted a structured, compelling web experience that highlights MycoMine’s technology, success stories, and measurable impact—ensuring clarity for investors and partners."
+        }
+      ]
+    },
+    "swt": {
+      "thumbnailLocation": "right",
+      "thumbnail": "/images/swt/swt-thumbnail.webp",
+      "link": "/case/swt",
+      "logo": "/images/swt/swt-logo.png",
+      "tagline": "Swedish is a new way to learn Swedish.",
+      "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+      "tags": [
+        {
+          "title": "Industry",
+          "text": ["Transport"]
+        },
+        {
+          "title": "Headquarters",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Website",
+          "text": ["Launching soon"]
+        },
+        {
+          "title": "Year",
+          "text": ["Ongoing"]
+        }
+      ],
+      "quote": "These guys are great. After the first job I hired them again.",
+      "profile": "/images/profiles/jan.png",
+      "author": "Jan Eriksson",
+      "role": "CEO at TTS",
+      "paragraph": {
+        "blackTitle": "Bioremediation as a Service",
+        "grayTitle": "Harnessing nature for sustainability",
+        "text": "MycoMine is pioneering bioremediation with cutting-edge fungal technology, and they needed a compelling brand and digital presence to match their innovation. We worked with MycoMine to refine their brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in sustainable waste management."
+      },
+      "lineText": [
+        {
+          "title": "A brand built for trust and innovation",
+          "text": "To resonate with investors and industry stakeholders, we developed a visual identity that balances scientific credibility with an approachable, modern aesthetic."
+        },
+        {
+          "title": "A website designed to drive funding",
+          "text": "We crafted a structured, compelling web experience that highlights MycoMine's technology, success stories, and measurable impact—ensuring clarity for investors and partners."
         }
       ]
     }

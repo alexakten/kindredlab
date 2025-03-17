@@ -176,7 +176,7 @@ export default async function Home({
             <AnimatePresence>
               {/* Slack */}
               <Motion
-                className="-right-24 top-6 z-10 hidden rotate-6 sm:-right-8 sm:top-16 md:absolute md:-right-4 md:block"
+                className="-right-20 top-6 z-10 absolute rotate-6 sm:-right-8 sm:top-16 md:absolute md:-right-4 md:block"
                 initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
                 whileInView={{ x: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
@@ -223,7 +223,7 @@ export default async function Home({
 
               {/* Figma Website */}
               <Motion
-                className="absolute -left-24 -top-8 aspect-[16/9] w-96 rotate-6 scale-75 sm:-left-8 sm:-top-8"
+                className="absolute -left-32 -top-8 aspect-[16/9] w-96 rotate-6 sm:-left-8 sm:-top-8"
                 initial={{ y: -100, opacity: 0, rotate: 0 }} // Start off-screen at the top with no rotation
                 whileInView={{ y: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ y: -100, opacity: 0, rotate: 0 }} // Slide out with no rotation
@@ -278,7 +278,7 @@ export default async function Home({
 
               {/* Kanban */}
               <Motion
-                className="absolute -bottom-12 rotate-6 sm:-right-12 sm:top-56 sm:-rotate-6"
+                className="absolute -bottom-12 -right-20 z-10 rotate-6 sm:-right-12 sm:top-56 sm:-rotate-6"
                 initial={{ x: 100, opacity: 0, rotate: 0 }} // Start off-screen to the right with no rotation
                 whileInView={{ x: 0, opacity: 1, rotate: -6 }} // Animate to rotated position
                 exit={{ x: 100, opacity: 0, rotate: 0 }} // Slide out with no rotation
@@ -301,7 +301,7 @@ export default async function Home({
 
               {/* Calendar */}
               <Motion
-                className="bottom-8 left-4 hidden rotate-6 flex-col gap-0.5 md:absolute md:bottom-16 md:left-8 md:flex"
+                className="absolute bottom-8 left-4 rotate-6 flex-col gap-0.5 md:absolute md:bottom-16 md:left-8 md:flex"
                 initial={{ x: -100, opacity: 0, rotate: 0 }} // Start off-screen to the left with no rotation
                 whileInView={{ x: 0, opacity: 1, rotate: 6 }} // Animate to rotated position
                 exit={{ x: -100, opacity: 0, rotate: 0 }} // Slide out with no rotation
