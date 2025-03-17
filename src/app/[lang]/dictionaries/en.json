@@ -298,10 +298,6 @@
           "text": ["Ongoing"]
         }
       ],
-      "quote": "I got goosebumps when I saw the new website. We are grateful to have worked with Kindred, and hope to do so again in the future.",
-      "profile": "/images/profiles/magnus.png",
-      "author": "Magnus Ivarsson",
-      "role": "CEO at Mycomine",
       "paragraph": {
         "blackTitle": "Bioremediation as a Service",
         "grayTitle": "Harnessing nature for sustainability",
@@ -409,7 +405,7 @@
       "thumbnail": "/images/swt/swt-thumbnail.webp",
       "link": "/case/swt",
       "logo": "/images/swt/swt-logo.png",
-      "tagline": "Swedish is a new way to learn Swedish.",
+      "tagline": "Stockholm Water Technology's patented water treatment.",
       "services": ["BRANDING", "DESIGN SYSTEM", "WEB"],
       "tags": [
         {
@@ -429,10 +425,10 @@
           "text": ["Ongoing"]
         }
       ],
-      "quote": "These guys are great. After the first job I hired them again.",
-      "profile": "/images/profiles/jan.png",
-      "author": "Jan Eriksson",
-      "role": "CEO at TTS",
+      "quote": "The new site really looks so much better. Thank you very much!",
+      "profile": "/images/profiles/karthik.png",
+      "author": "Karthik Laxman",
+      "role": "CEO at SWT",
       "paragraph": {
         "blackTitle": "Bioremediation as a Service",
         "grayTitle": "Harnessing nature for sustainability",
