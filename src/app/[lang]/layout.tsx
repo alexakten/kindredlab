@@ -6,11 +6,11 @@ import ShortcutListener from "./components/ShortcutListener";
 
 export const metadata: Metadata = {
   title: "Kindred House",
-  description: "Supercharge your design & marketing",
+  description: "Design Partner for Ambitious Brands",
 
   openGraph: {
     title: "Kindred House",
-    description: "Supercharge your design & marketing",
+    description: "Design Partner for Ambitious Brands",
     url: "https://kindredhouse.se/",
     type: "website",
     images: [
@@ -18,14 +18,14 @@ export const metadata: Metadata = {
         url: "https://kindredhouse.se/open-graph.webp",
         width: 1200,
         height: 630,
-        alt: "Supercharge your design & marketing",
+        alt: "Design Partner for Ambitious Brands",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Kindred House",
-    description: "Supercharge your design & marketing",
+    description: "Design Partner for Ambitious Brands",
     images: ["https://kindredhouse.se/open-graph.webp"],
   },
 };
