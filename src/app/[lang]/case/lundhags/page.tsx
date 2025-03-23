@@ -38,15 +38,17 @@ export default async function Home({
         tags={dict.case.lundhags.tags}
       />
 
-      <GapLarge />
+      {/* <GapLarge /> */}
 
-      <Quote
+      {/* <Quote
         quote={dict.case.lundhags.quote}
         author={dict.case.lundhags.author}
         role={dict.case.lundhags.role}
       />
 
-      <GapLarge />
+      <GapLarge /> */}
+
+      <GapMedium />
 
       <FullWidthImage image="/images/lundhags/lundhags-1.webp" />
 

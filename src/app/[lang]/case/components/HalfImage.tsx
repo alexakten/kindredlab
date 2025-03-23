@@ -12,8 +12,8 @@ const HalfImage: React.FC<HalfImageProps> = ({
   altText,
 }) => {
   return (
-    <section className="grid w-full max-w-8xl grid-cols-1 gap-6 sm:grid-cols-2">
-      <div className="relative h-full w-full overflow-hidden rounded-xl sm:rounded-4xl">
+    <section className="grid w-full max-w-8xl grid-cols-1 gap-12 sm:gap-6 sm:grid-cols-2">
+      <div className="relative h-full w-full overflow-hidden rounded-lg sm:rounded-2xl md:rounded-3xl lg:rounded-4xl">
         <Image
           src={leftImage}
           layout="responsive"
@@ -23,7 +23,7 @@ const HalfImage: React.FC<HalfImageProps> = ({
           alt={altText}
         />
       </div>
-      <div className="relative h-full w-full overflow-hidden rounded-xl sm:rounded-4xl">
+      <div className="relative h-full w-full overflow-hidden rounded-lg sm:rounded-2xl md:rounded-3xl lg:rounded-4xl">
         <Image
           src={rightImage}
           layout="responsive"

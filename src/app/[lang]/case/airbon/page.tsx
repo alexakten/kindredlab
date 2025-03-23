@@ -44,7 +44,7 @@ export default async function Home({
 
       <GapMedium />
 
-      {/* <Paragraph
+      <Paragraph
         blackTitle={dict.case.airbon.paragraph.blackTitle}
         grayTitle={dict.case.airbon.paragraph.grayTitle}
         text={dict.case.airbon.paragraph.text}
@@ -60,7 +60,7 @@ export default async function Home({
         text={dict.case.airbon.lineText[1].text}
       />
 
-      <GapMedium /> */}
+      <GapMedium />
 
       <FullWidthImage image="/images/airbon/airbon-2.webp" />
 

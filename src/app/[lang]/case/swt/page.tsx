@@ -52,23 +52,23 @@ export default async function Home({
 
       <GapMedium />
 
-      {/* <Paragraph
-        blackTitle={dict.case.mycomine.paragraph.blackTitle}
-        grayTitle={dict.case.mycomine.paragraph.grayTitle}
-        text={dict.case.mycomine.paragraph.text}
+      <Paragraph
+        blackTitle={dict.case.swt.paragraph.blackTitle}
+        grayTitle={dict.case.swt.paragraph.grayTitle}
+        text={dict.case.swt.paragraph.text}
       />
       <GapTiny />
       <LineText
-        title={dict.case.mycomine.lineText[0].title}
-        text={dict.case.mycomine.lineText[0].text}
+        title={dict.case.swt.lineText[0].title}
+        text={dict.case.swt.lineText[0].text}
       />
       <GapTiny />
       <LineText
-        title={dict.case.mycomine.lineText[1].title}
-        text={dict.case.mycomine.lineText[1].text}
+        title={dict.case.swt.lineText[1].title}
+        text={dict.case.swt.lineText[1].text}
       />
 
-      <GapMedium /> */}
+      <GapMedium />
 
       <FullWidthImage image="/images/swt/swt-2.webp" />
 

@@ -148,7 +148,7 @@
       "tags": [
         {
           "title": "Industry",
-          "text": ["Outdoor"]
+          "text": ["Legaltech"]
         },
         {
           "title": "Headquarters",
@@ -168,18 +168,18 @@
       "author": "Arvid Winterfeldt",
       "role": "CEO at Qura",
       "paragraph": {
-        "blackTitle": "The complexities of legal research",
+        "blackTitle": "AI search engine for legal data",
         "grayTitle": "Kindred helps Qura iterate fast",
-        "text": "Qura is revolutionizing legal research with AI, allowing lawyers to search hundreds of databases in seconds from a single natural-language prompt. To secure funding and adoption, they needed an intuitive and seamless user experience. Our team at Kindred collaborated with Qura to refine their product design, ensuring that legal professionals could navigate vast legal databases effortlessly. Through a human-centered approach, we simplified complex workflows and created a clear, accessible interface that elevates user confidence and efficiency."
+        "text": "Qura is revolutionizing legal research with AI, allowing lawyers to search hundreds of databases in seconds from a single natural-language prompt. They joined Kindred in 2024 and have since received hundreds of design requests, ranging from landing pages and pitch decks to product design and UX."
       },
       "lineText": [
         {
-          "title": "From complexity to simplicity",
-          "text": "Legal research requires precision, clarity, and trust. We designed an interface that prioritizes structured results, making it easy for legal professionals to find and validate sources without unnecessary friction."
+          "title": "Next generation legal research",
+          "text": "We helped Qura design an interface that gives lawyers a new way to interact with legal documents, making it easy to find and validate sources without unnecessary friction — all from a one prompt."
         },
         {
-          "title": "A design built for funding and growth",
-          "text": "Our work with Qura helped them present a polished, investor-ready product, supporting their successful €2.1M funding round led by Cherry Ventures."
+          "title": "Built for funding and growth",
+          "text": "After the new website launch and app redesign, Qura successfully raised €2.1M in a funding round led by Cherry Ventures."
         }
       ]
     },
@@ -215,12 +215,12 @@
       "paragraph": {
         "blackTitle": "Bioremediation as a Service",
         "grayTitle": "Harnessing nature for sustainability",
-        "text": "MycoMine is pioneering bioremediation with cutting-edge fungal technology, and they needed a compelling brand and digital presence to match their innovation. We worked with MycoMine to refine their brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in sustainable waste management."
+        "text": "MycoMine is pioneering bioremediation with fungal technology, and they needed a new brand and digital presence to match their innovation. We worked with MycoMine to refine their brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in sustainable waste management. Deliverables include a new brand identity, website, pitch decks, and more."
       },
       "lineText": [
         {
-          "title": "A brand built for trust and innovation",
-          "text": "To resonate with investors and industry stakeholders, we developed a visual identity that balances scientific credibility with an approachable, modern aesthetic."
+          "title": "Complexity made simple",
+          "text": "In order to appeal to investors and industry stakeholders, we built a modern brand and website that makes MycoMine's advanced fungal technology accessible and understandable to a wider audience."
         },
         {
           "title": "A website designed to drive funding",
@@ -260,16 +260,16 @@
       "paragraph": {
         "blackTitle": "Next-gen debt collection",
         "grayTitle": "The human way to pay",
-        "text": "Payable is a next-generation debt collection agency in the Nordics. We collaborated with Payable to refine their brand identity and product design, ensuring a strong and cohesive presence in the market. Our efforts focused on creating a compelling brand that resonates with their target audience and developing a user-friendly platform that effectively communicates their innovative approach to debt collection."
+        "text": "Payable is a next-generation debt collection agency in the Nordics. We collaborated with Payable to refine their brand identity and product design in order to stand out as a modern player in the market. Deliverables include a new brand identity, logo, website, pitch decks, and more."
       },
       "lineText": [
         {
-          "title": "A brand built for trust and innovation",
-          "text": "To resonate with investors and industry stakeholders, we developed a visual identity that balances financial credibility with an approachable, modern aesthetic."
+          "title": "An approachable brand",
+          "text": "With the new brand identity, we created a visual identity that balances financial credibility with an approachable, modern aesthetic."
         },
         {
-          "title": "A platform designed for the future",
-          "text": "We designed a user-friendly platform that highlights Payable's innovative solutions, success stories, and measurable impact—ensuring clarity and confidence for users and partners."
+          "title": "Made for two audiences",
+          "text": "Payable needed a website that appeals to both debtors and creditors. We used this double-edged approach to build a brand and website that would resonate with both audiences."
         }
       ]
     },
@@ -319,7 +319,7 @@
       "thumbnail": "/images/airbon/airbon-thumbnail.webp",
       "link": "/case/airbon",
       "logo": "/images/airbon/airbon-logo.png",
-      "tagline": "Building a brand and MVP for regenerative farming startup Airbon.",
+      "tagline": "Building a movement with regenerative farming startup Airbon.",
       "services": ["BRANDING", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
       "tags": [
         {
@@ -340,18 +340,18 @@
         }
       ],
       "paragraph": {
-        "blackTitle": "Next-gen debt collection",
-        "grayTitle": "The human way to pay",
-        "text": "Payable is a fintech company that provides a platform for managing and automating payments. We worked with Payable to refine their brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in sustainable waste management."
+        "blackTitle": "Agriculture of the future",
+        "grayTitle": "Rebalancing the planet",
+        "text": "Airbon is a regenerative farming startup that uses AI to optimize crop yields and reduce environmental impact. It is an approach to farming that challenges traditional industrial techniques. We worked with Airbon to built a brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in regenerative farming."
       },
       "lineText": [
         {
-          "title": "A brand built for trust and innovation",
-          "text": "To resonate with investors and industry stakeholders, we developed a visual identity that balances scientific credibility with an approachable, modern aesthetic."
+          "title": "Building a movement",
+          "text": "Regenerative farming is a new approach to farming that is gaining traction with investors and industry stakeholders. We developed a visual identity that balances scientific credibility with an approachable, modern aesthetic."
         },
         {
-          "title": "A website designed to drive funding",
-          "text": "We crafted a structured, compelling web experience that highlights MycoMine’s technology, success stories, and measurable impact—ensuring clarity for investors and partners."
+          "title": "For farmers and investors",
+          "text": "Airbon needed a website that would resonate with both investors and farmers. We used this double-edged approach to build a brand and website that would resonate with both audiences."
         }
       ]
     },
@@ -385,18 +385,18 @@
       "author": "Jan Eriksson",
       "role": "CEO at TTS",
       "paragraph": {
-        "blackTitle": "Bioremediation as a Service",
-        "grayTitle": "Harnessing nature for sustainability",
-        "text": "MycoMine is pioneering bioremediation with cutting-edge fungal technology, and they needed a compelling brand and digital presence to match their innovation. We worked with MycoMine to refine their brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in sustainable waste management."
+        "blackTitle": "The future of cargo transport",
+        "grayTitle": "Harnessing intermodality",
+        "text": "TTS is a startup that is revolutionizing intermodal freight transport with a new approach to cargo transport, using a combination of road and railways. We worked with TTS to built a brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in intermodal freight transport."
       },
       "lineText": [
         {
-          "title": "A brand built for trust and innovation",
-          "text": "To resonate with investors and industry stakeholders, we developed a visual identity that balances scientific credibility with an approachable, modern aesthetic."
+          "title": "A new approach to cargo transport",
+          "text": "We designed a website to help TTS explain their new approach to cargo transport, using a combination of road and railways."
         },
         {
-          "title": "A website designed to drive funding",
-          "text": "We crafted a structured, compelling web experience that highlights MycoMine’s technology, success stories, and measurable impact—ensuring clarity for investors and partners."
+          "title": "Appealing to two audiences",
+          "text": "TTS needed a website that would resonate with both investors and freight forwarders. We used this double-edged approach to build a brand and website that would resonate with both audiences."
         }
       ]
     },
@@ -430,18 +430,18 @@
       "author": "Karthik Laxman",
       "role": "CEO at SWT",
       "paragraph": {
-        "blackTitle": "Bioremediation as a Service",
-        "grayTitle": "Harnessing nature for sustainability",
-        "text": "MycoMine is pioneering bioremediation with cutting-edge fungal technology, and they needed a compelling brand and digital presence to match their innovation. We worked with MycoMine to refine their brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in sustainable waste management."
+        "blackTitle": "Patented water treatment",
+        "grayTitle": "Sustainable water purification",
+        "text": "Stockholm Water Technology develops cutting edge water treatment via their patented CAP3D electro-capacitive technology. We worked with SWT to built a brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in water treatment."
       },
       "lineText": [
         {
-          "title": "A brand built for trust and innovation",
-          "text": "To resonate with investors and industry stakeholders, we developed a visual identity that balances scientific credibility with an approachable, modern aesthetic."
+          "title": "Consumer and industrial applications",
+          "text": "We designed a website to help SWT appeal to both consumers and industry stakeholders."
         },
         {
-          "title": "A website designed to drive funding",
-          "text": "We crafted a structured, compelling web experience that highlights MycoMine's technology, success stories, and measurable impact—ensuring clarity for investors and partners."
+          "title": "A maintanable website",
+          "text": "SWT wanted to be able to update the website themselves, so we built it entirely in Webflow."
         }
       ]
     }

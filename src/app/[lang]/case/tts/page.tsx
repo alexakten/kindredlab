@@ -52,7 +52,7 @@ export default async function Home({
 
       <GapMedium />
 
-      {/* <Paragraph
+      <Paragraph
         blackTitle={dict.case.tts.paragraph.blackTitle}
         grayTitle={dict.case.tts.paragraph.grayTitle}
         text={dict.case.tts.paragraph.text}
@@ -68,7 +68,7 @@ export default async function Home({
         text={dict.case.tts.lineText[1].text}
       />
 
-      <GapMedium /> */}
+      <GapMedium />
 
       <FullWidthImage image="/images/tts/tts-2.webp" />
 
