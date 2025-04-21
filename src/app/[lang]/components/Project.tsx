@@ -6,6 +6,7 @@ interface ProjectProps {
   comingSoon?: boolean;
   link: string;
   logo: string;
+  logoWidth?: number;
   topTag?: string;
   tagline?: string;
   services?: string[];
@@ -21,6 +22,7 @@ export default function Project({
   comingSoon,
   link,
   logo,
+  logoWidth = 64,
   topTag,
   tagline,
   services,
@@ -48,13 +50,15 @@ export default function Project({
       <div className="flex h-full flex-col items-start justify-between px-3 py-4 sm:px-6">
         <aside className="w-full">
           <aside className="flex w-full items-center justify-between">
-            <div className="relative flex items-center">
+            <div
+              className="relative flex h-10 items-center justify-center p-2"
+              style={{ width: `${logoWidth}px` }}
+            >
               <Image
                 src={logo}
                 alt="Logo"
-                height={40}
-                width={64}
-                className="h-auto w-auto"
+                fill
+                className="absolute left-0 top-0 object-contain"
                 priority
                 quality={100}
               />

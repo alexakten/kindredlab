@@ -143,6 +143,7 @@
       "thumbnail": "/images/qura/qura-thumbnail.webp",
       "link": "/case/qura",
       "logo": "/images/qura/qura-logo.webp",
+      "logoWidth": 68,
       "tagline": "Helping Qura raise $2.1M through lightning-fast design iteration.",
       "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
       "tags": [
@@ -188,6 +189,7 @@
       "thumbnail": "/images/mycomine/mycomine-thumbnail.webp",
       "link": "/case/mycomine",
       "logo": "/images/mycomine/mycomine-logo.png",
+      "logoWidth": 108,
       "tagline": "MycoMine gets a complete facelift with a new brand and website.",
       "services": ["BRANDING", "DESIGN SYSTEM", "WEB", "CONTENT"],
       "tags": [
@@ -233,6 +235,7 @@
       "thumbnail": "/images/payable/payable-thumbnail.webp",
       "link": "/case/payable",
       "logo": "/images/payable/payable-logo.png",
+      "logoWidth": 88,
       "tagline": "Launching a next generation debt collection agency in the Nordics.",
       "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
       "tags": [
@@ -278,6 +281,7 @@
       "thumbnail": "/images/lundhags/lundhags-thumbnail.webp",
       "link": "/case/lundhags",
       "logo": "/images/lundhags/lundhags-logo.webp",
+      "logoWidth": 72,
       "tagline": "Helping Lundhags drive sales with ad creatives and photography.",
       "services": ["GRAPHIC DESIGN", "PHOTOGRAPHY", "CONTENT"],
       "tags": [
@@ -319,6 +323,7 @@
       "thumbnail": "/images/airbon/airbon-thumbnail.webp",
       "link": "/case/airbon",
       "logo": "/images/airbon/airbon-logo.png",
+      "logoWidth": 80,
       "tagline": "Building a movement with regenerative farming startup Airbon.",
       "services": ["BRANDING", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
       "tags": [
@@ -360,6 +365,7 @@
       "thumbnail": "/images/tts/tts-thumbnail.webp",
       "link": "/case/tts",
       "logo": "/images/tts/tts-logo.webp",
+      "logoWidth": 136,
       "tagline": "Revolutionizing intermodal freight transport with TTS.",
       "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
       "tags": [
@@ -405,6 +411,7 @@
       "thumbnail": "/images/swt/swt-thumbnail.webp",
       "link": "/case/swt",
       "logo": "/images/swt/swt-logo.png",
+      "logoWidth": 56,
       "tagline": "Creating a visual identity for Stockholm Water Technology.",
       "services": ["BRANDING", "DESIGN SYSTEM", "WEB"],
       "tags": [

@@ -366,6 +366,7 @@ export default async function Home({
                   thumbnail: string;
                   link: string;
                   logo: string;
+                  logoWidth?: number;
                   topTag?: string;
                   tagline?: string;
                   services?: string[];
@@ -390,6 +391,7 @@ export default async function Home({
                       thumbnail={typedProject.thumbnail}
                       link={`/${lang}${typedProject.link}`}
                       logo={typedProject.logo}
+                      logoWidth={typedProject.logoWidth}
                       topTag={typedProject.topTag}
                       tagline={typedProject.tagline}
                       services={typedProject.services}
