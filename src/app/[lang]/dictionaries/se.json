@@ -184,6 +184,7 @@
       "thumbnail": "/images/qura/qura-thumbnail.webp",
       "link": "/case/qura",
       "logo": "/images/qura/qura-logo.webp",
+      "logoWidth": 68,
       "tagline": "Helping Qura raise $2.1M through lightning-fast design iteration.",
       "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
       "tags": [
@@ -229,6 +230,7 @@
       "thumbnail": "/images/mycomine/mycomine-thumbnail.webp",
       "link": "/case/mycomine",
       "logo": "/images/mycomine/mycomine-logo.png",
+      "logoWidth": 108,
       "tagline": "MycoMine gets a complete facelift with a new brand and website.",
       "services": ["BRANDING", "DESIGN SYSTEM", "WEB", "CONTENT"],
       "tags": [
@@ -265,7 +267,7 @@
         },
         {
           "title": "A website designed to drive funding",
-          "text": "We crafted a structured, compelling web experience that highlights MycoMine’s technology, success stories, and measurable impact—ensuring clarity for investors and partners."
+          "text": "We crafted a structured, compelling web experience that highlights MycoMine's technology, success stories, and measurable impact—ensuring clarity for investors and partners."
         }
       ]
     },
@@ -274,6 +276,7 @@
       "thumbnail": "/images/payable/payable-thumbnail.webp",
       "link": "/case/payable",
       "logo": "/images/payable/payable-logo.png",
+      "logoWidth": 88,
       "tagline": "Launching a next generation debt collection agency in the Nordics.",
       "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
       "tags": [
@@ -314,11 +317,54 @@
         }
       ]
     },
-    "lundhags": {
+    "stutterheim": {
       "thumbnailLocation": "left",
+      "thumbnail": "/images/stutterheim/stutterheim-thumbnail.webp",
+      "link": "/case/stutterheim",
+      "logo": "/images/stutterheim/stutterheim-logo.png",
+      "logoWidth": 80,
+      "tagline": "Establishing a cohesive brand experience with Stutterheim.",
+      "services": ["UX/UI", "AD CREATIVES", "DESIGN SYSTEM", "WEB"],
+      "tags": [
+        {
+          "title": "Industry",
+          "text": ["E-commerce"]
+        },
+        {
+          "title": "Headquarters",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Website",
+          "text": ["Stutterheim.com"]
+        },
+        {
+          "title": "Year",
+          "text": ["2023"]
+        }
+      ],
+      "paragraph": {
+        "blackTitle": "Standing out in E-commerce.",
+        "grayTitle": "Boosting brand awareness with impactful visuals.",
+        "text": "Stutterheim is a premium fashion brand known for its high-quality raincoats, blending Scandinavian minimalism with exceptional craftsmanship.\n\nOur team collaborated with Stutterheim to enhance its brand presence through compelling ad creatives, refined web design, and stunning photography—ensuring a seamless online shopping experience while captivating audiences with visually striking campaigns."
+      },
+      "lineText": [
+        {
+          "title": "A Crowded Market",
+          "text": "Fashion e-commerce is highly competitive, making brand distinction vital. We crafted ad creatives and visuals that cut through the noise, leaving a lasting impression."
+        },
+        {
+          "title": "The Power of Aesthetics",
+          "text": "From product photography to web design, every touchpoint was designed to reflect Stutterheim’s premium identity, reinforcing trust and desirability among customers."
+        }
+      ]
+    },
+    "lundhags": {
+      "thumbnailLocation": "right",
       "thumbnail": "/images/lundhags/lundhags-thumbnail.webp",
       "link": "/case/lundhags",
       "logo": "/images/lundhags/lundhags-logo.webp",
+      "logoWidth": 72,
       "tagline": "Helping Lundhags drive sales with ad creatives and photography.",
       "services": ["GRAPHIC DESIGN", "PHOTOGRAPHY", "CONTENT"],
       "tags": [
@@ -356,10 +402,11 @@
       ]
     },
     "airbon": {
-      "thumbnailLocation": "right",
+      "thumbnailLocation": "left",
       "thumbnail": "/images/airbon/airbon-thumbnail.webp",
       "link": "/case/airbon",
       "logo": "/images/airbon/airbon-logo.png",
+      "logoWidth": 80,
       "tagline": "Building a movement with regenerative farming startup Airbon.",
       "services": ["BRANDING", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
       "tags": [
@@ -397,10 +444,11 @@
       ]
     },
     "tts": {
-      "thumbnailLocation": "left",
+      "thumbnailLocation": "right",
       "thumbnail": "/images/tts/tts-thumbnail.webp",
       "link": "/case/tts",
       "logo": "/images/tts/tts-logo.webp",
+      "logoWidth": 136,
       "tagline": "Revolutionizing intermodal freight transport with TTS.",
       "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
       "tags": [
@@ -442,10 +490,11 @@
       ]
     },
     "swt": {
-      "thumbnailLocation": "right",
+      "thumbnailLocation": "left",
       "thumbnail": "/images/swt/swt-thumbnail.webp",
       "link": "/case/swt",
       "logo": "/images/swt/swt-logo.png",
+      "logoWidth": 56,
       "tagline": "Creating a visual identity for Stockholm Water Technology.",
       "services": ["BRANDING", "DESIGN SYSTEM", "WEB"],
       "tags": [

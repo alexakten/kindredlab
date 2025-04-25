@@ -226,7 +226,7 @@
         },
         {
           "title": "A website designed to drive funding",
-          "text": "We crafted a structured, compelling web experience that highlights MycoMine’s technology, success stories, and measurable impact—ensuring clarity for investors and partners."
+          "text": "We crafted a structured, compelling web experience that highlights MycoMine's technology, success stories, and measurable impact—ensuring clarity for investors and partners."
         }
       ]
     },
@@ -276,8 +276,50 @@
         }
       ]
     },
-    "lundhags": {
+    "stutterheim": {
       "thumbnailLocation": "left",
+      "thumbnail": "/images/stutterheim/stutterheim-thumbnail.webp",
+      "link": "/case/stutterheim",
+      "logo": "/images/stutterheim/stutterheim-logo.png",
+      "logoWidth": 80,
+      "tagline": "Establishing a cohesive brand experience with Stutterheim.",
+      "services": ["UX/UI", "AD CREATIVES", "DESIGN SYSTEM", "WEB"],
+      "tags": [
+        {
+          "title": "Industry",
+          "text": ["E-commerce"]
+        },
+        {
+          "title": "Headquarters",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Website",
+          "text": ["Stutterheim.com"]
+        },
+        {
+          "title": "Year",
+          "text": ["2023"]
+        }
+      ],
+      "paragraph": {
+        "blackTitle": "Standing out in E-commerce.",
+        "grayTitle": "Boosting brand awareness with impactful visuals.",
+        "text": "Stutterheim is a premium fashion brand known for its high-quality raincoats, blending Scandinavian minimalism with exceptional craftsmanship.\n\nOur team collaborated with Stutterheim to enhance its brand presence through compelling ad creatives, refined web design, and stunning photography—ensuring a seamless online shopping experience while captivating audiences with visually striking campaigns."
+      },
+      "lineText": [
+        {
+          "title": "A Crowded Market",
+          "text": "Fashion e-commerce is highly competitive, making brand distinction vital. We crafted ad creatives and visuals that cut through the noise, leaving a lasting impression."
+        },
+        {
+          "title": "The Power of Aesthetics",
+          "text": "From product photography to web design, every touchpoint was designed to reflect Stutterheim’s premium identity, reinforcing trust and desirability among customers."
+        }
+      ]
+    },
+    "lundhags": {
+      "thumbnailLocation": "right",
       "thumbnail": "/images/lundhags/lundhags-thumbnail.webp",
       "link": "/case/lundhags",
       "logo": "/images/lundhags/lundhags-logo.webp",
@@ -319,7 +361,7 @@
       ]
     },
     "airbon": {
-      "thumbnailLocation": "right",
+      "thumbnailLocation": "left",
       "thumbnail": "/images/airbon/airbon-thumbnail.webp",
       "link": "/case/airbon",
       "logo": "/images/airbon/airbon-logo.png",
@@ -361,7 +403,7 @@
       ]
     },
     "tts": {
-      "thumbnailLocation": "left",
+      "thumbnailLocation": "right",
       "thumbnail": "/images/tts/tts-thumbnail.webp",
       "link": "/case/tts",
       "logo": "/images/tts/tts-logo.webp",
@@ -407,7 +449,7 @@
       ]
     },
     "swt": {
-      "thumbnailLocation": "right",
+      "thumbnailLocation": "left",
       "thumbnail": "/images/swt/swt-thumbnail.webp",
       "link": "/case/swt",
       "logo": "/images/swt/swt-logo.png",
