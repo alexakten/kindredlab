@@ -1,0 +1,498 @@
+{
+  "nav": {
+    "menu": {
+      "item1": "Services",
+      "item2": "Projects",
+      "item3": "Pricing",
+      "item4": "Book Demo"
+    },
+    "cta": "SCHEDULE MEETING"
+  },
+  "home": {
+    "announcement": {
+      "tag": "ANNOUNCEMENT",
+      "text": "CLIENT QURA RAISES €2.1M LED BY CHERRY VENTURES"
+    },
+    "hero": {
+      "title": {
+        "line1": "Design",
+        "highlight": "Partner",
+        "line2": "for Ambitious Brands"
+      },
+      "subtext": {
+        "line1": "Kindred is a subscription for next-gen businesses.",
+        "line2": "Iterate fast with delivery every 48 hours."
+      },
+      "cta1": "SAY HELLO",
+      "cta2": "SCHEDULE MEETING"
+    },
+    "services": {
+      "slack": {
+        "channel": "#design-requests",
+        "author": "Jonathan W.",
+        "message": "the designs look fantastic! Send our thanks to the entire team!"
+      },
+      "postit": "IMPORTANT: Buy more coffee ASAP!",
+      "calendar": {
+        "event1": {
+          "title": "UX/UI Strategy Session",
+          "type": "Online Meeting",
+          "time": "13:00-14:00"
+        },
+        "event2": {
+          "title": "Kindred x Payable Design Meeting",
+          "type": "Online Meeting",
+          "time": "14:00-15:00"
+        }
+      },
+      "kanban": {
+        "group": "Tasks",
+        "items": "2 items",
+        "task1": "Design new logo",
+        "task2": "Build new website",
+        "comments": "1 comment",
+        "days": "2 days ago"
+      },
+      "tag": "SUBSCRIPTION",
+      "title": "Apps, brands, websites and more...",
+      "list": [
+        "APPS",
+        "UX/UI",
+        "BRANDING",
+        "ADS",
+        "WEBSITES",
+        "PITCH DECKS",
+        "SOCIAL MEDIA",
+        "CONTENT",
+        "PROTOTYPES"
+      ]
+    },
+    "projects": {
+      "tag": "WORK",
+      "title": "Recent projects"
+    },
+    "how": {
+      "tag": "HOW IT WORKS",
+      "title": "Kindred (subscription) is easy.",
+      "list": [
+        {
+          "image": "/images/hero-scroll/hero-scroll-1.webp",
+          "title": "Create a plan.",
+          "description": "Book a call to create a custom plan."
+        },
+        {
+          "image": "/images/hero-scroll/hero-scroll-8.webp",
+          "title": "Submit your request.",
+          "description": "Submit your request in Slack or email."
+        },
+        {
+          "image": "/images/hero-scroll/package.webp",
+          "title": "Delivery within 48h.",
+          "description": "We deliver your designs within 48 hours."
+        }
+      ]
+    },
+    "faq": {
+      "tag": "FAQ",
+      "title": "Questions (& answers)",
+      "postit": "You didn't forget to buy coffee, did you?",
+      "questions": [
+        {
+          "question": "What does the subscription cost?",
+          "answer": "We always tailor our subscriptions based on needs and design complexity — typically, our clients pay between 80,000 - 160,000 SEK per month."
+        },
+        {
+          "question": "How quickly will I get my designs?",
+          "answer": "On average, you'll receive your designs within 48 hours or less. More complex projects, like larger websites or apps, may take longer. In such cases, we break down the request into smaller parts and deliver them step by step."
+        },
+        {
+          "question": "How many requests can I make?",
+          "answer": "As many as you want! We handle them one by one based on priority and deliver within 48 hours."
+        },
+        {
+          "question": "How do you handle larger projects?",
+          "answer": "We manage larger projects by dividing them into smaller, more manageable parts. Each part is then handled one by one and delivered within 48 hours."
+        },
+        {
+          "question": "How does pausing the subscription work?",
+          "answer": "When you pause your subscription, you save your remaining days for that month, which you can use anytime in the future. For example, if you have 10 days left in a month and pause your subscription, you can use those 10 days at any time in the future at no additional cost."
+        },
+        {
+          "question": "What happens if I only have one design request?",
+          "answer": "If you only have one design request, such as a website, you can pause your subscription once it's completed. This way, your remaining days won't go to waste, and you can use them again when you have a new design request."
+        },
+        {
+          "question": "What happens if I'm not satisfied with a design?",
+          "answer": "No problem! We will continue revising until you are 100% satisfied."
+        }
+      ]
+    },
+    "cta": {
+      "tag": "BOOK DEMO",
+      "title": "Ready to get started?",
+      "subtext": {
+        "line1": "Book a call to make your first request.",
+        "line2": "We'll get back to you within 24 hours."
+      },
+      "cta1": "BOOK DEMO"
+    }
+  },
+  "case": {
+    "qura": {
+      "thumbnailLocation": "right",
+      "thumbnail": "/images/qura/qura-thumbnail.webp",
+      "link": "/case/qura",
+      "logo": "/images/qura/qura-logo.webp",
+      "logoWidth": 68,
+      "tagline": "Helping Qura raise $2.1M through lightning-fast design iteration.",
+      "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+      "tags": [
+        {
+          "title": "Industry",
+          "text": ["Legaltech"]
+        },
+        {
+          "title": "Headquarters",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Website",
+          "text": ["Qura.law"]
+        },
+        {
+          "title": "Year",
+          "text": ["Ongoing"]
+        }
+      ],
+      "quote": "Every design that Kindred delivers is completely magical!",
+      "profile": "/images/profiles/arvid.png",
+      "author": "Arvid Winterfeldt",
+      "role": "CEO at Qura",
+      "paragraph": {
+        "blackTitle": "AI search engine for legal data",
+        "grayTitle": "Kindred helps Qura iterate fast",
+        "text": "Qura is revolutionizing legal research with AI, allowing lawyers to search hundreds of databases in seconds from a single natural-language prompt. They joined Kindred in 2024 and have since received hundreds of design requests, ranging from landing pages and pitch decks to product design and UX."
+      },
+      "lineText": [
+        {
+          "title": "Next generation legal research",
+          "text": "We helped Qura design an interface that gives lawyers a new way to interact with legal documents, making it easy to find and validate sources without unnecessary friction — all from a one prompt."
+        },
+        {
+          "title": "Built for funding and growth",
+          "text": "After the new website launch and app redesign, Qura successfully raised €2.1M in a funding round led by Cherry Ventures."
+        }
+      ]
+    },
+    "mycomine": {
+      "thumbnailLocation": "left",
+      "thumbnail": "/images/mycomine/mycomine-thumbnail.webp",
+      "link": "/case/mycomine",
+      "logo": "/images/mycomine/mycomine-logo.png",
+      "logoWidth": 108,
+      "tagline": "MycoMine gets a complete facelift with a new brand and website.",
+      "services": ["BRANDING", "DESIGN SYSTEM", "WEB", "CONTENT"],
+      "tags": [
+        {
+          "title": "Industry",
+          "text": ["Cleantech"]
+        },
+        {
+          "title": "Headquarters",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Website",
+          "text": ["Mycomine.com"]
+        },
+        {
+          "title": "Year",
+          "text": ["Ongoing"]
+        }
+      ],
+      "quote": "I got goosebumps when I saw the new website. We are grateful to have worked with Kindred, and hope to do so again in the future.",
+      "profile": "/images/profiles/magnus.png",
+      "author": "Magnus Ivarsson",
+      "role": "CEO at Mycomine",
+      "paragraph": {
+        "blackTitle": "Bioremediation as a Service",
+        "grayTitle": "Harnessing nature for sustainability",
+        "text": "MycoMine is pioneering bioremediation with fungal technology, and they needed a new brand and digital presence to match their innovation. We worked with MycoMine to refine their brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in sustainable waste management. Deliverables include a new brand identity, website, pitch decks, and more."
+      },
+      "lineText": [
+        {
+          "title": "Complexity made simple",
+          "text": "In order to appeal to investors and industry stakeholders, we built a modern brand and website that makes MycoMine's advanced fungal technology accessible and understandable to a wider audience."
+        },
+        {
+          "title": "A website designed to drive funding",
+          "text": "We crafted a structured, compelling web experience that highlights MycoMine's technology, success stories, and measurable impact—ensuring clarity for investors and partners."
+        }
+      ]
+    },
+    "payable": {
+      "thumbnailLocation": "right",
+      "thumbnail": "/images/payable/payable-thumbnail.webp",
+      "link": "/case/payable",
+      "logo": "/images/payable/payable-logo.png",
+      "logoWidth": 88,
+      "tagline": "Launching a next generation debt collection agency in the Nordics.",
+      "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+      "tags": [
+        {
+          "title": "Industry",
+          "text": ["Fintech"]
+        },
+        {
+          "title": "Headquarters",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Website",
+          "text": ["Payable.se"]
+        },
+        {
+          "title": "Year",
+          "text": ["Ongoing"]
+        }
+      ],
+      "quote": "During my career, I have worked with several big design agencies in international companies — I must say that Kindred is the best I have worked with.",
+      "profile": "/images/profiles/hans.png",
+      "author": "Hans Delking",
+      "role": "CEO at Payable",
+      "paragraph": {
+        "blackTitle": "Next-gen debt collection",
+        "grayTitle": "The human way to pay",
+        "text": "Payable is a next-generation debt collection agency in the Nordics. We collaborated with Payable to refine their brand identity and product design in order to stand out as a modern player in the market. Deliverables include a new brand identity, logo, website, pitch decks, and more."
+      },
+      "lineText": [
+        {
+          "title": "An approachable brand",
+          "text": "With the new brand identity, we created a visual identity that balances financial credibility with an approachable, modern aesthetic."
+        },
+        {
+          "title": "Made for two audiences",
+          "text": "Payable needed a website that appeals to both debtors and creditors. We used this double-edged approach to build a brand and website that would resonate with both audiences."
+        }
+      ]
+    },
+    "stutterheim": {
+      "thumbnailLocation": "left",
+      "thumbnail": "/images/stutterheim/stutterheim-thumbnail.webp",
+      "link": "/case/stutterheim",
+      "logo": "/images/stutterheim/stutterheim-logo.png",
+      "logoWidth": 80,
+      "tagline": "Establishing a cohesive brand experience with Stutterheim.",
+      "services": ["UX/UI", "AD CREATIVES", "DESIGN SYSTEM", "WEB"],
+      "tags": [
+        {
+          "title": "Industry",
+          "text": ["E-commerce"]
+        },
+        {
+          "title": "Headquarters",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Website",
+          "text": ["Stutterheim.com"]
+        },
+        {
+          "title": "Year",
+          "text": ["2023"]
+        }
+      ],
+      "paragraph": {
+        "blackTitle": "Standing out in E-commerce.",
+        "grayTitle": "Boosting brand awareness with impactful visuals.",
+        "text": "Stutterheim is a premium fashion brand known for its high-quality raincoats, blending Scandinavian minimalism with exceptional craftsmanship.\n\nOur team collaborated with Stutterheim to enhance its brand presence through compelling ad creatives, refined web design, and stunning photography—ensuring a seamless online shopping experience while captivating audiences with visually striking campaigns."
+      },
+      "lineText": [
+        {
+          "title": "A Crowded Market",
+          "text": "Fashion e-commerce is highly competitive, making brand distinction vital. We crafted ad creatives and visuals that cut through the noise, leaving a lasting impression."
+        },
+        {
+          "title": "The Power of Aesthetics",
+          "text": "From product photography to web design, every touchpoint was designed to reflect Stutterheim’s premium identity, reinforcing trust and desirability among customers."
+        }
+      ]
+    },
+    "lundhags": {
+      "thumbnailLocation": "right",
+      "thumbnail": "/images/lundhags/lundhags-thumbnail.webp",
+      "link": "/case/lundhags",
+      "logo": "/images/lundhags/lundhags-logo.webp",
+      "logoWidth": 72,
+      "tagline": "Helping Lundhags drive sales with ad creatives and photography.",
+      "services": ["GRAPHIC DESIGN", "PHOTOGRAPHY", "CONTENT"],
+      "tags": [
+        {
+          "title": "Industry",
+          "text": ["Outdoor"]
+        },
+        {
+          "title": "Headquarters",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Website",
+          "text": ["Lundhags.se"]
+        },
+        {
+          "title": "Year",
+          "text": ["Ongoing"]
+        }
+      ],
+      "paragraph": {
+        "blackTitle": "Bioremediation as a Service",
+        "grayTitle": "Harnessing nature for sustainability",
+        "text": "MycoMine is pioneering bioremediation with cutting-edge fungal technology, and they needed a compelling brand and digital presence to match their innovation. We worked with MycoMine to refine their brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in sustainable waste management."
+      },
+      "lineText": [
+        {
+          "title": "A brand built for trust and innovation",
+          "text": "To resonate with investors and industry stakeholders, we developed a visual identity that balances scientific credibility with an approachable, modern aesthetic."
+        },
+        {
+          "title": "A website designed to drive funding",
+          "text": "We crafted a structured, compelling web experience that highlights MycoMine's technology, success stories, and measurable impact—ensuring clarity for investors and partners."
+        }
+      ]
+    },
+    "airbon": {
+      "thumbnailLocation": "left",
+      "thumbnail": "/images/airbon/airbon-thumbnail.webp",
+      "link": "/case/airbon",
+      "logo": "/images/airbon/airbon-logo.png",
+      "logoWidth": 80,
+      "tagline": "Building a movement with regenerative farming startup Airbon.",
+      "services": ["BRANDING", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+      "tags": [
+        {
+          "title": "Industry",
+          "text": ["Cleantech"]
+        },
+        {
+          "title": "Headquarters",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Website",
+          "text": ["Airbon.co"]
+        },
+        {
+          "title": "Year",
+          "text": ["Ongoing"]
+        }
+      ],
+      "paragraph": {
+        "blackTitle": "Agriculture of the future",
+        "grayTitle": "Rebalancing the planet",
+        "text": "Airbon is a regenerative farming startup that uses AI to optimize crop yields and reduce environmental impact. It is an approach to farming that challenges traditional industrial techniques. We worked with Airbon to built a brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in regenerative farming."
+      },
+      "lineText": [
+        {
+          "title": "Building a movement",
+          "text": "Regenerative farming is a new approach to farming that is gaining traction with investors and industry stakeholders. We developed a visual identity that balances scientific credibility with an approachable, modern aesthetic."
+        },
+        {
+          "title": "For farmers and investors",
+          "text": "Airbon needed a website that would resonate with both investors and farmers. We used this double-edged approach to build a brand and website that would resonate with both audiences."
+        }
+      ]
+    },
+    "tts": {
+      "thumbnailLocation": "right",
+      "thumbnail": "/images/tts/tts-thumbnail.webp",
+      "link": "/case/tts",
+      "logo": "/images/tts/tts-logo.webp",
+      "logoWidth": 136,
+      "tagline": "Revolutionizing intermodal freight transport with TTS.",
+      "services": ["UX/UI", "PRODUCT DESIGN", "DESIGN SYSTEM", "WEB"],
+      "tags": [
+        {
+          "title": "Industry",
+          "text": ["Transport"]
+        },
+        {
+          "title": "Headquarters",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Website",
+          "text": ["Launching soon"]
+        },
+        {
+          "title": "Year",
+          "text": ["Ongoing"]
+        }
+      ],
+      "quote": "These guys are great. After the first job I hired them again.",
+      "profile": "/images/profiles/jan.png",
+      "author": "Jan Eriksson",
+      "role": "CEO at TTS",
+      "paragraph": {
+        "blackTitle": "The future of cargo transport",
+        "grayTitle": "Harnessing intermodality",
+        "text": "TTS is a startup that is revolutionizing intermodal freight transport with a new approach to cargo transport, using a combination of road and railways. We worked with TTS to built a brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in intermodal freight transport."
+      },
+      "lineText": [
+        {
+          "title": "A new approach to cargo transport",
+          "text": "We designed a website to help TTS explain their new approach to cargo transport, using a combination of road and railways."
+        },
+        {
+          "title": "Appealing to two audiences",
+          "text": "TTS needed a website that would resonate with both investors and freight forwarders. We used this double-edged approach to build a brand and website that would resonate with both audiences."
+        }
+      ]
+    },
+    "swt": {
+      "thumbnailLocation": "left",
+      "thumbnail": "/images/swt/swt-thumbnail.webp",
+      "link": "/case/swt",
+      "logo": "/images/swt/swt-logo.png",
+      "logoWidth": 56,
+      "tagline": "Creating a visual identity for Stockholm Water Technology.",
+      "services": ["BRANDING", "DESIGN SYSTEM", "WEB"],
+      "tags": [
+        {
+          "title": "Industry",
+          "text": ["Cleantech"]
+        },
+        {
+          "title": "Headquarters",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Website",
+          "text": ["Launching soon"]
+        },
+        {
+          "title": "Year",
+          "text": ["Ongoing"]
+        }
+      ],
+      "quote": "The new site really looks so much better. Thank you very much!",
+      "profile": "/images/profiles/karthik.png",
+      "author": "Karthik Laxman",
+      "role": "CEO at SWT",
+      "paragraph": {
+        "blackTitle": "Patented water treatment",
+        "grayTitle": "Sustainable water purification",
+        "text": "Stockholm Water Technology develops cutting edge water treatment via their patented CAP3D electro-capacitive technology. We worked with SWT to built a brand identity and design a website that effectively communicates their mission, impact, and scalability — in order to attract funding and position themselves as a leader in water treatment."
+      },
+      "lineText": [
+        {
+          "title": "Consumer and industrial applications",
+          "text": "We designed a website to help SWT appeal to both consumers and industry stakeholders."
+        },
+        {
+          "title": "A maintanable website",
+          "text": "SWT wanted to be able to update the website themselves, so we built it entirely in Webflow."
+        }
+      ]
+    }
+  }
+}

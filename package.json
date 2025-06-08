@@ -1,0 +1,52 @@
+{
+  "name": "agency",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@calcom/embed-react": "^1.5.2",
+    "@formatjs/intl-localematcher": "^0.5.4",
+    "@phosphor-icons/react": "^2.1.5-alpha.3",
+    "@radix-ui/react-accordion": "^1.2.2",
+    "@splidejs/react-splide": "^0.7.12",
+    "@splidejs/splide": "^4.1.4",
+    "@splidejs/splide-extension-auto-scroll": "^0.5.3",
+    "@vercel/analytics": "^1.3.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "framer-motion": "^11.3.22",
+    "geist": "^1.3.0",
+    "lucide-react": "^0.468.0",
+    "motion": "^11.14.4",
+    "negotiator": "^0.6.3",
+    "next": "14.2.3",
+    "nodemailer": "^6.9.15",
+    "openai": "^4.68.1",
+    "react": "^18",
+    "react-dom": "^18",
+    "react-use-draggable-scroll": "^0.4.7",
+    "swiper": "^11.1.15",
+    "tailwind-merge": "^2.5.5",
+    "tailwindcss-animate": "^1.0.7"
+  },
+  "devDependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.2",
+    "@types/negotiator": "^0.6.3",
+    "@types/node": "^20",
+    "@types/nodemailer": "^6.4.15",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "prettier": "^3.3.3",
+    "prettier-plugin-tailwindcss": "^0.5.14",
+    "tailwindcss": "^3.4.10",
+    "typescript": "^5"
+  }
+}
