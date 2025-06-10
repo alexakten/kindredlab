@@ -179,6 +179,52 @@
     }
   },
   "case": {
+    "saleskong": {
+      "thumbnailLocation": "left",
+      "thumbnail": "/images/saleskong/saleskong-thumbnail.avif",
+      "link": "/case/saleskong",
+      "logo": "/images/saleskong/saleskong-logo.avif",
+      "logoWidth": 68,
+      "tagline": "Launching an intelligent assistant for sales teams with SalesKong.",
+      "services": ["UX/UI", "WEB DESIGN", "DEVELOPMENT"],
+      "tags": [
+        {
+          "title": "Industry",
+          "text": ["SaaS"]
+        },
+        {
+          "title": "Headquarters",
+          "text": ["Stockholm, SE"]
+        },
+        {
+          "title": "Website",
+          "text": ["SalesKong.com"]
+        },
+        {
+          "title": "Year",
+          "text": ["2025"]
+        }
+      ],
+      "quote": "Kindred truly understood our vision and delivered top-class design. We're really happy and have already recommended them to several other companies. ",
+      "profile": "/images/profiles/erik.avif",
+      "author": "Erik Björkegren",
+      "role": "CEO at SalesKong",
+      "paragraph": {
+        "blackTitle": "AI assistant for modern sales teams",
+        "grayTitle": "Kindred helps SalesKong launch",
+        "text": "SalesKong is an AI-powered assistant that helps sales teams save hours each week by automating note-taking, CRM updates, and performance coaching."
+      },
+      "lineText": [
+        {
+          "title": "Designing the future of sales work",
+          "text": "We helped SalesKong launch their brand new website that showcases their product and their vision in an interactive way."
+        },
+        {
+          "title": "Supporting launch and early traction",
+          "text": "With a strong visual identity and product-led site, SalesKong quickly captured interest from early adopters and secured pilot programs with leading sales teams across Europe."
+        }
+      ]
+    },
     "qura": {
       "thumbnailLocation": "right",
       "thumbnail": "/images/qura/qura-thumbnail.webp",
