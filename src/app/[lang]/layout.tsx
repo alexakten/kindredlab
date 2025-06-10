@@ -6,11 +6,11 @@ import ShortcutListener from "./components/ShortcutListener";
 
 export const metadata: Metadata = {
   title: "Kindred House",
-  description: "Design Partner for Ambitious Brands",
+  description: "Creative Partner for Ambitious Brands",
 
   openGraph: {
     title: "Kindred House",
-    description: "Design Partner for Ambitious Brands",
+    description: "Creative Partner for Ambitious Brands",
     url: "https://kindredhouse.se/",
     type: "website",
     images: [
@@ -18,14 +18,14 @@ export const metadata: Metadata = {
         url: "/opengraph-image.png", // Local reference
         width: 1200,
         height: 630,
-        alt: "Design Partner for Ambitious Brands",
+        alt: "Creative Partner for Ambitious Brands",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Kindred House",
-    description: "Design Partner for Ambitious Brands",
+    description: "Creative Partner for Ambitious Brands",
     images: ["/opengraph-image.png"], // Local reference
   },
   icons: {
