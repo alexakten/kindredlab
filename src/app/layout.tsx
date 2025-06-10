@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/react";
 import "../globals.css";
 import { Suspense } from "react";
-import ShortcutListener from "./components/ShortcutListener";
+import ShortcutListener from "./[lang]/components/ShortcutListener";
 
 export const metadata: Metadata = {
   title: "Kindred House",
