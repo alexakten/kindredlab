@@ -17,15 +17,20 @@ function getLocale(request: NextRequest): string {
   return match(languages, locales, defaultLocale);
 }
 
+const PUBLIC_FILE = /\.(.*)$/;
+
 export function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
+
+
 
   // Exclude paths for static assets (e.g., images, fonts, _next internals)
   const isStaticAsset =
     pathname.startsWith("/_next/") ||
     pathname.startsWith("/fonts/") ||
     pathname.startsWith("/images/") ||
-    pathname.startsWith("/static/");
+    pathname.startsWith("/static/") ||
+    PUBLIC_FILE.test(pathname);
 
   const pathnameHasLocale = locales.some(
     (locale) => pathname.startsWith(`/${locale}/`) || pathname === `/${locale}`,
