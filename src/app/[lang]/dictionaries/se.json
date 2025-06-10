@@ -14,12 +14,12 @@
     },
     "hero": {
       "title": {
-        "line1": "Oändlig",
-        "highlight": "kreativitet",
+        "line1": "Kreativ",
+        "highlight": "partner",
         "line2": "för ambitiösa företag"
       },
       "subtext": {
-        "line1": "Iterera snabbt med leverans av design var 48:e timme. ",
+        "line1": "Iterera snabbt med leverans var 48:e timme. ",
         "line2": "Prenumerera och pausa eller avsluta när som helst."
       },
       "cta1": "SÄG HEJ",
@@ -53,7 +53,7 @@
         "days": "2 dagar sedan"
       },
       "tag": "ABONNEMANG",
-      "title": "Appar, varumärken, hemsidor och mer...",
+      "title": "Appar, varumärken, hemsidor, content...",
       "list": [
         "APPAR",
         "UX/UI",
@@ -124,12 +124,12 @@
         {
           "image": "/images/hero-scroll/hero-scroll-8.webp",
           "title": "Lägg in to do's.",
-          "description": "Skapa designförfrågningar i Slack och vi hjälper dig att prioritera dem."
+          "description": "Skapa förfrågningar i Slack och vi hjälper dig att prioritera dem."
         },
         {
           "image": "/images/hero-scroll/package.webp",
           "title": "Leverans inom 48 timmar.",
-          "description": "Få din design inom 48 timmar. Vi revidererar tills du är 100% nöjd."
+          "description": "Få din leverans inom 48 timmar. Vi revidererar tills du är 100% nöjd."
         }
       ]
     },

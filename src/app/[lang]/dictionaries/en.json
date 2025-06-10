@@ -15,12 +15,12 @@
     },
     "hero": {
       "title": {
-        "line1": "Design",
+        "line1": "Creative",
         "highlight": "Partner",
         "line2": "for Ambitious Brands"
       },
       "subtext": {
-        "line1": "Kindred is a subscription for next-gen businesses.",
+        "line1": "Kindred is a subscription for all things creative.",
         "line2": "Iterate fast with delivery every 48 hours."
       },
       "cta1": "SAY HELLO",
@@ -54,7 +54,7 @@
         "days": "2 days ago"
       },
       "tag": "SUBSCRIPTION",
-      "title": "Apps, brands, websites and more...",
+      "title": "Apps, brands, websites, content and more...",
       "list": [
         "APPS",
         "UX/UI",
