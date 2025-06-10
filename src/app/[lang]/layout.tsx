@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "https://kindredhouse.se/open-graph.webp",
+        url: "/opengraph-image.png", // Local reference
         width: 1200,
         height: 630,
         alt: "Design Partner for Ambitious Brands",
@@ -26,7 +26,10 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Kindred House",
     description: "Design Partner for Ambitious Brands",
-    images: ["https://kindredhouse.se/open-graph.webp"],
+    images: ["/opengraph-image.png"], // Local reference
+  },
+  icons: {
+    icon: "/favicon.png", // Local reference to favicon
   },
 };
 
@@ -42,9 +45,9 @@ export default function RootLayout({
       </head>
       <body>
         <Analytics />
-        <Suspense>
+        {/* <Suspense>
           <ShortcutListener />
-        </Suspense>
+        </Suspense> */}
         {children}
       </body>
     </html>
