@@ -29,7 +29,7 @@ export const metadata: Metadata = {
     images: ["https://kindredhouse.se/opengraph-image.png"], // Local reference
   },
   icons: {
-    icon: "/favicon.png", // Local reference to favicon
+    icon: "/favicon.ico", // Local reference to favicon
   },
 };
 
@@ -42,7 +42,7 @@ export default function RootLayout({
     <html lang="en">
       <head>
         <link rel="stylesheet" href="https://use.typekit.net/zhy0giy.css" />
-        <link rel="icon" href="/favicon.png" sizes="any" />
+        <link rel="icon" href="/favicon.ico" sizes="any" />
       </head>
       <body>
         <Analytics />
