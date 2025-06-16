@@ -557,9 +557,9 @@ export default async function Home({
             <div className="flex flex-col items-end gap-2">
               <Link
                 className="opacity-50 hover:opacity-100"
-                href={"mailto:hello@kindredlab.io"}
+                href={"mailto:alex@kindredhouse.se"}
               >
-                hello@kindredlab.io
+                alex@kindredhouse.se
               </Link>
               <Link
                 className="opacity-50 hover:opacity-100"
