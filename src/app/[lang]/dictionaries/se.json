@@ -15,15 +15,15 @@
     "hero": {
       "title": {
         "line1": "Kreativ",
-        "highlight": "partner",
-        "line2": "för tech och AI"
+        "highlight": "Partner",
+        "line2": "för Tech och AI"
       },
       "subtext": {
-        "line1": "Iterera snabbt med leverans var 48:e timme. ",
-        "line2": "Prenumerera och pausa eller avsluta när som helst."
+        "line1": "Kindred är en kreativ prenumeration för snabbt växande tech- och AI-bolag.",
+        "line2": "Förvandla er vision till ett premiumvarumärke som attraherar kunder & investerare."
       },
       "cta1": "SÄG HEJ",
-      "cta2": "BOKA DEMO"
+      "cta2": "BOKA ETT MÖTE"
     },
     "services": {
       "slack": {
