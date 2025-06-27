@@ -80,9 +80,12 @@ export default async function Home({
               className="flex w-full flex-col items-center px-4 sm:items-center sm:px-16"
             >
               <div className="relative mt-16 pb-3 sm:mt-28">
-                <h1 className="text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:text-center sm:leading-[1.1]">
+                <h1 className="text-center font-minion text-[clamp(48px,6.666vw,80px)] leading-[1.1] tracking-tight text-white sm:text-center sm:leading-[1.1]">
                   {dict.home.hero.title.line1}
-                  <span className="relative ml-1 border-white pl-1 pr-2.5 sm:ml-2 md:ml-3 md:border lg:ml-4">
+                  <span
+                    style={{ lineHeight: "0.5" }}
+                    className="leading-2 relative ml-1 inline-block border-white py-5 pl-1 pr-2.5 sm:ml-2 md:ml-3 md:border lg:ml-4"
+                  >
                     {dict.home.hero.title.highlight}
                     {/* <span className="md:hidden">.</span> */}
                     <span className="absolute -right-1 -top-1 hidden -translate-y-full translate-x-full items-end gap-1 md:flex">
@@ -112,7 +115,7 @@ export default async function Home({
                 transition={{ ease: "easeInOut", delay: 0.6, duration: 0.5 }}
                 className="mt-4"
               >
-                <h2 className="max-w-xl text-center text-lg opacity-100 sm:text-center">
+                <h2 className="max-w-2xl text-center text-lg opacity-100 sm:text-center">
                   {dict.home.hero.subtext.line1}
                   <br className="hidden sm:block" />
                   <span className="opacity-50">
@@ -410,7 +413,7 @@ export default async function Home({
         {/* How */}
         <section className="rounded-m flex h-full w-full flex-col items-center bg-white px-4 py-16 text-neutral-900 sm:px-16 md:py-40">
           <p className="font-basier text-sm opacity-50">{dict.home.how.tag}</p>
-          <h2 className="mt-2 px-4 max-w-5xl text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
+          <h2 className="mt-2 max-w-5xl px-4 text-center font-minion text-[clamp(40px,6.666vw,80px)] leading-[1.1] tracking-tighter sm:leading-[1]">
             {dict.home.how.title}
           </h2>
 

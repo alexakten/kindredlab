@@ -146,12 +146,13 @@ export default function Logos() {
         />
       </div>
 
-      {/* <Image
+      <Image
         height="22"
         width="56"
         alt="SWT logo"
         src="/images/swt/swt-logo.png"
-      /> */}
+        className="invert"
+      />
       {/* <svg
         width="124"
         height="22"
@@ -213,14 +214,31 @@ export default function Logos() {
         />
       </div>
 
-      <div className="flex justify-start sm:justify-center">
+      <div className="flex justify-center">
+        {/* <Image
+          height="40"
+          width="120"
+          alt="Ahlvar Gallery logo"
+          src="/images/logos/ahlvar.png"
+          className="hidden md:block"
+        /> */}
+        <Image
+          height="32"
+          width="100"
+          alt="Saleskong logo"
+          src="/images/saleskong/saleskong-logo.avif"
+          className="invert"
+        />
+      </div>
+
+      {/* <div className="flex justify-start sm:justify-center">
         <Image
           height="32"
           width="100"
           alt="Lundhags logo"
           src="/images/logos/lundhags.png"
         />
-      </div>
+      </div> */}
 
       <div className="flex justify-center">
         <Image
@@ -228,6 +246,7 @@ export default function Logos() {
           width="72"
           alt="Stronger logo"
           src="/images/logos/stronger.png"
+          className=""
         />
       </div>
 
@@ -237,15 +256,6 @@ export default function Logos() {
           width="80"
           alt="Under Armour logo"
           src="/images/logos/underarmour.png"
-        />
-      </div>
-
-      <div className="flex justify-center">
-        <Image
-          height="40"
-          width="120"
-          alt="Ahlvar Gallery logo"
-          src="/images/logos/ahlvar.png"
           className="hidden md:block"
         />
       </div>
