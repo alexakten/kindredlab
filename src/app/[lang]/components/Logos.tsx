@@ -146,13 +146,15 @@ export default function Logos() {
         />
       </div>
 
-      <Image
-        height="22"
-        width="56"
-        alt="SWT logo"
-        src="/images/swt/swt-logo.png"
-        className="invert"
-      />
+      <div className="flex justify-center">
+        <Image
+          height="22"
+          width="56"
+          alt="SWT logo"
+          src="/images/swt/swt-logo.png"
+          className="invert"
+        />
+      </div>
       {/* <svg
         width="124"
         height="22"
